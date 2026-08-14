@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Bale Storage Barn </name>
+        <functions>
+            <function>$l10n_function_objectStorage</function>
+        </functions>
+        <image>map/inports/FS25_Buscot_Buildings/store/store_haybarn02.dds</image>
+        <price>27500</price>
+        <dailyUpkeep>25</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+
+    <base>
+        <filename>map/inports/FS25_Buscot_Buildings/i3d/haybarn02.i3d</filename>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <buysFarmland priceScale="1">false</buysFarmland>
+        <canBeDeleted>true</canBeDeleted>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+  <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+    
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart" widthNode="indoorAreaWidth" heightNode="indoorAreaHeight" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+
+   <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="LOADING" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <objectStorage supportsBales="true" supportsPallets="true" maxLength="8.5" maxWidth="6" maxHeight="4.5" capacity="500">
+        <playerTrigger node="playerTrigger" />
+        <objectTrigger node="objectTrigger" />
+        <spawnAreas>
+            <spawnArea startNode="spawnArea1Start" endNode="spawnArea1End"/>
+        </spawnAreas>
+        <storageAreas>
+            <storageArea startNode="storageArea1Start" endNode="storageArea1End" maxHeight="4.8"/>
+        </storageAreas>
+    </objectStorage>
+
+    <pointOfInterest>
+        <point triggerNode="objectTrigger" text="$l10n_poi_objectStorageUnload" showOwner="true"  showEveryone="false"/>
+        <point triggerNode="playerTrigger" text="$l10n_poi_objectStorageLoad"   showOwner="true"  showEveryone="false" />
+    </pointOfInterest>
+
+<i3dMappings>
+    <i3dMapping id="haybarn02" node="0>"/>
+    <i3dMapping id="visuals" node="0>0"/>
+    <i3dMapping id="shedBase" node="0>0|0"/>
+    <i3dMapping id="brickWalls" node="0>0|1"/>
+    <i3dMapping id="steelSheets" node="0>0|2"/>
+    <i3dMapping id="roof" node="0>0|3"/>
+    <i3dMapping id="gutter" node="0>0|4"/>
+    <i3dMapping id="gutter_duplicate_01" node="0>0|5"/>
+    <i3dMapping id="clearArea" node="0>1"/>
+    <i3dMapping id="clearArea1Start" node="0>1|0"/>
+    <i3dMapping id="clearArea1Width" node="0>1|0|0"/>
+    <i3dMapping id="clearArea1Height" node="0>1|0|1"/>
+    <i3dMapping id="levelAreas" node="0>2"/>
+    <i3dMapping id="levelArea1Start" node="0>2|0"/>
+    <i3dMapping id="levelArea1Width" node="0>2|0|0"/>
+    <i3dMapping id="levelArea1Height" node="0>2|0|1"/>
+    <i3dMapping id="indoorAreas" node="0>3"/>
+    <i3dMapping id="indoorAreaStart" node="0>3|0"/>
+    <i3dMapping id="indoorAreaWidth" node="0>3|0|0"/>
+    <i3dMapping id="indoorAreaHeight" node="0>3|0|1"/>
+    <i3dMapping id="testAreas" node="0>4"/>
+    <i3dMapping id="testArea1Start" node="0>4|0"/>
+    <i3dMapping id="testArea1End" node="0>4|0|0"/>
+    <i3dMapping id="tipOcclusionUpdateAreas" node="0>5"/>
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0"/>
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0"/>
+    <i3dMapping id="objectStorage" node="0>6"/>
+    <i3dMapping id="areas" node="0>6|0"/>
+    <i3dMapping id="spawnArea1Start" node="0>6|0|0"/>
+    <i3dMapping id="spawnArea1End" node="0>6|0|0|0"/>
+    <i3dMapping id="storageArea1Start" node="0>6|0|1"/>
+    <i3dMapping id="storageArea1End" node="0>6|0|1|0"/>
+    <i3dMapping id="objectTrigger" node="0>6|1"/>
+    <i3dMapping id="objectTriggerMarker" node="0>6|1|0"/>
+    <i3dMapping id="playerTrigger" node="0>6|2"/>
+    <i3dMapping id="playerTriggerMarker" node="0>6|2|0"/>
+    <i3dMapping id="infoTrigger" node="0>6|3"/>
+</i3dMappings>
+</placeable>

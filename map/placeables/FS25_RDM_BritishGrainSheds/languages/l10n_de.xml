@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="RDM_Shed1"      text="Eintürige 1000T Britische Getreidescheune"/>
+        <text name="RDM_Shed2"      text="Doppeltür 2000T Britische Getreidescheune"/>
+        <text name="RDM_Shed3"      text="Doppeltür 2500T Britische Getreidescheune mit Fahrzeuglagerung"/>
+        <text name="RDM_Shed4"      text="Schiebetür 2500T Britische Getreidescheune"/>
+
+    </texts>
+</l10n>

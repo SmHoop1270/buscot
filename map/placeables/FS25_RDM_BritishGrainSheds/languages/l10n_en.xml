@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="RDM_Shed1"      text="Single Door 1000T British Grain Barn"/>
+        <text name="RDM_Shed2"      text="Double Door 2000T British Grain Barn"/>
+        <text name="RDM_Shed3"      text="Double Door 2500T British Grain Barn with Vehicle Storage"/>
+        <text name="RDM_Shed4"      text="Sliding Door 2500T British Grain Barn"/>
+
+    </texts>
+</l10n>

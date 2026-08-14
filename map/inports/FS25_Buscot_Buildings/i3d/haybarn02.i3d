@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="haybarn02.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/maps/mapEU/textures/buildings/grainSilo/grainSiloBricks_diffuse.dds"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/buildings/grainSilo/grainSiloBricks_normal.dds"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/buildings/grainSilo/grainSiloBricks_specular.dds"/>
+    <File fileId="1" filename="$data/maps/textures/shared/concreteGeneric_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/concreteGeneric_normal.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/concreteGeneric_specular.dds"/>
+    <File fileId="13" filename="$data/placeables/brandless/workshop/workshop_diffuse.dds"/>
+    <File fileId="14" filename="$data/placeables/brandless/workshop/workshop_normal.dds"/>
+    <File fileId="15" filename="$data/placeables/brandless/workshop/workshop_specular.dds"/>
+    <File fileId="7" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="16" filename="../textures/metalpanel_diffuse.dds"/>
+    <File fileId="17" filename="../textures/metalpanel_normal.dds"/>
+    <File fileId="18" filename="../textures/metalpanel_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bricks" materialId="5" customShaderId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="ConcreteFloor" materialId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="gutter" materialId="7" diffuseColor="0.0156863 0.0156863 0.0156863 1" specularColor="0.121569 1 0.207843">
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Material.001" materialId="69" customShaderId="7">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17" bumpDepth="3"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="metalbeams" materialId="10" customShaderId="7">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="haybarn02.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="haybarn02" rotation="-2.66178e-06 0 -1.9485e-05" clipDistance="800" nodeId="20">
+      <TransformGroup name="visuals" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" scale="1.4 1.4 1.4" nodeId="21">
+        <Shape name="shedBase" shapeId="1" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="brickWalls" translation="0.0655338 0 0" shapeId="2" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="steelSheets" shapeId="3" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="roof" shapeId="4" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="69"/>
+        <Shape name="gutter" translation="3.58673 4.08686 -1.05856" rotation="90 1.52387e-26 0" scale="0.0118641 1.00428 0.017833" shapeId="5" clipDistance="350" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="gutter" translation="-3.454 4.08686 -1.05856" rotation="90 -0 0" scale="0.0118641 1.00428 0.017833" shapeId="5" clipDistance="350" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="clearArea" nodeId="28">
+        <TransformGroup name="clearArea1Start" translation="-4.88794 0 -14.18" nodeId="29">
+          <TransformGroup name="clearArea1Width" translation="9.80736 0 1.02736e-20" nodeId="30"/>
+          <TransformGroup name="clearArea1Height" translation="-0.0384644 0 25.3611" nodeId="31"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="32">
+        <TransformGroup name="levelArea1Start" translation="-5.49281 -9.06141e-08 -14.5772" nodeId="33">
+          <TransformGroup name="levelArea1Width" translation="11.3305 1.73911e-07 -0.403112" nodeId="34"/>
+          <TransformGroup name="levelArea1Height" translation="-0.433951 -1.04722e-08 26.8466" nodeId="35"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="-1.2207e-06 0 -2.13623e-06" nodeId="36">
+        <TransformGroup name="indoorAreaStart" translation="-4.91839 0.0677872 -14.1227" nodeId="37">
+          <TransformGroup name="indoorAreaWidth" translation="9.78723 0 -0.0676541" nodeId="38"/>
+          <TransformGroup name="indoorAreaHeight" translation="-1.27187e-20 0 25.2969" nodeId="39"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="-1.2207e-06 0 -2.13623e-06" nodeId="40">
+        <TransformGroup name="testArea1Start" translation="-6.21545 0 -15.926" nodeId="41">
+          <TransformGroup name="testArea1End" translation="12.6217 0 27.3639" nodeId="42"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="-1.2207e-06 0 -2.13623e-06" nodeId="43">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5.22897 0 -14.5229" nodeId="44">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="10.7011 -4.76837e-07 25.9512" nodeId="45"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="objectStorage" translation="-2.30206 -7.82879e-07 -3.63701e-14" rotation="-1.9485e-05 90 0" nodeId="46">
+        <TransformGroup name="areas" nodeId="47">
+          <TransformGroup name="spawnArea1Start" translation="9.15549 -0.01 10.8005" rotation="0 -90 0" nodeId="48">
+            <TransformGroup name="spawnArea1End" translation="4.976 0 17.0227" nodeId="49"/>
+          </TransformGroup>
+          <TransformGroup name="storageArea1Start" translation="13.611 0 -1.89295" rotation="0 -90 0" nodeId="50">
+            <TransformGroup name="storageArea1End" translation="5.86801 4.5 17.1947" nodeId="51"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="objectTrigger" translation="-2.85438 3.80668e-21 -8.66855" scale="1 1 1.5332" shapeId="6" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+          <TransformGroup name="objectTriggerMarker" translation="1.35914 0.268333 9.07416" nodeId="53"/>
+        </Shape>
+        <Shape name="playerTrigger" translation="13.0591 0.5 8.33698" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+          <TransformGroup name="playerTriggerMarker" nodeId="55"/>
+        </Shape>
+        <Shape name="infoTrigger" scale="1.27279 1 1" shapeId="8" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

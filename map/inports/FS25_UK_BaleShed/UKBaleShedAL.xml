@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="objectStorage">
+    <storeData>
+        <name>
+			<en>UK Bale Shed with Autoload</en>	
+		</name>
+        <functions>
+            <function>$l10n_function_garage</function>
+        </functions>
+        <image>map/inports/FS25_UK_BaleShed/store_UK_BaleShedAL.dds</image>
+        <price>35500</price>
+		<dailyUpkeep>5</dailyUpkeep>
+        <lifetime>3000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+		<category>sheds</category>
+		<brush>
+			<type>placeable</type>
+			<category>buildings</category>
+			<tab>sheds</tab>
+		</brush>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+	
+   <base>
+        <filename>map/inports/FS25_UK_BaleShed/FS25_UK_BaleShedAL.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+	
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart" endNode="testAreaEnd" />
+        </testAreas>
+		
+		<sounds>
+            <place template="smallImp" pitchScale="1.6"/>
+        </sounds>
+    </placement>
+	
+	<testAreas>
+        <testArea startNode="testAreaStart" widthNode="testAreaWidth" heightNode="testAreaHeight"/>
+    </testAreas>
+	
+    <clearAreas>
+        <clearArea startNode="clearAreaStart" widthNode="clearAreaWidth" heightNode="clearAreaHeight"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart" widthNode="levelAreaWidth" heightNode="levelAreaHeight" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+   
+	<indoorAreas>
+        <indoorArea startNode="indoorAreaStart" widthNode="indoorAreaWidth" heightNode="indoorAreaHeight"/>
+    </indoorAreas>
+	
+	<tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+    </tipOcclusionUpdateAreas>
+	
+	<ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+        </updateAreas>
+    </ai>
+	
+	<triggerMarkers>
+		<triggerMarker node="warningStripes"/>
+		<triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" id="LOAD" adjustToGround="true"/>
+		<triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" id="UNLOAD" adjustToGround="true"/>
+	</triggerMarkers>
+	
+	<hotspots>
+		<hotspot type="LOADING"/>
+	</hotspots>
+	
+	<infoTrigger triggerNode="infoTrigger"/>
+	
+	<objectStorage supportsBales="true" supportsPallets="false" maxLength="8.5" maxWidth="8" maxHeight="7.75" capacity="1344">
+		<playerTrigger node="playerTrigger"/>
+		<objectTrigger node="objectTrigger"/>
+		<spawnAreas>
+			<spawnArea startNode="spawnArea1Start" endNode="spawnArea1End"/>
+		</spawnAreas>
+		<storageAreas>
+			<storageArea startNode="storageArea1Start" endNode="storageArea1End" maxHeight="7.75" />
+		</storageAreas>
+	</objectStorage>
+	
+	<pointOfInterest>
+		<point triggerNode="objectTrigger" text="$l10n_poi_objectStorageUnload" showOwner="true" showEveryone="false"/>
+		<point triggerNode="playerTrigger" text="$l10n_poi_objectStorageLoad" showOwner="true" showEveryone="false"/>
+	</pointOfInterest>
+	
+	<i3dMappings>
+		
+		<i3dMapping id="testAreaStart" node="0>0|0|0" />
+		<i3dMapping id="testAreaEnd" node="0>0|0|0|0" />
+		
+		<i3dMapping id="clearAreaStart" node="0>0|1|0" />
+		<i3dMapping id="clearAreaWidth" node="0>0|1|0|0" />
+		<i3dMapping id="clearAreaHeight" node="0>0|1|0|1" />
+		
+		<i3dMapping id="levelAreaStart" node="0>0|2|0" />
+		<i3dMapping id="levelAreaWidth" node="0>0|2|0|0" />
+		<i3dMapping id="levelAreaHeight" node="0>0|2|0|1" />
+		
+		<i3dMapping id="indoorAreaStart" node="0>0|3|0" />
+		<i3dMapping id="indoorAreaWidth" node="0>0|3|0|0" />
+		<i3dMapping id="indoorAreaHeight" node="0>0|3|0|1" />
+		
+		<i3dMapping id="tipOcclusionUpdateAreaStart" node="0>0|4|0" />
+		<i3dMapping id="tipOcclusionUpdateAreaEnd" node="0>0|4|0|0" />
+		
+		<i3dMapping id="spawnArea1Start" node="0>3|0|0" />
+        <i3dMapping id="spawnArea1End"   node="0>3|0|0|0" />
+        <i3dMapping id="storageArea1Start" node="0>3|0|1" />
+        <i3dMapping id="storageArea1End" node="0>3|0|1|0" />
+        <i3dMapping id="objectTrigger" node="0>3|1" />
+        <i3dMapping id="objectTriggerMarker" node="0>3|1|0" />
+		<i3dMapping id="warningStripes" node="0>3|1|1" />
+		<i3dMapping id="playerTrigger" node="0>3|2" />
+        <i3dMapping id="playerTriggerMarker" node="0>3|2|0" />
+        <i3dMapping id="infoTrigger" node="0>3|3" />
+
+	</i3dMappings>
+
+</placeable>

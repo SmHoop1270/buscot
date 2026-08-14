@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cottage02.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="1" filename="textures/cottage02_diffuse.dds"/>
+    <File fileId="2" filename="textures/cottage02_normal.dds"/>
+    <File fileId="3" filename="textures/cottage02_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cottage02" materialId="5" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cottage02.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cottage02" lockedgroup="true" nodeId="11">
+      <TransformGroup name="visual_lod" lodDistance="0 50" nodeId="12">
+        <TransformGroup name="LOD0" nodeId="13">
+          <Shape name="cottage02_LOD0" shapeId="1" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="15">
+          <Shape name="cottage02_LOD1" shapeId="2" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collision" nodeId="17">
+        <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

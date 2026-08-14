@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="On" text="Включить свет"/>
+        <text name="Off" text="Выключить свет"/>
+        <text name="Atelier_JD" text="Мастерская John Deere"/>
+        <text name="Bureaux_JD" text="Офис John Deere"/>
+        <text name="Panneau_JD" text="Вывеска дилера John Deere"/>
+        <text name="Texte_JD" text="Текст John Deere"/>
+    </texts>
+</l10n>

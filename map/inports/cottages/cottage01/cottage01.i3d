@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cottage01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="2" filename="textures/cottage01_diffuse.dds"/>
+    <File fileId="3" filename="textures/cottage01_normal.dds"/>
+    <File fileId="4" filename="textures/cottage01_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cottage01" materialId="6" customShaderId="5" customShaderVariation="customParallax">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="cottage01" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="lambert1" materialId="20" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cottage01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="farmHouse_01" lockedgroup="true" clipDistance="350" nodeId="25">
+      <TransformGroup name="clearAreas" nodeId="26">
+        <TransformGroup name="clearAreaStart01" translation="-6.48272 0 -9" nodeId="27">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 15.9298" nodeId="28"/>
+          <TransformGroup name="clearAreaHeight01" translation="19 0.796055 0" nodeId="29"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="30">
+        <TransformGroup name="levelAreaStart01" translation="-7.30361 0 -9.49247" nodeId="31">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 16.477" nodeId="32"/>
+          <TransformGroup name="levelAreaHeight01" translation="10.195 0 0" nodeId="33"/>
+          <TransformGroup name="levelAreaWidth01" translation="0 0 16.4766" nodeId="70"/>
+        </TransformGroup>
+        <TransformGroup name="levelAreaStart02" translation="1.37352 0 -5.53047" nodeId="67">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 12.204" nodeId="68"/>
+          <TransformGroup name="levelAreaHeight01" translation="7.28765 0 0" nodeId="69"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="paintAreas" nodeId="34">
+        <TransformGroup name="paintAreaStart01" translation="-9 0 -9" nodeId="35">
+          <TransformGroup name="paintAreaWidth01" translation="0 0 18" nodeId="36"/>
+          <TransformGroup name="paintAreaHeight01" translation="19 0 0" nodeId="37"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="38">
+        <TransformGroup name="indoorAreaStart01" translation="-5.32744 0 -7.5" nodeId="39">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 11.0755" nodeId="40"/>
+          <TransformGroup name="indoorAreaHeight01" translation="7.12288 0 0" nodeId="41"/>
+        </TransformGroup>
+        <TransformGroup name="indoorAreaStart02" translation="1.83333 0 -3.66115" nodeId="42">
+          <TransformGroup name="indoorAreaWidth02" translation="0 0 7.51187" nodeId="43"/>
+          <TransformGroup name="indoorAreaHeight02" translation="5.32409 0 0" nodeId="44"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="48">
+        <TransformGroup name="testAreaStart01" translation="-9 0 -9" nodeId="49">
+          <TransformGroup name="testAreaEnd01" translation="15.7283 10 18" nodeId="50"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="51">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-9 0 -9" nodeId="52">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="18.4395 0 15.2437" nodeId="53"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="farmhouseFeatures" translation="-12.7893 -0.856739 4.1431" nodeId="54">
+        <TransformGroup name="sleepTriggerMarker" translation="8 0.7 0.5" nodeId="55"/>
+        <TransformGroup name="spawnPoint" translation="8 1 0.5" rotation="0 180 0" nodeId="56"/>
+        <Camera name="sleepCamera" translation="-9.79092 34.047 0.0788461" rotation="104.978 -63.1837 180" nodeId="57" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+        <Shape name="sleepingTrigger" translation="8 2 0.5" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+      </TransformGroup>
+      <TransformGroup name="wardrobe" translation="3.24349 -2.31614 10.5915" nodeId="59">
+        <TransformGroup name="wardrobeTriggerMarker" translation="-5.5 0.7 -8" nodeId="60"/>
+        <Shape name="wardrobeTrigger" translation="-5.5 2.1169 -8" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" lockedgroup="true" nodeId="11">
+        <TransformGroup name="visual_lod" lodDistance="0 100" lodBlending="false" nodeId="12">
+          <TransformGroup name="LOD0" nodeId="13">
+            <Shape name="cottage01_LOD0" shapeId="3" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="15">
+            <Shape name="cottage01_LOD1" shapeId="4" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="17">
+          <Shape name="col" shapeId="5" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="FS25_MachineShed_3Bay.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="24" filename="textures/blueMetal_DIFFUSE.dds"/>
+    <File fileId="27" filename="textures/blueMetal_HEIGHT.dds"/>
+    <File fileId="25" filename="textures/blueMetal_NORMAL.dds"/>
+    <File fileId="26" filename="textures/blueMetal_SPECULAR.dds"/>
+    <File fileId="15" filename="textures/concrete_DIFFUSE.dds"/>
+    <File fileId="18" filename="textures/concrete_HEIGHT.dds"/>
+    <File fileId="16" filename="textures/concrete_NORMAL.dds"/>
+    <File fileId="17" filename="textures/concrete_SPECULAR.dds"/>
+    <File fileId="28" filename="textures/lbRustyMetal_DIFFUSE.dds"/>
+    <File fileId="31" filename="textures/lbRustyMetal_HEIGHT.dds"/>
+    <File fileId="29" filename="textures/lbRustyMetal_NORMAL.dds"/>
+    <File fileId="30" filename="textures/lbRustyMetal_SPECULAR.dds"/>
+    <File fileId="1" filename="textures/metal_DIFFUSE.dds"/>
+    <File fileId="10" filename="textures/metal_HEIGHT.dds"/>
+    <File fileId="2" filename="textures/metal_NORMAL.dds"/>
+    <File fileId="3" filename="textures/metal_SPECULAR.dds"/>
+    <File fileId="19" filename="textures/redRustyMetal_DIFFUSE.dds"/>
+    <File fileId="22" filename="textures/redRustyMetal_HEIGHT.dds"/>
+    <File fileId="20" filename="textures/redRustyMetal_NORMAL.dds"/>
+    <File fileId="21" filename="textures/redRustyMetal_SPECULAR.dds"/>
+    <File fileId="11" filename="textures/woodSlats_DIFFUSE.dds"/>
+    <File fileId="14" filename="textures/woodSlats_HEIGHT.dds"/>
+    <File fileId="12" filename="textures/woodSlats_NORMAL.dds"/>
+    <File fileId="13" filename="textures/woodSlats_SPECULAR.dds"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="concrete_mat" materialId="5" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="mParallaxMap" fileId="18"/>
+      <CustomParameter name="snowScale" value="0"/>
+    </Material>
+    <Material name="darkMetal_mat" materialId="6" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+      <Custommap name="mParallaxMap" fileId="27"/>
+    </Material>
+    <Material name="default" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="lightMetal_mat" materialId="8" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29" bumpDepth="0.5"/>
+      <Glossmap fileId="30"/>
+      <Custommap name="mParallaxMap" fileId="31"/>
+    </Material>
+    <Material name="metal_mat" materialId="9" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+    </Material>
+    <Material name="redMetal_mat" materialId="10" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="mParallaxMap" fileId="22"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="11" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="woodSlats_mat" materialId="12" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="mParallaxMap" fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="FS25_MachineShed_3Bay.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="MachineShed_3Bay" nodeId="26">
+      <TransformGroup name="areas" nodeId="27">
+        <TransformGroup name="testAreas" nodeId="28">
+          <TransformGroup name="testAreaStart" translation="-9.55942 0.000329971 -6.94415" nodeId="29">
+            <TransformGroup name="testAreaEnd" translation="19.5391 7.49635 16.2568" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="31">
+          <TransformGroup name="clearAreaStart" translation="-9.70403 0.0375566 -6.70359" nodeId="32">
+            <TransformGroup name="clearAreaWidth" translation="0 0 15.4999" nodeId="33"/>
+            <TransformGroup name="clearAreaHeight" translation="19.4828 0 0" nodeId="34"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="35">
+          <TransformGroup name="levelAreaStart" translation="-9.70403 0.0375566 -6.70359" nodeId="36">
+            <TransformGroup name="levelAreaWidth" translation="0 0 15.4999" nodeId="37"/>
+            <TransformGroup name="levelAreaHeight" translation="19.4828 0 0" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="39">
+          <TransformGroup name="indoorAreaStart" translation="-8.97622 0.00181973 -5.94624" nodeId="40">
+            <TransformGroup name="indoorAreaWidth" translation="0.00358295 0.00496185 12.0026" nodeId="41"/>
+            <TransformGroup name="indoorAreaHeight" translation="17.8956 0.00150096 -4.76837e-07" nodeId="42"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="43">
+          <TransformGroup name="tipOcclusionUpdateAreaStart" translation="-9.55942 0.000329971 -6.94415" nodeId="44">
+            <TransformGroup name="tipOcclusionUpdateAreaEnd" translation="19.5391 7.49635 16.2568" nodeId="45"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visual" translation="-0.0357736 4.46612 -0.771877" nodeId="46">
+        <Shape name="roof" translation="-0.0206391 1.63815 0.771795" shapeId="1" clipDistance="500" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="roofSupports" translation="0.0131367 1.7652 0.771073" shapeId="2" clipDistance="200" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="walls" translation="-0.0364144 -0.57373 -1.87015" shapeId="3" clipDistance="500" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="wallSupports" translation="0.0115666 -0.94241 -1.2353" shapeId="4" clipDistance="500" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="concreteWalls" translation="0.873665 -2.93515 -1.22822" shapeId="5" clipDistance="500" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="steelBeams" translation="0.0124344 -0.4152 0.772263" shapeId="6" clipDistance="500" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="occluderMesh" translation="0.0199159 -1.47201 0.790325" shapeId="7" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="7"/>
+        <TransformGroup name="L&amp;B_Logo" translation="0.0109037 2.01345 0.771484" nodeId="54">
+          <Shape name="LandB_Modding" translation="9.07198 -0.00154829 0.00039593" rotation="-0 90 0" shapeId="8" clipDistance="250" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6,8"/>
+          <Shape name="LandB_Modding" translation="-9.0643 -0.00154829 0.000393403" rotation="-0 -90 0" shapeId="8" clipDistance="250" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6,8"/>
+        </TransformGroup>
+        <Shape name="drains" translation="-8.08206 -0.74962 0.771096" shapeId="9" clipDistance="500" nodeId="57" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" translation="-3.8723 1.89036 -0.133915" nodeId="58">
+        <Shape name="tipCol" translation="3.8383 -1.89036 -0.0878231" shapeId="10" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="ground_col" translation="3.8723 -1.89036 0.208565" scale="17.9863 1 12.122" shapeId="11" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+        <Shape name="collisions" translation="-3.83831 1.89036 0.0878232" shapeId="12" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

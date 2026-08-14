@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/fillTypes.xsd">
+    <fillTypes>
+        <!-- Meat products: sold directly by the market. Bulk (no pallet) so the
+             mod is self-contained. Prices drive the per-animal payout. -->
+        <fillType name="BEEFMEAT" title="$l10n_fillType_beefMeat" showOnPriceTable="true" isBulkType="true" isPalletType="false" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="3.6" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cow.png"/>
+        </fillType>
+        <fillType name="PORKMEAT" title="$l10n_fillType_porkMeat" showOnPriceTable="true" isBulkType="true" isPalletType="false" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="3.0" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_pig.png"/>
+        </fillType>
+        <fillType name="SHEEPGOATMEAT" title="$l10n_fillType_sheepGoatMeat" showOnPriceTable="true" isBulkType="true" isPalletType="false" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="4.6" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sheep.png"/>
+        </fillType>
+        <fillType name="POULTRYMEAT" title="$l10n_fillType_poultryMeat" showOnPriceTable="true" isBulkType="true" isPalletType="false" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.6" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_chicken.png"/>
+        </fillType>
+
+        <!-- Animal cargo types: 1 animal = 1 litre (price is just a counter). -->
+        <fillType name="BEEF" title="$l10n_fillType_beef" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="PIGS" title="$l10n_fillType_pork" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+        <fillType name="SHEEPGOAT" title="$l10n_fillType_sheepGoat" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+        <fillType name="POULTRY" title="$l10n_fillType_poultry" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+    </fillTypes>
+    <fillTypeCategories>
+        <fillTypeCategory name="PRODUCT">BEEFMEAT PORKMEAT SHEEPGOATMEAT POULTRYMEAT</fillTypeCategory>
+    </fillTypeCategories>
+</map>

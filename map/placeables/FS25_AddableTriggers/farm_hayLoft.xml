@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+   <storeData>
+        <name>$l10n_shopItem_hayLoft</name>
+        <functions>
+            <function>$l10n_function_hayStorage</function>
+        </functions>
+        <image>store/store_hayLoft.png</image>
+        <price>5000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>5</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>storages</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+        <vertexBufferMemoryUsage>352000</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>73984</indexBufferMemoryUsage>
+        <textureMemoryUsage>2949120</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>farm_hayLoft.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+	<placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="testArea1Start" endNode="testArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="testArea1Start" endNode="testArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+		
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotMarker" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <silo>
+        <loadingStation supportsExtension="false" >
+            <loadTrigger triggerNode="loadingTrigger" fillTypeCategories="hayloft" fillLitersPerSecond="2000" dischargeNode="dischargeNode" aiNode="aiNodeLoading">
+                <effectNode effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" scale="1 1 1" />
+                <effectNode effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="false" >
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="hayloft" aiNode="aiNodeUnlading"/>
+				<baleTrigger triggerNode="baleTriggerNode" deleteLitersPerSecond="10000" fillTypeCategories="hayloft" />
+				<palletTrigger triggerNode="palletTriggerNode" fillTypeCategories="hayloft"/>
+		<sounds>
+            <active template="hayloftPump" linkNode="fanSoundNode"/>
+        </sounds>
+        </unloadingStation>
+
+        <storages>
+            <storage node="hotspotMarker" fillTypeCategories="hayloft" capacity="250000" isExtension="false"/>
+        </storages>
+		
+		
+
+    </silo>
+	
+	
+
+    <triggerMarkers>
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+	</triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="loadingTrigger" node="0>0|0|0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|0|0|1" />
+        <i3dMapping id="dischargeEffect" node="0>0|0|0|2" />
+        <i3dMapping id="pipeEffect" node="0>0|0|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|0|0|2|1" />
+        <i3dMapping id="aiNodeLoading" node="0>0|0|0|3" />
+        <i3dMapping id="aiLoadingSpline" node="0>0|0|1" />
+        <i3dMapping id="exactFillRootNode" node="0>0|1|0|0" />
+        <i3dMapping id="baleTriggerNode" node="0>0|1|0|4" />
+        <i3dMapping id="palletTriggerNode" node="0>0|1|0|5" />
+        <i3dMapping id="aiNodeUnlading" node="0>0|1|0|1" />
+        <i3dMapping id="fanSoundNode" node="0>0|1|1" />
+        <i3dMapping id="infoTrigger" node="0>0|2" />
+        <i3dMapping id="teleportNode" node="0>0|3" />
+        <i3dMapping id="hotspotMarker" node="0>1" />
+        <i3dMapping id="markerUnloading" node="0>2|0" />
+        <i3dMapping id="markerLoading" node="0>2|1" />
+        <i3dMapping id="clearArea1Start" node="0>3|0" />
+        <i3dMapping id="clearArea1Width" node="0>3|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>3|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>3|0" />
+        <i3dMapping id="levelArea1Width" node="0>3|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>3|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>6|0" />
+        <i3dMapping id="testArea1End" node="0>6|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+    </i3dMappings>
+</placeable>

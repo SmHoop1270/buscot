@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="archwallGateAnim" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/placeables/meridian/archwall/archwall_mask.png" />
+    <File fileId="1" filename="$data/placeables/rudolfHormann/shared/garageDoors_diffuse.png" />
+    <File fileId="2" filename="$data/placeables/rudolfHormann/shared/garageDoors_normal.png" />
+    <File fileId="3" filename="$data/placeables/rudolfHormann/shared/garageDoors_specular.png" />
+    <File fileId="4" filename="$data/shaders/buildingShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="garageDoors_mat" materialId="1" customShaderId="4">
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="archwallGateAnim.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="archwallGate01Rot" translation="4.176176 0.048311 11.799755" rotation="0 180 0" nodeId="1">
+      <Shape name="archwallGate01_Rotate_Z" clipDistance="100" nodeId="2" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="2 3 4 5 6 7 8 9">
+        <TransformGroup name="archwallGate02_Rotate_Z" translation="-0.000024 0.566089 -0.048072" collision="false" density="0" clipDistance="100" nodeId="3">
+          <TransformGroup name="archwallGate03_Rotate_Z" translation="0.000019 0.609619 -0.000015" collision="false" density="0" clipDistance="100" nodeId="4">
+            <TransformGroup name="archwallGate04_Rotate_Z" translation="-0.000019 0.609597 0" collision="false" density="0" clipDistance="100" nodeId="5">
+              <TransformGroup name="archwallGate05_Rotate_Z" translation="0 0.609601 0" collision="false" density="0" clipDistance="100" nodeId="6">
+                <TransformGroup name="archwallGate06_Rotate_Z" translation="0 0.609598 0" collision="false" density="0" clipDistance="100" nodeId="7">
+                  <TransformGroup name="archwallGate07_Rotate_Z" translation="0 0.609599 0" collision="false" density="0" clipDistance="100" nodeId="8">
+                    <TransformGroup name="archwallGate08_Rotate_Z" translation="0 0.609603 0" collision="false" density="0" clipDistance="100" nodeId="9"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="archwallGateAnim.i3d.anim" />
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

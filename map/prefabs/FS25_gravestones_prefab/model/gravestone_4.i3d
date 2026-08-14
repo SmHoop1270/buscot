@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gravestone_4.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/rock_smooth2_d.dds"/>
+    <File fileId="3" filename="../textures/rock_smooth2_s.dds"/>
+    <File fileId="2" filename="../textures/rock_smooth_n.dds"/>
+    <File fileId="7" filename="$data/maps/mapUS/textures/terrain/grassMoss01_diffuse.dds"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="col" materialId="49" diffuseColor="1 1 1 1" specularColor="1 1 0">
+    </Material>
+    <Material name="Material_1" materialId="61" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMossDetail" fileId="7"/>
+      <Custommap name="mNormalDetail" fileId="2"/>
+      <CustomParameter name="heightMask" value="0.1"/>
+      <CustomParameter name="heightMaskSlope" value="0.16"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gravestone_4.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="gravestone_4" clipDistance="350" nodeId="54">
+      <Shape name="high" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="55" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="61"/>
+      <Shape name="col" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false" materialIds="49"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

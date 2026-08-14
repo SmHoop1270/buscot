@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories12_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/maps/mapAS/textures/props/schoolProps/footballField.i3d"/>
+    <File fileId="13" filename="$data/maps/mapAS/textures/props/schoolProps/squidDecal.i3d"/>
+    <File fileId="19" filename="$data/maps/mapAS/textures/props/terraceFurniture/terraceFurnitureMetal02_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/mapAS/textures/props/terraceFurniture/terraceFurnitureMetal02_normal.png"/>
+    <File fileId="21" filename="$data/maps/mapAS/textures/props/terraceFurniture/terraceFurnitureMetal02_specular.png"/>
+    <File fileId="25" filename="$data/maps/mapAS/textures/props/wheelOld/wheelOld01.i3d"/>
+    <File fileId="49" filename="$data/maps/mapEU/textures/props/gameplay/football.i3d"/>
+    <File fileId="11" filename="$data/maps/mapEU/textures/props/gardenTrampoline.i3d"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/playgroundSand_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/playgroundSand_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapEU/textures/props/playgroundSand_specular.png"/>
+    <File fileId="4" filename="$data/maps/mapEU/textures/props/playground_diffuse.png"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/props/playground_normal.png"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/props/playground_specular.png"/>
+    <File fileId="22" filename="$data/maps/mapEU/textures/props/tyreDecoration_diffuse.png"/>
+    <File fileId="23" filename="$data/maps/mapEU/textures/props/tyreDecoration_normal.png"/>
+    <File fileId="24" filename="$data/maps/mapEU/textures/props/tyreDecoration_specular.png"/>
+    <File fileId="53" filename="$data/maps/mapUS/textures/props/footballSet_diffuse.png"/>
+    <File fileId="54" filename="$data/maps/mapUS/textures/props/footballSet_normal.png"/>
+    <File fileId="55" filename="$data/maps/mapUS/textures/props/footballSet_specular.png"/>
+    <File fileId="48" filename="$data/maps/mapUS/textures/props/gameplay/horseSoccerBall.i3d"/>
+    <File fileId="39" filename="$data/maps/mapUS/textures/props/gardenTireSwing.i3d"/>
+    <File fileId="12" filename="$data/maps/mapUS/textures/props/outsidePool01.i3d"/>
+    <File fileId="36" filename="$data/maps/mapUS/textures/props/playgroundSet_diffuse.png"/>
+    <File fileId="37" filename="$data/maps/mapUS/textures/props/playgroundSet_normal.png"/>
+    <File fileId="38" filename="$data/maps/mapUS/textures/props/playgroundSet_specular.png"/>
+    <File fileId="29" filename="$data/maps/mapUS/textures/props/residentialLightSet_diffuse.png"/>
+    <File fileId="30" filename="$data/maps/mapUS/textures/props/residentialLightSet_normal.png"/>
+    <File fileId="31" filename="$data/maps/mapUS/textures/props/residentialLightSet_specular.png"/>
+    <File fileId="47" filename="$data/maps/mapUS/textures/props/sunflowerPhotoOp01.i3d"/>
+    <File fileId="28" filename="$data/maps/mapUS/textures/props/sunflowerSwing.i3d"/>
+    <File fileId="26" filename="$data/maps/mapUS/textures/props/trashcan03.i3d"/>
+    <File fileId="46" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="32" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="7" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="34" filename="$data/shared/default_normal.png"/>
+    <File fileId="33" filename="$data/shared/window02_diffuse.png"/>
+    <File fileId="35" filename="$data/shared/window02_specular.png"/>
+    <File fileId="43" filename="textures/basketballStandNet_diffuse.png"/>
+    <File fileId="44" filename="textures/basketballStandNet_normal.png"/>
+    <File fileId="45" filename="textures/basketballStandNet_specular.png"/>
+    <File fileId="40" filename="textures/basketballStand_diffuse.png"/>
+    <File fileId="41" filename="textures/basketballStand_normal.png"/>
+    <File fileId="42" filename="textures/basketballStand_specular.png"/>
+    <File fileId="50" filename="textures/basketball_diffuse.png"/>
+    <File fileId="51" filename="textures/basketball_normal.png"/>
+    <File fileId="52" filename="textures/basketball_specular.png"/>
+    <File fileId="1" filename="textures/kidsPark01_diffuse.png"/>
+    <File fileId="2" filename="textures/kidsPark01_normal.png"/>
+    <File fileId="3" filename="textures/kidsPark01_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="basketball_mat" materialId="1373">
+      <Texture fileId="50"/>
+      <Normalmap fileId="51"/>
+      <Glossmap fileId="52"/>
+    </Material>
+    <Material name="basketballStand_mat" materialId="1374" customShaderId="7">
+      <Texture fileId="40"/>
+      <Normalmap fileId="41"/>
+      <Glossmap fileId="42"/>
+    </Material>
+    <Material name="basketballStandNet_mat" materialId="1375" alphaBlending="true" customShaderId="46">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
+    </Material>
+    <Material name="footballSet_mat" materialId="5109" customShaderId="7">
+      <Texture fileId="53"/>
+      <Normalmap fileId="54"/>
+      <Glossmap fileId="55"/>
+    </Material>
+    <Material name="kidsPark01_mat" materialId="1376">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="playground_mat" materialId="1378" customShaderId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="playgroundSand_mat" materialId="1379">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="playgroundSet_mat" materialId="1380" customShaderId="7">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="residentialLightSet_mat" materialId="1381" customShaderId="32" customShaderVariation="additive_colorScale">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+      <CustomParameter name="lightControl" value="1.5"/>
+      <CustomParameter name="colorScale" value="1 1 0.5"/>
+    </Material>
+    <Material name="terraceFurnitureMetal02_mat" materialId="1382" customShaderId="7">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="tyreDecoration_mat" materialId="1383" customShaderId="7">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="136" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="window02_mat" materialId="1384" alphaBlending="true" customShaderId="32" customShaderVariation="additive_colorScale">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+      <CustomParameter name="lightControl" value="0.5"/>
+      <CustomParameter name="colorScale" value="1 1 0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories12_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Playground" translation="-15.0676 -34.5547 -93.7864" nodeId="1419">
+      <Shape name="swingVis" translation="-24.7712 -0.879242 2.84821" shapeId="1" clipDistance="65" nodeId="1422" castsShadows="true" receiveShadows="true" materialIds="1376"/>
+      <TransformGroup name="playground03" lockedgroup="true" translation="-14.6773 -0.879238 -4.31332" rotation="3.0235e-12 20 1.73028e-05" nodeId="1423">
+        <TransformGroup name="visual_lod" lodDistance="0 45" nodeId="1424">
+          <Shape name="LOD0" shapeId="2" clipDistance="100" nodeId="1425" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+          <Shape name="LOD1" shapeId="3" clipDistance="250" nodeId="1426" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="4" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1427" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <ReferenceNode name="gardenTrampoline_lod" translation="-18.5774 -0.879238 -4.87125" rotation="4.70722e-13 -0 1.01778e-13" referenceId="11" nodeId="1435"/>
+      <ReferenceNode name="outsidePool01" translation="-16.8369 -0.879242 9.9175" rotation="5.00916e-06 1.19528e-05 -5.00849e-06" referenceId="12" nodeId="1445"/>
+      <ReferenceNode name="squidDecal" translation="23.3719 0.180218 -7.47285" rotation="6.26835e-21 90 0" scale="0.8 0.8 0.8" referenceId="13" nodeId="1453"/>
+      <ReferenceNode name="footballField" translation="-1.49402 1.79162 6.91823" rotation="1.5368e-20 90 0" referenceId="14" nodeId="1461"/>
+      <TransformGroup name="playground04Track_PREFAB" lockedgroup="true" translation="-24.4764 -0.879246 12.7368" rotation="-0.000400061 89.2726 -0.000364086" nodeId="1466">
+        <TransformGroup name="playground04" lockedgroup="true" translation="-1.38283e-05 0 0" rotation="-3.62583e-13 -0 -8.14222e-13" nodeId="1467">
+          <Shape name="LOD0" shapeId="5" clipDistance="150" nodeId="1468" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+          <Shape name="LOD1" shapeId="6" clipDistance="150" nodeId="1469" castsShadows="true" receiveShadows="true" materialIds="1379"/>
+          <Shape name="col" shapeId="7" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1470" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="sandTraktor_PREFAB" lockedgroup="true" translation="-1.00262 -0.202179 0.0413548" rotation="-180 -74.3064 180" nodeId="1471">
+          <Shape name="customCollisionTruck" translation="-0.0305448 0.645938 0.230891" rotation="-90.6294 -68 -90" scale="0.0593926 0.523105 0.462477" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="1472" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="136"/>
+          <TransformGroup name="furnitureMetal02_chair" lockedgroup="true" translation="-0.00012207 0 2.58982e-05" rotation="-6.10667e-13 -5.33608e-08 1.10663e-12" static="true" collisionFilterMask="0xfffffbff" nodeId="1473">
+            <TransformGroup name="visual_lod" lockedgroup="true" lodDistance="0 10" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1474">
+              <Shape name="LOD0" translation="0 0 -0.001818" shapeId="9" clipDistance="300" nodeId="1475" castsShadows="true" receiveShadows="true" materialIds="1382"/>
+              <Shape name="LOD1" translation="0 0 -0.001818" shapeId="10" clipDistance="300" nodeId="1476" castsShadows="true" receiveShadows="true" materialIds="1382"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tyreDecoration" lockedgroup="true" translation="-0.571716 0.420395 -0.640695" rotation="89.9999 -0.530131 9.62085e-07" scale="0.75 0.75 0.75" clipDistance="80" nodeId="1477">
+            <TransformGroup name="visual_lod" lodDistance="0 25" nodeId="1478">
+              <Shape name="LOD0" translation="0 0.650919 0" shapeId="11" nodeId="1479" castsShadows="true" receiveShadows="true" materialIds="1383"/>
+              <Shape name="LOD1" translation="0 0.650919 0" shapeId="12" nodeId="1480" castsShadows="true" receiveShadows="true" materialIds="1383"/>
+            </TransformGroup>
+            <Shape name="collision" translation="0 -0.079602 0" rotation="0 0 90" shapeId="13" static="true" collisionFilterMask="0xfffffbff" nodeId="1481" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+          </TransformGroup>
+          <TransformGroup name="tyreDecoration" lockedgroup="true" translation="0.551086 0.420403 -0.630325" rotation="89.9999 -0.530131 9.62085e-07" scale="0.75 0.75 0.75" clipDistance="80" nodeId="1482">
+            <TransformGroup name="visual_lod" lodDistance="0 25" nodeId="1483">
+              <Shape name="LOD0" translation="0 0.650919 0" shapeId="11" nodeId="1484" castsShadows="true" receiveShadows="true" materialIds="1383"/>
+              <Shape name="LOD1" translation="0 0.650919 0" shapeId="12" nodeId="1485" castsShadows="true" receiveShadows="true" materialIds="1383"/>
+            </TransformGroup>
+            <Shape name="collision" translation="0 -0.079602 0" rotation="0 0 90" shapeId="13" static="true" collisionFilterMask="0xfffffbff" nodeId="1486" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+          </TransformGroup>
+          <ReferenceNode name="wheel01_lod" translation="-0.00632107 0.33217 -0.623606" rotation="92.8167 82.6023 85.0961" scale="0.415002 0.415002 0.415002" referenceId="25" nodeId="1492"/>
+          <ReferenceNode name="trashcan03" translation="-0.00386719 0.425392 -1.64741" rotation="89.9999 -0.529298 9.40647e-07" referenceId="26" nodeId="1501"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="playground01" lockedgroup="true" translation="-24.8711 -0.879242 18.0367" rotation="0 -30 0" lodDistance="0 60" nodeId="1506">
+        <Shape name="playground01" shapeId="14" clipDistance="100" nodeId="1507" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+        <Shape name="playground01_LOD" shapeId="15" clipDistance="250" nodeId="1508" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+        <Shape name="col" shapeId="16" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1509" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="sunflowerSwing_PREFAB" lockedgroup="true" translation="-24.9757 -0.879246 -0.88784" rotation="-4.69405e-08 -0 5.18143e-09" nodeId="1536">
+        <ReferenceNode name="sunflowerSwing" translation="2.86102e-05 0 0" rotation="9.27132e-13 -5.33608e-08 0" referenceId="28" nodeId="1542"/>
+        <TransformGroup name="residentialLight02" lockedgroup="true" translation="1.58286 2.08376 0.00403537" rotation="-3.6492e-06 0 -6.35872e-07" scale="0.875 0.875 0.875" nodeId="1547">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="1548">
+            <Shape name="LOD0" shapeId="17" nodeId="1549" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true">
+              <Shape name="glass" shapeId="18" nodeId="1550" castsShadows="true" receiveShadows="true" materialIds="1384" weatherRequiredMask="0x40" renderInvisible="true"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="19" nodeId="1551" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="light" translation="0.245109 0.065935 0" nodeId="1552" weatherRequiredMask="0x40">
+            <Light name="pointLight01" translation="0 -0.131157 0" rotation="0 0 0.00028" nodeId="1553" type="point" color="0.169 0.169 0.108" emitDiffuse="true" emitSpecular="true" range="5"/>
+            <Light name="spotLight01" translation="0 -0.077089 0" rotation="-90 0 0" nodeId="1554" type="spot" color="0.343 0.343 0.221" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="7" coneAngle="110" dropOff="4"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="20" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1555" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="residentialLight02" lockedgroup="true" translation="-1.57385 2.08376 0.00403537" rotation="-180 0 180" scale="0.875 0.875 0.875" nodeId="1556">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="1557">
+            <Shape name="LOD0" shapeId="17" nodeId="1558" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true">
+              <Shape name="glass" shapeId="18" nodeId="1559" castsShadows="true" receiveShadows="true" materialIds="1384" weatherRequiredMask="0x40" renderInvisible="true"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="19" nodeId="1560" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="light" translation="0.245109 0.065935 0" nodeId="1561" weatherRequiredMask="0x40">
+            <Light name="pointLight01" translation="0 -0.131157 0" rotation="0 0 0.00028" nodeId="1562" type="point" color="0.169 0.169 0.108" emitDiffuse="true" emitSpecular="true" range="5"/>
+            <Light name="spotLight01" translation="0 -0.077089 0" rotation="-90 0 0" nodeId="1563" type="spot" color="0.343 0.343 0.221" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="7" coneAngle="110" dropOff="4"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="20" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1564" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="playgroundTraktorStraw_PREFAB" lockedgroup="true" translation="-15.0168 -0.879242 2.26179" rotation="-180 -0 -180" nodeId="1565">
+        <TransformGroup name="playgroundTraktor" lockedgroup="true" translation="0 0 5.72205e-06" rotation="-1.62844e-12 1.06722e-07 -3.51133e-12" nodeId="1566">
+          <TransformGroup name="visual_lod" lodDistance="0 30" lodBlending="false" clipDistance="220" nodeId="1567">
+            <Shape name="LOD0" shapeId="21" nodeId="1568" castsShadows="true" receiveShadows="true" materialIds="1380"/>
+            <Shape name="LOD1" shapeId="22" nodeId="1569" castsShadows="true" receiveShadows="true" materialIds="1380"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="23" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1570" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="gardenTireSwing" translation="-24.8396 -0.879242 -4.97707" rotation="180 -0 -180" scale="1.5 1.5 1.5" referenceId="39" nodeId="1578"/>
+      <TransformGroup name="playground02" lockedgroup="true" translation="-24.9399 -0.879242 7.30532" rotation="2.77382e-05 -0 -1.37099e-06" nodeId="1584">
+        <TransformGroup name="visual_lod" lodDistance="0 45" nodeId="1585">
+          <Shape name="LOD0" shapeId="24" clipDistance="100" nodeId="1586" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+          <Shape name="LOD1" shapeId="25" clipDistance="250" nodeId="1587" castsShadows="true" receiveShadows="true" materialIds="1378"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="26" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1588" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <Shape name="basketballStand_vis" lockedgroup="true" translation="-16.7905 -0.879242 16.0167" rotation="0 4.52346e-13 0" scale="0.9 0.9 0.9" shapeId="27" clipDistance="50" nodeId="1420" castsShadows="true" receiveShadows="true" materialIds="1374">
+        <Shape name="basketballStandNet_vis" shapeId="28" clipDistance="50" nodeId="1421" castsShadows="true" receiveShadows="true" materialIds="1375"/>
+      </Shape>
+      <TransformGroup name="sunflowerPhotoOp01_PREFAB" lockedgroup="true" translation="-18.898 -0.879242 15.6889" rotation="4.86401e-06 -0 1.41815e-05" nodeId="1510">
+        <ReferenceNode name="sunflowerPhotoOp01" translation="0 0 1.52588e-05" rotation="-5.65432e-15 -0 -4.06404e-14" scale="1.125 1.125 1.125" referenceId="47" nodeId="1516"/>
+        <TransformGroup name="residentialLight07" lockedgroup="true" translation="0.0438843 0.455269 0.0100555" rotation="180 -87.493 -180" nodeId="1521">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="1522">
+            <Shape name="LOD0" shapeId="29" nodeId="1523" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true">
+              <Shape name="glass" shapeId="30" nodeId="1524" castsShadows="true" receiveShadows="true" materialIds="1384" weatherRequiredMask="0x40" renderInvisible="true"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="31" nodeId="1525" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="light" translation="0.104034 0.207973 0" nodeId="1526" weatherRequiredMask="0x40">
+            <Light name="pointLight01" translation="0 -0.131157 0" rotation="0 0 0.00028" nodeId="1527" type="point" color="0.169 0.114793 0.0212311" emitDiffuse="true" emitSpecular="true" range="5"/>
+            <Light name="spotLight01" translation="0 -0.077089 0" rotation="-90 0 0" nodeId="1528" type="spot" color="0.8 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="4" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="7" coneAngle="110" dropOff="2"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="32" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1529" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="horseSoccerBall" translation="-19.6134 -0.391479 17.4726" rotation="-7.02365 -0.025006 2.02554" referenceId="48" nodeId="1534"/>
+      <ReferenceNode name="football" translation="-18.3381 -0.698914 17.2867" rotation="-40.1215 -9.07749 12.8844" referenceId="49" nodeId="1593"/>
+      <Shape name="smlBasketball" translation="-17.515 -0.684914 17.2551" rotation="5.00896e-06 -90 0" shapeId="33" dynamic="true" restitution="0.95" staticFriction="0.2" dynamicFriction="0.2" linearDamping="0.01" density="0.6" clipDistance="20" nodeId="1595" castsShadows="true" receiveShadows="true" materialIds="1373"/>
+      <TransformGroup name="football01" lockedgroup="true" translation="-16.7811 -0.8792 17.1031" nodeId="20387">
+        <TransformGroup name="visual_lod" lockedgroup="true" lodDistance="0 10" lodBlending="false" clipDistance="80" nodeId="20388">
+          <Shape name="LOD0" shapeId="34" nodeId="20389" castsShadows="true" receiveShadows="true" materialIds="5109"/>
+          <Shape name="LOD1" shapeId="35" nodeId="20390" castsShadows="true" receiveShadows="true" materialIds="5109"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="20391" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

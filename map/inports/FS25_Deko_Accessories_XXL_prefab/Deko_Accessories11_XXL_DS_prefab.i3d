@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories11_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="75" filename="$data/maps/mapEU/textures/props/forestAnimalFeeders_diffuse.png"/>
+    <File fileId="76" filename="$data/maps/mapEU/textures/props/forestAnimalFeeders_normal.png"/>
+    <File fileId="77" filename="$data/maps/mapEU/textures/props/forestAnimalFeeders_specular.png"/>
+    <File fileId="80" filename="$data/maps/mapEU/textures/props/logStores_diffuse.png"/>
+    <File fileId="81" filename="$data/maps/mapEU/textures/props/logStores_normal.png"/>
+    <File fileId="82" filename="$data/maps/mapEU/textures/props/logStores_specular.png"/>
+    <File fileId="74" filename="$data/placeables/brandless/baleFeedingPot/baleFeedingPotSquare.i3d"/>
+    <File fileId="60" filename="$data/placeables/lely/astronautA5/astronautA5Decals_diffuse.png"/>
+    <File fileId="61" filename="$data/placeables/lely/astronautA5/astronautA5Decals_normal.png"/>
+    <File fileId="57" filename="$data/placeables/lely/astronautA5/astronautA5Hoses_normal.png"/>
+    <File fileId="58" filename="$data/placeables/lely/astronautA5/astronautA5Hoses_vmask.png"/>
+    <File fileId="27" filename="$data/placeables/lely/astronautA5/astronautA5_normal.png"/>
+    <File fileId="28" filename="$data/placeables/lely/astronautA5/astronautA5_vmask.png"/>
+    <File fileId="73" filename="$data/placeables/lely/nautilus/nautilusDecal_diffuse.png"/>
+    <File fileId="70" filename="$data/placeables/lely/nautilus/nautilusGrid_diffuse.png"/>
+    <File fileId="66" filename="$data/placeables/lely/nautilus/nautilus_normal.png"/>
+    <File fileId="67" filename="$data/placeables/lely/nautilus/nautilus_vmask.png"/>
+    <File fileId="4" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken01_diffuse.png"/>
+    <File fileId="5" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken01_normal.png"/>
+    <File fileId="6" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken01_specular.png"/>
+    <File fileId="7" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken02_diffuse.png"/>
+    <File fileId="8" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken02_normal.png"/>
+    <File fileId="9" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken02_specular.png"/>
+    <File fileId="23" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersCow01_diffuse.png"/>
+    <File fileId="24" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersCow01_normal.png"/>
+    <File fileId="25" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersCow01_specular.png"/>
+    <File fileId="10" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse01_diffuse.png"/>
+    <File fileId="11" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse01_normal.png"/>
+    <File fileId="12" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse01_specular.png"/>
+    <File fileId="13" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse02_diffuse.png"/>
+    <File fileId="14" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse02_normal.png"/>
+    <File fileId="15" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse02_specular.png"/>
+    <File fileId="16" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse03_diffuse.png"/>
+    <File fileId="17" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse03_normal.png"/>
+    <File fileId="18" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse03_specular.png"/>
+    <File fileId="19" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersSheep01_diffuse.png"/>
+    <File fileId="20" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersSheep01_normal.png"/>
+    <File fileId="21" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersSheep01_specular.png"/>
+    <File fileId="1" filename="$data/placeables/rudolfHormann/barnProps/pigFeeder_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/barnProps/pigFeeder_normal.png"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/barnProps/pigFeeder_specular.png"/>
+    <File fileId="69" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="78" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="29" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="64" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="65" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="68" filename="$data/shared/assets/assetLibraryDecals_vmask.png"/>
+    <File fileId="71" filename="$data/shared/default_normal.png"/>
+    <File fileId="72" filename="$data/shared/default_specular.png"/>
+    <File fileId="42" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="41" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="40" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="31" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="51" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="50" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="56" filename="$data/shared/detailLibrary/metallic/glass/glassClear01_specular.png"/>
+    <File fileId="39" filename="$data/shared/detailLibrary/metallic/metalGalvanized_diffuse.png"/>
+    <File fileId="38" filename="$data/shared/detailLibrary/metallic/metalGalvanized_normal.png"/>
+    <File fileId="37" filename="$data/shared/detailLibrary/metallic/metalGalvanized_specular.png"/>
+    <File fileId="49" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+    <File fileId="48" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+    <File fileId="44" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="43" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="47" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric2_diffuse.png"/>
+    <File fileId="46" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric2_normal.png"/>
+    <File fileId="45" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric2_specular.png"/>
+    <File fileId="63" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="62" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="32" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="30" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="54" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="59" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_diffuse.png"/>
+    <File fileId="53" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="52" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="26" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="55" filename="$data/shared/window_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="animalFeedersChicken01_mat" materialId="1283">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="animalFeedersChicken02_mat" materialId="1284">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="animalFeedersCow01_mat" materialId="1285">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="animalFeedersHorse01_mat" materialId="1286">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="animalFeedersHorse02_mat" materialId="1287">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="animalFeedersHorse03_mat" materialId="1288">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="animalFeedersSheep01_mat" materialId="1289">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="1290" customShaderId="69">
+      <Texture fileId="64"/>
+      <Normalmap fileId="65"/>
+      <Glossmap fileId="68"/>
+    </Material>
+    <Material name="astronautA5_bronzeScratched_mat" materialId="1291" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="48"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="49"/>
+      <CustomParameter name="colorScale" value="0.9647 0.4179 0.147"/>
+    </Material>
+    <Material name="astronautA5_chrome_mat" materialId="1292" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="50"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+    </Material>
+    <Material name="astronautA5_fabric2_mat" materialId="1293" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="45"/>
+      <Custommap name="detailNormal" fileId="46"/>
+      <Custommap name="detailDiffuse" fileId="47"/>
+      <CustomParameter name="porosity" value="1"/>
+    </Material>
+    <Material name="astronautA5_glassClear01_mat" materialId="1294" alphaBlending="true" customShaderId="29">
+      <Texture fileId="55"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="56"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="astronautA5_LELY_RED1_plasticPainted_mat" materialId="1295" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="40"/>
+      <Custommap name="detailNormal" fileId="41"/>
+      <Custommap name="detailDiffuse" fileId="42"/>
+      <CustomParameter name="colorScale" value="0.8751 0.0017 0.0303"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="astronautA5_metalGalvanized_mat" materialId="1296" alphaBlending="true" customShaderId="29" customShaderVariation="vmaskUV2">
+      <Texture fileId="64"/>
+      <Normalmap fileId="65"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="37"/>
+      <Custommap name="detailNormal" fileId="38"/>
+      <Custommap name="detailDiffuse" fileId="39"/>
+    </Material>
+    <Material name="astronautA5_metalGalvanized_mat1" materialId="1297" customShaderId="29" customShaderVariation="vmaskUV2">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="37"/>
+      <Custommap name="detailNormal" fileId="38"/>
+      <Custommap name="detailDiffuse" fileId="39"/>
+    </Material>
+    <Material name="astronautA5_metalGalvanized_mat2" materialId="1298" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="37"/>
+      <Custommap name="detailNormal" fileId="38"/>
+      <Custommap name="detailDiffuse" fileId="39"/>
+    </Material>
+    <Material name="astronautA5_metalPainted_mat" materialId="1299" alphaBlending="true" customShaderId="29" customShaderVariation="vmaskUV2">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="62"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="63"/>
+    </Material>
+    <Material name="astronautA5_plasticPainted_mat" materialId="1300" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="1 0.774 0"/>
+    </Material>
+    <Material name="astronautA5_plasticPainted_mat1" materialId="1301" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.347 0.347 0.347"/>
+    </Material>
+    <Material name="astronautA5_plasticPainted_mat2" materialId="1302" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+    </Material>
+    <Material name="astronautA5_plasticPaintedBlack_mat" materialId="1303" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="astronautA5_plasticPaintedShinyGray_mat" materialId="1304" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.252 0.252 0.252"/>
+      <CustomParameter name="smoothnessScale" value="1.52"/>
+    </Material>
+    <Material name="astronautA5_rubberBlack_mat" materialId="1305" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="52"/>
+      <Custommap name="detailNormal" fileId="53"/>
+      <Custommap name="detailDiffuse" fileId="54"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="astronautA5_silverScratched_mat" materialId="1306" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="detailSpecular" fileId="43"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="44"/>
+    </Material>
+    <Material name="astronautA5Hoses_rubber_mat" materialId="1307" customShaderId="29" customShaderVariation="vmaskUV2">
+      <Texture fileId="26"/>
+      <Normalmap fileId="57"/>
+      <Glossmap fileId="58"/>
+      <Custommap name="detailSpecular" fileId="52"/>
+      <Custommap name="detailNormal" fileId="53"/>
+      <Custommap name="detailDiffuse" fileId="59"/>
+      <CustomParameter name="colorScale" value="0.04 0.04 0.04"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="forestAnimalFeeders_mat" materialId="17797" customShaderId="78">
+      <Texture fileId="75"/>
+      <Normalmap fileId="76"/>
+      <Glossmap fileId="77"/>
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="logStores_mat" materialId="8050" customShaderId="78">
+      <Texture fileId="80"/>
+      <Normalmap fileId="81"/>
+      <Glossmap fileId="82"/>
+    </Material>
+    <Material name="nautilus_copperScratched_mat" materialId="1308" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="48"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="49"/>
+      <CustomParameter name="colorScale" value="0.9559 0.3467 0.2384"/>
+    </Material>
+    <Material name="nautilus_metalGalvanized_mat" materialId="1309" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="37"/>
+      <Custommap name="detailNormal" fileId="38"/>
+      <Custommap name="detailDiffuse" fileId="39"/>
+    </Material>
+    <Material name="nautilus_metalPainted_LELY_RED1_mat" materialId="1310" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="40"/>
+      <Custommap name="detailNormal" fileId="41"/>
+      <Custommap name="detailDiffuse" fileId="42"/>
+      <CustomParameter name="colorScale" value="0.8751 0.0017 0.0303"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="nautilus_metalPainted_mat" materialId="1311" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="62"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="63"/>
+      <CustomParameter name="colorScale" value="0.056 0.068 0.23"/>
+    </Material>
+    <Material name="nautilus_metalPaintedBlack_mat" materialId="1312" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="62"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="63"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="nautilus_plasticPainted_01_mat" materialId="1313" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.96 0.88 0"/>
+    </Material>
+    <Material name="nautilus_plasticPainted_02_mat" materialId="1314" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.0595 0.0595 0.0595"/>
+    </Material>
+    <Material name="nautilus_plasticPaintedBlack_mat" materialId="1315" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="nautilus_plasticPaintedGray_mat" materialId="1316" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.57 0.57 0.57"/>
+    </Material>
+    <Material name="nautilus_rubberBlack_mat" materialId="1317" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="52"/>
+      <Custommap name="detailNormal" fileId="53"/>
+      <Custommap name="detailDiffuse" fileId="54"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="nautilus_silverScratched_mat" materialId="1318" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="43"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="44"/>
+    </Material>
+    <Material name="nautilusDecal_mat" materialId="1319" alphaBlending="true" customShaderId="69">
+      <Texture fileId="73"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="72"/>
+    </Material>
+    <Material name="nautilusGrid_mat" materialId="1320" customShaderId="69">
+      <Texture fileId="70"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="72"/>
+    </Material>
+    <Material name="pigFeeder_mat" materialId="1321">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories11_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Animal" translation="-104.894 -34.5547 -146.083" nodeId="1344">
+      <Shape name="pigFeeder" translation="1.4959 0 -1.44756" shapeId="1" static="true" clipDistance="100" nodeId="1345" castsShadows="true" receiveShadows="true" materialIds="1321"/>
+      <Shape name="animalFeedersChicken01" translation="4.24177 0 -0.525894" shapeId="2" clipDistance="150" nodeId="1346" castsShadows="true" receiveShadows="true" materialIds="1283"/>
+      <Shape name="animalFeedersChicken02" translation="3.32175 0 -0.54744" shapeId="3" clipDistance="150" nodeId="1347" castsShadows="true" receiveShadows="true" materialIds="1284"/>
+      <Shape name="animalFeedersHorse01" translation="1.6233 0 -0.691864" shapeId="4" clipDistance="150" nodeId="1348" castsShadows="true" receiveShadows="true" materialIds="1286"/>
+      <Shape name="animalFeedersHorse02" translation="2.75391 0 -0.661484" shapeId="5" clipDistance="150" nodeId="1349" castsShadows="true" receiveShadows="true" materialIds="1287"/>
+      <Shape name="animalFeedersHorse03" translation="5.9559 0 -0.551529" shapeId="6" clipDistance="150" nodeId="1350" castsShadows="true" receiveShadows="true" materialIds="1288"/>
+      <Shape name="animalFeedersSheep01" translation="5.90876 0 -1.47186" shapeId="7" clipDistance="150" nodeId="1351" castsShadows="true" receiveShadows="true" materialIds="1289"/>
+      <Shape name="animalFeedersCow" lockedgroup="true" translation="3.78205 0.269575 -1.47905" shapeId="8" static="true" density="0.0001" nodeId="1352" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="visual" translation="0 0.018643 5.72205e-08" shapeId="9" clipDistance="150" nodeId="1353" castsShadows="true" receiveShadows="true" materialIds="1285"/>
+      </Shape>
+      <Shape name="lelyAstronautA5" lockedgroup="true" translation="-1.7485 0 -1.13788" shapeId="10" clipDistance="100" nodeId="1354" castsShadows="true" receiveShadows="true" materialIds="1302,1298,1303,1295,1306,1295,1304,1300,1295,1293,1291,1292,1305,1301">
+        <Shape name="glass" translation="0 -0.0581 0" shapeId="11" clipDistance="75" nodeId="1355" castsShadows="true" receiveShadows="true" materialIds="1294"/>
+        <Shape name="hoses" translation="0 -0.0581 0" shapeId="12" clipDistance="75" nodeId="1356" castsShadows="true" receiveShadows="true" materialIds="1307"/>
+        <Shape name="decal" translation="0 -0.0581 0" shapeId="13" clipDistance="75" nodeId="1357" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1299"/>
+        <Shape name="alpha_decal" translation="0 -0.0581 0" shapeId="14" clipDistance="15" nodeId="1358" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1297"/>
+        <Shape name="screws_decal" translation="0 -0.0581 0" shapeId="15" clipDistance="15" nodeId="1359" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1296"/>
+        <Shape name="collision" shapeId="16" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="1360" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <Shape name="nautilus" lockedgroup="true" translation="-4.72316 0 -1.53578" shapeId="17" clipDistance="300" nodeId="1361" castsShadows="true" receiveShadows="true" materialIds="1317,1318,1312,1309,1316,1308,1311,1313,1310,1315,1314">
+        <Shape name="screwsDecals" shapeId="18" clipDistance="20" nodeId="1362" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1290"/>
+        <Shape name="grid" shapeId="19" clipDistance="300" nodeId="1363" castsShadows="true" receiveShadows="true" materialIds="1320"/>
+        <Shape name="decals" shapeId="20" clipDistance="50" nodeId="1364" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1319"/>
+        <Shape name="collision" translation="0 1.0606 0.081171" shapeId="21" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="1365" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <ReferenceNode name="baleFeedingPotSquare" translation="8.21217 0 -1.38516" rotation="-3.94171e-05 89.4988 -2.83383e-05" referenceId="74" nodeId="1371"/>
+      <TransformGroup name="forestAnimalFeeders01" lockedgroup="true" translation="8.30403 0 2.98087" clipDistance="120" nodeId="17808">
+        <TransformGroup name="visual_lod" lodDistance="0 30" nodeId="17809">
+          <Shape name="LOD0" shapeId="22" clipDistance="100" nodeId="17810" castsShadows="true" receiveShadows="true" materialIds="17797"/>
+          <Shape name="LOD1" shapeId="23" clipDistance="150" nodeId="17811" castsShadows="true" receiveShadows="true" materialIds="17797"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="24" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="17812" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="forestAnimalFeeders02" lockedgroup="true" translation="13.7941 0 -0.970184" clipDistance="120" nodeId="17813">
+        <TransformGroup name="visual_lod" lodDistance="0 30" nodeId="17814">
+          <Shape name="LOD0" shapeId="25" clipDistance="100" nodeId="17815" castsShadows="true" receiveShadows="true" materialIds="17797"/>
+          <Shape name="LOD1" shapeId="26" clipDistance="200" nodeId="17816" castsShadows="true" receiveShadows="true" materialIds="17797"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="27" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="17817" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="forestAnimalFeeders03" lockedgroup="true" translation="13.585 -3.8147e-06 3.70354" clipDistance="120" nodeId="17818">
+        <TransformGroup name="visual_lod" lodDistance="0 30" nodeId="17819">
+          <Shape name="LOD0" shapeId="28" clipDistance="100" nodeId="17820" castsShadows="true" receiveShadows="true" materialIds="17797"/>
+          <Shape name="LOD1" shapeId="29" clipDistance="200" nodeId="17821" castsShadows="true" receiveShadows="true" materialIds="17797"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="30" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="17822" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="logStore02" lockedgroup="true" translation="-2.06047 0 3.10031" clipDistance="200" nodeId="18388">
+        <TransformGroup name="visual_lod" lodDistance="0 20" nodeId="18389">
+          <Shape name="LOD0" shapeId="31" nodeId="18390" castsShadows="true" receiveShadows="true" materialIds="8050">
+            <Shape name="logStore02_detail" shapeId="32" clipDistance="12" nodeId="18391" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="33" nodeId="18392" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="34" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="18393" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="logStore03" lockedgroup="true" translation="1.33072 0 3.02504" clipDistance="200" nodeId="18394">
+        <TransformGroup name="visual_lod" lodDistance="0 20" nodeId="18395">
+          <Shape name="LOD0" shapeId="35" nodeId="18396" castsShadows="true" receiveShadows="true" materialIds="8050">
+            <Shape name="logStore03_detail" shapeId="36" clipDistance="12" nodeId="18397" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="37" nodeId="18398" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="38" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="18399" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="logStore04" lockedgroup="true" translation="5.24455 0 2.8293" clipDistance="200" nodeId="18400">
+        <TransformGroup name="visual_lod" lodDistance="0 20" nodeId="18401">
+          <Shape name="LOD0" shapeId="39" nodeId="18402" castsShadows="true" receiveShadows="true" materialIds="8050">
+            <Shape name="logStore04_detail" shapeId="40" clipDistance="12" nodeId="18403" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="41" nodeId="18404" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="42" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="18405" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

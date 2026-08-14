@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farmoffice.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapEU/textures/buildings/carDealerStorage/doorsSET_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/buildings/carDealerStorage/doorsSET_normal.dds"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/buildings/carDealerStorage/doorsSET_specular.dds"/>
+    <File fileId="15" filename="$data/maps/textures/shared/concreteGeneric_diffuse.dds"/>
+    <File fileId="16" filename="$data/maps/textures/shared/concreteGeneric_normal.dds"/>
+    <File fileId="17" filename="$data/maps/textures/shared/concreteGeneric_specular.dds"/>
+    <File fileId="10" filename="$data/maps/textures/shared/windowsIndustrial_diffuse.dds"/>
+    <File fileId="11" filename="$data/maps/textures/shared/windowsIndustrial_normal.dds"/>
+    <File fileId="12" filename="$data/maps/textures/shared/windowsIndustrial_specular.dds"/>
+    <File fileId="7" filename="$data/placeables/easySheds/shared/easySheds01_diffuse.dds"/>
+    <File fileId="8" filename="$data/placeables/easySheds/shared/easySheds01_normal.dds"/>
+    <File fileId="9" filename="$data/placeables/easySheds/shared/easySheds01_specular.dds"/>
+    <File fileId="4" filename="$data/placeables/mapUS/tinySheds/tinyShed03_diffuse.dds"/>
+    <File fileId="5" filename="$data/placeables/mapUS/tinySheds/tinyShed03_normal.dds"/>
+    <File fileId="6" filename="$data/placeables/mapUS/tinySheds/tinyShed03_specular.dds"/>
+    <File fileId="13" filename="../textures/officeDecal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="greenTop" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="greenTop" materialId="6">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="Material" materialId="8">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="officeDecal" materialId="73" specularColor="0.501961 1 0" alphaBlending="true">
+      <Texture fileId="13"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="11" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="windows" materialId="12">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farmoffice.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="farmOffice" nodeId="27">
+      <Shape name="SideBuilding01" translation="0 0 -3.38171e-06" scale="0.1 1 0.385" shapeId="1" clipDistance="10000" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="5">
+        <Shape name="roofSide" scale="10 2.5974 1" shapeId="2" clipDistance="10000" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="Galvbeam.001" scale="10 2.5974 1" shapeId="3" clipDistance="1000" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="Galvbeam.002" shapeId="4" clipDistance="1000" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="Galvbeam.003" shapeId="5" clipDistance="1000" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="Galvbeam.004" shapeId="6" clipDistance="1000" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="Cube.008" shapeId="7" clipDistance="1000" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </Shape>
+        <Shape name="officeDecal" scale="10 2.5974 1" shapeId="8" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="73"/>
+        <Shape name="office" translation="0 -0.2 0" scale="2.5974 1 10" shapeId="9" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="base" translation="-2.05296 8.98446e-14 -2.20368e-07" scale="152 0.1 23.6364" shapeId="10" nodeId="37" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+        <Shape name="col" scale="22.8571 2.6 150" shapeId="11" visibility="false" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="38" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="11"/>
+      </Shape>
+      <TransformGroup name="clearArea" translation="0 0 -3.38171e-06" nodeId="39">
+        <TransformGroup name="clearArea1Start" nodeId="40">
+          <TransformGroup name="clearArea1Width" nodeId="41"/>
+          <TransformGroup name="clearArea1Height" nodeId="42"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" translation="0 0 -3.38171e-06" nodeId="43">
+        <TransformGroup name="levelArea1Start" nodeId="44">
+          <TransformGroup name="levelArea1Width" nodeId="45"/>
+          <TransformGroup name="levelArea1Height" nodeId="46"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="0 0 -3.38171e-06" nodeId="47">
+        <TransformGroup name="indoorAreaStart" nodeId="48">
+          <TransformGroup name="indoorAreaWidth" nodeId="49"/>
+          <TransformGroup name="indoorAreaHeight" nodeId="50"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="0 0 -3.38171e-06" nodeId="51">
+        <TransformGroup name="testArea1Start" nodeId="52">
+          <TransformGroup name="testArea1End" nodeId="53"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="0 0 -3.38171e-06" nodeId="54">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" nodeId="55">
+          <TransformGroup name="tipOcclusionUpdateArea1End" nodeId="56"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="farmhouse" translation="-6.43833 -0.231496 11.1413" nodeId="57">
+        <TransformGroup name="sleepTriggerMarker" translation="7.06673 0.485 -3.27704" nodeId="58"/>
+        <TransformGroup name="spawnPoint" translation="6.99695 0 -3.30875" nodeId="59"/>
+        <Camera name="sleepCamera" translation="9.15202 3.14825 -1.23975" rotation="-22.0034 56.7607 2.12952e-06" nodeId="60" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+        <Shape name="sleepingTrigger" translation="-0.562917 -0.0437577 0" shapeId="12" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="wardrobe" translation="-11.0133 0.168631 4.84694" nodeId="62">
+        <TransformGroup name="wardrobeTriggerMarker" translation="8 0.485 3.29161" nodeId="63"/>
+        <Shape name="wardrobeTrigger" translation="0.594139 0 0" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </TransformGroup>
+      <Camera name="Camera" translation="0 0 -3.38171e-06" visibility="false" nodeId="65" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="93">
+    <author>Reddog</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>British Grain Sheds</en>
+        <de>Britische Getreideschuppen</de>
+    </title>
+
+<description>
+<en><![CDATA[
+British Style Grain Barns
+
+Available in Green and Blue, and with concrete pads or without.
+
+1 Door - 1000T
+Price £65000
+Daily upkeep £35
+
+2 Door - 2000T
+Price £110000
+Daily upkeep £70
+
+2 Door - 3000T with vehicle cover
+Price £130000
+Daily upkeep £85
+
+Sliding Door - 2500T
+Price £80000
+Daily upkeep £25
+
+
+]]>
+</en> 
+       
+<de><![CDATA[
+
+Getreidescheunen im britischen Stil
+
+Erhältlich in Grün und Blau, mit oder ohne Betonpolster.
+
+1 Tür - 1000T
+Preis €65000
+Täglicher Unterhalt €35
+
+2 Türen - 2000T
+Preis €110000
+Täglicher Unterhalt €70
+
+2 Türer - 3000T mit Fahrzeugabdeckung
+Preis €130000
+Täglicher Unterhalt €85
+
+Schiebetür - 2500T
+Preis £80000
+Täglicher Unterhalt €25
+
+]]>
+</de>
+
+</description>
+<l10n filenamePrefix="languages/l10n"/>
+    <iconFilename>icon_BritishGrainSheds.dds</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<storeItems>
+        <storeItem xmlFilename="shed01.xml"/>
+        <storeItem xmlFilename="shed01_B.xml"/>
+        <storeItem xmlFilename="shed01UB.xml"/>
+        <storeItem xmlFilename="shed01UB_B.xml"/>
+        <storeItem xmlFilename="shed02.xml"/>
+        <storeItem xmlFilename="shed02_B.xml"/>
+        <storeItem xmlFilename="shed02UB.xml"/>
+        <storeItem xmlFilename="shed02UB_B.xml"/>
+        <storeItem xmlFilename="shed03.xml"/>
+        <storeItem xmlFilename="shed03RUB.xml"/>
+        <storeItem xmlFilename="shed04.xml"/>
+	
+	</storeItems>
+
+</modDesc>

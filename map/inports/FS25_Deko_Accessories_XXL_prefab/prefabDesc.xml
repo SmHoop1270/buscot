@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+   <author>DS-Power</author>
+   <version>1.0.0.0</version>
+	<title>
+        <en>Deko Accessories XXL</en>
+		<de>Deko Zubehör XXL</de>
+    </title>
+<description>
+<en><![CDATA[With this prefab you get several objects for the map. Have fun
+
+Deko_Accessories1_XXL_DS_prefab.i3d | Trees
+Deko_Accessories2_XXL_DS_prefab.i3d | Bike, Boat, Shopping, Carts
+Deko_Accessories3_XXL_DS_prefab.i3d | Container
+Deko_Accessories4_XXL_DS_prefab.i3d | Billboard, AD, Flag
+Deko_Accessories5_XXL_DS_prefab.i3d | Pipes accessories
+Deko_Accessories6_XXL_DS_prefab.i3d | Pipes accessories 2
+Deko_Accessories7_XXL_DS_prefab.i3d | Traffic Signs
+Deko_Accessories8_XXL_DS_prefab.i3d | Furniture accessories
+Deko_Accessories9_XXL_DS_prefab.i3d | Grain Gate
+Deko_Accessories10_XXL_DS_prefab.i3d | Bale accessories
+Deko_Accessories11_XXL_DS_prefab.i3d | Animal accessories
+Deko_Accessories12_XXL_DS_prefab.i3d | Playground
+Deko_Accessories13_XXL_DS_prefab.i3d | Bridge, flood Gate
+Deko_Accessories14_XXL_DS_prefab.i3d | Light accessories
+Deko_Accessories15_XXL_DS_prefab.i3d | Boxes and cartons, Pallets
+Deko_Accessories16_XXL_DS_prefab.i3d | Boxes and cartons, Pallets2
+Deko_Accessories17_XXL_DS_prefab.i3d | Boxes and cartons, Pallets 3
+Deko_Accessories18_XXL_DS_prefab.i3d | Construction accessories
+Deko_Accessories19_XXL_DS_prefab.i3d | Garden Shed
+Deko_Accessories20_XXL_DS_prefab.i3d | Electricity and Air Condition
+Deko_Accessories21_XXL_DS_prefab.i3d | Flower accessories
+Deko_Accessories22_XXL_DS_prefab.i3d | Flower accessories 2
+Deko_Accessories23_XXL_DS_prefab.i3d | Hand accessories
+Deko_Accessories24_XXL_DS_prefab.i3d | Hand accessories 2
+Deko_Accessories25_XXL_DS_prefab.i3d | Hand accessories 3
+Deko_Accessories26_XXL_DS_prefab.i3d | Hand accessories 4
+Deko_Accessories27_XXL_DS_prefab.i3d | Wood accessories
+Deko_Accessories28_XXL_DS_prefab.i3d | Recycling accessories
+Deko_Accessories29_XXL_DS_prefab.i3d | Fences, walls, floor accessories
+Deko_Accessories30_XXL_DS_prefab.i3d | Decals
+Deko_Accessories31_XXL_DS_prefab.i3d | Ground Decals
+Deko_Accessories32_XXL_DS_prefab.i3d | Ground Decals2
+Deko_Accessories33_XXL_DS_prefab.i3d | Rock
+Deko_Accessories34_XXL_DS_prefab.i3d | Furnishing accessories
+Deko_Accessories35_XXL_DS_prefab.i3d | Furnishing accessories 2
+Deko_Accessories36_XXL_DS_prefab.i3d | Awning
+Deko_Accessories37_XXL_DS_prefab.i3d | Barrier
+Deko_Accessories38_XXL_DS_prefab.i3d | Rock 2
+Deko_Accessories39_XXL_DS_prefab.i3d | Boxes and cartons, Pallets 4]]></en>
+
+<de><![CDATA[Mit diesem Prefab bekommst du mehrere Objekte für die Map. Viel Spaß
+
+Deko_Accessories1_XXL_DS_prefab.i3d | Bäume
+Deko_Accessories2_XXL_DS_prefab.i3d | Fahrrad, Boot, Einkaufswagen, Karren
+Deko_Accessories3_XXL_DS_prefab.i3d | Container
+Deko_Accessories4_XXL_DS_prefab.i3d | Plakat, AD, Fahne
+Deko_Accessories5_XXL_DS_prefab.i3d | Rohre Zubehör
+Deko_Accessories6_XXL_DS_prefab.i3d | Rohrleitungen Zubehör 2
+Deko_Accessories7_XXL_DS_prefab.i3d | Verkehrsschilder
+Deko_Accessories8_XXL_DS_prefab.i3d | Zubehör für Möbel
+Deko_Accessories9_XXL_DS_prefab.i3d | Getreidetor
+Deko_Accessories10_XXL_DS_prefab.i3d | Ballen-Zubehör
+Deko_Accessories11_XXL_DS_prefab.i3d | Zubehör für Tiere
+Deko_Accessories12_XXL_DS_prefab.i3d | Spielplatz
+Deko_Accessories13_XXL_DS_prefab.i3d | Brücke, Fluttor
+Deko_Accessories14_XXL_DS_prefab.i3d | Licht-Zubehör
+Deko_Accessories15_XXL_DS_prefab.i3d | Kisten und Kartons, Paletten
+Deko_Accessories16_XXL_DS_prefab.i3d | Kisten und Kartons, Paletten2
+Deko_Accessories17_XXL_DS_prefab.i3d | Kisten und Kartons, Paletten 3
+Deko_Accessories18_XXL_DS_prefab.i3d | Bauzubehör
+Deko_Accessories19_XXL_DS_prefab.i3d | Gartenhäuschen
+Deko_Accessories20_XXL_DS_prefab.i3d | Elektrizität und Klimaanlagen
+Deko_Accessories21_XXL_DS_prefab.i3d | Blumenzubehör
+Deko_Accessories22_XXL_DS_prefab.i3d | Blumenzubehör 2
+Deko_Accessories23_XXL_DS_prefab.i3d | Hand-Zubehör
+Deko_Accessories24_XXL_DS_prefab.i3d | Handliches Zubehör 2
+Deko_Accessories25_XXL_DS_prefab.i3d | Hand-Accessoires 3
+Deko_Accessories26_XXL_DS_prefab.i3d | Hand-Accessoires 4
+Deko_Accessories27_XXL_DS_prefab.i3d | Holz-Accessoires
+Deko_Accessories28_XXL_DS_prefab.i3d | Recycling-Zubehör
+Deko_Accessories29_XXL_DS_prefab.i3d | Zäune, Wände, Bodenzubehör
+Deko_Accessories30_XXL_DS_prefab.i3d | Aufkleber
+Deko_Accessories31_XXL_DS_prefab.i3d | Bodendekore
+Deko_Accessories32_XXL_DS_prefab.i3d | Bodendekore 2
+Deko_Accessories33_XXL_DS_prefab.i3d | Felsen
+Deko_Accessories34_XXL_DS_prefab.i3d | Einrichtungszubehör
+Deko_Accessories35_XXL_DS_prefab.i3d | Einrichtungszubehör 2
+Deko_Accessories36_XXL_DS_prefab.i3d | Markise
+Deko_Accessories37_XXL_DS_prefab.i3d | Barriere
+Deko_Accessories38_XXL_DS_prefab.i3d | Felsen 2
+Deko_Accessories39_XXL_DS_prefab.i3d | Kisten und Kartons, Paletten 4]]></de>
+</description>
+
+    <categories>
+        <category>Other</category>
+    </categories>
+
+    <iconFilename>icon_Deko_Accessories_XXL_DS.dds</iconFilename>
+	
+    <prefabs>	
+        <prefab name="Deko1_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories1_XXL_DS_prefab.i3d" />
+        <prefab name="Deko2_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories2_XXL_DS_prefab.i3d" />		
+        <prefab name="Deko3_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories3_XXL_DS_prefab.i3d" />		
+        <prefab name="Deko4_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories4_XXL_DS_prefab.i3d" />		
+        <prefab name="Deko5_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories5_XXL_DS_prefab.i3d" />
+        <prefab name="Deko6_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories6_XXL_DS_prefab.i3d" />
+        <prefab name="Deko7_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories7_XXL_DS_prefab.i3d" />
+        <prefab name="Deko8_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories8_XXL_DS_prefab.i3d" />
+        <prefab name="Deko9_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories9_XXL_DS_prefab.i3d" />
+        <prefab name="Deko10_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories10_XXL_DS_prefab.i3d" />
+        <prefab name="Deko11_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories11_XXL_DS_prefab.i3d" />
+        <prefab name="Deko12_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories12_XXL_DS_prefab.i3d" />
+        <prefab name="Deko13_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories13_XXL_DS_prefab.i3d" />
+        <prefab name="Deko14_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories14_XXL_DS_prefab.i3d" />
+        <prefab name="Deko15_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories15_XXL_DS_prefab.i3d" />
+        <prefab name="Deko16_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories16_XXL_DS_prefab.i3d" />
+        <prefab name="Deko17_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories17_XXL_DS_prefab.i3d" />	
+        <prefab name="Deko18_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories18_XXL_DS_prefab.i3d" />
+        <prefab name="Deko19_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories19_XXL_DS_prefab.i3d" />		
+        <prefab name="Deko20_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories20_XXL_DS_prefab.i3d" />		
+        <prefab name="Deko21_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories21_XXL_DS_prefab.i3d" />		
+        <prefab name="Deko22_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories22_XXL_DS_prefab.i3d" />
+        <prefab name="Deko23_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories23_XXL_DS_prefab.i3d" />
+        <prefab name="Deko24_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories24_XXL_DS_prefab.i3d" />
+        <prefab name="Deko25_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories25_XXL_DS_prefab.i3d" />
+        <prefab name="Deko26_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories26_XXL_DS_prefab.i3d" />
+        <prefab name="Deko27_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories27_XXL_DS_prefab.i3d" />
+        <prefab name="Deko28_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories28_XXL_DS_prefab.i3d" />
+        <prefab name="Deko29_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories29_XXL_DS_prefab.i3d" />
+        <prefab name="Deko30_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories30_XXL_DS_prefab.i3d" />
+        <prefab name="Deko31_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories31_XXL_DS_prefab.i3d" />	
+        <prefab name="Deko32_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories32_XXL_DS_prefab.i3d" />
+        <prefab name="Deko33_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories33_XXL_DS_prefab.i3d" />
+        <prefab name="Deko34_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories34_XXL_DS_prefab.i3d" /> 
+        <prefab name="Deko35_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories35_XXL_DS_prefab.i3d" />
+        <prefab name="Deko36_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories36_XXL_DS_prefab.i3d" />
+        <prefab name="Deko37_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories37_XXL_DS_prefab.i3d" />
+        <prefab name="Deko38_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories38_XXL_DS_prefab.i3d" />
+        <prefab name="Deko39_Accessories_XXL_DS_prefab" 	i3dFilename="Deko_Accessories39_XXL_DS_prefab.i3d" />	
+    </prefabs>
+</prefabDesc>
+

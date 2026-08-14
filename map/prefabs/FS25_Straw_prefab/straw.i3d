@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="straw.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="3" filename="textures/hay_diffuse.dds"/>
+    <File fileId="1" filename="textures/straw_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="5" alphaBlending="true" customShaderId="2">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="default" materialId="6" alphaBlending="true" customShaderId="2">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="straw.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="straw" shapeId="1" nodeId="10" castsShadows="true" receiveShadows="true" materialIds="6"/>
+    <Shape name="straw " translation="0 0 -1.5" shapeId="2" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="6"/>
+    <Shape name="hay" translation="-1 0 -1.5" shapeId="2" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="5"/>
+    <Shape name="hay" translation="-1 0 0" shapeId="1" nodeId="13" castsShadows="true" receiveShadows="true" materialIds="5"/>
+  </Scene>
+
+</i3D>

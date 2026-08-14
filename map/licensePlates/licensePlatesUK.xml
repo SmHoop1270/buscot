@@ -1,0 +1,733 @@
+<licensePlates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/mapLicensePlates.xsd">
+
+    <!--UK licencePlates - CRS Design version 1.0  28/11/2024-->
+                                                                 
+    <!-- UK font --> 
+	<font name="LICENSE_PLATE_UK" />
+    
+	<!-- allow colour configurations for the licensePlate text and border --> 
+	<colorConfigurations materialName="licensePlateColored_mat" useDefaultColors="true">
+        <colorConfiguration name="$l10n_ui_colorBlack" color="0.0212 0.0212 0.0212"/>
+    </colorConfigurations>
+	
+	<!-- set default placement of licencePlate -->
+    <placement defaultType="back_only"/>
+	
+	
+    <licensePlate filename="map/licensePlates/licensePlatesUK.i3d" node="0" type="ELONGATED" width="0.52" height="0.11">
+        <font size="0.075" scaleX="0.85" scaleY="0.9"/>
+        <variations>
+		<!-- variation 1: no badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 2: blank blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 3: UK blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="ANY"/>   <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="ANY"/>  <!-- badgeText UK -->
+            </variation>
+		<!-- variation 4: GB blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="ANY"/>   <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="ANY"/>   <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 5: ENG blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="ANY"/>   <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="ANY"/>   <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 6: CYM blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="ANY"/>   <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="ANY"/>   <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 7: SCO blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="ANY"/>   <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="ANY"/>  <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 8: IRL blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="ANY"/>   <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="ANY"/>  <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 9: GBM blue badge -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>				
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="ANY"/>   <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="ANY"/>  <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+		<!-- variation 10: blank green badge (electric) -->
+            <variation>
+                <value node="0|0" posX="-0.1775" numerical="false"  alphabetical="true" locked="false"    />
+                <value node="0|1" posX="-0.1175" numerical="true"   alphabetical="true"                   />
+                <value node="0|2" posX="-0.0625" numerical="true"   alphabetical="false"                  />
+                <value node="0|3" posX="0.0025"  numerical="true"   alphabetical="false"                  />
+                <value node="0|4" posX="0.0875"  numerical="false"  alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.1475"  numerical="false"  alphabetical="true"                   />
+                <value node="0|6" posX="0.2075"  numerical="false"  alphabetical="true"                   />
+                <value node="0"   posX="0"       isStatic="true"    position="ANY"                        />
+
+				<!-- badge: green --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.474 0.076"/>
+                </material>
+				
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        </variations>
+
+        <frame node="3" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+	
+    <licensePlate filename="map/licensePlates/licensePlatesUK.i3d" node="1" type="SQUARISH" width="0.255" height="0.130">
+        <font size="0.055" scaleX="0.85" scaleY="0.9"/>
+        <variations> <!-- spacing 0.0405 between all letters | second row offset by 0.0202 to top row --> 
+        <!-- variation 1: no badge -->
+			<variation>
+                <value node="0|0" posX="-0.0636" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="-0.0231"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0174"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0579"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0433" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="-0.0028"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0377"  posY="-0.02" numerical="false" alphabetical="true"/>            
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 2: blank blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 3: UK blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="ANY"/>   <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="ANY"/>  <!-- badgeText UK -->
+            </variation>
+        <!-- variation 4: GB blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="ANY"/>   <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="ANY"/>   <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 5: ENG blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="ANY"/>   <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="ANY"/>   <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 6: CYM blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="ANY"/>   <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="ANY"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 7: SCO blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="ANY"/>   <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="ANY"/>  <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 8: IRL blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="ANY"/>   <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="ANY"/>  <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 9: GBM blue badge -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: blue --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.153 0.418"/>
+                </material>					
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="ANY"/>   <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="ANY"/>  <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        <!-- variation 10: blank green badge (electric) -->
+			<variation>
+                <value node="0|0" posX="-0.0336" posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|1" posX="0.0069"  posY="0.03"  numerical="false" alphabetical="true"/>
+                <value node="0|2" posX="0.0474"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|3" posX="0.0879"  posY="0.03"  numerical="true"  alphabetical="false"/>
+                <value node="0|4" posX="-0.0133" posY="-0.02" numerical="false" alphabetical="true" nextSection="true"/>
+                <value node="0|5" posX="0.0272"  posY="-0.02" numerical="false" alphabetical="true"/>
+                <value node="0|6" posX="0.0677"  posY="-0.02" numerical="false" alphabetical="true"/>
+	            
+				<!-- badge: green --> 
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0 0.474 0.076"/>
+                </material>
+
+				<!-- two plate types for front and back colour change -->
+                <value node="2|0"  posX="0" isStatic="true" position="FRONT"/>
+                <value node="2|1"  posX="0" isStatic="true" position="BACK" />
+
+				<!-- set decal position per variation type -->
+                <value node="1|0" isStatic="true" position="ANY"/>   <!-- manufacturerBanner -->
+				<value node="1|1" isStatic="true" position="NONE"/>  <!-- badgeFlag CYM -->
+				<value node="1|2" isStatic="true" position="NONE"/>  <!-- badgeFlag ENG -->
+				<value node="1|3" isStatic="true" position="NONE"/>  <!-- badgeFlag GBM -->
+				<value node="1|4" isStatic="true" position="NONE"/>  <!-- badgeFlag IRL -->
+				<value node="1|5" isStatic="true" position="NONE"/>  <!-- badgeFlag SCO -->
+				<value node="1|6" isStatic="true" position="NONE"/>  <!-- badgeFlag UK -->
+				<value node="1|7" isStatic="true" position="NONE"/>  <!-- badgeText CYM -->
+				<value node="1|8" isStatic="true" position="NONE"/>  <!-- badgeText ENG -->
+				<value node="1|9" isStatic="true" position="NONE"/>  <!-- badgeText GB -->
+				<value node="1|10" isStatic="true" position="NONE"/> <!-- badgeText GBM -->
+				<value node="1|11" isStatic="true" position="NONE"/> <!-- badgeText IRL -->
+				<value node="1|12" isStatic="true" position="NONE"/> <!-- badgeText SCO -->
+				<value node="1|13" isStatic="true" position="NONE"/> <!-- badgeText UK -->
+            </variation>
+        </variations>	
+		
+        <frame node="3" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+</licensePlates>

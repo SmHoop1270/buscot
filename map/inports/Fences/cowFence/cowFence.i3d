@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cowFence" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/placeables/brandless/fences/husbandries/cowFence/cowFence_diffuse.png" />
+    <File fileId="2" filename="$data/placeables/brandless/fences/husbandries/cowFence/cowFence_normal.png" />
+    <File fileId="3" filename="$data/placeables/brandless/fences/husbandries/cowFence/cowFence_specular.png" />
+    <File fileId="4" filename="$data/shaders/placeableShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="cowFence_mat" materialId="2" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="cowFence_mat2" materialId="3" customShaderId="4" customShaderVariation="vertexOffset">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cowFence.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="pole01" nodeId="1">
+      <Shape name="col" shapeId="1" static="true" density="0" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <Shape name="visual" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="120" nodeId="3"/>
+    </TransformGroup>
+    <TransformGroup name="panel01" nodeId="4">
+      <Shape name="col" shapeId="3" static="true" density="0" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+      <Shape name="visual" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="120" nodeId="6"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

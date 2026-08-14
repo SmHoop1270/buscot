@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farm_objectStorage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farm_objectStorage.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="objectStorage" nodeId="12">
+      <TransformGroup name="0.5" nodeId="13">
+        <TransformGroup name="testArea1Start" translation="-6.63372 0 -1.01251" nodeId="14">
+          <TransformGroup name="testArea1End" translation="13.5264 7.5 11.9258" nodeId="15"/>
+        </TransformGroup>
+        <TransformGroup name="clearArea1Start" translation="-6.25 0 -1.25" nodeId="16">
+          <TransformGroup name="clearArea1Width" translation="0 0 9.80576" nodeId="17"/>
+          <TransformGroup name="clearArea1Height" translation="12.5 0 0" nodeId="18"/>
+        </TransformGroup>
+        <TransformGroup name="levelArea1Start" translation="-6.25 0 -0.276048" nodeId="19">
+          <TransformGroup name="levelArea1Width" translation="0 0 8.26481" nodeId="20"/>
+          <TransformGroup name="levelArea1Height" translation="12.5 0 0" nodeId="21"/>
+        </TransformGroup>
+        <TransformGroup name="indoorArea1Start" translation="-5.8 0 -11.8" nodeId="22">
+          <TransformGroup name="indoorArea1Width" translation="-0 0 29.82" nodeId="23"/>
+          <TransformGroup name="indoorArea1Height" translation="11.6 0 0" nodeId="24"/>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.25 0 -12.25" nodeId="25">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.5 0 24.5" nodeId="26"/>
+        </TransformGroup>
+        <TransformGroup name="objectStorage" nodeId="27">
+          <TransformGroup name="areas" nodeId="28">
+            <TransformGroup name="storageArea1Start" translation="0.7 0.05 -2" nodeId="29">
+              <TransformGroup name="storageArea1End" translation="4 0.125 10" nodeId="30"/>
+            </TransformGroup>
+            <TransformGroup name="spawnSpace1start" translation="-6 0 -2.8" nodeId="31">
+              <TransformGroup name="spawnSpace1end" translation="6 0 5" nodeId="32"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="objectTrigger" translation="-2.59089 0 7.26252" rotation="0 90 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+            <TransformGroup name="objectTriggerMarker" nodeId="34"/>
+            <Shape name="warningStripes" translation="4.13885 0.01 -0.388601" scale="1.2 1 1.2" shapeId="2" clipDistance="300" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="warningStripes" translation="4.12328 0.01 5.2" shapeId="2" clipDistance="300" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="playerTrigger" translation="-6.27553 0.5 -5.13395" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" clipDistance="600" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+            <TransformGroup name="playerTriggerMarker" nodeId="38"/>
+          </Shape>
+          <Shape name="infoTrigger" translation="-1.23906 1.66444 -4.44048" scale="0.602602 1 0.0924702" shapeId="4" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

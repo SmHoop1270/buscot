@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="manureHeapExtension.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="../textures/pigPen_diffuse.dds"/>
+    <File fileId="3" filename="../textures/pigPen_normal.dds"/>
+    <File fileId="4" filename="../textures/pigPen_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="manureConcrete_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="manureHeapExtension.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="manureHeap" clipDistance="600" nodeId="16">
+      <TransformGroup name="clearAreas" nodeId="17">
+        <TransformGroup name="clearAreaStart01" translation="-5 0 -7.5" nodeId="18">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 15" nodeId="19"/>
+          <TransformGroup name="clearAreaHeight01" translation="10 0 0" nodeId="20"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreaStart02" translation="-5 0 7.43835" nodeId="58">
+          <TransformGroup name="clearAreaWidth02" translation="0 0 5.55686" nodeId="59"/>
+          <TransformGroup name="clearAreaHeight02" translation="10 0 0" nodeId="60"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="21">
+        <TransformGroup name="levelAreaStart01" translation="-5 0 -7.6199" nodeId="22">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 15" nodeId="23"/>
+          <TransformGroup name="levelAreaHeight01" translation="10 0 0" nodeId="24"/>
+        </TransformGroup>
+        <TransformGroup name="levelAreaStart02" translation="-5 0 7.40996" nodeId="61">
+          <TransformGroup name="levelAreaWidth02" translation="0 0 5.59535" nodeId="62"/>
+          <TransformGroup name="levelAreaHeight02" translation="10 0 0" nodeId="63"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="25">
+        <TransformGroup name="indoorAreaStart01" translation="-5 0 -7.5" nodeId="26">
+          <TransformGroup name="indoorAreaWidth01" translation="10 0 0" nodeId="27"/>
+          <TransformGroup name="indoorAreaHeight01" translation="0 0 15" nodeId="28"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="29">
+        <TransformGroup name="testAreaStart01" translation="-5 0 -7.5" nodeId="30">
+          <TransformGroup name="testAreaEnd01" translation="11 2 15" nodeId="31"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="32">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-5.5 0 -8" nodeId="33">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="12 0 16" nodeId="34"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="manureHeap" nodeId="35">
+        <Shape name="loadingTrigger" translation="0.089 2 10.0007" rotation="0 90 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="loadingTriggerAINode" translation="0.089 0 10.0007" rotation="1.34875e-15 80.0539 2.6648e-09" nodeId="37"/>
+        <TransformGroup name="loadingTriggerMarker" translation="0.089 0 10.0007" nodeId="38"/>
+        <TransformGroup name="tipArea" translation="-4.1 0 -6.75" nodeId="39">
+          <TransformGroup name="tipAreaStart" translation="-0.00415667 0 0.261006" nodeId="40">
+            <TransformGroup name="tipAreaWidth" translation="8.2128 0 0" nodeId="41"/>
+            <TransformGroup name="tipAreaHeight" translation="0 0 13.6996" nodeId="42"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="activationTrigger" translation="0 1.53575 1.5764" scale="0.93 0.5 0.95" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="clearAreaStart" translation="-4.72251 0 -7.30043" nodeId="44">
+          <TransformGroup name="clearAreaWidth" translation="9.52339 0 0" nodeId="45"/>
+          <TransformGroup name="clearAreaHeight" translation="0 0 14.3004" nodeId="46"/>
+        </TransformGroup>
+        <Shape name="infoTrigger" translation="0 4.76788 -0.69793" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="48">
+        <Shape name="manureHeap" scale="1 0.5 1" shapeId="4" clipDistance="400" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="50">
+        <Shape name="collision" scale="1 0.5 1" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="tipCollision" translation="0.089 0 10.0007" rotation="0 90 0" shapeId="6" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="tipCollisionWall" translation="0.000127 0 0.039077" shapeId="7" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <Shape name="occluderMesh" translation="0 0.394431 0.043654" scale="1 0.45 1" shapeId="8" clipDistance="200" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="5"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="51">
+      <Attribute name="collisionHeight" type="float" value="3"/>
+    </UserAttribute>
+    <UserAttribute nodeId="53">
+      <Attribute name="collisionHeight" type="float" value="3"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="placeable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Animal Dealer</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>map/inports/FS25_Buscot_Park/store/store_farmoffice.dds</image>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <price>25000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>20</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+				<iconFilename>textures/icon_farmoffice.dds</iconFilename>
+        <storeIconRendering>
+            <settings cameraXRot="-4" cameraYRot="116" advancedBoundingBox="true"/>
+        </storeIconRendering>
+    </storeData>
+
+    <base>
+        <filename>map/inports/FS25_Buscot_Buildings/i3d/AdealerOffice.i3d</filename>
+
+    </base>
+
+
+ <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+    
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart" widthNode="indoorAreaWidth" heightNode="indoorAreaHeight" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <!-- <hotspot type="SHOP_ANIMAL" linkNode="0>7" teleportNode="spawnPoint" /> -->
+		<placeableHotspot type="SHOP_ANIMAL" text="Animal Market" worldPosition="1983.90100098 363.18273926" teleportWorldPosition="1983.90100098 54.69477844 363.18273926" />
+    </hotspots>
+
+<!-- 
+    <triggerMarkers>
+        <triggerMarker node="markerIconAnimals"    filename="$data/shared/assets/marker/markerIconAnimals.i3d"/>
+    </triggerMarkers> -->
+
+
+
+    <!-- <farmhouse spawnNode="spawnPoint"> -->
+        <!-- <sleeping triggerNode="sleepingTrigger" cameraNode="sleepCamera"/> -->
+    <!-- </farmhouse> -->
+
+    <!-- <wardrobe triggerNode="wardrobeTrigger"/> -->
+
+<i3dMappings>
+    <i3dMapping id="farmOffice" node="0>"/>
+    <i3dMapping id="SideBuilding01" node="0>0"/>
+    <i3dMapping id="roofSide" node="0>0|0"/>
+    <i3dMapping id="Galvbeam.001" node="0>0|1"/>
+    <i3dMapping id="Galvbeam.002" node="0>0|1|0"/>
+    <i3dMapping id="Galvbeam.003" node="0>0|1|1"/>
+    <i3dMapping id="Galvbeam.004" node="0>0|1|2"/>
+    <i3dMapping id="Cube.008" node="0>0|1|3"/>
+    <i3dMapping id="officeDecal" node="0>0|2"/>
+    <i3dMapping id="office" node="0>0|3"/>
+    <i3dMapping id="base" node="0>0|4"/>
+    <i3dMapping id="col" node="0>0|5"/>
+    <i3dMapping id="clearArea" node="0>1"/>
+    <i3dMapping id="clearArea1Start" node="0>1|0"/>
+    <i3dMapping id="clearArea1Width" node="0>1|0|0"/>
+    <i3dMapping id="clearArea1Height" node="0>1|0|1"/>
+    <i3dMapping id="levelAreas" node="0>2"/>
+    <i3dMapping id="levelArea1Start" node="0>2|0"/>
+    <i3dMapping id="levelArea1Width" node="0>2|0|0"/>
+    <i3dMapping id="levelArea1Height" node="0>2|0|1"/>
+    <i3dMapping id="indoorAreas" node="0>3"/>
+    <i3dMapping id="indoorAreaStart" node="0>3|0"/>
+    <i3dMapping id="indoorAreaWidth" node="0>3|0|0"/>
+    <i3dMapping id="indoorAreaHeight" node="0>3|0|1"/>
+    <i3dMapping id="testAreas" node="0>4"/>
+    <i3dMapping id="testArea1Start" node="0>4|0"/>
+    <i3dMapping id="testArea1End" node="0>4|0|0"/>
+    <i3dMapping id="tipOcclusionUpdateAreas" node="0>5"/>
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0"/>
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0"/>
+    <i3dMapping id="markerIconAnimals" node="0>6"/>
+    <i3dMapping id="iconAnimals" node="0>6|0"/>
+    <i3dMapping id="pointLight" node="0>6|1"/>
+    <i3dMapping id="spawnPoint" node="0>7"/>
+
+</i3dMappings>
+</placeable>

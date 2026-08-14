@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gate.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="10" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="4" filename="$data/shared/default_normal.png"/>
+    <File fileId="9" filename="$data/shared/default_specular.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/metalGalvanized_diffuse.dds"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/metallic/metalGalvanized_normal.dds"/>
+    <File fileId="11" filename="$data/shared/detailLibrary/metallic/metalGalvanized_specular.dds"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedRough_normal.dds"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.dds"/>
+    <File fileId="3" filename="textures/metal_oxydized_d.dds"/>
+    <File fileId="5" filename="textures/metal_oxydized_s.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="galvMetalGate_mat" materialId="895" customShaderId="6">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="galvMetalGate_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" customShaderId="10">
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="18"/>
+    </Material>
+    <Material name="galvMetalGate_mat" materialId="6" diffuseColor="0.8 0.8 0.8 1" customShaderId="10">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="13"/>
+      <Custommap name="detailDiffuse" fileId="20"/>
+    </Material>
+    <Material name="galvMetalGate_mat" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="10">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="12"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+    </Material>
+    <Material name="galvMetalGate_mat" materialId="8" diffuseColor="0.8 0.8 0.8 1" customShaderId="10">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="12"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0.5 0.5"/>
+    </Material>
+    <Material name="galvMetalGate_mat" materialId="9" diffuseColor="1 1 1 1" customShaderId="10">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="12"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0.5 0.5"/>
+    </Material>
+    <Material name="galvMetalGate_mat" materialId="10" diffuseColor="1 1 1 1" customShaderId="10">
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0.5 0.5"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="11" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="scratchedMetalGate_mat" materialId="12" diffuseColor="0.8 0.8 0.8 1" customShaderId="10">
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="12"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gate.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="metalGates" translation="6.383 769.057 -4.92617" rotation="0 1.15287 0" clipDistance="10000" nodeId="35">
+      <TransformGroup name="14ft gates" clipDistance="10000" nodeId="36">
+        <TransformGroup name="gate7Bar_14ft" translation="-90.3643 -747.932 904.598" rotation="-2.7442 -47.5454 4.18338" clipDistance="300" nodeId="37">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="38">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="895">
+              <Shape name="hingeBolts" shapeId="3" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="895"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="895"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="44">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="895">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="10000" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="895">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="895">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft02" translation="-110.523 -743.81 1432.19" rotation="-178.057 -17.6338 -178.431" clipDistance="300" nodeId="51">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="52">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="58">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="10000" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft03" translation="1981.67 -749.644 215.48" rotation="-4.27073 -37.3936 3.57424" clipDistance="300" nodeId="65">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="66">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="71" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="72">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft04" translation="549.619 -743.373 5.36602" rotation="-160.794 -79.6396 162.062" clipDistance="300" nodeId="79">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="80">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="86">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="92" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft05" translation="-71.1446 -747.823 1081.46" rotation="61.5723 88.1711 62.6134" clipDistance="300" nodeId="93">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="94">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="100">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="106" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft06" translation="-23.0133 -747.912 1080.7" rotation="-85.5319 89.2092 -84.4554" clipDistance="300" nodeId="107">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="108">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="109" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="113" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="114">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft07" translation="1812.86 -754.515 -413.228" rotation="-0.788663 0.0310215 1.07618" clipDistance="300" nodeId="121">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="122">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="123" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="127" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="128">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="132" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="134" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft08" translation="1812.12 -748.392 -321.313" rotation="-0.820029 -15.8978 1.30125" clipDistance="300" nodeId="135">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="136">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="137" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="141" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="142">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="146" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="148" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft09" translation="1983.88 -750.114 -344.923" rotation="-179.177 -16.6817 -179.16" clipDistance="300" nodeId="149">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="150">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="151" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="155" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="156">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="160" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="162" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft11" translation="1842.35 -754.702 -413.333" rotation="-178.796 49.0821 -178.014" clipDistance="300" nodeId="163">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="164">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="165" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="169" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="170">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="172" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="174" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="176" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft12" translation="-157.423 -735.916 1789.13" rotation="-0.791134 4.69425 1.0113" clipDistance="300" nodeId="177">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="178">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="179" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="183" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="184">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="185" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="186" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="188" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="190" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft13" translation="-115.249 -744.039 1419.17" rotation="-179.193 -12.177 -179.094" clipDistance="300" nodeId="191">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="192">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="193" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="197" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="198">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="202" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="204" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft14" translation="1995.85 -755.006 -788.377" rotation="-177.771 69.2688 -176.839" clipDistance="300" nodeId="205">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="206">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="207" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="211" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="212">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="214" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="215" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="218" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_14ft15" translation="1625.4 -744.583 1278.5" rotation="-179.015 36.7515 -178.335" clipDistance="300" nodeId="219">
+          <TransformGroup name="gateVis" translation="0 0 -2.19" clipDistance="10000" nodeId="220">
+            <Shape name="playerTrigger" translation="0 0.98 4.33" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="221" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis" shapeId="2" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="9">
+              <Shape name="hingeBolts" shapeId="3" nodeId="223" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="gateCaps" translation="1.39698e-09 1.48503 0.08" shapeId="4" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="225" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="226">
+              <Shape name="gateHandle" translation="4.44089e-16 0 0" shapeId="6" nodeId="227" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="springCoil" translation="-4.0569e-10 0 -0.09" shapeId="7" clipDistance="5" nodeId="228" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="mainPost" translation="0 0 -2.28" shapeId="8" clipDistance="65534" nodeId="229" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="230" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="endPost" translation="0 0 2.23" shapeId="10" clipDistance="10000" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="232" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="Doubles" clipDistance="10000" nodeId="233">
+        <TransformGroup name="gate7Bar_Double" translation="-63.9955 -748.369 901.477" rotation="179.81 -36.8116 179.99" clipDistance="10000" nodeId="234">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="235">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="238" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="239" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="240">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="241" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="243" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="244" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="245" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="246" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="247" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="248" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="250" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="252" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_01" translation="-71.9184 -748.085 916.667" rotation="-179.758 -73.0695 -179.509" clipDistance="10000" nodeId="253">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="254">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="255" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="256" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="258" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="259">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="260" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="261" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="262" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="264" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="265" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="267" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="268" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="269" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="271" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_02" translation="-92.2019 -746.915 1068.14" rotation="-0.0789438 27.5439 0.686066" clipDistance="10000" nodeId="272">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="273">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="274" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="275" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="276" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="277" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="278">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="279" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="280" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="281" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="282" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="283" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="284" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="285" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="286" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="287" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="288" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="289" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="290" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_105" translation="1871.47 -749.623 222.524" rotation="-180 -60.3954 -179.819" clipDistance="10000" nodeId="291">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="292">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="293" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="294" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="295" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="296" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="297">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="298" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="300" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="302" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="303" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="304" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="306" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="307" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="308" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="309" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_106" translation="1035.09 -749.724 -700.839" rotation="-177.459 13.535 -179.819" clipDistance="10000" nodeId="310">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="311">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="312" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="313" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="314" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="315" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="316">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="317" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="318" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="319" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="321" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="322" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="324" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="325" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="326" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="327" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="328" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_107" translation="1778.89 -740.292 -146.063" rotation="-177.512 6.85096 179.883" clipDistance="10000" nodeId="329">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="330">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="331" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="332" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="333" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="334" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="335">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="336" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="337" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="338" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="339" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="340" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="341" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="342" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="344" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="345" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="346" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="347" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_108" translation="790.899 -744.85 -330.59" rotation="-177.214 27.5138 -179.126" clipDistance="10000" nodeId="348">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="349">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="350" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="351" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="353" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="354">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="355" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="356" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="357" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="358" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="359" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="360" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="362" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="363" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="364" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="365" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="366" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_109" translation="437.67 -751.019 -475.671" rotation="-179.046 15.9762 -179.706" clipDistance="10000" nodeId="367">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="368">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="369" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="370" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="371" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="372" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="373">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="374" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="375" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="376" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="377" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="378" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="383" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="385" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_110" translation="1830.92 -756.686 -528.305" rotation="-179.244 -41.6468 179.216" clipDistance="10000" nodeId="386">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="387">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="389" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="390" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="391" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="392">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="393" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="394" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="395" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="397" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="398" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="400" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="401" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="402" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="403" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="404" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_111" translation="-242.668 -736.717 1840.55" rotation="-2.00416 -75.3395 2.31447" clipDistance="10000" nodeId="405">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="406">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="407" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="408" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="409" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="410" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="411">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="412" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="413" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="414" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="415" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="416" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="417" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="418" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="419" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="420" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="421" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="422" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="423" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_112" translation="162.025 -743.249 1646.49" rotation="-0.513681 -9.15596 0.457254" clipDistance="10000" nodeId="424">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="425">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="426" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="427" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="428" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="429" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="430">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="431" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="432" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="433" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="434" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="435" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="436" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="437" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="438" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="439" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="440" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="441" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_113" translation="-48.1129 -739.273 1684.05" rotation="-3.36936 81.3442 -2.95557" clipDistance="10000" nodeId="443">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="444">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="445" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="446" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="447" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="448" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="449">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="450" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="451" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="452" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="453" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="454" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="455" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="456" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="457" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="458" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="459" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="460" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="461" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_114" translation="-1404.03 -745.751 1532.51" rotation="-0.516642 11.2051 0.275101" clipDistance="10000" nodeId="462">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="463">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="464" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="465" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="466" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="467" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="468">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="469" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="470" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="471" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="472" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="473" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="474" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="475" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="476" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="477" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="478" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="479" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="480" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_115" translation="-1390.83 -745.707 1532.39" rotation="3.22202 14.9882 0.492039" clipDistance="10000" nodeId="481">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="482">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="483" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="484" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="485" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="486" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="487">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="488" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="489" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="490" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="491" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="492" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="493" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="494" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="495" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="496" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="497" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="498" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="499" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_116" translation="-1328.91 -747.76 1881.46" rotation="3.15438 9.36528 0.171751" clipDistance="10000" nodeId="500">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="501">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="502" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="503" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="504" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="505" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="506">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="507" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="508" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="509" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="510" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="511" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="512" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="513" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="514" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="515" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="516" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="517" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="518" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_117" translation="-1729.32 -742.713 1586.2" rotation="3.23348 15.7282 0.535316" clipDistance="10000" nodeId="519">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="520">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="521" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="522" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="523" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="524" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="525">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="526" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="527" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="528" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="529" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="530" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="531" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="532" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="533" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="534" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="535" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="536" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="537" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_118" translation="1636.27 -757.787 -748.919" rotation="163.353 79.0762 163.296" clipDistance="10000" nodeId="538">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="539">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="540" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="541" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="542" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="543" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="544">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="545" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="546" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="547" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="548" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="549" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="550" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="551" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="552" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="553" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="554" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="555" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="556" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_119" translation="1210.52 -757.243 -231.561" rotation="0.545982 13.6747 0.415886" clipDistance="10000" nodeId="557">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="558">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="559" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="560" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="561" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="562" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="563">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="564" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="565" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="566" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="567" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="568" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="569" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="570" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="571" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="572" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="573" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="574" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="575" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_120" translation="1213.14 -756.556 -215.944" rotation="-1.6752 13.6747 0.415887" clipDistance="10000" nodeId="576">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="577">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="578" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="579" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="580" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="581" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="582">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="583" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="584" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="585" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="586" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="587" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="588" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="589" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="590" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="591" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="592" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="593" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="594" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_121" translation="574.929 -751.129 -384.836" rotation="-2.36782 46.5653 -0.907849" clipDistance="10000" nodeId="595">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="596">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="597" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="598" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="599" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="600" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="601">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="602" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="603" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="604" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="605" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="606" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="607" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="608" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="609" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="610" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="611" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="612" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="613" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_122" translation="578.46 -750.031 -367.678" rotation="-1.94406 -33.1425 1.87517" clipDistance="10000" nodeId="614">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="615">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="616" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="617" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="618" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="619" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="620">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="621" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="622" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="623" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="624" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="625" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="626" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="627" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="628" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="629" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="630" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="631" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="632" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_123" translation="607.873 -751.474 -409.222" rotation="-1.94406 -33.1425 1.87517" clipDistance="10000" nodeId="633">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="634">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="635" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="636" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="637" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="638" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="639">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="640" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="641" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="642" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="643" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="644" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="645" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="646" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="647" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="648" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="649" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="650" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="651" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_124" translation="450.776 -751.116 -472.866" rotation="-1.73257 -20.0353 1.40576" clipDistance="10000" nodeId="652">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="653">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="654" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="655" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="656" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="657" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="658">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="659" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="660" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="661" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="662" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="663" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="664" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="665" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="666" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="667" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="668" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="669" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="670" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_125" translation="1605.17 -737.419 1776.48" rotation="-2.34317 45.9925 -0.873748" clipDistance="10000" nodeId="671">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="672">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="673" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="674" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="675" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="676" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="677">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="678" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="679" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="680" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="681" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="682" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="683" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="684" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="685" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="686" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="687" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="688" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="689" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_126" translation="1699.82 -726.63 1884.22" rotation="-4.03772 7.73362 0.590928" clipDistance="10000" nodeId="690">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="691">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="692" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="693" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="694" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="695" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="696">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="697" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="698" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="699" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="700" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="701" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="702" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="703" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="704" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="705" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="706" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="707" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="708" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_127" translation="1704.8 -725.438 1893.43" rotation="-6.31356 50.619 -3.75282" clipDistance="10000" nodeId="709">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="710">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="711" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="712" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="713" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="714" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="715">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="716" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="717" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="718" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="719" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="720" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="721" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="722" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="723" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="724" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="725" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="726" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="727" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_128" translation="1707.88 -741.049 1625.52" rotation="-8.76809 68.487 -9.08569" clipDistance="10000" nodeId="728">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="729">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="730" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="731" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="732" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="733" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="734">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="735" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="736" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="737" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="738" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="739" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="740" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="741" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="742" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="743" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="744" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="745" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="746" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_129" translation="1777.63 -742.843 1500.68" rotation="-1.36274 -11.9104 -0.243283" clipDistance="10000" nodeId="747">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="748">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="749" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="750" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="751" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="752" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="753">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="754" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="755" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="756" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="757" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="758" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="759" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="760" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="761" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="762" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="763" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="764" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="765" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gate7Bar_Doubl_130" translation="1857.18 -749.385 1100.15" rotation="-3.36631 74.0876 -3.92475" clipDistance="10000" nodeId="766">
+          <TransformGroup name="gateVisLeft" translation="0 0 -3.76" nodeId="767">
+            <Shape name="gateVis12ftLeft" shapeId="11" nodeId="768" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsLeft" shapeId="12" nodeId="769" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftLeft" translation="1.39698e-09 1.485 0.08" shapeId="13" nodeId="770" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="771" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="gateVisRight" translation="0 0 3.76" nodeId="772">
+            <Shape name="playerTrigger" translation="0 0.98 -3.73" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="773" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            <Shape name="gateVis12ftRight" shapeId="15" nodeId="774" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="hingeBoltsRight" shapeId="16" nodeId="775" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateCaps12ftRight" translation="0 1.485 -0.08" shapeId="17" nodeId="776" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="gate12ftCOL" translation="1.49012e-08 0.8 -1.895" shapeId="14" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="777" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+            </Shape>
+            <Shape name="gateLatch" translation="0 1.45 -3.33" shapeId="18" nodeId="778" castsShadows="true" receiveShadows="true" materialIds="8">
+              <Shape name="gateLatchBoltThread" translation="4.65661e-10 0 0" shapeId="19" nodeId="779" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="gateLatchCaps" shapeId="20" nodeId="780" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="mainPostLeft" translation="0 0 -3.85" shapeId="8" nodeId="781" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="782" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+          <Shape name="mainPostRight" translation="0 0 3.85" shapeId="21" nodeId="783" castsShadows="true" receiveShadows="true" materialIds="8">
+            <Shape name="mainCOL" shapeId="9" static="true" nodeId="784" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="37">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="65">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="79">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="107">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="121">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="149">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="163">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="177">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="191">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="205">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="219">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="234">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="253">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="291">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="310">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="329">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="348">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="367">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="386">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="405">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="424">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="443">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="462">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="481">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="500">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="519">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="538">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="557">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="576">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="595">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="614">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="633">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="652">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="671">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="690">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="709">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="728">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="747">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="766">
+      <Attribute name="index" type="string" value="doubleLatchGate_pos110"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+      <Attribute name="xmlFilename" type="string" value="map/config/animatedObjects.xml"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

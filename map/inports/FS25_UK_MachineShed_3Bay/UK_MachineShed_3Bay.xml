@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable">
+    <storeData>
+        <name>
+			<en>UK 3-Bay Machinery Shed</en>	
+		</name>
+        <functions>
+            <function>$l10n_function_garage</function>
+        </functions>
+        <image>map/inports/FS25_UK_MachineShed_3Bay/store_MachineShed_3Bay.dds</image>
+        <price>30000</price>
+		<dailyUpkeep>5</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+		<category>sheds</category>
+		<brush>
+			<type>placeable</type>
+			<category>buildings</category>
+			<tab>sheds</tab>
+		</brush>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+	
+   <base>
+        <filename>map/inports/FS25_UK_MachineShed_3Bay/FS25_MachineShed_3Bay.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+	
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart" endNode="testAreaEnd" />
+        </testAreas>
+		
+		<sounds>
+            <place template="smallImp" pitchScale="1.6"/>
+        </sounds>
+    </placement>
+	
+	<testAreas>
+        <testArea startNode="testAreaStart" widthNode="testAreaWidth" heightNode="testAreaHeight"/>
+    </testAreas>
+	
+    <clearAreas>
+        <clearArea startNode="clearAreaStart" widthNode="clearAreaWidth" heightNode="clearAreaHeight"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart" widthNode="levelAreaWidth" heightNode="levelAreaHeight" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+   
+	<indoorAreas>
+        <indoorArea startNode="indoorAreaStart" widthNode="indoorAreaWidth" heightNode="indoorAreaHeight"/>
+    </indoorAreas>
+	
+	<tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+    </tipOcclusionUpdateAreas>
+	
+	<ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+        </updateAreas>
+    </ai>
+	
+	<i3dMappings>
+		
+		<i3dMapping id="testAreaStart" node="0>0|0|0" />
+		<i3dMapping id="testAreaEnd" node="0>0|0|0|0" />
+		
+		<i3dMapping id="clearAreaStart" node="0>0|1|0" />
+		<i3dMapping id="clearAreaWidth" node="0>0|1|0|0" />
+		<i3dMapping id="clearAreaHeight" node="0>0|1|0|1" />
+		
+		<i3dMapping id="levelAreaStart" node="0>0|2|0" />
+		<i3dMapping id="levelAreaWidth" node="0>0|2|0|0" />
+		<i3dMapping id="levelAreaHeight" node="0>0|2|0|1" />
+		
+		<i3dMapping id="indoorAreaStart" node="0>0|3|0" />
+		<i3dMapping id="indoorAreaWidth" node="0>0|3|0|0" />
+		<i3dMapping id="indoorAreaHeight" node="0>0|3|0|1" />
+		
+		<i3dMapping id="tipOcclusionUpdateAreaStart" node="0>0|4|0" />
+		<i3dMapping id="tipOcclusionUpdateAreaEnd" node="0>0|4|0|0" />
+
+	</i3dMappings>
+
+</placeable>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories28_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="48" filename="$data/maps/mapAS/textures/props/cartonBoxes/cartonBox01.i3d"/>
+    <File fileId="47" filename="$data/maps/mapAS/textures/props/cartonBoxes/cartonBox03.i3d"/>
+    <File fileId="72" filename="$data/maps/mapAS/textures/props/foodCartProps/garbageCan.i3d"/>
+    <File fileId="26" filename="$data/maps/mapAS/textures/props/pallet03.i3d"/>
+    <File fileId="98" filename="$data/maps/mapAS/textures/props/recyclingBin01_diffuse.png"/>
+    <File fileId="99" filename="$data/maps/mapAS/textures/props/recyclingBin01_normal.png"/>
+    <File fileId="100" filename="$data/maps/mapAS/textures/props/recyclingBin01_specular.png"/>
+    <File fileId="101" filename="$data/maps/mapAS/textures/props/recyclingBin02_diffuse.png"/>
+    <File fileId="102" filename="$data/maps/mapAS/textures/props/recyclingBin02_normal.png"/>
+    <File fileId="103" filename="$data/maps/mapAS/textures/props/recyclingBin02_specular.png"/>
+    <File fileId="104" filename="$data/maps/mapAS/textures/props/recyclingBin03_diffuse.png"/>
+    <File fileId="105" filename="$data/maps/mapAS/textures/props/recyclingBin03_normal.png"/>
+    <File fileId="106" filename="$data/maps/mapAS/textures/props/recyclingBin03_specular.png"/>
+    <File fileId="20" filename="$data/maps/mapEU/textures/props/constructionMaterial_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/mapEU/textures/props/constructionMaterial_normal.png"/>
+    <File fileId="22" filename="$data/maps/mapEU/textures/props/constructionMaterial_specular.png"/>
+    <File fileId="19" filename="$data/maps/mapEU/textures/props/electricalBoxesDecals_diffuse.png"/>
+    <File fileId="50" filename="$data/maps/mapEU/textures/props/garbageContainerIndustrial_diffuse.png"/>
+    <File fileId="51" filename="$data/maps/mapEU/textures/props/garbageContainerIndustrial_normal.png"/>
+    <File fileId="52" filename="$data/maps/mapEU/textures/props/garbageContainerIndustrial_specular.png"/>
+    <File fileId="77" filename="$data/maps/mapEU/textures/props/garbageContainers_diffuse.png"/>
+    <File fileId="81" filename="$data/maps/mapEU/textures/props/garbageContainers_mask.png"/>
+    <File fileId="78" filename="$data/maps/mapEU/textures/props/garbageContainers_normal.png"/>
+    <File fileId="79" filename="$data/maps/mapEU/textures/props/garbageContainers_specular.png"/>
+    <File fileId="63" filename="$data/maps/mapEU/textures/props/parkTrashCan_diffuse.png"/>
+    <File fileId="64" filename="$data/maps/mapEU/textures/props/parkTrashCan_normal.png"/>
+    <File fileId="65" filename="$data/maps/mapEU/textures/props/parkTrashCan_specular.png"/>
+    <File fileId="30" filename="$data/maps/mapEU/textures/props/propsDecals_diffuse.png"/>
+    <File fileId="31" filename="$data/maps/mapEU/textures/props/propsDecals_specular.png"/>
+    <File fileId="58" filename="$data/maps/mapEU/textures/props/recyclingBin01_diffuse.png"/>
+    <File fileId="59" filename="$data/maps/mapEU/textures/props/recyclingBin01_normal.png"/>
+    <File fileId="60" filename="$data/maps/mapEU/textures/props/recyclingBin01_specular.png"/>
+    <File fileId="55" filename="$data/maps/mapEU/textures/props/recyclingBin_diffuse.png"/>
+    <File fileId="56" filename="$data/maps/mapEU/textures/props/recyclingBin_normal.png"/>
+    <File fileId="57" filename="$data/maps/mapEU/textures/props/recyclingBin_specular.png"/>
+    <File fileId="69" filename="$data/maps/mapEU/textures/props/trashCan01_diffuse.png"/>
+    <File fileId="70" filename="$data/maps/mapEU/textures/props/trashCan01_normal.png"/>
+    <File fileId="71" filename="$data/maps/mapEU/textures/props/trashCan01_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/trashCan02_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/trashCan02_normal.png"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/trashCan02_specular.png"/>
+    <File fileId="49" filename="$data/maps/mapUS/textures/props/garbageCartGreen.i3d"/>
+    <File fileId="74" filename="$data/maps/mapUS/textures/props/garbageCartGreen_diffuse.png"/>
+    <File fileId="75" filename="$data/maps/mapUS/textures/props/garbageCartGreen_normal.png"/>
+    <File fileId="76" filename="$data/maps/mapUS/textures/props/garbageCartGreen_specular.png"/>
+    <File fileId="82" filename="$data/maps/mapUS/textures/props/garbageContainerSmall.i3d"/>
+    <File fileId="42" filename="$data/maps/mapUS/textures/props/garbageContainerSmall_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/mapUS/textures/props/garbageContainerSmall_normal.png"/>
+    <File fileId="44" filename="$data/maps/mapUS/textures/props/garbageContainerSmall_specular.png"/>
+    <File fileId="23" filename="$data/maps/mapUS/textures/props/ironWheels_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/mapUS/textures/props/ironWheels_normal.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/ironWheels_specular.png"/>
+    <File fileId="54" filename="$data/maps/mapUS/textures/props/trashcan01.i3d"/>
+    <File fileId="73" filename="$data/maps/mapUS/textures/props/trashcan02.i3d"/>
+    <File fileId="95" filename="$data/maps/mapUS/textures/props/trashcan02_diffuse.png"/>
+    <File fileId="96" filename="$data/maps/mapUS/textures/props/trashcan02_normal.png"/>
+    <File fileId="97" filename="$data/maps/mapUS/textures/props/trashcan02_specular.png"/>
+    <File fileId="53" filename="$data/maps/mapUS/textures/props/trashcan03.i3d"/>
+    <File fileId="45" filename="$data/maps/textures/shared/props/trunkRemains/trunkRemains_diffuse.png"/>
+    <File fileId="46" filename="$data/maps/textures/shared/props/trunkRemains/trunkRemains_normal.png"/>
+    <File fileId="80" filename="$data/shaders/colorShader.xml"/>
+    <File fileId="11" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="16" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="94" filename="$data/shared/default_specular.png"/>
+    <File fileId="10" filename="$data/shared/default_vmask.png"/>
+    <File fileId="32" filename="textures/buildingRubble_diffuse.png"/>
+    <File fileId="33" filename="textures/buildingRubble_normal.png"/>
+    <File fileId="34" filename="textures/buildingRubble_specular.png"/>
+    <File fileId="86" filename="textures/garbageCartBlackDecal_diffuse.png"/>
+    <File fileId="83" filename="textures/garbageCartBlack_diffuse.png"/>
+    <File fileId="84" filename="textures/garbageCartBlack_normal.png"/>
+    <File fileId="85" filename="textures/garbageCartBlack_specular.png"/>
+    <File fileId="90" filename="textures/garbageCartGreenDecal_diffuse.png"/>
+    <File fileId="87" filename="textures/garbageCartGreen_diffuse.png"/>
+    <File fileId="88" filename="textures/garbageCartGreen_normal.png"/>
+    <File fileId="89" filename="textures/garbageCartGreen_specular.png"/>
+    <File fileId="91" filename="textures/garbageContainerDE_diffuse.png"/>
+    <File fileId="92" filename="textures/garbageContainerDE_normal.png"/>
+    <File fileId="93" filename="textures/garbageContainerDE_specular.png"/>
+    <File fileId="27" filename="textures/glassContainerDE_diffuse.png"/>
+    <File fileId="28" filename="textures/glassContainerDE_normal.png"/>
+    <File fileId="29" filename="textures/glassContainerDE_specular.png"/>
+    <File fileId="35" filename="textures/metalTrashSet_diffuse.png"/>
+    <File fileId="36" filename="textures/metalTrashSet_normal.png"/>
+    <File fileId="37" filename="textures/metalTrashSet_specular.png"/>
+    <File fileId="66" filename="textures/publicStandTrashCanSet_diffuse.png"/>
+    <File fileId="67" filename="textures/publicStandTrashCanSet_normal.png"/>
+    <File fileId="68" filename="textures/publicStandTrashCanSet_specular.png"/>
+    <File fileId="8" filename="textures/recyclingBins02Decal_diffuse.png"/>
+    <File fileId="5" filename="textures/recyclingBins02_diffuse.png"/>
+    <File fileId="6" filename="textures/recyclingBins02_normal.png"/>
+    <File fileId="7" filename="textures/recyclingBins02_specular.png"/>
+    <File fileId="1" filename="textures/trashPile_diffuse.png"/>
+    <File fileId="2" filename="textures/trashPile_normal.png"/>
+    <File fileId="3" filename="textures/trashPile_specular.png"/>
+    <File fileId="40" filename="textures/woodPiles01_diffuse.png"/>
+    <File fileId="39" filename="textures/woodPiles01_normal.png"/>
+    <File fileId="41" filename="textures/woodPiles01_specular.png"/>
+    <File fileId="38" filename="textures/woodPiles02_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="buildingRubble_mat" materialId="8321">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="collision_mat" materialId="8322" diffuseColor="0 0.494118 0 1" specularColor="0.494118 1 0.494118">
+    </Material>
+    <Material name="constructionMaterial_mat" materialId="4591" customShaderId="16">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="electricalBoxesDecals_mat" materialId="8323">
+      <Texture fileId="19"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="garbageCartBlack_mat" materialId="8324" customShaderId="16">
+      <Texture fileId="83"/>
+      <Normalmap fileId="84"/>
+      <Glossmap fileId="85"/>
+    </Material>
+    <Material name="garbageCartBlackDecals_mat" materialId="8325" alphaBlending="true">
+      <Texture fileId="86"/>
+    </Material>
+    <Material name="garbageCartGreen_mat" materialId="8326" customShaderId="16">
+      <Texture fileId="74"/>
+      <Normalmap fileId="75"/>
+      <Glossmap fileId="76"/>
+    </Material>
+    <Material name="garbageCartGreen_mat" materialId="8327" customShaderId="16">
+      <Texture fileId="87"/>
+      <Normalmap fileId="88"/>
+      <Glossmap fileId="89"/>
+    </Material>
+    <Material name="garbageCartGreenDecals_mat" materialId="8328">
+      <Texture fileId="90"/>
+    </Material>
+    <Material name="garbageContainerDE_mat" materialId="8329">
+      <Texture fileId="91"/>
+      <Normalmap fileId="92"/>
+      <Glossmap fileId="93"/>
+    </Material>
+    <Material name="garbageContainerIndustrial_mat" materialId="8330" customShaderId="16">
+      <Texture fileId="50"/>
+      <Normalmap fileId="51"/>
+      <Glossmap fileId="52"/>
+    </Material>
+    <Material name="garbageContainers_mat" materialId="8331" customShaderId="80" customShaderVariation="CUSTOM_MASK">
+      <Texture fileId="77"/>
+      <Normalmap fileId="78"/>
+      <Glossmap fileId="79"/>
+      <Custommap name="mCustomMask" fileId="81"/>
+      <CustomParameter name="color" value="0.5 0 0"/>
+    </Material>
+    <Material name="garbageContainerSmall_mat" materialId="8332" customShaderId="16">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="44"/>
+    </Material>
+    <Material name="glassContainerDE_mat" materialId="8333">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="ironWheels_mat" materialId="7517" customShaderId="16">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="metalTrashSet_mat" materialId="3508">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="parkTrashCan_mat" materialId="8334" customShaderId="16">
+      <Texture fileId="63"/>
+      <Normalmap fileId="64"/>
+      <Glossmap fileId="65"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="2013" customShaderId="11">
+      <Texture fileId="30"/>
+      <Glossmap fileId="94"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="8335">
+      <Texture fileId="30"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="publicStandTrashCanSet_mat" materialId="8336">
+      <Texture fileId="66"/>
+      <Normalmap fileId="67"/>
+      <Glossmap fileId="68"/>
+    </Material>
+    <Material name="recyclingBin01_mat" materialId="16217" customShaderId="16">
+      <Texture fileId="98"/>
+      <Normalmap fileId="99"/>
+      <Glossmap fileId="100"/>
+    </Material>
+    <Material name="recyclingBin01_mat" materialId="8337" customShaderId="16">
+      <Texture fileId="58"/>
+      <Normalmap fileId="59"/>
+      <Glossmap fileId="60"/>
+    </Material>
+    <Material name="recyclingBin02_mat" materialId="16226" customShaderId="16">
+      <Texture fileId="101"/>
+      <Normalmap fileId="102"/>
+      <Glossmap fileId="103"/>
+    </Material>
+    <Material name="recyclingBin03_mat" materialId="16235" customShaderId="16">
+      <Texture fileId="104"/>
+      <Normalmap fileId="105"/>
+      <Glossmap fileId="106"/>
+    </Material>
+    <Material name="recyclingBin_mat" materialId="8338" customShaderId="16">
+      <Texture fileId="55"/>
+      <Normalmap fileId="56"/>
+      <Glossmap fileId="57"/>
+    </Material>
+    <Material name="recyclingBins02_mat" materialId="8339">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="recyclingBins02Decal_mat" materialId="8340" alphaBlending="true" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="trashCan01_mat" materialId="8341" customShaderId="16">
+      <Texture fileId="69"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+    </Material>
+    <Material name="trashCan02_mat" materialId="8342" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="trashcan02_mat" materialId="8343" customShaderId="16">
+      <Texture fileId="95"/>
+      <Normalmap fileId="96"/>
+      <Glossmap fileId="97"/>
+    </Material>
+    <Material name="trashPile_mat" materialId="8344">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="trunkRemains_mat" materialId="8345">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+    </Material>
+    <Material name="woodPiles01_mat" materialId="8346">
+      <Texture fileId="40"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="41"/>
+    </Material>
+    <Material name="woodPiles02_mat" materialId="8347">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories28_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Recycling accessories" translation="-119.608 -34.5547 -125.827" nodeId="8444">
+      <Shape name="trashBag02" lockedgroup="true" translation="0.745239 0 -3.40595" rotation="6.45386e-06 33.5769 2.70757e-05" shapeId="1" static="true" clipDistance="60" nodeId="8445" castsShadows="true" receiveShadows="true" materialIds="8344"/>
+      <Shape name="recyclingBins02Large" lockedgroup="true" translation="-8.92845 0 -6.32729" shapeId="2" static="true" density="0.0001" nodeId="8446" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="recyclingBins02LargeVis" shapeId="3" clipDistance="70" nodeId="8447" castsShadows="true" receiveShadows="true" materialIds="8339">
+          <Shape name="decal" shapeId="4" clipDistance="30" nodeId="8448" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8340"/>
+        </Shape>
+      </Shape>
+      <Shape name="recyclingBins02" lockedgroup="true" translation="-10.4534 0 -6.31651" shapeId="5" static="true" density="0.0001" nodeId="8449" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="recyclingBins02Vis" translation="-1.06581e-16 0 -7.10543e-17" shapeId="6" clipDistance="70" nodeId="8450" castsShadows="true" receiveShadows="true" materialIds="8339">
+          <Shape name="decal" shapeId="7" clipDistance="30" nodeId="8451" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8340"/>
+        </Shape>
+      </Shape>
+      <Shape name="trashCan02" lockedgroup="true" translation="-0.404405 0.836163 -1.21482" rotation="-6.76847e-06 -1.94126e-19 1.45334e-05" shapeId="8" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8471" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="LOD0" shapeId="9" clipDistance="100" nodeId="8472" castsShadows="true" receiveShadows="true" materialIds="8342"/>
+        <Shape name="decal" shapeId="10" clipDistance="30" nodeId="8473" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="8323"/>
+      </Shape>
+      <TransformGroup name="trashHeap_PREFAB" lockedgroup="true" translation="2.95267 0 -1.47303" rotation="177.832 -14.7044 -171.519" nodeId="8474">
+        <TransformGroup name="constructionMaterial15" lockedgroup="true" translation="0 0 1.52588e-05" rotation="-3.00864e-07 1.20346e-06 -1.24106e-06" scale="1.41887 1.41887 1.41887" lodDistance="0 12" clipDistance="90" nodeId="8475">
+          <Shape name="LOD0" shapeId="11" nodeId="8476" castsShadows="true" receiveShadows="true" materialIds="4591"/>
+          <Shape name="LOD1" shapeId="12" nodeId="8477" castsShadows="true" receiveShadows="true" materialIds="4591"/>
+          <Shape name="col" shapeId="13" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8478" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="ironWheelMedium" lockedgroup="true" translation="0.755738 0.684411 -1.02061" rotation="-30.1319 0.739927 -80.5243" lodDistance="0 12" lodBlending="false" clipDistance="80" nodeId="8479">
+          <Shape name="LOD0" shapeId="14" nodeId="8480" castsShadows="true" receiveShadows="true" materialIds="7517"/>
+          <Shape name="LOD1" shapeId="15" nodeId="8481" castsShadows="true" receiveShadows="true" materialIds="7517"/>
+          <Shape name="col" shapeId="16" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8482" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <TransformGroup name="ironWheelSmall" lockedgroup="true" translation="0.234396 0.84599 -0.125815" rotation="-11.813 57.5533 -5.71844" lodDistance="0 10" lodBlending="false" clipDistance="65" nodeId="8483">
+          <Shape name="LOD0" shapeId="17" nodeId="8484" castsShadows="true" receiveShadows="true" materialIds="7517"/>
+          <Shape name="LOD1" shapeId="18" nodeId="8485" castsShadows="true" receiveShadows="true" materialIds="7517"/>
+          <Shape name="col" shapeId="19" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8486" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <ReferenceNode name="pallet03" translation="-1.52741 0.659003 -0.0468528" rotation="-115.457 -75.5903 42.5914" referenceId="26" nodeId="8492"/>
+        <TransformGroup name="ironWheelBig" lockedgroup="true" translation="0.277284 1.07701 1.03308" rotation="-173.994 21.9072 -148.516" lodDistance="0 15" lodBlending="false" clipDistance="90" nodeId="8498">
+          <Shape name="LOD0" shapeId="20" nodeId="8499" castsShadows="true" receiveShadows="true" materialIds="7517"/>
+          <Shape name="LOD1" shapeId="21" nodeId="8500" castsShadows="true" receiveShadows="true" materialIds="7517"/>
+          <Shape name="col" shapeId="22" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8501" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="glassContainerDE01" lockedgroup="true" translation="3.00598 0 -5.12208" rotation="-179.999 -89.5519 179.999" shapeId="23" clipDistance="100" nodeId="8512" castsShadows="true" receiveShadows="true" materialIds="8333">
+        <Shape name="decals" shapeId="24" clipDistance="40" nodeId="8513" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8335"/>
+        <Shape name="col" translation="1.65176e-05 1.12593 0.00978439" shapeId="25" visibility="false" static="true" density="0.0001" nodeId="8514" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <Shape name="glassContainerDE02" lockedgroup="true" translation="0.973663 0 -5.1166" rotation="180 -88.6166 -180" shapeId="26" clipDistance="100" nodeId="8515" castsShadows="true" receiveShadows="true" materialIds="8333">
+        <Shape name="decals" shapeId="27" clipDistance="40" nodeId="8516" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8335"/>
+        <Shape name="col" translation="1.65176e-05 1.12593 0.00978439" shapeId="25" visibility="false" static="true" density="0.0001" nodeId="8517" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <Shape name="trash04" translation="0.733185 0 -0.632782" rotation="180 -14.9128 -180" shapeId="28" static="true" clipDistance="100" nodeId="8518" castsShadows="true" receiveShadows="true" materialIds="8344"/>
+      <Shape name="trashBag01" lockedgroup="true" translation="0.829865 0 -2.49001" rotation="1.50709 35.2734 22.974" shapeId="29" static="true" clipDistance="60" nodeId="8519" castsShadows="true" receiveShadows="true" materialIds="8344"/>
+      <Shape name="trashDebris03" lockedgroup="true" translation="0.650238 0 1.14005" rotation="-9.08806e-06 2.26081 -4.29731e-08" shapeId="30" static="true" clipDistance="40" nodeId="8520" castsShadows="true" receiveShadows="true" materialIds="8344"/>
+      <Shape name="buildingRubble" lockedgroup="true" translation="9.58853 0 -3.43966" rotation="-180 -67.686 180" scale="2 2 2" shapeId="31" static="true" clipDistance="120" nodeId="8523" castsShadows="true" receiveShadows="true" materialIds="8321">
+        <Shape name="woodTrashPile01" translation="0.989471 0.0125275 -1.24417" rotation="-180 67.686 -180" scale="0.5 0.5 0.5" shapeId="32" clipDistance="80" nodeId="8524" castsShadows="true" receiveShadows="true" materialIds="3508">
+          <Shape name="col" translation="-0.2031 1.77636e-17 0" shapeId="33" visibility="false" static="true" density="0.0001" nodeId="8525" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </Shape>
+        <Shape name="woodTrashPile02" translation="0.0589294 0.541649 -0.130463" rotation="-179.724 34.5877 178.852" scale="0.5 0.5 0.5" shapeId="34" static="true" clipDistance="120" nodeId="8526" castsShadows="true" receiveShadows="true" materialIds="8347"/>
+        <Shape name="woodTrashPile02" translation="1.31273 -0.00995636 0.593536" rotation="-179.724 34.5877 178.852" scale="0.5 0.5 0.5" shapeId="34" static="true" clipDistance="120" nodeId="8527" castsShadows="true" receiveShadows="true" materialIds="8347"/>
+        <Shape name="woodTrashPile01" translation="0.888153 0.0125275 1.26541" rotation="-180 67.686 -180" scale="0.5 0.5 0.5" shapeId="32" clipDistance="80" nodeId="8528" castsShadows="true" receiveShadows="true" materialIds="3508">
+          <Shape name="col" translation="-0.2031 1.77636e-17 0" shapeId="33" visibility="false" static="true" density="0.0001" nodeId="8529" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </Shape>
+        <Shape name="woodTrashPile03" translation="-0.4919 -0.00061037 1.47299" rotation="6.27064e-05 -50.1433 -1.14191e-05" scale="0.5 0.5 0.5" shapeId="35" static="true" clipDistance="120" nodeId="8530" castsShadows="true" receiveShadows="true" materialIds="8346"/>
+        <Shape name="woodTrashPile03" translation="-0.420685 0.526917 0.011322" rotation="176.847 22.4033 -174.076" scale="0.5 0.5 0.5" shapeId="35" static="true" clipDistance="120" nodeId="8531" castsShadows="true" receiveShadows="true" materialIds="8346"/>
+        <Shape name="woodTrashPile03" translation="-1.37141 -0.000610352 -0.819214" rotation="6.16134e-05 87.532 1.10102e-05" scale="0.5 0.5 0.5" shapeId="35" static="true" clipDistance="120" nodeId="8532" castsShadows="true" receiveShadows="true" materialIds="8346"/>
+      </Shape>
+      <TransformGroup name="garbageContainerSmall_PREFAB" lockedgroup="true" translation="-5.7243 0 -4.93603" rotation="3.95138e-05 -0 1.47094e-05" nodeId="8600">
+        <TransformGroup name="garbageContainerSmall" lockedgroup="true" translation="6.3777e-06 0 0" rotation="-6.36111e-15 -0 -1.62844e-12" nodeId="8601">
+          <TransformGroup name="visual_lod" lodDistance="0 16" lodBlending="false" clipDistance="125" nodeId="8602">
+            <Shape name="LOD0" shapeId="36" nodeId="8603" castsShadows="true" receiveShadows="true" materialIds="8332">
+              <Shape name="smallDoor01" translation="-0.505934 1.61807 -0.672476" rotation="-118.056 -0 0" shapeId="37" nodeId="8604" castsShadows="true" receiveShadows="true" materialIds="8332">
+                <Shape name="col" shapeId="38" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8605" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+              </Shape>
+              <Shape name="smallDoor02" translation="0.505934 1.61807 -0.672476" shapeId="39" nodeId="8606" castsShadows="true" receiveShadows="true" materialIds="8332">
+                <Shape name="col" shapeId="40" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8607" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+              </Shape>
+            </Shape>
+            <Shape name="LOD1" shapeId="41" nodeId="8608" castsShadows="true" receiveShadows="true" materialIds="8332">
+              <Shape name="smallDoor01" translation="-0.505934 1.61807 -0.672476" rotation="-118.056 0 0" shapeId="42" nodeId="8609" castsShadows="true" receiveShadows="true" materialIds="8332"/>
+              <Shape name="smallDoor02" translation="0.505934 1.61807 -0.672476" shapeId="43" nodeId="8610" castsShadows="true" receiveShadows="true" materialIds="8332"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="col" shapeId="44" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8611" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="trash_PREFAB" lockedgroup="true" translation="-0.671311 0.413594 -3.89854e-06" rotation="0 -1.02453e-05 -54.9184" nodeId="8612">
+          <Shape name="twig01" lockedgroup="true" translation="-0.0938442 0.24827 -0.0674268" rotation="117.776 -9.89014 -78.8225" shapeId="45" clipDistance="150" nodeId="8613" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+          <Shape name="twig02" lockedgroup="true" translation="0.0125732 0.470551 -0.114227" rotation="29.7914 -1.23284 -87.8477" shapeId="46" clipDistance="150" nodeId="8614" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+          <Shape name="twig03" lockedgroup="true" translation="0.0342407 0.145119 -0.119263" rotation="28.8531 7.85589 -103.933" shapeId="47" clipDistance="150" nodeId="8615" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+          <Shape name="twig04" lockedgroup="true" translation="0.0276351 0.775618 -0.0677247" rotation="-31.3742 24.0395 95.4616" shapeId="48" clipDistance="300" nodeId="8616" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+          <Shape name="twig05" lockedgroup="true" translation="-0.0942993 0.426815 -0.0854492" rotation="29.1833 -6.39032 -78.7294" shapeId="49" clipDistance="150" nodeId="8617" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+          <ReferenceNode name="cartonBox03" translation="0.0579262 0.0129681 0.297657" rotation="180 -75.6919 -95.9655" referenceId="47" nodeId="8621"/>
+          <ReferenceNode name="cartonBox01" translation="-0.1716 0.102101 -0.167706" rotation="-1.96699 -3.02179 88.0027" referenceId="48" nodeId="8627"/>
+          <ReferenceNode name="cartonBox01" translation="0.507225 0.997933 0.266361" rotation="102.067 44.8414 144.453" referenceId="48" nodeId="8630"/>
+        </TransformGroup>
+        <ReferenceNode name="garbageCartGreen" translation="-1.61799 0 0.0353546" rotation="1.68273e-05 -58.0315 6.65358e-06" referenceId="49" nodeId="8633"/>
+      </TransformGroup>
+      <TransformGroup name="garbageContainerIndustrial" lockedgroup="true" translation="-2.22543 0 -5.17521" rotation="2.91861e-09 -0 0" lodDistance="0 15" clipDistance="180" nodeId="8643">
+        <Shape name="LOD0" shapeId="50" nodeId="8644" castsShadows="true" receiveShadows="true" materialIds="8330"/>
+        <Shape name="LOD1" shapeId="51" nodeId="8645" castsShadows="true" receiveShadows="true" materialIds="8330"/>
+        <Shape name="col" shapeId="52" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8646" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <ReferenceNode name="trashcan03" translation="-1.67763 0 -3.28362" rotation="180 -0 180" scale="0.866759 0.866759 0.866759" referenceId="53" nodeId="8456"/>
+      <ReferenceNode name="trashcan01" translation="-1.70615 0 -2.02406" rotation="180 -0 -180" referenceId="54" nodeId="8466"/>
+      <Shape name="recyclingBinWhite" lockedgroup="true" translation="-8.99973 0 -3.3839" rotation="-180 -0 -180" shapeId="53" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="8502" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="visual" shapeId="54" clipDistance="170" nodeId="8503" castsShadows="true" receiveShadows="true" materialIds="8338"/>
+      </Shape>
+      <TransformGroup name="recyclingBin01" lockedgroup="true" translation="-9.01955 0 -0.91066" rotation="8.65142e-06 -1.86693e-05 8.65142e-06" lodDistance="0 15" clipDistance="130" nodeId="8504">
+        <Shape name="LOD0" shapeId="55" nodeId="8505" castsShadows="true" receiveShadows="true" materialIds="8337"/>
+        <Shape name="LOD1" shapeId="56" nodeId="8506" castsShadows="true" receiveShadows="true" materialIds="8337"/>
+        <Shape name="col" shapeId="57" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8507" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8322"/>
+      </TransformGroup>
+      <TransformGroup name="parkTrashCan" lockedgroup="true" translation="-0.380203 0 -3.22079" rotation="1.79991e-07 -0 0" lodDistance="0 15" clipDistance="130" nodeId="8508">
+        <Shape name="LOD0" shapeId="58" nodeId="8509" castsShadows="true" receiveShadows="true" materialIds="8334"/>
+        <Shape name="LOD1" shapeId="59" nodeId="8510" castsShadows="true" receiveShadows="true" materialIds="8334"/>
+        <Shape name="col" shapeId="60" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="8511" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <Shape name="publicStandTrashCanColored" lockedgroup="true" translation="-0.406433 0 -2.29107" shapeId="61" clipDistance="40" nodeId="8521" castsShadows="true" receiveShadows="true" materialIds="8336">
+        <Shape name="col" translation="0.0467276 0 0" shapeId="62" visibility="false" static="true" density="0.0001" nodeId="8522" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <TransformGroup name="trashCan01" lockedgroup="true" translation="-1.64864 0 -0.975365" rotation="0 -5.2771 0" clipDistance="60" nodeId="8533">
+        <TransformGroup name="visual_lod" lodDistance="0 12" nodeId="8534">
+          <Shape name="LOD0" shapeId="63" nodeId="8535" castsShadows="true" receiveShadows="true" materialIds="8341"/>
+          <Shape name="LOD1" shapeId="64" nodeId="8536" castsShadows="true" receiveShadows="true" materialIds="8341"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="65" static="true" collisionFilterMask="0xfffffbff" nodeId="8537" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false" materialIds="79"/>
+      </TransformGroup>
+      <ReferenceNode name="garbageCan" translation="-3.60065 0 -1.49187" rotation="1.52606e-05 -0 1.21072e-05" referenceId="72" nodeId="8542"/>
+      <ReferenceNode name="trashcan02" translation="-3.66008 -3.8147e-06 -3.35641" rotation="-180 -0 -180" referenceId="73" nodeId="8555"/>
+      <TransformGroup name="garbageCartGreen_PREFAB" lockedgroup="true" translation="-2.6909 -3.8147e-06 -3.36971" rotation="-180 -0 180" nodeId="8567">
+        <TransformGroup name="garbageCartGreen" lockedgroup="true" rotation="0 1.70755e-06 0" nodeId="8568">
+          <TransformGroup name="visual_lod" lodDistance="0 12" lodBlending="false" clipDistance="60" nodeId="8569">
+            <Shape name="LOD0" shapeId="66" nodeId="8570" castsShadows="true" receiveShadows="true" materialIds="8326"/>
+            <Shape name="LOD1" shapeId="67" nodeId="8571" castsShadows="true" receiveShadows="true" materialIds="8326"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="68" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8572" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+          <TransformGroup name="garbageCartGreenTop" translation="0 0.963736 -0.438935" rotation="86.5225 1.70755e-05 -6.61555e-11" nodeId="8573">
+            <TransformGroup name="visual_lod" lodDistance="0 12" lodBlending="false" clipDistance="60" nodeId="8574">
+              <Shape name="LOD0" shapeId="69" nodeId="8575" castsShadows="true" receiveShadows="true" materialIds="8326"/>
+              <Shape name="LOD1" shapeId="70" nodeId="8576" castsShadows="true" receiveShadows="true" materialIds="8326"/>
+            </TransformGroup>
+            <Shape name="col" shapeId="71" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8577" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="twig01" lockedgroup="true" translation="-0.0773926 0.246284 -0.0968933" rotation="130.57 0.98309 -91.716" shapeId="45" clipDistance="150" nodeId="8578" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+        <Shape name="twig02" lockedgroup="true" translation="0.0125732 0.470551 -0.114227" rotation="29.7914 -1.23284 -87.8477" shapeId="46" clipDistance="150" nodeId="8579" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+        <Shape name="twig03" lockedgroup="true" translation="0.0342407 0.145119 -0.119263" rotation="28.8531 7.85589 -103.933" shapeId="47" clipDistance="150" nodeId="8580" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+        <Shape name="twig04" lockedgroup="true" translation="-0.0369873 0.86351 -0.00900269" rotation="-28.7228 8.35852 104.857" shapeId="48" clipDistance="300" nodeId="8581" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+        <Shape name="twig05" lockedgroup="true" translation="-0.0942993 0.426815 -0.0854492" rotation="29.1833 -6.39032 -78.7294" shapeId="49" clipDistance="150" nodeId="8582" castsShadows="true" receiveShadows="true" materialIds="8345"/>
+      </TransformGroup>
+      <ReferenceNode name="garbageCartGreen" translation="-2.61905 0 -2.09022" rotation="-4.73264e-06 -0 7.4692e-06" referenceId="49" nodeId="8590"/>
+      <TransformGroup name="garbageContainer01" lockedgroup="true" translation="-5.76338 0 -0.991539" rotation="0 -0 -9.90103e-10" lodDistance="0 20" clipDistance="80" nodeId="8647">
+        <Shape name="LOD0" shapeId="72" nodeId="8648" castsShadows="true" receiveShadows="true" materialIds="8331"/>
+        <Shape name="LOD1" shapeId="73" nodeId="8649" castsShadows="true" receiveShadows="true" materialIds="8331"/>
+        <Shape name="col" shapeId="74" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8650" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <ReferenceNode name="garbageContainerSmall" translation="-5.71222 0 -2.86117" rotation="-5.01142e-06 -0 -1.74668e-05" referenceId="82" nodeId="8661"/>
+      <Shape name="garbageCartUSBlack" lockedgroup="true" translation="-2.52103 0 0.124565" shapeId="75" dynamic="true" nodeId="8672" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="garbageCartBlackBase_vis" shapeId="76" clipDistance="100" nodeId="8673" castsShadows="true" receiveShadows="true" materialIds="8324">
+          <Shape name="garbageCartBlackBag_vis" shapeId="77" clipDistance="100" nodeId="8674" castsShadows="true" receiveShadows="true" materialIds="8324"/>
+          <Shape name="decal" shapeId="78" clipDistance="100" nodeId="8675" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8325"/>
+          <Shape name="garbageCartBlackCover_vis" translation="0 0.95018 -0.425122" rotation="90 0 0" shapeId="79" clipDistance="100" nodeId="8676" castsShadows="true" receiveShadows="true" materialIds="8324">
+            <Shape name="decal" translation="0.00484051 0.698482 -0.0825602" shapeId="80" clipDistance="100" nodeId="8677" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8325"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape name="garbageCartUSGreen" lockedgroup="true" translation="-2.52852 0 -0.921127" shapeId="75" dynamic="true" nodeId="8678" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="garbageCartGreenBase_vis" shapeId="81" clipDistance="100" nodeId="8679" castsShadows="true" receiveShadows="true" materialIds="8327">
+          <Shape name="garbageCartGreenBag_vis" shapeId="82" clipDistance="100" nodeId="8680" castsShadows="true" receiveShadows="true" materialIds="8327"/>
+          <Shape name="decal" shapeId="83" clipDistance="100" nodeId="8681" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8328"/>
+          <Shape name="garbageCartGreenCover_vis" translation="0 0.95018 -0.425122" rotation="90 0 0" shapeId="84" clipDistance="100" nodeId="8682" castsShadows="true" receiveShadows="true" materialIds="8327">
+            <Shape name="decal" translation="0.00484051 0.698482 -0.0825602" shapeId="85" clipDistance="100" nodeId="8683" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="8328"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape name="garbageContainer_01" lockedgroup="true" translation="-5.46024 0 0.540665" shapeId="86" clipDistance="80" nodeId="8684" castsShadows="true" receiveShadows="true" materialIds="8329">
+        <Shape name="col" translation="0 0.708118 0" shapeId="87" visibility="false" static="true" density="0.0001" nodeId="8685" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        <Shape name="garbageContainerDecal" shapeId="88" clipDistance="30" nodeId="8686" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2013"/>
+      </Shape>
+      <TransformGroup name="trashcan02" lockedgroup="true" translation="-3.62462 0 -2.35671" rotation="-180 -0 -180" nodeId="8687">
+        <TransformGroup name="visual_lod" lodDistance="0 14" lodBlending="false" clipDistance="65" nodeId="8688">
+          <Shape name="LOD0" shapeId="89" nodeId="8689" castsShadows="true" receiveShadows="true" materialIds="8343"/>
+          <Shape name="LOD1" shapeId="90" nodeId="8690" castsShadows="true" receiveShadows="true" materialIds="8343"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="91" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8691" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <TransformGroup name="lid" translation="0 0.95 0" nodeId="8692">
+          <TransformGroup name="visual_lod" translation="0.460633 -0.681497 -0.0187343" rotation="5.12264e-06 5.97642e-06 -64.9636" lodDistance="0 14" lodBlending="false" clipDistance="65" nodeId="8693">
+            <Shape name="LOD0" shapeId="92" nodeId="8694" castsShadows="true" receiveShadows="true" materialIds="8343"/>
+            <Shape name="LOD1" shapeId="93" nodeId="8695" castsShadows="true" receiveShadows="true" materialIds="8343"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="94" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8696" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="holder" translation="0 0.804873 0.313715" clipDistance="20" nodeId="8697">
+          <Shape name="LOD0" shapeId="95" nodeId="8698" castsShadows="true" receiveShadows="true" materialIds="8343"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="recyclingBin01_lod" lockedgroup="true" translation="-3.83593 0 0.239601" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" clipDistance="60" nodeId="16222">
+        <Shape name="LOD0" shapeId="96" nodeId="16223" castsShadows="true" receiveShadows="true" materialIds="16217">
+          <Shape name="col1" shapeId="97" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="16224" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="98" nodeId="16225" castsShadows="true" receiveShadows="true" materialIds="16217"/>
+      </TransformGroup>
+      <TransformGroup name="recyclingBin02_lod" lockedgroup="true" translation="-9.05109 0 0.719849" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" clipDistance="60" nodeId="16231">
+        <Shape name="LOD0" shapeId="99" nodeId="16232" castsShadows="true" receiveShadows="true" materialIds="16226">
+          <Shape name="col" shapeId="100" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="16233" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="101" nodeId="16234" castsShadows="true" receiveShadows="true" materialIds="16226"/>
+      </TransformGroup>
+      <TransformGroup name="recyclingBin03_lod" lockedgroup="true" translation="-7.33137 0 0.593742" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" clipDistance="60" nodeId="16240">
+        <Shape name="LOD0" shapeId="102" nodeId="16241" castsShadows="true" receiveShadows="true" materialIds="16235">
+          <Shape name="col3" shapeId="103" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="16242" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="104" nodeId="16243" castsShadows="true" receiveShadows="true" materialIds="16235"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

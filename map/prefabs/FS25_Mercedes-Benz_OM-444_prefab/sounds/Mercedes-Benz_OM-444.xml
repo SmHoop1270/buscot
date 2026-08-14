@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+			<motor template="engineLarge" file="sounds/bigX1180_loop.gls" innerRadius="23.5" outerRadius="100.0" linkNodeOffset="-0 1.4 1" volumeScale="1.25" >
+                <volume outdoor="0.0" indoor="0.40">
+                    <modifier type="MOTOR_RPM_REAL" value="800"  modifiedValue="0.90" />
+                    <modifier type="MOTOR_RPM_REAL" value="1400" modifiedValue="0.95" />
+                    <modifier type="MOTOR_RPM_REAL" value="2200" modifiedValue="1.00" />
+                </volume>
+			  <pitch indoor="0.98" outdoor="0.98">
+					<modifier type="MOTOR_RPM_REAL" value="800"  modifiedValue="0.90" />
+                    <modifier type="MOTOR_RPM_REAL" value="1000" modifiedValue="0.97" />
+					<modifier type="MOTOR_RPM_REAL" value="1600" modifiedValue="1.00" />
+                    <modifier type="MOTOR_RPM_REAL" value="2200" modifiedValue="1.05" />
+					<modifier type="SUSPENSION" value="-0.10" modifiedValue="1.1" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.0"   modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02"  modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.10"  modifiedValue="1.1" />
+					<modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.02" />
+					<modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+					<modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.01" />
+				</pitch>
+				<lowpassGain indoor="1.0" outdoor="1.0" />
+            </motor>
+			<motor template="engineLarge" file="sounds/bigX1180_loop.gls" innerRadius="23.5" outerRadius="100.0" linkNodeOffset="0 0.6 1.2" volumeScale="1.25" >
+                <volume outdoor="0.80" indoor="0">
+                    <modifier type="MOTOR_RPM_REAL" value="800"  modifiedValue="0.90" />
+                    <modifier type="MOTOR_RPM_REAL" value="1400" modifiedValue="0.95" />
+                    <modifier type="MOTOR_RPM_REAL" value="2200" modifiedValue="1.00" />
+                </volume>
+			    <pitch indoor="0.92" outdoor="0.92">
+					<modifier type="MOTOR_RPM_REAL" value="800"  modifiedValue="0.90" />
+                    <modifier type="MOTOR_RPM_REAL" value="1000" modifiedValue="0.97" />
+					<modifier type="MOTOR_RPM_REAL" value="1600" modifiedValue="1.00" />
+                    <modifier type="MOTOR_RPM_REAL" value="2200" modifiedValue="1.05" />
+					<modifier type="SUSPENSION" value="-0.10" modifiedValue="1.1" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.0"   modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02"  modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.10"  modifiedValue="1.1" />
+					<modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.02" />
+					<modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+					<modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.01" />
+				</pitch>
+				<lowpassGain indoor="1.0" outdoor="1.0" />
+            </motor>
+            <motor template="indoorCabinRumble" linkNodeOffset="0.5 3 1.5"  pitchScale="1"   volumeScale="7"/>
+            <motor template="indoorCabinRumble" linkNodeOffset="-0.5 3 1.5" pitchScale="1.2" volumeScale="7"/>
+            <motor template="transmissionHarvester01" pitchScale="0.4" volumeScale="1.5" linkNode="wheelFrontLeft" isLocalSound="true"/>
+            <motor template="transmissionHarvester01" pitchScale="0.6" volumeScale="1.5" linkNode="wheelFrontRight"/>
+            <motor template="cabinTractor_01" linkNodeOffset="0 3 2" volumeScale="3.5"/>
+            <motor template="fanHarvester02" linkNodeOffset="0 3 0" volumeScale="0.9"/>
+            <reverseDrive template="reverseBeep01" />
+		<motor file="sounds/work-maiz.ogg" linkNode="0>" innerRadius="23.5" outerRadius="150.0" >
+        <volume indoor="0.90" outdoor="1.90" >
+            <modifier type="COMBINE_LOAD" value="0.00" modifiedValue="0.00" />
+            <modifier type="COMBINE_LOAD" value="0.50" modifiedValue="1.00" />
+            <modifier type="SUSPENSION" value="-0.001" modifiedValue="1.25" />
+            <modifier type="SUSPENSION" value="0" modifiedValue="1.0" />
+            <modifier type="SUSPENSION" value="0.001" modifiedValue="0.95" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.25" modifiedValue="0.75" />
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.0" />
+            <modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.20" />
+            <modifier type="COMBINE_LOAD" value="0.50" modifiedValue="1.03" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.97" />
+
+            <modifier type="SUSPENSION" value="-1.0" modifiedValue="0.90" />
+            <modifier type="SUSPENSION" value="-0.05" modifiedValue="0.96" />
+            <modifier type="SUSPENSION" value="-0.001" modifiedValue="0.99" />
+            <modifier type="SUSPENSION" value="0" modifiedValue="1.0" />
+            <modifier type="SUSPENSION" value="0.001" modifiedValue="1.005" />
+            <modifier type="SUSPENSION" value="0.05" modifiedValue="1.02" />
+            <modifier type="SUSPENSION" value="1.0" modifiedValue="1.05" />
+             </pitch>
+            <lowpassGain indoor="0.5" outdoor="1.0" />
+           </motor>
+		   <motor file="sounds/Turbo.gls"  volumeScale="2.3" pitchScale="0.80" innerRadius="0.8" supportsReverb="false">
+                <volume indoor="0.70" outdoor="1.25" >
+                    <modifier type="SPEED" value="0.0"  modifiedValue="0.4" />
+                    <modifier type="SPEED" value="5.0"  modifiedValue="0.8" />
+                    <modifier type="SPEED" value="15.0" modifiedValue="1.0" />
+                    <modifier type="SPEED" value="25.0" modifiedValue="1.0" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="0.9" />
+                    <modifier type="SPEED" value="40.0" modifiedValue="0.8" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.45" modifiedValue="0.9" />
+                    <modifier type="MOTOR_LOAD" value="0.80" modifiedValue="0.8" />
+                    <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="0.7" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.2" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.2" />
+                </volume>
+                 <pitch indoor="0.65" outdoor="0.65">
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.03" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02" modifiedValue="0.98" />
+                    <modifier type="SUSPENSION" value="0.08" modifiedValue="0.95" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.3" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.2" />
+
+                    <modifier type="SPEED" value="0.0"  modifiedValue="0.5" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="0.6" />
+                    <modifier type="SPEED" value="17.0" modifiedValue="0.7" />
+                    <modifier type="SPEED" value="28.0" modifiedValue="0.9" />
+                    <modifier type="SPEED" value="35.0" modifiedValue="1.0" />
+                </pitch>
+            </motor>
+		</sounds>
+    </motorized>
+
+    <enterable>
+        <sounds>
+            <rain template="rainInVehicle" linkNodeOffset="0 3 2">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </rain>
+            <hail template="hailInVehicle" linkNodeOffset="0 3 2" volumeScale="1.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="10" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="10" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </hail>
+        </sounds>
+    </enterable>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <hydraulic template="hydraulicOpen05" volumeScale="1.8" pitchScale="1.5" linkNode="attacherJointFront"/>
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <cylindered>
+        <sounds>
+            <hydraulic template="hydraulicOpen04" volumeScale="2.1" pitchScale="1.2"/>
+        </sounds>
+    </cylindered>
+
+	<turnOnVehicle>
+        <sounds>
+			<start file="sounds/KroneBigXV12workstartsound.ogg" linkNodeOffset="0 1.4 -1.0" volumeScale="2.5" outerRadius="82.0">
+				<volume indoor="0.35" outdoor="1.0" />
+			</start>	
+            <work  file="sounds/KroneBigXV12worksound.ogg" volumeScale="2.5" fadeIn="2" fadeOut="2" pitchScale="1.0" linkNodeOffset="0 1.4 -1.0" outerRadius="82.0" >
+				<volume indoor="1.35" outdoor="3.65" >
+					<modifier type="COMBINE_LOAD" value="0.0" modifiedValue="0.0" />
+					<modifier type="COMBINE_LOAD" value="0.01" modifiedValue="0.4" />
+					<modifier type="COMBINE_LOAD" value="0.50" modifiedValue="0.9" />
+					<modifier type="COMBINE_LOAD" value="1.00" modifiedValue="1.3" />
+                </volume>
+				<pitch indoor="1.25" outdoor="1.29" >
+				<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.10" />
+				<modifier type="COMBINE_LOAD" value="0.01" modifiedValue="1.00" />
+				<modifier type="COMBINE_LOAD" value="0.53" modifiedValue="0.95" />
+				<modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.82" />
+				</pitch>
+				<lowpassGain indoor="0.50" outdoor="1.00" />
+			</work>
+			<work file="sounds/KroneBigXV12idle.ogg" linkNodeOffset="0 1.4 -1.0" volumeScale="2.0" outerRadius="82.0">
+				<volume indoor="0.35" outdoor="0.9" />
+			</work>	
+			<stop file="sounds/KroneBigXV12workstopsound.ogg" linkNodeOffset="0 1.4 -1.0" volumeScale="2.0" outerRadius="82.0">
+				<volume indoor="0.35" outdoor="0.9" />
+			</stop>
+        </sounds>
+    </turnOnVehicle>
+    <ai>
+        <automaticSteering>
+            <sounds>
+                <engage template="gpsEngageDefault"/>
+                <disengage template="gpsDisengageDefault"/>
+                <lineEnd template="gpsLineEndDefault"/>
+            </sounds>
+        </automaticSteering>
+    </ai>
+
+    <honk>
+        <sound template="honkKroneBigM" />
+    </honk>
+</sounds>

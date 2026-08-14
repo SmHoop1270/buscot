@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories37_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapAS/textures/props/floodBarriers/floodBarriersElements_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapAS/textures/props/floodBarriers/floodBarriersElements_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapAS/textures/props/floodBarriers/floodBarriersElements_specular.png"/>
+    <File fileId="8" filename="$data/maps/mapAS/textures/props/floodBarriers/floodBarriers_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapAS/textures/props/floodBarriers/floodBarriers_normal.png"/>
+    <File fileId="10" filename="$data/maps/mapAS/textures/props/floodBarriers/floodBarriers_specular.png"/>
+    <File fileId="20" filename="$data/maps/mapAS/textures/props/floodBarriersElements_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/mapAS/textures/props/floodBarriersElements_normal.png"/>
+    <File fileId="22" filename="$data/maps/mapAS/textures/props/floodBarriersElements_specular.png"/>
+    <File fileId="17" filename="$data/maps/mapAS/textures/props/floodBarriers_diffuse.png"/>
+    <File fileId="18" filename="$data/maps/mapAS/textures/props/floodBarriers_normal.png"/>
+    <File fileId="19" filename="$data/maps/mapAS/textures/props/floodBarriers_specular.png"/>
+    <File fileId="23" filename="$data/maps/mapAS/textures/props/railing_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/mapAS/textures/props/railing_normal.png"/>
+    <File fileId="25" filename="$data/maps/mapAS/textures/props/railing_specular.png"/>
+    <File fileId="26" filename="$data/maps/mapAS/textures/props/shopFrontAdSet_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapAS/textures/props/shopFrontAdSet_normal.png"/>
+    <File fileId="28" filename="$data/maps/mapAS/textures/props/shopFrontAdSet_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapAS/textures/props/trafficGuardRail/trafficGuardRail_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapAS/textures/props/trafficGuardRail/trafficGuardRail_normal.png"/>
+    <File fileId="15" filename="$data/maps/mapAS/textures/props/trafficGuardRail/trafficGuardRail_specular.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="collision_mat" materialId="5530" diffuseColor="0 0.501961 0 1" specularColor="0.501961 1 0.501961">
+    </Material>
+    <Material name="floodBarriers_mat" materialId="13012" customShaderId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="floodBarriers_mat" materialId="15607" customShaderId="4">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+    </Material>
+    <Material name="floodBarriersElements_mat" materialId="13022" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="floodBarriersElements_mat" materialId="15608" customShaderId="4">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="railing_mat" materialId="16183" customShaderId="4">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="shopFrontAdSet_mat" materialId="2478" customShaderId="4">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="standardSurface1" materialId="1367" diffuseColor="0.4 0.4 0.4 1">
+    </Material>
+    <Material name="trafficGuardRail_mat" materialId="14313">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories37_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Barrier" translation="-134.23 -34.5547 -75.6678" nodeId="13077">
+      <TransformGroup name="floodBarrier02Element" lockedgroup="true" translation="10.6231 0 1.223" clipDistance="150" nodeId="13041">
+        <Shape name="LOD0" shapeId="1" nodeId="13042" castsShadows="true" receiveShadows="true" materialIds="13022"/>
+        <Shape name="col" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13043" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier03Element" lockedgroup="true" translation="10.6519 0 2.54189" clipDistance="150" nodeId="13056">
+        <Shape name="LOD0" shapeId="3" nodeId="13057" castsShadows="true" receiveShadows="true" materialIds="13022"/>
+        <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13058" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier01" lockedgroup="true" translation="-0.0530472 0 -2.12818" nodeId="13017">
+        <TransformGroup name="vis_lod" lodDistance="0 30" lodBlending="false" clipDistance="350" nodeId="13018">
+          <Shape name="LOD0" shapeId="5" nodeId="13019" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+          <Shape name="LOD1" shapeId="6" nodeId="13020" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13021" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier01Element" lockedgroup="true" translation="0.991524 0 0.0464172" nodeId="13027">
+        <TransformGroup name="vis_lod" lodDistance="0 30" lodBlending="false" clipDistance="200" nodeId="13028">
+          <Shape name="LOD0" shapeId="8" nodeId="13029" castsShadows="true" receiveShadows="true" materialIds="13022"/>
+          <Shape name="LOD1" shapeId="9" nodeId="13030" castsShadows="true" receiveShadows="true" materialIds="13022"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13031" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13022"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier02" lockedgroup="true" translation="-0.180672 -3.8147e-06 1.17019" clipDistance="220" nodeId="13035">
+        <Shape name="LOD0" shapeId="11" nodeId="13036" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+        <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13037" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5530"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier03" lockedgroup="true" translation="-0.275986 0 2.49652" static="true" collisionFilterMask="0xfffffbff" nodeId="13048">
+        <TransformGroup name="vis_lod" lodDistance="0 20" lodBlending="false" clipDistance="250" nodeId="13049">
+          <Shape name="LOD0" shapeId="13" nodeId="13050" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+          <Shape name="LOD1" shapeId="14" nodeId="13051" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="15" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13052" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier04" lockedgroup="true" translation="-0.444221 -3.8147e-06 3.48033" nodeId="13063">
+        <TransformGroup name="vis_lod" lodDistance="0 20" lodBlending="false" clipDistance="250" nodeId="13064">
+          <Shape name="LOD0" shapeId="16" nodeId="13065" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+          <Shape name="LOD1" shapeId="17" nodeId="13066" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="18" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13067" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier05" lockedgroup="true" translation="0.187187 0 -4.67411" nodeId="13072">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 30" lodBlending="false" clipDistance="350" nodeId="13073">
+          <Shape name="LOD0" shapeId="19" nodeId="13074" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+          <Shape name="LOD1" shapeId="20" nodeId="13075" castsShadows="true" receiveShadows="true" materialIds="13012"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="21" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13076" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="trafficGuardRailEnd01" lockedgroup="true" translation="-7.68644 -3.8147e-06 5.5577" static="true" collisionFilterMask="0xfffffbff" nodeId="14318">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 40" clipDistance="80" nodeId="14319">
+          <Shape name="LOD0" shapeId="22" nodeId="14320" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+          <Shape name="LOD1" shapeId="23" nodeId="14321" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="24" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="14322" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="trafficGuardRailEnd02" lockedgroup="true" translation="-7.22013 -3.8147e-06 5.56783" static="true" collisionFilterMask="0xfffffbff" nodeId="14327">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 40" clipDistance="80" nodeId="14328">
+          <Shape name="LOD0" shapeId="25" nodeId="14329" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+          <Shape name="LOD1" shapeId="26" nodeId="14330" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="27" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="14331" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="trafficGuardRail2m" lockedgroup="true" translation="-3.82123 -3.8147e-06 4.874" static="true" collisionFilterMask="0xfffffbff" nodeId="14336">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 40" clipDistance="80" nodeId="14337">
+          <Shape name="LOD0" shapeId="28" nodeId="14338" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+          <Shape name="LOD1" shapeId="29" nodeId="14339" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="30" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="14340" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="trafficGuardRail4m" lockedgroup="true" translation="-8.09953 -3.8147e-06 4.88158" static="true" collisionFilterMask="0xfffffbff" nodeId="14345">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 40" clipDistance="80" nodeId="14346">
+          <Shape name="LOD0" shapeId="31" nodeId="14347" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+          <Shape name="LOD1" shapeId="32" nodeId="14348" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="33" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="14349" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="trafficGuardRail8m" lockedgroup="true" translation="-8.16293 -3.8147e-06 4.39487" static="true" collisionFilterMask="0xfffffbff" nodeId="14354">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 40" clipDistance="80" nodeId="14355">
+          <Shape name="LOD0" shapeId="34" nodeId="14356" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+          <Shape name="LOD1" shapeId="35" nodeId="14357" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="14358" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="trafficGuardRailPole" lockedgroup="true" translation="-7.68644 -3.8147e-06 5.5577" static="true" collisionFilterMask="0xfffffbff" nodeId="14363">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 40" clipDistance="80" nodeId="14364">
+          <Shape name="LOD0" shapeId="37" nodeId="14365" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+          <Shape name="LOD1" shapeId="38" nodeId="14366" castsShadows="true" receiveShadows="true" materialIds="14313"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="39" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="14367" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier02_lod" lockedgroup="true" translation="-0.401421 -3.8147e-06 6.24464" clipDistance="220" nodeId="15634">
+        <Shape name="LOD0" shapeId="11" nodeId="15635" castsShadows="true" receiveShadows="true" materialIds="15607"/>
+        <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="15636" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5530"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier02Element" lockedgroup="true" translation="7.92387 -3.8147e-06 3.9676" clipDistance="150" nodeId="15648">
+        <Shape name="LOD0" shapeId="1" nodeId="15649" castsShadows="true" receiveShadows="true" materialIds="15608"/>
+        <Shape name="col" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="15650" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floodBarrier03Element" lockedgroup="true" translation="3.41623 -3.8147e-06 3.86583" clipDistance="150" nodeId="15651">
+        <Shape name="LOD0" shapeId="3" nodeId="15652" castsShadows="true" receiveShadows="true" materialIds="15608"/>
+        <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="15653" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="railing02_4m" lockedgroup="true" translation="1.20335 -3.8147e-06 8.22303" clipDistance="120" nodeId="16197">
+        <TransformGroup name="visual_lod" lodDistance="0 20" lodBlending="false" nodeId="16198">
+          <Shape name="LOD0" shapeId="40" nodeId="16199" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+          <Shape name="LOD1" shapeId="41" nodeId="16200" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="42" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16201" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="railing02_8m" lockedgroup="true" translation="-7.70419 -3.8147e-06 8.18294" clipDistance="120" nodeId="16202">
+        <TransformGroup name="visual_lod" lodDistance="0 20" lodBlending="false" nodeId="16203">
+          <Shape name="LOD0" shapeId="43" nodeId="16204" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+          <Shape name="LOD1" shapeId="44" nodeId="16205" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="45" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16206" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="railing01_4m" lockedgroup="true" translation="0.529854 -3.8147e-06 7.1339" clipDistance="120" nodeId="16207">
+        <TransformGroup name="visual_lod" lodDistance="0 20" lodBlending="false" nodeId="16208">
+          <Shape name="LOD0" shapeId="46" nodeId="16209" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+          <Shape name="LOD1" shapeId="47" nodeId="16210" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="48" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16211" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="railing01_8m" lockedgroup="true" translation="-7.94963 -3.8147e-06 7.21084" clipDistance="120" nodeId="16212">
+        <TransformGroup name="visual_lod" lodDistance="0 20" lodBlending="false" nodeId="16213">
+          <Shape name="LOD0" shapeId="49" nodeId="16214" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+          <Shape name="LOD1" shapeId="50" nodeId="16215" castsShadows="true" receiveShadows="true" materialIds="16183"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="51" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="cornerAdSupportBig" lockedgroup="true" translation="-4.16765 -3.8147e-06 9.12505" clipDistance="150" nodeId="16377">
+        <TransformGroup name="vis_lod" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" nodeId="16378">
+          <Shape name="LOD0" shapeId="52" nodeId="16379" castsShadows="true" receiveShadows="true" materialIds="2478"/>
+          <Shape name="LOD1" shapeId="53" nodeId="16380" castsShadows="true" receiveShadows="true" materialIds="2478"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="54" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16381" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

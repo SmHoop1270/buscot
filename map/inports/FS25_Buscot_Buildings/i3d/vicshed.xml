@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="garageWorkshopSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+		<name>
+			<en>Vehicle Shed</en>
+			<de>Maschinenschuppen</de>
+			<fr>Hangar À Machines</fr>
+		</name>
+        <functions>
+            <function>$l10n_function_workshop</function>
+        </functions>
+        <image>map/inports/FS25_Buscot_Buildings/store/store_vicshed.dds</image>
+        <price>35000</price>
+        <dailyUpkeep>10</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        
+    </storeData>	
+
+    <base>
+        <filename>map/inports/FS25_Buscot_Buildings/i3d/vicshed.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>		
+        <boughtWithFarmland>true</boughtWithFarmland>		
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+	
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>	
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+	
+	<triggerMarkers>
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+        <triggerMarker node="warningStripes"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="SHOP" linkNode="vehicleTrigger" teleportNode="playerTrigger" />
+    </hotspots>
+
+    <workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>
+	
+    <animatedObjects>
+        <animatedObject saveId="rollingDoor1" >
+            <animation duration="5">
+                <part node="rollingDoor1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.2 0"/>
+                </part>
+                <part node="rollingDoor1ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                </part>
+                <part node="rollingDoor1ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.114 0"/>
+                </part>
+                <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 " />
+                    <keyFrame time="1.0" values="0.94 " />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor1Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor1Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor1Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="rollingDoor2" >
+            <animation duration="5">
+                <part node="rollingDoor2">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.2 0"/>
+                </part>
+                <part node="rollingDoor2ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                </part>
+                <part node="rollingDoor2ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.114 0"/>
+                </part>
+                <shader node="rollingDoor2" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 " />
+                    <keyFrame time="1.0" values="0.94 " />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor2Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor2Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor2Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+		
+        <animatedObject saveId="rollingDoor3" >
+            <animation duration="5">
+                <part node="rollingDoor3">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.2 0"/>
+                </part>
+                <part node="rollingDoor3ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                </part>
+                <part node="rollingDoor3ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.114 0"/>
+                </part>
+                <shader node="rollingDoor3" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 " />
+                    <keyFrame time="1.0" values="0.94 " />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor3Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor3Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor3Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor3Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+		
+        <animatedObject saveId="door2" >
+            <animation duration="1.5">
+                <part node="door2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door2Base" template="metalDoorsLoop" />
+                <posEnd linkNode="door2Base" template="metalDoorsOpen" />
+                <negEnd linkNode="door2Base" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>		
+    </animatedObjects>
+
+	
+<i3dMappings>
+    <i3dMapping id="vicshed" node="0>"/>
+    <i3dMapping id="visuals" node="0>0"/>
+    <i3dMapping id="roof" node="0>0|0"/>
+    <i3dMapping id="windows" node="0>0|0|0"/>
+    <i3dMapping id="topCenter" node="0>0|0|1"/>
+    <i3dMapping id="rollerDoor1Topper" node="0>0|1"/>
+    <i3dMapping id="rollerDoor2Topper" node="0>0|2"/>
+    <i3dMapping id="rollerDoor3Topper" node="0>0|3"/>
+    <i3dMapping id="clearAreas" node="0>1"/>
+    <i3dMapping id="clearArea1Start" node="0>1|0"/>
+    <i3dMapping id="clearArea1Width" node="0>1|0|0"/>
+    <i3dMapping id="clearArea1Height" node="0>1|0|1"/>
+    <i3dMapping id="levelAreas" node="0>2"/>
+    <i3dMapping id="levelArea1Start" node="0>2|0"/>
+    <i3dMapping id="levelArea1Width" node="0>2|0|0"/>
+    <i3dMapping id="levelArea1Height" node="0>2|0|1"/>
+    <i3dMapping id="indoorAreas" node="0>3"/>
+    <i3dMapping id="indoorArea1Start" node="0>3|0"/>
+    <i3dMapping id="indoorArea1Width" node="0>3|0|0"/>
+    <i3dMapping id="indoorArea1Height" node="0>3|0|1"/>
+    <i3dMapping id="testAreas" node="0>4"/>
+    <i3dMapping id="testArea1Start" node="0>4|0"/>
+    <i3dMapping id="testArea1End" node="0>4|0|0"/>
+    <i3dMapping id="tipOcclusionUpdateAreas" node="0>5"/>
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0"/>
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0"/>
+    <i3dMapping id="tipCollisions" node="0>6"/>
+    <i3dMapping id="doors" node="0>7"/>
+    <i3dMapping id="rollingDoor1Base" node="0>7|0"/>
+    <i3dMapping id="rollingDoor1" node="0>7|0|0"/>
+    <i3dMapping id="rollingDoor1ColPartBottom" node="0>7|0|1"/>
+    <i3dMapping id="rollingDoor1ColPartTop" node="0>7|0|2"/>
+    <i3dMapping id="rollingDoor1Trigger" node="0>7|0|3"/>
+    <i3dMapping id="rollingDoor2Base" node="0>7|1"/>
+    <i3dMapping id="rollingDoor2" node="0>7|1|0"/>
+    <i3dMapping id="rollingDoor2ColPartBottom" node="0>7|1|1"/>
+    <i3dMapping id="rollingDoor2ColPartTop" node="0>7|1|2"/>
+    <i3dMapping id="rollingDoor2Trigger" node="0>7|1|3"/>
+    <i3dMapping id="rollingDoor3Base" node="0>7|2"/>
+    <i3dMapping id="rollingDoor3" node="0>7|2|0"/>
+    <i3dMapping id="rollingDoor3ColPartBottom" node="0>7|2|1"/>
+    <i3dMapping id="rollingDoor3ColPartTop" node="0>7|2|2"/>
+    <i3dMapping id="rollingDoor3Trigger" node="0>7|2|3"/>
+    <i3dMapping id="door2Base" node="0>7|3"/>
+    <i3dMapping id="door2" node="0>7|3|0"/>
+    <i3dMapping id="handle" node="0>7|3|0|0"/>
+    <i3dMapping id="door2Trigger" node="0>7|3|1"/>
+    <i3dMapping id="workshop" node="0>8"/>
+    <i3dMapping id="markerWrench" node="0>8|0"/>
+    <i3dMapping id="warningStripes" node="0>8|1"/>
+    <i3dMapping id="warningStripes_duplicate_01" node="0>8|2"/>
+    <i3dMapping id="vehicleTrigger" node="0>8|3"/>
+    <i3dMapping id="playerTrigger" node="0>8|4"/>
+    <i3dMapping id="decoration" node="0>9"/>
+    <i3dMapping id="MB39__30_5R32_solid" node="0>9|0"/>
+    <i3dMapping id="extinguisherInterior" node="0>9|1"/>
+    <i3dMapping id="extinguisherInt_decals" node="0>9|1|0"/>
+    <i3dMapping id="extinguisherInterior_duplicate_01" node="0>9|2"/>
+    <i3dMapping id="extinguisherInt_decals_duplicate_01" node="0>9|2|0"/>
+    <i3dMapping id="visual11" node="0>9|3"/>
+    <i3dMapping id="visual12" node="0>9|4"/>
+    <i3dMapping id="crashProtection_big" node="0>9|5"/>
+    <i3dMapping id="collision" node="0>9|5|0"/>
+    <i3dMapping id="crashProtection_big_duplicate_01" node="0>9|6"/>
+    <i3dMapping id="collision_duplicate_01" node="0>9|6|0"/>
+    <i3dMapping id="electroBox03" node="0>9|7"/>
+    <i3dMapping id="transportBarrow2" node="0>9|8"/>
+    <i3dMapping id="transportBarrow_vis" node="0>9|8|0"/>
+    <i3dMapping id="hammer1" node="0>9|9"/>
+    <i3dMapping id="LOD0" node="0>9|9|0"/>
+    <i3dMapping id="collision_duplicate_02" node="0>9|9|0|0"/>
+    <i3dMapping id="LOD1" node="0>9|9|1"/>
+    <i3dMapping id="wrenchPlier03" node="0>9|10"/>
+    <i3dMapping id="wrenchPlier03_vis" node="0>9|10|0"/>
+    <i3dMapping id="handSaw01" node="0>9|11"/>
+    <i3dMapping id="visual_lod" node="0>9|11|0"/>
+    <i3dMapping id="LOD0_duplicate_01" node="0>9|11|0|0"/>
+    <i3dMapping id="alpha" node="0>9|11|0|0|0"/>
+    <i3dMapping id="LOD1_duplicate_01" node="0>9|11|0|1"/>
+    <i3dMapping id="collision_duplicate_03" node="0>9|11|1"/>
+    <i3dMapping id="hammer01" node="0>9|12"/>
+    <i3dMapping id="roseScissor" node="0>9|13"/>
+    <i3dMapping id="LOD0_duplicate_02" node="0>9|13|0"/>
+    <i3dMapping id="collision_duplicate_04" node="0>9|13|0|0"/>
+    <i3dMapping id="LOD1_duplicate_02" node="0>9|13|1"/>
+    <i3dMapping id="visual25" node="0>9|14"/>
+    <i3dMapping id="cutter" node="0>9|15"/>
+    <i3dMapping id="visual14" node="0>9|16"/>
+    <i3dMapping id="screwBoxFull" node="0>9|17"/>
+    <i3dMapping id="wrenchPlier02" node="0>9|18"/>
+    <i3dMapping id="wrenchPlier02_vis" node="0>9|18|0"/>
+    <i3dMapping id="oilCan02_vis" node="0>9|19"/>
+    <i3dMapping id="toolBox" node="0>9|20"/>
+    <i3dMapping id="visual" node="0>9|20|0"/>
+    <i3dMapping id="visual7" node="0>9|21"/>
+    <i3dMapping id="oiler01" node="0>9|22"/>
+    <i3dMapping id="oiler01_vis" node="0>9|22|0"/>
+    <i3dMapping id="glue" node="0>9|23"/>
+    <i3dMapping id="glue_vis" node="0>9|23|0"/>
+
+</i3dMappings>
+</placeable>

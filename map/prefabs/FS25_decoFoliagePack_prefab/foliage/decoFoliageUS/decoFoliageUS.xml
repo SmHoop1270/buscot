@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType distanceTexturePath="distance">
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2.5" shapeSource="decoFoliageUS.i3d">
+        <foliageStateDefaults distanceMapLayer="0" width="1.0" height="1.0" widthVariance="0.25" heightVariance="0.35" horizontalPositionVariance="0.3" />
+
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+        <!-- smallDenseMix -->
+        <foliageState name="smallDenseMix" numBlocksPerUnit="5.0">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>0|1" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>1|0" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>2|0" />
+                <foliageLod blockShape="0>2|1" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>3|0" />
+                <foliageLod blockShape="0>3|1" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>4|0" />
+                <foliageLod blockShape="0>4|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- small rumex -->
+        <foliageState name="smallRumex" >
+            <foliageShape>
+                <foliageLod blockShape="0>5|0" />
+                <foliageLod blockShape="0>5|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- apera -->
+        <foliageState name="apera" >
+            <foliageShape>
+                <foliageLod blockShape="1>0|0" />
+                <foliageLod blockShape="1>0|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- chaerophyllum -->
+        <foliageState name="whiteTallWeed" width="1.0" height="0.75" widthVariance="0.25" heightVariance="0.5" numBlocksPerUnit="2.25">
+            <foliageShape>
+                <foliageLod blockShape="1>1|0" />
+                <foliageLod blockShape="1>1|1" />
+            </foliageShape>
+        </foliageState>
+        <!--  chenopodium -->
+        <foliageState name="greenTallWeed" width="1.0" height="0.75" widthVariance="0.25" heightVariance="0.5" numBlocksPerUnit="2.25">
+            <foliageShape>
+                <foliageLod blockShape="1>2|0" />
+                <foliageLod blockShape="1>2|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- cirsium -->
+        <foliageState name="cirsium" heightVariance="0.45" >
+            <foliageShape>
+                <foliageLod blockShape="1>3|0" />
+                <foliageLod blockShape="1>3|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- apaverRhoeas -->
+        <foliageState name="papaverRhoeas" heightVariance="0.45" >
+            <foliageShape>
+                <foliageLod blockShape="1>4|0" />
+                <foliageLod blockShape="1>4|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- rumex -->
+        <foliageState name="rumex">
+            <foliageShape>
+                <foliageLod blockShape="1>5|0" />
+                <foliageLod blockShape="1>5|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- grassSmall -->
+        <foliageState name="grassSmall" heightVariance="0.5" numBlocksPerUnit="2.7">
+            <foliageShape>
+                <foliageLod blockShape="4>0|0" />
+                <!-- <foliageLod blockShape="4>1|0" /> -->
+                <foliageLod blockShape="4>1|0" />
+            </foliageShape>
+        </foliageState>
+        <!-- grassMedium -->
+        <foliageState name="grassMedium" heightVariance="0.5" numBlocksPerUnit="2.2">
+            <foliageShape>
+                <foliageLod blockShape="4>0|1" />
+                <!-- <foliageLod blockShape="4>1|1" /> -->
+                <foliageLod blockShape="4>1|1" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 0 1 - grassCut -->
+        <foliageState name="grassCut" numBlocksPerUnit="3.2">
+            <foliageShape>
+                <foliageLod blockShape="4>0|3" />
+                <foliageLod blockShape="4>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- Coneflower -->
+        <foliageState name="coneflower" heightVariance="0.55" numBlocksPerUnit="3.0">
+            <foliageShape>
+                <foliageLod blockShape="5>0|0" />
+                <foliageLod blockShape="5>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="5>0|1" />
+                <foliageLod blockShape="5>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="slenderMountainMint" heightVariance="0.45" numBlocksPerUnit="3.0">
+            <foliageShape>
+                <foliageLod blockShape="6>0|0" />
+                <foliageLod blockShape="6>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="6>0|1" />
+                <foliageLod blockShape="6>1|1" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="6>0|2" />
+                <foliageLod blockShape="6>1|2" />
+            </foliageShape>           
+        </foliageState>
+        <foliageState name="wildBergamot" heightVariance="0.55" numBlocksPerUnit="3.0">
+            <foliageShape>
+                <foliageLod blockShape="7>0|0" />
+                <foliageLod blockShape="7>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="7>0|1" />
+                <foliageLod blockShape="7>1|1" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="7>0|2" />
+                <foliageLod blockShape="7>1|2" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="prairieBlazingStar" heightVariance="0.45" numBlocksPerUnit="3.0">
+            <foliageShape>
+                <foliageLod blockShape="8>0|0" />
+                <foliageLod blockShape="8>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="8>0|1" />
+                <foliageLod blockShape="8>1|1" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+</foliageType>

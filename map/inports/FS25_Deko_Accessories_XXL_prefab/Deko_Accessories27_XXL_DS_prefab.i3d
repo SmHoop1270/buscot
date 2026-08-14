@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories27_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="33" filename="$data/maps/mapAS/textures/props/metalTools/metalTools02.i3d"/>
+    <File fileId="42" filename="$data/maps/mapEU/textures/props/constructionMaterial_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/mapEU/textures/props/constructionMaterial_normal.png"/>
+    <File fileId="44" filename="$data/maps/mapEU/textures/props/constructionMaterial_specular.png"/>
+    <File fileId="30" filename="$data/maps/mapEU/textures/props/firewood_diffuse.png"/>
+    <File fileId="31" filename="$data/maps/mapEU/textures/props/firewood_normal.png"/>
+    <File fileId="32" filename="$data/maps/mapEU/textures/props/firewood_specular.png"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/handSawAlpha_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/handSawAlpha_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapEU/textures/props/handSawAlpha_specular.png"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/handSaw_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/handSaw_normal.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/handSaw_specular.png"/>
+    <File fileId="27" filename="$data/maps/mapEU/textures/props/logStores_diffuse.png"/>
+    <File fileId="28" filename="$data/maps/mapEU/textures/props/logStores_normal.png"/>
+    <File fileId="29" filename="$data/maps/mapEU/textures/props/logStores_specular.png"/>
+    <File fileId="24" filename="$data/maps/mapUS/textures/props/floatingPier01_diffuse.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/floatingPier01_normal.png"/>
+    <File fileId="26" filename="$data/maps/mapUS/textures/props/floatingPier01_specular.png"/>
+    <File fileId="38" filename="$data/maps/textures/shared/props/boardStack01/barBeamLong.i3d"/>
+    <File fileId="37" filename="$data/maps/textures/shared/props/boardStack01/barBeamShort.i3d"/>
+    <File fileId="19" filename="$data/maps/textures/shared/props/boardStack01/boardBarStackLarge.i3d"/>
+    <File fileId="45" filename="$data/maps/textures/shared/props/boardStack01/boardPlankLong.i3d"/>
+    <File fileId="1" filename="$data/maps/textures/shared/props/boardStack01/boardStackMedium.i3d"/>
+    <File fileId="23" filename="$data/maps/textures/shared/props/boardStack01/boardStackSmall.i3d"/>
+    <File fileId="9" filename="$data/maps/textures/shared/props/boardStack01/boardStacksTiny.i3d"/>
+    <File fileId="40" filename="$data/maps/textures/shared/props/boardStack01/trunkStackMedium.i3d"/>
+    <File fileId="11" filename="$data/maps/textures/shared/props/boardStack02/boardStack01.i3d"/>
+    <File fileId="10" filename="$data/maps/textures/shared/props/boardStack02/boardStack02.i3d"/>
+    <File fileId="41" filename="$data/maps/textures/shared/props/boardStack02/boardStack02Board.i3d"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/boardStackSet_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/boardStackSet_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/boardStackSet_specular.png"/>
+    <File fileId="20" filename="$data/placeables/brandless/productionPointsGeneric/shared/broom01_diffuse.png"/>
+    <File fileId="21" filename="$data/placeables/brandless/productionPointsGeneric/shared/broom01_normal.png"/>
+    <File fileId="22" filename="$data/placeables/brandless/productionPointsGeneric/shared/broom01_specular.png"/>
+    <File fileId="34" filename="$data/placeables/brandless/productionPointsGeneric/shared/logYardStacks_diffuse.png"/>
+    <File fileId="35" filename="$data/placeables/brandless/productionPointsGeneric/shared/logYardStacks_normal.png"/>
+    <File fileId="36" filename="$data/placeables/brandless/productionPointsGeneric/shared/logYardStacks_specular.png"/>
+    <File fileId="39" filename="$data/placeables/woodMizer/lt15/lt15.i3d"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="boardStackSet_mat" materialId="8049" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="broom01_mat" materialId="6579">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="constructionMaterial_mat" materialId="4591" customShaderId="5">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="44"/>
+    </Material>
+    <Material name="firewood_mat" materialId="5100">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+    </Material>
+    <Material name="floatingPier01_mat" materialId="1597" customShaderId="5">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="handSaw_mat" materialId="6598" customShaderId="5">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="handSawAlpha_mat" materialId="6599" customShaderId="5">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="logStores_mat" materialId="8050" customShaderId="5">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="logYardStacks_mat" materialId="8051" customShaderId="5">
+      <Texture fileId="34"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="36"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories27_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Wood accessories" translation="-141.597 -34.5547 -109.161" nodeId="8086">
+      <TransformGroup name="barStackBig_PREFAB" lockedgroup="true" translation="-7.90701 0 -6.14208" rotation="-1.73028e-05 90 0" nodeId="8087">
+        <ReferenceNode name="barStackMedium" translation="9.53674e-07 0 0" rotation="0 90 0" referenceId="1" nodeId="8091"/>
+        <Shape name="boardStackMedium" lockedgroup="true" translation="0.0381498 0.916302 -0.00338745" rotation="180 87.8048 180" shapeId="1" clipDistance="55" nodeId="8093" castsShadows="true" receiveShadows="true" materialIds="8049">
+          <Shape name="col" translation="0 0 0.01721" shapeId="2" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8094" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+        <ReferenceNode name="boardStacksTiny" translation="-0.00454521 1.32235 0.0197144" rotation="1.54568e-05 -73.2945 -1.87952e-05" referenceId="9" nodeId="8098"/>
+      </TransformGroup>
+      <TransformGroup name="boardStack02_PREFAB" lockedgroup="true" translation="-4.92465 0 -2.09241" rotation="-0.000332091 88.358 -0.000357932" nodeId="8100">
+        <ReferenceNode name="boardStack02" translation="2.245e-06 1.45965e-14 0.336293" rotation="-2.44267e-12 0.000382491 6.62125e-09" scale="1 1 0.830809" referenceId="10" nodeId="8106"/>
+        <ReferenceNode name="boardStack01" translation="0.115582 0.500015 0.289037" rotation="-3.49087e-05 -1.03701 -1.59818e-05" scale="1 1 0.835539" referenceId="11" nodeId="8115"/>
+        <TransformGroup name="handSaw01" lockedgroup="true" translation="0.469788 0.837006 0.430398" rotation="-90.1851 -30.5727 -0.133362" nodeId="8120">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="75" nodeId="8121">
+            <Shape name="LOD0" shapeId="3" nodeId="8122" castsShadows="true" receiveShadows="true" materialIds="6598">
+              <Shape name="alpha" translation="-0.279329 -0.075185 0" shapeId="4" nodeId="8123" castsShadows="true" receiveShadows="true" materialIds="6599"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" nodeId="8124" castsShadows="true" receiveShadows="true" materialIds="6598"/>
+          </TransformGroup>
+          <Shape name="collision" shapeId="6" static="true" collisionFilterMask="0xfffffbff" nodeId="8125" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="boardBarStackLargeBroom_PREFAB" lockedgroup="true" translation="-7.90521 0 -4.19409" rotation="-4.16621e-08 90 0" nodeId="8126">
+        <ReferenceNode name="boardBarStackLarge" rotation="0 -90 0" referenceId="19" nodeId="8130"/>
+        <Shape name="broom" lockedgroup="true" translation="-0.804847 0.0273705 -1.21243" rotation="13.631 -76.8813 2.38929e-05" shapeId="7" static="true" collisionFilterMask="0xfffffbff" nodeId="8132" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="broom01_vis" shapeId="8" clipDistance="50" nodeId="8133" castsShadows="true" receiveShadows="true" materialIds="6579"/>
+        </Shape>
+        <ReferenceNode name="boardStackSmall" translation="0.247216 1.25468 0.0446472" rotation="3.64222e-15 90 0" referenceId="23" nodeId="8137"/>
+      </TransformGroup>
+      <TransformGroup name="boardStackMedium_PREFAB" lockedgroup="true" translation="-7.81549 0 1.20171" rotation="-8.39683e-07 -0 8.42427e-07" nodeId="8139">
+        <Shape name="boardStackMedium" lockedgroup="true" translation="-5.72205e-06 0 0" rotation="-5.21531e-08 4.26887e-07 -3.11535e-07" shapeId="1" clipDistance="55" nodeId="8140" castsShadows="true" receiveShadows="true" materialIds="8049">
+          <Shape name="col" translation="0 0 0.01721" shapeId="2" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8141" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+        <ReferenceNode name="boardStacksTiny" translation="-0.0295596 0.406052 0.185369" rotation="180 2.02217 -180" referenceId="9" nodeId="8142"/>
+      </TransformGroup>
+      <TransformGroup name="boardBarStackLarge_PREFAB" lockedgroup="true" translation="-7.8632 0 -2.19423" rotation="4.16621e-08 90 0" nodeId="8144">
+        <ReferenceNode name="boardBarStackLarge" rotation="0 -90 0" referenceId="19" nodeId="8145"/>
+      </TransformGroup>
+      <ReferenceNode name="boardStacksTiny" translation="-7.84804 0 4.54687" rotation="-180 -0 180" referenceId="9" nodeId="8147"/>
+      <TransformGroup name="boardStackMedium_PREFAB" lockedgroup="true" translation="-7.81282 0 2.56597" rotation="-8.39683e-07 -0 8.42427e-07" nodeId="8149">
+        <Shape name="boardStackMedium" lockedgroup="true" translation="-5.72205e-06 0 0" rotation="-5.21531e-08 4.26887e-07 -3.11535e-07" shapeId="1" clipDistance="55" nodeId="8150" castsShadows="true" receiveShadows="true" materialIds="8049">
+          <Shape name="col" translation="0 0 0.01721" shapeId="2" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8151" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+      </TransformGroup>
+      <ReferenceNode name="boardStackSmall" translation="-7.84187 0 3.74702" rotation="3.03321e-21 -0 -4.16621e-08" referenceId="23" nodeId="8152"/>
+      <TransformGroup name="barrelsQuad01_PREFAB" lockedgroup="true" translation="1.12042 0 4.59249" rotation="180 -0 180" nodeId="8154">
+        <Shape name="ironBars" translation="0.187043 0.952141 0.971951" rotation="3.13576e-05 8.13027 -1.77369e-05" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="50" nodeId="8155" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+      </TransformGroup>
+      <ReferenceNode name="boardStack02" translation="-4.86647 0 3.33244" rotation="-0.000331937 88.358 -0.000357778" scale="1 1 0.830809" referenceId="10" nodeId="8156"/>
+      <ReferenceNode name="boardStack01" translation="-2.65855 0 3.38316" rotation="-0.000580276 87.3206 -0.000571207" scale="1 1 0.835539" referenceId="11" nodeId="8161"/>
+      <TransformGroup name="boardStack02_PREFAB" lockedgroup="true" translation="-2.76202 0 -2.08611" rotation="-0.000332091 88.3578 -0.000357932" nodeId="8166">
+        <ReferenceNode name="boardStack02" translation="2.245e-06 1.45965e-14 0.336293" rotation="-2.44267e-12 0.000382491 6.62125e-09" scale="1 1 0.830809" referenceId="10" nodeId="8167"/>
+        <ReferenceNode name="boardStack01" translation="0.115582 0.500015 0.289037" rotation="-3.49087e-05 -1.03701 -1.59818e-05" scale="1 1 0.835539" referenceId="11" nodeId="8172"/>
+      </TransformGroup>
+      <TransformGroup name="logStore_PREFAB" lockedgroup="true" translation="4.33536 0 -6.46769" rotation="-5.15223e-06 0.597865 5.49205e-07" nodeId="8177">
+        <TransformGroup name="logStore02_PREFAB" lockedgroup="true" translation="0 0 -7.62939e-06" rotation="0 -2.13443e-07 -3.56222e-13" nodeId="8178">
+          <TransformGroup name="logStore02" lockedgroup="true" lodDistance="0 20" clipDistance="180" nodeId="8179">
+            <Shape name="LOD0" shapeId="10" nodeId="8180" castsShadows="true" receiveShadows="true" materialIds="8050">
+              <Shape name="logStore02_detail" shapeId="11" clipDistance="12" nodeId="8181" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="12" nodeId="8182" castsShadows="true" receiveShadows="true" materialIds="8050"/>
+            <Shape name="col" shapeId="13" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8183" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </TransformGroup>
+          <TransformGroup name="firewoodStack02" lockedgroup="true" translation="0.622009 0.130898 0.012001" lodDistance="0 25" clipDistance="300" nodeId="8184">
+            <Shape name="firewood2" shapeId="14" nodeId="8185" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+            <Shape name="firewood2_LOD" shapeId="15" clipDistance="135" nodeId="8186" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+            <Shape name="col" translation="0 0.457731 0" shapeId="16" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8187" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </TransformGroup>
+          <TransformGroup name="firewoodStack01" lockedgroup="true" translation="-0.597992 0.130898 -0.0620041" lodDistance="0 25" clipDistance="300" nodeId="8188">
+            <Shape name="firewood1" shapeId="17" nodeId="8189" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+            <Shape name="firewood1_LOD" shapeId="18" clipDistance="135" nodeId="8190" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+            <Shape name="col" translation="-0.00196 0.308977 -0.002754" shapeId="19" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8191" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="firewoodStumpAxe_PREFAB" lockedgroup="true" translation="0.348083 -0.0103302 2.20434" rotation="-8.41299e-07 -29.0373 -5.2671e-06" nodeId="8192">
+          <Shape name="firewoodStump02" translation="0 0 -3.23834e-06" rotation="0 -0 3.42326e-19" shapeId="20" static="true" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="80" nodeId="8193" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+          <ReferenceNode name="axe" translation="-0.0468039 0.716295 -0.268971" rotation="82.3808 27.7878 -91.8318" scale="1.12605 1 1" referenceId="33" nodeId="8198"/>
+          <Shape name="firewoodStump03" translation="0.820038 -0.00592804 -0.114212" rotation="180 -31.0376 -180" shapeId="21" static="true" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="80" nodeId="8203" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="firewoodStack02" lockedgroup="true" translation="5.6949 0 -2.20889" rotation="-180 0 -180" clipDistance="80" nodeId="8204">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" nodeId="8205">
+          <Shape name="LOD0" shapeId="22" nodeId="8206" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+          <Shape name="LOD1" shapeId="23" clipDistance="135" nodeId="8207" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+        </TransformGroup>
+        <Shape name="col" translation="0 0.457731 0" shapeId="16" visibility="false" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8208" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <Shape name="log01" lockedgroup="true" translation="7.19316 -1.31413e-07 1.20468" shapeId="24" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8209" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="visual" shapeId="25" clipDistance="100" nodeId="8210" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+      </Shape>
+      <TransformGroup name="log_PREFAB" lockedgroup="true" translation="10.2382 -1.31413e-07 6.4489" rotation="-9.43407e-06 -0 0" nodeId="8211">
+        <Shape name="log01" lockedgroup="true" translation="1.52588e-05 0 0" scale="1.625 1.625 1.625" shapeId="24" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8212" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" shapeId="25" clipDistance="100" nodeId="8213" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+        <Shape name="log01" lockedgroup="true" translation="0.757449 0 -1.60653e-08" rotation="1.70755e-06 6.4033e-06 71.336" scale="1.625 1.625 1.625" shapeId="24" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8214" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" shapeId="25" clipDistance="100" nodeId="8215" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+        <Shape name="log01" lockedgroup="true" translation="0.400016 0.64959 -4.64934e-09" rotation="-2.39057e-05 -8.53774e-07 -97.5532" scale="1.625 1.625 1.625" shapeId="24" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" shapeId="25" clipDistance="100" nodeId="8217" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+      </TransformGroup>
+      <ReferenceNode name="barStackMedium" translation="-7.84242 0 -0.388763" rotation="180 -0 -180" referenceId="1" nodeId="8218"/>
+      <ReferenceNode name="barBeamShort" translation="-7.58511 0 5.78612" rotation="0 -0 4.47153e-06" referenceId="37" nodeId="8223"/>
+      <ReferenceNode name="barBeamLong" translation="-9.3763 0 5.40895" rotation="-7.22271e-10 -0 -1.06585e-10" referenceId="38" nodeId="8228"/>
+      <ReferenceNode name="lt15" translation="3.83699 0 1.30611" rotation="-180 -0 -180" referenceId="39" nodeId="8260"/>
+      <ReferenceNode name="trunkStackMedium" translation="-3.54294 0 -6.35298" rotation="180 -0 -180" scale="1.5 1.5 1.5" referenceId="40" nodeId="8275"/>
+      <TransformGroup name="logPile_PREFAB" lockedgroup="true" translation="7.89891 -1.31413e-07 -6.5716" rotation="7.03824e-06 -0 0" nodeId="8277">
+        <Shape name="log01" lockedgroup="true" translation="-0.610154 -0.506114 0.491526" rotation="-179.81 -0.256891 -106.314" scale="0.875 0.875 0.875" shapeId="24" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8278" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" shapeId="25" clipDistance="100" nodeId="8279" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+        <Shape name="logPile02" lockedgroup="true" translation="0.30952 -0.71208 -0.0217285" rotation="-180 -8.42405e-06 180" shapeId="26" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8280" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" shapeId="27" clipDistance="250" nodeId="8281" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+        <Shape name="logPile02" lockedgroup="true" translation="1.48351 -0.748531 7.59833" rotation="2.81226e-06 1.18725 7.94725e-08" shapeId="26" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8282" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" translation="0.120542 3.33067e-16 -1.16415e-09" shapeId="27" clipDistance="250" nodeId="8283" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+        <Shape name="logPile02" lockedgroup="true" translation="0.858673 0.726073 7.61128" rotation="0.0140279 0.194196 179.322" shapeId="26" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="8284" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="visual" shapeId="27" clipDistance="250" nodeId="8285" castsShadows="true" receiveShadows="true" materialIds="8051"/>
+        </Shape>
+      </TransformGroup>
+      <ReferenceNode name="boardStack02Board" translation="-1.16353 0 5.80708" rotation="-0 90 0" scale="1.5 1.5 1.5" referenceId="41" nodeId="8290"/>
+      <TransformGroup name="floatingPierBridge02" lockedgroup="true" translation="0.0126801 0 -0.961258" rotation="-2.72055e-06 -0 0" lodDistance="0 30" clipDistance="200" nodeId="8293">
+        <TransformGroup name="LOD0" translation="0 0 -14.5" nodeId="8294">
+          <Shape name="floatingPierBridge02" translation="0 0 14.5" shapeId="28" nodeId="8295" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="8296">
+          <Shape name="floatingPierBridge02" shapeId="29" nodeId="8297" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="30" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="8298" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="constructionMaterial04" lockedgroup="true" translation="-0.0928955 0 2.85783" rotation="0.000120262 90 0" lodDistance="0 12" clipDistance="90" nodeId="8299">
+        <Shape name="LOD0" shapeId="31" nodeId="8300" castsShadows="true" receiveShadows="true" materialIds="4591"/>
+        <Shape name="LOD1" shapeId="32" nodeId="8301" castsShadows="true" receiveShadows="true" materialIds="4591"/>
+        <Shape name="col" shapeId="33" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="8302" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="floatingPierBridge02" lockedgroup="true" translation="1.50211 -2.23341e-07 0.0844411" rotation="1.22892e-05 -0 0" scale="1 1 1.17117" lodDistance="0 30" clipDistance="200" nodeId="8303">
+        <TransformGroup name="LOD0" translation="0 0 -14.5" nodeId="8304">
+          <Shape name="floatingPierBridge02" translation="0 0 14.5" shapeId="28" nodeId="8305" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="8306">
+          <Shape name="floatingPierBridge02" shapeId="29" nodeId="8307" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="30" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="8308" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="firewoodStumpAxe_PREFAB" lockedgroup="true" translation="3.60606 0 -2.21154" rotation="4.66486e-06 -8.53774e-06 1.61296e-05" nodeId="8309">
+        <Shape name="firewoodStump02" translation="0 0 -3.23834e-06" rotation="0 -0 3.42326e-19" shapeId="20" static="true" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="80" nodeId="8310" castsShadows="true" receiveShadows="true" materialIds="5100"/>
+        <ReferenceNode name="axe" translation="-0.0499878 0.616741 -0.32146" rotation="83.1355 11.0656 -89.5868" referenceId="33" nodeId="8311"/>
+      </TransformGroup>
+      <ReferenceNode name="boardPlankLong" translation="-9.41608 0 5.04893" referenceId="45" nodeId="8319"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

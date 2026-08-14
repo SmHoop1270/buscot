@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories5_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="18" filename="$data/maps/mapEU/textures/damagedPlaster03_diffuse.png"/>
+    <File fileId="19" filename="$data/maps/mapEU/textures/damagedPlaster_normal.png"/>
+    <File fileId="20" filename="$data/maps/mapEU/textures/damagedPlaster_specular.png"/>
+    <File fileId="7" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_height.png"/>
+    <File fileId="11" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_mask.png"/>
+    <File fileId="8" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_normal.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_specular.png"/>
+    <File fileId="15" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_specular.png"/>
+    <File fileId="51" filename="$data/maps/mapUS/textures/props/floatingPier02_diffuse.png"/>
+    <File fileId="52" filename="$data/maps/mapUS/textures/props/floatingPier02_normal.png"/>
+    <File fileId="53" filename="$data/maps/mapUS/textures/props/floatingPier02_specular.png"/>
+    <File fileId="50" filename="$data/maps/mapUS/textures/props/waterPumpMedium.i3d"/>
+    <File fileId="12" filename="$data/maps/textures/shared/mapLeaksFR_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/textures/shared/mapRust_diffuse.png"/>
+    <File fileId="37" filename="$data/maps/textures/shared/props/industrialProps/container04.i3d"/>
+    <File fileId="31" filename="$data/maps/textures/shared/props/industrialProps/container06.i3d"/>
+    <File fileId="38" filename="$data/maps/textures/shared/props/industrialProps/container09.i3d"/>
+    <File fileId="36" filename="$data/maps/textures/shared/props/industrialProps/container12.i3d"/>
+    <File fileId="39" filename="$data/maps/textures/shared/props/industrialProps/container13.i3d"/>
+    <File fileId="40" filename="$data/maps/textures/shared/props/industrialProps/container17.i3d"/>
+    <File fileId="47" filename="$data/maps/textures/shared/props/industrialProps/industrialPropsPipes_diffuse.png"/>
+    <File fileId="44" filename="$data/maps/textures/shared/props/industrialProps/industrialProps_diffuse.png"/>
+    <File fileId="32" filename="$data/maps/textures/shared/props/roofVents_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/textures/shared/props/roofVents_normal.png"/>
+    <File fileId="34" filename="$data/maps/textures/shared/props/roofVents_specular.png"/>
+    <File fileId="26" filename="$data/maps/textures/shared/rustLeaksDecals_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/textures/shared/rustLeaksDecals_normal.png"/>
+    <File fileId="28" filename="$data/maps/textures/shared/rustLeaksDecals_specular.png"/>
+    <File fileId="45" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantContainers_normal.png"/>
+    <File fileId="46" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantContainers_specular.png"/>
+    <File fileId="41" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantDetails_diffuse.png"/>
+    <File fileId="42" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantDetails_normal.png"/>
+    <File fileId="43" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantDetails_specular.png"/>
+    <File fileId="48" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantPipes_normal.png"/>
+    <File fileId="49" filename="$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantPipes_specular.png"/>
+    <File fileId="10" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="29" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="21" filename="$data/shaders/vertexPaintShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="damagedPlaster03_mat" materialId="2748" customShaderId="21" customShaderVariation="alphaNoise">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+    </Material>
+    <Material name="fishHatchery_mat" materialId="2749" customShaderId="10" customShaderVariation="customParallax">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="mMaskMap" fileId="11"/>
+      <Custommap name="mDirtDiffuse" fileId="12"/>
+      <Custommap name="mMossDiffuse" fileId="13"/>
+      <Custommap name="mParallaxMap" fileId="14"/>
+    </Material>
+    <Material name="floatingPier02_mat" materialId="2750" customShaderId="4">
+      <Texture fileId="51"/>
+      <Normalmap fileId="52"/>
+      <Glossmap fileId="53"/>
+    </Material>
+    <Material name="grainElevatorProps_mat" materialId="2751" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="grainElevatorPropsTile_mat" materialId="2752" customShaderId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="industrialProps_mat" materialId="2753" customShaderId="4">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45"/>
+      <Glossmap fileId="46"/>
+    </Material>
+    <Material name="industrialPropsPipes_mat" materialId="2754" customShaderId="4">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="49"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="potatoProcessingPlantDetails_mat" materialId="2755" customShaderId="4">
+      <Texture fileId="41"/>
+      <Normalmap fileId="42"/>
+      <Glossmap fileId="43"/>
+    </Material>
+    <Material name="roofVents_mat" materialId="2756" customShaderId="4">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="rustLeaksDecals_mat" materialId="2757" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="standardSurface1" materialId="1367" diffuseColor="0.4 0.4 0.4 1">
+    </Material>
+    <Material name="standardSurface1" materialId="2758" diffuseColor="0.4 0.4 0.4 1">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="1.5" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories5_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Pipes accessories" translation="-57.2179 -34.5547 -175.679" nodeId="2799">
+      <TransformGroup name="silo01LOD" translation="-20.5634 0 -7.60907" rotation="3e-06 90 0" lodDistance="0 50" clipDistance="500" nodeId="2800">
+        <TransformGroup name="LOD0" nodeId="2801">
+          <Shape name="props" shapeId="1" nodeId="2802" castsShadows="true" receiveShadows="true" materialIds="2751"/>
+          <Shape name="tile3" shapeId="2" nodeId="2803" castsShadows="true" receiveShadows="true" materialIds="2749"/>
+          <Shape name="tile1" shapeId="3" nodeId="2804" castsShadows="true" receiveShadows="true" materialIds="2749"/>
+          <Shape name="tilingprops" shapeId="4" nodeId="2805" castsShadows="true" receiveShadows="true" materialIds="2752"/>
+          <TransformGroup name="decals" nodeId="2806">
+            <Shape name="plasterDecals" shapeId="5" clipDistance="100" nodeId="2807" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2748"/>
+            <Shape name="rustDecals" translation="-0.605664 0 0" shapeId="6" clipDistance="100" nodeId="2808" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2757"/>
+          </TransformGroup>
+          <TransformGroup name="transform20" nodeId="2809">
+            <Shape name="col" shapeId="7" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2810" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+          </TransformGroup>
+          <TransformGroup name="transform22" nodeId="2811">
+            <Shape name="col" shapeId="7" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2812" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="2813">
+          <Shape name="tile3" shapeId="8" nodeId="2814" castsShadows="true" receiveShadows="true" materialIds="2749"/>
+          <Shape name="tile1" shapeId="9" nodeId="2815" castsShadows="true" receiveShadows="true" materialIds="2749"/>
+          <Shape name="tilingprops" shapeId="10" nodeId="2816" castsShadows="true" receiveShadows="true" materialIds="2752"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="container06" translation="-13.2256 0 -7.05461" rotation="-1.25496e-06 -0 2.19726e-05" referenceId="31" nodeId="2821"/>
+      <TransformGroup name="pipeSystem66" lockedgroup="true" translation="-34.0461 0 -1.65085" rotation="-0 90 0" nodeId="2826">
+        <Shape name="pipeSystem01" shapeId="11" clipDistance="250" nodeId="2827" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2828" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <ReferenceNode name="container12" translation="-11.2359 -3.8147e-06 -12.6317" rotation="180 -0 -180" scale="1.125 1.125 1.125" referenceId="36" nodeId="2833"/>
+      <ReferenceNode name="container04" translation="-15.666 0 -7.09875" rotation="180 -0 180" referenceId="37" nodeId="2842"/>
+      <ReferenceNode name="container09" translation="-24.009 0 -7.00795" rotation="-2.01969e-08 -0 1.53443e-07" referenceId="38" nodeId="2851"/>
+      <ReferenceNode name="container13" translation="-10.3924 0 -7.97536" rotation="-92 -0 1.53443e-07" referenceId="39" nodeId="2860"/>
+      <ReferenceNode name="container17" translation="-14.7327 0 -13.6132" rotation="-180 -0 180" scale="0.780848 0.780848 0.780848" referenceId="40" nodeId="2869"/>
+      <TransformGroup name="airCon" lockedgroup="true" translation="-30.699 0 -5.86203" nodeId="2874">
+        <Shape name="airCon" shapeId="13" clipDistance="250" nodeId="2875" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="14" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2876" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="vent4m" lockedgroup="true" translation="-35.1097 0 -9.08194" nodeId="2877">
+        <Shape name="vent4m" shapeId="15" clipDistance="250" nodeId="2878" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="16" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2879" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="ventBox" lockedgroup="true" translation="-34.1457 0 -8.95865" nodeId="2880">
+        <Shape name="ventBox" shapeId="17" clipDistance="250" nodeId="2881" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="18" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2882" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="container11" lockedgroup="true" translation="-19.6031 0 -14.1344" nodeId="2883">
+        <TransformGroup name="visual_lod" lodDistance="0 50" lodBlending="false" clipDistance="160" nodeId="2884">
+          <Shape name="LOD0" rotation="0 180 0" shapeId="19" nodeId="2885" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+          <Shape name="LOD1" rotation="0 180 0" shapeId="20" nodeId="2886" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="21" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2887" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="2758"/>
+      </TransformGroup>
+      <TransformGroup name="vent1m" lockedgroup="true" translation="-29.8401 0 -8.80165" nodeId="2888">
+        <Shape name="vent1m" shapeId="22" clipDistance="250" nodeId="2889" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="23" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2890" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="vent2m" lockedgroup="true" translation="-31.2113 0 -8.95276" nodeId="2891">
+        <Shape name="vent2m" shapeId="24" clipDistance="250" nodeId="2892" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="25" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2893" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="ventCorner" lockedgroup="true" translation="-33.4886 -3.8147e-06 -6.6375" nodeId="2894">
+        <Shape name="ventCorner" translation="0 0 1" shapeId="26" clipDistance="250" nodeId="2895" castsShadows="true" receiveShadows="true" materialIds="2756"/>
+        <Shape name="col" shapeId="27" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2896" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="container01" lockedgroup="true" translation="-34.7752 0 -14.1322" nodeId="2897">
+        <TransformGroup name="visual_lod" lodDistance="0 60" lodBlending="false" clipDistance="180" nodeId="2898">
+          <Shape name="LOD0" shapeId="28" nodeId="2899" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+          <Shape name="LOD1" shapeId="29" nodeId="2900" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="30" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2901" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="container04" lockedgroup="true" translation="-38.386 0 -8.25987" nodeId="2902">
+        <TransformGroup name="visual_lod" lodDistance="0 40" clipDistance="150" nodeId="2903">
+          <Shape name="LOD0" shapeId="31" nodeId="2904" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+          <Shape name="LOD1" shapeId="32" nodeId="2905" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="33" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2906" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <TransformGroup name="container10" lockedgroup="true" translation="-24.5204 0 -13.4845" nodeId="2907">
+        <TransformGroup name="visual_lod" lodDistance="0 50" lodBlending="false" clipDistance="150" nodeId="2908">
+          <Shape name="LOD0" shapeId="34" nodeId="2909" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+          <Shape name="LOD1" shapeId="35" nodeId="2910" castsShadows="true" receiveShadows="true" materialIds="2755,2753,2754"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="2911" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+      </TransformGroup>
+      <ReferenceNode name="waterPumpMedium" translation="-28.9099 0 -8.84285" referenceId="50" nodeId="2919"/>
+      <TransformGroup name="floatingPlatformAnchor" lockedgroup="true" translation="-17.8787 2.48481 -10.7563" rotation="-2.22872e-05 -0 0" lodDistance="0 25" clipDistance="75" nodeId="2925">
+        <Shape name="LOD0" shapeId="37" nodeId="2926" castsShadows="true" receiveShadows="true" materialIds="2750"/>
+        <Shape name="LOD1" shapeId="38" nodeId="2927" castsShadows="true" receiveShadows="true" materialIds="2750"/>
+        <Shape name="col" shapeId="39" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2928" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories13_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="12" filename="$data/maps/mapAS/textures/props/harborAreaSet/fishingNetBig.i3d"/>
+    <File fileId="33" filename="$data/maps/mapAS/textures/props/pontoon01_diffuse.png"/>
+    <File fileId="34" filename="$data/maps/mapAS/textures/props/pontoon01_normal.png"/>
+    <File fileId="35" filename="$data/maps/mapAS/textures/props/pontoon01_specular.png"/>
+    <File fileId="39" filename="$data/maps/mapAS/textures/props/pontoon02_diffuse.png"/>
+    <File fileId="40" filename="$data/maps/mapAS/textures/props/pontoon02_normal.png"/>
+    <File fileId="41" filename="$data/maps/mapAS/textures/props/pontoon02_specular.png"/>
+    <File fileId="14" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorTile01_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorTile01_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorTile01_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapUS/textures/buildings/mobileBridge02/mobileBridge02.i3d"/>
+    <File fileId="32" filename="$data/maps/mapUS/textures/buildings/riverBridge/riverBridge01.i3d"/>
+    <File fileId="8" filename="$data/maps/mapUS/textures/props/floatingPier01_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/props/floatingPier01_normal.png"/>
+    <File fileId="10" filename="$data/maps/mapUS/textures/props/floatingPier01_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/props/smallBridgesWood_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/props/smallBridgesWood_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/props/smallBridgesWood_specular.png"/>
+    <File fileId="17" filename="$data/maps/mapUS/textures/props/waterPipes.i3d"/>
+    <File fileId="36" filename="$data/maps/textures/shared/concreteGeneric_diffuse.png"/>
+    <File fileId="37" filename="$data/maps/textures/shared/concreteGeneric_normal.png"/>
+    <File fileId="38" filename="$data/maps/textures/shared/concreteGeneric_specular.png"/>
+    <File fileId="29" filename="$data/maps/textures/shared/mapDirtAlpine_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/mapRust_diffuse.png"/>
+    <File fileId="18" filename="$data/placeables/mapUS/paperMill/barrages_diffuse.png"/>
+    <File fileId="22" filename="$data/placeables/mapUS/paperMill/barrages_mask.png"/>
+    <File fileId="19" filename="$data/placeables/mapUS/paperMill/barrages_normal.png"/>
+    <File fileId="20" filename="$data/placeables/mapUS/paperMill/barrages_specular.png"/>
+    <File fileId="28" filename="$data/placeables/mapUS/paperMill/paperMillBarrage_mask.png"/>
+    <File fileId="25" filename="$data/placeables/mapUS/paperMill/paperMill_diffuse.png"/>
+    <File fileId="31" filename="$data/placeables/mapUS/paperMill/paperMill_height.png"/>
+    <File fileId="26" filename="$data/placeables/mapUS/paperMill/paperMill_normal.png"/>
+    <File fileId="27" filename="$data/placeables/mapUS/paperMill/paperMill_specular.png"/>
+    <File fileId="21" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="barrages_mat" materialId="1596" customShaderId="21">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="mMaskMap" fileId="22"/>
+      <Custommap name="mMossDiffuse" fileId="24"/>
+      <CustomParameter name="dirtMossTint" value="-0.02 0.02 0.8"/>
+    </Material>
+    <Material name="concreteGeneric_mat" materialId="16104">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="floatingPier01_mat" materialId="1597" customShaderId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="grainElevatorTile01_mat" materialId="1598" customShaderId="4">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="paperMill_05_mat" materialId="1599" customShaderId="21" customShaderVariation="customParallax">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+      <Custommap name="mMaskMap" fileId="28"/>
+      <Custommap name="mDirtDiffuse" fileId="29"/>
+      <Custommap name="mParallaxMap" fileId="31"/>
+      <CustomParameter name="dirtMossMix" value="1 0.7"/>
+      <CustomParameter name="dirtMossTint" value="-0.02 0.02 0"/>
+    </Material>
+    <Material name="pontoon01_mat" materialId="16103" customShaderId="4">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="pontoon02_mat" materialId="16117" customShaderId="4">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+    </Material>
+    <Material name="smallBridgesWood_mat" materialId="1600" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories13_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Bridge flood Gate" translation="55.5001 -34.5547 -166.734" nodeId="1644">
+      <TransformGroup name="bridgeDirtroad5x10m01_PLACE" lockedgroup="true" translation="-10.4581 0.281155 18.1697" scale="0.990582 0.990582 0.990582" nodeId="1645">
+        <Shape name="bridgeDirtroad5x10m01" lockedgroup="true" translation="-3.05176e-05 0 2.28882e-05" rotation="0 1.70755e-06 0" shapeId="1" clipDistance="210" nodeId="1646" castsShadows="true" receiveShadows="true" materialIds="1600">
+          <Shape name="col" shapeId="2" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1647" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="floatingPierBridge04" lockedgroup="true" translation="7.43931 0.224079 13.1981" rotation="-180 -0 180" lodDistance="0 50" clipDistance="200" nodeId="1648">
+        <TransformGroup name="LOD0" nodeId="1649">
+          <Shape name="floatingPierBridge04" shapeId="3" nodeId="1650" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="1651">
+          <Shape name="floatingPierBridge04" shapeId="4" nodeId="1652" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="1653" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="floatingPlatform02" lockedgroup="true" translation="11.5069 0.291891 12.3475" rotation="-179.998 -0 179.998" lodDistance="0 50" clipDistance="200" nodeId="1654">
+        <TransformGroup name="LOD0" nodeId="1655">
+          <Shape name="floatingPlatform02" shapeId="6" clipDistance="300" nodeId="1656" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="1657">
+          <Shape name="floatingPlatform02" shapeId="7" clipDistance="500" nodeId="1658" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="1659" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="floatingPierBridge03" lockedgroup="true" translation="4.58896 0 15.2061" rotation="-180 -0 180" lodDistance="0 30" clipDistance="200" nodeId="1660">
+        <TransformGroup name="LOD0" nodeId="1661">
+          <Shape name="floatingPierBridge03" shapeId="9" nodeId="1662" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="1663">
+          <Shape name="floatingPierBridge03" shapeId="10" nodeId="1664" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="11" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="1665" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="floatingPierBridge01" lockedgroup="true" translation="2.31593 0 17.8245" rotation="-180 -0 -180" lodDistance="0 10" clipDistance="60" nodeId="1666">
+        <TransformGroup name="LOD0" nodeId="1667">
+          <Shape name="floatingPierBridge01" shapeId="12" clipDistance="300" nodeId="1668" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="1669">
+          <Shape name="floatingPierBridge01" shapeId="13" clipDistance="500" nodeId="1670" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="14" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="1671" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="floatingPlatform01Net_PREFAB" lockedgroup="true" translation="16.0265 0.123286 13.6166" rotation="180 -0 -180" nodeId="1672">
+        <ReferenceNode name="fishingNetBig" translation="0.0308812 1.06468 -6.93766" rotation="-1.21946e-05 -1.16197 -4.77532e-06" scale="1.125 1.125 1.125" referenceId="12" nodeId="1680"/>
+        <TransformGroup name="floatingPlatform01" lockedgroup="true" translation="-3.05176e-05 0 -6.10352e-05" rotation="1.42489e-12 -0 -1.06725e-07" lodDistance="0 50" clipDistance="200" nodeId="1688">
+          <TransformGroup name="LOD0" nodeId="1689">
+            <Shape name="floatingPlatform01" shapeId="15" clipDistance="300" nodeId="1690" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="1691">
+            <Shape name="floatingPlatform01" shapeId="16" clipDistance="500" nodeId="1692" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="17" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="1693" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="mobileBridge02_PLACE" lockedgroup="true" translation="14.5862 -3.8147e-06 32.9061" rotation="180 -0 180" nodeId="1694">
+        <ReferenceNode name="mobileBridge02" translation="1.76251e-06 0 0" rotation="9.1103e-24 -0 1.18485e-23" referenceId="13" nodeId="1700"/>
+      </TransformGroup>
+      <TransformGroup name="bridgeDirtroad5x18m04_PLACE" lockedgroup="true" translation="-10.2586 0.341254 33.7543" nodeId="1710">
+        <Shape name="bridgeDirtroad5x18m04" lockedgroup="true" translation="0 0 -7.62939e-06" rotation="0 1.70755e-06 0" shapeId="18" clipDistance="210" nodeId="1711" castsShadows="true" receiveShadows="true" materialIds="1600">
+          <Shape name="col" shapeId="19" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1712" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="bridgeDirtroad5x18m01_PLACE" lockedgroup="true" translation="5.39281 0.319494 34.2013" nodeId="1713">
+        <Shape name="bridgeDirtroad5x18m01" lockedgroup="true" rotation="0 1.70755e-06 0" shapeId="20" clipDistance="210" nodeId="1714" castsShadows="true" receiveShadows="true" materialIds="1600">
+          <Shape name="col" shapeId="21" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1715" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+      </TransformGroup>
+      <Shape name="bridgeDirtroad5x18m03" lockedgroup="true" translation="-2.33955 0.273102 34.496" scale="0.945 1 1" shapeId="22" clipDistance="210" nodeId="1716" castsShadows="true" receiveShadows="true" materialIds="1600">
+        <Shape name="col" shapeId="23" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1717" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <Shape name="waterWheel" translation="-2.08752 3.8147e-06 17.6612" shapeId="24" clipDistance="300" nodeId="1718" castsShadows="true" receiveShadows="true" materialIds="1598"/>
+      <TransformGroup name="Gate" translation="-1.00965 3.8147e-06 -10.9575" nodeId="1728">
+        <ReferenceNode name="waterPipes" translation="-0.00605392 3.8147e-06 15.5878" referenceId="17" nodeId="1737"/>
+        <TransformGroup name="floodGate01_lod" translation="-19.8651 5.22027 -1.89973" lodDistance="0 100" lodBlending="false" clipDistance="300" nodeId="1743">
+          <TransformGroup name="LOD0" nodeId="1744">
+            <Shape name="floodGate01Frame" shapeId="25" clipDistance="300" nodeId="1745" castsShadows="true" receiveShadows="true" materialIds="1596"/>
+            <Shape name="gate01" translation="0.5 -2 2.4e-05" shapeId="26" clipDistance="300" nodeId="1746" castsShadows="true" receiveShadows="true" materialIds="1596"/>
+            <Shape name="wall01" shapeId="27" clipDistance="300" nodeId="1747" castsShadows="true" receiveShadows="true" materialIds="1599"/>
+          </TransformGroup>
+          <Shape name="LOD1" translation="0 9e-06 0" shapeId="28" nodeId="1748" castsShadows="true" receiveShadows="true" materialIds="1599"/>
+        </TransformGroup>
+        <TransformGroup name="floodGate02_lod" translation="-8.09093 6.40967 -4.88565" lodDistance="0 140" lodBlending="false" clipDistance="300" nodeId="1749">
+          <TransformGroup name="LOD0" nodeId="1750">
+            <Shape name="floodGate02Frame" shapeId="29" clipDistance="300" nodeId="1751" castsShadows="true" receiveShadows="true" materialIds="1596"/>
+            <Shape name="gate02" translation="0 -1.5 0.81" shapeId="30" clipDistance="300" nodeId="1752" castsShadows="true" receiveShadows="true" materialIds="1596"/>
+            <Shape name="wall02" shapeId="31" clipDistance="300" nodeId="1753" castsShadows="true" receiveShadows="true" materialIds="1599"/>
+          </TransformGroup>
+          <Shape name="LOD1" translation="0 7e-06 0" rotation="0 -15 0" shapeId="32" nodeId="1754" castsShadows="true" receiveShadows="true" materialIds="1599"/>
+        </TransformGroup>
+        <TransformGroup name="floodGate03_lod" translation="10.4753 6.221 0.402679" lodDistance="0 100" lodBlending="false" clipDistance="300" nodeId="1755">
+          <TransformGroup name="LOD0" nodeId="1756">
+            <Shape name="floodGate03Frame" shapeId="33" clipDistance="300" nodeId="1757" castsShadows="true" receiveShadows="true" materialIds="1596"/>
+            <Shape name="gate03" translation="0.252732 -1.125 0.005797" shapeId="34" clipDistance="300" nodeId="1758" castsShadows="true" receiveShadows="true" materialIds="1596"/>
+            <Shape name="wall03" shapeId="35" clipDistance="300" nodeId="1759" castsShadows="true" receiveShadows="true" materialIds="1599"/>
+          </TransformGroup>
+          <Shape name="LOD1" translation="1e-06 4e-06 1e-06" rotation="0 30 0" shapeId="36" nodeId="1760" castsShadows="true" receiveShadows="true" materialIds="1599"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="bridgeGuardrail5x9m02" lockedgroup="true" translation="23.7136 0.326687 18.4823" shapeId="37" clipDistance="210" nodeId="1705" castsShadows="true" receiveShadows="true" materialIds="1600">
+        <Shape name="col" shapeId="38" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1706" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <TransformGroup name="bridgeGuardrail5x18m01_PLACE" lockedgroup="true" translation="23.6189 0.317055 35.0539" rotation="-2.06227e-31 -0 -3.70265e-25" nodeId="1707">
+        <Shape name="bridgeGuardrail5x18m01" lockedgroup="true" translation="1.52588e-05 0 0" rotation="8.25496e-33 8.53774e-07 3.82538e-33" shapeId="39" clipDistance="210" nodeId="1708" castsShadows="true" receiveShadows="true" materialIds="1600">
+          <Shape name="col" translation="0 0.169341 0.038808" shapeId="40" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1709" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="bridgeDirtroad5x10m01_PLACE" lockedgroup="true" translation="33.4132 0 17.961" rotation="-180 -0 180" nodeId="1719">
+        <ReferenceNode name="riverBridge01" translation="1.76251e-06 0 0" rotation="-3.75574e-22 -0 0" referenceId="32" nodeId="1724"/>
+      </TransformGroup>
+      <TransformGroup name="pontoon01" lockedgroup="true" translation="41.3699 3.20289 26.9218" nodeId="16110">
+        <TransformGroup name="pontoon01" lockedgroup="true" translation="-3e-06 0 -0.01673" nodeId="16111">
+          <TransformGroup name="visual_lod" lodDistance="0 80" clipDistance="400" nodeId="16112">
+            <Shape name="LOD0" translation="3e-06 -4.025 0.01673" shapeId="41" clipDistance="300" nodeId="16113" castsShadows="true" receiveShadows="true" materialIds="16103"/>
+            <Shape name="LOD1" translation="3e-06 -4.025 0.01673" shapeId="42" clipDistance="300" nodeId="16114" castsShadows="true" receiveShadows="true" materialIds="16103"/>
+          </TransformGroup>
+          <Shape name="concrete" translation="3e-06 -4.025 0.01673" shapeId="43" clipDistance="300" nodeId="16115" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="16104"/>
+          <Shape name="col" translation="3e-06 -4.025 0.01673" shapeId="44" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16116" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="pontoon02side" lockedgroup="true" translation="51.651 0 29.9504" clipDistance="250" nodeId="16134">
+        <TransformGroup name="visual_lod" lodDistance="0 30" lodBlending="false" nodeId="16135">
+          <Shape name="LOD0" shapeId="45" nodeId="16136" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+          <Shape name="LOD1" shapeId="46" nodeId="16137" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="47" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16138" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="pontoon02base" lockedgroup="true" translation="42.3502 0 33.9032" clipDistance="250" nodeId="16139">
+        <TransformGroup name="visual_lod" lodDistance="0 30" lodBlending="false" nodeId="16140">
+          <Shape name="LOD0" shapeId="48" nodeId="16141" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+          <Shape name="LOD1" shapeId="49" nodeId="16142" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="50" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16143" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="pontoon02mid" lockedgroup="true" translation="47.6275 3.8147e-06 36.5828" clipDistance="250" nodeId="16144">
+        <TransformGroup name="visual_lod" lodDistance="0 30" lodBlending="false" nodeId="16145">
+          <Shape name="LOD0" shapeId="51" nodeId="16146" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+          <Shape name="LOD1" shapeId="52" nodeId="16147" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="53" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16148" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="pontoon02Intersection" lockedgroup="true" translation="41.6047 0 39.2517" clipDistance="250" nodeId="16149">
+        <TransformGroup name="visual_lod" lodDistance="0 30" lodBlending="false" nodeId="16150">
+          <Shape name="LOD0" shapeId="54" nodeId="16151" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+          <Shape name="LOD1" shapeId="55" nodeId="16152" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="56" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16153" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="pontoon02end" lockedgroup="true" translation="47.5401 3.8147e-06 38.5584" clipDistance="250" nodeId="16154">
+        <TransformGroup name="visual_lod" lodDistance="0 30" lodBlending="false" nodeId="16155">
+          <Shape name="LOD0" shapeId="57" nodeId="16156" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+          <Shape name="LOD1" shapeId="58" nodeId="16157" castsShadows="true" receiveShadows="true" materialIds="16117"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="59" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="16158" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

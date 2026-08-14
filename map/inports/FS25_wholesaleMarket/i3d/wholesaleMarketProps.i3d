@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wholesaleMarketProps.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInteriorFloor_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInteriorFloor_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInteriorFloor_specular.png"/>
+    <File fileId="6" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInterior_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInterior_normal.png"/>
+    <File fileId="8" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInterior_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInteriorsProps_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInteriorsProps_normal.png"/>
+    <File fileId="15" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downTownBuildingsInteriorsProps_specular.png"/>
+    <File fileId="16" filename="$data/maps/mapAS/textures/buildings/downtownBuildings/downtownBuildingsPaintings_diffuse.png"/>
+    <File fileId="4" filename="$data/maps/mapAS/textures/props/airConditioner02.i3d"/>
+    <File fileId="2" filename="$data/maps/mapAS/textures/props/pipes/pipes06.i3d"/>
+    <File fileId="3" filename="$data/maps/mapAS/textures/props/pipes/pipes07.i3d"/>
+    <File fileId="17" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="18" filename="$data/maps/textures/shared/default_specular.png"/>
+    <File fileId="1" filename="$data/maps/textures/shared/props/industrialProps/container03.i3d"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/industrialProps/container23.i3d"/>
+    <File fileId="9" filename="$data/shaders/glowShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="downTownBuildingsInterior_mat" materialId="227" customShaderId="9" customShaderVariation="customEmissiveMap_multiplySSAO">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <Custommap name="mEmissiveMap" fileId="6"/>
+    </Material>
+    <Material name="downTownBuildingsInteriorFloor_mat" materialId="228" customShaderId="9" customShaderVariation="customEmissiveMap_multiplySSAO">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <Custommap name="mEmissiveMap" fileId="10"/>
+    </Material>
+    <Material name="downTownBuildingsInteriorsProps_mat" materialId="229" customShaderId="9" customShaderVariation="customEmissiveMap_multiplySSAO">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="mEmissiveMap" fileId="13"/>
+    </Material>
+    <Material name="picture01_mat" materialId="230" customShaderId="9" customShaderVariation="customEmissiveMap_multiplySSAO">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="mEmissiveMap" fileId="16"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wholesaleMarketProps.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="wholesaleMarketProps" lockedgroup="true" nodeId="257">
+      <ReferenceNode name="container03" translation="-8.12975 4.46068 2.91976" rotation="0 0.31891 0" referenceId="1" nodeId="264"/>
+      <TransformGroup name="GroupName" translation="-5.65956 6.73775 -6.64093" rotation="90 -0 -180" nodeId="271">
+        <ReferenceNode name="pipesF" translation="-0.000210762 -3.97261 0" referenceId="2" nodeId="277"/>
+        <ReferenceNode name="pipesG" translation="0.000209808 3.97261 0" referenceId="3" nodeId="286"/>
+      </TransformGroup>
+      <ReferenceNode name="airConditioner02" translation="11.5961 0.414224 -7.73184" rotation="-0 90 0" referenceId="4" nodeId="300"/>
+      <ReferenceNode name="airConditioner02" translation="11.5975 0.414 -6.63184" rotation="-180 90 -180" referenceId="4" nodeId="307"/>
+      <ReferenceNode name="container03" translation="-11.5041 5.49608 -2.65323" rotation="0 -90 0" referenceId="5" nodeId="317"/>
+      <TransformGroup name="GroupName" translation="-19.7618 -1.29844 -5.97291" rotation="0 -90 0" nodeId="321">
+        <ReferenceNode name="pipesG" translation="1.15894 0.942982 -7.67987" referenceId="3" nodeId="322"/>
+      </TransformGroup>
+      <TransformGroup name="GroupName" translation="-11.7772 2.45627 -1.31808" rotation="0 -90 0" nodeId="327">
+        <ReferenceNode name="pipesG" translation="0.117259 -2.82446 0.292681" referenceId="3" nodeId="328"/>
+      </TransformGroup>
+      <ReferenceNode name="airConditioner02" translation="7.95925 0.414 -9.07754" rotation="180 -1.86693e-05 180" referenceId="4" nodeId="333"/>
+      <TransformGroup name="GroupName" translation="-1.46832 6.73775 -6.64093" rotation="90 -0 -180" nodeId="340">
+        <ReferenceNode name="pipesF" translation="-0.000210762 -3.97261 0" referenceId="2" nodeId="341"/>
+        <ReferenceNode name="pipesG" translation="0.000209808 3.97261 0" referenceId="3" nodeId="346"/>
+      </TransformGroup>
+      <TransformGroup name="GroupName" translation="3.30302 6.73775 -6.64093" rotation="90 -0 -180" nodeId="351">
+        <ReferenceNode name="pipesF" translation="-0.000210762 -3.97261 0" referenceId="2" nodeId="352"/>
+        <ReferenceNode name="pipesG" translation="0.000209808 3.97261 0" referenceId="3" nodeId="357"/>
+      </TransformGroup>
+      <Shape name="interiorCorner5" translation="0.50101 1.495 -2.73444" rotation="0 -90 0" scale="0.643885 1 1.23842" shapeId="1" clipDistance="300" nodeId="362" castsShadows="true" receiveShadows="true" materialIds="227">
+        <Shape name="tile" translation="0.002762 -1.46386 -0.011412" shapeId="2" nodeId="363" castsShadows="true" receiveShadows="true" materialIds="228"/>
+        <TransformGroup name="groupProps_lod" translation="-0.243253 0.011465 0.248144" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="364">
+          <TransformGroup name="LOD0" translation="-9e-06 0 7.4e-05" static="true" collision="false" collisionFilterMask="0xfffffbff" nodeId="365">
+            <Shape name="prop3200" translation="4.42829 -1.48334 -5.86318" rotation="0 -90 0" shapeId="3" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3217" translation="5.5528 1.37847 -6.32607" rotation="0 -90 0" shapeId="4" nodeId="367" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3219" translation="-0.717122 1.37847 -6.32607" rotation="0 -90 0" shapeId="4" nodeId="368" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3241" translation="5.80651 1.37847 6.00821" rotation="0 180 0" shapeId="4" nodeId="369" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3246" translation="5.80651 1.37847 -0.261717" rotation="0 180 0" shapeId="4" nodeId="370" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3199" translation="4.7751 -1.47788 0.957366" rotation="0 244.788 0" shapeId="5" nodeId="371" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3248" translation="7.49281 1.38582 5.17968" rotation="0 -90 0" shapeId="6" nodeId="372" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3209" translation="2.90084 1.38582 -7.62669" shapeId="6" nodeId="373" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3210" translation="-2.55578 1.38582 -7.62669" shapeId="6" nodeId="374" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3250" translation="7.49281 1.38582 -0.276937" rotation="0 -90 0" shapeId="6" nodeId="375" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3198" translation="8.52699 -1.47703 8.19987" rotation="0 -90 0" shapeId="7" nodeId="376" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3205" translation="-6.50891 -1.47788 -3.06411" rotation="0 -90 0" shapeId="8" nodeId="377" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3197" translation="-1.78414 -1.47638 -5.8858" rotation="0 -90 0" shapeId="9" nodeId="378" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3237" translation="5.69471 -1.47638 5.8667" rotation="0 180 0" shapeId="9" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3206" translation="3.06175 -1.47861 0.068646" rotation="0 180 0" shapeId="10" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3207" translation="-8.52699 -1.47585 -4.05134" rotation="0 180 0" shapeId="11" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3201" translation="4.05935 -1.47536 -4.15491" rotation="0 94.3403 0" shapeId="12" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3203" translation="5.93308 -1.47591 8.21775" rotation="0 -90 0" shapeId="13" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3202" translation="-7.86464 -1.47726 -3.67839" rotation="0 -75.7515 0" shapeId="12" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3204" translation="-8.52265 -1.47788 -7.13843" rotation="0 180 0" shapeId="8" nodeId="385" castsShadows="true" receiveShadows="true" materialIds="229"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" translation="0 0 -0.00818" static="true" collision="false" collisionFilterMask="0xfffffbff" nodeId="386">
+            <Shape name="prop3235" translation="-8.52699 -1.47585 -4.04308" rotation="0 180 0" shapeId="14" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3222" translation="5.93346 -1.47591 8.21838" rotation="0 -90 0" shapeId="15" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3211" translation="3.06174 -1.47861 0.0769" rotation="0 180 0" shapeId="16" nodeId="389" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3230" translation="2.90083 1.38582 -7.61844" shapeId="17" nodeId="390" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3249" translation="7.49281 1.38582 -0.268684" rotation="0 -90 0" shapeId="17" nodeId="391" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3231" translation="-2.55579 1.38582 -7.61844" shapeId="17" nodeId="392" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3247" translation="7.49281 1.38582 5.18793" rotation="0 -90 0" shapeId="17" nodeId="393" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3232" translation="8.52699 -1.47703 8.20813" rotation="0 -90 0" shapeId="18" nodeId="394" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3216" translation="4.7751 -1.47788 0.96562" rotation="0 244.788 0" shapeId="19" nodeId="395" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3224" translation="4.42828 -1.48334 -5.85501" rotation="0 -90 0" shapeId="20" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3225" translation="-1.78415 -1.47638 -5.87755" rotation="0 -90 0" shapeId="21" nodeId="397" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3238" translation="5.6947 -1.47638 5.87496" rotation="0 180 0" shapeId="21" nodeId="398" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3212" translation="-7.86465 -1.47726 -3.67014" rotation="0 -75.7515 0" shapeId="22" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3214" translation="4.05934 -1.47536 -4.14666" rotation="0 94.3403 0" shapeId="22" nodeId="400" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3213" translation="-6.50892 -1.47788 -3.05585" rotation="0 -90 0" shapeId="23" nodeId="401" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3215" translation="-8.52266 -1.47788 -7.13017" rotation="0 180 0" shapeId="23" nodeId="402" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3240" translation="5.8065 1.37847 6.01646" rotation="0 180 0" shapeId="24" nodeId="403" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3243" translation="5.8065 1.37847 -0.253463" rotation="0 180 0" shapeId="24" nodeId="404" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3227" translation="-0.71713 1.37847 -6.31782" rotation="0 -90 0" shapeId="24" nodeId="405" castsShadows="true" receiveShadows="true" materialIds="229"/>
+            <Shape name="prop3229" translation="5.55279 1.37847 -6.31782" rotation="0 -90 0" shapeId="24" nodeId="406" castsShadows="true" receiveShadows="true" materialIds="229"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="picture90" translation="-1.51832 0.37666 -2.84051" shapeId="25" clipDistance="300" nodeId="407" castsShadows="true" receiveShadows="true" materialIds="229,230"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

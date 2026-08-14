@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="farmhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Farm Cottage</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>$data/placeables/mapUS/farmHouse01/store_farmHouse01.png</image>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <price>135000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>50</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+
+
+        <storeIconRendering>
+            <settings cameraXRot="-4" cameraYRot="116" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>map/inports/cottages/cottage01/cottage01.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" pitchScale="1.2"/>
+        </sounds>
+
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="FARM" linkNode="0>" teleportNode="spawnPoint" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/mapUS/farmHouse01/farmHouse01Props.i3d" node="0" linkNode="props"/>
+    </dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="sleepTriggerMarker"    filename="$data/shared/assets/marker/markerIconSleep.i3d"/>
+        <triggerMarker node="wardrobeTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d"/>
+    </triggerMarkers>
+
+    <lights>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialLight03.xml" linkNode="lightNode01" groupIndex="1"/>
+
+        <group weatherRequiredFlags="NIGHT" />
+
+        <lightShape node="interior" />
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" />
+            </low>
+
+            <high>
+                <light node="realLightsHigh" />
+            </high>
+        </realLights>
+    </lights>
+
+    <farmhouse spawnNode="spawnPoint">
+        <sleeping triggerNode="sleepingTrigger" cameraNode="sleepCamera"/>
+    </farmhouse>
+
+    <wardrobe triggerNode="wardrobeTrigger"/>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="paintAreaStart01" node="0>2|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>3|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>3|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>3|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>3|1|1" />
+        <i3dMapping id="indoorAreaStart03" node="0>3|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>3|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>3|2|1" />
+        <i3dMapping id="testAreaStart01" node="0>4|0" />
+        <i3dMapping id="testAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="realLightsLow" node="0>6|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>6|0|1" />
+        <i3dMapping id="interior" node="0>6|1|0" />
+        <i3dMapping id="lightNode01" node="0>6|2|0" />
+        <i3dMapping id="sleepTriggerMarker" node="0>7|0" />
+        <i3dMapping id="spawnPoint" node="0>7|1" />
+        <i3dMapping id="sleepCamera" node="0>7|2" />
+        <i3dMapping id="sleepingTrigger" node="0>7|3" />
+        <i3dMapping id="wardrobeTriggerMarker" node="0>8|0" />
+        <i3dMapping id="wardrobeTrigger" node="0>8|1" />
+        <i3dMapping id="props" node="0>9|0" />
+    </i3dMappings>
+</placeable>

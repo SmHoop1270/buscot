@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="shed01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/maps/textures/shared/default_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="1" filename="textures/sheds_diffuse.dds"/>
+    <File fileId="2" filename="textures/sheds_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="sheds" materialId="11" customShaderId="4" customShaderVariation="colorScale_customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shed01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="shed01" shapeId="1" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="8" castsShadows="true" receiveShadows="true" materialIds="11"/>
+  </Scene>
+
+</i3D>

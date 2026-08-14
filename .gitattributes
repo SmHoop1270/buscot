@@ -1,0 +1,4 @@
+*.shapes filter=lfs diff=lfs merge=lfs -text
+map/map.i3d filter=lfs diff=lfs merge=lfs -text
+*.cache filter=lfs diff=lfs merge=lfs -text
+map/map.i3d !text !filter !merge !diff

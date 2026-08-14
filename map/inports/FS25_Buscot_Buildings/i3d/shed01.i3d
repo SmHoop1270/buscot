@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="shed01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.12"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/maps/textures/shared/default_specular.dds"/>
+    <File fileId="3" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="1" filename="../textures/sheds_diffuse.dds"/>
+    <File fileId="2" filename="../textures/sheds_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="sheds" materialId="5" customShaderId="3" customShaderVariation="colorScale_customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mMaskMap" fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shed01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="shed01" scale="1 1.2 1" shapeId="1" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="8" castsShadows="true" receiveShadows="true" materialIds="5">
+      <TransformGroup name="clearAreas" translation="2.38419e-07 6.73375 0.0333796" nodeId="9">
+        <TransformGroup name="clearArea1Start" translation="19.0762 -6.73375 -11.815" rotation="0 -90 0" nodeId="10">
+          <TransformGroup name="clearArea1Height" translation="-0.121018 0 37.8675" nodeId="11"/>
+          <TransformGroup name="clearArea1Width" translation="23.0842 0 -0.223214" nodeId="12"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="2.38419e-07 6.73375 0.0333796" nodeId="13">
+        <TransformGroup name="indoorArea1Start" translation="18.6397 -6.73375 -11.2983" rotation="0 -90 0" nodeId="14">
+          <TransformGroup name="indoorArea1Height" translation="0.0398726 0 37.2498" nodeId="15"/>
+          <TransformGroup name="indoorArea1Width" translation="22.4482 0 0.0232754" nodeId="16"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" translation="2.38419e-07 6.73375 0.0333796" nodeId="17">
+        <TransformGroup name="levelArea1Start" translation="19.3952 -6.73375 -12.671" rotation="0 -90 0" nodeId="18">
+          <TransformGroup name="levelArea1Height" translation="0.110654 0 38.533" nodeId="19"/>
+          <TransformGroup name="levelArea1Width" translation="24.968 0 -0.7335" nodeId="20"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="2.38419e-07 6.73375 0.0333796" nodeId="21">
+        <TransformGroup name="testArea1Start" translation="19.574 -6.73375 -12.2491" rotation="0 -90 0" nodeId="22">
+          <TransformGroup name="testArea1End" translation="24.4403 6.78568 39.3706" nodeId="23"/>
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

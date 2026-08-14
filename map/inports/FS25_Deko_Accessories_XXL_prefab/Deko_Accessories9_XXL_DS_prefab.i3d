@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories9_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/placeables/shared/sellingStationGeneric/grainGrid_diffuse.png"/>
+    <File fileId="12" filename="$data/placeables/shared/sellingStationGeneric/grainGrid_normal.png"/>
+    <File fileId="13" filename="$data/placeables/shared/sellingStationGeneric/grainGrid_specular.png"/>
+    <File fileId="1" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_normal.png"/>
+    <File fileId="3" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_specular.png"/>
+    <File fileId="7" filename="$data/placeables/shared/sellingStationGeneric/wheatBottom_diffuse.png"/>
+    <File fileId="8" filename="$data/placeables/shared/sellingStationGeneric/wheatBottom_normal.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grainGrid_mat" materialId="1164" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="sellingStationGeneric_mat" materialId="1165" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="wheatBottom_mat" materialId="1166" specularColor="0.2 1 0" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories9_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Grain Gate" translation="44.0368 -34.5547 -130.752" nodeId="1186">
+      <Shape name="grainGate" lockedgroup="true" translation="-6.11069 -1.90735e-06 -2.19357" shapeId="1" clipDistance="300" nodeId="1187" castsShadows="true" receiveShadows="true" materialIds="1165">
+        <Shape name="seedPlane" translation="0 0.0625 0" shapeId="2" clipDistance="300" nodeId="1188" castsShadows="true" receiveShadows="true" materialIds="1166"/>
+        <Shape name="colShape" shapeId="3" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="1189" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <Shape name="grainGate" lockedgroup="true" translation="-4.44513 -9.53674e-07 2.91235" shapeId="4" clipDistance="300" nodeId="1190" castsShadows="true" receiveShadows="true" materialIds="1165">
+        <Shape name="seedPlane" translation="0 0.0625 0" shapeId="5" clipDistance="100" nodeId="1191" castsShadows="true" receiveShadows="true" materialIds="1166"/>
+        <Shape name="colShape" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="1192" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <Shape name="grainGate" lockedgroup="true" translation="4.61681 -9.53674e-07 2.89699" shapeId="7" clipDistance="300" nodeId="1193" castsShadows="true" receiveShadows="true" materialIds="1165">
+        <Shape name="seedPlane" translation="0 0.110265 -0.000442" shapeId="8" clipDistance="300" nodeId="1194" castsShadows="true" receiveShadows="true" materialIds="1166"/>
+        <Shape name="colShape" translation="0 0.047765 -0.000442" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="1195" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <Shape name="sellingStationGenericSmall" lockedgroup="true" translation="-1.48204 -9.53674e-07 -2.16512" shapeId="9" clipDistance="300" nodeId="1196" castsShadows="true" receiveShadows="true" materialIds="1165">
+        <Shape name="grid" translation="0 0.050897 -1e-06" rotation="180 0 180" shapeId="10" nodeId="1197" castsShadows="true" receiveShadows="true" materialIds="1164"/>
+        <Shape name="seedPlane" translation="0 0.023818 0.019375" shapeId="11" clipDistance="300" nodeId="1198" castsShadows="true" receiveShadows="true" materialIds="1166"/>
+        <Shape name="unloadTrigger" translation="0 0.01 0" shapeId="12" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" density="0.0001" nodeId="1199" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <TransformGroup name="aiNodeLeft" rotation="0 -90 0" nodeId="1200"/>
+        <TransformGroup name="aiNodeRight" rotation="0 90 0" nodeId="1201"/>
+        <TransformGroup name="unloadTriggerMarker" nodeId="1202"/>
+        <TransformGroup name="teleportNode" nodeId="1203"/>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2 0 -2" nodeId="1204">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="4 0 4" nodeId="1205"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="13" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="1206" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </Shape>
+      <Shape name="grainGate" lockedgroup="true" translation="4.68375 -2.86102e-06 -2.96093" shapeId="14" clipDistance="300" nodeId="1207" castsShadows="true" receiveShadows="true" materialIds="1165">
+        <Shape name="seedPlane" translation="0 0.0625 0" shapeId="5" clipDistance="300" nodeId="1208" castsShadows="true" receiveShadows="true" materialIds="1166"/>
+        <Shape name="cap" translation="5e-06 0.123941 -2.03073" rotation="-99.8768 0 0" shapeId="15" clipDistance="300" nodeId="1209" castsShadows="true" receiveShadows="true" materialIds="1165"/>
+        <Shape name="playerTrigger" translation="0 1.09353 0" shapeId="16" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" density="0.0001" nodeId="1210" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <Shape name="unloadTrigger" translation="0 -0.047631 0" shapeId="17" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" density="0.0001" nodeId="1211" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <Shape name="colShape" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="1212" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <TransformGroup name="aiNodeLeft" rotation="0 -90 0" nodeId="1213"/>
+        <TransformGroup name="aiNodeRight" rotation="0 90 0" nodeId="1214"/>
+        <TransformGroup name="unloadTriggerMarker" nodeId="1215"/>
+        <TransformGroup name="teleportNodeLeft" translation="-5.19433 0 2.8201" rotation="0 95 0" nodeId="1216"/>
+        <TransformGroup name="teleportNodeRight" translation="5.19963 0 2.64104" rotation="0 -100 0" nodeId="1217"/>
+        <Shape name="tipCollision" shapeId="18" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="1218" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.11935 0 -3.40442" nodeId="1219">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.1324 0 6.80823" nodeId="1220"/>
+        </TransformGroup>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="1189">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="1192">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="1195">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="1206">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="1212">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

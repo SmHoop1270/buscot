@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="cowHusbandryBarnMilk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>            
+           <en>UK Dairy with Parlour</en> 
+        </name>
+		<image>map/inports/FS25_UK_DairyBarn/store_FS25_UK_DairyBarn.dds</image>
+        <price>150000</price>
+        <functions>
+            <function>$l10n_function_animalPenCow</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>55</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>cows</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>map/inports/FS25_UK_DairyBarn/FS25_UK_DairyBarn.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+            <placeLayered template="cowLayer" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+		<clearArea startNode="clearAreaStart02" widthNode="clearAreaWidth02" heightNode="clearAreaHeight02"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" />
+			<levelArea startNode="levelAreaStart02" widthNode="levelAreaWidth02" heightNode="levelAreaHeight02" />
+			<levelArea startNode="levelAreaStart03" widthNode="levelAreaWidth03" heightNode="levelAreaHeight03" />
+			<levelArea startNode="levelAreaStart04" widthNode="levelAreaWidth04" heightNode="levelAreaHeight04" />
+        </levelAreas>
+
+        <paintAreas>
+			<paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="dirt"/>
+            <paintArea startNode="paintAreaStart02" widthNode="paintAreaWidth02" heightNode="paintAreaHeight02" groundType="animalMud"/>
+			<paintArea startNode="paintAreaStart03" widthNode="paintAreaWidth03" heightNode="paintAreaHeight03" groundType="dirt"/>
+			<paintArea startNode="paintAreaStart04" widthNode="paintAreaWidth04" heightNode="paintAreaHeight04" groundType="animalMud"/>
+			<paintArea startNode="paintAreaStart05" widthNode="paintAreaWidth05" heightNode="paintAreaHeight05" groundType="dirt"/>
+			<paintArea startNode="paintAreaStart06" widthNode="paintAreaWidth06" heightNode="paintAreaHeight06" groundType="dirt"/>
+			<paintArea startNode="paintAreaStart07" widthNode="paintAreaWidth07" heightNode="paintAreaHeight07" groundType="dirt"/>
+			<paintArea startNode="paintAreaStart08" widthNode="paintAreaWidth08" heightNode="paintAreaHeight08" groundType="dirt"/>
+			<paintArea startNode="paintAreaStart09" widthNode="paintAreaWidth09" heightNode="paintAreaHeight09" groundType="dirt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+		<indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02"/>
+		<indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03"/>
+    </indoorAreas>
+
+    <triggerMarkers>
+		<triggerMarker node="markerMilk"         filename="$data/shared/assets/marker/markerIconMilk.i3d" />
+        <triggerMarker node="markerFood"         filename="$data/shared/assets/marker/markerIconFood.i3d" />
+        <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIconAnimals.i3d" />
+        <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
+		<triggerMarker node="markerBales" 		 filename="$data/shared/assets/marker/markerIconBales.i3d" />
+    </triggerMarkers>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="COW" teleportNode="teleportNode" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_COW" hasStatistics="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE MILK BUFFALOMILK STRAW MANURE" isExtension="false">
+            <capacity fillType="STRAW" capacity="38000" />
+			<capacity fillType="MILK"         capacity="60000" />
+            <capacity fillType="BUFFALOMILK"  capacity="60000" />
+			<capacity fillType="LIQUIDMANURE" capacity="100000" />
+			<capacity fillType="MANURE" capacity="0" />
+        </storage>
+
+        <unloadingStation supportsExtension="true" storageRadius="65" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
+            <unloadTrigger fillTypes="MILK BUFFALOMILK LIQUIDMANURE MANURE" />
+        </unloadingStation>
+
+		<loadingStation supportsExtension="true" storageRadius="50" fillTypes="MANURE">
+			<loadTrigger triggerNode="lqiuidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
+			<loadTrigger triggerNode="milkTrigger"         fillTypes="MILK BUFFALOMILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
+		</loadingStation>
+
+        <animals type="COW" maxNumAnimals="85" >
+            <navigation rootNode="navigationRootNode" filename="map/inports/FS25_UK_DairyBarn/navMesh.i3d" />
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+        <straw>
+            <manure factor="1.5" />
+            <strawPlane node="strawPlane" minY="0.08" maxY="0.118" colorChange="false" />
+        </straw>
+
+        <water automaticWaterSupply="true" >
+            <waterPlaces>
+				<waterPlace node="waterPlace01" />
+				<waterPlace node="waterPlace02" />
+				<waterPlace node="waterPlace03" />
+				<waterPlace node="waterPlace04" />
+            </waterPlaces>
+        </water>
+
+        <liquidManure />
+
+        <food capacity="55000">
+            <foodPlaces>
+                <foodPlace node="foodPlace01" />
+                <foodPlace node="foodPlace02" />
+                <foodPlace node="foodPlace03" />
+                <foodPlace node="foodPlace04" />
+                <foodPlace node="foodPlace05" />
+                <foodPlace node="foodPlace06" />
+                <foodPlace node="foodPlace07" />
+                <foodPlace node="foodPlace08" />
+            </foodPlaces>
+            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="60000"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood" />
+            <baleTrigger triggerNode="baleTrigger"/>
+        </food>
+    </husbandry>
+	
+	<dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="milkingTank1" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="milkingTank2" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+    </dynamicallyLoadedParts>
+	
+	<animatedObjects>
+
+<!-- ROLLUP DOOR -->
+
+		<animatedObject saveId="rollupDoor" >
+            <animation duration="5">
+                <part node="rollupDoor">
+                    <keyFrame time="0.0" translation="0.50099999 -0.88168907 0.0013504"/>
+                    <keyFrame time="1.0" translation="0.50099999 2.12216949 0.0013504"/>
+                </part>
+                <part node="rollupDoor_bottomCol">
+                    <keyFrame time="0.0" translation="0.50099999 -0.88139164 0.0013504"/>
+                    <keyFrame time="1.0" translation="0.50099999 2.12216949 0.0013504"/>
+                </part>
+                <part node="rollupDoor_topCol">
+                    <keyFrame time="0.0" translation="0.50099999 0.60569537 0.0013504"/>
+                    <keyFrame time="0.5" translation="0.50099999 0.60569537 0.0013504"/>
+                    <keyFrame time="1.0" translation="0.50099999 2.10022831 0.0013504"/>
+                </part>
+                <shader node="rollupDoor" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.92 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollupDoorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollupDoorSound" template="rollingGarageDoor" />
+                <posEnd linkNode="rollupDoorSound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollupDoorSound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+
+<!-- MAN DOORS -->
+	
+		<animatedObject saveId="manDoor1" >
+            <animation duration="3">
+				<part node="manDoor01">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -95 0" />
+				</part>
+							
+				<part node="manDoor01Handle">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.12" rotation="25 0 0" />
+					<keyFrame time="0.25" rotation="0 0 0" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="manDoor01Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="manDoor01Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="manDoor01Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="manDoor01Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="manDoor2" >
+            <animation duration="3">
+				<part node="manDoor02">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -95 0" />
+				</part>
+							
+				<part node="manDoor02Handle">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.12" rotation="25 0 0" />
+					<keyFrame time="0.25" rotation="0 0 0" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="manDoor02Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="manDoor02Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="manDoor02Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="manDoor02Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+
+<!-- GATES -->
+
+		<animatedObject saveId="barnGate01" >
+            <animation duration="3">
+				<part node="gate01">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -92 0" />
+				</part>
+							
+				<part node="gate01Latch">
+					<keyFrame time="0" translation="3.6947 0.097368 -0.00159836" />
+					<keyFrame time="0.12" translation="3.64195228 0.097368 -0.00159836" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate01Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate01Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate01Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate01Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate02" >
+            <animation duration="3">
+				<part node="gate02">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 92 0" />
+				</part>
+							
+				<part node="gate02Latch">
+					<keyFrame time="0" translation="-3.69471002 0.097368 0.00159836" />
+					<keyFrame time="0.12" translation="-3.64218616 0.097368 0.00159836" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate02Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate02Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate02Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate02Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate03" >
+            <animation duration="3">
+				<part node="gate03">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -92 0" />
+				</part>
+							
+				<part node="gate03Latch">
+					<keyFrame time="0" translation="3.69499993 0.097368 -0.00159836" />
+					<keyFrame time="0.12" translation="3.63950443 0.097368 -0.00159836" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate03Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate03Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate03Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate03Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate04" >
+            <animation duration="3">
+				<part node="gate04">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 92 0" />
+				</part>
+							
+				<part node="gate04Latch">
+					<keyFrame time="0" translation="-3.69481421 0.097368 0.00159836" />
+					<keyFrame time="0.12" translation="-3.63996553 0.097368 0.00159836" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate04Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate04Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate04Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate04Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate05" >
+            <animation duration="3">
+				<part node="gate05">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 92 0" />
+				</part>
+							
+				<part node="gate05Latch">
+					<keyFrame time="0" translation="3.69471002 0.097368 -0.00160027" />
+					<keyFrame time="0.12" translation="3.63584518 0.097368 -0.00160027" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate05Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate05Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate05Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate05Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate06" >
+            <animation duration="3">
+				<part node="gate06">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -92 0" />
+				</part>
+							
+				<part node="gate06Latch">
+					<keyFrame time="0" translation="0.00159931 0.097368 3.69471002" />
+					<keyFrame time="0.12" translation="0.002 0.097368 3.63785481" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate06Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate06Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate06Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate06Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate07" >
+            <animation duration="3">
+				<part node="gate07">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 92 0" />
+				</part>
+							
+				<part node="gate07Latch">
+					<keyFrame time="0" translation="3.69510007 0.097368 -0.00169945" />
+					<keyFrame time="0.12" translation="3.64311242 0.097368 -0.00169945" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate07Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate07Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate07Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate07Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate08" >
+            <animation duration="3">
+				<part node="gate08">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -92 0" />
+				</part>
+							
+				<part node="gate08Latch">
+					<keyFrame time="0" translation="3.69471002 0.097368 -0.00160027" />
+					<keyFrame time="0.12" translation="3.64339185 0.097368 -0.00160027" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate08Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate08Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate08Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate08Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate09" >
+            <animation duration="3">
+				<part node="gate09">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 92 0" />
+				</part>
+							
+				<part node="gate09Latch">
+					<keyFrame time="0" translation="-3.69472003 0.097368 0.00160027" />
+					<keyFrame time="0.12" translation="-3.64041638 0.097368 0.00160027" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate09Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate09Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate09Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate09Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate10" >
+            <animation duration="3">
+				<part node="gate10">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -92 0" />
+				</part>
+							
+				<part node="gate10Latch">
+					<keyFrame time="0" translation="-3.69499993 0.097368 0.00159836" />
+					<keyFrame time="0.12" translation="-3.63953924 0.097368 0.00159836" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate10Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate10Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate10Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate10Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="barnGate11" >
+            <animation duration="3">
+				<part node="gate11">
+					<keyFrame time="0.12" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 92 0" />
+				</part>
+							
+				<part node="gate11Latch">
+					<keyFrame time="0" translation="3.69471002 0.097368 -0.00159836" />
+					<keyFrame time="0.12" translation="3.63754225 0.097368 -0.00159836" />
+				</part> 				
+			  				
+			</animation>
+			<controls triggerNode="gate11Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+				<moving linkNode="gate11Sound" template="fenceMetalLoop" />
+				<posEnd linkNode="gate11Sound" template="fenceMetalOpen" />
+				<negEnd linkNode="gate11Sound" template="fenceMetalClose" />
+			</sounds>
+        </animatedObject>
+
+<!-- PARLOUR LIGHTS -->
+	
+		<animatedObject saveId="parlourLights">
+            <animation duration="0.5">
+                <part node="parlourLight01">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+                <part node="parlourLight02">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="parlourLight03">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="parlourLight04">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+                <part node="parlourLight05">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="parlourLight06">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="parlourLight07">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="parlourLight08">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="parlourLight09">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="parlourLight10">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="parlourLight11">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="parlourLight12">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="parlourLight13">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="parlourLight14">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="parlourLight15">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="parlourLight16">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="parlourLight17">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="parlourLight18">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+		  </animation>    
+                <controls triggerNode="parlourLightsTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnLight" negText="action_turnOffLight" />
+				<sounds>
+					<toggle template="switch01" innerRadius="20" outerRadius="500" pitchScale="0.5" volumeScale="2.62"/>
+				</sounds>
+        </animatedObject>
+
+<!-- BARN LIGHTS -->
+		
+		<animatedObject saveId="barnLights">
+            <animation duration="0.5">
+                <part node="barnLight01">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+                <part node="barnLight02">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="barnLight03">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="barnLight04">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+                <part node="barnLight05">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+				<part node="barnLight06">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="barnLight07">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="barnLight08">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+                <part node="barnLight09">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+				<part node="barnLight10">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+				<part node="barnLight11">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+                <part node="barnLight12">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="barnLight13">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="barnLight14">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+				<part node="barnLight15">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+				<part node="barnLight16">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="barnLight17">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="barnLight18">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="barnLight19">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+				<part node="barnLight20">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+				<part node="barnLight21">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="barnLight22">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="barnLight23">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="barnLight24">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+				<part node="barnLight25">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+				<part node="barnLight26">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="barnLight27">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="barnLight28">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="barnLight29">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+				<part node="barnLight30">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+		  </animation>    
+                <controls triggerNode="barnLightsTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnLight" negText="action_turnOffLight" />
+				<sounds>
+					<toggle template="switch01" innerRadius="20" outerRadius="500" pitchScale="0.5" volumeScale="2.62"/>
+				</sounds>
+        </animatedObject>
+
+<!-- STORAGE AREA LIGHTS -->
+		
+		<animatedObject saveId="storageAreaLights">
+            <animation duration="0.5">
+                <part node="storageAreaLight01">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="storageAreaLight02">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+				<part node="storageAreaLight03">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="storageAreaLight04">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="storageAreaLight05">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="storageAreaLight06">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>  
+		  </animation>    
+                <controls triggerNode="storageAreaLightsTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnLight" negText="action_turnOffLight" />
+				<sounds>
+					<toggle template="switch01" innerRadius="20" outerRadius="500" pitchScale="0.5" volumeScale="2.62"/>
+				</sounds>
+        </animatedObject>
+
+<!-- STORAGE AREA LIGHTS -->
+		
+		<animatedObject saveId="milkTankAreaLights">
+            <animation duration="0.5">
+                <part node="milkTankAreaLight01">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+		  </animation>    
+                <controls triggerNode="milkTankAreaLightsTrigger01" posAction="ACTIVATE_HANDTOOL" posText="$l10n_action_lightOn" negText="$l10n_action_lightOut" />
+				<sounds>
+					<toggle template="switch01" innerRadius="20" outerRadius="500" pitchScale="0.5" volumeScale="2.62"/>
+				</sounds>
+        </animatedObject>
+	
+	</animatedObjects> 
+
+    <i3dMappings>
+
+<!-- AREAS -->
+        
+		<i3dMapping id="clearAreaStart01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|0|1" />
+		<i3dMapping id="clearAreaStart02" node="0>0|0|1" />
+        <i3dMapping id="clearAreaWidth02" node="0>0|0|1|0" />
+        <i3dMapping id="clearAreaHeight02" node="0>0|0|1|1" />
+        <i3dMapping id="levelAreaStart01" node="0>0|1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>0|1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>0|1|0|1" />
+		<i3dMapping id="levelAreaStart02" node="0>0|1|1" />
+        <i3dMapping id="levelAreaWidth02" node="0>0|1|1|0" />
+        <i3dMapping id="levelAreaHeight02" node="0>0|1|1|1" />
+		<i3dMapping id="levelAreaStart03" node="0>0|1|2" />
+        <i3dMapping id="levelAreaWidth03" node="0>0|1|2|0" />
+        <i3dMapping id="levelAreaHeight03" node="0>0|1|2|1" />
+		<i3dMapping id="levelAreaStart04" node="0>0|1|3" />
+        <i3dMapping id="levelAreaWidth04" node="0>0|1|3|0" />
+        <i3dMapping id="levelAreaHeight04" node="0>0|1|3|1" />
+		<i3dMapping id="testAreaStart01" node="0>0|2|0" />
+        <i3dMapping id="testAreaEnd01" node="0>0|2|0|0" />
+        <i3dMapping id="indoorAreaStart01" node="0>0|3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>0|3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>0|3|0|1" />
+		<i3dMapping id="indoorAreaStart02" node="0>0|3|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>0|3|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>0|3|1|1" />
+		<i3dMapping id="indoorAreaStart03" node="0>0|3|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>0|3|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>0|3|2|1" />
+		<i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>0|4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>0|4|0|0" />
+		<i3dMapping id="paintAreaStart01" node="0>0|5|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>0|5|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>0|5|0|1" />
+		<i3dMapping id="paintAreaStart02" node="0>0|5|1" />
+        <i3dMapping id="paintAreaWidth02" node="0>0|5|1|0" />
+        <i3dMapping id="paintAreaHeight02" node="0>0|5|1|1" />
+		<i3dMapping id="paintAreaStart03" node="0>0|5|2" />
+        <i3dMapping id="paintAreaWidth03" node="0>0|5|2|0" />
+        <i3dMapping id="paintAreaHeight03" node="0>0|5|2|1" />
+		<i3dMapping id="paintAreaStart04" node="0>0|5|3" />
+        <i3dMapping id="paintAreaWidth04" node="0>0|5|3|0" />
+        <i3dMapping id="paintAreaHeight04" node="0>0|5|3|1" />
+		<i3dMapping id="paintAreaStart05" node="0>0|5|4" />
+        <i3dMapping id="paintAreaWidth05" node="0>0|5|4|0" />
+        <i3dMapping id="paintAreaHeight05" node="0>0|5|4|1" />
+		<i3dMapping id="paintAreaStart06" node="0>0|5|5" />
+        <i3dMapping id="paintAreaWidth06" node="0>0|5|5|0" />
+        <i3dMapping id="paintAreaHeight06" node="0>0|5|5|1" />
+		<i3dMapping id="paintAreaStart07" node="0>0|5|6" />
+        <i3dMapping id="paintAreaWidth07" node="0>0|5|6|0" />
+        <i3dMapping id="paintAreaHeight07" node="0>0|5|6|1" />
+		<i3dMapping id="paintAreaStart08" node="0>0|5|7" />
+        <i3dMapping id="paintAreaWidth08" node="0>0|5|7|0" />
+        <i3dMapping id="paintAreaHeight08" node="0>0|5|7|1" />
+		<i3dMapping id="paintAreaStart09" node="0>0|5|8" />
+        <i3dMapping id="paintAreaWidth09" node="0>0|5|8|0" />
+        <i3dMapping id="paintAreaHeight09" node="0>0|5|8|1" />
+		
+		
+<!-- ROLLUP DOOR -->
+	
+		<i3dMapping id="rollupDoor" node="0>3|0|1" />
+		<i3dMapping id="rollupDoor_bottomCol" node="0>3|0|2" />
+		<i3dMapping id="rollupDoor_topCol" node="0>3|0|3" />
+		<i3dMapping id="rollupDoorTrigger" node="0>3|0|4" />
+		<i3dMapping id="rollupDoorSound" node="0>3|0|5" />
+	
+<!-- MAN DOORS -->
+		
+		<i3dMapping id="manDoor01" node="0>3|1|0|1" />
+		<i3dMapping id="manDoor01Handle" node="0>3|1|0|1|1" />
+		<i3dMapping id="manDoor01Trigger" node="0>3|1|0|2" />
+		<i3dMapping id="manDoor01Sound" node="0>3|1|0|3" />
+		
+		<i3dMapping id="manDoor02" node="0>3|1|1|1" />
+		<i3dMapping id="manDoor02Handle" node="0>3|1|1|1|1" />
+		<i3dMapping id="manDoor02Trigger" node="0>3|1|1|2" />
+		<i3dMapping id="manDoor02Sound" node="0>3|1|1|3" />
+	
+<!-- GATES -->
+
+		<i3dMapping id="gate01" node="0>3|2|0|0" />
+		<i3dMapping id="gate01Latch" node="0>3|2|0|0|1" />
+        <i3dMapping id="gate01Trigger" node="0>3|2|0|2" />
+		<i3dMapping id="gate01Sound" node="0>3|2|0|3" />
+		
+		<i3dMapping id="gate02" node="0>3|2|1|0" />
+		<i3dMapping id="gate02Latch" node="0>3|2|1|0|1" />
+        <i3dMapping id="gate02Trigger" node="0>3|2|1|2" />
+		<i3dMapping id="gate02Sound" node="0>3|2|1|3" />
+		
+		<i3dMapping id="gate03" node="0>3|2|2|0" />
+		<i3dMapping id="gate03Latch" node="0>3|2|2|0|1" />
+        <i3dMapping id="gate03Trigger" node="0>3|2|2|2" />
+		<i3dMapping id="gate03Sound" node="0>3|2|2|3" />
+		
+		<i3dMapping id="gate04" node="0>3|2|3|0" />
+		<i3dMapping id="gate04Latch" node="0>3|2|3|0|1" />
+        <i3dMapping id="gate04Trigger" node="0>3|2|3|2" />
+		<i3dMapping id="gate04Sound" node="0>3|2|3|3" />
+		
+		<i3dMapping id="gate05" node="0>3|2|4|0" />
+		<i3dMapping id="gate05Latch" node="0>3|2|4|0|1" />
+        <i3dMapping id="gate05Trigger" node="0>3|2|4|2" />
+		<i3dMapping id="gate05Sound" node="0>3|2|4|3" />
+		
+		<i3dMapping id="gate06" node="0>3|2|5|0" />
+		<i3dMapping id="gate06Latch" node="0>3|2|5|0|1" />
+        <i3dMapping id="gate06Trigger" node="0>3|2|5|2" />
+		<i3dMapping id="gate06Sound" node="0>3|2|5|3" />
+		
+		<i3dMapping id="gate07" node="0>3|2|6|0" />
+		<i3dMapping id="gate07Latch" node="0>3|2|6|0|1" />
+        <i3dMapping id="gate07Trigger" node="0>3|2|6|2" />
+		<i3dMapping id="gate07Sound" node="0>3|2|6|3" />
+		
+		<i3dMapping id="gate08" node="0>3|2|7|0" />
+		<i3dMapping id="gate08Latch" node="0>3|2|7|0|1" />
+        <i3dMapping id="gate08Trigger" node="0>3|2|7|2" />
+		<i3dMapping id="gate08Sound" node="0>3|2|7|3" />
+		
+		<i3dMapping id="gate09" node="0>3|2|8|0" />
+		<i3dMapping id="gate09Latch" node="0>3|2|8|0|1" />
+        <i3dMapping id="gate09Trigger" node="0>3|2|8|2" />
+		<i3dMapping id="gate09Sound" node="0>3|2|8|3" />
+		
+		<i3dMapping id="gate10" node="0>3|2|9|0" />
+		<i3dMapping id="gate10Latch" node="0>3|2|9|0|1" />
+        <i3dMapping id="gate10Trigger" node="0>3|2|9|2" />
+		<i3dMapping id="gate10Sound" node="0>3|2|9|3" />
+		
+		<i3dMapping id="gate11" node="0>3|2|10|0" />
+		<i3dMapping id="gate11Latch" node="0>3|2|10|0|1" />
+        <i3dMapping id="gate11Trigger" node="0>3|2|10|2" />
+		<i3dMapping id="gate11Sound" node="0>3|2|10|3" />
+		
+<!-- PARLOUR LIGHTS -->
+		
+		<i3dMapping id="parlourLight01" node="0>4|1|0|0|0" />
+		<i3dMapping id="parlourLight02" node="0>4|1|0|1|0" />
+		<i3dMapping id="parlourLight03" node="0>4|1|0|2|0" />
+		<i3dMapping id="parlourLight04" node="0>4|1|0|3|0" />
+		<i3dMapping id="parlourLight05" node="0>4|1|0|4|0" />
+		<i3dMapping id="parlourLight06" node="0>4|1|0|5|0" />
+		<i3dMapping id="parlourLight07" node="0>4|1|0|6|0" />
+		<i3dMapping id="parlourLight08" node="0>4|1|0|7|0" />
+		<i3dMapping id="parlourLight09" node="0>4|1|0|8|0" />
+		<i3dMapping id="parlourLight10" node="0>4|1|0|9|0" />
+		<i3dMapping id="parlourLight11" node="0>4|1|0|10|0" />
+		<i3dMapping id="parlourLight12" node="0>4|1|0|11|0" />
+		<i3dMapping id="parlourLight13" node="0>4|1|0|12|0" />
+		<i3dMapping id="parlourLight14" node="0>4|1|0|13|0" />
+		<i3dMapping id="parlourLight15" node="0>4|1|0|14|0" />
+		<i3dMapping id="parlourLight16" node="0>4|1|0|15|0" />
+		<i3dMapping id="parlourLight17" node="0>4|1|0|16|0" />
+		<i3dMapping id="parlourLight18" node="0>4|1|0|17|0" />
+		<i3dMapping id="parlourLightsTrigger" node="0>4|1|0|20" />
+		
+<!-- BARN LIGHTS -->
+		
+		<i3dMapping id="barnLight01" node="0>4|1|1|0|0" />
+		<i3dMapping id="barnLight02" node="0>4|1|1|1|0" />
+		<i3dMapping id="barnLight03" node="0>4|1|1|2|0" />
+		<i3dMapping id="barnLight04" node="0>4|1|1|3|0" />
+		<i3dMapping id="barnLight05" node="0>4|1|1|4|0" />
+		<i3dMapping id="barnLight06" node="0>4|1|1|5|0" />
+		<i3dMapping id="barnLight07" node="0>4|1|1|6|0" />
+		<i3dMapping id="barnLight08" node="0>4|1|1|7|0" />
+		<i3dMapping id="barnLight09" node="0>4|1|1|8|0" />
+		<i3dMapping id="barnLight10" node="0>4|1|1|9|0" />
+		<i3dMapping id="barnLight11" node="0>4|1|1|10|0" />
+		<i3dMapping id="barnLight12" node="0>4|1|1|11|0" />
+		<i3dMapping id="barnLight13" node="0>4|1|1|12|0" />
+		<i3dMapping id="barnLight14" node="0>4|1|1|13|0" />
+		<i3dMapping id="barnLight15" node="0>4|1|1|14|0" />
+		<i3dMapping id="barnLight16" node="0>4|1|1|15|0" />
+		<i3dMapping id="barnLight17" node="0>4|1|1|16|0" />
+		<i3dMapping id="barnLight18" node="0>4|1|1|17|0" />
+		<i3dMapping id="barnLight19" node="0>4|1|1|18|0" />
+		<i3dMapping id="barnLight20" node="0>4|1|1|19|0" />
+		<i3dMapping id="barnLight21" node="0>4|1|1|20|0" />
+		<i3dMapping id="barnLight22" node="0>4|1|1|21|0" />
+		<i3dMapping id="barnLight23" node="0>4|1|1|22|0" />
+		<i3dMapping id="barnLight24" node="0>4|1|1|23|0" />
+		<i3dMapping id="barnLight25" node="0>4|1|1|24|0" />
+		<i3dMapping id="barnLight26" node="0>4|1|1|25|0" />
+		<i3dMapping id="barnLight27" node="0>4|1|1|26|0" />
+		<i3dMapping id="barnLight28" node="0>4|1|1|27|0" />
+		<i3dMapping id="barnLight29" node="0>4|1|1|28|0" />
+		<i3dMapping id="barnLight30" node="0>4|1|1|29|0" />
+		<i3dMapping id="barnLightsTrigger" node="0>4|1|1|32" />
+		
+<!-- STORAGE AREA LIGHTS -->
+		
+		<i3dMapping id="storageAreaLight01" node="0>4|1|2|0|0|0" />
+		<i3dMapping id="storageAreaLight02" node="0>4|1|2|1|0|0" />
+		<i3dMapping id="storageAreaLight03" node="0>4|1|2|2|0|0" />
+		<i3dMapping id="storageAreaLight04" node="0>4|1|2|3|0|0" />
+		<i3dMapping id="storageAreaLight05" node="0>4|1|2|4|0|0" />
+		<i3dMapping id="storageAreaLight06" node="0>4|1|2|5|0|0" />
+		<i3dMapping id="storageAreaLightsTrigger" node="0>4|1|2|8" />	
+		
+<!-- MILK TANKS AREA LIGHTS -->
+		
+		<i3dMapping id="milkTankAreaLight01" node="0>4|1|3|0|0|0" />
+		<i3dMapping id="milkTankAreaLightsTrigger01" node="0>4|1|3|2" />	
+		
+<!-- FOOD -->
+		
+		<i3dMapping id="fillVolumeFood" node="0>5|0" />
+		<i3dMapping id="markerFood" node="0>5|1" />
+		<i3dMapping id="exactFillRootNodeFood" node="0>5|2" />
+		<i3dMapping id="baleTrigger" node="0>5|3" />
+		<i3dMapping id="markerBales" node="0>5|4" />
+        <i3dMapping id="foodPlace01" node="0>5|5|0" />
+        <i3dMapping id="foodPlace02" node="0>5|5|1" />
+        <i3dMapping id="foodPlace03" node="0>5|5|2" />
+        <i3dMapping id="foodPlace04" node="0>5|5|3" />
+        <i3dMapping id="foodPlace05" node="0>5|5|4" />
+        <i3dMapping id="foodPlace06" node="0>5|5|5" />
+        <i3dMapping id="foodPlace07" node="0>5|5|6" />
+        <i3dMapping id="foodPlace08" node="0>5|5|7" />
+		<i3dMapping id="waterPlace01" node="0>5|6|0" />
+        <i3dMapping id="waterPlace02" node="0>5|6|1" />
+        <i3dMapping id="waterPlace03" node="0>5|6|2" />
+        <i3dMapping id="waterPlace04" node="0>5|6|3" />
+
+<!-- STRAW -->
+	
+		<i3dMapping id="straw" node="0>6" />
+		<i3dMapping id="exactFillRootNodeStraw" node="0>6|0" />
+		<i3dMapping id="strawPlane" node="0>6|1" />
+
+<!-- MILK -->
+		
+		<i3dMapping id="milkTrigger" node="0>7|0" />
+        <i3dMapping id="aiLoadingNodeMilk" node="0>7|1" />
+        <i3dMapping id="milkingTank1" node="0>7|2" />
+        <i3dMapping id="milkingTank2" node="0>7|3" />
+		<i3dMapping id="markerMilk" node="0>7|4" />
+		
+<!-- LIQUID MANURE -->	
+		
+		<i3dMapping id="lqiuidManureTrigger" node="0>8|0" />
+        <i3dMapping id="aiLoadingNodeLiquidManure" node="0>8|1" />
+		<i3dMapping id="markerLiquidManure" node="0>8|2" />
+		
+<!-- STORAGE -->
+		
+		<i3dMapping id="storage" node="0>9" />
+		<i3dMapping id="loadingTrigger" node="0>9|0" />
+		<i3dMapping id="markerAnimals" node="0>9|1" />
+		<i3dMapping id="teleportNode" node="0>9|2" /> 
+	
+<!-- NAVIGATION MESH -->
+	
+		<i3dMapping id="navigationRootNode" node="0>10" />
+		<i3dMapping id="navigationMeshShape" node="0>10|0" />
+		
+<!-- INFO TRIGGER -->		
+		
+		<i3dMapping id="infoTrigger" node="0>11" />		
+		
+    </i3dMappings>
+</placeable>

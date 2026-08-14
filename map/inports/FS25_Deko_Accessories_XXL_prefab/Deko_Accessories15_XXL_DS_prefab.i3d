@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories15_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="28" filename="$data/maps/mapAS/textures/props/cartonBoxes/cartonBox02.i3d"/>
+    <File fileId="17" filename="$data/maps/mapAS/textures/props/foodCartProps/cartonBox.i3d"/>
+    <File fileId="18" filename="$data/maps/mapAS/textures/props/jarLarge/jarLarge01.i3d"/>
+    <File fileId="27" filename="$data/maps/mapAS/textures/props/jarMedium/jarMedium01.i3d"/>
+    <File fileId="31" filename="$data/maps/mapAS/textures/props/pallet01.i3d"/>
+    <File fileId="16" filename="$data/maps/mapAS/textures/props/pallet02.i3d"/>
+    <File fileId="30" filename="$data/maps/mapAS/textures/props/stoneStatues02.i3d"/>
+    <File fileId="29" filename="$data/maps/mapAS/textures/props/stoneStatues04.i3d"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/gardenTools_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/gardenTools_normal.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/gardenTools_specular.png"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/propsDecals_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/propsDecals_specular.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/cardboardStack01.i3d"/>
+    <File fileId="26" filename="$data/maps/mapUS/textures/props/cardboardStack02.i3d"/>
+    <File fileId="11" filename="$data/maps/mapUS/textures/props/trashcanStorage02.i3d"/>
+    <File fileId="32" filename="$data/objects/pallets/liquidTank/fertilizerTank_diffuse.png"/>
+    <File fileId="33" filename="$data/objects/pallets/liquidTank/fertilizerTank_normal.png"/>
+    <File fileId="34" filename="$data/objects/pallets/liquidTank/fertilizerTank_specular.png"/>
+    <File fileId="4" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="35" filename="$data/shared/default_normal.png"/>
+    <File fileId="22" filename="textures/cageContainerNet_diffuse.png"/>
+    <File fileId="23" filename="textures/cageContainerNet_normal.png"/>
+    <File fileId="24" filename="textures/cageContainerNet_specular.png"/>
+    <File fileId="19" filename="textures/cageContainer_diffuse.png"/>
+    <File fileId="20" filename="textures/cageContainer_normal.png"/>
+    <File fileId="21" filename="textures/cageContainer_specular.png"/>
+    <File fileId="36" filename="textures/euroPallet01_diffuse.png"/>
+    <File fileId="6" filename="textures/euroPallet01_normal.png"/>
+    <File fileId="7" filename="textures/euroPallet01_specular.png"/>
+    <File fileId="5" filename="textures/euroPallet02_diffuse.png"/>
+    <File fileId="8" filename="textures/metalTrashSet_diffuse.png"/>
+    <File fileId="9" filename="textures/metalTrashSet_normal.png"/>
+    <File fileId="10" filename="textures/metalTrashSet_specular.png"/>
+    <File fileId="37" filename="textures/tireHuge_diffuse.png"/>
+    <File fileId="38" filename="textures/tireHuge_normal.png"/>
+    <File fileId="39" filename="textures/tireHuge_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cageContainer_mat" materialId="7">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="cageContainerNet_mat" materialId="8" alphaBlending="true">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="9">
+      <Texture fileId="36"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="euroPallet02_mat" materialId="10">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="fertilizerTank_mat" materialId="11">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="gardenTools_mat" materialId="13">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="14" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="15" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="metalTrashSet_mat" materialId="16">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="20" alphaBlending="true" customShaderId="4">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="21" alphaBlending="true" customShaderId="4">
+      <Texture fileId="2"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="tireHuge_mat" materialId="22">
+      <Texture fileId="37"/>
+      <Normalmap fileId="38"/>
+      <Glossmap fileId="39"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories15_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Boxes and cartons, Pallets" translation="-172.946 -34.5547 -150.848" rotation="0 -0 -0.0791294" nodeId="78">
+      <TransformGroup name="oldMetalPile01_PREFAB" lockedgroup="true" translation="-13.5271 0 2.89095" rotation="-2.46527e-05 -0 -2.72049e-06" nodeId="677">
+        <Shape name="euroPalletOld" lockedgroup="true" translation="0 0 -1.34718e-14" shapeId="1" static="true" nodeId="678" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14">
+          <Shape name="decal" shapeId="2" clipDistance="50" nodeId="679" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="20"/>
+          <Shape name="euroPalletOld_vis" shapeId="3" clipDistance="80" nodeId="680" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        </Shape>
+        <Shape name="oldMetalPile01" lockedgroup="true" rotation="-180 88.5085 -180" shapeId="4" clipDistance="190" nodeId="681" castsShadows="true" receiveShadows="true" materialIds="16">
+          <Shape name="col" translation="-0.351556 0.166057 -1.08214" shapeId="5" visibility="false" static="true" density="0.0001" nodeId="682" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="trashcanStorage_PREFAB" lockedgroup="true" translation="-2.72011 0 0.405914" rotation="-1.57039e-07 -0 1.78858e-08" nodeId="683">
+        <ReferenceNode name="trashcanStorage02" translation="0 0 2.67029e-05" rotation="-4.07111e-13 -0 -5.47055e-13" referenceId="11" nodeId="689"/>
+        <TransformGroup name="shovel1" lockedgroup="true" translation="-0.361847 0.171043 -0.226322" rotation="-5.33336 69.6064 1.01383e-05" scale="1.25 1.25 1.25" lodDistance="0 8" clipDistance="60" nodeId="694">
+          <Shape name="LOD0" shapeId="6" nodeId="695" castsShadows="true" receiveShadows="true" materialIds="13">
+            <Shape name="collision" translation="0 0 -0.03906" shapeId="7" static="true" collisionFilterMask="0xfffffbff" nodeId="696" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="8" nodeId="697" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="pallet02_PREFAB" lockedgroup="true" translation="-10.561 3.8147e-06 1.04369" rotation="1.2103e-08 -0 3.1282e-05" nodeId="698">
+        <ReferenceNode name="pallet02" translation="-6.10352e-05 0 1.52588e-05" rotation="-8.14222e-13 4.26887e-07 1.52667e-13" referenceId="16" nodeId="704"/>
+        <ReferenceNode name="cartonBox" translation="0.307983 0.166 -0.0397682" rotation="-2.15938e-05 1.26582 1.1602e-05" referenceId="17" nodeId="712"/>
+        <ReferenceNode name="jarLarge" translation="-0.393311 0.591377 -0.161835" rotation="-0.000539156 -87.7049 0.000550803" scale="0.811367 0.811367 0.811367" referenceId="18" nodeId="720"/>
+        <ReferenceNode name="cartonBox" translation="-0.284271 0.166 -0.000804901" rotation="-2.15938e-05 1.26582 1.1602e-05" referenceId="17" nodeId="725"/>
+        <ReferenceNode name="cartonBox" translation="0.163818 0.592033 -0.142151" rotation="-180 -86.6422 -180" scale="0.77186 1.01153 0.77186" referenceId="17" nodeId="728"/>
+        <ReferenceNode name="jarLarge" translation="0.235962 1.04243 -0.119232" rotation="-2.27921e-05 -18.6938 1.93843e-05" scale="0.811367 0.811367 0.811367" referenceId="18" nodeId="731"/>
+        <ReferenceNode name="jarLarge" translation="-0.247986 0.610512 0.260479" rotation="-4.24242e-05 59.4095 -2.44407e-05" scale="0.811367 0.811367 0.811367" referenceId="18" nodeId="736"/>
+      </TransformGroup>
+      <Shape name="cageContainer" lockedgroup="true" translation="-4.72658 0 -1.54494" shapeId="9" static="true" clipDistance="100" nodeId="741" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="grid" shapeId="10" clipDistance="100" nodeId="742" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <ReferenceNode name="trashcanStorage02" translation="-2.73898 0 3.13316" rotation="3.44003e-06 -0 1.401e-05" referenceId="11" nodeId="743"/>
+      <TransformGroup name="trashcanStorage02" lockedgroup="true" translation="-2.74272 0 1.81175" rotation="8.25578e-06 -0 1.97351e-06" nodeId="748">
+        <ReferenceNode name="trashcanStorage02" translation="0 0 3.05176e-05" rotation="0 -1.70755e-06 0" referenceId="11" nodeId="749"/>
+        <ReferenceNode name="cardboardStack01" translation="0.103088 0.560638 -0.355225" rotation="89.2376 5.94484 89.921" referenceId="25" nodeId="759"/>
+        <ReferenceNode name="cardboardStack02" translation="-0.327148 0.371532 0.0496216" rotation="37.2499 86.2364 117.752" referenceId="26" nodeId="769"/>
+      </TransformGroup>
+      <TransformGroup name="cageContainerWithPipes_PREFAB" lockedgroup="true" translation="-4.66742 0 1.21822" rotation="-2.36783e-05 -0 0" nodeId="774">
+        <Shape name="cageContainer" lockedgroup="true" translation="0 0.0645395 0" shapeId="9" static="true" clipDistance="100" nodeId="775" castsShadows="true" receiveShadows="true" materialIds="7">
+          <Shape name="grid" shapeId="10" clipDistance="100" nodeId="776" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </Shape>
+        <Shape name="pipesPile01" lockedgroup="true" translation="0.208679 0.185993 0.132493" rotation="-180 1.25798 180" shapeId="11" clipDistance="120" nodeId="777" castsShadows="true" receiveShadows="true" materialIds="16">
+          <Shape name="col" translation="-0.607213 0 0.296773" shapeId="12" visibility="false" static="true" density="0.0001" nodeId="778" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="pipesPile02" lockedgroup="true" translation="-0.188843 0.155677 0.112413" rotation="-180 -1.163 -180" shapeId="13" clipDistance="120" nodeId="779" castsShadows="true" receiveShadows="true" materialIds="16">
+          <Shape name="col" translation="-0.618519 0 0.296773" shapeId="14" visibility="false" static="true" density="0.0001" nodeId="780" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="pallet02_PREFAB" lockedgroup="true" translation="-10.552 0 -1.13242" rotation="180 -0 180" nodeId="781">
+        <ReferenceNode name="pallet02" translation="1.90735e-05 0 0" rotation="-2.16278e-12 -0 0" referenceId="16" nodeId="782"/>
+        <ReferenceNode name="cartonBox" translation="-0.315953 0.166 0.0348" rotation="-2.15963e-05 -1.52245 1.26528e-05" referenceId="17" nodeId="786"/>
+        <ReferenceNode name="cartonBox" translation="0.296858 0.166 0.119463" rotation="-180 -4.41397 -180" referenceId="17" nodeId="789"/>
+        <ReferenceNode name="cartonBox" translation="0.181274 0.602005 -0.0296631" rotation="180 -89.3728 -180" referenceId="17" nodeId="792"/>
+        <ReferenceNode name="cartonBox" translation="0.293823 1.04293 0.03302" rotation="180 -4.16994 180" scale="0.749201 0.749201 0.749201" referenceId="17" nodeId="795"/>
+      </TransformGroup>
+      <TransformGroup name="pallet02_PREFAB" lockedgroup="true" translation="-9.13359 0 -0.125107" rotation="-1.70857e-05 90 0" nodeId="798">
+        <ReferenceNode name="pallet02" translation="1.90735e-05 0 0" rotation="-2.16278e-12 -0 0" referenceId="16" nodeId="799"/>
+        <ReferenceNode name="cartonBox" translation="0.197205 0.165993 0.00927734" rotation="-2.47167e-05 -29.1384 2.41141e-05" referenceId="17" nodeId="803"/>
+        <ReferenceNode name="jarLarge" translation="-0.172169 0.165993 -0.325994" rotation="-0.000539156 -87.705 0.000550803" referenceId="18" nodeId="806"/>
+        <ReferenceNode name="jarMedium" translation="-0.294312 0.165993 -0.00363159" rotation="-0.000539156 -87.705 0.000550803" referenceId="27" nodeId="816"/>
+        <ReferenceNode name="cartonBox" translation="1.16516 -7.62939e-06 -0.116333" rotation="-180 -86.2476 180" scale="1.09477 1.3146 1.09477" referenceId="17" nodeId="821"/>
+        <ReferenceNode name="cartonBox" translation="1.04958 -3.8333e-06 0.527679" rotation="-0.000284517 85.4036 -0.000270257" scale="1.09477 1.28075 1.09477" referenceId="17" nodeId="824"/>
+        <ReferenceNode name="cartonBox" translation="1.02219 0.569481 0.0354919" rotation="-2.28598e-05 -4.09855 1.49794e-05" scale="1.09477 1.27091 1.09477" referenceId="17" nodeId="827"/>
+      </TransformGroup>
+      <TransformGroup name="pallet02Stone_PREFAB" lockedgroup="true" translation="-10.5393 0 -0.0090332" rotation="-1.22723e-06 -0 4.05187e-05" nodeId="830">
+        <ReferenceNode name="pallet02" translation="-6.10352e-05 0 1.52588e-05" rotation="-8.14222e-13 4.26887e-07 1.52667e-13" referenceId="16" nodeId="831"/>
+        <ReferenceNode name="cartonBox" translation="0.307983 0.166 -0.0397682" rotation="-2.15938e-05 1.26582 1.1602e-05" referenceId="17" nodeId="835"/>
+        <ReferenceNode name="cartonBox" translation="-0.284271 0.166 -0.000804901" rotation="-2.15938e-05 1.26582 1.1602e-05" referenceId="17" nodeId="838"/>
+        <ReferenceNode name="cartonBox" translation="0.277378 0.592033 -0.135488" rotation="-180 -86.6422 -180" scale="0.77186 1.01153 0.77186" referenceId="17" nodeId="841"/>
+        <TransformGroup name="cartonBox02stoneStatues04_PREFAB" lockedgroup="true" translation="-0.321582 0.600319 -0.0107468" rotation="-0.905468 -2.28311 2.86631" nodeId="844">
+          <ReferenceNode name="cartonBox02" translation="0 0 -1.52588e-05" rotation="8.24279e-13 -4.32159e-07 5.9245e-13" scale="1.9756 1.9756 1.9756" referenceId="28" nodeId="849"/>
+          <ReferenceNode name="stoneStatues04_lod" translation="-0.00665449 0.0672304 0.232706" rotation="-94.069 -1.17824 -2.70919e-05" scale="1.10443 1.02873 1.06229" referenceId="29" nodeId="857"/>
+          <ReferenceNode name="stoneStatues04_lod" translation="-0.00164961 0.0483171 -0.00588013" rotation="-94.069 -1.17824 -2.70919e-05" scale="1.10443 1.02873 1.06229" referenceId="29" nodeId="861"/>
+        </TransformGroup>
+        <TransformGroup name="cartonBox02stoneStatues02_PREFAB" lockedgroup="true" translation="0.238647 1.02627 -0.0989761" rotation="-1.92136e-05 -18.6938 2.1871e-05" nodeId="865">
+          <ReferenceNode name="cartonBox02" rotation="-2.96093e-12 -0 -6.64882e-12" scale="1.34707 1.09996 1.09996" referenceId="28" nodeId="866"/>
+          <ReferenceNode name="stoneStatues02_lod" translation="-0.0228882 0.00187683 -0.12677" rotation="2.01444e-05 14.7147 -4.63495e-05" referenceId="30" nodeId="874"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="pallet01" translation="-6.91658 0 1.79318" rotation="-180 -0 180" referenceId="31" nodeId="883"/>
+      <ReferenceNode name="pallet02" translation="-6.92055 0 3.06979" rotation="180 -0 -180" referenceId="16" nodeId="887"/>
+      <Shape name="fertilizerTank_vis5" translation="-2.65295 0 -1.39558" rotation="-0 90 0" shapeId="15" clipDistance="150" nodeId="891" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      <Shape name="euroPalletNew" lockedgroup="true" translation="-6.90172 0 0.653717" shapeId="1" static="true" nodeId="892" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14">
+        <Shape name="decals" shapeId="2" clipDistance="200" nodeId="893" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="21"/>
+        <Shape name="euroPalletNewVis" shapeId="3" static="true" clipDistance="100" nodeId="894" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="cageContainer_tire_DS" lockedgroup="true" translation="-4.70816 0 -0.136963" shapeId="9" static="true" clipDistance="100" nodeId="895" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="grid" shapeId="10" clipDistance="100" nodeId="896" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="tireHuge2" lockedgroup="true" translation="-0.48572 0.204453 -0.109283" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="897" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="898" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="-0.48572 0.437999 -0.109283" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="899" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="900" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="-0.48572 0.642191 -0.109283" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="901" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="902" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="-0.48572 0.86157 -0.109283" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="903" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="904" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="0.163089 0.50699 -0.109283" rotation="0 -0 -75.0899" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="905" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="906" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="0.395487 0.475891 -0.109283" rotation="0 -0 -75.0899" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="907" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="908" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="0.627084 0.404564 -0.109283" rotation="0 -0 -75.0899" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="909" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="910" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="tireHuge2" lockedgroup="true" translation="0.895749 0.462832 -0.109283" rotation="0 -0 -88.1968" scale="0.35 0.35 0.35" shapeId="16" clipDistance="40" nodeId="911" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="col" translation="-3.8147e-08 4.44089e-18 0" shapeId="17" visibility="false" static="true" density="0.0001" nodeId="912" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+      </Shape>
+      <Shape name="euroPalletOld" lockedgroup="true" translation="-6.90205 0 -0.362869" shapeId="1" static="true" nodeId="913" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14">
+        <Shape name="decal" shapeId="2" clipDistance="20" nodeId="914" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="20"/>
+        <Shape name="euroPalletOld_vis" shapeId="3" clipDistance="80" nodeId="915" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="manureHeap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="xml/manureHeapSmall.xml">
+        <attributes>
+            <set path="placeable.storeData.name" value="$l10n_shopItem_manureHeapExtension"/>
+            <set path="placeable.storeData.functions.function" value="$l10n_function_manureHeapExtension"/>
+            <set path="placeable.storeData.brush.tab" value="siloExtensions"/>
+
+            <set path="placeable.manureHeap#needsBarn" value="true"/>
+         </attributes>
+    </parentFile>
+
+    <storeData>
+        <name>manureHeapExtensionSmall</name>
+        <image>map/inports/FS25_sowHut/store/store_manureHeap.png</image>
+        <functions>
+            <function>$l10n_function_manureHeapExtension</function>
+        </functions>
+        <price>25000</price>
+        <dailyUpkeep>25</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>siloExtensions</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>siloExtensions</tab>
+        </brush>
+
+    </storeData>
+</placeable>

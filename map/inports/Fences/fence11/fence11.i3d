@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fence11" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="8" filename="$data/placeables/brandless/fences/EU/fence11/fence11Transparent_alpha.png" />
+    <File fileId="5" filename="$data/placeables/brandless/fences/EU/fence11/fence11Transparent_diffuse.png" />
+    <File fileId="6" filename="$data/placeables/brandless/fences/EU/fence11/fence11Transparent_normal.png" />
+    <File fileId="7" filename="$data/placeables/brandless/fences/EU/fence11/fence11Transparent_specular.png" />
+    <File fileId="1" filename="$data/placeables/brandless/fences/EU/fence11/fence11_diffuse.png" />
+    <File fileId="2" filename="$data/placeables/brandless/fences/EU/fence11/fence11_normal.png" />
+    <File fileId="3" filename="$data/placeables/brandless/fences/EU/fence11/fence11_specular.png" />
+    <File fileId="4" filename="$data/shaders/placeableShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="fence11_01_mat" materialId="2" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fence11Transparent_01_mat" materialId="4" customShaderId="4" customShaderVariation="vertexOffset_alphaMap">
+      <Custommap name="alphaMap" fileId="8"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="fence11_02_mat" materialId="5" customShaderId="4" customShaderVariation="vertexOffset">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fence11Transparent_02_mat" materialId="3" customShaderId="4" customShaderVariation="alphaMap">
+      <Custommap name="alphaMap" fileId="8"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fence11.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="gates" nodeId="1">
+      <TransformGroup name="gate6m" collision="false" clipDistance="150" nodeId="2">
+        <Shape name="gate6mOpenA" translation="-0.00002 1.475398 0.048172" shapeId="1" kinematic="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="3">
+          <TransformGroup name="visual" collision="false" nodeId="4">
+            <Shape name="metal" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="5"/>
+            <Shape name="alpha" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="6"/>
+          </TransformGroup>
+        </Shape>
+        <Shape name="gate6mOpenB" translation="-0.00071 1.475398 5.950831" shapeId="4" kinematic="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="7">
+          <TransformGroup name="visual" collision="false" nodeId="8">
+            <Shape name="alpha" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="9"/>
+            <Shape name="metal" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="10"/>
+          </TransformGroup>
+        </Shape>
+        <Shape name="visual" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="11"/>
+        <Shape name="col" shapeId="8" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="12"/>
+        <Shape name="gate6mTrigger" translation="0 0.847845 3.015933" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="13"/>
+        <TransformGroup name="gate6mSound" translation="0 0 2.934681" nodeId="14"/>
+      </TransformGroup>
+      <TransformGroup name="gate4m" collision="false" clipDistance="150" nodeId="15">
+        <Shape name="gate4mOpenA" translation="-0.000079 1.473173 0.048218" shapeId="10" kinematic="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="16">
+          <TransformGroup name="visual" collision="false" nodeId="17">
+            <Shape name="alpha" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="18"/>
+            <Shape name="metal" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="19"/>
+          </TransformGroup>
+        </Shape>
+        <Shape name="gate4mOpenB" translation="-0.000599 1.473173 3.952035" shapeId="13" kinematic="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="20">
+          <TransformGroup name="visual" collision="false" nodeId="21">
+            <Shape name="metal" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="22"/>
+            <Shape name="alpha" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="23"/>
+          </TransformGroup>
+        </Shape>
+        <Shape name="visual" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="24"/>
+        <Shape name="col" shapeId="17" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="25"/>
+        <Shape name="gate4mTrigger" translation="0 0.847845 1.926948" shapeId="18" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="26"/>
+        <TransformGroup name="gate4mSound" translation="0 0 2.033991" nodeId="27"/>
+      </TransformGroup>
+      <TransformGroup name="gate2m" collision="false" clipDistance="150" nodeId="28">
+        <Shape name="gate2mOpen" translation="-0.000079 1.473173 0.048218" shapeId="19" kinematic="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="29">
+          <TransformGroup name="visual" collision="false" nodeId="30">
+            <Shape name="alpha" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="31"/>
+            <Shape name="metal" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="32"/>
+          </TransformGroup>
+        </Shape>
+        <Shape name="visual" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="33"/>
+        <Shape name="col" shapeId="23" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="34"/>
+        <Shape name="gate2mTrigger" translation="0 0.847845 1.926948" shapeId="24" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="35"/>
+        <TransformGroup name="gate2mSound" translation="0 0 2.033991" nodeId="36"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="poles" nodeId="37">
+      <TransformGroup name="pole01" collision="false" clipDistance="150" nodeId="38">
+        <Shape name="col" shapeId="25" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="39"/>
+        <Shape name="visual" shapeId="26" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="40"/>
+      </TransformGroup>
+      <TransformGroup name="pole02" collision="false" clipDistance="150" nodeId="41">
+        <Shape name="col" shapeId="27" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="42"/>
+        <Shape name="visual" shapeId="28" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="43"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="panels" nodeId="44">
+      <TransformGroup name="panel01" collision="false" clipDistance="150" nodeId="45">
+        <Shape name="col" shapeId="29" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="46"/>
+        <TransformGroup name="visual" collision="false" nodeId="47">
+          <Shape name="alpha" shapeId="30" castsShadows="true" receiveShadows="true" materialIds="4" nodeId="48"/>
+          <Shape name="concrete" shapeId="31" castsShadows="true" receiveShadows="true" materialIds="5" nodeId="49"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="panel02" collision="false" clipDistance="150" nodeId="50">
+        <Shape name="col" shapeId="32" static="true" density="0" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="51"/>
+        <TransformGroup name="visual" collision="false" nodeId="52">
+          <Shape name="alpha" shapeId="33" castsShadows="true" receiveShadows="true" materialIds="4" nodeId="53"/>
+          <Shape name="concrete" shapeId="34" castsShadows="true" receiveShadows="true" materialIds="5" nodeId="54"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

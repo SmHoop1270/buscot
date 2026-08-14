@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories10_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/oldCart.i3d"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/props/farmWagonOld.i3d"/>
+    <File fileId="23" filename="$data/objects/bales/roundbales/roundbale125/bale_normal.png"/>
+    <File fileId="21" filename="$data/objects/bales/roundbales/roundbale125/fillTypes/grass_diffuse.png"/>
+    <File fileId="36" filename="$data/objects/bales/roundbales/roundbale125/fillTypes/hay_diffuse.dds"/>
+    <File fileId="22" filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.png"/>
+    <File fileId="37" filename="$data/objects/bales/roundbales/roundbale125/fillTypes/straw_diffuse.dds"/>
+    <File fileId="24" filename="$data/objects/bales/roundbales/roundbale125/netWrap_diffuse.png"/>
+    <File fileId="25" filename="$data/objects/bales/roundbales/roundbale125/netWrap_normal.png"/>
+    <File fileId="16" filename="$data/objects/bales/roundbales/roundbale180/bale_normal.png"/>
+    <File fileId="35" filename="$data/objects/bales/roundbales/roundbale180/fillTypes/grass_diffuse.png"/>
+    <File fileId="34" filename="$data/objects/bales/roundbales/roundbale180/fillTypes/hay_diffuse.dds"/>
+    <File fileId="15" filename="$data/objects/bales/roundbales/roundbale180/fillTypes/shared_normal.png"/>
+    <File fileId="14" filename="$data/objects/bales/roundbales/roundbale180/fillTypes/straw_diffuse.dds"/>
+    <File fileId="19" filename="$data/objects/bales/roundbales/roundbale180/netWrap_diffuse.png"/>
+    <File fileId="20" filename="$data/objects/bales/roundbales/roundbale180/netWrap_normal.png"/>
+    <File fileId="17" filename="$data/objects/bales/roundbales/roundbaleWrapDefault_diffuse.png"/>
+    <File fileId="18" filename="$data/objects/bales/roundbales/roundbaleWrapDefault_normal.png"/>
+    <File fileId="30" filename="$data/objects/bales/squarebales/squarebale120/fillTypes/grass_diffuse.png"/>
+    <File fileId="41" filename="$data/objects/bales/squarebales/squarebale120/fillTypes/hay_diffuse.dds"/>
+    <File fileId="31" filename="$data/objects/bales/squarebales/squarebale120/fillTypes/shared_normal.png"/>
+    <File fileId="40" filename="$data/objects/bales/squarebales/squarebale120/fillTypes/straw_diffuse.dds"/>
+    <File fileId="32" filename="$data/objects/bales/squarebales/squarebale120/netWrap_diffuse.png"/>
+    <File fileId="33" filename="$data/objects/bales/squarebales/squarebale120/netWrap_normal.png"/>
+    <File fileId="12" filename="$data/objects/bales/squarebales/squarebale180/bale_alpha.png"/>
+    <File fileId="4" filename="$data/objects/bales/squarebales/squarebale180/fillTypes/shared_normal.png"/>
+    <File fileId="3" filename="$data/objects/bales/squarebales/squarebale180/fillTypes/straw_diffuse.png"/>
+    <File fileId="9" filename="$data/objects/bales/squarebales/squarebale180/netWrap_diffuse.png"/>
+    <File fileId="10" filename="$data/objects/bales/squarebales/squarebale180/netWrap_normal.png"/>
+    <File fileId="39" filename="$data/objects/bales/squarebales/squarebale240/fillTypes/grass_diffuse.png"/>
+    <File fileId="38" filename="$data/objects/bales/squarebales/squarebale240/fillTypes/hay_diffuse.dds"/>
+    <File fileId="27" filename="$data/objects/bales/squarebales/squarebale240/fillTypes/shared_normal.png"/>
+    <File fileId="26" filename="$data/objects/bales/squarebales/squarebale240/fillTypes/straw_diffuse.dds"/>
+    <File fileId="28" filename="$data/objects/bales/squarebales/squarebale240/netWrap_diffuse.png"/>
+    <File fileId="29" filename="$data/objects/bales/squarebales/squarebale240/netWrap_normal.png"/>
+    <File fileId="7" filename="$data/objects/bales/squarebales/squarebaleWrapDefault_diffuse.png"/>
+    <File fileId="8" filename="$data/objects/bales/squarebales/squarebaleWrapDefault_normal.png"/>
+    <File fileId="5" filename="$data/shaders/wrapBaleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="alphaMesh_mat" materialId="1221" customShaderId="5" customShaderVariation="alphaMesh">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4" bumpDepth="0.3"/>
+      <Custommap name="alphaMap" fileId="12"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="9"/>
+      <Custommap name="netWrapNormalMap" fileId="10"/>
+    </Material>
+    <Material name="bale_mat" materialId="23823" customShaderId="5">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Custommap name="baleNormalMap" fileId="23"/>
+      <Custommap name="wrapDiffuseMap" fileId="17"/>
+      <Custommap name="wrapNormalMap" fileId="18"/>
+      <Custommap name="netWrapDiffuseMap" fileId="24"/>
+      <Custommap name="netWrapNormalMap" fileId="25"/>
+    </Material>
+    <Material name="bale_mat" materialId="23899" customShaderId="5">
+      <Texture fileId="36"/>
+      <Normalmap fileId="22"/>
+      <Custommap name="baleNormalMap" fileId="23"/>
+      <Custommap name="wrapDiffuseMap" fileId="17"/>
+      <Custommap name="wrapNormalMap" fileId="18"/>
+      <Custommap name="netWrapDiffuseMap" fileId="24"/>
+      <Custommap name="netWrapNormalMap" fileId="25"/>
+    </Material>
+    <Material name="bale_mat" materialId="23898" customShaderId="5">
+      <Texture fileId="37"/>
+      <Normalmap fileId="22"/>
+      <Custommap name="baleNormalMap" fileId="23"/>
+      <Custommap name="wrapDiffuseMap" fileId="17"/>
+      <Custommap name="wrapNormalMap" fileId="18"/>
+      <Custommap name="netWrapDiffuseMap" fileId="24"/>
+      <Custommap name="netWrapNormalMap" fileId="25"/>
+    </Material>
+    <Material name="bale_mat" materialId="23812" customShaderId="5">
+      <Texture fileId="35"/>
+      <Normalmap fileId="15" bumpDepth="0.3"/>
+      <Custommap name="baleNormalMap" fileId="16"/>
+      <Custommap name="wrapDiffuseMap" fileId="17"/>
+      <Custommap name="wrapNormalMap" fileId="18"/>
+      <Custommap name="netWrapDiffuseMap" fileId="19"/>
+      <Custommap name="netWrapNormalMap" fileId="20"/>
+    </Material>
+    <Material name="bale_mat" materialId="23901" customShaderId="5">
+      <Texture fileId="34"/>
+      <Normalmap fileId="15" bumpDepth="0.3"/>
+      <Custommap name="baleNormalMap" fileId="16"/>
+      <Custommap name="wrapDiffuseMap" fileId="17"/>
+      <Custommap name="wrapNormalMap" fileId="18"/>
+      <Custommap name="netWrapDiffuseMap" fileId="19"/>
+      <Custommap name="netWrapNormalMap" fileId="20"/>
+    </Material>
+    <Material name="bale_mat" materialId="23900" customShaderId="5">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15" bumpDepth="0.3"/>
+      <Custommap name="baleNormalMap" fileId="16"/>
+      <Custommap name="wrapDiffuseMap" fileId="17"/>
+      <Custommap name="wrapNormalMap" fileId="18"/>
+      <Custommap name="netWrapDiffuseMap" fileId="19"/>
+      <Custommap name="netWrapNormalMap" fileId="20"/>
+    </Material>
+    <Material name="bale_mat" materialId="23857" customShaderId="5">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="32"/>
+      <Custommap name="netWrapNormalMap" fileId="33"/>
+    </Material>
+    <Material name="bale_mat" materialId="23907" customShaderId="5">
+      <Texture fileId="41"/>
+      <Normalmap fileId="31" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="32"/>
+      <Custommap name="netWrapNormalMap" fileId="33"/>
+    </Material>
+    <Material name="bale_mat" materialId="23906" customShaderId="5">
+      <Texture fileId="40"/>
+      <Normalmap fileId="31" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="32"/>
+      <Custommap name="netWrapNormalMap" fileId="33"/>
+    </Material>
+    <Material name="bale_mat" materialId="1222" customShaderId="5">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="9"/>
+      <Custommap name="netWrapNormalMap" fileId="10"/>
+    </Material>
+    <Material name="bale_mat" materialId="23845" customShaderId="5">
+      <Texture fileId="39"/>
+      <Normalmap fileId="27" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="28"/>
+      <Custommap name="netWrapNormalMap" fileId="29"/>
+    </Material>
+    <Material name="bale_mat" materialId="23897" customShaderId="5">
+      <Texture fileId="38"/>
+      <Normalmap fileId="27" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="28"/>
+      <Custommap name="netWrapNormalMap" fileId="29"/>
+    </Material>
+    <Material name="bale_mat" materialId="23896" customShaderId="5">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27" bumpDepth="0.3"/>
+      <Custommap name="wrapDiffuseMap" fileId="7"/>
+      <Custommap name="wrapNormalMap" fileId="8"/>
+      <Custommap name="netWrapDiffuseMap" fileId="28"/>
+      <Custommap name="netWrapNormalMap" fileId="29"/>
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories10_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Bale accessories" translation="-83.9035 -34.5547 -129.473" nodeId="1227">
+      <TransformGroup name="farmWagonOldStraw_PREFAB" lockedgroup="true" translation="-0.466759 0 -4.38599" rotation="1.60873e-05 1.00179e-05 4.10292e-13" scale="1.5 1.5 1.5" nodeId="1228">
+        <ReferenceNode name="farmWagonOld" translation="-9.13674e-05 0 0" rotation="-7.33364e-19 -0 -1.08563e-12" scale="1.125 1.125 1.125" referenceId="1" nodeId="1234"/>
+        <TransformGroup name="bale_PREFAB" lockedgroup="true" translation="0.325592 0.934662 0.0238152" rotation="125.257 89.7651 126.42" scale="0.666667 0.666667 0.666667" nodeId="1239">
+          <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="2.56896e-05 0 3.05176e-05" rotation="4.54872e-08 -2.71755e-08 2.71755e-08" scale="0.981781 0.981781 0.981781" nodeId="1240">
+            <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1241" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+              <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1242" castsShadows="true" receiveShadows="true" materialIds="1222">
+                <Shape name="details" shapeId="3" clipDistance="40" nodeId="1243" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="0.000172555 -3.8147e-06 -1.71252" rotation="4.54872e-08 -2.71755e-08 2.71755e-08" scale="0.981781 0.981781 0.948016" nodeId="1244">
+            <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1245" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+              <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1246" castsShadows="true" receiveShadows="true" materialIds="1222">
+                <Shape name="details" shapeId="3" clipDistance="40" nodeId="1247" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="5.36442e-05 0 -3.49332" rotation="4.54872e-08 -2.71755e-08 2.71755e-08" scale="0.981781 0.981781 0.981781" nodeId="1248">
+            <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1249" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+              <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1250" castsShadows="true" receiveShadows="true" materialIds="1222">
+                <Shape name="details" shapeId="3" clipDistance="40" nodeId="1251" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="8.34465e-07 0.811996 -1.00708" rotation="4.54872e-08 -2.71755e-08 2.71755e-08" scale="0.981781 0.981781 0.981781" nodeId="1252">
+            <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1253" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+              <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1254" castsShadows="true" receiveShadows="true" materialIds="1222">
+                <Shape name="details" shapeId="3" clipDistance="40" nodeId="1255" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="0.000208735 0.811993 -2.71967" rotation="4.54872e-08 -2.71755e-08 2.71755e-08" scale="0.981781 0.981781 0.948016" nodeId="1256">
+            <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1257" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+              <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1258" castsShadows="true" receiveShadows="true" materialIds="1222">
+                <Shape name="details" shapeId="3" clipDistance="40" nodeId="1259" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="-2.58704 -1.36647 -1.34412" rotation="6.56931e-09 34.5009 -0.000442265" scale="0.981781 0.981781 0.948016" nodeId="1260">
+            <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1261" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+              <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1262" castsShadows="true" receiveShadows="true" materialIds="1222">
+                <Shape name="details" shapeId="3" clipDistance="40" nodeId="1263" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="oldCart_PREFAB" lockedgroup="true" translation="-0.207962 0 1.54872" rotation="0 -0 -8.07263e-06" nodeId="1264">
+        <ReferenceNode name="oldCart" translation="0 0 -1.52588e-05" rotation="8.53774e-07 -0 -4.26887e-07" referenceId="13" nodeId="1270"/>
+        <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="-0.0222762 0.881262 0.741555" rotation="178.849 2.26126 179.432" scale="0.981781 0.981781 0.948016" nodeId="1275">
+          <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1276" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+            <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1277" castsShadows="true" receiveShadows="true" materialIds="1222">
+              <Shape name="details" shapeId="3" clipDistance="40" nodeId="1278" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+            </Shape>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="squarebale180_PIVOT" lockedgroup="true" translation="-4.16883 -7.62939e-06 2.51308" rotation="180 -0 180" scale="0.981781 0.981781 0.981781" nodeId="1279">
+        <Shape name="squarebale180" translation="6.48455e-05 0.391563 0.887128" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="1280" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="squarebale180_vis" shapeId="2" clipDistance="300" nodeId="1281" castsShadows="true" receiveShadows="true" materialIds="1222">
+            <Shape name="details" shapeId="3" clipDistance="40" nodeId="1282" castsShadows="true" receiveShadows="true" materialIds="1221"/>
+          </Shape>
+        </Shape>
+      </TransformGroup>
+      <Shape name="roundbale180" lockedgroup="true" translation="0.56813 0.876167 5.19811" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="250" nodeId="23819" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="roundbale180_vis" shapeId="5" clipDistance="300" nodeId="23821" castsShadows="true" receiveShadows="true" materialIds="23900"/>
+      </Shape>
+      <Shape name="roundbale125" lockedgroup="true" translation="-1.41525 0.66407 6.84405" shapeId="6" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="300" nodeId="23830" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="roundbale125_vis" shapeId="7" clipDistance="300" nodeId="23832" castsShadows="true" receiveShadows="true" materialIds="23823"/>
+      </Shape>
+      <Shape name="squarebale240" lockedgroup="true" translation="0.661774 -2.28882e-05 12.362" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="23852" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="squarebale240_vis" shapeId="9" clipDistance="300" nodeId="23854" castsShadows="true" receiveShadows="true" materialIds="23896"/>
+      </Shape>
+      <Shape name="packedSquarebale120" lockedgroup="true" translation="-1.3985 -2.28882e-05 9.31485" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="23863" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="packedSquareBale120_vis" translation="0 0.409148 0" shapeId="11" clipDistance="300" nodeId="23865" castsShadows="true" receiveShadows="true" materialIds="23857"/>
+      </Shape>
+      <Shape name="roundbale180" lockedgroup="true" translation="-3.49744 0.952812 5.22092" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="250" nodeId="23882" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="roundbale180_vis" shapeId="5" clipDistance="300" nodeId="23883" castsShadows="true" receiveShadows="true" materialIds="23901"/>
+      </Shape>
+      <Shape name="roundbale180" lockedgroup="true" translation="-1.4764 0.84853 5.20817" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="250" nodeId="23884" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="roundbale180_vis" shapeId="5" clipDistance="300" nodeId="23885" castsShadows="true" receiveShadows="true" materialIds="23812"/>
+      </Shape>
+      <Shape name="roundbale125" lockedgroup="true" translation="-3.51199 0.64291 6.82422" shapeId="6" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="300" nodeId="23886" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="roundbale125_vis" shapeId="7" clipDistance="300" nodeId="23887" castsShadows="true" receiveShadows="true" materialIds="23899"/>
+      </Shape>
+      <Shape name="roundbale125" lockedgroup="true" translation="0.609001 0.66024 6.77489" shapeId="6" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="300" nodeId="23888" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="roundbale125_vis" shapeId="7" clipDistance="300" nodeId="23889" castsShadows="true" receiveShadows="true" materialIds="23898"/>
+      </Shape>
+      <Shape name="squarebale240" lockedgroup="true" translation="-3.57094 -2.28882e-05 12.3996" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="23892" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="squarebale240_vis" shapeId="9" clipDistance="300" nodeId="23893" castsShadows="true" receiveShadows="true" materialIds="23897"/>
+      </Shape>
+      <Shape name="squarebale240" lockedgroup="true" translation="-1.38474 -2.28882e-05 12.3496" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="23894" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="squarebale240_vis" shapeId="9" clipDistance="300" nodeId="23895" castsShadows="true" receiveShadows="true" materialIds="23845"/>
+      </Shape>
+      <Shape name="packedSquarebale120" lockedgroup="true" translation="0.637634 -2.28882e-05 9.31485" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="23902" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="packedSquareBale120_vis" translation="0 0.415167 0" shapeId="11" clipDistance="300" nodeId="23903" castsShadows="true" receiveShadows="true" materialIds="23906"/>
+      </Shape>
+      <Shape name="packedSquarebale120" lockedgroup="true" translation="-3.6176 0.398552 9.31485" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="300" nodeId="23904" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="packedSquareBale120_vis" shapeId="11" clipDistance="300" nodeId="23905" castsShadows="true" receiveShadows="true" materialIds="23907"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

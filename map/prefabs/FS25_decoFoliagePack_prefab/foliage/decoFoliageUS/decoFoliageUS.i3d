@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="decoFoliageUS.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="170" filename="$data/foliage/meadow/meadowUS/coneFlower01LOD_fmask.png"/>
+    <File fileId="171" filename="$data/foliage/meadow/meadowUS/coneFlower01LOD_mask.png"/>
+    <File fileId="169" filename="$data/foliage/meadow/meadowUS/coneFlower01LOD_normal.png"/>
+    <File fileId="174" filename="$data/foliage/meadow/meadowUS/coneFlower02LOD_fmask.png"/>
+    <File fileId="175" filename="$data/foliage/meadow/meadowUS/coneFlower02LOD_mask.png"/>
+    <File fileId="173" filename="$data/foliage/meadow/meadowUS/coneFlower02LOD_normal.png"/>
+    <File fileId="166" filename="$data/foliage/meadow/meadowUS/grassCutLOD_fmask.png"/>
+    <File fileId="167" filename="$data/foliage/meadow/meadowUS/grassCutLOD_mask.png"/>
+    <File fileId="165" filename="$data/foliage/meadow/meadowUS/grassCutLOD_normal.png"/>
+    <File fileId="162" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_fmask.png"/>
+    <File fileId="163" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_mask.png"/>
+    <File fileId="161" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_normal.png"/>
+    <File fileId="158" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_fmask.png"/>
+    <File fileId="159" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_mask.png"/>
+    <File fileId="157" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_normal.png"/>
+    <File fileId="154" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_fmask.png"/>
+    <File fileId="155" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_mask.png"/>
+    <File fileId="153" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_normal.png"/>
+    <File fileId="150" filename="$data/foliage/meadow/meadowUS/meadowUS_fmask.png"/>
+    <File fileId="151" filename="$data/foliage/meadow/meadowUS/meadowUS_mask.png"/>
+    <File fileId="149" filename="$data/foliage/meadow/meadowUS/meadowUS_normal.png"/>
+    <File fileId="190" filename="$data/foliage/meadow/meadowUS/prairieBlazingStar01LOD_fmask.png"/>
+    <File fileId="191" filename="$data/foliage/meadow/meadowUS/prairieBlazingStar01LOD_mask.png"/>
+    <File fileId="189" filename="$data/foliage/meadow/meadowUS/prairieBlazingStar01LOD_normal.png"/>
+    <File fileId="194" filename="$data/foliage/meadow/meadowUS/prairieBlazingStar02LOD_fmask.png"/>
+    <File fileId="195" filename="$data/foliage/meadow/meadowUS/prairieBlazingStar02LOD_mask.png"/>
+    <File fileId="193" filename="$data/foliage/meadow/meadowUS/prairieBlazingStar02LOD_normal.png"/>
+    <File fileId="178" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_fmask.png"/>
+    <File fileId="179" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_mask.png"/>
+    <File fileId="177" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_normal.png"/>
+    <File fileId="182" filename="$data/foliage/meadow/meadowUS/wildBergamot01LOD_fmask.png"/>
+    <File fileId="183" filename="$data/foliage/meadow/meadowUS/wildBergamot01LOD_mask.png"/>
+    <File fileId="181" filename="$data/foliage/meadow/meadowUS/wildBergamot01LOD_normal.png"/>
+    <File fileId="186" filename="$data/foliage/meadow/meadowUS/wildBergamot02LOD_fmask.png"/>
+    <File fileId="187" filename="$data/foliage/meadow/meadowUS/wildBergamot02LOD_mask.png"/>
+    <File fileId="185" filename="$data/foliage/meadow/meadowUS/wildBergamot02LOD_normal.png"/>
+    <File fileId="54" filename="$data/foliage/weed/weedAperaBigAliveLOD_fmask.png"/>
+    <File fileId="55" filename="$data/foliage/weed/weedAperaBigAliveLOD_mask.png"/>
+    <File fileId="53" filename="$data/foliage/weed/weedAperaBigAliveLOD_normal.png"/>
+    <File fileId="127" filename="$data/foliage/weed/weedAperaBigDeadLOD_alpha.png"/>
+    <File fileId="124" filename="$data/foliage/weed/weedAperaBigDeadLOD_diffuse.png"/>
+    <File fileId="126" filename="$data/foliage/weed/weedAperaBigDeadLOD_fmask.png"/>
+    <File fileId="125" filename="$data/foliage/weed/weedAperaBigDeadLOD_normal.png"/>
+    <File fileId="79" filename="$data/foliage/weed/weedAperaDead_alpha.png"/>
+    <File fileId="76" filename="$data/foliage/weed/weedAperaDead_diffuse.png"/>
+    <File fileId="78" filename="$data/foliage/weed/weedAperaDead_fmask.png"/>
+    <File fileId="77" filename="$data/foliage/weed/weedAperaDead_normal.png"/>
+    <File fileId="10" filename="$data/foliage/weed/weedAperaSmallAliveLOD_fmask.png"/>
+    <File fileId="11" filename="$data/foliage/weed/weedAperaSmallAliveLOD_mask.png"/>
+    <File fileId="9" filename="$data/foliage/weed/weedAperaSmallAliveLOD_normal.png"/>
+    <File fileId="83" filename="$data/foliage/weed/weedAperaSmallDeadLOD_alpha.png"/>
+    <File fileId="80" filename="$data/foliage/weed/weedAperaSmallDeadLOD_diffuse.png"/>
+    <File fileId="82" filename="$data/foliage/weed/weedAperaSmallDeadLOD_fmask.png"/>
+    <File fileId="81" filename="$data/foliage/weed/weedAperaSmallDeadLOD_normal.png"/>
+    <File fileId="3" filename="$data/foliage/weed/weedApera_fmask.png"/>
+    <File fileId="7" filename="$data/foliage/weed/weedApera_mask.png"/>
+    <File fileId="2" filename="$data/foliage/weed/weedApera_normal.png"/>
+    <File fileId="58" filename="$data/foliage/weed/weedChaerophyllumBigAliveLOD_fmask.png"/>
+    <File fileId="59" filename="$data/foliage/weed/weedChaerophyllumBigAliveLOD_mask.png"/>
+    <File fileId="57" filename="$data/foliage/weed/weedChaerophyllumBigAliveLOD_normal.png"/>
+    <File fileId="131" filename="$data/foliage/weed/weedChaerophyllumBigDeadLOD_alpha.png"/>
+    <File fileId="128" filename="$data/foliage/weed/weedChaerophyllumBigDeadLOD_diffuse.png"/>
+    <File fileId="130" filename="$data/foliage/weed/weedChaerophyllumBigDeadLOD_fmask.png"/>
+    <File fileId="129" filename="$data/foliage/weed/weedChaerophyllumBigDeadLOD_normal.png"/>
+    <File fileId="87" filename="$data/foliage/weed/weedChaerophyllumDead_alpha.png"/>
+    <File fileId="84" filename="$data/foliage/weed/weedChaerophyllumDead_diffuse.png"/>
+    <File fileId="86" filename="$data/foliage/weed/weedChaerophyllumDead_fmask.png"/>
+    <File fileId="85" filename="$data/foliage/weed/weedChaerophyllumDead_normal.png"/>
+    <File fileId="18" filename="$data/foliage/weed/weedChaerophyllumSmallAliveLOD_fmask.png"/>
+    <File fileId="19" filename="$data/foliage/weed/weedChaerophyllumSmallAliveLOD_mask.png"/>
+    <File fileId="17" filename="$data/foliage/weed/weedChaerophyllumSmallAliveLOD_normal.png"/>
+    <File fileId="91" filename="$data/foliage/weed/weedChaerophyllumSmallDeadLOD_alpha.png"/>
+    <File fileId="88" filename="$data/foliage/weed/weedChaerophyllumSmallDeadLOD_diffuse.png"/>
+    <File fileId="90" filename="$data/foliage/weed/weedChaerophyllumSmallDeadLOD_fmask.png"/>
+    <File fileId="89" filename="$data/foliage/weed/weedChaerophyllumSmallDeadLOD_normal.png"/>
+    <File fileId="14" filename="$data/foliage/weed/weedChaerophyllum_fmask.png"/>
+    <File fileId="15" filename="$data/foliage/weed/weedChaerophyllum_mask.png"/>
+    <File fileId="13" filename="$data/foliage/weed/weedChaerophyllum_normal.png"/>
+    <File fileId="62" filename="$data/foliage/weed/weedChenopodiumBigAliveLOD_fmask.png"/>
+    <File fileId="63" filename="$data/foliage/weed/weedChenopodiumBigAliveLOD_mask.png"/>
+    <File fileId="61" filename="$data/foliage/weed/weedChenopodiumBigAliveLOD_normal.png"/>
+    <File fileId="135" filename="$data/foliage/weed/weedChenopodiumBigDeadLOD_alpha.png"/>
+    <File fileId="132" filename="$data/foliage/weed/weedChenopodiumBigDeadLOD_diffuse.png"/>
+    <File fileId="134" filename="$data/foliage/weed/weedChenopodiumBigDeadLOD_fmask.png"/>
+    <File fileId="133" filename="$data/foliage/weed/weedChenopodiumBigDeadLOD_normal.png"/>
+    <File fileId="95" filename="$data/foliage/weed/weedChenopodiumDead_alpha.png"/>
+    <File fileId="92" filename="$data/foliage/weed/weedChenopodiumDead_diffuse.png"/>
+    <File fileId="94" filename="$data/foliage/weed/weedChenopodiumDead_fmask.png"/>
+    <File fileId="93" filename="$data/foliage/weed/weedChenopodiumDead_normal.png"/>
+    <File fileId="26" filename="$data/foliage/weed/weedChenopodiumSmallAliveLOD_fmask.png"/>
+    <File fileId="27" filename="$data/foliage/weed/weedChenopodiumSmallAliveLOD_mask.png"/>
+    <File fileId="25" filename="$data/foliage/weed/weedChenopodiumSmallAliveLOD_normal.png"/>
+    <File fileId="99" filename="$data/foliage/weed/weedChenopodiumSmallDeadLOD_alpha.png"/>
+    <File fileId="96" filename="$data/foliage/weed/weedChenopodiumSmallDeadLOD_diffuse.png"/>
+    <File fileId="98" filename="$data/foliage/weed/weedChenopodiumSmallDeadLOD_fmask.png"/>
+    <File fileId="97" filename="$data/foliage/weed/weedChenopodiumSmallDeadLOD_normal.png"/>
+    <File fileId="22" filename="$data/foliage/weed/weedChenopodium_fmask.png"/>
+    <File fileId="23" filename="$data/foliage/weed/weedChenopodium_mask.png"/>
+    <File fileId="21" filename="$data/foliage/weed/weedChenopodium_normal.png"/>
+    <File fileId="66" filename="$data/foliage/weed/weedCirsiumBigAliveLOD_fmask.png"/>
+    <File fileId="67" filename="$data/foliage/weed/weedCirsiumBigAliveLOD_mask.png"/>
+    <File fileId="65" filename="$data/foliage/weed/weedCirsiumBigAliveLOD_normal.png"/>
+    <File fileId="139" filename="$data/foliage/weed/weedCirsiumBigDeadLOD_alpha.png"/>
+    <File fileId="136" filename="$data/foliage/weed/weedCirsiumBigDeadLOD_diffuse.png"/>
+    <File fileId="138" filename="$data/foliage/weed/weedCirsiumBigDeadLOD_fmask.png"/>
+    <File fileId="137" filename="$data/foliage/weed/weedCirsiumBigDeadLOD_normal.png"/>
+    <File fileId="103" filename="$data/foliage/weed/weedCirsiumDead_alpha.png"/>
+    <File fileId="100" filename="$data/foliage/weed/weedCirsiumDead_diffuse.png"/>
+    <File fileId="102" filename="$data/foliage/weed/weedCirsiumDead_fmask.png"/>
+    <File fileId="101" filename="$data/foliage/weed/weedCirsiumDead_normal.png"/>
+    <File fileId="34" filename="$data/foliage/weed/weedCirsiumSmallAliveLOD_fmask.png"/>
+    <File fileId="35" filename="$data/foliage/weed/weedCirsiumSmallAliveLOD_mask.png"/>
+    <File fileId="33" filename="$data/foliage/weed/weedCirsiumSmallAliveLOD_normal.png"/>
+    <File fileId="107" filename="$data/foliage/weed/weedCirsiumSmallDeadLOD_alpha.png"/>
+    <File fileId="104" filename="$data/foliage/weed/weedCirsiumSmallDeadLOD_diffuse.png"/>
+    <File fileId="106" filename="$data/foliage/weed/weedCirsiumSmallDeadLOD_fmask.png"/>
+    <File fileId="105" filename="$data/foliage/weed/weedCirsiumSmallDeadLOD_normal.png"/>
+    <File fileId="30" filename="$data/foliage/weed/weedCirsium_fmask.png"/>
+    <File fileId="31" filename="$data/foliage/weed/weedCirsium_mask.png"/>
+    <File fileId="29" filename="$data/foliage/weed/weedCirsium_normal.png"/>
+    <File fileId="70" filename="$data/foliage/weed/weedPapaverRhoeasBigAliveLOD_fmask.png"/>
+    <File fileId="71" filename="$data/foliage/weed/weedPapaverRhoeasBigAliveLOD_mask.png"/>
+    <File fileId="69" filename="$data/foliage/weed/weedPapaverRhoeasBigAliveLOD_normal.png"/>
+    <File fileId="143" filename="$data/foliage/weed/weedPapaverRhoeasBigDeadLOD_alpha.png"/>
+    <File fileId="140" filename="$data/foliage/weed/weedPapaverRhoeasBigDeadLOD_diffuse.png"/>
+    <File fileId="142" filename="$data/foliage/weed/weedPapaverRhoeasBigDeadLOD_fmask.png"/>
+    <File fileId="141" filename="$data/foliage/weed/weedPapaverRhoeasBigDeadLOD_normal.png"/>
+    <File fileId="111" filename="$data/foliage/weed/weedPapaverRhoeasDead_alpha.png"/>
+    <File fileId="108" filename="$data/foliage/weed/weedPapaverRhoeasDead_diffuse.png"/>
+    <File fileId="110" filename="$data/foliage/weed/weedPapaverRhoeasDead_fmask.png"/>
+    <File fileId="109" filename="$data/foliage/weed/weedPapaverRhoeasDead_normal.png"/>
+    <File fileId="42" filename="$data/foliage/weed/weedPapaverRhoeasSmallAliveLOD_fmask.png"/>
+    <File fileId="43" filename="$data/foliage/weed/weedPapaverRhoeasSmallAliveLOD_mask.png"/>
+    <File fileId="41" filename="$data/foliage/weed/weedPapaverRhoeasSmallAliveLOD_normal.png"/>
+    <File fileId="115" filename="$data/foliage/weed/weedPapaverRhoeasSmallDeadLOD_alpha.png"/>
+    <File fileId="112" filename="$data/foliage/weed/weedPapaverRhoeasSmallDeadLOD_diffuse.png"/>
+    <File fileId="114" filename="$data/foliage/weed/weedPapaverRhoeasSmallDeadLOD_fmask.png"/>
+    <File fileId="113" filename="$data/foliage/weed/weedPapaverRhoeasSmallDeadLOD_normal.png"/>
+    <File fileId="38" filename="$data/foliage/weed/weedPapaverRhoeas_fmask.png"/>
+    <File fileId="39" filename="$data/foliage/weed/weedPapaverRhoeas_mask.png"/>
+    <File fileId="37" filename="$data/foliage/weed/weedPapaverRhoeas_normal.png"/>
+    <File fileId="74" filename="$data/foliage/weed/weedRumexBigAliveLOD_fmask.png"/>
+    <File fileId="75" filename="$data/foliage/weed/weedRumexBigAliveLOD_mask.png"/>
+    <File fileId="73" filename="$data/foliage/weed/weedRumexBigAliveLOD_normal.png"/>
+    <File fileId="147" filename="$data/foliage/weed/weedRumexBigDeadLOD_alpha.png"/>
+    <File fileId="144" filename="$data/foliage/weed/weedRumexBigDeadLOD_diffuse.png"/>
+    <File fileId="146" filename="$data/foliage/weed/weedRumexBigDeadLOD_fmask.png"/>
+    <File fileId="145" filename="$data/foliage/weed/weedRumexBigDeadLOD_normal.png"/>
+    <File fileId="119" filename="$data/foliage/weed/weedRumexDead_alpha.png"/>
+    <File fileId="116" filename="$data/foliage/weed/weedRumexDead_diffuse.png"/>
+    <File fileId="118" filename="$data/foliage/weed/weedRumexDead_fmask.png"/>
+    <File fileId="117" filename="$data/foliage/weed/weedRumexDead_normal.png"/>
+    <File fileId="50" filename="$data/foliage/weed/weedRumexSmallAliveLOD_fmask.png"/>
+    <File fileId="51" filename="$data/foliage/weed/weedRumexSmallAliveLOD_mask.png"/>
+    <File fileId="49" filename="$data/foliage/weed/weedRumexSmallAliveLOD_normal.png"/>
+    <File fileId="123" filename="$data/foliage/weed/weedRumexSmallDeadLOD_alpha.png"/>
+    <File fileId="120" filename="$data/foliage/weed/weedRumexSmallDeadLOD_diffuse.png"/>
+    <File fileId="122" filename="$data/foliage/weed/weedRumexSmallDeadLOD_fmask.png"/>
+    <File fileId="121" filename="$data/foliage/weed/weedRumexSmallDeadLOD_normal.png"/>
+    <File fileId="46" filename="$data/foliage/weed/weedRumex_fmask.png"/>
+    <File fileId="47" filename="$data/foliage/weed/weedRumex_mask.png"/>
+    <File fileId="45" filename="$data/foliage/weed/weedRumex_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="52" filename="weedAperaBigAliveLOD_diffuse.png"/>
+    <File fileId="8" filename="weedAperaSmallAliveLOD_diffuse.png"/>
+    <File fileId="1" filename="weedApera_diffuse.png"/>
+    <File fileId="56" filename="weedChaerophyllumBigAliveLOD_diffuse.png"/>
+    <File fileId="16" filename="weedChaerophyllumSmallAliveLOD_diffuse.png"/>
+    <File fileId="12" filename="weedChaerophyllum_diffuse.png"/>
+    <File fileId="60" filename="weedChenopodiumBigAliveLOD_diffuse.png"/>
+    <File fileId="24" filename="weedChenopodiumSmallAliveLOD_diffuse.png"/>
+    <File fileId="20" filename="weedChenopodium_diffuse.png"/>
+    <File fileId="64" filename="weedCirsiumBigAliveLOD_diffuse.png"/>
+    <File fileId="32" filename="weedCirsiumSmallAliveLOD_diffuse.png"/>
+    <File fileId="28" filename="weedCirsium_diffuse.png"/>
+    <File fileId="68" filename="weedPapaverRhoeasBigAliveLOD_diffuse.png"/>
+    <File fileId="40" filename="weedPapaverRhoeasSmallAliveLOD_diffuse.png"/>
+    <File fileId="36" filename="weedPapaverRhoeas_diffuse.png"/>
+    <File fileId="72" filename="weedRumexBigAliveLOD_diffuse.png"/>
+    <File fileId="48" filename="weedRumexSmallAliveLOD_diffuse.png"/>
+    <File fileId="44" filename="weedRumex_diffuse.png"/>
+    <File fileId="168" filename="../meadowUS/coneFlower01LOD_diffuse.png"/>
+    <File fileId="172" filename="../meadowUS/coneFlower02LOD_diffuse.png"/>
+    <File fileId="164" filename="../meadowUS/grassCutLOD_diffuse.png"/>
+    <File fileId="160" filename="../meadowUS/grassHarvestReadyLOD_diffuse.png"/>
+    <File fileId="156" filename="../meadowUS/grassMiddleLOD_diffuse.png"/>
+    <File fileId="152" filename="../meadowUS/grassSmallLOD_diffuse.png"/>
+    <File fileId="148" filename="../meadowUS/meadowUS_diffuse.png"/>
+    <File fileId="188" filename="../meadowUS/prairieBlazingStar01LOD_diffuse.png"/>
+    <File fileId="192" filename="../meadowUS/prairieBlazingStar02LOD_diffuse.png"/>
+    <File fileId="176" filename="../meadowUS/slenderMountainMint01LOD_diffuse.png"/>
+    <File fileId="180" filename="../meadowUS/wildBergamot01LOD_diffuse.png"/>
+    <File fileId="184" filename="../meadowUS/wildBergamot02LOD_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="coneFlower01LOD_mat" materialId="290" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="168"/>
+      <Normalmap fileId="169"/>
+      <Glossmap fileId="170"/>
+      <Custommap name="mMaskMap" fileId="171"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.05 0.05 0.1"/>
+    </Material>
+    <Material name="coneFlower02LOD_mat" materialId="291" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="172"/>
+      <Normalmap fileId="173"/>
+      <Glossmap fileId="174"/>
+      <Custommap name="mMaskMap" fileId="175"/>
+      <CustomParameter name="seasonalTintIntensity" value="0.05 0.05 0.1"/>
+    </Material>
+    <Material name="grassCutLOD_mat" materialId="299" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="164"/>
+      <Normalmap fileId="165"/>
+      <Glossmap fileId="166"/>
+      <Custommap name="mMaskMap" fileId="167"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassHarvestReadyLOD_mat" materialId="298" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="160"/>
+      <Normalmap fileId="161"/>
+      <Glossmap fileId="162"/>
+      <Custommap name="mMaskMap" fileId="163"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassMiddleLOD_mat" materialId="289" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="156"/>
+      <Normalmap fileId="157"/>
+      <Glossmap fileId="158"/>
+      <Custommap name="mMaskMap" fileId="159"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassSmallLOD_mat" materialId="297" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="152"/>
+      <Normalmap fileId="153"/>
+      <Glossmap fileId="154"/>
+      <Custommap name="mMaskMap" fileId="155"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="288" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="148"/>
+      <Normalmap fileId="149"/>
+      <Glossmap fileId="150"/>
+      <Custommap name="mMaskMap" fileId="151"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="prairieBlazingStar01LOD_mat" materialId="295" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="188"/>
+      <Normalmap fileId="189"/>
+      <Glossmap fileId="190"/>
+      <Custommap name="mMaskMap" fileId="191"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="prairieBlazingStar02LOD_mat" materialId="296" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="192"/>
+      <Normalmap fileId="193"/>
+      <Glossmap fileId="194"/>
+      <Custommap name="mMaskMap" fileId="195"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="slenderMountainMint01LOD_mat" materialId="292" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="176"/>
+      <Normalmap fileId="177"/>
+      <Glossmap fileId="178"/>
+      <Custommap name="mMaskMap" fileId="179"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedApera_mat" materialId="252" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedAperaBigAliveLOD_mat" materialId="264" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="52"/>
+      <Normalmap fileId="53"/>
+      <Glossmap fileId="54"/>
+      <Custommap name="mMaskMap" fileId="55"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedAperaBigDeadLOD_mat" materialId="282" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="124"/>
+      <Normalmap fileId="125"/>
+      <Glossmap fileId="126"/>
+      <Custommap name="alphaMap" fileId="127"/>
+    </Material>
+    <Material name="weedAperaDead_mat" materialId="270" customShaderId="4">
+      <Texture fileId="76"/>
+      <Normalmap fileId="77"/>
+      <Glossmap fileId="78"/>
+      <Custommap name="alphaMap" fileId="79"/>
+    </Material>
+    <Material name="weedAperaSmallAliveLOD_mat" materialId="253" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="mMaskMap" fileId="11"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedAperaSmallDeadLOD_mat" materialId="271" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="80"/>
+      <Normalmap fileId="81"/>
+      <Glossmap fileId="82"/>
+      <Custommap name="alphaMap" fileId="83"/>
+    </Material>
+    <Material name="weedChaerophyllum_mat" materialId="254" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <Custommap name="mMaskMap" fileId="15"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedChaerophyllumBigAliveLOD_mat" materialId="265" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="56"/>
+      <Normalmap fileId="57"/>
+      <Glossmap fileId="58"/>
+      <Custommap name="mMaskMap" fileId="59"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedChaerophyllumBigDeadLOD_mat" materialId="283" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="128"/>
+      <Normalmap fileId="129"/>
+      <Glossmap fileId="130"/>
+      <Custommap name="alphaMap" fileId="131"/>
+    </Material>
+    <Material name="weedChaerophyllumDead_mat" materialId="272" customShaderId="4">
+      <Texture fileId="84"/>
+      <Normalmap fileId="85"/>
+      <Glossmap fileId="86"/>
+      <Custommap name="alphaMap" fileId="87"/>
+    </Material>
+    <Material name="weedChaerophyllumSmallAliveLOD_mat" materialId="255" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="mMaskMap" fileId="19"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedChaerophyllumSmallDeadLOD_mat" materialId="273" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="88"/>
+      <Normalmap fileId="89"/>
+      <Glossmap fileId="90"/>
+      <Custommap name="alphaMap" fileId="91"/>
+    </Material>
+    <Material name="weedChenopodium_mat" materialId="256" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="mMaskMap" fileId="23"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedChenopodiumBigAliveLOD_mat" materialId="266" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
+      <Custommap name="mMaskMap" fileId="63"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedChenopodiumBigDeadLOD_mat" materialId="284" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="132"/>
+      <Normalmap fileId="133"/>
+      <Glossmap fileId="134"/>
+      <Custommap name="alphaMap" fileId="135"/>
+    </Material>
+    <Material name="weedChenopodiumDead_mat" materialId="274" customShaderId="4">
+      <Texture fileId="92"/>
+      <Normalmap fileId="93"/>
+      <Glossmap fileId="94"/>
+      <Custommap name="alphaMap" fileId="95"/>
+    </Material>
+    <Material name="weedChenopodiumSmallAliveLOD_mat" materialId="257" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+      <Custommap name="mMaskMap" fileId="27"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedChenopodiumSmallDeadLOD_mat" materialId="275" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="96"/>
+      <Normalmap fileId="97"/>
+      <Glossmap fileId="98"/>
+      <Custommap name="alphaMap" fileId="99"/>
+    </Material>
+    <Material name="weedCirsium_mat" materialId="258" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+      <Custommap name="mMaskMap" fileId="31"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedCirsiumBigAliveLOD_mat" materialId="267" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="64"/>
+      <Normalmap fileId="65"/>
+      <Glossmap fileId="66"/>
+      <Custommap name="mMaskMap" fileId="67"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedCirsiumBigDeadLOD_mat" materialId="285" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="136"/>
+      <Normalmap fileId="137"/>
+      <Glossmap fileId="138"/>
+      <Custommap name="alphaMap" fileId="139"/>
+    </Material>
+    <Material name="weedCirsiumDead_mat" materialId="276" customShaderId="4">
+      <Texture fileId="100"/>
+      <Normalmap fileId="101"/>
+      <Glossmap fileId="102"/>
+      <Custommap name="alphaMap" fileId="103"/>
+    </Material>
+    <Material name="weedCirsiumSmallAliveLOD_mat" materialId="259" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="mMaskMap" fileId="35"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedCirsiumSmallDeadLOD_mat" materialId="277" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="104"/>
+      <Normalmap fileId="105"/>
+      <Glossmap fileId="106"/>
+      <Custommap name="alphaMap" fileId="107"/>
+    </Material>
+    <Material name="weedPapaverRhoeas_mat" materialId="260" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+      <Custommap name="mMaskMap" fileId="39"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedPapaverRhoeasBigAliveLOD_mat" materialId="268" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="68"/>
+      <Normalmap fileId="69"/>
+      <Glossmap fileId="70"/>
+      <Custommap name="mMaskMap" fileId="71"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedPapaverRhoeasBigDeadLOD_mat" materialId="286" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="140"/>
+      <Normalmap fileId="141"/>
+      <Glossmap fileId="142"/>
+      <Custommap name="alphaMap" fileId="143"/>
+    </Material>
+    <Material name="weedPapaverRhoeasDead_mat" materialId="278" customShaderId="4">
+      <Texture fileId="108"/>
+      <Normalmap fileId="109"/>
+      <Glossmap fileId="110"/>
+      <Custommap name="alphaMap" fileId="111"/>
+    </Material>
+    <Material name="weedPapaverRhoeasSmallAliveLOD_mat" materialId="261" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="40"/>
+      <Normalmap fileId="41"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="mMaskMap" fileId="43"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedPapaverRhoeasSmallDeadLOD_mat" materialId="279" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="112"/>
+      <Normalmap fileId="113"/>
+      <Glossmap fileId="114"/>
+      <Custommap name="alphaMap" fileId="115"/>
+    </Material>
+    <Material name="weedRumex_mat" materialId="262" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45"/>
+      <Glossmap fileId="46"/>
+      <Custommap name="mMaskMap" fileId="47"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedRumexBigAliveLOD_mat" materialId="269" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="72"/>
+      <Normalmap fileId="73"/>
+      <Glossmap fileId="74"/>
+      <Custommap name="mMaskMap" fileId="75"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedRumexBigDeadLOD_mat" materialId="287" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="144"/>
+      <Normalmap fileId="145"/>
+      <Glossmap fileId="146"/>
+      <Custommap name="alphaMap" fileId="147"/>
+    </Material>
+    <Material name="weedRumexDead_mat" materialId="280" customShaderId="4">
+      <Texture fileId="116"/>
+      <Normalmap fileId="117"/>
+      <Glossmap fileId="118"/>
+      <Custommap name="alphaMap" fileId="119"/>
+    </Material>
+    <Material name="weedRumexSmallAliveLOD_mat" materialId="263" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="48"/>
+      <Normalmap fileId="49"/>
+      <Glossmap fileId="50"/>
+      <Custommap name="mMaskMap" fileId="51"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="weedRumexSmallDeadLOD_mat" materialId="281" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="120"/>
+      <Normalmap fileId="121"/>
+      <Glossmap fileId="122"/>
+      <Custommap name="alphaMap" fileId="123"/>
+    </Material>
+    <Material name="wildBergamot01LOD_mat" materialId="293" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="180"/>
+      <Normalmap fileId="181"/>
+      <Glossmap fileId="182"/>
+      <Custommap name="mMaskMap" fileId="183"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="wildBergamot02LOD_mat" materialId="294" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="184"/>
+      <Normalmap fileId="185"/>
+      <Glossmap fileId="186"/>
+      <Custommap name="mMaskMap" fileId="187"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="decoFoliageUS.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="smallAlive" nodeId="377">
+      <TransformGroup name="apera" nodeId="378">
+        <Shape name="apera_LOD0" shapeId="1" clipDistance="500" nodeId="379" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="252"/>
+        <Shape name="apera_LOD1" shapeId="2" clipDistance="500" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="253"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="381">
+        <Shape name="chaerophyllum_LOD0" shapeId="3" clipDistance="500" nodeId="382" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="254"/>
+        <Shape name="chaerophyllum_LOD1" shapeId="4" clipDistance="500" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="255"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="384">
+        <Shape name="chenopodium_LOD0" shapeId="5" clipDistance="500" nodeId="385" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="256"/>
+        <Shape name="chenopodium_LOD1" shapeId="6" clipDistance="500" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="257"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="387">
+        <Shape name="cirsium_LOD0" shapeId="7" clipDistance="500" nodeId="388" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="258"/>
+        <Shape name="cirsium_LOD1" shapeId="8" clipDistance="500" nodeId="389" castsShadows="true" receiveShadows="true" materialIds="259"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="390">
+        <Shape name="papaverRhoeas_LOD0" shapeId="9" clipDistance="500" nodeId="391" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="260"/>
+        <Shape name="papaverRhoeas_LOD1" shapeId="10" clipDistance="500" nodeId="392" castsShadows="true" receiveShadows="true" materialIds="261"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="393">
+        <Shape name="rumex_LOD0" shapeId="11" clipDistance="500" nodeId="394" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="262"/>
+        <Shape name="rumex_LOD1" shapeId="12" clipDistance="500" nodeId="395" castsShadows="true" receiveShadows="true" materialIds="263"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="bigAlive" nodeId="396">
+      <TransformGroup name="apera" nodeId="397">
+        <Shape name="apera_LOD0" shapeId="13" clipDistance="500" nodeId="398" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="252"/>
+        <Shape name="apera_LOD1" shapeId="14" clipDistance="500" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="264"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="400">
+        <Shape name="chaerophyllum_LOD0" shapeId="15" clipDistance="500" nodeId="401" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="254"/>
+        <Shape name="chaerophyllum_LOD1" shapeId="16" clipDistance="500" nodeId="402" castsShadows="true" receiveShadows="true" materialIds="265"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="403">
+        <Shape name="chenopodium_LOD0" shapeId="17" clipDistance="500" nodeId="404" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="256"/>
+        <Shape name="chenopodium_LOD1" shapeId="18" clipDistance="500" nodeId="405" castsShadows="true" receiveShadows="true" materialIds="266"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="406">
+        <Shape name="cirsium_LOD0" shapeId="19" clipDistance="500" nodeId="407" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="258"/>
+        <Shape name="cirsium_LOD1" shapeId="20" clipDistance="500" nodeId="408" castsShadows="true" receiveShadows="true" materialIds="267"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="409">
+        <Shape name="papaverRhoeas_LOD0" shapeId="21" clipDistance="500" nodeId="410" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="260"/>
+        <Shape name="papaverRhoeas_LOD1" shapeId="22" clipDistance="500" nodeId="411" castsShadows="true" receiveShadows="true" materialIds="268"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="412">
+        <Shape name="rumex_LOD0" shapeId="23" clipDistance="500" nodeId="413" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="262"/>
+        <Shape name="rumex_LOD1" shapeId="24" clipDistance="500" nodeId="414" castsShadows="true" receiveShadows="true" materialIds="269"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="smallDead" nodeId="415">
+      <TransformGroup name="apera" nodeId="416">
+        <Shape name="apera_LOD0" shapeId="25" clipDistance="500" nodeId="417" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="270"/>
+        <Shape name="apera_LOD1" shapeId="26" clipDistance="500" nodeId="418" castsShadows="true" receiveShadows="true" materialIds="271"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="419">
+        <Shape name="chaerophyllum_LOD0" shapeId="27" clipDistance="500" nodeId="420" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="272"/>
+        <Shape name="chaerophyllum_LOD1" shapeId="28" clipDistance="500" nodeId="421" castsShadows="true" receiveShadows="true" materialIds="273"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="422">
+        <Shape name="chenopodium_LOD0" shapeId="29" clipDistance="500" nodeId="423" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="274"/>
+        <Shape name="chenopodium_LOD1" shapeId="30" clipDistance="500" nodeId="424" castsShadows="true" receiveShadows="true" materialIds="275"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="425">
+        <Shape name="cirsium_LOD0" shapeId="31" clipDistance="500" nodeId="426" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="276"/>
+        <Shape name="cirsium_LOD1" shapeId="32" clipDistance="500" nodeId="427" castsShadows="true" receiveShadows="true" materialIds="277"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="428">
+        <Shape name="papaverRhoeas_LOD0" shapeId="33" clipDistance="500" nodeId="429" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="278"/>
+        <Shape name="papaverRhoeas_LOD1" shapeId="34" clipDistance="500" nodeId="430" castsShadows="true" receiveShadows="true" materialIds="279"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="431">
+        <Shape name="rumex_LOD0" shapeId="35" clipDistance="500" nodeId="432" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="280"/>
+        <Shape name="rumex_LOD1" shapeId="36" clipDistance="500" nodeId="433" castsShadows="true" receiveShadows="true" materialIds="281"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="bigDead" nodeId="434">
+      <TransformGroup name="apera" nodeId="435">
+        <Shape name="apera_LOD0" shapeId="37" clipDistance="500" nodeId="436" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="270"/>
+        <Shape name="apera_LOD1" shapeId="38" clipDistance="500" nodeId="437" castsShadows="true" receiveShadows="true" materialIds="282"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="438">
+        <Shape name="chaerophyllum_LOD0" shapeId="39" clipDistance="500" nodeId="439" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="272"/>
+        <Shape name="chaerophyllum_LOD1" shapeId="40" clipDistance="500" nodeId="440" castsShadows="true" receiveShadows="true" materialIds="283"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="441">
+        <Shape name="chenopodium_LOD0" shapeId="41" clipDistance="500" nodeId="442" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="274"/>
+        <Shape name="chenopodium_LOD1" shapeId="42" clipDistance="500" nodeId="443" castsShadows="true" receiveShadows="true" materialIds="284"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="444">
+        <Shape name="cirsium_LOD0" shapeId="43" clipDistance="500" nodeId="445" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="276"/>
+        <Shape name="cirsium_LOD1" shapeId="44" clipDistance="500" nodeId="446" castsShadows="true" receiveShadows="true" materialIds="285"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="447">
+        <Shape name="papaverRhoeas_LOD0" shapeId="45" clipDistance="500" nodeId="448" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="278"/>
+        <Shape name="papaverRhoeas_LOD1" shapeId="46" clipDistance="500" nodeId="449" castsShadows="true" receiveShadows="true" materialIds="286"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="450">
+        <Shape name="rumex_LOD0" shapeId="47" clipDistance="500" nodeId="451" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="280"/>
+        <Shape name="rumex_LOD1" shapeId="48" clipDistance="500" nodeId="452" castsShadows="true" receiveShadows="true" materialIds="287"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="grassPure" static="true" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="453">
+      <TransformGroup name="LOD0" nodeId="454">
+        <Shape name="grassSmall" shapeId="49" nodeId="455" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="grassMiddle" shapeId="50" nodeId="456" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="harvestReady" shapeId="51" nodeId="457" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="cut" shapeId="52" nodeId="458" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="459">
+        <Shape name="grassSmall" shapeId="53" nodeId="460" castsShadows="true" receiveShadows="true" materialIds="297"/>
+        <Shape name="grassMiddle" shapeId="54" nodeId="461" castsShadows="true" receiveShadows="true" materialIds="289"/>
+        <Shape name="harvestReady" shapeId="55" nodeId="462" castsShadows="true" receiveShadows="true" materialIds="298"/>
+        <Shape name="cut" shapeId="56" nodeId="463" castsShadows="true" receiveShadows="true" materialIds="299"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="coneFlower" nodeId="464">
+      <TransformGroup name="LOD0" nodeId="465">
+        <Shape name="harvestReady_1" shapeId="57" clipDistance="500" nodeId="466" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="harvestReady_2" shapeId="58" clipDistance="500" nodeId="467" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="468">
+        <Shape name="harvestReady_1" shapeId="59" clipDistance="500" nodeId="469" castsShadows="true" receiveShadows="true" materialIds="289,290"/>
+        <Shape name="harvestReady_2" shapeId="60" clipDistance="500" nodeId="470" castsShadows="true" receiveShadows="true" materialIds="291,289"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="slenderMountainMint" nodeId="471">
+      <TransformGroup name="LOD0" nodeId="472">
+        <Shape name="slenderMountainMintSmall_1" shapeId="61" clipDistance="500" nodeId="473" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="slenderMountainMintMiddle_1" shapeId="62" clipDistance="500" nodeId="474" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="slenderMountainMintHarvestReady_1" shapeId="63" clipDistance="500" nodeId="475" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="476">
+        <Shape name="slenderMountainMintSmall_1" shapeId="64" clipDistance="500" nodeId="477" castsShadows="true" receiveShadows="true" materialIds="292,289"/>
+        <Shape name="slenderMountainMintMiddle_1" shapeId="65" clipDistance="500" nodeId="478" castsShadows="true" receiveShadows="true" materialIds="292,289"/>
+        <Shape name="slenderMountainMintHarvestReady_1" shapeId="66" clipDistance="500" nodeId="479" castsShadows="true" receiveShadows="true" materialIds="292,289"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="wildBergamot" nodeId="480">
+      <TransformGroup name="LOD0" nodeId="481">
+        <Shape name="wildBergamotSmall_1" shapeId="67" clipDistance="500" nodeId="482" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="wildBergamotMiddle_1" shapeId="68" clipDistance="500" nodeId="483" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="wildBergamotHarvestReady_1" shapeId="69" clipDistance="500" nodeId="484" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="485">
+        <Shape name="wildBergamotSmall_1" shapeId="70" clipDistance="500" nodeId="486" castsShadows="true" receiveShadows="true" materialIds="293,289"/>
+        <Shape name="wildBergamotMiddle_1" shapeId="71" clipDistance="500" nodeId="487" castsShadows="true" receiveShadows="true" materialIds="294,289"/>
+        <Shape name="wildBergamotHarvestReady_1" shapeId="72" clipDistance="500" nodeId="488" castsShadows="true" receiveShadows="true" materialIds="294,289"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="prairieBlazingStar" nodeId="489">
+      <TransformGroup name="LOD0" nodeId="490">
+        <Shape name="harvestReady_1" shapeId="73" clipDistance="500" nodeId="491" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+        <Shape name="harvestReady_2" shapeId="74" clipDistance="500" nodeId="492" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="288"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="493">
+        <Shape name="harvestReady_1" shapeId="75" clipDistance="500" nodeId="494" castsShadows="true" receiveShadows="true" materialIds="295,289"/>
+        <Shape name="harvestReady_2" shapeId="76" clipDistance="500" nodeId="495" castsShadows="true" receiveShadows="true" materialIds="296,289"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

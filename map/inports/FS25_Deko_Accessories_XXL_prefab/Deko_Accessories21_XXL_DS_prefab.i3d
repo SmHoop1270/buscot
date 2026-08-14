@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories21_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="127" filename="$data/maps/mapAS/textures/props/baskets/basket01.i3d"/>
+    <File fileId="135" filename="$data/maps/mapAS/textures/props/concreteSlab01.i3d"/>
+    <File fileId="132" filename="$data/maps/mapAS/textures/props/concreteSlab02.i3d"/>
+    <File fileId="131" filename="$data/maps/mapAS/textures/props/concreteSlab03.i3d"/>
+    <File fileId="65" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotBig01.i3d"/>
+    <File fileId="66" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotBig02.i3d"/>
+    <File fileId="69" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotBig03.i3d"/>
+    <File fileId="67" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotMedium01.i3d"/>
+    <File fileId="70" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotMedium02.i3d"/>
+    <File fileId="48" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotMedium03.i3d"/>
+    <File fileId="71" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotSmall01.i3d"/>
+    <File fileId="63" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotSmall02.i3d"/>
+    <File fileId="64" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotSmall03.i3d"/>
+    <File fileId="124" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsBig_diffuse.png"/>
+    <File fileId="125" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsBig_normal.png"/>
+    <File fileId="126" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsBig_specular.png"/>
+    <File fileId="128" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsLarge_diffuse.png"/>
+    <File fileId="129" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsLarge_normal.png"/>
+    <File fileId="130" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsLarge_specular.png"/>
+    <File fileId="115" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsMedium_diffuse.png"/>
+    <File fileId="116" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsMedium_normal.png"/>
+    <File fileId="117" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsMedium_specular.png"/>
+    <File fileId="121" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsSmall_diffuse.png"/>
+    <File fileId="122" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsSmall_normal.png"/>
+    <File fileId="123" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsSmall_specular.png"/>
+    <File fileId="95" filename="$data/maps/mapAS/textures/props/kimchiPots/kimchiPots_diffuse.png"/>
+    <File fileId="96" filename="$data/maps/mapAS/textures/props/kimchiPots/kimchiPots_normal.png"/>
+    <File fileId="97" filename="$data/maps/mapAS/textures/props/kimchiPots/kimchiPots_specular.png"/>
+    <File fileId="94" filename="$data/maps/mapAS/textures/props/metalTools/metalTools02.i3d"/>
+    <File fileId="62" filename="$data/maps/mapAS/textures/props/stoneStatues01.i3d"/>
+    <File fileId="68" filename="$data/maps/mapAS/textures/props/stoneStatues02.i3d"/>
+    <File fileId="110" filename="$data/maps/mapAS/textures/props/stoneStatues03.i3d"/>
+    <File fileId="133" filename="$data/maps/mapAS/textures/props/stoneStatues05.i3d"/>
+    <File fileId="134" filename="$data/maps/mapAS/textures/props/stoneStatues06.i3d"/>
+    <File fileId="9" filename="$data/maps/mapAS/textures/props/wheelOld/wheelOld01.i3d"/>
+    <File fileId="87" filename="$data/maps/mapAS/textures/props/woodMetalTools/woodMetalTools02.i3d"/>
+    <File fileId="114" filename="$data/maps/mapEU/textures/buildings/crossroadsShrine/crossroadsShrine.i3d"/>
+    <File fileId="29" filename="$data/maps/mapEU/textures/props/firewood_diffuse.png"/>
+    <File fileId="30" filename="$data/maps/mapEU/textures/props/firewood_normal.png"/>
+    <File fileId="31" filename="$data/maps/mapEU/textures/props/firewood_specular.png"/>
+    <File fileId="79" filename="$data/maps/mapEU/textures/props/flowerGeraniumLOD_diffuse.png"/>
+    <File fileId="73" filename="$data/maps/mapEU/textures/props/flowerGeraniumPot_diffuse.png"/>
+    <File fileId="74" filename="$data/maps/mapEU/textures/props/flowerGeraniumPot_normal.png"/>
+    <File fileId="75" filename="$data/maps/mapEU/textures/props/flowerGeraniumPot_specular.png"/>
+    <File fileId="76" filename="$data/maps/mapEU/textures/props/flowerGeranium_diffuse.png"/>
+    <File fileId="77" filename="$data/maps/mapEU/textures/props/flowerGeranium_normal.png"/>
+    <File fileId="78" filename="$data/maps/mapEU/textures/props/flowerGeranium_specular.png"/>
+    <File fileId="19" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowersLOD_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowers_diffuse.png"/>
+    <File fileId="17" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowers_normal.png"/>
+    <File fileId="18" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowers_specular.png"/>
+    <File fileId="44" filename="$data/maps/mapEU/textures/props/flowerPotsLarge_diffuse.png"/>
+    <File fileId="45" filename="$data/maps/mapEU/textures/props/flowerPotsLarge_normal.png"/>
+    <File fileId="46" filename="$data/maps/mapEU/textures/props/flowerPotsLarge_specular.png"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/gardenTools_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/gardenTools_normal.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/gardenTools_specular.png"/>
+    <File fileId="11" filename="$data/maps/mapEU/textures/props/gardenWell02.i3d"/>
+    <File fileId="49" filename="$data/maps/mapEU/textures/props/gardenWindmill.i3d"/>
+    <File fileId="35" filename="$data/maps/mapEU/textures/props/gardenWindmill_diffuse.png"/>
+    <File fileId="36" filename="$data/maps/mapEU/textures/props/gardenWindmill_normal.png"/>
+    <File fileId="37" filename="$data/maps/mapEU/textures/props/gardenWindmill_specular.png"/>
+    <File fileId="91" filename="$data/maps/mapEU/textures/props/stepStool_diffuse.png"/>
+    <File fileId="92" filename="$data/maps/mapEU/textures/props/stepStool_normal.png"/>
+    <File fileId="93" filename="$data/maps/mapEU/textures/props/stepStool_specular.png"/>
+    <File fileId="84" filename="$data/maps/mapEU/textures/props/stools_diffuse.png"/>
+    <File fileId="85" filename="$data/maps/mapEU/textures/props/stools_normal.png"/>
+    <File fileId="86" filename="$data/maps/mapEU/textures/props/stools_specular.png"/>
+    <File fileId="88" filename="$data/maps/mapEU/textures/props/wheelBarrow02_diffuse.png"/>
+    <File fileId="89" filename="$data/maps/mapEU/textures/props/wheelBarrow02_normal.png"/>
+    <File fileId="90" filename="$data/maps/mapEU/textures/props/wheelBarrow02_specular.png"/>
+    <File fileId="10" filename="$data/maps/mapUS/textures/props/flowerPot03.i3d"/>
+    <File fileId="32" filename="$data/maps/mapUS/textures/props/flowerPot04_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/mapUS/textures/props/flowerPot04_normal.png"/>
+    <File fileId="34" filename="$data/maps/mapUS/textures/props/flowerPot04_specular.png"/>
+    <File fileId="43" filename="$data/maps/mapUS/textures/props/flowerPot05.i3d"/>
+    <File fileId="42" filename="$data/maps/mapUS/textures/props/flowerPot06.i3d"/>
+    <File fileId="83" filename="$data/maps/mapUS/textures/props/flowerStand.i3d"/>
+    <File fileId="72" filename="$data/maps/mapUS/textures/props/flowerpot01.i3d"/>
+    <File fileId="111" filename="$data/maps/mapUS/textures/props/footballSet_diffuse.png"/>
+    <File fileId="112" filename="$data/maps/mapUS/textures/props/footballSet_normal.png"/>
+    <File fileId="113" filename="$data/maps/mapUS/textures/props/footballSet_specular.png"/>
+    <File fileId="22" filename="$data/maps/mapUS/textures/props/gardenBedRing01.i3d"/>
+    <File fileId="39" filename="$data/maps/mapUS/textures/props/gardenFigureEagles_diffuse.png"/>
+    <File fileId="40" filename="$data/maps/mapUS/textures/props/gardenFigureEagles_normal.png"/>
+    <File fileId="41" filename="$data/maps/mapUS/textures/props/gardenFigureEagles_specular.png"/>
+    <File fileId="38" filename="$data/maps/mapUS/textures/props/gardenFountainStand.i3d"/>
+    <File fileId="107" filename="$data/maps/mapUS/textures/props/playgroundSet_diffuse.png"/>
+    <File fileId="108" filename="$data/maps/mapUS/textures/props/playgroundSet_normal.png"/>
+    <File fileId="109" filename="$data/maps/mapUS/textures/props/playgroundSet_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/props/residentialLightSet_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/props/residentialLightSet_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/props/residentialLightSet_specular.png"/>
+    <File fileId="80" filename="$data/maps/mapUS/textures/props/waterPumpOld_diffuse.png"/>
+    <File fileId="81" filename="$data/maps/mapUS/textures/props/waterPumpOld_normal.png"/>
+    <File fileId="82" filename="$data/maps/mapUS/textures/props/waterPumpOld_specular.png"/>
+    <File fileId="118" filename="$data/maps/textures/shared/dirtGeneric_diffuse.png"/>
+    <File fileId="119" filename="$data/maps/textures/shared/dirtGeneric_normal.png"/>
+    <File fileId="120" filename="$data/maps/textures/shared/dirtGeneric_specular.png"/>
+    <File fileId="21" filename="$data/shaders/billboardShader.xml"/>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="26" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+    <File fileId="5" filename="$data/shared/window02_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/window02_specular.png"/>
+    <File fileId="23" filename="textures/concreteDeco_diffuse.png"/>
+    <File fileId="24" filename="textures/concreteDeco_normal.png"/>
+    <File fileId="25" filename="textures/concreteDeco_specular.png"/>
+    <File fileId="56" filename="textures/decorativeTreesAlpha_diffuse.png"/>
+    <File fileId="57" filename="textures/decorativeTreesAlpha_normal.png"/>
+    <File fileId="58" filename="textures/decorativeTreesAlpha_specular.png"/>
+    <File fileId="53" filename="textures/decorativeTrees_diffuse.png"/>
+    <File fileId="54" filename="textures/decorativeTrees_normal.png"/>
+    <File fileId="55" filename="textures/decorativeTrees_specular.png"/>
+    <File fileId="59" filename="textures/pottedPlantAlpha_diffuse.png"/>
+    <File fileId="60" filename="textures/pottedPlantAlpha_normal.png"/>
+    <File fileId="61" filename="textures/pottedPlantAlpha_specular.png"/>
+    <File fileId="50" filename="textures/pottedPlant_diffuse.png"/>
+    <File fileId="51" filename="textures/pottedPlant_normal.png"/>
+    <File fileId="52" filename="textures/pottedPlant_specular.png"/>
+    <File fileId="104" filename="textures/streetFlowerPot01_diffuse.png"/>
+    <File fileId="105" filename="textures/streetFlowerPot01_normal.png"/>
+    <File fileId="106" filename="textures/streetFlowerPot01_specular.png"/>
+    <File fileId="101" filename="textures/townPlantsAlpha_diffuse.png"/>
+    <File fileId="102" filename="textures/townPlantsAlpha_normal.png"/>
+    <File fileId="103" filename="textures/townPlantsAlpha_specular.png"/>
+    <File fileId="98" filename="textures/townPlants_diffuse.png"/>
+    <File fileId="99" filename="textures/townPlants_normal.png"/>
+    <File fileId="100" filename="textures/townPlants_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="concreteDeco_mat" materialId="5097" customShaderId="26">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="decorativeTrees_mat" materialId="5098" customShaderId="26">
+      <Texture fileId="53"/>
+      <Normalmap fileId="54"/>
+      <Glossmap fileId="55"/>
+    </Material>
+    <Material name="decorativeTreesAlpha_mat" materialId="5099" customShaderId="26">
+      <Texture fileId="56"/>
+      <Normalmap fileId="57"/>
+      <Glossmap fileId="58"/>
+    </Material>
+    <Material name="dirtGeneric_mat" materialId="5611" customShaderId="26">
+      <Texture fileId="118"/>
+      <Normalmap fileId="119"/>
+      <Glossmap fileId="120"/>
+    </Material>
+    <Material name="firewood_mat" materialId="5100">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="flowerGeranium_mat" materialId="5101">
+      <Texture fileId="76"/>
+      <Normalmap fileId="77"/>
+      <Glossmap fileId="78"/>
+    </Material>
+    <Material name="flowerGeraniumLOD_mat" materialId="5102" customShaderId="21">
+      <Texture fileId="79"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="flowerGeraniumPot_mat" materialId="5103">
+      <Texture fileId="73"/>
+      <Normalmap fileId="74"/>
+      <Glossmap fileId="75"/>
+    </Material>
+    <Material name="flowerPot04_mat" materialId="5104" customShaderId="26">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="flowerPotsBig_mat" materialId="5832" customShaderId="26">
+      <Texture fileId="124"/>
+      <Normalmap fileId="125"/>
+      <Glossmap fileId="126"/>
+    </Material>
+    <Material name="flowerPotsLarge_mat" materialId="13175" customShaderId="26">
+      <Texture fileId="128"/>
+      <Normalmap fileId="129"/>
+      <Glossmap fileId="130"/>
+    </Material>
+    <Material name="flowerPotsLarge_mat" materialId="5105" customShaderId="26">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45"/>
+      <Glossmap fileId="46"/>
+    </Material>
+    <Material name="flowerPotsLargeFlowers_mat" materialId="5106">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="flowerPotsLargeFlowersLOD_mat" materialId="5107" specularColor="0.494118 1 0.494118" customShaderId="21">
+      <Texture fileId="19"/>
+    </Material>
+    <Material name="flowerPotsLargeFlowersLOD_mat" materialId="5108" specularColor="0.501961 1 0.501961" customShaderId="21">
+      <Texture fileId="19"/>
+    </Material>
+    <Material name="flowerPotsMedium_mat" materialId="5638" customShaderId="26">
+      <Texture fileId="115"/>
+      <Normalmap fileId="116"/>
+      <Glossmap fileId="117"/>
+    </Material>
+    <Material name="flowerPotsSmall_mat" materialId="5610" customShaderId="26">
+      <Texture fileId="121"/>
+      <Normalmap fileId="122"/>
+      <Glossmap fileId="123"/>
+    </Material>
+    <Material name="footballSet_mat" materialId="5109" customShaderId="26">
+      <Texture fileId="111"/>
+      <Normalmap fileId="112"/>
+      <Glossmap fileId="113"/>
+    </Material>
+    <Material name="gardenFigureEagles_mat" materialId="4594" customShaderId="26">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+    </Material>
+    <Material name="gardenTools_mat" materialId="4595">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="gardenWindmill_mat" materialId="5110" customShaderId="26">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="kimchiPots_mat" materialId="13628" customShaderId="26">
+      <Texture fileId="95"/>
+      <Normalmap fileId="96"/>
+      <Glossmap fileId="97"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="playgroundSet_mat" materialId="1380" customShaderId="26">
+      <Texture fileId="107"/>
+      <Normalmap fileId="108"/>
+      <Glossmap fileId="109"/>
+    </Material>
+    <Material name="pottedPlant_mat" materialId="5111">
+      <Texture fileId="50"/>
+      <Normalmap fileId="51"/>
+      <Glossmap fileId="52"/>
+    </Material>
+    <Material name="pottedPlantAlpha_mat" materialId="5112">
+      <Texture fileId="59"/>
+      <Normalmap fileId="60"/>
+      <Glossmap fileId="61"/>
+    </Material>
+    <Material name="residentialLightSet_mat" materialId="1381" customShaderId="4" customShaderVariation="additive_colorScale">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="lightControl" value="1.5"/>
+      <CustomParameter name="colorScale" value="1 1 0.5"/>
+    </Material>
+    <Material name="stepStool_mat" materialId="5113">
+      <Texture fileId="91"/>
+      <Normalmap fileId="92"/>
+      <Glossmap fileId="93"/>
+    </Material>
+    <Material name="stools_mat" materialId="5114">
+      <Texture fileId="84"/>
+      <Normalmap fileId="85"/>
+      <Glossmap fileId="86"/>
+    </Material>
+    <Material name="streetFlowerPot01_mat" materialId="5115" customShaderId="26">
+      <Texture fileId="104"/>
+      <Normalmap fileId="105"/>
+      <Glossmap fileId="106"/>
+    </Material>
+    <Material name="townPlants_mat" materialId="5116">
+      <Texture fileId="98"/>
+      <Normalmap fileId="99" bumpDepth="0"/>
+      <Glossmap fileId="100"/>
+    </Material>
+    <Material name="townPlantsAlpha_mat" materialId="5117">
+      <Texture fileId="101"/>
+      <Normalmap fileId="102" bumpDepth="0"/>
+      <Glossmap fileId="103"/>
+    </Material>
+    <Material name="waterPumpOld_mat" materialId="5118" customShaderId="26">
+      <Texture fileId="80"/>
+      <Normalmap fileId="81"/>
+      <Glossmap fileId="82"/>
+    </Material>
+    <Material name="wheelBarrow02_mat" materialId="5119" customShaderId="26">
+      <Texture fileId="88"/>
+      <Normalmap fileId="89"/>
+      <Glossmap fileId="90"/>
+    </Material>
+    <Material name="window02_mat" materialId="1384" alphaBlending="true" customShaderId="4" customShaderVariation="additive_colorScale">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="lightControl" value="0.5"/>
+      <CustomParameter name="colorScale" value="1 1 0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories21_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Flower accessories" translation="-126.308 -34.5547 -146.436" nodeId="5272">
+      <TransformGroup name="flowerStand_PREFAB" lockedgroup="true" translation="1.55923 0 -8.27811" rotation="1.40373e-06 -1.72607 6.85383e-06" nodeId="5422">
+        <TransformGroup name="residentialLight07_SCALED" lockedgroup="true" translation="-0.851152 1.75 0.347412" rotation="-5.5274e-05 -90 6.15573e-05" scale="1 1 0.75" nodeId="5473">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="5474">
+            <Shape name="LOD0" shapeId="1" nodeId="5475" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true">
+              <Shape name="glass" shapeId="2" nodeId="5476" castsShadows="true" receiveShadows="true" materialIds="1384" weatherRequiredMask="0x40" renderInvisible="true"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="3" nodeId="5477" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="light" translation="0.104034 0.207973 0" nodeId="5478" weatherRequiredMask="0x40">
+            <Light name="pointLight01" translation="0 -0.131157 0" rotation="0 0 0.00028" nodeId="5479" type="point" color="0.169 0.114793 0.0212311" emitDiffuse="true" emitSpecular="true" range="5"/>
+            <Light name="spotLight01" translation="0 -0.077089 0" rotation="-90 0 0" nodeId="5480" type="spot" color="0.8 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="4" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="7" coneAngle="110" dropOff="2"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5481" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="wheels01_PREFAB" lockedgroup="true" translation="-5.88081 0 -2.70615" rotation="180 -1.36604e-05 180" scale="1.5 1.5 1.5" nodeId="5273">
+        <ReferenceNode name="wheel01_lod" translation="0 0 6.99034e-06" rotation="1.41292e-08 -0 1.72976e-05" referenceId="9" nodeId="5278"/>
+        <ReferenceNode name="wheel01_lod" translation="1.52466e-20 5.09611e-07 -3.375" rotation="1.41302e-08 0 1.72976e-05" referenceId="9" nodeId="5282"/>
+        <ReferenceNode name="wheel01_lod" translation="7.34096e-21 2.45368e-07 -1.625" rotation="1.41302e-08 0 1.72976e-05" referenceId="9" nodeId="5286"/>
+      </TransformGroup>
+      <ReferenceNode name="flowerPot03" translation="-4.91016 0 -7.957" rotation="180 -0 -180" referenceId="10" nodeId="5295"/>
+      <TransformGroup name="gardenWell02_PREFAB" lockedgroup="true" translation="-3.67259 0 -8.05765" rotation="-180 -0 -180" nodeId="5300">
+        <ReferenceNode name="gardenWell02" translation="0 0 -1.29589e-05" rotation="-8.14222e-13 -1.70752e-06 5.65372e-13" referenceId="11" nodeId="5304"/>
+        <TransformGroup name="roseScissor" lockedgroup="true" translation="0.410034 0.563023 0.100627" rotation="91.8246 25.1166 -179.428" lodDistance="0 8" clipDistance="60" nodeId="5305">
+          <Shape name="LOD0" shapeId="5" nodeId="5306" castsShadows="true" receiveShadows="true" materialIds="4595">
+            <Shape name="collision" translation="-0.001257 0.003141 -0.013239" shapeId="6" static="true" collisionFilterMask="0xfffffbff" nodeId="5307" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="7" nodeId="5308" castsShadows="true" receiveShadows="true" materialIds="4595"/>
+        </TransformGroup>
+        <TransformGroup name="potBig03_lod" lockedgroup="true" translation="0.0126343 0.440605 -0.0161645" rotation="-1.15769e-05 -9.32004e-05 2.3553e-06" scale="0.704952 0.704952 0.704952" lodDistance="0 25" clipDistance="85" nodeId="5309">
+          <Shape name="LOD0" translation="-0.007046 0 -0.015199" shapeId="8" nodeId="5310" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.002042 0 0.048729" shapeId="9" nodeId="5311" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot03_lod" lockedgroup="true" translation="0.0106812 0.451466 -0.209692" rotation="-1.15769e-05 -9.56226e-05 2.3553e-06" scale="0.728173 0.728173 0.728173" lodDistance="0 25" clipDistance="85" nodeId="5312">
+          <Shape name="LOD0" translation="0.006228 0 0" shapeId="10" nodeId="5313" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.006228 0 0" shapeId="11" nodeId="5314" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot03_lod" lockedgroup="true" translation="0.0388184 0.451466 0.228457" rotation="-1.15769e-05 -9.56226e-05 2.3553e-06" scale="0.728173 0.728173 0.728173" lodDistance="0 25" clipDistance="85" nodeId="5315">
+          <Shape name="LOD0" translation="0.006228 0 0" shapeId="10" nodeId="5316" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.006228 0 0" shapeId="11" nodeId="5317" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="flowerPot03_PREFAB" lockedgroup="true" translation="-5.75208 0 -7.94064" rotation="180 -0 -180" nodeId="5318">
+        <ReferenceNode name="flowerPot03" translation="0 0 -3.8147e-06" referenceId="10" nodeId="5319"/>
+        <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="0.00799559 0.398315 -0.0103833" rotation="-6.97598e-06 2.09175e-05 4.57826e-06" scale="1.2548 1.2548 1.2548" lodDistance="0 25" clipDistance="85" nodeId="5324">
+          <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="5325" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="5326" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="gardenBedRing01_PREFAB" lockedgroup="true" translation="-4.28294 0 -6.03165" rotation="2.30723e-06 16.9996 -3.9781e-06" nodeId="5327">
+        <ReferenceNode name="gardenBedRing01" translation="-6.10352e-05 0 3.05176e-05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="22" nodeId="5333"/>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="-0.339783 0.261055 0.0334015" rotation="180 70.8832 -180" lodDistance="0 25" clipDistance="85" nodeId="5338">
+          <Shape name="LOD0" shapeId="14" nodeId="5339" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5340" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.180603 0.449768 -0.651329" rotation="180 -6.8016 -180" lodDistance="0 25" clipDistance="85" nodeId="5341">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5342" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5343" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot04_lod" lockedgroup="true" translation="0.134705 0.244617 0.388199" rotation="180 -11.9981 -180" lodDistance="0 25" clipDistance="85" nodeId="5344">
+          <Shape name="LOD0" shapeId="18" nodeId="5345" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="19" nodeId="5346" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot05_lod" lockedgroup="true" translation="-0.0162964 0.255505 -0.0921631" rotation="1.30725e-05 -74.7007 1.40085e-07" lodDistance="0 25" clipDistance="85" nodeId="5347">
+          <Shape name="LOD0" shapeId="20" nodeId="5348" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="21" nodeId="5349" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="0.25885 0.261055 -0.174057" rotation="180 70.8832 -180" lodDistance="0 25" clipDistance="85" nodeId="5350">
+          <Shape name="LOD0" shapeId="14" nodeId="5351" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5352" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot04_lod" lockedgroup="true" translation="-0.156555 0.244617 -0.605476" rotation="180 -11.9981 -180" lodDistance="0 25" clipDistance="85" nodeId="5353">
+          <Shape name="LOD0" shapeId="18" nodeId="5354" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="19" nodeId="5355" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.548828 0.254177 0.140099" rotation="180 19.0344 -180" lodDistance="0 25" clipDistance="85" nodeId="5356">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5357" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5358" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.590149 0.252903 -0.0201492" rotation="180 46.6299 -180" lodDistance="0 25" clipDistance="85" nodeId="5359">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5360" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5361" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.570984 0.252911 -0.233887" rotation="2.44617e-06 24.7796 1.40166e-05" lodDistance="0 25" clipDistance="85" nodeId="5362">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5363" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5364" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.444824 0.238049 -0.47332" rotation="6.15033e-05 -87.9304 -4.84717e-05" lodDistance="0 25" clipDistance="85" nodeId="5365">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5366" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5367" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.314636 0.243999 0.379906" rotation="4.39579e-06 -59.6525 9.1979e-06" lodDistance="0 25" clipDistance="85" nodeId="5368">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5369" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5370" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.497498 0.257595 0.239716" rotation="2.89499e-06 39.8999 1.48484e-05" lodDistance="0 25" clipDistance="85" nodeId="5371">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5372" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5373" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.600891 0.364445 -0.0307236" rotation="180 52.6865 -180" lodDistance="0 25" clipDistance="85" nodeId="5374">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5375" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5376" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.61145 0.242481 -0.170921" rotation="6.19031e-05 87.9438 7.48544e-05" lodDistance="0 25" clipDistance="85" nodeId="5377">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5378" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5379" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.521851 0.243389 -0.39769" rotation="180 72.7071 -180" lodDistance="0 25" clipDistance="85" nodeId="5380">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5381" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5382" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="concreteElementsPot02Vis" translation="-0.43322 0 -3.4612" shapeId="22" clipDistance="65" nodeId="5383" castsShadows="true" receiveShadows="true" materialIds="5097"/>
+      <Shape name="firewoodStump03" lockedgroup="true" translation="0.513954 0 -1.58762" rotation="-2.47214e-06 -0 7.84051e-06" shapeId="23" static="true" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="80" nodeId="5407" castsShadows="true" receiveShadows="true" materialIds="5100">
+        <TransformGroup name="flowerPot04" lockedgroup="true" translation="0.0110474 0.582218 0.0421753" rotation="1.01778e-13 1.70755e-06 -5.08889e-13" nodeId="5408">
+          <TransformGroup name="visual_lod" lodDistance="0 12" clipDistance="65" nodeId="5409">
+            <Shape name="LOD0" shapeId="24" nodeId="5410" castsShadows="true" receiveShadows="true" materialIds="5104"/>
+            <Shape name="LOD1" shapeId="25" nodeId="5411" castsShadows="true" receiveShadows="true" materialIds="5104"/>
+          </TransformGroup>
+          <Shape name="col" translation="0.016633 -0.084175 0.042672" shapeId="26" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5412" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="potSmall03_lod" lockedgroup="true" translation="0.00921631 0.949982 0.0421143" rotation="1.01778e-13 1.70755e-06 -5.08889e-13" lodDistance="0 25" clipDistance="85" nodeId="5413">
+          <Shape name="LOD0" translation="0.018456 0 -0.022329" shapeId="27" nodeId="5414" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.007602 0 0.005911" shapeId="28" nodeId="5415" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="gardenWindmill" lockedgroup="true" translation="-1.79916 0 -8.23444" rotation="-1.58442e-06 -0 1.69208e-05" lodDistance="0 15" clipDistance="110" nodeId="5416">
+        <Shape name="gardenWindmill" shapeId="29" nodeId="5417" castsShadows="true" receiveShadows="true" materialIds="5110"/>
+        <Shape name="gardenWindmill_LOD" shapeId="30" nodeId="5418" castsShadows="true" receiveShadows="true" materialIds="5110"/>
+        <Shape name="blades" translation="0 1.10371 0.21893" shapeId="31" clipDistance="90" nodeId="5419" castsShadows="true" receiveShadows="true" materialIds="5110">
+          <Shape name="col" shapeId="32" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5420" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </Shape>
+        <Shape name="col" shapeId="33" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5421" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="gardenBedRing03_PREFAB" lockedgroup="true" translation="-4.41571 0 0.386139" rotation="1.15769e-05 -0 1.72966e-05" nodeId="5482">
+        <ReferenceNode name="gardenBedRing01" translation="0 0 2.49836e-05" rotation="-8.14222e-13 -0 8.93591e-13" referenceId="22" nodeId="5483"/>
+        <ReferenceNode name="gardenFountainStand" translation="-2.81588e-16 0.180244 -2.94209e-15" referenceId="38" nodeId="5493"/>
+        <TransformGroup name="gardenFigureEagle02" lockedgroup="true" translation="3.0594e-08 0.978809 -1.18629e-08" rotation="180 0 -180" lodDistance="0 15" lodBlending="false" clipDistance="75" nodeId="5498">
+          <Shape name="LOD0" shapeId="34" nodeId="5499" castsShadows="true" receiveShadows="true" materialIds="4594"/>
+          <Shape name="LOD1" shapeId="35" nodeId="5500" castsShadows="true" receiveShadows="true" materialIds="4594"/>
+          <Shape name="col" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5501" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="flowerPot06_PREFAB" lockedgroup="true" translation="1.87927 0 -0.661789" rotation="180 -44.5088 -180" nodeId="5502">
+        <ReferenceNode name="flowerPot06" translation="0 0 2.28882e-05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="42" nodeId="5508"/>
+        <TransformGroup name="potBig01_lod" lockedgroup="true" translation="-0.00708008 0.490948 0.00486755" rotation="-180 -7.00044 -180" lodDistance="0 25" clipDistance="85" nodeId="5513">
+          <Shape name="LOD0" shapeId="37" nodeId="5514" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.011061 0 -0.008362" shapeId="38" nodeId="5515" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="flowerPot06_PREFAB" lockedgroup="true" translation="1.8548 0 -1.59866" rotation="180 45.5789 -180" scale="1.5 1.5 1.5" nodeId="5516">
+        <ReferenceNode name="flowerPot06" translation="0 0 2.28882e-05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="42" nodeId="5517"/>
+        <TransformGroup name="potBig01_lod" lockedgroup="true" translation="-0.00708008 0.490948 0.00486755" rotation="-180 -7.00044 -180" lodDistance="0 25" clipDistance="85" nodeId="5522">
+          <Shape name="LOD0" shapeId="37" nodeId="5523" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.011061 0 -0.008362" shapeId="38" nodeId="5524" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="flowerPot06" translation="-1.67493 0 -2.04839" rotation="180 -44.5088 -180" scale="0.639112 0.639112 0.639112" referenceId="42" nodeId="5525"/>
+      <ReferenceNode name="flowerPot05" translation="-2.50633 0 -2.03502" rotation="-2.06727e-05 -30 4.37744e-05" scale="0.545924 0.545924 0.545924" referenceId="43" nodeId="5536"/>
+      <ReferenceNode name="flowerPot06" translation="-1.68487 0 -2.85469" rotation="180 -44.5088 -180" scale="0.928163 0.928163 0.928163" referenceId="42" nodeId="5541"/>
+      <ReferenceNode name="flowerPot05" translation="-2.55501 0 -3.74092" rotation="-1.21925e-05 -30 4.45432e-05" scale="1.21238 1.21238 1.21238" referenceId="43" nodeId="5546"/>
+      <TransformGroup name="flowerPot05handRake_PREFAB" lockedgroup="true" translation="-2.53915 0 -2.78403" rotation="-180 -44.9721 -180" nodeId="5551">
+        <ReferenceNode name="flowerPot05" translation="-3.05176e-05 0 0" rotation="2.44267e-12 -0 1.62844e-12" referenceId="43" nodeId="5552"/>
+        <TransformGroup name="handRake" lockedgroup="true" translation="0.283905 0.660782 -0.026001" rotation="-142.95 -88.9256 -117.24" lodDistance="0 8" clipDistance="60" nodeId="5557">
+          <Shape name="LOD0" shapeId="39" nodeId="5558" castsShadows="true" receiveShadows="true" materialIds="4595">
+            <Shape name="collision" translation="-0.000925 0 -0.013239" shapeId="40" static="true" collisionFilterMask="0xfffffbff" nodeId="5559" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="41" nodeId="5560" castsShadows="true" receiveShadows="true" materialIds="4595"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="flowerPot06_PREFAB" lockedgroup="true" translation="-1.68362 0 -3.75798" rotation="180 -24 -180" nodeId="5561">
+        <ReferenceNode name="flowerPot06" translation="1.90735e-06 0 9.53674e-07" rotation="8.14222e-13 1.70755e-06 1.22133e-12" referenceId="42" nodeId="5562"/>
+        <TransformGroup name="handRake" lockedgroup="true" translation="0.370737 0.534225 -0.00324154" rotation="-168.507 -89.0455 -91.6864" lodDistance="0 8" clipDistance="60" nodeId="5567">
+          <Shape name="LOD0" shapeId="39" nodeId="5568" castsShadows="true" receiveShadows="true" materialIds="4595">
+            <Shape name="collision" translation="-0.000925 0 -0.013239" shapeId="40" static="true" collisionFilterMask="0xfffffbff" nodeId="5569" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="41" nodeId="5570" castsShadows="true" receiveShadows="true" materialIds="4595"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="potSmall02" lockedgroup="true" translation="2.00264 0 0.144348" lodDistance="0 25" clipDistance="85" nodeId="5571">
+        <Shape name="LOD0" translation="0.004224 0.227904 0.001694" shapeId="42" nodeId="5572" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.002366 0.422597 -0.004655" shapeId="43" nodeId="5573" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.03556 0.472222 -0.008362" shapeId="44" nodeId="5574" castsShadows="true" receiveShadows="true" materialIds="5107">
+          <Shape name="flowers" shapeId="45" nodeId="5575" castsShadows="true" receiveShadows="true" materialIds="5107" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="46" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="5576" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPot05_PREFAB" lockedgroup="true" translation="2.95357 0 -1.60579" rotation="7.53952e-06 -30 1.52006e-05" nodeId="5583">
+        <ReferenceNode name="flowerPot05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="43" nodeId="5584"/>
+        <TransformGroup name="hangingPot03_lod" lockedgroup="true" translation="0.136047 0.680645 -0.0321121" rotation="180 -7.00041 -180" lodDistance="0 25" clipDistance="85" nodeId="5589">
+          <Shape name="LOD0" translation="-0.015229 0 0.022036" shapeId="47" nodeId="5590" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.017743 0 0.00667" shapeId="48" nodeId="5591" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot02_lod" lockedgroup="true" translation="-0.166138 0.60704 -0.0565186" rotation="180 -7.00041 -180" lodDistance="0 25" clipDistance="85" nodeId="5592">
+          <Shape name="LOD0" translation="0.000526 0 0.002124" shapeId="49" nodeId="5593" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="2e-05 0 0.00667" shapeId="50" nodeId="5594" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="-0.013855 0.605206 -0.00774384" rotation="180 -7.00041 -180" lodDistance="0 25" clipDistance="85" nodeId="5595">
+          <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="5596" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="5597" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="potSmall01" lockedgroup="true" translation="2.79489 0 0.107254" rotation="-180 -87 180" lodDistance="0 25" clipDistance="85" nodeId="5628">
+        <Shape name="LOD0" shapeId="51" nodeId="5629" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.003604 0.646973 -0.00031" shapeId="12" nodeId="5630" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="1e-06 0.491667 0.005911" shapeId="52" nodeId="5631" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="53" nodeId="5632" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="54" static="true" collisionFilterMask="0xfffffbff" nodeId="5633" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPotMedium03_PREFAB" lockedgroup="true" translation="1.94627 0 1.0639" rotation="180 45.0044 -180" nodeId="5634">
+        <TransformGroup name="hangingPot02_lod" lockedgroup="true" translation="-0.00933838 0.343773 0.00563049" rotation="-6.97597e-06 2.08885e-05 4.57826e-06" scale="1.88015 1.88015 1.88015" lodDistance="0 25" clipDistance="85" nodeId="5635">
+          <Shape name="LOD0" translation="0.000526 0 0.002124" shapeId="49" nodeId="5636" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="2e-05 0 0.00667" shapeId="50" nodeId="5637" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <ReferenceNode name="flowerPotMedium03" referenceId="48" nodeId="5645"/>
+      </TransformGroup>
+      <TransformGroup name="gardenBedRing04_PREFAB" lockedgroup="true" translation="-1.64867 0 -6.14365" scale="1.5 1.5 1.5" nodeId="5652">
+        <ReferenceNode name="gardenBedRing01" translation="-6.10352e-05 0 3.05176e-05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="22" nodeId="5653"/>
+        <ReferenceNode name="gardenWindmill_lod" translation="0 0.25 0" rotation="1.13739e-07 0 -4.16242e-06" referenceId="49" nodeId="5664"/>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="-0.339783 0.261055 0.0334015" rotation="180 70.8832 -180" lodDistance="0 25" clipDistance="85" nodeId="5670">
+          <Shape name="LOD0" shapeId="14" nodeId="5671" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5672" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.180603 0.449768 -0.651329" rotation="180 -6.8016 -180" lodDistance="0 25" clipDistance="85" nodeId="5673">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5674" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5675" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot04_lod" lockedgroup="true" translation="0.134705 0.244617 0.388199" rotation="180 -11.9981 -180" lodDistance="0 25" clipDistance="85" nodeId="5676">
+          <Shape name="LOD0" shapeId="18" nodeId="5677" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="19" nodeId="5678" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot05_lod" lockedgroup="true" translation="-0.0162964 0.255505 -0.0921631" rotation="1.30725e-05 -74.7007 1.40085e-07" lodDistance="0 25" clipDistance="85" nodeId="5679">
+          <Shape name="LOD0" shapeId="20" nodeId="5680" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="21" nodeId="5681" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="0.25885 0.261055 -0.174057" rotation="180 70.8832 -180" lodDistance="0 25" clipDistance="85" nodeId="5682">
+          <Shape name="LOD0" shapeId="14" nodeId="5683" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5684" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot04_lod" lockedgroup="true" translation="-0.156555 0.244617 -0.605476" rotation="180 -11.9981 -180" lodDistance="0 25" clipDistance="85" nodeId="5685">
+          <Shape name="LOD0" shapeId="18" nodeId="5686" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="19" nodeId="5687" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.548828 0.254177 0.140099" rotation="180 19.0344 -180" lodDistance="0 25" clipDistance="85" nodeId="5688">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5689" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5690" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.590149 0.252903 -0.0201492" rotation="180 46.6299 -180" lodDistance="0 25" clipDistance="85" nodeId="5691">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5692" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5693" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.570984 0.252911 -0.233887" rotation="2.44617e-06 24.7796 1.40166e-05" lodDistance="0 25" clipDistance="85" nodeId="5694">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5695" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5696" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.444824 0.238049 -0.47332" rotation="6.15033e-05 -87.9304 -4.84717e-05" lodDistance="0 25" clipDistance="85" nodeId="5697">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5698" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5699" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.314636 0.243999 0.379906" rotation="4.39579e-06 -59.6525 9.1979e-06" lodDistance="0 25" clipDistance="85" nodeId="5700">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5701" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5702" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.497498 0.257595 0.239716" rotation="2.89499e-06 39.8999 1.48484e-05" lodDistance="0 25" clipDistance="85" nodeId="5703">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5704" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5705" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.600891 0.364445 -0.0307236" rotation="180 52.6865 -180" lodDistance="0 25" clipDistance="85" nodeId="5706">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5707" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5708" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.61145 0.242481 -0.170921" rotation="6.19031e-05 87.9438 7.48544e-05" lodDistance="0 25" clipDistance="85" nodeId="5709">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5710" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5711" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.521851 0.243389 -0.39769" rotation="180 72.7071 -180" lodDistance="0 25" clipDistance="85" nodeId="5712">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5713" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5714" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="potBig01" lockedgroup="true" translation="3.76777 0 -1.58212" rotation="-0 90 0" lodDistance="0 25" clipDistance="85" nodeId="5715">
+        <Shape name="LOD0" translation="-0.018765 0.374233 -0.000135" shapeId="55" nodeId="5716" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.018765 0.521146 0.000135" shapeId="56" nodeId="5717" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.011061 0.592972 -0.008362" shapeId="57" nodeId="5718" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="58" nodeId="5719" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="59" static="true" collisionFilterMask="0xfffffbff" nodeId="5720" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPot08_PREFAB" lockedgroup="true" translation="2.89551 0 -0.664642" rotation="180 -0 -180" nodeId="5721">
+        <ReferenceNode name="flowerPot05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="43" nodeId="5722"/>
+        <TransformGroup name="hangingPot03_lod" lockedgroup="true" translation="0.0736084 0.608414 0.186462" rotation="163.447 -7.00049 180" lodDistance="0 25" clipDistance="85" nodeId="5727">
+          <Shape name="LOD0" translation="-0.015229 0 0.022036" shapeId="47" nodeId="5728" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.017743 0 0.00667" shapeId="48" nodeId="5729" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot02_lod" lockedgroup="true" translation="-0.19845 0.621859 0.0111005" rotation="-180 -7.00041 180" lodDistance="0 25" clipDistance="85" nodeId="5730">
+          <Shape name="LOD0" translation="0.000526 0 0.002124" shapeId="49" nodeId="5731" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="2e-05 0 0.00667" shapeId="50" nodeId="5732" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="0.0284991 0.605206 -0.0352239" rotation="180 -7.00041 -180" lodDistance="0 25" clipDistance="85" nodeId="5733">
+          <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="5734" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="5735" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="gardenFigureEagle01" lockedgroup="true" translation="-0.0461426 0.586708 0.0860252" rotation="3.54508e-07 -35.4769 -3.13154e-06" lodDistance="0 15" lodBlending="false" clipDistance="75" nodeId="5736">
+          <Shape name="LOD0" shapeId="60" nodeId="5737" castsShadows="true" receiveShadows="true" materialIds="4594"/>
+          <Shape name="LOD1" shapeId="61" nodeId="5738" castsShadows="true" receiveShadows="true" materialIds="4594"/>
+          <Shape name="col" shapeId="62" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5739" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="pottedPlantPot2" lockedgroup="true" translation="2.36397 0 -3.14629" rotation="-180 -0 180" shapeId="63" static="true" clipDistance="100" nodeId="5740" castsShadows="true" receiveShadows="true" materialIds="5111">
+        <Shape name="decorativeTree02" translation="0.0153198 0.446865 0.00101471" rotation="-180 38.1584 -180" scale="0.666667 0.666667 0.666667" shapeId="64" static="true" clipDistance="300" nodeId="5741" castsShadows="true" receiveShadows="true" materialIds="5098">
+          <Shape name="decorativeTree02Alpha" shapeId="65" clipDistance="300" nodeId="5742" castsShadows="true" receiveShadows="true" materialIds="5099"/>
+        </Shape>
+      </Shape>
+      <Shape name="pottedPlant" lockedgroup="true" translation="3.50522 -2.28882e-05 -4.01158" shapeId="66" dynamic="true" clipDistance="75" nodeId="5743" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="pottedPlant_vis" shapeId="63" clipDistance="75" nodeId="5744" castsShadows="true" receiveShadows="true" materialIds="5111">
+          <Shape name="pottedPlantAlpha" shapeId="67" clipDistance="75" nodeId="5745" castsShadows="true" receiveShadows="true" materialIds="5112"/>
+        </Shape>
+      </Shape>
+      <TransformGroup name="gardenBedRing02_PREFAB" lockedgroup="true" translation="-4.29153 0 -1.71225" rotation="1.15769e-05 -0 1.72966e-05" nodeId="5746">
+        <ReferenceNode name="gardenBedRing01" translation="0 0 -1.43443e-05" rotation="0 -3.88251e-19 0" referenceId="22" nodeId="5747"/>
+        <ReferenceNode name="stoneStatues01_lod" translation="-1.07039e-22 0.179448 -1.43828e-05" rotation="0 -3.88251e-19 0" referenceId="62" nodeId="5757"/>
+      </TransformGroup>
+      <TransformGroup name="gardenBedRing01_PREFAB" lockedgroup="true" translation="-4.50813 0 2.44315" rotation="180 22.9996 -180" nodeId="5761">
+        <ReferenceNode name="gardenBedRing01" rotation="8.14222e-13 1.70755e-06 2.03555e-12" referenceId="22" nodeId="5762"/>
+        <TransformGroup name="shovel2" lockedgroup="true" translation="-0.569275 0.106857 0.150955" rotation="165.33 54.5887 169.442" lodDistance="0 8" clipDistance="60" nodeId="5767">
+          <Shape name="LOD0" shapeId="68" nodeId="5768" castsShadows="true" receiveShadows="true" materialIds="4595">
+            <Shape name="collision" translation="0 0 -0.027965" shapeId="69" static="true" collisionFilterMask="0xfffffbff" nodeId="5769" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="70" nodeId="5770" castsShadows="true" receiveShadows="true" materialIds="4595"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="gardenBedRing02_PREFAB" lockedgroup="true" translation="-4.30164 0 -3.83595" rotation="6.8311e-05 -84.5149 -4.90278e-05" nodeId="5771">
+        <ReferenceNode name="gardenBedRing01" rotation="-4.07111e-13 1.70755e-06 1.01778e-12" referenceId="22" nodeId="5772"/>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.439484 0.242676 0.484528" rotation="-3.94157e-06 -74.0637 1.69254e-05" lodDistance="0 25" clipDistance="85" nodeId="5777">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5778" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5779" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.0592957 0.226646 0.69342" rotation="-1.19894e-06 25.4887 1.26194e-05" lodDistance="0 25" clipDistance="85" nodeId="5780">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5781" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5782" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.489838 0.227577 0.481644" rotation="-180 67.0977 180" lodDistance="0 25" clipDistance="85" nodeId="5783">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5784" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5785" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="-0.47702 0.364273 -0.361694" rotation="-3.8172e-06 73.5325 9.47451e-06" lodDistance="0 25" clipDistance="85" nodeId="5786">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5787" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5788" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.430573 0.38044 -0.484711" rotation="-3.94157e-06 -74.0637 1.69254e-05" lodDistance="0 25" clipDistance="85" nodeId="5789">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5790" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5791" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="0.0427551 0.243973 -0.59935" rotation="-3.81709e-06 73.5325 9.47461e-06" lodDistance="0 25" clipDistance="85" nodeId="5792">
+          <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="5793" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="5794" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="-0.542572 0.26474 0.0153591" rotation="180 90 180" scale="0.875 0.875 0.875" lodDistance="0 25" clipDistance="85" nodeId="5795">
+          <Shape name="LOD0" shapeId="14" nodeId="5796" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5797" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="-0.235443 0.244171 0.363235" rotation="180 90 180" scale="0.875 0.875 0.875" lodDistance="0 25" clipDistance="85" nodeId="5798">
+          <Shape name="LOD0" shapeId="14" nodeId="5799" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5800" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="-0.203949 0.246918 -0.344666" rotation="180 90 180" scale="0.875 0.875 0.875" lodDistance="0 25" clipDistance="85" nodeId="5801">
+          <Shape name="LOD0" shapeId="14" nodeId="5802" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5803" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="0.278229 0.246918 -0.327545" rotation="180 90 180" scale="0.875 0.875 0.875" lodDistance="0 25" clipDistance="85" nodeId="5804">
+          <Shape name="LOD0" shapeId="14" nodeId="5805" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5806" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="0.246796 0.244171 0.380325" rotation="180 90 180" scale="0.875 0.875 0.875" lodDistance="0 25" clipDistance="85" nodeId="5807">
+          <Shape name="LOD0" shapeId="14" nodeId="5808" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5809" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="7.55057e-08 0.375 -2.93793e-14" rotation="180 90 180" lodDistance="0 25" clipDistance="85" nodeId="5810">
+          <Shape name="LOD0" shapeId="14" nodeId="5811" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5812" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig02_lod" lockedgroup="true" translation="0.561127 0.26474 0.0119171" rotation="180 90 180" scale="0.875 0.875 0.875" lodDistance="0 25" clipDistance="85" nodeId="5813">
+          <Shape name="LOD0" shapeId="14" nodeId="5814" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="5815" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="flowerPotSmall02" translation="-3.05583 0 0.748169" rotation="-180 -0 180" scale="1.2894 1.2894 1.2894" referenceId="63" nodeId="5820"/>
+      <ReferenceNode name="flowerPotSmall03" translation="-1.93307 0 0.670731" rotation="-1.12589e-05 -0 4.15509e-05" referenceId="64" nodeId="5828"/>
+      <ReferenceNode name="flowerPotBig01" translation="-2.47752 0 0.753174" rotation="-1.12301e-05 4.26901e-07 4.09514e-05" scale="0.808087 0.808087 0.808087" referenceId="65" nodeId="5837"/>
+      <ReferenceNode name="flowerPotBig02" translation="-2.40668 0 -1.1617" rotation="-1.2615e-05 -0 4.53273e-05" scale="0.80305 0.80305 0.80305" referenceId="66" nodeId="5847"/>
+      <TransformGroup name="flowerPotMedium01stoneStatues02_PREFAB" lockedgroup="true" translation="-1.39966 0 0.566986" rotation="180 -0 -180" nodeId="5854">
+        <ReferenceNode name="flowerPotMedium01" translation="2.47955e-05 0 -3.05176e-05" rotation="-3.18056e-14 -2.13443e-07 -1.52667e-13" referenceId="67" nodeId="5859"/>
+        <ReferenceNode name="stoneStatues02_lod" translation="-0.00329018 0.185272 -0.0236511" rotation="74.9484 -0.949072 180" referenceId="68" nodeId="5867"/>
+      </TransformGroup>
+      <ReferenceNode name="flowerPotBig03" translation="-1.70309 0 -1.22479" rotation="-6.62518e-05 -84.9915 0.000101922" referenceId="69" nodeId="5877"/>
+      <ReferenceNode name="flowerPotMedium02" translation="-0.399361 0 -0.424759" rotation="180 -24 -180" referenceId="70" nodeId="5890"/>
+      <Shape name="concreteElementsPot04Vis" translation="1.64844 0 -6.10893" shapeId="71" clipDistance="65" nodeId="5897" castsShadows="true" receiveShadows="true" materialIds="5097"/>
+      <ReferenceNode name="flowerPotMedium03" translation="-1.04581 0 -0.485458" rotation="-1.12336e-05 -1.92674 4.11607e-05" scale="0.878007 0.878007 0.878007" referenceId="48" nodeId="5898"/>
+      <ReferenceNode name="flowerPotMedium02" translation="-0.364418 0 -1.04463" rotation="-1.12301e-05 4.26901e-07 4.09514e-05" scale="1.6787 1.6787 1.6787" referenceId="70" nodeId="5905"/>
+      <ReferenceNode name="flowerPotSmall01" translation="-1.00931 0 -1.90248" rotation="-1.85818e-05 -1.92674 3.63988e-05" referenceId="71" nodeId="5912"/>
+      <TransformGroup name="flowerPot06handShovel_PREFAB" lockedgroup="true" translation="-0.462654 0 0.965652" rotation="1.45016e-07 -0 3.26754e-05" nodeId="5919">
+        <ReferenceNode name="flowerpot01" translation="3.05176e-05 0 0" rotation="-2.54444e-13 -0 9.41444e-13" referenceId="72" nodeId="5925"/>
+        <TransformGroup name="handShovel" lockedgroup="true" translation="-0.103255 0.383601 -0.110599" rotation="27.281 -17.8206 180" lodDistance="0 8" clipDistance="60" nodeId="5930">
+          <Shape name="LOD0" shapeId="72" nodeId="5931" castsShadows="true" receiveShadows="true" materialIds="4595">
+            <Shape name="collision" shapeId="73" static="true" collisionFilterMask="0xfffffbff" nodeId="5932" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="74" nodeId="5933" castsShadows="true" receiveShadows="true" materialIds="4595"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="flowerGeraniumPotSquare" lockedgroup="true" translation="2.00318 1.58183 -8.595" rotation="180 1.44088 -180" clipDistance="75" nodeId="5441">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="5442">
+          <Shape name="LOD0" shapeId="75" nodeId="5443" castsShadows="true" receiveShadows="true" materialIds="5103">
+            <Shape name="flowerGeraniumRoundPlants" translation="0.015447 0.26436 0.008575" shapeId="76" nodeId="5444" castsShadows="true" receiveShadows="true" materialIds="5101"/>
+          </Shape>
+          <Shape name="LOD1" translation="0.010672 0.198678 0" shapeId="77" nodeId="5445" castsShadows="true" receiveShadows="true" materialIds="5102"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="residentialLight07_SCALED" lockedgroup="true" translation="2.3969 1.75 -7.90529" rotation="180 -88.2737 -180" scale="1 1 0.75" nodeId="5464">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="5465">
+          <Shape name="LOD0" shapeId="1" nodeId="5466" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true">
+            <Shape name="glass" shapeId="2" nodeId="5467" castsShadows="true" receiveShadows="true" materialIds="1384" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="3" nodeId="5468" castsShadows="true" receiveShadows="true" materialIds="1381" weatherRequiredMask="0x40" renderInvisible="true"/>
+        </TransformGroup>
+        <TransformGroup name="light" translation="0.104034 0.207973 0" nodeId="5469" weatherRequiredMask="0x40">
+          <Light name="pointLight01" translation="0 -0.131157 0" rotation="0 0 0.00028" nodeId="5470" type="point" color="0.169 0.114793 0.0212311" emitDiffuse="true" emitSpecular="true" range="5"/>
+          <Light name="spotLight01" translation="0 -0.077089 0" rotation="-90 0 0" nodeId="5471" type="spot" color="0.8 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="4" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.01" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="7" coneAngle="110" dropOff="2"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5472" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="waterPumpOld_PREFAB" lockedgroup="true" translation="-0.266708 0 -8.34691" rotation="3.09335e-05 -90 0" nodeId="5384">
+        <TransformGroup name="waterPumpOld" lockedgroup="true" lodDistance="0 8" lodBlending="false" clipDistance="55" nodeId="5385">
+          <Shape name="LOD0" shapeId="78" nodeId="5386" castsShadows="true" receiveShadows="true" materialIds="5118"/>
+          <Shape name="LOD1" shapeId="79" nodeId="5387" castsShadows="true" receiveShadows="true" materialIds="5118"/>
+          <Shape name="col" shapeId="80" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5388" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <TransformGroup name="waterPumpOldBucket" lockedgroup="true" translation="0.00512695 0 -0.0578766" rotation="0 -16.5187 0" lodDistance="0 8" lodBlending="false" clipDistance="55" nodeId="5389">
+          <Shape name="LOD0" shapeId="81" nodeId="5390" castsShadows="true" receiveShadows="true" materialIds="5118"/>
+          <Shape name="LOD1" shapeId="82" nodeId="5391" castsShadows="true" receiveShadows="true" materialIds="5118"/>
+          <Shape name="col" shapeId="83" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5392" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="flowerStand" translation="1.55923 0 -8.27808" rotation="1.40373e-06 -1.72607 6.85383e-06" referenceId="83" nodeId="5433"/>
+      <TransformGroup name="potBig02" lockedgroup="true" translation="1.17822 0.762291 -8.33554" rotation="1.40487e-06 -2.87836 6.82556e-06" lodDistance="0 25" clipDistance="85" nodeId="5446">
+        <Shape name="LOD0" translation="0.011363 0.006701 -0.01212" shapeId="84" nodeId="5447" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="-0.011363 0.372171 0.01212" shapeId="85" nodeId="5448" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="0.002287 0.252361 -0.008362" shapeId="86" nodeId="5449" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="87" nodeId="5450" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="88" static="true" collisionFilterMask="0xfffffbff" nodeId="5451" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="potBig03" lockedgroup="true" translation="1.86152 0.00776672 -7.34891" rotation="1.40353e-06 -1.42293 6.86126e-06" lodDistance="0 25" clipDistance="85" nodeId="5452">
+        <Shape name="LOD0" translation="0 0.23697 0.05512" shapeId="89" nodeId="5453" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="-0.007046 0.442522 -0.070319" shapeId="90" nodeId="5454" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.002042 0.502142 0.048729" shapeId="91" nodeId="5455" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="92" nodeId="5456" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="93" static="true" collisionFilterMask="0xfffffbff" nodeId="5457" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="potSmall03" lockedgroup="true" translation="2.08471 0.87133 -8.19078" rotation="6.37777e-06 62.1799 1.38373e-05" lodDistance="0 25" clipDistance="85" nodeId="5458">
+        <Shape name="LOD0" translation="0 0.138405 0" shapeId="94" nodeId="5459" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.018456 0.272046 -0.022329" shapeId="95" nodeId="5460" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="0.007602 0.265718 0.005911" shapeId="96" nodeId="5461" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="97" nodeId="5462" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="98" static="true" collisionFilterMask="0xfffffbff" nodeId="5463" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="wheelBarrowFlowers_PREFAB" lockedgroup="true" translation="3.89871 0 -7.63" rotation="180 4.1954 180" nodeId="5948">
+        <TransformGroup name="stool01" lockedgroup="true" translation="2.28882e-05 0 7.62939e-06" rotation="4.07111e-13 -1.70755e-06 -2.03556e-13" clipDistance="80" nodeId="5949">
+          <TransformGroup name="visual_lod" lodDistance="0 10" nodeId="5950">
+            <Shape name="LOD0" shapeId="99" nodeId="5951" castsShadows="true" receiveShadows="true" materialIds="5114"/>
+            <Shape name="LOD1" shapeId="100" nodeId="5952" castsShadows="true" receiveShadows="true" materialIds="5114"/>
+          </TransformGroup>
+          <Shape name="collision" shapeId="101" static="true" collisionFilterMask="0xfffffbff" nodeId="5953" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false" materialIds="79"/>
+        </TransformGroup>
+        <ReferenceNode name="homiHoe" translation="0.254051 0.277603 0.472939" rotation="175.245 64.1951 -180" referenceId="87" nodeId="5959"/>
+        <TransformGroup name="wheelBarrow02" lockedgroup="true" translation="0.18663 0 1.16688" rotation="180 89.5302 -180" clipDistance="80" nodeId="5964">
+          <TransformGroup name="visual_lod" lodDistance="0 12" nodeId="5965">
+            <Shape name="LOD0" shapeId="102" nodeId="5966" castsShadows="true" receiveShadows="true" materialIds="5119"/>
+            <Shape name="LOD1" shapeId="103" nodeId="5967" castsShadows="true" receiveShadows="true" materialIds="5119"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="104" static="true" collisionFilterMask="0xfffffbff" nodeId="5968" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <TransformGroup name="stepstool" lockedgroup="true" translation="0.0256348 -3.8147e-06 -0.363575" rotation="180 0.0695091 180" clipDistance="65" nodeId="5969">
+          <TransformGroup name="visual_lod" lodDistance="0 20" nodeId="5970">
+            <Shape name="LOD0" translation="-0.004427 0 0.135656" shapeId="105" nodeId="5971" castsShadows="true" receiveShadows="true" materialIds="5113"/>
+            <Shape name="LOD1" translation="-0.004427 0 0.135656" shapeId="106" nodeId="5972" castsShadows="true" receiveShadows="true" materialIds="5113"/>
+          </TransformGroup>
+          <Shape name="collision" translation="-0.010052 0 0.135656" shapeId="107" static="true" collisionFilterMask="0xfffffbff" nodeId="5973" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <ReferenceNode name="flowerPotMedium01" translation="0.172485 0.663059 1.23404" rotation="179.999 88.9593 179.999" scale="0.694338 0.149763 0.59528" referenceId="67" nodeId="5974"/>
+        <ReferenceNode name="flowerPotSmall01" translation="0.0441437 0.48291 -0.0367317" rotation="180 89.5302 -180" referenceId="71" nodeId="5978"/>
+        <TransformGroup name="potSmall03_lod" lockedgroup="true" translation="0.32943 0.707054 1.56679" rotation="2.59711e-05 -76.1752 -2.03549e-05" lodDistance="0 25" clipDistance="85" nodeId="5985">
+          <Shape name="LOD0" translation="0.018456 0 -0.022329" shapeId="27" nodeId="5986" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="0.007602 0 0.005911" shapeId="28" nodeId="5987" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="0.0509262 0.75219 -0.038475" rotation="180 50.8302 -180" scale="0.8 0.8 0.8" lodDistance="0 25" clipDistance="85" nodeId="5988">
+          <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="5989" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="5990" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="terracePot04_lod" lockedgroup="true" translation="0.0474777 0.705967 1.26701" rotation="180 89.5302 -180" lodDistance="0 25" clipDistance="85" nodeId="5991">
+          <Shape name="LOD0" shapeId="18" nodeId="5992" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" shapeId="19" nodeId="5993" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="hangingPot03_lod" lockedgroup="true" translation="0.249413 0.706577 0.88575" rotation="180 89.5302 -180" lodDistance="0 25" clipDistance="85" nodeId="5994">
+          <Shape name="LOD0" translation="-0.015229 0 0.022036" shapeId="47" nodeId="5995" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.017743 0 0.00667" shapeId="48" nodeId="5996" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <TransformGroup name="potBig01_lod" lockedgroup="true" translation="0.312866 0.703587 1.25917" rotation="1.04837e-08 -3.7036 -3.24231e-07" scale="0.7 0.7 1" lodDistance="0 25" clipDistance="85" nodeId="5997">
+          <Shape name="LOD0" shapeId="37" nodeId="5998" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.011061 0 -0.008362" shapeId="38" nodeId="5999" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+        <ReferenceNode name="axe" translation="0.214264 0.705891 -0.363277" rotation="-162.253 31.866 -82.0462" referenceId="94" nodeId="6005"/>
+        <ReferenceNode name="flowerPotMedium01" translation="0.176254 0.663837 1.54033" rotation="-0.000408677 -89.2892 0.000403719" scale="0.615074 0.149763 0.635559" referenceId="67" nodeId="6010"/>
+        <ReferenceNode name="flowerPotMedium01" translation="0.166939 0.663837 0.928814" rotation="-0.000302825 -89.0365 0.000297856" scale="0.615074 0.149763 0.558194" referenceId="67" nodeId="6014"/>
+      </TransformGroup>
+      <TransformGroup name="kimchiPot01" lockedgroup="true" translation="9.86441 0 -8.30409" nodeId="13633">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="45" nodeId="13634">
+          <Shape name="LOD0" shapeId="108" nodeId="13635" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+          <Shape name="LOD1" shapeId="109" nodeId="13636" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="110" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="13637" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="kimchiPot02" lockedgroup="true" translation="8.33891 0 -8.30162" nodeId="13642">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="45" nodeId="13643">
+          <Shape name="LOD0" shapeId="111" nodeId="13644" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+          <Shape name="LOD1" shapeId="112" nodeId="13645" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="113" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="13646" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="kimchiPot03" lockedgroup="true" translation="6.94033 0 -8.25055" nodeId="13651">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="45" nodeId="13652">
+          <Shape name="LOD0" shapeId="114" nodeId="13653" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+          <Shape name="LOD1" shapeId="115" nodeId="13654" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="116" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="13655" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="kimchiPot04" lockedgroup="true" translation="5.71798 0 -8.27098" nodeId="13660">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="45" nodeId="13661">
+          <Shape name="LOD0" shapeId="117" nodeId="13662" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+          <Shape name="LOD1" shapeId="118" nodeId="13663" castsShadows="true" receiveShadows="true" materialIds="13628"/>
+        </TransformGroup>
+        <Shape name="collision" shapeId="119" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="13664" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <Shape name="townPlant03" lockedgroup="true" translation="1.22955 0 0.200317" shapeId="120" dynamic="true" clipDistance="60" nodeId="6030" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="townPlant03_vis" shapeId="121" clipDistance="60" nodeId="6031" castsShadows="true" receiveShadows="true" materialIds="5116">
+          <Shape name="townPlant03Alpha" shapeId="122" clipDistance="60" nodeId="6032" castsShadows="true" receiveShadows="true" materialIds="5117"/>
+        </Shape>
+      </Shape>
+      <Shape name="townPlant04" lockedgroup="true" translation="1.28143 0 1.16031" shapeId="123" dynamic="true" clipDistance="60" nodeId="6036" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="townPlant04_vis" shapeId="124" clipDistance="60" nodeId="6037" castsShadows="true" receiveShadows="true" materialIds="5116">
+          <Shape name="townPlant04Alpha" shapeId="125" clipDistance="60" nodeId="6038" castsShadows="true" receiveShadows="true" materialIds="5117"/>
+        </Shape>
+      </Shape>
+      <Shape name="streetFlowerPot01" lockedgroup="true" translation="4.94161 0 -3.36553" shapeId="126" static="true" clipDistance="70" nodeId="6039" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="streetFlowerPot01_vis" shapeId="127" clipDistance="70" nodeId="6040" castsShadows="true" receiveShadows="true" materialIds="5115"/>
+        <Shape name="streetFlowerPot01_flowers" shapeId="128" clipDistance="70" nodeId="6041" castsShadows="true" receiveShadows="true" materialIds="5115" weatherPreventMask="0x400"/>
+      </Shape>
+      <Shape name="townPlant01" lockedgroup="true" translation="1.22231 0 -0.696243" shapeId="129" clipDistance="60" nodeId="6042" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="townPlant01_vis" shapeId="130" clipDistance="60" nodeId="6043" castsShadows="true" receiveShadows="true" materialIds="5116">
+          <Shape name="townPlant01Alpha" shapeId="131" clipDistance="60" nodeId="6044" castsShadows="true" receiveShadows="true" materialIds="5117"/>
+        </Shape>
+      </Shape>
+      <TransformGroup name="playgroundFigurPike" lockedgroup="true" translation="5.10332 0 -5.84758" rotation="-180 -0 180" scale="1.5 1.5 1.5" lodDistance="0 25" clipDistance="180" nodeId="6063">
+        <Shape name="LOD0" shapeId="132" nodeId="6064" castsShadows="true" receiveShadows="true" materialIds="1380"/>
+        <Shape name="LOD1" shapeId="133" nodeId="6065" castsShadows="true" receiveShadows="true" materialIds="1380"/>
+        <Shape name="col" shapeId="134" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="6066" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <ReferenceNode name="stoneStatues03_lod" translation="-0.41983 0 0.233917" rotation="-7.93372e-06 -0 4.16311e-07" referenceId="110" nodeId="6086"/>
+      <TransformGroup name="footballSign01" lockedgroup="true" translation="-3.36423 0 -2.33287" rotation="-1.17005e-07 -0 3.31908e-05" lodDistance="0 10" clipDistance="120" nodeId="6090">
+        <Shape name="LOD0" shapeId="135" nodeId="6091" castsShadows="true" receiveShadows="true" materialIds="5109"/>
+        <Shape name="LOD1" shapeId="136" nodeId="6092" castsShadows="true" receiveShadows="true" materialIds="5109"/>
+        <Shape name="col" shapeId="137" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="6093" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <ReferenceNode name="crossroadsShrine" translation="-6.01265 0 -5.33701" rotation="1.11402e-07 90 0" referenceId="114" nodeId="6099"/>
+      <TransformGroup name="flowerPotMedium01" lockedgroup="true" translation="-1.38595 0 1.72784" clipDistance="25" nodeId="13082">
+        <Shape name="pot" shapeId="138" nodeId="13083" castsShadows="true" receiveShadows="true" materialIds="5638">
+          <Shape name="dirt" translation="0 0.288579 0" shapeId="139" nodeId="13084" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+        </Shape>
+        <Shape name="collision" shapeId="140" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13085" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPotMedium03" lockedgroup="true" translation="-1.00385 0 -1.07944" nodeId="13105">
+        <TransformGroup name="vis_lod" lodDistance="0 8" lodBlending="false" clipDistance="25" nodeId="13106">
+          <Shape name="LOD0" translation="0 0 -0.000894" shapeId="141" nodeId="13107" castsShadows="true" receiveShadows="true" materialIds="5638">
+            <Shape name="dirt" translation="0.001043 0.328495 0.000894" rotation="0 98.6041 0" shapeId="142" nodeId="13108" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+          <Shape name="LOD1" translation="0 0 -0.000894" shapeId="143" nodeId="13109" castsShadows="true" receiveShadows="true" materialIds="5638">
+            <Shape name="dirt" translation="0.001043 0.328495 0.000894" rotation="0 98.6041 0" shapeId="144" nodeId="13110" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="collision" shapeId="145" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPotSmall02" lockedgroup="true" translation="-3.03023 0 1.62889" clipDistance="25" nodeId="13129">
+        <Shape name="pot" shapeId="146" nodeId="13130" castsShadows="true" receiveShadows="true" materialIds="5610">
+          <Shape name="dirt" translation="0 0.150753 0" shapeId="147" nodeId="13131" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+        </Shape>
+        <Shape name="collision" shapeId="148" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13132" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPotBig01" lockedgroup="true" translation="-2.42709 0 1.78072" clipDistance="40" nodeId="13145">
+        <Shape name="pot" shapeId="149" nodeId="13146" castsShadows="true" receiveShadows="true" materialIds="5832">
+          <Shape name="dirt" translation="0 0.346908 0" shapeId="150" nodeId="13147" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          <Shape name="collision" shapeId="151" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13148" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="flowerPotBig02" lockedgroup="true" translation="-2.39969 0 -0.284348" nodeId="13155">
+        <TransformGroup name="vis_lod" lodDistance="0 8" lodBlending="false" clipDistance="40" nodeId="13156">
+          <Shape name="LOD0" shapeId="152" nodeId="13157" castsShadows="true" receiveShadows="true" materialIds="5832">
+            <Shape name="dirt" translation="0 0.292044 0.004903" shapeId="153" nodeId="13158" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="154" nodeId="13159" castsShadows="true" receiveShadows="true" materialIds="5832">
+            <Shape name="dirt" translation="0 0.292044 0.004903" shapeId="155" nodeId="13160" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="collision" shapeId="156" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13161" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPotBig03" lockedgroup="true" translation="-1.71997 0 -0.557892" nodeId="13168">
+        <TransformGroup name="vis_lod" lodDistance="0 8" lodBlending="false" clipDistance="50" nodeId="13169">
+          <Shape name="LOD0" shapeId="157" nodeId="13170" castsShadows="true" receiveShadows="true" materialIds="5832">
+            <Shape name="dirt" translation="0 0.319118 0" shapeId="158" nodeId="13171" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="159" nodeId="13172" castsShadows="true" receiveShadows="true" materialIds="5832">
+            <Shape name="dirt" translation="0 0.319118 0" shapeId="160" nodeId="13173" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="collision" shapeId="161" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13174" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="potSmall03" lockedgroup="true" translation="1.95106 0 1.79108" rotation="5.00935e-06 0.721 5.07199e-06" lodDistance="0 25" clipDistance="85" nodeId="5577">
+        <Shape name="LOD0" translation="0 0.138405 0" shapeId="94" nodeId="5578" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.018456 0.272046 -0.022329" shapeId="95" nodeId="5579" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="0.007602 0.265718 0.005911" shapeId="96" nodeId="5580" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="97" nodeId="5581" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="98" static="true" collisionFilterMask="0xfffffbff" nodeId="5582" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="basket01_PREFAB" lockedgroup="true" translation="2.70352 0 1.03101" rotation="-180 22.9986 -180" nodeId="5598">
+        <ReferenceNode name="basket01" translation="6.10352e-05 0 -2.28882e-05" rotation="3.81667e-14 4.51984e-29 -5.08889e-14" referenceId="127" nodeId="5604"/>
+        <TransformGroup name="flowerPotSmall01_PREFAB" lockedgroup="true" translation="0.00836182 0.065876 0.00666809" rotation="9.37979e-14 6.23172e-29 -7.01629e-14" nodeId="5609">
+          <ReferenceNode name="flowerPotSmall01" translation="0 0 -4.42781e-14" rotation="-3.4101e-21 -0 0" scale="0.804825 0.889478 0.804825" referenceId="71" nodeId="5618"/>
+          <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="0.0110474 0.239063 -0.0146255" rotation="-6.97598e-06 2.06652e-05 4.57826e-06" scale="0.661033 0.661033 0.661033" lodDistance="0 25" clipDistance="85" nodeId="5625">
+            <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="5626" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+            <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="5627" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <ReferenceNode name="flowerpot01" translation="-0.470207 0 1.53264" rotation="-6.51606e-06 -0 4.06352e-05" referenceId="72" nodeId="5934"/>
+      <TransformGroup name="flowerpot01_PREFAB" lockedgroup="true" translation="-0.490295 0 2.01892" rotation="8.65142e-06 -1.86693e-05 -8.65142e-06" nodeId="5939">
+        <ReferenceNode name="flowerpot01" rotation="-1.42489e-12 1.70755e-06 -1.62844e-12" referenceId="72" nodeId="5940"/>
+        <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="-0.102161 0.193943 0.00143661" rotation="-180 49.6879 -180" scale="0.603097 0.603097 0.603097" lodDistance="0 25" clipDistance="85" nodeId="5945">
+          <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="5946" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="5947" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="townPlant02" lockedgroup="true" translation="1.28703 0 1.85179" rotation="0 -1.96194 0" shapeId="162" dynamic="true" clipDistance="60" nodeId="6033" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="townPlant02_vis" shapeId="163" clipDistance="60" nodeId="6034" castsShadows="true" receiveShadows="true" materialIds="5116">
+          <Shape name="townPlant02Alpha" shapeId="164" clipDistance="60" nodeId="6035" castsShadows="true" receiveShadows="true" materialIds="5117"/>
+        </Shape>
+      </Shape>
+      <TransformGroup name="flowerPotLarge" lockedgroup="true" translation="0.569641 0 0.606003" nodeId="13182">
+        <TransformGroup name="vis_lod" lodDistance="0 25" lodBlending="false" clipDistance="60" nodeId="13183">
+          <Shape name="LOD0" translation="0 -0.029431 0" shapeId="165" nodeId="13184" castsShadows="true" receiveShadows="true" materialIds="13175">
+            <Shape name="dirt" translation="-0.001745 0.378185 0" shapeId="166" nodeId="13185" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+          <Shape name="LOD1" translation="0 -0.029431 0" shapeId="167" nodeId="13186" castsShadows="true" receiveShadows="true" materialIds="13175">
+            <Shape name="dirt" translation="-0.001745 0.417782 0" shapeId="168" nodeId="13187" castsShadows="true" receiveShadows="true" materialIds="5611"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="collision" translation="0 -0.029431 0" shapeId="169" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="13188" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="flowerGeraniumPotSquare" lockedgroup="true" translation="2.66568 0 1.79657" clipDistance="75" nodeId="17502">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="17503">
+          <Shape name="LOD0" shapeId="75" nodeId="17504" castsShadows="true" receiveShadows="true" materialIds="5103">
+            <Shape name="flowerGeraniumRoundPlants" translation="0.015447 0.26436 0.008575" shapeId="76" nodeId="17505" castsShadows="true" receiveShadows="true" materialIds="5101"/>
+          </Shape>
+          <Shape name="LOD1" translation="0.010672 0.198678 0" shapeId="77" nodeId="17506" castsShadows="true" receiveShadows="true" materialIds="5102"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="potSmall01_lod" lockedgroup="true" translation="5.41375 0 2.62717" lodDistance="0 25" clipDistance="85" nodeId="17696">
+        <Shape name="LOD0" translation="0.003604 0.293809 -0.00031" shapeId="12" nodeId="17697" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="1e-06 0 0.005911" shapeId="13" nodeId="17698" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="potSmall03_lod" lockedgroup="true" translation="3.43553 0 2.57047" lodDistance="0 25" clipDistance="85" nodeId="17705">
+        <Shape name="LOD0" translation="0.018456 0 -0.022329" shapeId="27" nodeId="17706" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="0.007602 0 0.005911" shapeId="28" nodeId="17707" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot01_lod" lockedgroup="true" translation="2.44716 0 2.4991" lodDistance="0 25" clipDistance="85" nodeId="17714">
+        <Shape name="LOD0" translation="0.04135 0 0" shapeId="170" nodeId="17715" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="0.04135 0 0" shapeId="171" nodeId="17716" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="hangingPot01_lod" lockedgroup="true" translation="5.96865 0 2.68651" lodDistance="0 25" clipDistance="85" nodeId="17717">
+        <Shape name="LOD0" translation="-0.009948 0 -0.003066" shapeId="16" nodeId="17718" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="-0.007025 0 0.00667" shapeId="17" nodeId="17719" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="hangingPot03_lod" lockedgroup="true" translation="6.46239 0 2.63966" lodDistance="0 25" clipDistance="85" nodeId="17723">
+        <Shape name="LOD0" translation="-0.015229 0 0.022036" shapeId="47" nodeId="17724" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="-0.017743 0 0.00667" shapeId="48" nodeId="17725" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot03_lod" lockedgroup="true" translation="0.00891113 0 2.45993" lodDistance="0 25" clipDistance="85" nodeId="17729">
+        <Shape name="LOD0" translation="0.006228 0 0" shapeId="10" nodeId="17730" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="0.006228 0 0" shapeId="11" nodeId="17731" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot05_lod" lockedgroup="true" translation="1.17838 0 2.56271" lodDistance="0 25" clipDistance="85" nodeId="17735">
+        <Shape name="LOD0" shapeId="20" nodeId="17736" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" shapeId="21" nodeId="17737" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot04_lod" lockedgroup="true" translation="4.93469 0 0.157669" rotation="-1.32919e-06 -0 2.18059e-05" lodDistance="0 25" clipDistance="85" nodeId="6018">
+        <Shape name="LOD0" shapeId="18" nodeId="6019" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" shapeId="19" nodeId="6020" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot05" lockedgroup="true" translation="5.04243 0.383221 -1.01912" rotation="-5.82245e-06 -0 2.31841e-06" lodDistance="0 25" clipDistance="85" nodeId="6051">
+        <Shape name="LOD0" translation="-0.002282 -0.169434 0.142025" shapeId="172" nodeId="6052" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.013586 0.380824 0.067235" shapeId="173" nodeId="6053" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="0.013777 0.105514 0.227348" shapeId="174" nodeId="6054" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="175" nodeId="6055" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" translation="0 -0.341314 0" shapeId="176" static="true" collisionFilterMask="0xfffffbff" nodeId="6056" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot02" lockedgroup="true" translation="3.83809 0.307983 -0.0633545" lodDistance="0 25" clipDistance="85" nodeId="6057">
+        <Shape name="LOD0" translation="-0.000489 -0.169434 0.142025" shapeId="177" nodeId="6058" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.006959 0.222887 0.092967" shapeId="178" nodeId="6059" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="0.003736 -0.070925 0.227348" shapeId="179" nodeId="6060" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="180" nodeId="6061" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" translation="0 -0.341314 0" shapeId="176" static="true" collisionFilterMask="0xfffffbff" nodeId="6062" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot03" lockedgroup="true" translation="3.85379 0.397259 -0.546082" rotation="180 -3.41509e-06 180" lodDistance="0 25" clipDistance="85" nodeId="6067">
+        <Shape name="LOD0" translation="-0.008093 -0.169434 0.142025" shapeId="181" nodeId="6068" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.00882 0.186574 0.067971" shapeId="182" nodeId="6069" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.006227 -0.090315 0.227348" shapeId="183" nodeId="6070" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="184" nodeId="6071" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" translation="0 -0.341314 0" shapeId="176" static="true" collisionFilterMask="0xfffffbff" nodeId="6072" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <ReferenceNode name="concreteSlab03" translation="6.44067 0 -0.488174" scale="1.25 1.25 1.25" referenceId="131" nodeId="6080"/>
+      <TransformGroup name="potBig03" lockedgroup="true" translation="4.99185 -2.28882e-05 -1.79063" rotation="1.40353e-06 -1.42293 6.86126e-06" lodDistance="0 25" clipDistance="85" nodeId="13196">
+        <Shape name="LOD0" translation="0 0.23697 0.05512" shapeId="89" nodeId="13197" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="-0.007046 0.442522 -0.070319" shapeId="90" nodeId="13198" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.002042 0.502142 0.048729" shapeId="91" nodeId="13199" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="92" nodeId="13200" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="93" static="true" collisionFilterMask="0xfffffbff" nodeId="13201" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot04" lockedgroup="true" translation="3.76105 0.385372 0.966156" rotation="-3.53058e-06 -0 3.53045e-06" lodDistance="0 25" clipDistance="85" nodeId="6024">
+        <Shape name="LOD0" translation="-0.009546 -0.169434 0.142025" shapeId="185" nodeId="6025" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="0.022145 0.313293 0.055713" shapeId="186" nodeId="6026" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.008587 0.080222 0.227348" shapeId="187" nodeId="6027" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="188" nodeId="6028" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" translation="0 -0.341314 0" shapeId="176" static="true" collisionFilterMask="0xfffffbff" nodeId="6029" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="terracePot01" lockedgroup="true" translation="3.81015 0.345745 1.73857" rotation="-4.752e-06 -0 1.9026e-06" lodDistance="0 25" clipDistance="85" nodeId="6045">
+        <Shape name="LOD0" translation="0.004744 -0.169434 0.142025" shapeId="189" nodeId="6046" castsShadows="true" receiveShadows="true" materialIds="5105">
+          <Shape name="flowers" translation="-0.031039 0.268302 0.130675" shapeId="190" nodeId="6047" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="-0.036047 0.009779 0.246948" shapeId="191" nodeId="6048" castsShadows="true" receiveShadows="true" materialIds="5108">
+          <Shape name="flowers" shapeId="192" nodeId="6049" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" translation="0 -0.341314 0" shapeId="176" static="true" collisionFilterMask="0xfffffbff" nodeId="6050" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <ReferenceNode name="concreteSlab03" translation="6.42532 0 1.07785" referenceId="131" nodeId="6076"/>
+      <ReferenceNode name="concreteSlab02" translation="6.47742 0 2.08336" referenceId="132" nodeId="6079"/>
+      <TransformGroup name="potBig02_lod" lockedgroup="true" translation="5.05982 0 0.977325" lodDistance="0 25" clipDistance="85" nodeId="17708">
+        <Shape name="LOD0" shapeId="14" nodeId="17709" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="0.002287 0 -0.008362" shapeId="15" nodeId="17710" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="potBig03_lod" lockedgroup="true" translation="5.0892 0 1.95857" lodDistance="0 25" clipDistance="85" nodeId="17711">
+        <Shape name="LOD0" translation="-0.007046 0 -0.015199" shapeId="8" nodeId="17712" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="-0.002042 0 0.048729" shapeId="9" nodeId="17713" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="potSmall02_lod" lockedgroup="true" translation="4.78728 0 2.63039" lodDistance="0 25" clipDistance="85" nodeId="17699">
+        <Shape name="LOD0" translation="0.00659 0 -0.002962" shapeId="193" nodeId="17700" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="-0.03556 0 -0.008362" shapeId="194" nodeId="17701" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <TransformGroup name="potBig01_lod" lockedgroup="true" translation="4.13904 0 2.59302" lodDistance="0 25" clipDistance="85" nodeId="17702">
+        <Shape name="LOD0" shapeId="37" nodeId="17703" castsShadows="true" receiveShadows="true" materialIds="5106" weatherPreventMask="0x400"/>
+        <Shape name="LOD1" translation="-0.011061 0 -0.008362" shapeId="38" nodeId="17704" castsShadows="true" receiveShadows="true" materialIds="5108" weatherPreventMask="0x400"/>
+      </TransformGroup>
+      <ReferenceNode name="stoneStatues05_lod" translation="8.25481 3.8147e-06 -0.772232" rotation="-180 -0 180" scale="1.10822 1.10822 1.10822" referenceId="133" nodeId="7795"/>
+      <ReferenceNode name="stoneStatues05_lod" translation="8.23128 3.8147e-06 2.50313" rotation="-1.85807e-05 -1.77897 3.63638e-05" scale="0.410425 0.410425 0.410425" referenceId="133" nodeId="7799"/>
+      <ReferenceNode name="stoneStatues01_lod" translation="8.25012 3.8147e-06 -2.22072" rotation="-180 -0 -180" referenceId="62" nodeId="7807"/>
+      <ReferenceNode name="stoneStatues06_lod" translation="8.21524 3.8147e-06 0.598587" rotation="-2.59706e-05 -4.74159e-05 0" referenceId="134" nodeId="7815"/>
+      <ReferenceNode name="stoneStatues03_lod" translation="8.22963 3.8147e-06 1.75064" rotation="-1.50248e-05 -0 4.88009e-05" referenceId="110" nodeId="7985"/>
+      <TransformGroup name="concreteSlab01Stag_PREFAB" lockedgroup="true" translation="6.13992 -2.28882e-05 -2.4735" rotation="-1.12301e-05 4.26903e-07 4.09514e-05" nodeId="7866">
+        <ReferenceNode name="concreteSlab01" translation="0.0504079 2.8583e-15 7.78537e-07" rotation="6.10667e-13 -3.15511e-12 3.24832e-12" referenceId="135" nodeId="7869"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0504384 0.100182 7.74287e-07" rotation="-5.37177e-05 -82.0265 6.17662e-05" referenceId="135" nodeId="7870"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0504384 0.197418 7.70163e-07" rotation="-180 -0.794844 -180" referenceId="135" nodeId="7871"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0504384 0.295502 7.66003e-07" rotation="-180 73.1547 -180" referenceId="135" nodeId="7872"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0502248 0.393196 -0.0032341" rotation="-0.000192179 -87.2978 0.000196984" referenceId="135" nodeId="7873"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0502248 0.493378 -0.00317307" rotation="-180 -10.6754 180" referenceId="135" nodeId="7874"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0502248 0.590614 -0.00317307" rotation="-180 86.503 -180" referenceId="135" nodeId="7875"/>
+        <ReferenceNode name="concreteSlab01" translation="0.0502248 0.688698 -0.00317308" rotation="-2.54312e-05 19.5472 -9.2597e-06" referenceId="135" nodeId="7876"/>
+        <ReferenceNode name="concreteSlab03" translation="0.907815 0.418777 -0.0942985" rotation="71.1833 5.99369e-10 3.2483e-12" referenceId="131" nodeId="7879"/>
+        <ReferenceNode name="concreteSlab03" translation="0.90812 0.393341 0.0985115" rotation="90.0771 27.2631 90.2366" referenceId="131" nodeId="7880"/>
+        <ReferenceNode name="concreteSlab03" translation="0.908395 0.354668 0.398011" rotation="134.675 -0.0395402 -179.884" referenceId="131" nodeId="7881"/>
+        <ReferenceNode name="concreteSlab02" translation="0.89396 0.320145 0.648072" rotation="90.0001 -49.6145 -90.0001" referenceId="132" nodeId="7884"/>
+        <ReferenceNode name="concreteSlab01" translation="-0.0057034 -0.000589289 0.588877" rotation="-0.000106952 75.6103 -0.000117164" referenceId="135" nodeId="7885"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

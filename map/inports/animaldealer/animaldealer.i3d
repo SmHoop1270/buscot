@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="animaldealer.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shared/assets/marker/markerIconAnimals.i3d"/>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="animaldealer.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="animalLoadingTriggers" rotation="-7.50976e-05 0 7.99172e-05" nodeId="10">
+      <Shape name="animalLoadingTriggerDealer" rotation="0 0 -2.81048e-11" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="11" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <Shape name="warningStripes01" shapeId="2" clipDistance="200" nodeId="12" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="6"/>
+      <ReferenceNode name="markerIconAnimals" referenceId="5" nodeId="16"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="11">
+      <Attribute name="animalTypes" type="string" value="pig sheep cow horse"/>
+      <Attribute name="isDealer" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimalLoadingTrigger.onCreate"/>
+      <Attribute name="title" type="string" value="animals_dealer"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

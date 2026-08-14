@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<l10n>
+    <texts>
+        <text name="storeItem_Storage_and_Haybarn" text="Storage and Haybarn"/> 
+        <text name="$l10n_function_objectStorage01" text="Bale and Pallet Storage"/>
+        <text name="$l10n_shopItem_Grain01" text="Farm Shop" />
+		<text name="function_LivestockMarket" text="Sells live animals straight off the trailer at a premium over standard prices." />
+        <text name="storeItem_LivestockMarket" text="Buscot Park Livestock Market" />
+        <text name="message_animalTooYoung" text="This animal isn't fully grown yet - only mature stock can be sold here." />
+        <text name="message_animalTooOld" text="This animal is too old to be sold here." />
+        <text name="message_unloadAnimalSuccess" text="Animals sold." />
+        <text name="message_unloadAnimalConfirmation" text="Sell these animals at the livestock market?" />
+        <text name="button_moveAnimal" text="Sell animals" />
+
+    </texts>
+</l10n>

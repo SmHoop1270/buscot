@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories16_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapAS/textures/props/barrel01.i3d"/>
+    <File fileId="2" filename="$data/maps/mapAS/textures/props/barrel02.i3d"/>
+    <File fileId="10" filename="$data/maps/mapAS/textures/props/barrel03.i3d"/>
+    <File fileId="18" filename="$data/maps/mapAS/textures/props/barrel04.i3d"/>
+    <File fileId="46" filename="$data/maps/mapAS/textures/props/foodCartProps/cartonBox.i3d"/>
+    <File fileId="19" filename="$data/maps/mapAS/textures/props/jarLarge/jarLarge01.i3d"/>
+    <File fileId="26" filename="$data/maps/mapAS/textures/props/jarLarge/jarLarge_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapAS/textures/props/jarLarge/jarLarge_normal.png"/>
+    <File fileId="28" filename="$data/maps/mapAS/textures/props/jarLarge/jarLarge_specular.png"/>
+    <File fileId="50" filename="$data/maps/mapAS/textures/props/pallet02.i3d"/>
+    <File fileId="47" filename="$data/maps/mapEU/textures/props/constructionMaterial_diffuse.png"/>
+    <File fileId="48" filename="$data/maps/mapEU/textures/props/constructionMaterial_normal.png"/>
+    <File fileId="49" filename="$data/maps/mapEU/textures/props/constructionMaterial_specular.png"/>
+    <File fileId="42" filename="$data/maps/mapEU/textures/props/woodenShippingCrates_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/mapEU/textures/props/woodenShippingCrates_normal.png"/>
+    <File fileId="44" filename="$data/maps/mapEU/textures/props/woodenShippingCrates_specular.png"/>
+    <File fileId="45" filename="$data/maps/mapUS/textures/props/cratePacking01.i3d"/>
+    <File fileId="23" filename="$data/maps/mapUS/textures/props/floatingPier01_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/mapUS/textures/props/floatingPier01_normal.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/floatingPier01_specular.png"/>
+    <File fileId="12" filename="$data/maps/mapUS/textures/props/rainBarrelPump_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapUS/textures/props/rainBarrelPump_normal.png"/>
+    <File fileId="14" filename="$data/maps/mapUS/textures/props/rainBarrelPump_specular.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/props/motorex/motorexOilBarrel.i3d"/>
+    <File fileId="51" filename="$data/maps/textures/shared/props/palletTruck.i3d"/>
+    <File fileId="36" filename="$data/placeables/brandless/productionPointsGeneric/shared/palletTruck_diffuse.png"/>
+    <File fileId="37" filename="$data/placeables/brandless/productionPointsGeneric/shared/palletTruck_normal.png"/>
+    <File fileId="38" filename="$data/placeables/brandless/productionPointsGeneric/shared/palletTruck_specular.png"/>
+    <File fileId="52" filename="$data/placeables/brandless/productionPointsGeneric/shared/transportBarrow_diffuse.png"/>
+    <File fileId="53" filename="$data/placeables/brandless/productionPointsGeneric/shared/transportBarrow_normal.png"/>
+    <File fileId="54" filename="$data/placeables/brandless/productionPointsGeneric/shared/transportBarrow_specular.png"/>
+    <File fileId="39" filename="$data/placeables/brandless/productionPointsGeneric/shared/woodenCrate01_diffuse.png"/>
+    <File fileId="40" filename="$data/placeables/brandless/productionPointsGeneric/shared/woodenCrate01_normal.png"/>
+    <File fileId="41" filename="$data/placeables/brandless/productionPointsGeneric/shared/woodenCrate01_specular.png"/>
+    <File fileId="15" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="4" filename="textures/barrelsSET_diffuse.png"/>
+    <File fileId="5" filename="textures/barrelsSET_normal.png"/>
+    <File fileId="6" filename="textures/barrelsSET_specular.png"/>
+    <File fileId="30" filename="textures/greenMetalBox_diffuse.png"/>
+    <File fileId="31" filename="textures/greenMetalBox_normal.png"/>
+    <File fileId="32" filename="textures/greenMetalBox_specular.png"/>
+    <File fileId="33" filename="textures/trashBinMedium01_diffuse.png"/>
+    <File fileId="34" filename="textures/trashBinMedium01_normal.png"/>
+    <File fileId="35" filename="textures/trashBinMedium01_specular.png"/>
+    <File fileId="20" filename="textures/waterBarrelRack_diffuse.png"/>
+    <File fileId="21" filename="textures/waterBarrelRack_normal.png"/>
+    <File fileId="22" filename="textures/waterBarrelRack_specular.png"/>
+    <File fileId="7" filename="textures/waterContainer_diffuse.png"/>
+    <File fileId="8" filename="textures/waterContainer_normal.png"/>
+    <File fileId="9" filename="textures/waterContainer_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="barrelsSET_mat" materialId="3754">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="constructionMaterial_mat" materialId="4591" customShaderId="15">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="49"/>
+    </Material>
+    <Material name="floatingPier01_mat" materialId="1597" customShaderId="15">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="greenMetalBox_mat" materialId="4596" customShaderId="15">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+    </Material>
+    <Material name="jarLarge_mat" materialId="3876">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="palletTruck_mat" materialId="4597">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="rainBarrelPump_mat" materialId="3758" customShaderId="15">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="transportBarrow_mat" materialId="4599">
+      <Texture fileId="52"/>
+      <Normalmap fileId="53"/>
+      <Glossmap fileId="54"/>
+    </Material>
+    <Material name="trashBinMedium01_mat" materialId="3513" customShaderId="15">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="waterBarrelRack_mat" materialId="3760">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="waterBarrelRack_mat" materialId="3761">
+      <Texture fileId="20"/>
+      <Normalmap fileId="22"/>
+    </Material>
+    <Material name="waterContainer_mat" materialId="3762">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="woodenCrate01_mat" materialId="4600" customShaderId="15">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+    </Material>
+    <Material name="woodenShippingCrates_mat" materialId="4603" customShaderId="15">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="44"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories16_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Boxes and cartons, Pallets2" translation="-164.022 -34.5547 -151.572" nodeId="3831">
+      <ReferenceNode name="barrel01" translation="-1.84798 0 -0.604858" rotation="2.84978e-11 -4.61038e-05 1.13991e-11" referenceId="1" nodeId="3890"/>
+      <ReferenceNode name="barrel02" translation="-1.81741 0 0.541656" rotation="2.84978e-11 -4.61038e-05 1.13991e-11" referenceId="2" nodeId="3899"/>
+      <Shape name="barrel01" lockedgroup="true" translation="-0.818466 0 1.67848" shapeId="1" static="true" density="0.0001" nodeId="4346" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="barrel01Vis" shapeId="2" clipDistance="45" nodeId="4347" castsShadows="true" receiveShadows="true" materialIds="3754"/>
+      </Shape>
+      <Shape name="waterContainer01" lockedgroup="true" translation="0.48056 0 3.93747" rotation="-2.89016e-05 90 0" shapeId="3" dynamic="true" density="2" clipDistance="60" nodeId="4348" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="waterContainer01_vis" shapeId="4" clipDistance="40" nodeId="4349" castsShadows="true" receiveShadows="true" materialIds="3762"/>
+      </Shape>
+      <ReferenceNode name="barrel03" translation="-1.66914 0 3.90375" rotation="5.95579e-11 -0 2.33881e-11" referenceId="10" nodeId="4572"/>
+      <ReferenceNode name="motorexOilBarrel" translation="-0.810257 0 -0.497833" rotation="0 36.2929 0" referenceId="11" nodeId="3859"/>
+      <TransformGroup name="rainBarrelPumpBarrel" lockedgroup="true" translation="-1.80991 0 2.87056" rotation="-180 -3.12514 -180" lodDistance="0 8" lodBlending="false" clipDistance="100" nodeId="3862">
+        <Shape name="LOD0" shapeId="5" nodeId="3863" castsShadows="true" receiveShadows="true" materialIds="3758"/>
+        <Shape name="LOD1" shapeId="6" nodeId="3864" castsShadows="true" receiveShadows="true" materialIds="3758"/>
+        <Shape name="col" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="3865" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <ReferenceNode name="barrel04" translation="-0.813873 0 0.638458" rotation="-180 -0.557892 -180" referenceId="18" nodeId="3871"/>
+      <ReferenceNode name="jarLarge" translation="0.422958 0 2.8812" rotation="3.05586e-05 4.27381 4.56573e-06" referenceId="19" nodeId="3881"/>
+      <Shape name="waterBarrelRack01" lockedgroup="true" translation="0.307037 0 -0.0945435" shapeId="8" dynamic="true" clipDistance="200" nodeId="4338" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="rack_vis" shapeId="9" clipDistance="120" nodeId="4339" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+        <Shape name="tube01_vis" translation="-2 0 0" shapeId="10" clipDistance="10" nodeId="4340" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+        <Shape name="waterBarrel01_vis" translation="2.28882e-07 1.68323 0.0457201" shapeId="11" clipDistance="60" nodeId="4341" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+        <Shape name="tube02_vis" translation="-2 0 0" shapeId="12" clipDistance="40" nodeId="4342" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+        <Shape name="waterBarrel02_vis" translation="2.28882e-07 1.01941 0.0457201" shapeId="11" clipDistance="60" nodeId="4343" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+        <Shape name="tube03_vis" translation="-2 0 0" shapeId="13" clipDistance="30" nodeId="4344" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+        <Shape name="waterBarrel03_vis" translation="2.28882e-07 0.358096 0.0457201" shapeId="11" clipDistance="60" nodeId="4345" castsShadows="true" receiveShadows="true" materialIds="3760"/>
+      </Shape>
+      <Shape name="waterBarrel01" lockedgroup="true" translation="0.419678 0 0.96727" rotation="-8.26134e-06 -0 0" shapeId="14" dynamic="true" clipDistance="100" nodeId="4356" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="tube_vis" shapeId="15" clipDistance="30" nodeId="4357" castsShadows="true" receiveShadows="true" materialIds="3761"/>
+        <Shape name="waterBarrel_vis" shapeId="16" clipDistance="60" nodeId="4358" castsShadows="true" receiveShadows="true" materialIds="3761"/>
+      </Shape>
+      <Shape name="barrel02" lockedgroup="true" translation="-1.82869 0 1.63721" shapeId="17" static="true" density="0.0001" nodeId="4359" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="barrel02Vis" shapeId="18" clipDistance="45" nodeId="4360" castsShadows="true" receiveShadows="true" materialIds="3754"/>
+      </Shape>
+      <TransformGroup name="airBarrel" lockedgroup="true" translation="-0.840424 0 2.8544" rotation="-1.01509e-06 -0 3.78257e-08" scale="0.75 0.75 0.75" lodDistance="0 20" clipDistance="100" nodeId="4522">
+        <TransformGroup name="LOD0" nodeId="4523">
+          <Shape name="airBarrel" shapeId="19" nodeId="4524" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="4525">
+          <Shape name="airBarrel" shapeId="20" nodeId="4526" castsShadows="true" receiveShadows="true" materialIds="1597"/>
+        </TransformGroup>
+        <Shape name="col" translation="0 0 1e-06" shapeId="21" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="4527" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="jarLargeGroup" lockedgroup="true" translation="0.415695 0 2.06252" nodeId="13578">
+        <TransformGroup name="vis_lod" lockedgroup="true" lodDistance="0 8" lodBlending="false" clipDistance="60" nodeId="13579">
+          <Shape name="LOD0" shapeId="22" nodeId="13580" castsShadows="true" receiveShadows="true" materialIds="3876"/>
+          <Shape name="LOD1" shapeId="23" nodeId="13581" castsShadows="true" receiveShadows="true" materialIds="3876"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="24" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="150" nodeId="13582" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <Shape name="greenMetalBoxVis" translation="-9.60378 0 -0.578659" rotation="-0 90 0" shapeId="25" clipDistance="60" nodeId="4693" castsShadows="true" receiveShadows="true" materialIds="4596"/>
+      <Shape name="trashBinMedium01Vis" translation="-9.58957 0 1.20453" rotation="-0 90 0" shapeId="26" clipDistance="80" nodeId="4709" castsShadows="true" receiveShadows="true" materialIds="3513"/>
+      <TransformGroup name="palletTruckCreates_PREFAB" lockedgroup="true" translation="-7.83282 0 0.359436" rotation="-180 -0 180" nodeId="4710">
+        <Shape name="palletTruck1" translation="0 0 1.90735e-05" rotation="0 -0 -2.03556e-13" shapeId="27" clipDistance="100" nodeId="4711" castsShadows="true" receiveShadows="true" materialIds="4597"/>
+        <TransformGroup name="woodenCrate02_PREFAB" lockedgroup="true" translation="0.063652 0.113419 1.01413" rotation="-180 -3.02832 180" nodeId="4712">
+          <Shape name="woodenCrate02" translation="-2.48151e-05 0 0" rotation="4.85314e-20 -0 0" shapeId="28" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="4713" castsShadows="true" receiveShadows="true" materialIds="4600"/>
+          <Shape name="woodenCrate01" translation="-2.4863e-05 0 0.802887" rotation="4.85314e-20 -0 0" shapeId="28" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="4714" castsShadows="true" receiveShadows="true" materialIds="4600"/>
+          <Shape name="woodenCrate04" translation="-2.48524e-05 0.827927 0.625061" rotation="4.85314e-20 -0 0" shapeId="28" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="4715" castsShadows="true" receiveShadows="true" materialIds="4600"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="woodenShippingCrates03" lockedgroup="true" translation="-4.52318 0 0.223877" rotation="180 -0 -180" clipDistance="130" nodeId="4757">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="4758">
+          <Shape name="LOD0" shapeId="29" nodeId="4759" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          <Shape name="LOD1" shapeId="29" nodeId="4760" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="30" static="true" collisionFilterMask="0xfffffbff" nodeId="4761" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <ReferenceNode name="cratePacking01" translation="-6.0112 0 2.84877" rotation="-1.11227e-05 90 0" referenceId="45" nodeId="4769"/>
+      <TransformGroup name="crates03_PREFAB" lockedgroup="true" translation="-4.5041 0 -1.02542" rotation="7.55706e-05 -0 2.63941e-05" nodeId="4824">
+        <TransformGroup name="woodenShippingCrates02" lockedgroup="true" translation="-0.960649 -5.45952e-14 0.103548" rotation="-1.09411e-12 -0 6.61555e-13" clipDistance="130" nodeId="4825">
+          <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="4826">
+            <Shape name="LOD0" shapeId="31" nodeId="4827" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+            <Shape name="LOD1" translation="0.00563 0.553499 -0.000987" shapeId="32" nodeId="4828" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="33" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="4829" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <TransformGroup name="woodenShippingCrates03" lockedgroup="true" translation="-1.54755 -1.00789e-07 1.20832" rotation="-180 1.29734 180" clipDistance="130" nodeId="4830">
+          <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="4831">
+            <Shape name="LOD0" shapeId="29" nodeId="4832" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+            <Shape name="LOD1" shapeId="29" nodeId="4833" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="30" static="true" collisionFilterMask="0xfffffbff" nodeId="4834" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <TransformGroup name="woodenShippingCrates04" lockedgroup="true" translation="-1.1728 1.11158 0.108829" rotation="-5.18945e-06 22.0238 -5.94805e-06" clipDistance="130" nodeId="4835">
+          <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="4836">
+            <Shape name="LOD0" shapeId="34" nodeId="4837" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+            <Shape name="LOD1" shapeId="35" nodeId="4838" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="36" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="4839" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <TransformGroup name="woodenShippingCrates04" lockedgroup="true" translation="-1.64465 9.53674e-05 -0.806046" rotation="-0.000106926 87.3559 -0.00012046" clipDistance="130" nodeId="4840">
+          <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="4841">
+            <Shape name="LOD0" shapeId="34" nodeId="4842" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+            <Shape name="LOD1" shapeId="35" nodeId="4843" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="36" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="4844" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+        </TransformGroup>
+        <ReferenceNode name="cartonBox" translation="-1.60236 2.03616 1.16191" rotation="180 2.17268 180" referenceId="46" nodeId="4845"/>
+        <ReferenceNode name="jarLarge" translation="-1.86938 0.00503159 -1.48856" rotation="-3.90452e-05 45.2255 -1.82848e-05" referenceId="19" nodeId="4848"/>
+      </TransformGroup>
+      <TransformGroup name="palletTruckPallet_PREFAB" lockedgroup="true" translation="-7.7804 0 1.83115" rotation="-180 -3.23297e-05 -180" nodeId="4995">
+        <TransformGroup name="constructionMaterial02" lockedgroup="true" translation="-0.0179443 0.184124 -0.028244" rotation="-180 0.872479 -180" lodDistance="0 12" clipDistance="90" nodeId="4996">
+          <Shape name="LOD0" shapeId="37" nodeId="4997" castsShadows="true" receiveShadows="true" materialIds="4591"/>
+          <Shape name="LOD1" shapeId="38" nodeId="4998" castsShadows="true" receiveShadows="true" materialIds="4591"/>
+          <Shape name="col" shapeId="39" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="4999" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+        <ReferenceNode name="pallet02" translation="1.90735e-05 0 0" rotation="-2.16278e-12 -0 0" referenceId="50" nodeId="5000"/>
+        <ReferenceNode name="palletTruck" translation="1.90733e-05 3.09315e-14 -0.990175" rotation="-2.16278e-12 -0 0" referenceId="51" nodeId="5007"/>
+      </TransformGroup>
+      <TransformGroup name="transportBarrowCrate_PREFAB" lockedgroup="true" translation="-7.67863 0 3.72046" rotation="9.22459e-06 -0 -2.15354e-06" nodeId="5020">
+        <Shape name="transportBarrow2" lockedgroup="true" translation="1.52588e-05 0 -1.52588e-05" rotation="4.07111e-13 -1.70755e-06 1.22133e-12" shapeId="40" static="true" collisionFilterMask="0xfffffbff" nodeId="5021" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="transportBarrow_vis" shapeId="41" clipDistance="50" nodeId="5022" castsShadows="true" receiveShadows="true" materialIds="4599"/>
+        </Shape>
+        <Shape name="woodenCrate04" translation="-0.00200756 0.0162096 0.214972" rotation="-0.00020788 88.8107 -0.000203225" scale="0.75 0.75 0.75" shapeId="28" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="5023" castsShadows="true" receiveShadows="true" materialIds="4600"/>
+      </TransformGroup>
+      <TransformGroup name="woodenShippingCrates05" lockedgroup="true" translation="-4.50717 0 2.04884" rotation="180 -0 -180" clipDistance="130" nodeId="5024">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="5025">
+          <Shape name="LOD0" shapeId="42" nodeId="5026" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          <Shape name="LOD1" shapeId="43" nodeId="5027" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="44" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5028" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="woodenShippingCrates02" lockedgroup="true" translation="-3.1881 0 -0.0906525" rotation="-2.85536e-05 90 0" clipDistance="130" nodeId="5060">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="5061">
+          <Shape name="LOD0" shapeId="31" nodeId="5062" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          <Shape name="LOD1" translation="0.00563 0.553499 -0.000987" shapeId="32" nodeId="5063" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="33" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5064" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+      <TransformGroup name="woodenShippingCrates04" lockedgroup="true" translation="-4.63647 0 3.93394" rotation="-2.42212e-06 -0 1.94002e-06" clipDistance="130" nodeId="5091">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="5092">
+          <Shape name="LOD0" shapeId="34" nodeId="5093" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+          <Shape name="LOD1" shapeId="35" nodeId="5094" castsShadows="true" receiveShadows="true" materialIds="4603"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="36" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="5095" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

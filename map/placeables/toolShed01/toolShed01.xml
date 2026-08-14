@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="toolShed" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Tool Shed Large</name>
+        <functions>
+            <function>$l10n_function_garage</function>
+        </functions>
+        <image>$data/placeables/brandless/toolSheds/toolShed01/store_toolShed01.dds</image>
+        <price>1050</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>sheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>decoration</category>
+            <tab>uncategorized</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>131584</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>30720</indexBufferMemoryUsage>
+        <textureMemoryUsage>983040</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/brandless/toolSheds/toolShed01/toolShed01.i3d</filename>
+    </base>
+
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp" pitchScale="1.6"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <animatedObjects>
+        <animatedObject saveId="doors" >
+            <animation duration="3">
+                <part node="doorRightRot">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 130 0"/>
+                </part>
+                <part node="doorLeftRot">
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                    <keyFrame time="1.2" rotation="0 -130 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="doorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="doorTrigger" template="woodDoorSqueaksMedium" />
+                <posEnd linkNode="doorTrigger" template="woodDoorOpen" />
+                <negEnd linkNode="doorTrigger" template="woodDoorClose" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <handToolHolders>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawHolder01" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger01" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawHolder02" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger02" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawHolder03" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger03" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawHolder04" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger04" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanHolder01" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger05" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanHolder02" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger06" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanHolder03" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger07" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="HORSEBRUSH" node="brushHolder01" dummyFilename="$data/shared/visualization/dummyHorseBrush.i3d"/>
+            <trigger node="playerTrigger08" />
+        </handToolHolder>
+    </handToolHolders>
+
+    <i3dMappings>
+        <i3dMapping id="toolShed01" node="0>" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="doorLeftRot" node="0>5|0" />
+        <i3dMapping id="doorRightRot" node="0>5|1" />
+        <i3dMapping id="doorTrigger" node="0>5|2" />
+        <i3dMapping id="chainsawHolder01" node="0>6|0" />
+        <i3dMapping id="playerTrigger01" node="0>6|0|0" />
+        <i3dMapping id="chainsawHolder02" node="0>6|1" />
+        <i3dMapping id="playerTrigger02" node="0>6|1|0" />
+        <i3dMapping id="chainsawHolder03" node="0>6|2" />
+        <i3dMapping id="playerTrigger03" node="0>6|2|0" />
+        <i3dMapping id="chainsawHolder04" node="0>6|3" />
+        <i3dMapping id="playerTrigger04" node="0>6|3|0" />
+        <i3dMapping id="sprayCanHolder01" node="0>6|4" />
+        <i3dMapping id="playerTrigger05" node="0>6|4|0" />
+        <i3dMapping id="sprayCanHolder02" node="0>6|5" />
+        <i3dMapping id="playerTrigger06" node="0>6|5|0" />
+        <i3dMapping id="sprayCanHolder03" node="0>6|6" />
+        <i3dMapping id="playerTrigger07" node="0>6|6|0" />
+        <i3dMapping id="brushHolder01" node="0>6|7" />
+        <i3dMapping id="playerTrigger08" node="0>6|7|0" />
+    </i3dMappings>
+</placeable>

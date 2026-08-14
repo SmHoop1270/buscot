@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>CR82 / Farmerphonk</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>Mercedes-Benz OM-444 Engine Sound</en>
+		<de>Mercedes-Benz OM-444 Motorsound</de>
+    </title>
+	
+	<description>
+ <en><![CDATA[Realistic sound for the Krone Big X V12, however it can be installed in any forage harvester mod;
+Installation instructions are included with the files.]]>
+ </en>
+ <de><![CDATA[Realistischer Sound für den Krone Big X V12,es kann jedoch in jedem Futterernter-Mod installiert werden;
+Installationsanleitung ist bei den Dateien enthalten.]]>
+ </de>
+    </description>
+	
+	<categories>
+        <category>Other</category>
+    </categories>
+	
+	<iconFilename>icon_Mercedes-Benz_OM_444.dds</iconFilename>
+	
+	<prefabs>
+		<prefab name="Mercedes-Benz OM-444 Engine Sound" xmlFilename="sounds/Mercedes-Benz_OM-444.xml" />
+    </prefabs>
+</prefabDesc>

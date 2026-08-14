@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="newFence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_fenceEU_11</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>$data/placeables/brandless/fences/EU/fence11/store_fence11.png</image>
+        <price>150</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>fences</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>82176</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>20224</indexBufferMemoryUsage>
+        <textureMemoryUsage>589824</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <brush>
+            <type>newFence</type>
+            <category>decoration</category>
+            <tab>newFences</tab>
+        </brush>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/brandless/fences/EU/fence11/fence11.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <sounds>
+            <place template="fenceWoodImp" />
+            <destroy template="destroyFence" />
+        </sounds>
+    </placement>
+
+    <fence>
+        <segment id="SEGMENT" class="FenceSegment" maxVerticalAngle="45">
+            <poles>
+                <pole node="pole01" radius="0.0"/>
+                <pole node="pole02" radius="0.0"/>
+            </poles>
+            <panels maxScale="1.2">
+                <panel node="panel01" length="2"/>
+                <panel node="panel02" length="2"/>
+            </panels>
+        </segment>
+
+        <segment id="GATE_2m" class="FenceGate" maxVerticalAngle="45">
+            <gate node="gate2m" length="2">
+                <animatedObject saveId="door01" >
+                    <animation duration="1.5">
+                        <part node="gate2mOpen">
+                            <keyFrame time="0.1" rotation="0 0 0"/>
+                            <keyFrame time="1.2" rotation="0 -90 0"/>
+                        </part>
+                    </animation>
+                    <controls triggerNode="gate2mTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+                    <sounds>
+                        <moving linkNode="gate2m" template="fenceMetalLoop" />
+                        <posEnd linkNode="gate2m" template="fenceMetalOpen" />
+                        <negEnd linkNode="gate2m" template="fenceMetalClose" />
+                    </sounds>
+                </animatedObject>
+            </gate>
+        </segment>
+
+        <segment id="GATE_4m" class="FenceGate" maxVerticalAngle="45">
+            <gate node="gate4m" length="4">
+                <animatedObject saveId="door02" >
+                    <animation duration="1.5">
+                        <part node="gate4mOpenA">
+                            <keyFrame time="0.1" rotation="0 0 0"/>
+                            <keyFrame time="1.2" rotation="0 -90 0"/>
+                        </part>
+                        <part node="gate4mOpenB">
+                            <keyFrame time="0.1" rotation="0 0 0"/>
+                            <keyFrame time="1.2" rotation="0 90 0"/>
+                        </part>
+                    </animation>
+                    <controls triggerNode="gate4mTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+                    <sounds>
+                        <moving linkNode="gate4m" template="fenceMetalLoop" />
+                        <posEnd linkNode="gate4m" template="fenceMetalOpen" />
+                        <negEnd linkNode="gate4m" template="fenceMetalClose" />
+                    </sounds>
+                </animatedObject>
+            </gate>
+        </segment>
+
+        <segment id="GATE_6m" class="FenceGate" maxVerticalAngle="45">
+            <gate node="gate6m" length="6">
+                <animatedObject saveId="door03" >
+                    <animation duration="1.5">
+                        <part node="gate6mOpenA">
+                            <keyFrame time="0.1" rotation="0 0 0"/>
+                            <keyFrame time="1.2" rotation="0 -90 0"/>
+                        </part>
+                        <part node="gate6mOpenB">
+                            <keyFrame time="0.1" rotation="0 0 0"/>
+                            <keyFrame time="1.2" rotation="0 90 0"/>
+                        </part>
+                    </animation>
+                    <controls triggerNode="gate6mTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+                    <sounds>
+                        <moving linkNode="gate6m" template="fenceMetalLoop" />
+                        <posEnd linkNode="gate6m" template="fenceMetalOpen" />
+                        <negEnd linkNode="gate6m" template="fenceMetalClose" />
+                    </sounds>
+                </animatedObject>
+            </gate>
+        </segment>
+    </fence>
+
+
+    <i3dMappings>
+        <i3dMapping id="gate6m" node="0>0" />
+        <i3dMapping id="gate6mOpenA" node="0>0|0" />
+        <i3dMapping id="gate6mOpenB" node="0>0|1" />
+        <i3dMapping id="gate6mTrigger" node="0>0|4" />
+        <i3dMapping id="gate6mSound" node="0>0|5" />
+        <i3dMapping id="gate4m" node="0>1" />
+        <i3dMapping id="gate4mOpenA" node="0>1|0" />
+        <i3dMapping id="gate4mOpenB" node="0>1|1" />
+        <i3dMapping id="gate4mTrigger" node="0>1|4" />
+        <i3dMapping id="gate4mSound" node="0>1|5" />
+        <i3dMapping id="gate2m" node="0>2" />
+        <i3dMapping id="gate2mOpen" node="0>2|0" />
+        <i3dMapping id="gate2mTrigger" node="0>2|3" />
+        <i3dMapping id="gate2mSound" node="0>2|4" />
+        <i3dMapping id="pole01" node="1>0" />
+        <i3dMapping id="pole02" node="1>1" />
+        <i3dMapping id="panel01" node="2>0" />
+        <i3dMapping id="panel02" node="2>1" />
+    </i3dMappings>
+</placeable>

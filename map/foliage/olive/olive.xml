@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="olive" shownOnMap="false" useForFieldMissions="false">
+        <mapColors default="0.0908 0.0467 0.0865 1" colorBlind="0.0469 0.0484 0.0597 1"/>
+        <harvest litersPerSqm="0.92" cutHeight="0.20">
+            <transition src="harvestReady" target="harvested"/>
+            <transition src="harvestReadyWeed" target="harvestedWeed"/>
+        </harvest>
+        <growth resetsSpray="true" growthRequiresLime="true"/>
+        <soil lowDensityRequired="true" increasesDensity="true" consumesLime="true" startSprayLevel="0"/>
+        <seeding directionSnapAngle="0" litersPerSqm="0" isAvailable="false"/>
+        <cultivation isAllowed="false"/>
+    </fruitType>
+
+    <!-- olive -->
+<foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.8" shapeSource="$data/foliage/olive/olive.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.5"/>
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <!-- 1 & 2 : NO OLIVES -->
+        <foliageState name="noOlives" distanceMap="$data/foliage/olive/distance/foliage_olive_distance_diffuse.png" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="noOlivesWeed" distanceMap="$data/foliage/olive/distance/foliage_oliveWeed_distance_diffuse.png" isCultivatable="false" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5"/>
+                <foliageLod blockShape="0>1|5"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 3 & 4 : NO OLIVES 2 -->
+        <foliageState name="noOlives2" distanceMap="$data/foliage/olive/distance/foliage_olive_distance_diffuse.png" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="noOlives2Weed" distanceMap="$data/foliage/olive/distance/foliage_oliveWeed_distance_diffuse.png" isCultivatable="false" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5"/>
+                <foliageLod blockShape="0>1|5"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 5 & 6 : GREEN OLVIES -->
+        <foliageState name="greenOlives" distanceMap="$data/foliage/olive/distance/foliage_olive_distance_diffuse.png" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenOlivesWeed" distanceMap="$data/foliage/olive/distance/foliage_oliveWeed_distance_diffuse.png" isCultivatable="false" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5"/>
+                <foliageLod blockShape="0>1|5"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 7 & 8 : GREEN OLVIES 2 -->
+        <foliageState name="greenOlives2" distanceMap="$data/foliage/olive/distance/foliage_olive_distance_diffuse.png" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenOlives2Weed" distanceMap="$data/foliage/olive/distance/foliage_oliveWeed_distance_diffuse.png" isCultivatable="false">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5"/>
+                <foliageLod blockShape="0>1|5"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 9 & 10 : HARVEST READY -->
+        <foliageState name="harvestReady" distanceMap="$data/foliage/olive/distance/foliage_olive_distance_diffuse.png" isCultivatable="false" isHarvestReady="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestReadyWeed" distanceMap="$data/foliage/olive/distance/foliage_oliveWeed_distance_diffuse.png" isCultivatable="false" isHarvestReady="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5"/>
+                <foliageLod blockShape="0>1|5"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 11 & 12 : HARVESTED -->
+        <foliageState name="harvested" distanceMap="$data/foliage/olive/distance/foliage_olive_distance_diffuse.png" >
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestedWeed" distanceMap="$data/foliage/olive/distance/foliage_oliveWeed_distance_diffuse.png" isCultivatable="false" isWeed="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5"/>
+                <foliageLod blockShape="0>1|5"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="dead" isWithered="true" />
+    </foliageLayer>
+
+    <growth>
+        <seasonal initialState="greenOlives2Weed">
+            <period name="EARLY_SPRING" plantingAllowed="true">
+                <update startState="noOlivesWeed" endState="noOlives" />
+                <update startState="noOlives2" endState="noOlives" />
+                <update startState="noOlives2Weed" endState="noOlives" />
+                <update startState="greenOlives" endState="noOlives" />
+                <update startState="greenOlivesWeed" endState="noOlives" />
+                <update startState="greenOlives2" endState="noOlives" />
+                <update startState="greenOlives2Weed" endState="noOlives" />
+                <update startState="harvestReady" endState="noOlives" />
+                <update startState="harvestReadyWeed" endState="noOlives" />
+                <update startState="harvested" endState="noOlives" />
+                <update startState="harvestedWeed" endState="noOlives" />
+            </period>
+            <period name="MID_SPRING" plantingAllowed="true" />
+            <period name="LATE_SPRING" plantingAllowed="true" />
+            <period name="EARLY_SUMMER" plantingAllowed="true">
+                <update startState="noOlives" endState="noOlives2Weed" /> <!-- always grow to first weed state -->
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+            </period>
+            <period name="MID_SUMMER">
+                <update startState="noOlives" endState="noOlives2Weed" /> <!-- always grow to first weed state -->
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+            </period>
+            <period name="LATE_SUMMER">
+                <update startState="noOlives" endState="noOlives2Weed" /> <!-- always grow to first weed state -->
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+            </period>
+            <period name="EARLY_AUTUMN">
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+                <update startState="harvestReady" endState="harvested" />
+                <update startState="harvestReadyWeed" endState="harvestedWeed" />
+            </period>
+            <period name="MID_AUTUMN">
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+                <update startState="harvestReady" endState="harvested" />
+                <update startState="harvestReadyWeed" endState="harvestedWeed" />
+            </period>
+            <period name="LATE_AUTUMN">
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+                <update startState="harvestReady" endState="harvested" />
+                <update startState="harvestReadyWeed" endState="harvestedWeed" />
+            </period>
+            <period name="EARLY_WINTER">
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+                <update startState="harvestReady" endState="harvested" />
+                <update startState="harvestReadyWeed" endState="harvestedWeed" />
+            </period>
+            <period name="MID_WINTER">
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+                <update startState="harvestReady" endState="harvested" />
+                <update startState="harvestReadyWeed" endState="harvestedWeed" />
+            </period>
+            <period name="LATE_WINTER">
+                <update startState="noOlivesWeed" endState="noOlives2Weed" />
+                <update startState="noOlives2" endState="greenOlives" />
+                <update startState="noOlives2Weed" endState="greenOlivesWeed" />
+                <update startState="greenOlives" endState="greenOlives2" />
+                <update startState="greenOlivesWeed" endState="greenOlives2Weed" />
+                <update startState="greenOlives2" endState="harvestReady" />
+                <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+                <update startState="harvestReady" endState="harvested" />
+                <update startState="harvestReadyWeed" endState="harvestedWeed" />
+            </period>
+        </seasonal>
+
+        <nonSeasonal>
+            <update startState="noOlives"         endState="noOlives2Weed" />
+            <update startState="noOlivesWeed"     endState="noOlives2Weed" />
+            <update startState="noOlives2"        endState="greenOlives" />
+            <update startState="noOlives2Weed"    endState="greenOlivesWeed" />
+            <update startState="greenOlives"      endState="greenOlives2" />
+            <update startState="greenOlivesWeed"  endState="greenOlives2Weed" />
+            <update startState="greenOlives2"     endState="harvestReady" />
+            <update startState="greenOlives2Weed" endState="harvestReadyWeed" />
+            <update startState="harvested"        endState="noOlives" />
+            <update startState="harvestedWeed"    endState="noOlives" />
+        </nonSeasonal>
+    </growth>
+</foliageType>

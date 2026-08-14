@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="archwall" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="10" filename="$data/placeables/meridian/archwall/archwall_diffuse.png" />
+    <File fileId="7" filename="$data/placeables/meridian/archwall/archwall_mask.png" />
+    <File fileId="11" filename="$data/placeables/meridian/archwall/archwall_normal.png" />
+    <File fileId="12" filename="$data/placeables/meridian/archwall/archwall_specular.png" />
+    <File fileId="3" filename="$data/placeables/meridian/archwall/concreteGeneric_diffuse.png" />
+    <File fileId="4" filename="$data/placeables/meridian/archwall/concreteGeneric_normal.png" />
+    <File fileId="5" filename="$data/placeables/meridian/archwall/concreteGeneric_specular.png" />
+    <File fileId="8" filename="$data/placeables/meridian/shared/meridianDecals_diffuse.png" />
+    <File fileId="13" filename="$data/placeables/rudolfHormann/shared/garageDoors_diffuse.png" />
+    <File fileId="14" filename="$data/placeables/rudolfHormann/shared/garageDoors_normal.png" />
+    <File fileId="15" filename="$data/placeables/rudolfHormann/shared/garageDoors_specular.png" />
+    <File fileId="6" filename="$data/shaders/buildingShader.xml" />
+    <File fileId="1" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="2" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="9" filename="$data/shared/default_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="3" specularColor="0.5 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="concreteGeneric_mat" materialId="5" customShaderId="6">
+      <CustomParameter name="snowScale" value="0"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="meridianDecals_mat" materialId="6" specularColor="0 0 0" alphaBlending="true">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="archwall_mat" materialId="4" customShaderId="6">
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="garageDoors_mat" materialId="2" customShaderId="6">
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="archwall.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="archwall" collision="false" density="0" clipDistance="500" nodeId="1">
+      <TransformGroup name="clearAreas" nodeId="2">
+        <TransformGroup name="clearAreaStart01" translation="-9 0 -13" nodeId="3">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 26" nodeId="4"/>
+          <TransformGroup name="clearAreaHeight01" translation="18 0 0" nodeId="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="6">
+        <TransformGroup name="indoorAreaStart01" translation="-8 0 -12.5" nodeId="7">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 25" nodeId="8"/>
+          <TransformGroup name="indoorAreaHeight01" translation="16 0 0" nodeId="9"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="10">
+        <TransformGroup name="testAreaStart01" translation="-8.25 0 -12.5" nodeId="11">
+          <TransformGroup name="testAreaEnd01" translation="16.5 7 25" nodeId="12"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="13">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-8 0 -12.5" nodeId="14">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="16 0 25" nodeId="15"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="lights" nodeId="16">
+        <TransformGroup name="realLights" nodeId="17">
+          <TransformGroup name="realLightsLow" nodeId="18">
+            <Light name="pointLightLow01" translation="0 5.7 6" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="7" clipDistance="75" nodeId="19"/>
+            <Light name="pointLightLow02" translation="0 5.7 -6" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="7" clipDistance="75" nodeId="20"/>
+          </TransformGroup>
+          <TransformGroup name="realLightsHigh" nodeId="21">
+            <Light name="spotLightHigh01" translation="0 5.7 6" rotation="-90 0 0" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="105" dropOff="4" clipDistance="75" nodeId="22"/>
+            <Light name="spotLightHigh02" translation="0 5.7 -6" rotation="-90 0 0" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="105" dropOff="4" clipDistance="75" nodeId="23"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="linkedLights" nodeId="24">
+          <TransformGroup name="linkedLights01" translation="0 6.539697 6" nodeId="25"/>
+          <TransformGroup name="linkedLights02" translation="0 6.54 -6" nodeId="26"/>
+        </TransformGroup>
+        <TransformGroup name="lightSwitch" translation="-4.686279 1.4 12.01566" rotation="0 180 0" nodeId="27"/>
+        <Shape name="lightTrigger" translation="0.082774 1.466258 0.010342" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="28"/>
+      </TransformGroup>
+      <TransformGroup name="doors" nodeId="29">
+        <TransformGroup name="archwallGateRotate" translation="0.000004 4.908327 11.602715" clipDistance="100" nodeId="30"/>
+        <TransformGroup name="archwallGate" collision="false" clipDistance="300" nodeId="31">
+          <TransformGroup name="archwallGate01Rot" translation="4.176176 0.048311 11.799755" rotation="0 180 0" nodeId="32">
+            <TransformGroup name="archwallGate01_lod0" collision="false" density="0" clipDistance="100" nodeId="33">
+              <TransformGroup name="archwallGate02_lod0" translation="-0.000024 0.566089 -0.048072" collision="false" density="0" clipDistance="100" nodeId="34">
+                <TransformGroup name="archwallGate03_lod0" translation="0.000019 0.609619 -0.000015" collision="false" density="0" clipDistance="100" nodeId="35">
+                  <TransformGroup name="archwallGate04_lod0" translation="-0.000019 0.609597 0" collision="false" density="0" clipDistance="100" nodeId="36">
+                    <TransformGroup name="archwallGate05_lod0" translation="0 0.609601 0" collision="false" density="0" clipDistance="100" nodeId="37">
+                      <TransformGroup name="archwallGate06_lod0" translation="0 0.609598 0" collision="false" density="0" clipDistance="100" nodeId="38">
+                        <TransformGroup name="archwallGate07_lod0" translation="0 0.609599 0" collision="false" density="0" clipDistance="100" nodeId="39">
+                          <TransformGroup name="archwallGate08_lod0" translation="0 0.609603 0" collision="false" density="0" clipDistance="100" nodeId="40">
+                            <TransformGroup name="archwallGate08_lod1" clipDistance="700" nodeId="41"/>
+                            <Shape name="archwallGate08_screws" translation="4.176195 -0.000001 0" rotation="0 180 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="42"/>
+                          </TransformGroup>
+                          <TransformGroup name="archwallGate07_lod1" collision="false" density="0" clipDistance="700" nodeId="43"/>
+                          <Shape name="archwallGate07_screws" translation="4.176191 0.609601 0" rotation="0 180 0" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="44"/>
+                          <Shape name="collision" translation="4.176191 0.609601 0" rotation="0 180 0" shapeId="6" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="45"/>
+                        </TransformGroup>
+                        <TransformGroup name="archwallGate06_lod1" collision="false" density="0" clipDistance="700" nodeId="46"/>
+                        <Shape name="archwallGate06_screws" translation="4.176191 0.609599 0" rotation="0 180 0" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="47"/>
+                        <Shape name="collision" translation="4.176191 0.609599 0" rotation="0 180 0" shapeId="8" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="48"/>
+                      </TransformGroup>
+                      <TransformGroup name="archwallGate05_lod1" collision="false" density="0" clipDistance="700" nodeId="49"/>
+                      <Shape name="archwallGate05_screws" translation="4.176191 0.6096 0" rotation="0 180 0" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="50"/>
+                      <Shape name="collision" translation="4.176191 0.6096 0" rotation="0 180 0" shapeId="10" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="51"/>
+                    </TransformGroup>
+                    <TransformGroup name="archwallGate04_lod1" translation="0.00002 0.000003 0" collision="false" density="0" clipDistance="700" nodeId="52"/>
+                    <Shape name="archwallGate04_screws" translation="4.176191 0.609602 0" rotation="0 180 0" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="53"/>
+                    <Shape name="collision" translation="4.176191 0.609602 0" rotation="0 180 0" shapeId="12" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="54"/>
+                  </TransformGroup>
+                  <TransformGroup name="archwallGate03_lod1" translation="-0.000019 -0.000005 0" collision="false" density="0" clipDistance="700" nodeId="55"/>
+                  <Shape name="archwallGate03_screws" translation="4.176172 0.609598 0" rotation="0 180 0" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="56"/>
+                  <Shape name="collision" translation="4.176172 0.609598 0" rotation="0 180 0" shapeId="14" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="57"/>
+                </TransformGroup>
+                <TransformGroup name="archwallGate02_lod1" collision="false" density="0" clipDistance="700" nodeId="58"/>
+                <Shape name="archwallGate02_screws" translation="4.176191 0.609615 -0.000021" rotation="0 180 0" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="59"/>
+                <Shape name="collision" translation="4.176191 0.609615 -0.000021" rotation="0 180 0" shapeId="16" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="60"/>
+              </TransformGroup>
+              <TransformGroup name="archwallGate01_lod1" collision="false" density="0" clipDistance="700" nodeId="61"/>
+              <Shape name="archwallGate01_screws" translation="4.176173 0.566106 -0.048073" rotation="0 180 0" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="70" nodeId="62"/>
+              <Shape name="collision" translation="4.176173 0.566106 -0.048073" rotation="0 180 0" shapeId="18" kinematic="true" density="0" collisionFilterGroup="0xf7" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="63"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="doorTrigger" translation="0 1.466258 12.115168" shapeId="19" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="64"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" static="true" nodeId="65">
+        <TransformGroup name="archwall_lod" lodDistance="0 40" static="true" nodeId="66">
+          <Shape name="archwall_lod0" translation="0 0.008 0" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="100" nodeId="67">
+            <Shape name="archwallConcrete" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="100" nodeId="68"/>
+            <Shape name="archwallGateConstruction" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="69 30 33 34 35 36 37 38 39 40" clipDistance="100" nodeId="69"/>
+            <Shape name="archwallGateConstruction_screws" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="120" nodeId="70"/>
+          </Shape>
+          <Shape name="archwall_lod1" translation="0 0.008 0" shapeId="23" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="700" nodeId="71">
+            <Shape name="archwallConcrete" rotation="-90 0 0" shapeId="24" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="700" nodeId="72"/>
+            <Shape name="archwallGateConstruction" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="73 41 43 46 49 52 55 58 61" clipDistance="700" nodeId="73"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="archwall_decal" translation="0 0.008 0" shapeId="25" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6" clipDistance="120" nodeId="74"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="75">
+        <Shape name="collision" shapeId="26" static="true" density="0" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="76"/>
+        <Shape name="tipCollision" shapeId="27" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="77"/>
+        <Shape name="tipCollisionWall" translation="0 0 -12.015664" shapeId="28" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="78"/>
+      </TransformGroup>
+      <Shape name="occluder" shapeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="1" nodeId="79"/>
+      <Shape name="occluderMeshDoor" translation="0 0 11.946612" shapeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="1" nodeId="80"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="78">
+      <Attribute name="collisionHeight" type="float" value="4"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

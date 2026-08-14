@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grass.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="22" filename="$data/foliage/meadow/meadowUS/grassCutLOD_fmask.png"/>
+    <File fileId="23" filename="$data/foliage/meadow/meadowUS/grassCutLOD_mask.png"/>
+    <File fileId="21" filename="$data/foliage/meadow/meadowUS/grassCutLOD_normal.png"/>
+    <File fileId="18" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_fmask.png"/>
+    <File fileId="19" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_mask.png"/>
+    <File fileId="17" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_normal.png"/>
+    <File fileId="14" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_fmask.png"/>
+    <File fileId="15" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_mask.png"/>
+    <File fileId="13" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_normal.png"/>
+    <File fileId="10" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_fmask.png"/>
+    <File fileId="11" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_mask.png"/>
+    <File fileId="9" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_normal.png"/>
+    <File fileId="25" filename="$data/foliage/meadow/meadowUS/meadowUSRollerLOD1_fmask.png"/>
+    <File fileId="26" filename="$data/foliage/meadow/meadowUS/meadowUSRollerLOD1_mask.png"/>
+    <File fileId="3" filename="$data/foliage/meadow/meadowUS/meadowUS_fmask.png"/>
+    <File fileId="7" filename="$data/foliage/meadow/meadowUS/meadowUS_mask.png"/>
+    <File fileId="2" filename="$data/foliage/meadow/meadowUS/meadowUS_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="20" filename="../meadowUS/grassCutLOD_diffuse.png"/>
+    <File fileId="16" filename="../meadowUS/grassHarvestReadyLOD_diffuse.png"/>
+    <File fileId="12" filename="../meadowUS/grassMiddleLOD_diffuse.png"/>
+    <File fileId="8" filename="../meadowUS/grassSmallLOD_diffuse.png"/>
+    <File fileId="24" filename="../meadowUS/meadowUSRollerLOD1_diffuse.png"/>
+    <File fileId="1" filename="../meadowUS/meadowUS_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grassCutLOD_mat" materialId="5" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="mMaskMap" fileId="23"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassHarvestReadyLOD_mat" materialId="6" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="mMaskMap" fileId="19"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassMiddleLOD_mat" materialId="7" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <Custommap name="mMaskMap" fileId="15"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassSmallLOD_mat" materialId="8" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="mMaskMap" fileId="11"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="9" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowUSRollerLOD1_mat" materialId="10" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="24"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="mMaskMap" fileId="26"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+      <CustomParameter name="aoIntensity" value="0 0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grass.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="grass" clipDistance="500" nodeId="22">
+      <TransformGroup name="LOD0" nodeId="24">
+        <Shape name="grassSmall" shapeId="1" nodeId="25" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="grassMiddle" shapeId="2" nodeId="26" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="harvestReady" shapeId="3" nodeId="27" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="cut" shapeId="4" nodeId="28" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="roller" shapeId="5" nodeId="29" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="30">
+        <Shape name="grassSmall" shapeId="6" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="grassMiddle" shapeId="7" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="harvestReady" shapeId="8" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="cut" shapeId="9" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="roller" shapeId="10" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

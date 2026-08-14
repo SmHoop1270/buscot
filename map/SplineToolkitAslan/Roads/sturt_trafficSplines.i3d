@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="TrafficSplines" version="1.6">
+  <Shapes>
+    <NurbsCurve name="sturt_center" shapeId="1" type="cubic" degree="3" form="open">
+      <cv c="524.3506 21.2984 -289.4883"/>
+      <cv c="485.5602 21.2649 -285.2418"/>
+      <cv c="446.4482 21.2840 -281.4964"/>
+    </NurbsCurve>
+  </Shapes>
+  <Scene>
+    <Shape name="sturt_center" shapeId="1" nodeId="1"/>
+  </Scene>
+  <UserAttributes>
+    <UserAttribute nodeId="1">
+      <Attribute name="maxSpeedScale" type="float" value="1.000"/>
+      <Attribute name="speedLimit" type="float" value="30.000"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

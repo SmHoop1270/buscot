@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="farmhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_object_farmhouse</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>store/store_farm_farmhouse.png</image>
+        <price>5000</price>
+        <dailyUpkeep>5</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+        <vertexBufferMemoryUsage>18432</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>5888</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+	 </storeData>
+
+    <base>
+        <filename>farm_farmhouse.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1"/>
+        </testAreas>
+		
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="testAreaStart1" endNode="testAreaEnd1"/>
+    </tipOcclusionUpdateAreas>
+
+    <clearAreas>
+        <clearArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1"/>
+    </clearAreas>
+
+    <leveling>
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" />
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" />
+    </indoorAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="testAreaStart1" endNode="testAreaEnd1"/>
+        </updateAreas>
+    </ai>
+
+    <farmhouse spawnNode="spawnPoint">
+        <sleeping triggerNode="sleepTrigger" cameraNode="sleepCameraNode"/>
+    </farmhouse>
+
+    <wardrobe triggerNode="wardrobeTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="sleepTriggerMarker" filename="$data/shared/assets/marker/markerIconSleep.i3d" adjustToGround="true"/>
+        <triggerMarker node="wardrobeTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d" adjustToGround="true"/>
+    </triggerMarkers>
+
+
+    <hotspots>
+        <hotspot type="FARM" teleportNode="spawnPoint" />
+    </hotspots>
+
+
+
+    <i3dMappings>
+        <i3dMapping id="sleepTrigger" node="0>2|0|0" />
+        <i3dMapping id="sleepTriggerMarker" node="0>2|0|1" />
+        <i3dMapping id="sleepCameraNode" node="0>2|0|2" />
+        <i3dMapping id="spawnPoint" node="0>2|0|3" />
+        <i3dMapping id="wardrobeTrigger" node="0>2|1|0" />
+        <i3dMapping id="wardrobeTriggerMarker" node="0>2|1|1" />
+        <i3dMapping id="clearAreaStart1" node="0>4|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>4|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>4|0|1" />
+        <i3dMapping id="levelAreaStart1" node="0>5|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>6|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+    </i3dMappings>
+</placeable>

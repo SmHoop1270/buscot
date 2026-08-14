@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+	<author>A2_ok</author>
+	<version>1.0.0.0</version>
+	<title>
+		<en>Straw Deco</en>
+		<fr>Déco En Paille</fr>
+		<de>Strohdeko</de>
+	</title>
+	<description>
+		<en><![CDATA[
+This prefab serves as a decoration for your map and building.]]></en>
+		<de><![CDATA[
+Dieses Fertigteil dient als Dekoration für Ihre Karte und Ihr Gebäude.]]></de>
+	</description>
+	<categories>
+		<category>Other</category>
+	</categories>
+	<iconFilename>icon_Straw.dds</iconFilename>
+	<prefabs>
+		<prefab name="Prefab" i3dFilename="straw.i3d"/>
+	</prefabs>
+</prefabDesc>

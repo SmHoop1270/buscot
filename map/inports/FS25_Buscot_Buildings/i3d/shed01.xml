@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+		<en>Shed 1</en>
+		<de>Halle 1</de>
+		</name>
+		<functions>
+            <function>$l10n_function_garage</function>
+        </functions>
+        <image>map/inports/FS25_Buscot_Buildings/store/store_shed01.dds</image>
+        <price>30000</price>
+		<dailyUpkeep>10</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+
+    </storeData>
+	
+	<base>
+		<filename>map/inports/FS25_Buscot_Buildings/i3d/shed01.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placeableType>placeable</placeableType>
+	
+	<placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+	<clearAreas>
+        <clearArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+    </clearAreas>
+	
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+	
+	<indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+	
+	<tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="indoorArea1Width" endNode="indoorArea1Height" />
+    </tipOcclusionUpdateAreas>
+	
+	<ai>
+        <updateAreas>
+            <updateArea startNode="indoorArea1Width" endNode="indoorArea1Height" />
+        </updateAreas>
+    </ai>
+
+
+<i3dMappings>
+    <i3dMapping id="shed01" node="0>"/>
+    <i3dMapping id="clearAreas" node="0>0"/>
+    <i3dMapping id="clearArea1Start" node="0>0|0"/>
+    <i3dMapping id="clearArea1Height" node="0>0|0|0"/>
+    <i3dMapping id="clearArea1Width" node="0>0|0|1"/>
+    <i3dMapping id="indoorAreas" node="0>1"/>
+    <i3dMapping id="indoorArea1Start" node="0>1|0"/>
+    <i3dMapping id="indoorArea1Height" node="0>1|0|0"/>
+    <i3dMapping id="indoorArea1Width" node="0>1|0|1"/>
+    <i3dMapping id="levelAreas" node="0>2"/>
+    <i3dMapping id="levelArea1Start" node="0>2|0"/>
+    <i3dMapping id="levelArea1Height" node="0>2|0|0"/>
+    <i3dMapping id="levelArea1Width" node="0>2|0|1"/>
+    <i3dMapping id="testAreas" node="0>3"/>
+    <i3dMapping id="testArea1Start" node="0>3|0"/>
+    <i3dMapping id="testArea1End" node="0>3|0|0"/>
+</i3dMappings>
+</placeable>

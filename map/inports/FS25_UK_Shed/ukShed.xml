@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="Workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>            
+           <en>UK Shed</en> 
+        </name>
+		<functions>
+            <function>$l10n_function_workshop</function>
+        </functions>
+        <image>map/inports/FS25_UK_Shed/store_FS25_UK_shed.dds</image>
+        <price>95000</price>
+        <dailyUpkeep>25</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>Lizard</brand>
+        <species>PLACEABLE</species>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <category>sheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>sheds</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>map/inports/FS25_UK_Shed/ukShed.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0" placementRotationSnapAngle="0">
+        <testAreas>
+            <testArea startNode="testAreaStart" endNode="testAreaEnd" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01"/>
+        </levelAreas>
+		
+		<paintAreas>
+			<paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="concrete"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+        </updateAreas>
+    </ai>
+	
+	<triggerMarkers>
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+    </triggerMarkers>
+	
+	<workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" sellTriggerNode="vehicleTrigger" ownWorkshop="false" mobileWorkshop="false" />
+    </workshop>
+	
+	<animatedObjects>
+        <animatedObject saveId="slideDoor01">
+            <animation duration="4">
+                <part node="doorLeft">
+                    <keyFrame time="0.0" translation="-2.44002008 -0.0540431 0.0688829"/>
+                    <keyFrame time="1.0" translation="-6.07447052 -0.0540431 0.0688829"/>
+                </part>
+				<part node="doorRight">
+                    <keyFrame time="0.0" translation="1.36600006 -0.0540431 0.0688829"/>
+                    <keyFrame time="1.0" translation="5.04900122 -0.0540431 0.0688829"/>
+                </part>
+            </animation>
+            <controls triggerNode="doorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" autoopen="false"/>
+			<sounds>
+                <moving linkNode="doorSound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="doorSound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="doorSound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+		
+		<animatedObject saveId="insideLights">
+            <animation duration="0.5">
+                <part node="fluorescentTube_01">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.1" visibility="true" />
+                </part>
+                <part node="fluorescentTube_02">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.2" visibility="true" />
+                </part>
+				<part node="fluorescentTube_03">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.3" visibility="true" />
+                </part>
+				<part node="fluorescentTube_04">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.4" visibility="true" />
+                </part>
+                <part node="fluorescentTube_05">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.5" visibility="true" />
+                </part>
+				<part node="fluorescentTube_06">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.6" visibility="true" />
+                </part>
+		  </animation>    
+                <controls triggerNode="lightsTrigger" posAction="ACTIVATE_HANDTOOL" posText="$l10n_action_lightOn" negText="$l10n_action_lightOut" />
+				<sounds>
+					<toggle template="switch01" innerRadius="20" outerRadius="500" pitchScale="0.5" volumeScale="2.62"/>
+				</sounds>
+        </animatedObject>
+	</animatedObjects>
+	
+    <i3dMappings>
+        
+		<!-- areas -->
+		<i3dMapping id="clearAreaStart01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>0|1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>0|1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>0|1|0|1" />
+		<i3dMapping id="testAreaStart" node="0>0|2|0" />
+        <i3dMapping id="testAreaEnd" node="0>0|2|0|0" />
+        <i3dMapping id="indoorAreaStart01" node="0>0|3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>0|3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>0|3|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart" node="0>0|4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd" node="0>0|4|0|0" />
+		<i3dMapping id="paintAreaStart01" node="0>0|5|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>0|5|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>0|5|0|1" />
+		
+		<!-- sliding door -->
+		<i3dMapping id="doorLeft" node="0>2|1" />
+		<i3dMapping id="doorRight" node="0>2|2" />
+		<i3dMapping id="doorSound" node="0>2|3" />
+		<i3dMapping id="doorTrigger" node="0>2|4" />
+		
+		<!-- lights -->
+		<i3dMapping id="fluorescentTube_01" node="0>3|1|0|0" />
+		<i3dMapping id="fluorescentTube_02" node="0>3|1|1|0" />
+		<i3dMapping id="fluorescentTube_03" node="0>3|1|2|0" />
+		<i3dMapping id="fluorescentTube_04" node="0>3|1|3|0" />
+		<i3dMapping id="fluorescentTube_05" node="0>3|1|4|0" />
+		<i3dMapping id="fluorescentTube_06" node="0>3|1|5|0" />
+		<i3dMapping id="lightsTrigger" node="0>3|1|7" />
+		
+		<!-- workshop -->
+		<i3dMapping id="vehicleTrigger" node="0>4|0" />
+		<i3dMapping id="playerTrigger" node="0>4|1" />
+		<i3dMapping id="markerWrench" node="0>4|2" />
+		
+    </i3dMappings>
+</placeable>

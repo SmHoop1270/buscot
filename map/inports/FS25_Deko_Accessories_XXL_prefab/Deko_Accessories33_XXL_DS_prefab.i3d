@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories33_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="22" filename="$data/maps/mapAS/textures/props/cliffs/horizontalRocks_diffuse.png"/>
+    <File fileId="23" filename="$data/maps/mapAS/textures/props/cliffs/horizontalRocks_normal.png"/>
+    <File fileId="24" filename="$data/maps/mapAS/textures/props/cliffs/horizontalRocks_specular.png"/>
+    <File fileId="14" filename="$data/maps/mapAS/textures/props/cliffs/rockDetail_normal.png"/>
+    <File fileId="10" filename="$data/maps/mapAS/textures/props/cliffs/rocksSet_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapAS/textures/props/cliffs/rocksSet_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapAS/textures/props/cliffs/rocksSet_specular.png"/>
+    <File fileId="30" filename="$data/maps/mapAS/textures/props/cliffs/verticalCliffsVar_diffuse.png"/>
+    <File fileId="31" filename="$data/maps/mapAS/textures/props/cliffs/verticalCliffsVar_normal.png"/>
+    <File fileId="32" filename="$data/maps/mapAS/textures/props/cliffs/verticalCliffsVar_specular.png"/>
+    <File fileId="26" filename="$data/maps/mapAS/textures/props/cliffs/verticalCliffs_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapAS/textures/props/cliffs/verticalCliffs_normal.png"/>
+    <File fileId="28" filename="$data/maps/mapAS/textures/props/cliffs/verticalCliffs_specular.png"/>
+    <File fileId="29" filename="$data/maps/mapAS/textures/terrain/forest01_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapAS/textures/terrain/grass01_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/textures/shared/props/rocks/modularRock01_animationArray.png"/>
+    <File fileId="1" filename="$data/maps/textures/shared/props/rocks/modularRock01_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/rocks/modularRock01_normal.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/rocks/modularRock01_specular.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/props/rocks/modularRock02_animationArray.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/props/rocks/rockDetail_normal.png"/>
+    <File fileId="20" filename="$data/maps/textures/shared/props/rocks/rocksSmall_alpha.png"/>
+    <File fileId="17" filename="$data/maps/textures/shared/props/rocks/rocksSmall_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/textures/shared/props/rocks/rocksSmall_height.png"/>
+    <File fileId="18" filename="$data/maps/textures/shared/props/rocks/rocksSmall_normal.png"/>
+    <File fileId="19" filename="$data/maps/textures/shared/props/rocks/rocksSmall_specular.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/rocks/sandSeaweed01_diffuse.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="horizontalRocks_mat" materialId="5" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <Custommap name="mMossDetail" fileId="13"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+      <CustomParameter name="mossLevel" value="0"/>
+    </Material>
+    <Material name="horizontalRocks_mat" materialId="6" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <Custommap name="mMossDetail" fileId="13"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="modularRock01_mat1" materialId="9" customShaderId="4" customShaderVariation="rockDetail">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMossDetail" fileId="7"/>
+      <Custommap name="mNormalDetail" fileId="8"/>
+      <CustomParameter name="mossLevel" value="0.875"/>
+    </Material>
+    <Material name="modularRock01_mat1" materialId="10" customShaderId="4" customShaderVariation="vertexAnimationTexture_rockDetail">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMossDetail" fileId="7"/>
+      <Custommap name="mNormalDetail" fileId="8"/>
+      <Custommap name="animationArray" fileId="16"/>
+      <CustomParameter name="mossLevel" value="0.875"/>
+    </Material>
+    <Material name="modularRock01_mat2" materialId="11" customShaderId="4" customShaderVariation="vertexAnimationTexture_rockDetail">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMossDetail" fileId="7"/>
+      <Custommap name="mNormalDetail" fileId="8"/>
+      <Custommap name="animationArray" fileId="9"/>
+      <CustomParameter name="mossLevel" value="0.875"/>
+    </Material>
+    <Material name="rocksSet_mat" materialId="12" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <Custommap name="mMossDetail" fileId="13"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+      <CustomParameter name="mossLevel" value="0"/>
+    </Material>
+    <Material name="rocksSet_mat" materialId="13" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <Custommap name="mMossDetail" fileId="13"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+      <CustomParameter name="mossLevel" value="0"/>
+      <CustomParameter name="heightMask" value="0.5"/>
+    </Material>
+    <Material name="rocksSet_mat" materialId="14" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <Custommap name="mMossDetail" fileId="13"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+      <CustomParameter name="mossLevel" value="0"/>
+      <CustomParameter name="heightMask" value="0.8"/>
+    </Material>
+    <Material name="rocksSmall_mat" materialId="15" customShaderId="4">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+    </Material>
+    <Material name="rocksSmallLOD_mat" materialId="16" customShaderId="4" customShaderVariation="customParallax_alphaMap">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="alphaMap" fileId="20"/>
+      <Custommap name="mParallaxMap" fileId="21"/>
+    </Material>
+    <Material name="verticalCliffs_mat" materialId="21" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+      <Custommap name="mMossDetail" fileId="29"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+    </Material>
+    <Material name="verticalCliffsVar_mat" materialId="22" customShaderId="4" customShaderVariation="rockDetail_terrainSampleVT">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+      <Custommap name="mMossDetail" fileId="29"/>
+      <Custommap name="mNormalDetail" fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories33_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Rock" translation="47.3356 -34.5547 -198.357" nodeId="112">
+      <TransformGroup name="horizontalRock01" lockedgroup="true" translation="47.5129 0 7.17877" lodDistance="0 45" clipDistance="300" nodeId="113">
+        <Shape name="LOD0" shapeId="1" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="LOD1" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="rockBig02" translation="-14.7026 0 -27.8353" rotation="-10.0346 7.87411 9.41988" scale="2 2 2" lodDistance="0 50" clipDistance="400" nodeId="116">
+        <Shape name="LOD0" shapeId="3" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="LOD1" shapeId="4" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="col" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="119" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="horizontalRock02" lockedgroup="true" translation="56.3894 1.14441e-05 6.90451" lodDistance="0 45" clipDistance="300" nodeId="120">
+        <Shape name="LOD0" shapeId="6" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="LOD1" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="rockSmall01" lockedgroup="true" translation="59.2013 0 -38.0197" rotation="-180 -56.8683 -180" clipDistance="175" nodeId="123">
+        <TransformGroup name="lod" lodDistance="0 25" nodeId="124">
+          <Shape name="LOD0" shapeId="8" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          <Shape name="LOD1" shapeId="9" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="10" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="127" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockSmall02" lockedgroup="true" translation="57.1567 -3.8147e-06 -41.3148" rotation="180 -15.4794 180" clipDistance="175" nodeId="128">
+        <TransformGroup name="lod" lodDistance="0 25" nodeId="129">
+          <Shape name="LOD0" shapeId="11" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          <Shape name="LOD1" shapeId="12" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="13" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="132" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockSmall03" lockedgroup="true" translation="53.4488 3.8147e-06 -38.6648" clipDistance="175" nodeId="133">
+        <TransformGroup name="lod" lodDistance="0 25" nodeId="134">
+          <Shape name="LOD0" shapeId="14" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          <Shape name="LOD1" shapeId="15" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="16" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="137" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockSmall04" lockedgroup="true" translation="39.2038 1.14441e-05 -37.1717" rotation="169.053 -60.4883 -173.07" clipDistance="175" nodeId="138">
+        <TransformGroup name="lod" lodDistance="0 25" nodeId="139">
+          <Shape name="LOD0" shapeId="17" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="14"/>
+          <Shape name="LOD1" shapeId="18" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="19" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="142" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockSmall05" lockedgroup="true" translation="59.5606 0 -42.8889" rotation="0 -64.0495 0" clipDistance="175" nodeId="143">
+        <TransformGroup name="lod" lodDistance="0 25" nodeId="144">
+          <Shape name="LOD0" shapeId="20" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="14"/>
+          <Shape name="LOD1" shapeId="21" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="22" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="147" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall01_lod" lockedgroup="true" translation="15.7377 0 -19.7485" lodDistance="0 8" clipDistance="35" nodeId="148">
+        <Shape name="LOD0" shapeId="23" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" shapeId="24" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall03_lod" lockedgroup="true" translation="12.6097 0 -16.4884" lodDistance="0 8" clipDistance="35" nodeId="151">
+        <Shape name="LOD0" shapeId="25" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" shapeId="26" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall05_lod" lockedgroup="true" translation="13.3897 0 -17.4951" lodDistance="0 8" clipDistance="35" nodeId="154">
+        <Shape name="LOD0" translation="0.001124 0 -0.002739" shapeId="27" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" translation="0.000146 0 -0.003687" shapeId="28" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall07_lod" lockedgroup="true" translation="16.156 0 -16.9426" clipDistance="35" nodeId="157">
+        <Shape name="LOD0" shapeId="29" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" shapeId="30" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="rockPoint01_PREFAB" lockedgroup="true" translation="-0.545601 -1.14441e-05 -24.0662" rotation="94.4171 10.9891 115.474" nodeId="160">
+        <TransformGroup name="horizontalRockBig_moss1" translation="3.8147e-06 -7.62939e-06 0" rotation="1.36604e-05 3.41509e-06 -2.56132e-06" scale="1 1.5 1" lodDistance="0 75" clipDistance="500" nodeId="161">
+          <Shape name="LOD0" rotation="-90 0 0" shapeId="31" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" rotation="-90 0 0" shapeId="32" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="col" rotation="-90 0 0" shapeId="33" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="164" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="rockBig02" translation="23.3276 -3.8147e-06 -20.5533" rotation="-2.12538e-27 3.51724 -2.06259e-19" lodDistance="0 50" clipDistance="400" nodeId="165">
+        <Shape name="LOD0" shapeId="3" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="LOD1" shapeId="4" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="col" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="168" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockMedium03" translation="-2.04798 0 -30.9127" rotation="-2.62125 -32.1182 0.457938" scale="2 2 2" lodDistance="0 30" clipDistance="200" nodeId="169">
+        <Shape name="LOD0" translation="-0.00010829 0 0" shapeId="34" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="LOD1" shapeId="35" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="col" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="172" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockMedium03" translation="10.6662 0 -20.5984" rotation="108.708 70.1338 99.0318" scale="1.23885 1.22189 1.23885" lodDistance="0 30" clipDistance="200" nodeId="173">
+        <Shape name="LOD0" translation="-0.00010829 0 0" shapeId="34" nodeId="174" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="LOD1" shapeId="35" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="col" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="176" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockMedium03" translation="6.53479 0 -29.6165" rotation="35.127 29.7066 6.70003" scale="1.23885 1.22189 1.23885" lodDistance="0 30" clipDistance="200" nodeId="177">
+        <Shape name="LOD0" translation="-0.00010829 0 0" shapeId="34" nodeId="178" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="LOD1" shapeId="35" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="col" shapeId="36" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="180" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockBig01" translation="15.8155 0 -23.0322" lodDistance="0 50" clipDistance="350" nodeId="181">
+        <Shape name="LOD0" shapeId="37" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="LOD1" shapeId="38" nodeId="183" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="col" shapeId="39" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="184" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall02_lod" lockedgroup="true" translation="16.5644 0 -18.1838" lodDistance="0 8" clipDistance="35" nodeId="185">
+        <Shape name="LOD0" shapeId="40" nodeId="186" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" shapeId="41" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall04_lod" lockedgroup="true" translation="15.1805 0 -19.0025" lodDistance="0 8" clipDistance="35" nodeId="188">
+        <Shape name="LOD0" shapeId="42" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" shapeId="43" nodeId="190" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="rocksSmall06_lod" lockedgroup="true" translation="19.463 0 -16.1576" lodDistance="0 8" clipDistance="35" nodeId="191">
+        <Shape name="LOD0" shapeId="44" nodeId="192" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="LOD1" shapeId="45" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="verticalCliff01" lockedgroup="true" translation="-10.8835 0 -40.2818" clipDistance="600" nodeId="194">
+        <TransformGroup name="lod" lodDistance="0 75" nodeId="195">
+          <Shape name="LOD0" shapeId="46" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="21"/>
+          <Shape name="LOD1" shapeId="47" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="21"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="48" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="198" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="verticalCliff02" lockedgroup="true" translation="-19.9049 3.8147e-06 -33.6289" clipDistance="400" nodeId="199">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="200">
+          <Shape name="LOD0" shapeId="49" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="21"/>
+          <Shape name="LOD1" shapeId="50" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="21"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="51" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="203" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="verticalCliffVar01" lockedgroup="true" translation="13.8222 -3.8147e-06 -41.0755" clipDistance="600" nodeId="204">
+        <TransformGroup name="lod" lodDistance="0 75" nodeId="205">
+          <Shape name="LOD0" shapeId="52" nodeId="206" castsShadows="true" receiveShadows="true" materialIds="22"/>
+          <Shape name="LOD1" shapeId="53" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="22"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="54" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="208" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="verticalCliffVar02" lockedgroup="true" translation="3.79136 3.8147e-06 -34.499" clipDistance="400" nodeId="209">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="210">
+          <Shape name="LOD0" shapeId="55" nodeId="211" castsShadows="true" receiveShadows="true" materialIds="22"/>
+          <Shape name="LOD1" shapeId="56" nodeId="212" castsShadows="true" receiveShadows="true" materialIds="22"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="57" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="213" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="horizontalRockBig" lockedgroup="true" translation="31.4094 3.8147e-06 -43.1394" clipDistance="500" nodeId="214">
+        <TransformGroup name="lod" lodDistance="0 75" nodeId="215">
+          <Shape name="LOD0" rotation="-90 0 0" shapeId="58" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="LOD1" rotation="-90 0 0" shapeId="59" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="60" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="218" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="horizontalRockSmall" lockedgroup="true" translation="23.3503 3.8147e-06 -34.1135" clipDistance="350" nodeId="219">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="220">
+          <Shape name="LOD0" rotation="-90 0 0" shapeId="61" nodeId="221" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="LOD1" rotation="-90 0 0" shapeId="62" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="63" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="223" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockBig01" lockedgroup="true" translation="30.0348 3.8147e-06 -29.779" clipDistance="350" nodeId="224">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="225">
+          <Shape name="LOD0" shapeId="37" nodeId="226" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="LOD1" shapeId="38" nodeId="227" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="39" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="228" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockBig02" lockedgroup="true" translation="31.2794 3.8147e-06 -26.569" clipDistance="400" nodeId="229">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="230">
+          <Shape name="LOD0" shapeId="64" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="LOD1" shapeId="4" nodeId="232" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="233" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockBig03" lockedgroup="true" translation="21.8827 3.8147e-06 -25.4978" clipDistance="400" nodeId="234">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="235">
+          <Shape name="LOD0" shapeId="65" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="LOD1" shapeId="66" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="67" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="238" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="rockBig04" lockedgroup="true" translation="18.3674 0 -32.1307" clipDistance="400" nodeId="239">
+        <TransformGroup name="lod" lodDistance="0 50" nodeId="240">
+          <Shape name="LOD0" shapeId="68" nodeId="241" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="LOD1" shapeId="69" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="70" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="243" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="115">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="122">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

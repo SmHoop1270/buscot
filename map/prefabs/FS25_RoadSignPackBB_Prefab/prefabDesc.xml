@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>BulletBill</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>UK Road Sign Pack</en>
+		<de>UK-Verkehrsschild-Paket</de>
+		<fr>Pack De Signalisation Routière Au Royaume-Uni</fr>		
+    </title>
+	
+	<iconFilename>icon.dds</iconFilename>
+	
+	<description>
+        <en>
+            <![CDATA[This pack contains a large collection of breakable UK road signs.
+
+- 8 Speed limit signs.
+- 15 Warning signs.
+- 31 Direction signs. (White, Green, Brown)
+- 5 Chevron signs.
+- 2 Road Bollards.
+- 2 Public Footpath signs.
+- 4 Infomation signs.
+- 1 County/Country sign.
+- 1 Village Entry sign.
+- 1 Gas Pipeline Marker.
+- 2 Blank signs.
+
+(Direction signs can be customised for each map makers requirements.)
+]]>
+        </en>
+        <de>
+            <![CDATA[Dieses Paket enthält eine große Sammlung zerbrechlicher britischer Verkehrszeichen.
+
+- 8 Geschwindigkeitsbegrenzungsschilder.
+- 15 Warnzeichen.
+- 31 Wegweiser. (Weiß, Grün, Braun)
+- 5 Chevron-Schilder.
+- 2 Straßenpoller.
+- 2 Schilder für öffentliche Fußwege.
+- 4 Hinweisschilder.
+- 1 Kreis-/Landzeichen.
+- 1 Ortseingangsschild.
+- 1 Gasleitungsmarker.
+- 2 Leere Schilder.
+
+(Wegweiser können für die Anforderungen jedes Kartenherstellers angepasst werden.)
+]]>
+        </de>
+        <fr>
+            <![CDATA[Ce pack contient une grande collection de panneaux de signalisation britanniques cassables.
+
+- 8 panneaux de limitation de vitesse.
+- 15 panneaux d'avertissement.
+- 31 panneaux de direction. (Blanc, Vert, Marron)
+- 5 chevrons.
+- 2 bornes routières.
+- 2 panneaux Sentier Public.
+- 4 panneaux d'information.
+- 1 panneau Comté/Pays.
+- 1 Panneau Entrée Village.
+- 1 marqueur de gazoduc.
+- 2 panneaux vierges.
+
+(Les panneaux de direction peuvent être personnalisés pour répondre aux exigences de chaque cartographe.)
+]]>
+        </fr>		
+		
+    </description>
+	
+	<categories>
+        <category>others</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="roadSignPackBB" i3dFilename="roadSignPackBB.i3d" />	
+    </prefabs>
+</prefabDesc>

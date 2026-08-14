@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>Aslan</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+		<de>Strommast Set</de>
+		<en>PowerPole Set</en>
+	</title>
+    <description>
+	<de><![CDATA[
+Dieses Set ist eine Sammlung der im Basisspiel enthaltenen Strommasten. Sie sind vorbereitet für das GE10 Script "Powerline Generator" von Aslan.
+]]>
+	</de>
+	<en><![CDATA[
+This set is a collection of the power poles included in the base game. They are prepared for the GE10 script "Powerline Generator" by Aslan.
+]]>
+	</en>
+    </description>
+	
+	<iconFilename>PowerPoles_icon.dds</iconFilename>
+    <prefabs>
+		<prefab name="FS25_PowerPoles_prefab" i3dFilename="PowerPoles.i3d" />
+    </prefabs>
+</prefabDesc>

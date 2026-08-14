@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationGeneric.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_normal.png"/>
+    <File fileId="4" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_specular.png"/>
+    <File fileId="8" filename="$data/placeables/shared/sellingStationGeneric/wheatBottom_diffuse.png"/>
+    <File fileId="9" filename="$data/placeables/shared/sellingStationGeneric/wheatBottom_normal.png"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="sellingStationGeneric_mat" materialId="28" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="wheatBottom_mat" materialId="7" specularColor="0.2 1 0" customShaderId="5">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationGeneric.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="grainRiverSilo01Triggers" nodeId="14">
+      <TransformGroup name="unloadStationTrailer" nodeId="15">
+        <Shape name="unloadNodeTrailer" shapeId="1" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="16" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="unloadMarkerTrailer" nodeId="17"/>
+        <TransformGroup name="unloadNodeAI" nodeId="18"/>
+        <Shape name="palletTrigger" translation="0 0.914768 0" shapeId="2" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="baleTrigger" translation="0 1.07303 0" shapeId="2" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="aiSpline" translation="29.8106 -0.396918 26.4834" rotation="0 -90 0" shapeId="3" nodeId="21" castsShadows="false" receiveShadows="false"/>
+      </TransformGroup>
+      <TransformGroup name="teleportNode" nodeId="23"/>
+      <Shape name="grainGate" rotation="0 -90 0" shapeId="4" clipDistance="300" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="28">
+        <Shape name="seedPlane" translation="0 0.0625 0" shapeId="5" clipDistance="100" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="colShape" shapeId="6" static="true" collisionFilterGroup="0x601c" collisionFilterMask="0xfffffbff" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="35">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

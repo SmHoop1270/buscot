@@ -1,0 +1,255 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/farmlands.xsd">
+    <farmlands infoLayer="farmlands" pricePerHa="40000">
+        <farmland id="1" priceScale="1" npcName="FARMER" showOnFarmlandsScreen="false"/>
+        <farmland id="2" priceScale="1" npcName="FARMER" name="2 Backfield"/>
+        <farmland id="3" priceScale="1" npcName="FARMER" name="3 PitMeadow"/>
+        <farmland id="4" priceScale="1" npcName="FARMER" name="4 HillTop"/>
+        <farmland id="5" priceScale="1" npcName="FARMER" name="5 Top"/>
+        <farmland id="6" priceScale="1" npcName="FARMER" name="6 Cider"/>
+        <farmland id="7" priceScale="1" npcName="FARMER" name="7 OrchardWay"/>
+        <farmland id="8" priceScale="1" npcName="FARMER" name="8 MillMeadow"/>
+        <farmland id="9" priceScale="1" npcName="FARMER" name="9 Quarry"/>
+        <farmland id="10" priceScale="1" npcName="FARMER" name="10 OakTree Farm"/>
+        <farmland id="11" priceScale="1" npcName="FARMER" name="11 Lower"/>
+        <farmland id="12" priceScale="1" npcName="FARMER" name="12 Ten Acre"/>
+        <farmland id="13" priceScale="1" npcName="FARMER" showOnFarmlandsScreen="false"/>
+        <farmland id="14" priceScale="1" npcName="FARMER" name="14 Four Acres"/>
+        <farmland id="15" priceScale="1" npcName="FARMER" name="15 LowerCroft"/>
+        <farmland id="16" priceScale="1" npcName="FARMER" name="16 Grange"/>
+        <farmland id="17" priceScale="1" npcName="FARMER" name="17 Bottom"/>
+        <farmland id="18" priceScale="1" npcName="FARMER" name="18 BackField"/>
+        <farmland id="19" priceScale="1" npcName="FARMER" name="19 ArthursBank"/>
+        <farmland id="20" priceScale="1" npcName="FARMER" name="20 Thames Farm"/>
+        <farmland id="21" priceScale="1" npcName="FARMER" name="21 LowerMeadow"/>
+        <farmland id="22" priceScale="1" npcName="FARMER" name="22 Backside"/>
+        <farmland id="23" priceScale="1" npcName="FARMER" name="23 Lickey End"/>
+        <farmland id="24" priceScale="1" npcName="FARMER" showOnFarmlandsScreen="false"/>
+        <farmland id="25" priceScale="1" npcName="FARMER" name="25 Shitterton"/>
+        <farmland id="26" priceScale="1" npcName="FARMER" name="26 BarnGround"/>
+        <farmland id="27" priceScale="1" npcName="FARMER" name="27 BigBank"/>
+        <farmland id="28" priceScale="1" npcName="FARMER" name="28 Longlands"/>
+        <farmland id="29" priceScale="1" npcName="FARMER" name="29 TenAcre"/>
+        <farmland id="30" priceScale="1" npcName="FARMER" name="30 Wheatland"/>
+        <farmland id="31" priceScale="1" npcName="FARMER" name="31 GreatField"/>
+        <farmland id="32" priceScale="1" npcName="FARMER" name="32 SoggyBottom"/>
+        <farmland id="33" priceScale="1" npcName="FARMER" name="33 MistyBottom"/>
+        <farmland id="34" priceScale="1" npcName="FARMER" name="34 Lambs"/>
+        <farmland id="35" priceScale="1" npcName="FARMER" name="35 BunkerHill"/>
+        <farmland id="36" priceScale="1" npcName="FARMER" name="36 Boscott’s Piece"/>
+        <farmland id="37" priceScale="1" npcName="FARMER" name="37 NobEnd"/>
+        <farmland id="38" priceScale="1" npcName="FARMER" name="38 Blenheim"/>
+        <farmland id="39" priceScale="1" npcName="FARMER"name="39 TopField"/>
+        <farmland id="40" priceScale="1" npcName="FARMER" name="40 Wallop"/>
+        <farmland id="41" priceScale="1" npcName="FARMER" name="Foxglove Farm" />
+        <farmland id="42" priceScale="1" npcName="FARMER" name="42 Plantation"/>
+        <farmland id="43" priceScale="1" npcName="FARMER" name="43 HollowFurz"/>
+        <farmland id="44" priceScale="1" npcName="FARMER" name="44 Avenue"/>
+        <farmland id="45" priceScale="1" npcName="FARMER" name="45 MeadowPiece"/>
+        <farmland id="46" priceScale="1" npcName="FARMER" name="46 Ridge"/>
+        <farmland id="47" priceScale="1" npcName="FARMER" name="Orchard Farm"/>
+        <farmland id="48" priceScale="1" npcName="FARMER" name="48 Clay Pit"/>
+        <farmland id="49" priceScale="1" npcName="FARMER" name="Moon Farm"/>
+        <farmland id="50" priceScale="1" npcName="FARMER" name="50 Swifts"/>
+        <farmland id="51" priceScale="1" npcName="FARMER" name="51 Rounds" />
+        <farmland id="52" priceScale="1" npcName="FARMER" name="52 Barrow"/>
+        <farmland id="53" priceScale="1" npcName="FARMER" name="53 TittyHo"/>
+        <farmland id="54" priceScale="1" npcName="FARMER" name="54 Moot"/>
+        <farmland id="55" priceScale="1" npcName="FARMER" name="55 Dockens"/>
+        <farmland id="56" priceScale="1" npcName="FARMER" name="56 Furlong"/>
+        <farmland id="57" priceScale="1" npcName="FARMER" name="57 OldPark"/>
+        <farmland id="58" priceScale="1" npcName="FARMER" name="58 SladeMeadow"/>
+        <farmland id="59" priceScale="1" npcName="FARMER" name="59 LittleLey"/>
+        <farmland id="60" priceScale="1" npcName="FARMER" name="60 Chaple Leaz"/>
+        <farmland id="61" priceScale="1" npcName="FARMER" name="61 WoodBank"/>
+        <farmland id="62" priceScale="1" npcName="FARMER" name="62 ThePit"/>
+        <farmland id="63" priceScale="1" npcName="FARMER" name="63 DixesPit"/>
+        <farmland id="64" priceScale="1" npcName="FARMER" name="64 Fallow"/>
+        <farmland id="65" priceScale="1" npcName="FARMER" name="65 Hagg"/>
+        <farmland id="66" priceScale="1" npcName="FARMER" name="66 Topper" />
+        <farmland id="67" priceScale="1" npcName="FARMER" name="67 RiverBottom"/>
+        <farmland id="68" priceScale="1" npcName="FARMER" name="68 Rockery"/>
+        <farmland id="69" priceScale="1" npcName="FARMER" name="69 Mound"/>
+        <farmland id="70" priceScale="1" npcName="FARMER" name="70 Pig & Whistle"/>
+        <farmland id="71" priceScale="1" npcName="FARMER" name="71 Park"/>
+        <farmland id="72" priceScale="1" npcName="FARMER" name="72 Furlong"/>
+        <farmland id="73" priceScale="1" npcName="FARMER" name="73 Chaple"/>
+        <farmland id="74" priceScale="1" npcName="FARMER" name="74 Coney"/>
+        <farmland id="75" priceScale="1" npcName="FARMER" name="75 Dickens"/>
+        <farmland id="76" priceScale="1" npcName="FARMER" name="76 Long Meadow"/>
+        <farmland id="77" priceScale="1" npcName="FARMER" name="77 Grove"/>
+        <farmland id="78" priceScale="1" npcName="FARMER" name="78 Ridgeway"/>
+        <farmland id="79" priceScale="1" npcName="FARMER" name="79 Coleshill"/>
+        <farmland id="80" priceScale="1" npcName="FARMER" name="80 Hay"/>
+        <farmland id="81" priceScale="1" npcName="FARMER" name="81 Church"/>
+        <farmland id="82" priceScale="1" npcName="FARMER" name="82 LittlePark"/>
+        <farmland id="83" priceScale="1" npcName="FARMER" name="83 10Acre" />
+        <farmland id="84" priceScale="1" npcName="FARMER" name="84 LittleMeadow"/>
+        <farmland id="85" priceScale="1" npcName="FARMER" name="85 CowPasture"/>
+        <farmland id="86" priceScale="1" npcName="FARMER" name="86 TheGallows"/>
+        <farmland id="87" priceScale="1" npcName="FARMER" name="87 Alder"/>
+        <farmland id="88" priceScale="1" npcName="FARMER" name="88 BadgersRake"/>
+        <farmland id="89" priceScale="1" npcName="FARMER" name="89 BarnCroft"/>
+        <farmland id="90" priceScale="1" npcName="FARMER" name="90 Babbington"/>
+        <farmland id="91" priceScale="1" npcName="FARMER" name="91 Copes"/>
+        <farmland id="92" priceScale="1" npcName="FARMER" name="92 BullDow"/>
+        <farmland id="93" priceScale="1" npcName="FARMER" name="93 BrookCroft"/>
+        <farmland id="94" priceScale="1" npcName="FARMER" name="94 ChurchHay"/>
+        <farmland id="95" priceScale="1" npcName="FARMER" name="95 Clover"/>
+        <farmland id="96" priceScale="1" npcName="FARMER" name="96 HalfAcre"/>
+        <farmland id="97" priceScale="1" npcName="FARMER" name="97 TopHay"/>
+        <farmland id="98" priceScale="1" npcName="FARMER" name="98 HangmanTree"/>
+        <farmland id="99" priceScale="1" npcName="FARMER" name="Rowlease Farm"/>
+        <farmland id="100" priceScale="1" npcName="FARMER" name="100 HorseMeadow"/>
+        <farmland id="101" priceScale="1" npcName="FARMER" name="101 Hurst"/>
+        <farmland id="102" priceScale="1" npcName="FARMER" name="102 LeechMeadow"/>
+        <farmland id="103" priceScale="1" npcName="FARMER" name="103 TinyPiece"/>
+        <farmland id="104" priceScale="1" npcName="FARMER" name="104 Backside"/>
+        <farmland id="105" priceScale="1" npcName="FARMER" name="105 Meres"/>
+        <farmland id="106" priceScale="1" npcName="FARMER" name="106 Mertyle Farm"/>
+        <farmland id="107" priceScale="1" npcName="FARMER" name="107 MiddlePasture"/>
+        <farmland id="108" priceScale="1" npcName="FARMER" name="108 TheOaks"/>
+        <farmland id="109" priceScale="1" npcName="FARMER" name="109 ParsonsHay"/>
+        <farmland id="110" priceScale="1" npcName="FARMER" name="110 PitchHill"/>
+        <farmland id="111" priceScale="1" npcName="FARMER" name="111 Quillet"/>
+        <farmland id="112" priceScale="1" npcName="FARMER" name="112 Rabbit"/>
+        <farmland id="113" priceScale="1" npcName="FARMER" name="113 Pingles"/>
+        <farmland id="114" priceScale="1" npcName="FARMER" name="114 Rye"/>
+        <farmland id="115" priceScale="1" npcName="FARMER" name="115 SheepCot"/>
+        <farmland id="116" priceScale="1" npcName="FARMER" name="116 Sherlocks Farm"/>
+        <farmland id="117" priceScale="1" npcName="FARMER" name="117 RushCroft"/>
+        <farmland id="118" priceScale="1" npcName="FARMER" name="118 OldHall"/>
+        <farmland id="119" priceScale="1" npcName="FARMER" name="119 SnigLane"/>
+        <farmland id="120" priceScale="1" npcName="FARMER" name="120 Square"/>
+        <farmland id="121" priceScale="1" npcName="FORESTER" name="121 Slinket"/>
+		<farmland id="122" priceScale="1" npcName="FORESTER" name="122 Seven Nobles"/>
+		<farmland id="123" priceScale="1" npcName="FORESTER" name="123 SaughallWay"/>
+		<farmland id="124" priceScale="1" npcName="FORESTER" name="124 LittleOaks"/>
+		<farmland id="125" priceScale="1" npcName="FORESTER" name="125 Ox Holme"/>
+		<farmland id="126" priceScale="1" npcName="FORESTER" name="126 HollowBrook"/>
+		<farmland id="127" priceScale="1" npcName="FORESTER" name="127 FoggyBottom"/>
+		<farmland id="128" priceScale="1" npcName="FORESTER" name="128 PurtonTop"/>
+		<farmland id="129" priceScale="1" npcName="FORESTER" name="129 Cherry"/>
+		<farmland id="130" priceScale="1" npcName="FORESTER" name="130 Willow"/>
+		<farmland id="131" priceScale="1" npcName="FORESTER" name="131 Comb"/>
+		<farmland id="132" priceScale="1" npcName="FORESTER" name="132 Norton"/>
+		<farmland id="133" priceScale="1" npcName="FORESTER" name="133 Coppice"/>
+		<farmland id="134" priceScale="1" npcName="FORESTER" name="134 Firs"/>
+		<farmland id="135" priceScale="1" npcName="FORESTER" name="135 Wield"/>
+		<farmland id="136" priceScale="1" npcName="FORESTER" name="136 Elms"/>
+		<farmland id="137" priceScale="1" npcName="FORESTER" name="137 Fyfield"/>
+		<farmland id="138" priceScale="1" npcName="FORESTER" name="138 GreenMeadow"/>
+		<farmland id="139" priceScale="1" npcName="FORESTER" name="139 20 Acre"  />
+		<farmland id="140" priceScale="1" npcName="FORESTER" name="140 LewBottom"/>
+		<farmland id="141" priceScale="1" npcName="FORESTER" name="141 ThruppChase"/>
+		<farmland id="142" priceScale="1" npcName="FORESTER" name="142 TinyPig"/>
+		<farmland id="143" priceScale="1" npcName="FORESTER" name="143 Pusey"/>
+		<farmland id="144" priceScale="1" npcName="FORESTER" name="144 BellEnd"/>
+		<farmland id="145" priceScale="1" npcName="FORESTER" name="145 Ugley"/>
+		<farmland id="146" priceScale="1" npcName="FORESTER" name="146 Wikfield"/>
+		<farmland id="147" priceScale="1" npcName="FORESTER" name="147 Aston"/> 
+		<farmland id="148" priceScale="1" npcName="FORESTER" name="148 DellyEnd"/>
+		<farmland id="149" priceScale="1" npcName="FORESTER" name="149 Fawler"/>
+		<farmland id="150" priceScale="1" npcName="FORESTER" name="150 Fernham"/>
+    <farmland id="151" priceScale="1" npcName="FORESTER" name="151 Sarsdon"/>
+    <farmland id="152" priceScale="1" npcName="FORESTER" name="152 EastEnd"/>
+    <farmland id="153" priceScale="1" npcName="FORESTER" name="153 Cote"/>
+    <farmland id="154" priceScale="1" npcName="FORESTER" name="Thames Farm"/>
+    <farmland id="155" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="156" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="157" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="158" priceScale="1" npcName="FORESTER" name="Animal Market" />
+    <farmland id="159" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="160" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="161" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="162" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="163" priceScale="1" npcName="FORESTER" name="163 Fulwell"/>
+    <farmland id="164" priceScale="1" npcName="FORESTER" name="Crabtree Farm"  />
+    <farmland id="165" priceScale="1" npcName="FORESTER" name="Buscot Park Estate" />
+    <farmland id="166" priceScale="1" npcName="FORESTER" name="166 Back Meadow" />
+    <farmland id="167" priceScale="1" npcName="FORESTER" name="167 LowerSwell" />
+    <farmland id="168" priceScale="1" npcName="FORESTER" name="Sturt Farm" />
+    <farmland id="169" priceScale="1" npcName="FORESTER" name="Chase Farm" />
+    <farmland id="170" priceScale="1" npcName="FORESTER" name="170 Paddock" />
+    <farmland id="171" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
+    <farmland id="172" priceScale="1" npcName="FORESTER" name="Edwards Tractor Sales"/>
+    <farmland id="173" priceScale="1" npcName="FORESTER" name="Glebe Farm" />
+    <farmland id="174" priceScale="1" npcName="FORESTER" />
+    <farmland id="175" priceScale="1" npcName="FORESTER" />
+    <farmland id="176" priceScale="1" npcName="FORESTER" />
+    <farmland id="177" priceScale="1" npcName="FORESTER" />
+    <farmland id="178" priceScale="1" npcName="FORESTER" />
+    <farmland id="179" priceScale="1" npcName="FORESTER" />
+    <farmland id="180" priceScale="1" npcName="FORESTER" />
+    <farmland id="181" priceScale="1" npcName="FORESTER" />
+    <farmland id="182" priceScale="1" npcName="FORESTER" />
+    <!--<farmland id="183" priceScale="1" npcName="FORESTER" />
+    <farmland id="184" priceScale="1" npcName="FORESTER" />
+    <farmland id="185" priceScale="1" npcName="FORESTER" />
+    <farmland id="186" priceScale="1" npcName="FORESTER" />
+    <farmland id="187" priceScale="1" npcName="FORESTER" />
+    <farmland id="188" priceScale="1" npcName="FORESTER" />
+    <farmland id="189" priceScale="1" npcName="FORESTER" />
+    <farmland id="190" priceScale="1" npcName="FORESTER" />
+    <farmland id="191" priceScale="1" npcName="FORESTER" />
+    <farmland id="192" priceScale="1" npcName="FORESTER" />
+    <farmland id="193" priceScale="1" npcName="FORESTER" />
+    <farmland id="194" priceScale="1" npcName="FORESTER" />
+    <farmland id="195" priceScale="1" npcName="FORESTER" />
+    <farmland id="196" priceScale="1" npcName="FORESTER" />
+    <farmland id="197" priceScale="1" npcName="FORESTER" />
+    <farmland id="198" priceScale="1" npcName="FORESTER" />
+    <farmland id="199" priceScale="1" npcName="FORESTER" /> -->
+    <!-- <farmland id="200" priceScale="1" npcName="FORESTER" /> -->
+<!--     <farmland id="201" priceScale="1" npcName="FORESTER" />
+    <farmland id="202" priceScale="1" npcName="FORESTER" />
+    <farmland id="203" priceScale="1" npcName="FORESTER" />
+    <farmland id="204" priceScale="1" npcName="FORESTER" />
+    <farmland id="205" priceScale="1" npcName="FORESTER" />
+    <farmland id="206" priceScale="1" npcName="FORESTER" />
+    <farmland id="207" priceScale="1" npcName="FORESTER" />
+    <farmland id="208" priceScale="1" npcName="FORESTER" />
+    <farmland id="209" priceScale="1" npcName="FORESTER" />
+    <farmland id="210" priceScale="1" npcName="FORESTER" />
+    <farmland id="211" priceScale="1" npcName="FORESTER" />
+    <farmland id="212" priceScale="1" npcName="FORESTER" />
+    <farmland id="213" priceScale="1" npcName="FORESTER" />
+    <farmland id="214" priceScale="1" npcName="FORESTER" />
+    <farmland id="215" priceScale="1" npcName="FORESTER" />
+    <farmland id="216" priceScale="1" npcName="FORESTER" />
+    <farmland id="217" priceScale="1" npcName="FORESTER" />
+    <farmland id="218" priceScale="1" npcName="FORESTER" />
+    <farmland id="219" priceScale="1" npcName="FORESTER" />
+    <farmland id="220" priceScale="1" npcName="FORESTER" />
+    <farmland id="221" priceScale="1" npcName="FORESTER" />
+    <farmland id="222" priceScale="1" npcName="FORESTER" />
+    <farmland id="223" priceScale="1" npcName="FORESTER" />
+    <farmland id="224" priceScale="1" npcName="FORESTER" />
+    <farmland id="225" priceScale="1" npcName="FORESTER" />
+    <farmland id="226" priceScale="1" npcName="FORESTER" />
+    <farmland id="227" priceScale="1" npcName="FORESTER" />
+    <farmland id="228" priceScale="1" npcName="FORESTER" />
+    <farmland id="229" priceScale="1" npcName="FORESTER" />
+    <farmland id="230" priceScale="1" npcName="FORESTER" />
+    <farmland id="231" priceScale="1" npcName="FORESTER" />
+    <farmland id="232" priceScale="1" npcName="FORESTER" />
+    <farmland id="233" priceScale="1" npcName="FORESTER" />
+    <farmland id="234" priceScale="1" npcName="FORESTER" />
+    <farmland id="235" priceScale="1" npcName="FORESTER" />
+    <farmland id="236" priceScale="1" npcName="FORESTER" />
+    <farmland id="237" priceScale="1" npcName="FORESTER" />
+    <farmland id="238" priceScale="1" npcName="FORESTER" />
+    <farmland id="239" priceScale="1" npcName="FORESTER" />
+    <farmland id="240" priceScale="1" npcName="FORESTER" />
+    <farmland id="241" priceScale="1" npcName="FORESTER" />
+    <farmland id="242" priceScale="1" npcName="FORESTER" />
+    <farmland id="243" priceScale="1" npcName="FORESTER" />
+    <farmland id="244" priceScale="1" npcName="FORESTER" />
+    <farmland id="245" priceScale="1" npcName="FORESTER" />
+    <farmland id="246" priceScale="1" npcName="FORESTER" />
+    <farmland id="247" priceScale="1" npcName="FORESTER" />
+    <farmland id="248" priceScale="1" npcName="FORESTER" />
+    <farmland id="249" priceScale="1" npcName="FORESTER" />
+    <farmland id="250" priceScale="1" npcName="FORESTER" />  -->
+		</farmlands> 
+</map>

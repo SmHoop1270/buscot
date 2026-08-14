@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="shop.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/assets/marker/markerIconShopping.i3d"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="264" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shop.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="vehicleShopTrigger" translation="-8.85892 -1.17549e-07 19.4049" rotation="-7.60258e-07 90 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" clipDistance="100000" nodeId="226288" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="264">
+      <ReferenceNode name="markerIconShopping" referenceId="2" nodeId="226292"/>
+      <TransformGroup name="vehicleShopPlayerSpawn" translation="-1.65498e-06 -0.000488282 2.5" rotation="-1.10402e-14 60 -2.30303e-08" clipDistance="100000" nodeId="226295"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="226288">
+      <Attribute name="onCreate" type="scriptCallback" value="ShopTrigger.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

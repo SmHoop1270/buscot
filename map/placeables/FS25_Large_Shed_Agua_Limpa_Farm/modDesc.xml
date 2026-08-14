@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="109">
+    <author>Andrade ML / Renegados Modding</author>
+    <contributors>Gian FS, Frits</contributors>
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Large Shed Água Limpa Farm</en>
+        <de>Großer Bauernhof Água Limpa Schuppen</de>
+        <fr>Grand Hangar De La Ferme Água Limpa</fr>
+        <br>Galpão Grande Fazenda Água Limpa</br>
+    </title>
+
+<description>
+<en>
+<![CDATA[Large Shed Água Limpa Farm
+Spacious shed ideal for storing machines, implements, and supplies, providing practicality and organization for your farm.
+
+ - Price: $90.000 - 92.000
+ - Color configuration.]]>
+</en>
+<de>
+<![CDATA[Großer Bauernhof Água Limpa Schuppen
+Geräumiger Schuppen, ideal zum Unterstellen von Maschinen, Geräten und Materialien, der mehr Komfort und Ordnung auf Ihrem Hof bietet.
+
+ - Preis: 90.000 - 92.000 €
+ - farb-Konfiguration.]]>
+</de>
+<fr>
+<![CDATA[Grand hangar de la ferme Água Limpa
+Hangar spacieux idéal pour abriter machines, outils et fournitures, offrant praticité et organisation pour votre ferme.
+
+ - Prix : 90.000 - 92.000 €
+ - Configuration de la couleur.]]>
+</fr>
+<br>
+<![CDATA[Galpão Grande Fazenda Água Limpa
+Galpão amplo ideal para guardar máquinas, implementos e insumos, oferecendo praticidade e organização para sua fazenda.
+
+ - Preço: $90.000 - 92.000
+ - Configuração de cor.]]>
+</br>
+    </description>	
+
+    <iconFilename>icon_largeShedAguaLimpaFarm.dds</iconFilename>
+	
+    <multiplayer supported="true"/>
+    
+    <storeItems>
+        <storeItem xmlFilename="xml/largeShedAguaLimpaFarm.xml"/>
+        <storeItem xmlFilename="xml/largeShedAguaLimpaFarm_Workshop.xml"/>
+    </storeItems>
+
+    <l10n>
+		<text name="object_largeShedAguaLimpaFarm"> 
+            <en>Large Shed Água Limpa Farm</en>
+            <de>Großer Bauernhof Água Limpa Schuppen</de>
+            <fr>Grand Hangar De La Ferme Água Limpa</fr>
+            <br>Galpão Grande Fazenda Água Limpa</br>
+        </text>
+	</l10n>
+</modDesc>

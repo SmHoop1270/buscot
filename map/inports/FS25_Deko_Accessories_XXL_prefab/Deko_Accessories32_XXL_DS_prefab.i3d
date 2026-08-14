@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories32_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="19" filename="$data/maps/mapAS/textures/props/roadArrows/roadArrowLeft.i3d"/>
+    <File fileId="20" filename="$data/maps/mapAS/textures/props/roadArrows/roadArrowRight.i3d"/>
+    <File fileId="18" filename="$data/maps/mapAS/textures/props/roadArrows/roadArrowStraight.i3d"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/buildings/infrastructure/roadsSigns_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/buildings/infrastructure/roadsSigns_normal.png"/>
+    <File fileId="7" filename="$data/maps/mapEU/textures/buildings/infrastructure/roadsSigns_specular.png"/>
+    <File fileId="21" filename="$data/maps/mapEU/textures/props/parkingLines_diffuse.png"/>
+    <File fileId="22" filename="$data/maps/mapEU/textures/props/parkingLines_normal.png"/>
+    <File fileId="23" filename="$data/maps/mapEU/textures/props/parkingLines_specular.png"/>
+    <File fileId="8" filename="$data/maps/mapEU/textures/props/puddles/largePuddle_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/puddles/largePuddle_mask.png"/>
+    <File fileId="9" filename="$data/maps/mapEU/textures/props/puddles/largePuddle_normal.png"/>
+    <File fileId="10" filename="$data/maps/mapEU/textures/props/puddles/largePuddle_specular.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/puddles/smallPuddle_diffuse.png"/>
+    <File fileId="17" filename="$data/maps/mapEU/textures/props/puddles/smallPuddle_mask.png"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/puddles/smallPuddle_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/puddles/smallPuddle_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/shared/puddles/ripples_mask.png"/>
+    <File fileId="4" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="11" filename="$data/shaders/puddleShader.xml"/>
+    <File fileId="1" filename="textures/asphaltRoadsSigns_diffuse.png"/>
+    <File fileId="2" filename="textures/asphaltRoadsSigns_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="asphaltRoadsSigns_mat" materialId="10556" specularColor="0.164706 1 0" alphaBlending="true" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="parkingLines_mat" materialId="10557" alphaBlending="true" customShaderId="4">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="roadsSigns_mat" materialId="10558">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="smallPuddle_mat" materialId="15431" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="mHeightMask" fileId="12"/>
+      <Custommap name="mRippleMask" fileId="13"/>
+      <CustomParameter name="waterColor" value="0.274 0.251 0.278"/>
+      <CustomParameter name="waterOpacity" value="0.4"/>
+      <CustomParameter name="rippleUVCoords" value="3.5 1"/>
+    </Material>
+    <Material name="smallPuddle_mat" materialId="15435" customShaderId="11">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="mHeightMask" fileId="17"/>
+      <Custommap name="mRippleMask" fileId="13"/>
+      <CustomParameter name="waterColor" value="0.274 0.251 0.278"/>
+      <CustomParameter name="waterOpacity" value="0.4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories32_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Groundi Decals2" translation="-159.089 -34.5547 -78.4819" nodeId="10571">
+      <Shape name="zone50" translation="7.46249 0 3.43879" rotation="0 -90 0" scale="3.005 2.19097 2.02016" shapeId="1" clipDistance="80" nodeId="10573" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <Shape name="parkingYellow" translation="4.83591 0 -5.01414" rotation="-3.79957e-09 90 0" shapeId="2" clipDistance="65" nodeId="10575" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <Shape name="zone30" translation="7.6384 3.8147e-06 -1.18958" rotation="0 -90 0" scale="3.882 3.06755 2.89674" shapeId="3" clipDistance="80" nodeId="10572" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <Shape name="parkingWhiteBig" translation="5.9641 0 -4.33524" rotation="3.64247e-06 -90 0" shapeId="4" clipDistance="65" nodeId="10574" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <Shape name="busStopDecal02" translation="2.23547 0.188808 -7.57079" rotation="1.73028e-05 90 0" shapeId="5" clipDistance="250" nodeId="10576" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10558"/>
+      <Shape name="decalZebra06" translation="4.16559 0.132935 1.39037" rotation="-180 -0 -180" shapeId="6" clipDistance="500" nodeId="10577" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10558"/>
+      <Shape name="pedestrian" translation="9.71436 -3.8147e-06 -2.29562" rotation="0 -90 0" shapeId="7" clipDistance="70" nodeId="10578" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <Shape name="largePuddleDecal" translation="10.8533 0 -5.11189" shapeId="8" clipDistance="60" nodeId="15434" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15431"/>
+      <Shape name="smallPuddleDecal" lockedgroup="true" translation="11.6905 3.8147e-06 -2.51437" shapeId="9" clipDistance="60" nodeId="15438" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15435"/>
+      <Shape name="parkingWhiteSmall" translation="9.13522 -3.8147e-06 3.0548" shapeId="10" clipDistance="65" nodeId="10579" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <Shape name="parkingYellow" translation="9.77618 0 3.07034" rotation="-180 -0 180" shapeId="2" clipDistance="65" nodeId="10580" castsShadows="true" receiveShadows="true" materialIds="10556"/>
+      <ReferenceNode name="roadArrowStraight" translation="10.6404 0 3.81019" rotation="-1.37026e-06 -0 2.72414e-05" scale="1.25 1 1.25" referenceId="18" nodeId="10584"/>
+      <TransformGroup name="StraighLeft" lockedgroup="true" translation="12.1159 -3.8147e-06 3.76007" rotation="4.46236e-05 90 0" nodeId="10585">
+        <ReferenceNode name="roadArrowStraight" rotation="0 -90 0" scale="1.25 1 1.25" referenceId="18" nodeId="10586"/>
+        <ReferenceNode name="roadArrowLeft" translation="0 0 -0.0012207" rotation="0 -90 0" scale="1.25 1 1.25" referenceId="19" nodeId="10589"/>
+      </TransformGroup>
+      <ReferenceNode name="roadArrowRight" translation="11.7452 0 -0.65049" rotation="1.06451e-06 -0 -1.35397e-05" scale="1.25 1 1.25" referenceId="20" nodeId="10592"/>
+      <ReferenceNode name="roadArrowLeft" translation="10.6365 -3.8147e-06 -0.595886" rotation="3.43265e-06 -0 -2.6868e-05" scale="1.25 1 1.25" referenceId="19" nodeId="10593"/>
+      <Shape name="parkingLines01" translation="10.1445 0 9.10583" shapeId="11" clipDistance="300" nodeId="18576" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines02" translation="5.01245 -3.8147e-06 9.16023" shapeId="12" clipDistance="300" nodeId="18577" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines03" translation="-3.08986 -3.8147e-06 -3.19424" shapeId="13" clipDistance="300" nodeId="18578" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines04" translation="-4.64008 0 2.97551" shapeId="14" clipDistance="300" nodeId="18579" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines05" translation="-6.26801 0 8.97073" shapeId="15" clipDistance="300" nodeId="18580" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines06" translation="-23.3731 0 8.98838" shapeId="16" clipDistance="300" nodeId="18581" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines07" translation="-21.8601 0 3.0187" shapeId="17" clipDistance="300" nodeId="18582" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+      <Shape name="parkingLines08" translation="-20.2759 0 -3.18999" shapeId="18" clipDistance="300" nodeId="18583" castsShadows="false" receiveShadows="true" materialIds="10557"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='utf-8'?>
+<placeable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="simplePlaceable" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+  <storeData>
+    <name>$l10n_RDM_Shed3</name>
+    <functions>
+      <function>$l10n_function_garage</function>
+    </functions>
+    <image>store_GreenGrainBarn3RUB.dds</image>
+    <price>130000</price>
+    <dailyUpkeep>850</dailyUpkeep>
+    <lifetime>1000</lifetime>
+    <rotation>0</rotation>
+    <brand>NONE</brand>
+    <canBeSold>true</canBeSold>
+    <showInStore>true</showInStore>
+    <species>placeable</species>
+    <category>sheds</category>
+    <brush>
+      <type>placeable</type>
+      <category>buildings</category>
+      <tab>sheds</tab>
+    </brush>
+        <vertexBufferMemoryUsage>1085184</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>194816</indexBufferMemoryUsage>
+        <textureMemoryUsage>4980736</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+  </storeData>
+  <base>
+    <filename>shed03RUB.i3d</filename>
+	<canBeRenamed>true</canBeRenamed>
+	<boughtWithFarmland>true</boughtWithFarmland>
+  </base>
+  <placeableType>placeable</placeableType>
+  <placement useRandomYRotation="false" useManualYRotation="true">
+    <testAreas>
+      <testArea startNode="testArea1Start" endNode="testArea1End" />
+    </testAreas>
+    <sounds>
+      <place template="medImp" />
+    </sounds>
+  </placement>
+  <clearAreas>
+    <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height" />
+  </clearAreas>
+  <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+    <levelAreas>
+      <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt" />
+    </levelAreas>
+  </leveling>
+  <indoorAreas>
+    <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+  </indoorAreas>
+  <tipOcclusionUpdateAreas>
+    <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+  </tipOcclusionUpdateAreas>
+  <ai>
+    <updateAreas>
+      <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </updateAreas>
+  </ai>
+  <animatedObjects>
+    <animatedObject saveId="leftRollingDoor.001">
+      <animation duration="12">
+        <part node="leftRollingDoor.001">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.09021" translation="0 0.516 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.084" translation="0 0.516 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.002">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.172902" translation="0 0.989 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.167" translation="0 0.989 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.003">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.255594" translation="0 1.462 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.251" translation="0 1.462 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.004">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.338287" translation="0 1.935 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.34" translation="0 1.935 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.005">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.421154" translation="0 2.409 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.417" translation="0 2.409 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.006">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.503846" translation="0 2.882 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.51" translation="0 2.882 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.007">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.586538" translation="0 3.355 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.584" translation="0 3.355 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.008">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.669231" translation="0 3.828 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.667" translation="0 3.828 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.009">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.751923" translation="0 4.301 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.751" translation="0 4.301 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.010">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.834615" translation="0 4.774 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.84" translation="0 4.774 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor.011">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.917308" translation="0 5.247 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.917" translation="0 5.247 0" scale="1 0 1" /> -->
+        </part>
+        <part node="leftRollingDoor">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="1.0" translation="0 5.720 0" scale="1 1 1" />
+4
+        </part>
+      </animation>
+      <controls triggerNode="leftDoorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+      <sounds>
+        <moving linkNode="leftSoundNode" template="rollingGarageDoor" />
+        <posEnd linkNode="leftSoundNode" template="slidingGateMetalOpen" />
+        <negEnd linkNode="leftSoundNode" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+    <animatedObject saveId="rightRollingDoor">
+      <animation duration="12">
+        <part node="rightRollingDoor.001">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.09021" translation="0 0.516 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.084" translation="0 0.516 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.002">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.172902" translation="0 0.989 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.167" translation="0 0.989 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.003">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.255594" translation="0 1.462 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.251" translation="0 1.462 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.004">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.338287" translation="0 1.935 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.34" translation="0 1.935 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.005">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.421154" translation="0 2.409 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.417" translation="0 2.409 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.006">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.503846" translation="0 2.882 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.51" translation="0 2.882 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.007">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.586538" translation="0 3.355 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.584" translation="0 3.355 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.008">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.669231" translation="0 3.828 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.667" translation="0 3.828 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.009">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.751923" translation="0 4.301 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.751" translation="0 4.301 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.010">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.834615" translation="0 4.774 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.84" translation="0 4.774 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor.011">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="0.917308" translation="0 5.247 0" scale="1 1 1" />
+          <!-- <keyFrame time="0.917" translation="0 5.247 0" scale="1 0 1" /> -->
+        </part>
+        <part node="rightRollingDoor">
+          <keyFrame time="0.0" translation="0 0 0" scale="1 1 1" />
+          <keyFrame time="1.0" translation="0 5.720 0" scale="1 1 1" />
+4
+        </part>
+      </animation>
+      <controls triggerNode="rightDoorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+      <sounds>
+        <moving linkNode="rightSoundNode" template="rollingGarageDoor" />
+        <posEnd linkNode="rightSoundNode" template="slidingGateMetalOpen" />
+        <negEnd linkNode="rightSoundNode" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+  </animatedObjects>
+  <dynamicallyLoadedParts>
+    <dynamicallyLoadedPart node="0" linkNode="leftDoorSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="rightDoorSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="outsideLightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+  </dynamicallyLoadedParts>
+  <lights>
+    <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger">
+      <sounds>
+        <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2" />
+      </sounds>
+    </group>
+    <group name="$l10n_action_placeableLightShed" triggerNode="outsideLightTrigger">
+      <sounds>
+        <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2" />
+      </sounds>
+    </group>
+    <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tube1" groupIndex="1" color="1 1 1" />
+    <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tube2" groupIndex="1" color="1 1 1" />
+    <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tube3" groupIndex="1" color="1 1 1" />
+    <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tube4" groupIndex="1" color="1 1 1" />
+    <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tube5" groupIndex="2" color="1 1 1" />
+    <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tube6" groupIndex="2" color="1 1 1" />
+    <realLights>
+      <high>
+        <light node="realLightsHigh" groupIndex="1" />
+        <light node="realLightsHigh2" groupIndex="2" />
+      </high>
+    </realLights>
+  </lights>
+  <i3dMappings>
+    <i3dMapping id="clearArea1Start" node="0>0|0" />
+    <i3dMapping id="clearArea1Width" node="0>0|0|0" />
+    <i3dMapping id="clearArea1Height" node="0>0|0|1" />
+    <i3dMapping id="levelArea1Start" node="0>1|0" />
+    <i3dMapping id="levelArea1Width" node="0>1|0|0" />
+    <i3dMapping id="levelArea1Height" node="0>1|0|1" />
+    <i3dMapping id="indoorArea1Start" node="0>2|0" />
+    <i3dMapping id="indoorArea1Width" node="0>2|0|0" />
+    <i3dMapping id="indoorArea1Height" node="0>2|0|1" />
+    <i3dMapping id="testArea1Start" node="0>3|0" />
+    <i3dMapping id="testArea1End" node="0>3|0|0" />
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+    <i3dMapping id="MainDoor" node="0>6|0|0|5" />
+    <i3dMapping id="leftDoorTrigger" node="0>6|0|0|5|0|0" />
+    <i3dMapping id="leftRollingDoor" node="0>6|0|0|5|0|1" />
+    <i3dMapping id="leftRollingDoor.001" node="0>6|0|0|5|0|2" />
+    <i3dMapping id="leftRollingDoorCollision.001" node="0>6|0|0|5|0|2|0" />
+    <i3dMapping id="leftRollingDoor.002" node="0>6|0|0|5|0|3" />
+    <i3dMapping id="leftRollingDoorCollision.002" node="0>6|0|0|5|0|3|0" />
+    <i3dMapping id="leftRollingDoor.003" node="0>6|0|0|5|0|4" />
+    <i3dMapping id="leftRollingDoorCollision.003" node="0>6|0|0|5|0|4|0" />
+    <i3dMapping id="leftRollingDoor.004" node="0>6|0|0|5|0|5" />
+    <i3dMapping id="leftRollingDoorCollision.004" node="0>6|0|0|5|0|5|0" />
+    <i3dMapping id="leftRollingDoor.005" node="0>6|0|0|5|0|6" />
+    <i3dMapping id="leftRollingDoorCollision.005" node="0>6|0|0|5|0|6|0" />
+    <i3dMapping id="leftRollingDoor.006" node="0>6|0|0|5|0|7" />
+    <i3dMapping id="leftRollingDoorCollision.006" node="0>6|0|0|5|0|7|0" />
+    <i3dMapping id="leftRollingDoor.007" node="0>6|0|0|5|0|8" />
+    <i3dMapping id="leftRollingDoorCollision.007" node="0>6|0|0|5|0|8|0" />
+    <i3dMapping id="leftRollingDoor.008" node="0>6|0|0|5|0|9" />
+    <i3dMapping id="leftRollingDoorCollision.008" node="0>6|0|0|5|0|9|0" />
+    <i3dMapping id="leftRollingDoor.009" node="0>6|0|0|5|0|10" />
+    <i3dMapping id="leftRollingDoorCollision.009" node="0>6|0|0|5|0|10|0" />
+    <i3dMapping id="leftRollingDoor.010" node="0>6|0|0|5|0|11" />
+    <i3dMapping id="leftRollingDoorCollision.010" node="0>6|0|0|5|0|11|0" />
+    <i3dMapping id="leftRollingDoor.011" node="0>6|0|0|5|0|12" />
+    <i3dMapping id="leftRollingDoorCollision.011" node="0>6|0|0|5|0|12|0" />
+    <i3dMapping id="leftSoundNode" node="0>6|0|0|5|1" />
+    <i3dMapping id="rightDoorTrigger" node="0>6|0|0|5|2|0" />
+    <i3dMapping id="rightRollingDoor" node="0>6|0|0|5|2|1" />
+    <i3dMapping id="rightRollingDoor.001" node="0>6|0|0|5|2|2" />
+    <i3dMapping id="rightRollingDoorCollision.011" node="0>6|0|0|5|2|2|0" />
+    <i3dMapping id="rightRollingDoor.002" node="0>6|0|0|5|2|3" />
+    <i3dMapping id="rightRollingDoorCollision.010" node="0>6|0|0|5|2|3|0" />
+    <i3dMapping id="rightRollingDoor.003" node="0>6|0|0|5|2|4" />
+    <i3dMapping id="rightRollingDoorCollision.009" node="0>6|0|0|5|2|4|0" />
+    <i3dMapping id="rightRollingDoor.004" node="0>6|0|0|5|2|5" />
+    <i3dMapping id="rightRollingDoorCollision.008" node="0>6|0|0|5|2|5|0" />
+    <i3dMapping id="rightRollingDoor.005" node="0>6|0|0|5|2|6" />
+    <i3dMapping id="rightRollingDoorCollision.007" node="0>6|0|0|5|2|6|0" />
+    <i3dMapping id="rightRollingDoor.006" node="0>6|0|0|5|2|7" />
+    <i3dMapping id="rightRollingDoorCollision.006" node="0>6|0|0|5|2|7|0" />
+    <i3dMapping id="rightRollingDoor.007" node="0>6|0|0|5|2|8" />
+    <i3dMapping id="rightRollingDoorCollision.005" node="0>6|0|0|5|2|8|0" />
+    <i3dMapping id="rightRollingDoor.008" node="0>6|0|0|5|2|9" />
+    <i3dMapping id="rightRollingDoorCollision.004" node="0>6|0|0|5|2|9|0" />
+    <i3dMapping id="rightRollingDoor.009" node="0>6|0|0|5|2|10" />
+    <i3dMapping id="rightRollingDoorCollision.003" node="0>6|0|0|5|2|10|0" />
+    <i3dMapping id="rightRollingDoor.010" node="0>6|0|0|5|2|11" />
+    <i3dMapping id="rightRollingDoorCollision.002" node="0>6|0|0|5|2|11|0" />
+    <i3dMapping id="rightRollingDoor.011" node="0>6|0|0|5|2|12" />
+    <i3dMapping id="rightRollingDoorCollision.001" node="0>6|0|0|5|2|12|0" />
+    <i3dMapping id="rightSoundNode" node="0>6|0|0|5|3" />
+    <i3dMapping id="leftDoorSwitch" node="0>7|0" />
+    <i3dMapping id="rightDoorSwitch" node="0>7|1" />
+    <i3dMapping id="lightSwitch" node="0>8|0" />
+    <i3dMapping id="lightTrigger" node="0>8|1" />
+    <i3dMapping id="securityLight1" node="0>8|2|0" />
+    <i3dMapping id="securityLight2" node="0>8|2|1" />
+    <i3dMapping id="tube1" node="0>8|2|2" />
+    <i3dMapping id="tube2" node="0>8|2|3" />
+    <i3dMapping id="tube3" node="0>8|2|4" />
+    <i3dMapping id="tube4" node="0>8|2|5" />
+    <i3dMapping id="tube5" node="0>8|2|6" />
+    <i3dMapping id="tube6" node="0>8|2|7" />
+    <i3dMapping id="outsideLightSwitch" node="0>8|3" />
+    <i3dMapping id="outsideLightTrigger" node="0>8|4" />
+    <i3dMapping id="realLightsHigh" node="0>8|5|0" />
+    <i3dMapping id="realLightsHigh2" node="0>8|5|1" />
+  </i3dMappings>
+</placeable>

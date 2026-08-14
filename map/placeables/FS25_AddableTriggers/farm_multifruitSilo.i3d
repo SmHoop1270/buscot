@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farm_multifruitSilo.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/placeables/brandless/hayLoft/hayBlower_diffuse.png"/>
+    <File fileId="9" filename="$data/placeables/brandless/hayLoft/hayBlower_normal.png"/>
+    <File fileId="10" filename="$data/placeables/brandless/hayLoft/hayBlower_specular.png"/>
+    <File fileId="11" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="15" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="14" filename="$data/shared/mist_diffuse.dds"/>
+    <File fileId="3" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="5" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hayBlower_mat" materialId="5" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="lambert2" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="Texturvorschau_byrHallen.032" materialId="9" diffuseColor="1 1 1 1" customShaderId="15">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="11">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farm_multifruitSilo.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="mutifruitSilo" clipDistance="800" nodeId="26">
+      <TransformGroup name="hayLoft" translation="0 -0.061 0" nodeId="27">
+        <TransformGroup name="loadingStation" nodeId="28">
+          <TransformGroup name="loadingTriggers" translation="1.0116 0.0668274 1.73681" nodeId="29">
+            <Shape name="loadingTrigger" translation="-0.033099 4.66099 -0.023009" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <TransformGroup name="dischargeNode" translation="-0.033099 4.66099 0" nodeId="31"/>
+            <TransformGroup name="dischargeEffect" translation="-0.041835 4.10872 0.00238" nodeId="32">
+              <Shape name="pipeEffect" translation="0 0.908079 -0.013935" rotation="90 0 0" shapeId="2" clipDistance="300" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="pipeEffectSmoke" translation="-0 -2.93984 -0" shapeId="3" clipDistance="100" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="aiNodeLoading" rotation="0 -90 0" nodeId="35"/>
+          </TransformGroup>
+          <Shape name="aiLoadingSpline" translation="0.02157 0.253397 0.013075" shapeId="4" visibility="false" nodeId="36" castsShadows="false" receiveShadows="false"/>
+        </TransformGroup>
+        <TransformGroup name="unloadingStation" translation="-0 0 -35.1298" nodeId="38">
+          <TransformGroup name="unloadingTriggers" nodeId="39">
+            <Shape name="exactFillRootNode" translation="-2.00737 -0.45 37.052" shapeId="5" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <TransformGroup name="aiNodeUnlading" translation="-2 0.856198 37.9792" rotation="0 -90 0" nodeId="41"/>
+            <Shape name="warningStripes" translation="-2 0 37" shapeId="6" clipDistance="100" nodeId="42" castsShadows="false" receiveShadows="true" materialIds="11"/>
+            <Shape name="warningStripes" translation="-2 0 33" shapeId="6" clipDistance="100" nodeId="43" castsShadows="false" receiveShadows="true" materialIds="11"/>
+            <Shape name="baleTrigger" translation="-2.09206 0 37.0899" scale="1.31424 1 1.35568" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="palletTrigger" translation="-2.09206 0 37.0899" scale="1.31424 1 1.35568" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </TransformGroup>
+          <TransformGroup name="fanSoundNode" translation="-0.259997 0.886935 48.1937" nodeId="46"/>
+        </TransformGroup>
+        <Shape name="infoTrigger" shapeId="8" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <TransformGroup name="teleportNode" translation="-3.96395 0.061 -6.15018" nodeId="48"/>
+      </TransformGroup>
+      <TransformGroup name="hotspotMarker" translation="0 -0.061 -0" nodeId="49"/>
+      <TransformGroup name="markers" nodeId="50">
+        <TransformGroup name="markerUnloading" translation="-2.86074 0 1.93165" nodeId="51"/>
+        <TransformGroup name="markerLoading" translation="1.35598 0 1.78738" nodeId="52"/>
+      </TransformGroup>
+      <TransformGroup name="clearAreas" translation="0 -0.061 0" nodeId="53">
+        <TransformGroup name="clearArea1Start" translation="3.07464 0 -1.0966" nodeId="54">
+          <TransformGroup name="clearArea1Width" translation="0 0 5.9009" nodeId="55"/>
+          <TransformGroup name="clearArea1Height" translation="-10.8806 0 0" nodeId="56"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" translation="0 -0.061 0" nodeId="57">
+        <TransformGroup name="levelArea1Start" translation="-7.67814 0 -0.406123" nodeId="58">
+          <TransformGroup name="levelArea1Width" translation="0 0 5.61898" nodeId="59"/>
+          <TransformGroup name="levelArea1Height" translation="9.653 0 0" nodeId="60"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="0 -0.061 0" nodeId="61">
+        <TransformGroup name="indoorArea1Start" translation="4.3872 0 -12.2049" nodeId="62">
+          <TransformGroup name="indoorArea1Width" translation="0 0 24.6224" nodeId="63"/>
+          <TransformGroup name="indoorArea1Height" translation="-8.73219 0 0" nodeId="64"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="0 -0.061 0" nodeId="65">
+        <TransformGroup name="testArea1Start" translation="2.93604 0 -0.931157" nodeId="66">
+          <TransformGroup name="testArea1End" translation="-9.06834 10.847 5.25076" nodeId="67"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="0 -0.061 0" nodeId="68">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5.61115 0 -12.8387" nodeId="69">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.4366 0 32.1866" nodeId="70"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipCollision" translation="0 -0.061 0" nodeId="71">
+        <Shape name="tipCollision" translation="-2.39745 0 2.2205" shapeId="9" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="cube" translation="-0.490066 1.67473 0.0531579" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false" materialIds="10"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" translation="0 -0.061 0" nodeId="74">
+        <Shape name="hayBlower" translation="-2 0 -13" shapeId="11" clipDistance="150" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="pipe" translation="-2 0 -13" scale="1 0.8 1" shapeId="12" clipDistance="150" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="hayBlower" translation="1 0 13" rotation="0 180 0" shapeId="11" clipDistance="150" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="geblaseRohr.002" translation="0.0453837 -1.06967 13.0704" rotation="0 90 0" shapeId="13" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" translation="0 -0.061 0" nodeId="79"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

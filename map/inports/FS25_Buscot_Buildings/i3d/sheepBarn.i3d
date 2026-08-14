@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sheepBarn.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.12"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/maps/mapEU/textures/buildings/grainSilo/grainSiloBricks_diffuse.dds"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/buildings/grainSilo/grainSiloBricks_normal.dds"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/buildings/grainSilo/grainSiloBricks_specular.dds"/>
+    <File fileId="1" filename="$data/maps/textures/shared/concreteGeneric_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/concreteGeneric_normal.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/concreteGeneric_specular.dds"/>
+    <File fileId="13" filename="$data/placeables/brandless/workshop/workshop_diffuse.dds"/>
+    <File fileId="14" filename="$data/placeables/brandless/workshop/workshop_normal.dds"/>
+    <File fileId="15" filename="$data/placeables/brandless/workshop/workshop_specular.dds"/>
+    <File fileId="25" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersCow01_diffuse.png"/>
+    <File fileId="26" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersCow01_normal.png"/>
+    <File fileId="27" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersCow01_specular.png"/>
+    <File fileId="21" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersSheep01_diffuse.png"/>
+    <File fileId="22" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersSheep01_normal.png"/>
+    <File fileId="23" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersSheep01_specular.png"/>
+    <File fileId="33" filename="$data/placeables/rudolfHormann/shared/strawBed_diffuse.dds"/>
+    <File fileId="34" filename="$data/placeables/rudolfHormann/shared/strawBed_normal.dds"/>
+    <File fileId="35" filename="$data/placeables/rudolfHormann/shared/strawBed_specular.dds"/>
+    <File fileId="7" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="43" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="36" filename="$data/shaders/vertexPaintShader.xml"/>
+    <File fileId="38" filename="$data/shared/default_normal.dds"/>
+    <File fileId="30" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="31" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="32" filename="$data/shared/warningStripes_specular.png"/>
+    <File fileId="16" filename="../textures/metalpanel_diffuse.dds"/>
+    <File fileId="17" filename="../textures/metalpanel_normal.dds"/>
+    <File fileId="18" filename="../textures/metalpanel_specular.dds"/>
+    <File fileId="44" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_d.dds"/>
+    <File fileId="45" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_n.dds"/>
+    <File fileId="46" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_s.dds"/>
+    <File fileId="41" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_oxydized_d.dds"/>
+    <File fileId="42" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_oxydized_s.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="animalFeedersCow01_mat" materialId="5">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="animalFeedersSheep01_mat" materialId="6">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="bricks" materialId="7" customShaderId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="ConcreteFloor" materialId="8">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="default" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="Galv" materialId="10" customShaderId="43">
+      <Texture fileId="41"/>
+      <Normalmap fileId="38" bumpDepth="0"/>
+      <Glossmap fileId="42"/>
+    </Material>
+    <Material name="gutter" materialId="11" diffuseColor="0.0156863 0.0156863 0.0156863 1" specularColor="0.121569 1 0.207843">
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="Material.001" materialId="13" customShaderId="7">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="metalbeams" materialId="14" customShaderId="7">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="Plastic" materialId="15" customShaderId="43">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45" bumpDepth="0"/>
+      <Glossmap fileId="46"/>
+    </Material>
+    <Material name="Straw_Plane" materialId="16" customShaderId="36" customShaderVariation="alphaNoise">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+      <Custommap name="mBlendedNormal" fileId="38"/>
+      <CustomParameter name="uvScale" value="2.5 2.5 2.5 2.5"/>
+      <CustomParameter name="snowScale" value="0"/>
+      <CustomParameter name="alphaShift" value="0.3"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="17">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sheepBarn.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Sheepbarn" rotation="-2.66178e-06 0 -1.9485e-05" clipDistance="800" nodeId="49">
+      <TransformGroup name="visuals" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" scale="1.4 1.4 1.4" nodeId="50">
+        <Shape name="shedBase" shapeId="1" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="brickWalls" translation="0.0655338 0 0" shapeId="2" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="steelSheets" shapeId="3" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        <Shape name="roof" shapeId="4" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="gutterFront" translation="3.58673 4.08686 -1.05856" rotation="90 1.52387e-26 0" scale="0.0118641 1.00428 0.017833" shapeId="5" clipDistance="350" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="gutterBack" translation="-3.454 4.08686 -1.05856" rotation="90 -0 0" scale="0.0118641 1.00428 0.017833" shapeId="5" clipDistance="350" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <TransformGroup name="feeders" translation="2.81267 5.96957e-10 -0.149179" rotation="180 86.964 180" scale="0.714286 0.714286 0.714286" nodeId="57">
+          <Shape name="animalFeedersSheep01" translation="-0.534123 0.0312226 0.219184" rotation="1.27576e-14 -4.26916 1.37782e-12" shapeId="6" clipDistance="150" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="animalFeedersCow" translation="-7.0088 0.385924 -8.82938" rotation="0 -3.33753 -1.01951e-13" shapeId="7" static="true" density="0.0001" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+            <Shape name="visual" translation="0 0.018643 5.72205e-08" shapeId="8" clipDistance="150" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+          <Shape name="animalFeedersSheep01" translation="3.27473 0.0312228 0.492" rotation="-180 3.31177 180" shapeId="6" clipDistance="150" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="animalFeedersCow" translation="-0.732199 0.385924 -8.4913" rotation="-1.59172e-15 -2.44147 -3.56546e-13" shapeId="7" static="true" density="0.0001" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+            <Shape name="visual" translation="0 0.018643 5.72205e-08" shapeId="8" clipDistance="150" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="visual" translation="5.71773 0.018643 -0.0753953" shapeId="8" clipDistance="150" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="visual" translation="12.0975 0.018643 -0.0978695" rotation="3.97579e-16 0.401538 -1.0178e-13" shapeId="8" clipDistance="150" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="clearArea" nodeId="66">
+        <TransformGroup name="clearArea1Start" translation="-4.88794 0 -14.18" nodeId="67">
+          <TransformGroup name="clearArea1Width" translation="9.80736 0 1.02736e-20" nodeId="68"/>
+          <TransformGroup name="clearArea1Height" translation="-0.0384644 0 25.3611" nodeId="69"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="70">
+        <TransformGroup name="levelArea1Start" translation="-5.49281 -9.06141e-08 -14.5772" nodeId="71">
+          <TransformGroup name="levelArea1Width" translation="11.3305 1.73911e-07 -0.403112" nodeId="72"/>
+          <TransformGroup name="levelArea1Height" translation="-0.433951 -1.04722e-08 26.8466" nodeId="73"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="-1.2207e-06 0 -2.13623e-06" nodeId="74">
+        <TransformGroup name="indoorAreaStart" translation="-4.91839 0.0677872 -14.1227" nodeId="75">
+          <TransformGroup name="indoorAreaWidth" translation="9.78723 0 -0.0676541" nodeId="76"/>
+          <TransformGroup name="indoorAreaHeight" translation="-1.27187e-20 0 25.2969" nodeId="77"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="-1.2207e-06 0 -2.13623e-06" nodeId="78">
+        <TransformGroup name="testArea1Start" translation="-6.21545 0 -15.926" nodeId="79">
+          <TransformGroup name="testArea1End" translation="12.6217 0 27.3639" nodeId="80"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="-1.2207e-06 0 -2.13623e-06" nodeId="81">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5.22897 0 -14.5229" nodeId="82">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="10.7011 -4.76837e-07 25.9512" nodeId="83"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="food" translation="12.7171 3.90691e-06 -1.39264" rotation="5.81527e-11 88.7968 1.36609e-05" nodeId="84">
+        <Shape name="baleTrigger" translation="0.323 0.328206 -6.31541" rotation="1.78129e-13 0.811132 -2.03576e-13" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="exactFillRootNodeFood" translation="0.322743 0.328206 -6.53719" rotation="1.84496e-13 0.922162 2.03582e-13" shapeId="10" static="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="foodPlane" translation="-1.99014 0.05742 -8.51788" shapeId="11" visibility="false" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      </TransformGroup>
+      <TransformGroup name="navigationRootNode" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" nodeId="88">
+        <Shape name="navigationMeshShape" translation="0.0542382 -6.31089e-30 -1.51338" scale="0.504427 1 1.55932" shapeId="12" visibility="false" nodeId="89" castsShadows="true" receiveShadows="true" nonRenderable="true" renderedInViewports="false" buildNavMeshMask="0xff" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="palletAreas" translation="6.3926 2.03284e-06 3.03807" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" nodeId="90">
+        <Shape name="palletTrigger" translation="-5.05 0.499552 10.2586" rotation="0 90 0" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="palletAreaStart01" translation="-7.124 0.050151 11.8669" rotation="0 90 0" nodeId="92">
+          <TransformGroup name="palletAreaEnd01" translation="0 0 4.658" nodeId="93"/>
+        </TransformGroup>
+        <TransformGroup name="palletAreaStart02" translation="-7.124 0.050151 9.00279" rotation="0 90 0" nodeId="94">
+          <TransformGroup name="palletAreaEnd02" translation="0 0 4.658" nodeId="95"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" translation="4.84258 1.51546e-06 2.82812" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" nodeId="96">
+        <Shape name="warningStripes01" translation="-5.26595 0 10.2586" rotation="0 90 0" shapeId="14" clipDistance="100" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="17"/>
+        <TransformGroup name="markerAnimals" translation="0.785503 0.165 7.39302" nodeId="98"/>
+        <TransformGroup name="markerFood" translation="1.09829 0.165 -4.5563" rotation="0 -90 0" nodeId="99"/>
+      </TransformGroup>
+      <TransformGroup name="teleportNode" translation="9.91774 3.37576e-06 -1.81114" rotation="-1.22769e-05 -90 4.32304e-05" nodeId="100"/>
+      <Shape name="loadingTrigger" translation="5.982 0.0160986 9.31532" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" shapeId="15" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="101" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <Shape name="infoTrigger" translation="3.4137 1.24892e-06 -1.89424" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" scale="0.8 1 2" shapeId="16" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <Shape name="StrawPlane" translation="0.133117 0.0291638 -1.57784" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" scale="0.58 1 1.65" shapeId="17" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="16"/>
+      <TransformGroup name="gates" rotation="2.66178e-06 -9.05212e-13 1.9485e-05" nodeId="104">
+        <TransformGroup name="gate01" translation="4.74 8.58506e-07 -11.1273" rotation="180 8.73565e-19 180" clipDistance="300" nodeId="105">
+          <Shape name="3mGate.006" translation="-7.50827e-09 1.17944 0.09945" shapeId="18" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol.006" translation="0.00794789 -0.281615 2.60544" shapeId="19" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="107" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts.006" translation="-5.50768e-07 -0.248122 2.2637" nodeId="108">
+              <Shape name="3mHandle.006" shapeId="20" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring.006" shapeId="21" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger.006" translation="0.00794789 -0.281615 2.04044" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="111" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts.006" translation="0 -0.6 0" nodeId="112">
+            <Shape name="3mHangingPost.006" shapeId="23" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol.006" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="114" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost.006" shapeId="25" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol.006" shapeId="26" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="116" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate02" translation="4.74 -1.13167e-35 -11.024" rotation="0 8.73565e-19 8.14222e-13" clipDistance="300" nodeId="117">
+          <Shape name="3mGate" translation="-7.50827e-09 1.17944 0.09945" shapeId="27" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol" translation="0.00794789 -0.281615 2.60544" shapeId="28" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="119" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts" translation="-5.50768e-07 -0.248122 2.8287" nodeId="120">
+              <Shape name="3mHandle" shapeId="20" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring" shapeId="21" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger" translation="0.00794789 -0.281615 2.60544" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="123" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts" translation="0 -0.6 0" nodeId="124">
+            <Shape name="3mHangingPost" shapeId="23" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="126" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost" shapeId="29" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol" shapeId="30" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="128" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate03" translation="4.74 0 -7.54313" rotation="0 8.73565e-19 -4.20533e-20" clipDistance="300" nodeId="129">
+          <Shape name="3mGate.006" translation="-7.50827e-09 1.17944 0.09945" shapeId="18" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol.006" translation="0.00794789 -0.281615 2.60544" shapeId="19" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="131" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts.006" translation="-5.50768e-07 -0.248122 2.2637" nodeId="132">
+              <Shape name="3mHandle.006" shapeId="20" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring.006" shapeId="21" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger.006" translation="0.00794789 -0.281615 2.04044" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="135" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts.006" translation="0 -0.6 0" nodeId="136">
+            <Shape name="3mHangingPost.006" shapeId="23" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol.006" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="138" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost.006" shapeId="25" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol.006" shapeId="26" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="140" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate04" translation="4.74 1.33836e-33 -4.8471" rotation="0 8.73565e-19 8.14222e-13" clipDistance="300" nodeId="141">
+          <Shape name="3mGate" translation="-7.50827e-09 1.17944 0.09945" shapeId="27" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol" translation="0.00794789 -0.281615 2.60544" shapeId="28" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="143" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts" translation="-5.50768e-07 -0.248122 2.8287" nodeId="144">
+              <Shape name="3mHandle" shapeId="20" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring" shapeId="21" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger" translation="0.00794789 -0.281615 2.60544" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="147" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts" translation="0 -0.6 0" nodeId="148">
+            <Shape name="3mHangingPost" shapeId="23" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="150" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost" shapeId="29" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol" shapeId="30" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="152" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate05" translation="4.74 8.60872e-07 1.28062" rotation="180 8.73565e-19 180" clipDistance="300" nodeId="153">
+          <Shape name="3mGate.006" translation="-7.50827e-09 1.17944 0.09945" shapeId="18" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol.006" translation="0.00794789 -0.281615 2.60544" shapeId="19" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="155" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts.006" translation="-5.50768e-07 -0.248122 2.2637" nodeId="156">
+              <Shape name="3mHandle.006" shapeId="20" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring.006" shapeId="21" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger.006" translation="0.00794789 -0.281615 2.04044" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="159" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts.006" translation="0 -0.6 0" nodeId="160">
+            <Shape name="3mHangingPost.006" shapeId="23" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol.006" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="162" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost.006" shapeId="25" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol.006" shapeId="26" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="164" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate06" translation="4.74 0 1.37853" rotation="0 8.73565e-19 8.14222e-13" clipDistance="300" nodeId="165">
+          <Shape name="3mGate" translation="-7.50827e-09 1.17944 0.09945" shapeId="27" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol" translation="0.00794789 -0.281615 2.60544" shapeId="28" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="167" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts" translation="-5.50768e-07 -0.248122 2.8287" nodeId="168">
+              <Shape name="3mHandle" shapeId="20" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring" shapeId="21" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger" translation="0.00794789 -0.281615 2.60544" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="171" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts" translation="0 -0.6 0" nodeId="172">
+            <Shape name="3mHangingPost" shapeId="23" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="174" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost" shapeId="29" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol" shapeId="30" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="176" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate07" translation="4.74 8.62074e-07 7.51202" rotation="180 8.73565e-19 180" clipDistance="300" nodeId="177">
+          <Shape name="3mGate.006" translation="-7.50827e-09 1.17944 0.09945" shapeId="18" nodeId="178" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol.006" translation="0.00794789 -0.281615 2.60544" shapeId="19" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="179" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts.006" translation="-5.50768e-07 -0.248122 2.2637" nodeId="180">
+              <Shape name="3mHandle.006" shapeId="20" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring.006" shapeId="21" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger.006" translation="0.00794789 -0.281615 2.04044" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="183" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts.006" translation="0 -0.6 0" nodeId="184">
+            <Shape name="3mHangingPost.006" shapeId="23" nodeId="185" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol.006" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="186" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost.006" shapeId="25" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol.006" shapeId="26" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="188" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gate08" translation="4.74 1.3492e-33 7.60561" rotation="0 8.73565e-19 8.14222e-13" clipDistance="300" nodeId="189">
+          <Shape name="3mGate" translation="-7.50827e-09 1.17944 0.09945" shapeId="27" nodeId="190" castsShadows="true" receiveShadows="true" materialIds="10,15">
+            <Shape name="3mGateCol" translation="0.00794789 -0.281615 2.60544" shapeId="28" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="191" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            <TransformGroup name="3mMovingParts" translation="-5.50768e-07 -0.248122 2.8287" nodeId="192">
+              <Shape name="3mHandle" shapeId="20" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="3mSpring" shapeId="21" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            </TransformGroup>
+            <Shape name="3mTrigger" translation="0.00794789 -0.281615 2.60544" shapeId="22" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="195" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="9" renderInvisible="true"/>
+          </Shape>
+          <TransformGroup name="3mPosts" translation="0 -0.6 0" nodeId="196">
+            <Shape name="3mHangingPost" shapeId="23" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="10">
+              <Shape name="3mHangingCol" shapeId="24" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="198" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+            <Shape name="3mLatchPost" shapeId="29" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="10,15">
+              <Shape name="LatchCol" shapeId="30" visibility="false" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="200" castsShadows="false" receiveShadows="false" materialIds="9" renderInvisible="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="89">
+      <Attribute name="animalType" type="string" value="sheep"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

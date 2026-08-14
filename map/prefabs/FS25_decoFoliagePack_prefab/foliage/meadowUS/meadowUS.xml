@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="meadow" shownOnMap="false" useForFieldMissions="false">
+        <mapColors default="0.0423 0.1221 0.0252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
+        <harvest litersPerSqm="2.18"/>
+        <windrow fillType="grass_windrow" />
+        <growth resetsSpray="true" growthRequiresLime="false"/>
+        <soil lowDensityRequired="false" increasesDensity="false" consumesLime="false" startSprayLevel="1"/>
+        <seeding directionSnapAngle="0" litersPerSqm="0.012" isAvailable="false" plantsWeed="false"/>
+        <cultivation isAllowed="true"/>
+    </fruitType>
+
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2.7" shapeSource="meadowUS.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.25" heightVariance="0.75" horizontalPositionVariance="0.3"/>
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <!-- 1 0 0 0 - invisible -->
+        <foliageState name="invisible" isGrowing="true" regrowthStart="true" />
+        <!-- 0 1 0 0 - green small -->
+        <foliageState name="greenSmall" numBlocksPerUnit="3.2" isGrowing="true">
+            <foliageShape probability="120">
+                <foliageLod blockShape="0>4|0|0"/>
+                <foliageLod blockShape="0>4|1|0"/>
+            </foliageShape>
+                    <!-- SLENDER MOUNTAIN MINT SMALL -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>1|0|0"/>
+                <foliageLod blockShape="0>1|1|0"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>1|0|1"/>
+                <foliageLod blockShape="0>1|1|1"/>
+            </foliageShape>
+                    <!-- WILD BERGAMOT SMALL -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>2|0|0"/>
+                <foliageLod blockShape="0>2|1|0"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>2|0|1"/>
+                <foliageLod blockShape="0>2|1|1"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 0 0 - green middle -->
+        <foliageState name="greenMiddle" isGrowing="true" isHarvestReady="true" fieldCourseLineHeight="0.3">
+            <foliageShape probability="120">
+                <foliageLod blockShape="0>4|0|1"/>
+                <foliageLod blockShape="0>4|1|1"/>
+            </foliageShape>
+                    <!-- SLENDER MOUNTAIN MINT MIDDLE -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>1|0|2"/>
+                <foliageLod blockShape="0>1|1|2"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>1|0|3"/>
+                <foliageLod blockShape="0>1|1|3"/>
+            </foliageShape>
+                    <!-- WILD BERGAMOT MIDDLE -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>2|0|2"/>
+                <foliageLod blockShape="0>2|1|2"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>2|0|3"/>
+                <foliageLod blockShape="0>2|1|3"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 1 0 - green big (harvest ready) -->
+        <foliageState name="harvestReady" isGrowing="true" isHarvestReady="true" fieldCourseLineHeight="0.5">
+            <!-- PURE GRASS -->
+            <foliageShape probability="180">
+                <foliageLod blockShape="0>4|0|2"/>
+                <foliageLod blockShape="0>4|1|2"/>
+            </foliageShape>
+            <!-- CONE FLOWER -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>0|0|0"/>
+                <foliageLod blockShape="0>0|1|0"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>0|0|1"/>
+                <foliageLod blockShape="0>0|1|1"/>
+            </foliageShape>
+            <!-- SLENDER MOUNTAIN MINT -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>1|0|4"/>
+                <foliageLod blockShape="0>1|1|4"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>1|0|5"/>
+                <foliageLod blockShape="0>1|1|5"/>
+            </foliageShape>
+            <!-- WILD BERGAMOT -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>2|0|4"/>
+                <foliageLod blockShape="0>2|1|4"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>2|0|5"/>
+                <foliageLod blockShape="0>2|1|5"/>
+            </foliageShape>
+             <!-- PRAIRIE BLAZINGSTAR -->
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>3|0|0"/>
+                <foliageLod blockShape="0>3|1|0"/>
+            </foliageShape>
+            <foliageShape probability="0.1">
+                <foliageLod blockShape="0>3|0|1"/>
+                <foliageLod blockShape="0>3|1|1"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 1 0 - cut -->
+        <foliageState name="cut" numBlocksPerUnit="3.2" isCut="true" isDestructedByWheel="true" isDestructedByDisaster="true" isMulched="true">
+            <foliageShape>
+                <foliageLod blockShape="0>4|0|3"/>
+                <foliageLod blockShape="0>4|1|3"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 1 1 - cutRolled -->
+        <foliageState name="cutRolled" numBlocksPerUnit="1.8" isRolledCut="true">
+            <foliageShape>
+                <foliageLod blockShape="0>4|0|4"/>
+                <foliageLod blockShape="0>4|1|4"/>
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+
+    <growth>
+        <seasonal initialState="greenMiddle">
+            <period name="EARLY_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="MID_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="LATE_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="EARLY_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="MID_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="LATE_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="EARLY_AUTUMN" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="MID_AUTUMN" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="LATE_AUTUMN" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="harvestReady" endState="greenMiddle" /> <!-- knock back due to winter -->
+            </period>
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER">
+                <update startState="greenSmall" endState="greenMiddle" />
+            </period>
+        </seasonal>
+    </growth>
+</foliageType>

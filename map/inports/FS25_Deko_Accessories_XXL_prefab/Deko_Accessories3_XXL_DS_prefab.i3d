@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories3_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/maps/mapEU/textures/props/cargoContainerBlue_diffuse.png"/>
+    <File fileId="8" filename="$data/maps/mapEU/textures/props/cargoContainerSet_normal.png"/>
+    <File fileId="9" filename="$data/maps/mapEU/textures/props/cargoContainerSet_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapEU/textures/props/containerOffice.i3d"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/props/containersDecal_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/containers_diffuse.png"/>
+    <File fileId="4" filename="$data/maps/mapEU/textures/props/containers_normal.png"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/props/containers_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/propsDecals_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/propsDecals_specular.png"/>
+    <File fileId="63" filename="$data/objects/shippingContainer/shippingContainerDecals_diffuse.png"/>
+    <File fileId="64" filename="$data/objects/shippingContainer/shippingContainerDecals_normal.png"/>
+    <File fileId="46" filename="$data/objects/shippingContainer/shippingContainer_normal.png"/>
+    <File fileId="47" filename="$data/objects/shippingContainer/shippingContainer_vmask.png"/>
+    <File fileId="24" filename="$data/placeables/planET/bga99kw/bgaGrid_diffuse.png"/>
+    <File fileId="25" filename="$data/placeables/planET/bga99kw/bgaGrid_normal.png"/>
+    <File fileId="26" filename="$data/placeables/planET/bga99kw/bgaGrid_specular.png"/>
+    <File fileId="21" filename="$data/placeables/planET/bga99kw/bgaProps_diffuse.png"/>
+    <File fileId="22" filename="$data/placeables/planET/bga99kw/bgaProps_normal.png"/>
+    <File fileId="23" filename="$data/placeables/planET/bga99kw/bgaProps_specular.png"/>
+    <File fileId="18" filename="$data/placeables/planET/bga99kw/bgaTile_diffuse.png"/>
+    <File fileId="19" filename="$data/placeables/planET/bga99kw/bgaTile_normal.png"/>
+    <File fileId="20" filename="$data/placeables/planET/bga99kw/bgaTile_specular.png"/>
+    <File fileId="16" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="10" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="48" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="14" filename="$data/shared/default_normal.png"/>
+    <File fileId="30" filename="$data/shared/default_specular.png"/>
+    <File fileId="50" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="56" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="55" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="51" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="49" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="62" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="61" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="59" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="58" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="57" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="45" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="60" filename="$data/store/brands/brand_lizardLogistics.png"/>
+    <File fileId="31" filename="textures/cargoContainerYellow_diffuse.png"/>
+    <File fileId="35" filename="textures/containerSmallDecals_diffuse.png"/>
+    <File fileId="32" filename="textures/containerSmall_diffuse.png"/>
+    <File fileId="33" filename="textures/containerSmall_normal.png"/>
+    <File fileId="34" filename="textures/containerSmall_specular.png"/>
+    <File fileId="27" filename="textures/gasContainer_diffuse.png"/>
+    <File fileId="28" filename="textures/gasContainer_normal.png"/>
+    <File fileId="29" filename="textures/gasContainer_specular.png"/>
+    <File fileId="42" filename="textures/metalContainerBox_diffuse.png"/>
+    <File fileId="43" filename="textures/metalContainerBox_normal.png"/>
+    <File fileId="44" filename="textures/metalContainerBox_specular.png"/>
+    <File fileId="36" filename="textures/sawmillContainer_diffuse.png"/>
+    <File fileId="37" filename="textures/sawmillContainer_normal.png"/>
+    <File fileId="38" filename="textures/sawmillContainer_specular.png"/>
+    <File fileId="39" filename="textures/trashBinLarge01_diffuse.png"/>
+    <File fileId="40" filename="textures/trashBinLarge01_normal.png"/>
+    <File fileId="41" filename="textures/trashBinLarge01_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bgaGrid_mat" materialId="2000">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="bgaProps_mat" materialId="2001" customShaderId="10">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="bgaTile_mat" materialId="2002">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+    </Material>
+    <Material name="brand_lizardLogistics_metalPainted_mat" materialId="2003" customShaderId="48" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="60"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+    </Material>
+    <Material name="brand_lizardLogistics_plasticPainted_mat" materialId="2004" customShaderId="48" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="60"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="61"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="62"/>
+      <CustomParameter name="colorScale" value="0 0 0"/>
+    </Material>
+    <Material name="cargoContainerBlue_mat" materialId="2005" customShaderId="10">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="cargoContainerYellow_mat" materialId="2006">
+      <Texture fileId="31"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="containers_mat" materialId="2007">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="containersDecal_mat" materialId="2008">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="containerSmall_mat" materialId="2009">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="containerSmallDecals_mat" materialId="2010" alphaBlending="true">
+      <Texture fileId="35"/>
+      <Normalmap fileId="14"/>
+    </Material>
+    <Material name="gasContainer_mat" materialId="2011">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="metalContainerBox_mat" materialId="2012">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="44"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="2013" customShaderId="16">
+      <Texture fileId="13"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="2014" alphaBlending="true" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="sawmillContainer_mat" materialId="2015" customShaderId="10">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="shippingContainer_metalPainted_mat" materialId="2016" customShaderId="48">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+      <CustomParameter name="colorScale" value="0.899999 0.2 0"/>
+    </Material>
+    <Material name="shippingContainer_metalPainted_mat" materialId="2017" customShaderId="48">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+      <CustomParameter name="colorScale" value="0.9 0.1 1"/>
+    </Material>
+    <Material name="shippingContainer_metalPainted_mat" materialId="2018" customShaderId="48">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+      <CustomParameter name="colorScale" value="0.9 0.2 0"/>
+    </Material>
+    <Material name="shippingContainer_metalPainted_mat" materialId="2019" customShaderId="48">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+      <CustomParameter name="colorScale" value="0.9 0.6 0"/>
+    </Material>
+    <Material name="shippingContainer_metalPainted_mat" materialId="2020" customShaderId="48">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+      <CustomParameter name="colorScale" value="0.9 0.6 0.4"/>
+    </Material>
+    <Material name="shippingContainer_rubberBlack_mat" materialId="2021" customShaderId="48">
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="57"/>
+      <Custommap name="detailNormal" fileId="58"/>
+      <Custommap name="detailDiffuse" fileId="59"/>
+      <CustomParameter name="colorScale" value="1 0 0"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="shippingContainer_silverScratched_mat" materialId="2022" customShaderId="48">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="55"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="56"/>
+    </Material>
+    <Material name="shippingContainerDecals_metalPainted_mat" materialId="2023" alphaBlending="true" customShaderId="48" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="63"/>
+      <Normalmap fileId="64"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="49"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="51"/>
+    </Material>
+    <Material name="shippingContainerDecals_plasticPainted_mat" materialId="2024" alphaBlending="true" customShaderId="48" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="63"/>
+      <Normalmap fileId="64"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="61"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="62"/>
+    </Material>
+    <Material name="shippingContainerDecals_silverScratched_mat" materialId="2025" alphaBlending="true" customShaderId="48" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="63"/>
+      <Normalmap fileId="64"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="detailSpecular" fileId="55"/>
+      <Custommap name="detailNormal" fileId="50"/>
+      <Custommap name="detailDiffuse" fileId="56"/>
+    </Material>
+    <Material name="trashBinLarge01_mat" materialId="2026" customShaderId="10">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories3_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Container" translation="-133.274 -34.5547 -180.082" nodeId="2066">
+      <ReferenceNode name="containerOffice" translation="-13.6158 -5.21305e-06 -2.30382" rotation="1.73057e-05 -0 0" referenceId="1" nodeId="2073"/>
+      <Shape name="container02" lockedgroup="true" translation="-6.06651 -5.21305e-06 -4.54524" rotation="-3.03321e-19 -0 1.81993e-19" shapeId="1" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2076" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="vis" shapeId="2" clipDistance="300" nodeId="2077" castsShadows="true" receiveShadows="true" materialIds="2007"/>
+        <Shape name="decal" shapeId="3" clipDistance="80" nodeId="2078" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2008"/>
+      </Shape>
+      <Shape name="container01" lockedgroup="true" translation="-3.63213 -5.21305e-06 -6.1214" rotation="180 0.0175963 180" shapeId="4" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2079" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="vis" shapeId="5" clipDistance="300" nodeId="2080" castsShadows="true" receiveShadows="true" materialIds="2007"/>
+        <Shape name="decal" shapeId="6" clipDistance="80" nodeId="2081" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2008"/>
+      </Shape>
+      <Shape name="cargoContainerBlue" lockedgroup="true" translation="-10.9592 -1.39835e-06 -4.09013" rotation="4.93398e-06 -0 0" shapeId="7" clipDistance="150" nodeId="2082" castsShadows="true" receiveShadows="true" materialIds="2005">
+        <Shape name="decals" translation="0.0120634 0 0" shapeId="8" clipDistance="30" nodeId="2083" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2014"/>
+        <Shape name="col" translation="8.42753e-07 0.00640762 0.0982272" shapeId="9" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2084" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <TransformGroup name="bgaContainer01" lockedgroup="true" translation="2.95495 -5.21305e-06 0.120891" rotation="-1.20893e-12 -0 1.36603e-05" lodDistance="0 150" static="true" clipDistance="500" nodeId="2085">
+        <TransformGroup name="LOD0" nodeId="2086">
+          <Shape name="bgaContainer01" translation="0.349646 1.5491 -0.389342" rotation="0 1.2741 0" shapeId="10" clipDistance="300" nodeId="2087" castsShadows="true" receiveShadows="true" materialIds="2002">
+            <Shape name="details" translation="-0.399631 0.0693948 0.32728" shapeId="11" clipDistance="300" nodeId="2088" castsShadows="true" receiveShadows="true" materialIds="2001"/>
+            <Shape name="decal" translation="1.1922 0.606437 -1.69661" rotation="0 -1.2741 0" shapeId="12" clipDistance="80" nodeId="2089" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2000"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="2090">
+          <Shape name="bgaContainer01" translation="0.214106 1.45599 0.081603" shapeId="13" static="true" clipDistance="500" nodeId="2091" castsShadows="true" receiveShadows="true" materialIds="2002"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="gasTank01" lockedgroup="true" translation="-27.2252 -5.21305e-06 -0.453282" shapeId="14" clipDistance="150" nodeId="2092" castsShadows="true" receiveShadows="true" materialIds="2011">
+        <Shape name="decals" shapeId="15" clipDistance="50" nodeId="2093" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2013"/>
+        <Shape name="col" shapeId="16" visibility="false" static="true" density="0.0001" nodeId="2094" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <TransformGroup name="bgaContainer03" lockedgroup="true" translation="-0.421719 -9.02775e-06 -2.51793" lodDistance="0 150" static="true" clipDistance="500" nodeId="2095">
+        <TransformGroup name="LOD0" nodeId="2096">
+          <Shape name="bgaContainer03" translation="-0.000385321 9.67102e-05 0.000193193" shapeId="17" clipDistance="300" nodeId="2097" castsShadows="true" receiveShadows="true" materialIds="2002"/>
+          <Shape name="details" translation="-0.0591446 1.5029 -0.524669" shapeId="18" clipDistance="300" nodeId="2098" castsShadows="true" receiveShadows="true" materialIds="2001"/>
+          <Shape name="decal" translation="-1.44591 1.83563 4.21031" shapeId="19" clipDistance="80" nodeId="2099" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2000"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="2100">
+          <Shape name="bgaContainer03" translation="-0.000391056 9.67102e-05 0.000189729" shapeId="20" static="true" clipDistance="500" nodeId="2101" castsShadows="true" receiveShadows="true" materialIds="2002"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="bgaContainer02" lockedgroup="true" translation="-3.36006 -5.21305e-06 2.19876" rotation="1.36604e-05 -90 0" lodDistance="0 100" static="true" clipDistance="300" nodeId="2102">
+        <TransformGroup name="LOD0" nodeId="2103">
+          <Shape name="bgaContainer02" translation="0.00038895 -5.26428e-05 0.000387047" shapeId="21" clipDistance="300" nodeId="2104" castsShadows="true" receiveShadows="true" materialIds="2002"/>
+          <Shape name="details" translation="-36.986 3.66487 55.0624" shapeId="22" clipDistance="300" nodeId="2105" castsShadows="true" receiveShadows="true" materialIds="2001"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="2106">
+          <Shape name="bgaContainer03" translation="0.00520988 1.39146 0.000578871" shapeId="23" static="true" clipDistance="500" nodeId="2107" castsShadows="true" receiveShadows="true" materialIds="2002"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="cargoContainerYellow" lockedgroup="true" translation="-8.50615 -5.21305e-06 -4.13191" rotation="5.04085e-08 -0 0" shapeId="24" clipDistance="150" nodeId="2108" castsShadows="true" receiveShadows="true" materialIds="2006">
+        <Shape name="decals" shapeId="25" clipDistance="30" nodeId="2109" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2014"/>
+        <Shape name="col" translation="-0.0120626 0.00693222 0.0982272" shapeId="26" visibility="false" static="true" density="0.0001" nodeId="2110" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <Shape name="containerSmall" lockedgroup="true" translation="-8.26262 -5.21305e-06 2.02121" shapeId="27" static="true" density="0.0001" nodeId="2111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="containerSmallVis" shapeId="28" clipDistance="110" nodeId="2112" castsShadows="true" receiveShadows="true" materialIds="2009">
+          <Shape name="decals" shapeId="29" clipDistance="30" nodeId="2113" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2010"/>
+        </Shape>
+      </Shape>
+      <Shape name="sawmillContainer" translation="6.57758 -5.21305e-06 0.762586" rotation="-0 90 0" shapeId="30" static="true" clipDistance="300" nodeId="2114" castsShadows="true" receiveShadows="true" materialIds="2015"/>
+      <Shape name="trashBinLarge01Vis" translation="-5.82971 -5.21305e-06 1.66458" shapeId="31" clipDistance="150" nodeId="2115" castsShadows="true" receiveShadows="true" materialIds="2026"/>
+      <Shape name="metalContainer01" lockedgroup="true" translation="-10.9594 -5.21305e-06 1.76808" shapeId="32" clipDistance="100" nodeId="2116" castsShadows="true" receiveShadows="true" materialIds="2012">
+        <Shape name="col" translation="0 0 2.2127" shapeId="33" visibility="false" static="true" density="0.0001" nodeId="2117" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377"/>
+      </Shape>
+      <TransformGroup name="container1_DS" lockedgroup="true" translation="-18.9811 -5.21305e-06 -2.93344" clipDistance="159" nodeId="2118">
+        <TransformGroup name="visual_lod" translation="5.968e-13 -1.85176 7.89454e-13" rotation="-2.44273e-11 0.415244 1.82887e-11" lodDistance="0 50" lodBlending="false" nodeId="2119">
+          <Shape name="LOD0" shapeId="34" nodeId="2120" castsShadows="true" receiveShadows="true" materialIds="2017,2022,2021"/>
+          <Shape name="LOD1" shapeId="35" nodeId="2121" castsShadows="true" receiveShadows="true" materialIds="2017,2021"/>
+        </TransformGroup>
+        <Shape name="decal01" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="36" clipDistance="150" nodeId="2122" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2004"/>
+        <Shape name="decal02" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="37" clipDistance="100" nodeId="2123" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2024,2025,2023"/>
+        <Shape name="decal03" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="38" clipDistance="150" nodeId="2124" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2003"/>
+      </TransformGroup>
+      <TransformGroup name="container2_DS" lockedgroup="true" translation="-16.3598 -9.02775e-06 -2.92262" clipDistance="150" nodeId="2125">
+        <TransformGroup name="visual_lod" translation="5.968e-13 -1.85176 7.89454e-13" rotation="-2.44273e-11 0.415244 1.82887e-11" lodDistance="0 50" lodBlending="false" nodeId="2126">
+          <Shape name="LOD0" shapeId="34" nodeId="2127" castsShadows="true" receiveShadows="true" materialIds="2016,2022,2021"/>
+          <Shape name="LOD1" shapeId="35" nodeId="2128" castsShadows="true" receiveShadows="true" materialIds="2018,2021"/>
+        </TransformGroup>
+        <Shape name="decal01" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="36" clipDistance="150" nodeId="2129" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2004"/>
+        <Shape name="decal02" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="37" clipDistance="100" nodeId="2130" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2024,2025,2023"/>
+        <Shape name="decal03" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="38" clipDistance="150" nodeId="2131" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2003"/>
+      </TransformGroup>
+      <TransformGroup name="container3_DS" lockedgroup="true" translation="-24.1799 -1.39835e-06 -2.92783" clipDistance="150" nodeId="2132">
+        <TransformGroup name="visual_lod" translation="5.968e-13 -1.85176 7.89454e-13" rotation="-2.44273e-11 0.415244 1.82887e-11" lodDistance="0 50" lodBlending="false" nodeId="2133">
+          <Shape name="LOD0" shapeId="34" nodeId="2134" castsShadows="true" receiveShadows="true" materialIds="2019,2022,2021"/>
+          <Shape name="LOD1" shapeId="35" nodeId="2135" castsShadows="true" receiveShadows="true" materialIds="2019,2021"/>
+        </TransformGroup>
+        <Shape name="decal01" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="36" clipDistance="150" nodeId="2136" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2004"/>
+        <Shape name="decal02" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="37" clipDistance="100" nodeId="2137" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2024,2025,2023"/>
+        <Shape name="decal03" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="38" clipDistance="150" nodeId="2138" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2003"/>
+      </TransformGroup>
+      <TransformGroup name="container4_DS" lockedgroup="true" translation="-21.5325 -5.21305e-06 -2.89833" clipDistance="150" nodeId="2139">
+        <TransformGroup name="visual_lod" translation="5.968e-13 -1.85176 7.89454e-13" rotation="-2.44273e-11 0.415244 1.82887e-11" lodDistance="0 50" lodBlending="false" nodeId="2140">
+          <Shape name="LOD0" shapeId="34" nodeId="2141" castsShadows="true" receiveShadows="true" materialIds="2020,2022,2021"/>
+          <Shape name="LOD1" shapeId="35" nodeId="2142" castsShadows="true" receiveShadows="true" materialIds="2020,2021"/>
+        </TransformGroup>
+        <Shape name="decal01" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="36" clipDistance="150" nodeId="2143" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2004"/>
+        <Shape name="decal02" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="37" clipDistance="100" nodeId="2144" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2024,2025,2023"/>
+        <Shape name="decal03" translation="0 -1.85176 0" rotation="-2.44273e-11 0.415244 1.82887e-11" shapeId="38" clipDistance="150" nodeId="2145" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2003"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

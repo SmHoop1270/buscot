@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="martground01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/maps/mapEU/textures/buildings/carDealerStorage/doorsSET_diffuse.dds"/>
+    <File fileId="11" filename="$data/maps/mapEU/textures/buildings/carDealerStorage/doorsSET_normal.dds"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/buildings/carDealerStorage/doorsSET_specular.dds"/>
+    <File fileId="13" filename="$data/maps/textures/shared/windowsIndustrial_diffuse.dds"/>
+    <File fileId="14" filename="$data/maps/textures/shared/windowsIndustrial_normal.dds"/>
+    <File fileId="15" filename="$data/maps/textures/shared/windowsIndustrial_specular.dds"/>
+    <File fileId="7" filename="$data/placeables/brandless/animalHusbandries/cowBarn/animalBarn_diffuse.dds"/>
+    <File fileId="8" filename="$data/placeables/brandless/animalHusbandries/cowBarn/animalBarn_normal.dds"/>
+    <File fileId="9" filename="$data/placeables/brandless/animalHusbandries/cowBarn/animalBarn_specular.dds"/>
+    <File fileId="1" filename="$data/placeables/easySheds/shared/easySheds01_diffuse.dds"/>
+    <File fileId="2" filename="$data/placeables/easySheds/shared/easySheds01_normal.dds"/>
+    <File fileId="3" filename="$data/placeables/easySheds/shared/easySheds01_specular.dds"/>
+    <File fileId="4" filename="$data/placeables/mapUS/tinySheds/tinyShed03_diffuse.dds"/>
+    <File fileId="5" filename="$data/placeables/mapUS/tinySheds/tinyShed03_normal.dds"/>
+    <File fileId="6" filename="$data/placeables/mapUS/tinySheds/tinyShed03_specular.dds"/>
+    <File fileId="17" filename="officeDecal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cowbarn.001" materialId="5">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="door02" materialId="6" diffuseColor="0.8 0.8 0.8 1">
+    </Material>
+    <Material name="greenTop" materialId="7">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="greenTop" materialId="8">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="Material" materialId="9">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="officeDecal" materialId="10" specularColor="0.501961 1 0" alphaBlending="true">
+      <Texture fileId="17"/>
+    </Material>
+    <Material name="windows" materialId="11">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="martground01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="ShedMain" shapeId="1" static="true" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="8">
+      <Shape name="roof" shapeId="2" clipDistance="10000" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="9">
+        <Shape name="gutters" rotation="90 -0 0" shapeId="3" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="copings" shapeId="4" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="concretewall" shapeId="5" static="true" clipDistance="10000" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="wood" shapeId="6" clipDistance="10000" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="9">
+        <Shape name="woodBeams" rotation="-90 74.8213 90" shapeId="7" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="ShedMain02" translation="0 0 23.1776" shapeId="1" static="true" clipDistance="10000" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="roof" shapeId="2" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="9">
+          <Shape name="gutters" rotation="90 -0 0" shapeId="3" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="copings" shapeId="4" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </Shape>
+        <Shape name="sides" translation="-18.755 6.73197 -0.266745" rotation="90 -0 0" scale="1.5 1.5 1.5" shapeId="8" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+    </Shape>
+    <Shape name="SideBuilding01" translation="11.3957 0.982004 -16.6104" scale="0.1 1 0.385" shapeId="9" clipDistance="10000" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7">
+      <Shape name="roofSide" translation="-113.957 -0.960114 47.4177" rotation="90 -0 0" scale="10 2.5974 1" shapeId="10" clipDistance="10000" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="Galvbeam.001" translation="-113.957 -0.982005 47.5301" rotation="90 -0 0" scale="10 2.5974 1" shapeId="11" clipDistance="1000" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="Galvbeam.002" shapeId="12" clipDistance="1000" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="Galvbeam.003" shapeId="13" clipDistance="1000" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="Galvbeam.004" shapeId="14" clipDistance="1000" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="Cube.008" translation="0 -1.93909 6.92779e-14" rotation="-90 -0 0" shapeId="15" clipDistance="1000" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      </Shape>
+      <Shape name="Cube.001" translation="-113.957 -0.982004 47.606" rotation="90 -0 0" scale="10 2.5974 1" shapeId="16" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="9,6"/>
+      <Shape name="officeDecal" translation="-113.957 -0.982005 47.6751" rotation="90 -0 0" scale="10 2.5974 1" shapeId="17" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="10"/>
+    </Shape>
+  </Scene>
+
+</i3D>

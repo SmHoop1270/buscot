@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Buscot Dairy</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>map/inports/FS25_Buscot_Dairy/textures/icon_buscot_dairy_production.dds</image>
+        <price>210000</price>
+		<dailyUpkeep>115</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+		<iconFilename>map/inports/FS25_Buscot_Dairy/textures/icon_buscot_dairy_production.dds</iconFilename>
+        <storeIconRendering>
+            <settings cameraXRot="-25" advancedBoundingBox="true" />
+        </storeIconRendering>
+    </storeData>
+
+    <base>
+        <filename>map/inports/FS25_Buscot_Dairy/buscot_dairy_production.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+   <!-- Opening hours -->
+    <openingHours startTime="7" endTime="19" disableIfClosed="true" closedText="The shop is closed right now." />
+    
+    <!-- Other common sections (add your own) -->
+    <!-- <sellingStation ... /> -->
+    <!-- <trigger ... /> -->
+    <!-- <sounds ... /> -->
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <productionPoint>
+        <productions>
+            <production id="butter_milk" name="%s (%s)" params="$l10n_fillType_butter|$l10n_fillType_milk" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK" amount="15" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="13" />
+                </outputs>
+            </production>
+            <production id="butter_goatMilk" name="%s (%s)" params="$l10n_fillType_butter|$l10n_fillType_goatMilk" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="GOATMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="10" />
+                </outputs>
+            </production>
+            <production id="butter_buffaloMilk" name="%s (%s)" params="$l10n_fillType_butter|$l10n_fillType_buffaloMilk" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="BUFFALOMILK" amount="15" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="30" />
+                </outputs>
+            </production>
+
+            <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="85" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHEESE" amount="4" />
+                </outputs>
+            </production>
+            <production id="goatcheese" name="$l10n_fillType_goatCheese" cyclesPerHour="80" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="GOATMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="GOATCHEESE" amount="12" />
+                </outputs>
+            </production>
+            <production id="buffalomozzarella" name="$l10n_fillType_buffaloMozzarella" cyclesPerHour="20" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="BUFFALOMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUFFALOMOZZARELLA" amount="4" />
+                </outputs>
+            </production>
+
+            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="105" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK"  amount="1" />
+                    <input fillType="SUGAR" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHOCOLATE" amount="1" />
+                </outputs>
+            </production>
+
+            <production id="milkBottled" name="$l10n_fillType_milk_bottled" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="MILK_BOTTLED" amount="10" />
+                </outputs>
+            </production>
+            <production id="goatmilkBottled" name="$l10n_fillType_goatMilk_bottled" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="GOATMILK" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="GOATMILK_BOTTLED" amount="10" />
+                </outputs>
+            </production>
+            <production id="buffalomilkBottled" name="$l10n_fillType_buffaloMilk_bottled" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="BUFFALOMILK" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUFFALOMILK_BOTTLED" amount="10" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="MILK"                capacity="100000" />
+            <capacity fillType="GOATMILK"            capacity="100000" />
+            <capacity fillType="BUFFALOMILK"         capacity="100000" />
+            <capacity fillType="SUGAR"               capacity="100000" />
+            <capacity fillType="BUTTER"              capacity="100000" />
+            <capacity fillType="CHEESE"              capacity="100000" />
+            <capacity fillType="GOATCHEESE"          capacity="100000" />
+            <capacity fillType="BUFFALOMOZZARELLA"   capacity="100000" />
+            <capacity fillType="CHOCOLATE"           capacity="100000" />
+            <capacity fillType="MILK_BOTTLED"        capacity="100000" />
+            <capacity fillType="GOATMILK_BOTTLED"    capacity="100000" />
+            <capacity fillType="BUFFALOMILK_BOTTLED" capacity="100000" />
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="MILK GOATMILK BUFFALOMILK"/>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="MILK GOATMILK BUFFALOMILK SUGAR"/>
+        </sellingStation>
+
+        <effectNodes>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEffectShape01" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.5"/>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEffectShape02" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.5"/>
+        </effectNodes>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" />
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle   template="dairyIdle" linkNode="0>" />
+            <active template="dairyWork" linkNode="0>" />
+        </sounds>
+    </productionPoint>
+
+ 
+
+   <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="warningStripes02"/>
+        <triggerMarker node="playerTriggerMarker" adjustToGround="true" groundOffset="0.4" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+	
+
+
+    <productionPoint>
+        <node nodeId="186"/>
+        <playerTrigger nodeId="188"/>
+<!--         <effects>
+            <effect nodeId="190" type="smoke"/>
+            <effect nodeId="191" type="smoke"/>
+        </effects> -->
+    </productionPoint>
+    <i3dMappings>
+        <i3dMapping id="dairyPlaceable" node="0>" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>1|0" />
+        <i3dMapping id="testAreaEnd01" node="0>1|0|0" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>2|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="realLightsLow" node="0>4|0" />
+        <i3dMapping id="realLightsHigh" node="0>4|1" />
+        <i3dMapping id="sellingStation" node="0>5" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|0" />
+        <i3dMapping id="unloadTrigger" node="0>5|1" />
+        <i3dMapping id="palletTrigger" node="0>5|2" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|3" />
+        <i3dMapping id="warningStripes02" node="0>5|4" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|0" />
+        <i3dMapping id="playerTrigger" node="0>6|1" />
+        <i3dMapping id="smokeEffectShape01" node="0>6|2|0" />
+        <i3dMapping id="smokeEffectShape02" node="0>6|2|1" />
+        <i3dMapping id="palletSpawner" node="0>7" />
+        <i3dMapping id="palletAreaStart01" node="0>7|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>7|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>7|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>7|1|0" />
+        <i3dMapping id="warningStripes" node="0>7|2" />
+        <i3dMapping id="warningStripes01" node="0>7|2|0" />
+        <i3dMapping id="infoTrigger" node="0>8" />
+		<i3dMapping id="milkParlour" node="0>11" />
+		<i3dMapping id="floor" node="0>11|0" />
+		<i3dMapping id="roof" node="0>11|1" />
+		<i3dMapping id="gutters" node="0>11|1|0" />
+		<i3dMapping id="copings" node="0>11|1|1" />
+		<i3dMapping id="centerBeams" node="0>11|2" />
+		<i3dMapping id="sides" node="0>11|2|0" />
+		<i3dMapping id="beamWood" node="0>11|2|1" />
+		<i3dMapping id="beamWood" node="0>11|2|2" />
+		<i3dMapping id="beamWood" node="0>11|2|3" />
+		<i3dMapping id="dairy" node="0>11|3" />
+		<i3dMapping id="generator" node="0>11|3|0" />
+<!-- 		<i3dMapping id="gates" node="2>3|1" />
+		<i3dMapping id="gate3" node="2>3|1|0" /> -->
+		
+		
+		
+    </i3dMappings>
+</placeable>

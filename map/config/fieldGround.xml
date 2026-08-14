@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<fieldGround>
+    <densityMaps>
+        <sprayLevel filename="map/data/infoLayer_sprayLevel.png" firstChannel="0" numChannels="2" maxValue="2"/>
+        <limeLevel filename="map/data/infoLayer_limeLevel.png" firstChannel="0" numChannels="2" />
+        <plowLevel filename="map/data/infoLayer_plowLevel.png" firstChannel="0" numChannels="1" />
+        <stubbleShredLevel filename="map/data/infoLayer_stubbleShredLevel.png" firstChannel="0" numChannels="1" />
+        <rollerLevel filename="map/data/infoLayer_rollerLevel.png" firstChannel="0" numChannels="1" />
+        <fieldType filename="map/data/infoLayer_fieldType.png" firstChannel="0" numChannels="1">
+            <default value="0" />
+            <rice value="1" />
+        </fieldType>
+		    <groundTypes useDefaultTerrainDetail="true" firstChannel="0" numChannels="4">
+            <stubbleTillage value="1" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <cultivated value="2" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <seedbed value="3" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <plowed value="4" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <rolledSeedbed value="5" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <ridge value="6" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <sown value="7" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <directSown value="8" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <planted value="9" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <ridgeSown value="10" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <rollerLines value="11" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <harvestReady value="12" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <harvestReadyOther value="13" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <grass value="14" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <grassCut value="15" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+
+            <ranges>
+                <sowable firstValue="1" lastValue="6" />
+                <sowing firstValue="6" lastValue="9" />
+            </ranges>
+        </groundTypes>
+
+        <groundAngle useDefaultTerrainDetail="true" firstChannel="4" numChannels="8" />
+
+        <sprayTypes useDefaultTerrainDetail="true" firstChannel="12" numChannels="3">
+            <fertilizer value="1" tireTrackColor="0.0529 0.0382 0.0242 1"/>
+            <manure value="2" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <liquidManure value="3" tireTrackColor="0.0844 0.0648 0.0272 1"/>
+            <lime value="4" tireTrackColor="0.2582 0.2270 0.1683 1"/>
+            <straw value="5" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+            <maize value="6" tireTrackColor="0.0865 0.0630 0.0356 1"/>
+        </sprayTypes>
+
+        <water useDefaultTerrainDetail="true" firstChannel="15" numChannels="1">
+            <watered value="1"/>
+        </water>
+    </densityMaps>
+</fieldGround>

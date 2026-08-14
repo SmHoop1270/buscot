@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="108">
+    <author>MA7Studio</author>
+    <contributors>
+        <contributor>Actinium</contributor>
+        <contributor>Itheniel [test]</contributor>
+    </contributors>
+    <version>1.0.0.0</version>
+    <title>
+        <en>John Deere Workshop</en>
+        <de>John Deere Werkstatt</de>
+        <fr>Concession John Deere</fr>
+    </title>
+    <description>
+<en><![CDATA[This building pack allows you to recreate a complete modern John Deere dealership, including a workshop, office facilities, and decorative elements:
+
+John Deere Workshop
+Category: Miscellaneous
+Price: $115,000
+Daily upkeep: $50
+
+John Deere Offices
+Category: Farmhouses
+Price: $243,000
+Daily upkeep: $25
+
+John Deere Dealership Sign
+Category: Decorations
+Price: $580
+Daily upkeep: $0
+
+John Deere Text Sign
+Category: Decorations
+Price: $580
+Daily upkeep: $0]]></en>
+<de><![CDATA[Mit diesem Gebäudepaket kannst du einen vollständigen modernen John-Deere-Händler nachbauen, einschließlich Werkstatt, Bürogebäuden und Dekorationselementen:
+
+John Deere Werkstatt
+Kategorie: Diverses
+Preis: 115.000 €
+Täglicher Unterhalt: 50 €
+
+John Deere Büros
+Kategorie: Bauernhöfe
+Preis: 243.000 €
+Täglicher Unterhalt: 25 €
+
+John Deere Händlerschild
+Kategorie: Dekorationen
+Preis: 580 €
+Täglicher Unterhalt: 0 €
+
+John Deere Schriftzug
+Kategorie: Dekorationen
+Preis: 580 €
+Täglicher Unterhalt: 0 €]]></de>
+<fr><![CDATA[Ce pack de bâtiment vous permet de recréer un concessionnaire Jhon Deere moderne complet comprennant un atelier, des locaux, et des éléments de décorations :
+
+Atelier John Deere
+Catégorie: Divers
+Prix: 115 000€
+Entretien quotidien: 50€
+
+Bureaux John Deere
+Catégorie: Fermes
+Prix: 243 000€
+Entretien quotidien: 25€
+
+Panneau de concession John Deere
+Catégorie: Décorations
+Prix: 580€
+Entretien quotidien: 0€
+
+Texte John Deere
+Catégorie: Décorations
+Prix: 580€
+Entretien quotidien: 0€
+]]></fr>
+<it><![CDATA[Questo pacchetto di edifici ti permette di ricreare una concessionaria John Deere moderna e completa, comprendente un’officina, locali e elementi decorativi:
+
+Officina John Deere
+Categoria: Varie
+Prezzo: €115,000
+Costo giornaliero: €50
+
+Uffici John Deere
+Categoria: Case coloniche
+Prezzo: €243,000
+Costo giornaliero: €25
+
+Insegna concessionario John Deere
+Categoria: Decorazioni
+Prezzo: €580
+Costo giornaliero: €0
+
+Insegna testuale John Deere
+Categoria: Decorazioni
+Prezzo: €580
+Costo giornaliero: €0]]></it>
+<es><![CDATA[Este pack de edificios te permite recrear un concesionario John Deere moderno y completo, que incluye un taller, oficinas y elementos decorativos:
+
+Taller John Deere
+Categoría: Varios
+Precio: €115,000
+Mantenimiento diario: €50
+
+Oficinas John Deere
+Categoría: Casas de campo
+Precio: €243,000
+Mantenimiento diario: €25
+
+Cartel del concesionario John Deere
+Categoría: Decoraciones
+Precio: €580
+Mantenimiento diario: €0
+
+Cartel de texto John Deere
+Categoría: Decoraciones
+Precio: €580
+Mantenimiento diario: €0]]></es>
+<nl><![CDATA[Met dit gebouwenpakket kun je een complete moderne John Deere-dealer nabouwen, inclusief werkplaats, kantoren en decoratieve elementen:
+
+John Deere werkplaats
+Categorie: Diversen
+Prijs: €115,000
+Dagelijkse kosten: €50
+
+John Deere kantoren
+Categorie: Boerderijen
+Prijs: €243,000
+Dagelijkse kosten: €25
+
+John Deere dealerbord
+Categorie: Decoraties
+Prijs: €580
+Dagelijkse kosten: €0
+
+John Deere tekstbord
+Categorie: Decoraties
+Prijs: €580
+Dagelijkse kosten: €0]]></nl>
+<pl><![CDATA[Ten pakiet budynków pozwala odtworzyć kompletny nowoczesny salon John Deere, obejmujący warsztat, biura oraz elementy dekoracyjne:
+
+Warsztat John Deere
+Kategoria: Różne
+Cena: €115,000
+Dzienny koszt utrzymania: €50
+
+Biura John Deere
+Kategoria: Domy wiejskie
+Cena: €243,000
+Dzienny koszt utrzymania: €25
+
+Szyld dealera John Deere
+Kategoria: Dekoracje
+Cena: €580
+Dzienny koszt utrzymania: €0
+
+Napis John Deere
+Kategoria: Dekoracje
+Cena: €580
+Dzienny koszt utrzymania: €0]]></pl>
+<cz><![CDATA[Tento balíček budov vám umožní vytvořit kompletní moderní dealerství John Deere, včetně dílny, kanceláří a dekorativních prvků:
+
+Dílna John Deere
+Kategorie: Ostatní
+Cena: €115,000
+Denní náklady na údržbu: €50
+
+Kanceláře John Deere
+Kategorie: Farmy
+Cena: €243,000
+Denní náklady na údržbu: €25
+
+Cedule dealerství John Deere
+Kategorie: Dekorace
+Cena: €580
+Denní náklady na údržbu: €0
+
+Textová cedule John Deere
+Kategorie: Dekorace
+Cena: €580
+Denní náklady na údržbu: €0]]></cz>
+<ru><![CDATA[Этот набор зданий позволяет вам воссоздать современный полноценный дилерский центр John Deere, включающий мастерскую, офисные помещения и декоративные элементы:
+
+Мастерская John Deere
+Категория: Разное
+Цена: €115,000
+Ежедневные расходы: €50
+
+Офисы John Deere
+Категория: Фермерские дома
+Цена: €243,000
+Ежедневные расходы: €25
+
+Вывеска дилера John Deere
+Категория: Декорации
+Цена: €580
+Ежедневные расходы: €0
+
+Текстовая вывеска John Deere
+Категория: Декорации
+Цена: €580
+Ежедневные расходы: €0]]></ru>
+<no><![CDATA[Denne bygningspakken lar deg gjenskape en komplett moderne John Deere-forhandler, inkludert verksted, kontorlokaler og dekorative elementer:
+
+John Deere verksted
+Kategori: Diverse
+Pris: €115,000
+Daglig vedlikehold: €50
+
+John Deere-kontorer
+Kategori: Bolighus
+Pris: €243,000
+Daglig vedlikehold: €25
+
+John Deere-forhandlerskilt
+Kategori: Dekorasjoner
+Pris: €580
+Daglig vedlikehold: €0
+
+John Deere-tekstskilt
+Kategori: Dekorasjoner
+Pris: €580
+Daglig vedlikehold: €0]]></no>
+<pt><![CDATA[Este pack de edifícios permite-te recriar um concessionário John Deere moderno e completo, incluindo oficina, escritórios e elementos decorativos:
+
+Oficina John Deere
+Categoria: Diversos
+Preço: €115,000
+Manutenção diária: €50
+
+Escritórios John Deere
+Categoria: Casas de quinta
+Preço: €243,000
+Manutenção diária: €25
+
+Placa do concessionário John Deere
+Categoria: Decorações
+Preço: €580
+Manutenção diária: €0
+
+Placa de texto John Deere
+Categoria: Decorações
+Preço: €580
+Manutenção diária: €0]]></pt>
+<ro><![CDATA[Acest pachet de clădiri îți permite să recreezi un concesionar John Deere modern și complet, incluzând un atelier, birouri și elemente decorative:
+
+Atelier John Deere
+Categorie: Diverse
+Preț: €115,000
+Întreținere zilnică: €50
+
+Birouri John Deere
+Categorie: Ferme
+Preț: €243,000
+Întreținere zilnică: €25
+
+Panou concesionar John Deere
+Categorie: Decorațiuni
+Preț: €580
+Întreținere zilnică: €0
+
+Panou text John Deere
+Categorie: Decorațiuni
+Preț: €580
+Întreținere zilnică: €0]]></ro>
+    </description> 
+    <iconFilename>icon_John_Deere_Workshop.png</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="Atelier_JD.xml"/>
+        <storeItem xmlFilename="Bureaux_JD.xml"/>
+        <storeItem xmlFilename="Bureaux_JD_map.xml"/>
+        <storeItem xmlFilename="Panneau_JD.xml"/>
+        <storeItem xmlFilename="Texte_JD.xml"/>
+    </storeItems>
+
+	<l10n filenamePrefix="languages/l10n"/>
+</modDesc>

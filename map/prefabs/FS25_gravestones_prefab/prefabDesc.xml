@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>OlaHaldor</author>
+    <version>1.0.0.0</version>
+    
+    <title>
+        <en>Grave Stones</en>
+        <de>Grabsteine</de>		
+    </title>
+    
+    <description>
+<en><![CDATA[
+A collection of 7 grave stones.]]></en>
+<de><![CDATA[
+Eine Sammlung von 7 Grabsteinen.]]></de>
+    </description>
+    
+    <categories>
+        <category>others</category>
+    </categories>
+    
+    <iconFilename>icon_gravestones.dds</iconFilename>
+    
+    <prefabs>
+        <prefab name="Grave Stone 1"  i3dFilename="model/gravestone_1.i3d" />
+    </prefabs>
+</prefabDesc>

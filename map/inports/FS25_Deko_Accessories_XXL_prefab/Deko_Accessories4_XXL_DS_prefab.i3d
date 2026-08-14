@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Deko_Accessories4_XXL_DS_prefab.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="51" filename="$data/maps/mapAS/textures/props/ads/adCurvedBig_diffuse.png"/>
+    <File fileId="89" filename="$data/maps/mapAS/textures/props/ads/adGroundAdecal.png"/>
+    <File fileId="86" filename="$data/maps/mapAS/textures/props/ads/adGroundBdecal.png"/>
+    <File fileId="83" filename="$data/maps/mapAS/textures/props/ads/adGround_diffuse.png"/>
+    <File fileId="84" filename="$data/maps/mapAS/textures/props/ads/adGround_normal.png"/>
+    <File fileId="85" filename="$data/maps/mapAS/textures/props/ads/adGround_specular.png"/>
+    <File fileId="87" filename="$data/maps/mapAS/textures/props/ads/adGroundsGlass_diffuse.png"/>
+    <File fileId="88" filename="$data/maps/mapAS/textures/props/ads/adGroundsGlass_specular.png"/>
+    <File fileId="48" filename="$data/maps/mapAS/textures/props/ads/adLargeBdecal_diffuse.png"/>
+    <File fileId="45" filename="$data/maps/mapAS/textures/props/ads/adLarge_diffuse.png"/>
+    <File fileId="46" filename="$data/maps/mapAS/textures/props/ads/adLarge_normal.png"/>
+    <File fileId="47" filename="$data/maps/mapAS/textures/props/ads/adLarge_specular.png"/>
+    <File fileId="31" filename="$data/maps/mapAS/textures/props/ads/adLightsDecals_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/mapAS/textures/props/ads/adMedAdecal_diffuse.png"/>
+    <File fileId="40" filename="$data/maps/mapAS/textures/props/ads/adMedium_diffuse.png"/>
+    <File fileId="41" filename="$data/maps/mapAS/textures/props/ads/adMedium_normal.png"/>
+    <File fileId="42" filename="$data/maps/mapAS/textures/props/ads/adMedium_specular.png"/>
+    <File fileId="39" filename="$data/maps/mapAS/textures/props/ads/adSmallAdecal_diffuse.png"/>
+    <File fileId="35" filename="$data/maps/mapAS/textures/props/ads/adSmall_diffuse.png"/>
+    <File fileId="36" filename="$data/maps/mapAS/textures/props/ads/adSmall_normal.png"/>
+    <File fileId="37" filename="$data/maps/mapAS/textures/props/ads/adSmall_specular.png"/>
+    <File fileId="50" filename="$data/maps/mapAS/textures/props/ads/adXLarge4x1Decal_diffuse.png"/>
+    <File fileId="18" filename="$data/maps/mapAS/textures/props/ads/adXLargeADecal_diffuse.png"/>
+    <File fileId="44" filename="$data/maps/mapAS/textures/props/ads/adXLargeBDecal_diffuse.png"/>
+    <File fileId="49" filename="$data/maps/mapAS/textures/props/ads/adXLargeVertical_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapAS/textures/props/ads/adXLarge_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapAS/textures/props/ads/adXLarge_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapAS/textures/props/ads/adXLarge_specular.png"/>
+    <File fileId="38" filename="$data/maps/mapAS/textures/props/ads/ads_lightmap.png"/>
+    <File fileId="22" filename="$data/maps/mapAS/textures/props/cornerAdSupport_diffuse.png"/>
+    <File fileId="23" filename="$data/maps/mapAS/textures/props/cornerAdSupport_normal.png"/>
+    <File fileId="24" filename="$data/maps/mapAS/textures/props/cornerAdSupport_specular.png"/>
+    <File fileId="91" filename="$data/maps/mapAS/textures/props/ledPanels/ledPanels_diffuse.png"/>
+    <File fileId="92" filename="$data/maps/mapAS/textures/props/ledPanels/ledPanels_normal.png"/>
+    <File fileId="93" filename="$data/maps/mapAS/textures/props/ledPanels/ledPanels_specular.png"/>
+    <File fileId="28" filename="$data/maps/mapAS/textures/props/shopFrontAdSet_diffuse.png"/>
+    <File fileId="29" filename="$data/maps/mapAS/textures/props/shopFrontAdSet_normal.png"/>
+    <File fileId="30" filename="$data/maps/mapAS/textures/props/shopFrontAdSet_specular.png"/>
+    <File fileId="80" filename="$data/maps/mapEU/textures/props/noticeBoardPaper_diffuse.png"/>
+    <File fileId="81" filename="$data/maps/mapEU/textures/props/noticeBoardPaper_normal.png"/>
+    <File fileId="82" filename="$data/maps/mapEU/textures/props/noticeBoardPaper_specular.png"/>
+    <File fileId="77" filename="$data/maps/mapEU/textures/props/noticeBoard_diffuse.png"/>
+    <File fileId="78" filename="$data/maps/mapEU/textures/props/noticeBoard_normal.png"/>
+    <File fileId="79" filename="$data/maps/mapEU/textures/props/noticeBoard_specular.png"/>
+    <File fileId="7" filename="$data/maps/mapEU/textures/shared/billboards/ad2x1_01_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapEU/textures/shared/billboards/ad2x3_01_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/shared/billboards/ad3x2_01_diffuse.png"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/shared/billboards/ad4x1_01_diffuse.png"/>
+    <File fileId="90" filename="$data/maps/mapUS/textures/buildings/gasStation/gasStationSign.i3d"/>
+    <File fileId="113" filename="$data/maps/mapUS/textures/props/propsSet01Decals_diffuse.png"/>
+    <File fileId="99" filename="$data/maps/mapUS/textures/props/shopBarberSetAlpha_diffuse.png"/>
+    <File fileId="100" filename="$data/maps/mapUS/textures/props/shopBarberSetAlpha_normal.png"/>
+    <File fileId="101" filename="$data/maps/mapUS/textures/props/shopBarberSetAlpha_specular.png"/>
+    <File fileId="94" filename="$data/maps/mapUS/textures/props/shopBarberSet_diffuse.png"/>
+    <File fileId="95" filename="$data/maps/mapUS/textures/props/shopBarberSet_normal.png"/>
+    <File fileId="96" filename="$data/maps/mapUS/textures/props/shopBarberSet_specular.png"/>
+    <File fileId="102" filename="$data/maps/mapUS/textures/props/shopPostSet_diffuse.png"/>
+    <File fileId="103" filename="$data/maps/mapUS/textures/props/shopPostSet_normal.png"/>
+    <File fileId="104" filename="$data/maps/mapUS/textures/props/shopPostSet_specular.png"/>
+    <File fileId="105" filename="$data/maps/mapUS/textures/props/sidewalkSignsSET_diffuse.png"/>
+    <File fileId="106" filename="$data/maps/mapUS/textures/props/sidewalkSignsSET_normal.png"/>
+    <File fileId="107" filename="$data/maps/mapUS/textures/props/sidewalkSignsSET_specular.png"/>
+    <File fileId="66" filename="$data/maps/mapUS/textures/props/signOpen01_diffuse.png"/>
+    <File fileId="67" filename="$data/maps/mapUS/textures/props/signOpen01_normal.png"/>
+    <File fileId="68" filename="$data/maps/mapUS/textures/props/signOpen01_specular.png"/>
+    <File fileId="110" filename="$data/maps/mapUS/textures/props/signRiverAccess_diffuse.png"/>
+    <File fileId="111" filename="$data/maps/mapUS/textures/props/signRiverAccess_normal.png"/>
+    <File fileId="112" filename="$data/maps/mapUS/textures/props/signRiverAccess_specular.png"/>
+    <File fileId="116" filename="$data/maps/mapUS/textures/props/signTheBestSavetyDevice_diffuse.png"/>
+    <File fileId="117" filename="$data/maps/mapUS/textures/props/signTheBestSavetyDevice_normal.png"/>
+    <File fileId="118" filename="$data/maps/mapUS/textures/props/signTheBestSavetyDevice_specular.png"/>
+    <File fileId="119" filename="$data/maps/mapUS/textures/props/signWelcomeHome_diffuse.png"/>
+    <File fileId="120" filename="$data/maps/mapUS/textures/props/signWelcomeHome_normal.png"/>
+    <File fileId="121" filename="$data/maps/mapUS/textures/props/signWelcomeHome_specular.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="32" filename="$data/maps/textures/shared/default_specular.png"/>
+    <File fileId="56" filename="$data/maps/textures/shared/props/advertisingFlagAxleDecal_diffuse.png"/>
+    <File fileId="60" filename="$data/maps/textures/shared/props/advertisingFlagSetDecal_diffuse.png"/>
+    <File fileId="57" filename="$data/maps/textures/shared/props/advertisingFlagSetDecal_normal.png"/>
+    <File fileId="58" filename="$data/maps/textures/shared/props/advertisingFlagSetDecal_specular.png"/>
+    <File fileId="53" filename="$data/maps/textures/shared/props/advertisingFlagSet_diffuse.png"/>
+    <File fileId="54" filename="$data/maps/textures/shared/props/advertisingFlagSet_normal.png"/>
+    <File fileId="55" filename="$data/maps/textures/shared/props/advertisingFlagSet_specular.png"/>
+    <File fileId="10" filename="$data/maps/textures/shared/props/billboards/billboard9M_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/props/billboards/billboard9M_normal.png"/>
+    <File fileId="12" filename="$data/maps/textures/shared/props/billboards/billboard9M_specular.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/billboards/billboards_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/billboards/billboards_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/billboards/billboards_specular.png"/>
+    <File fileId="65" filename="$data/maps/textures/shared/props/motorex/motorexAdvertisingFlag.i3d"/>
+    <File fileId="62" filename="$data/maps/textures/shared/props/teardropBanner01_diffuse.png"/>
+    <File fileId="63" filename="$data/maps/textures/shared/props/teardropBanner01_normal.png"/>
+    <File fileId="64" filename="$data/maps/textures/shared/props/teardropBanner01_specular.png"/>
+    <File fileId="61" filename="$data/placeables/mapAS/bakeryAS/bakeryASLogo_diffuse.png"/>
+    <File fileId="108" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPosters_diffuse.png"/>
+    <File fileId="109" filename="$data/placeables/mapUS/tailorUS/tailorUSLogo_diffuse.png"/>
+    <File fileId="115" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="59" filename="$data/shaders/flagShader.xml"/>
+    <File fileId="33" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="25" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="20" filename="$data/shaders/subUVShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+    <File fileId="76" filename="$data/shared/default_specular.png"/>
+    <File fileId="97" filename="$data/shared/window02_diffuse.png"/>
+    <File fileId="69" filename="textures/noticeBoard_diffuse.png"/>
+    <File fileId="70" filename="textures/noticeBoard_normal.png"/>
+    <File fileId="71" filename="textures/noticeBoard_specular.png"/>
+    <File fileId="72" filename="textures/postcardRacks_diffuse.png"/>
+    <File fileId="73" filename="textures/postcardRacks_normal.png"/>
+    <File fileId="74" filename="textures/postcardRacks_specular.png"/>
+    <File fileId="75" filename="textures/postcards_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="ad2x1_01_mat" materialId="2445">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="ad2x3_01_mat" materialId="2446">
+      <Texture fileId="9"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="ad3x2_01_mat" materialId="2447">
+      <Texture fileId="13"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="ad4x1_01_mat" materialId="2448">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="adCurvedBig_mat" materialId="2449" customShaderId="33">
+      <Texture fileId="51"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="lightControl" value="0.8"/>
+    </Material>
+    <Material name="adGround_mat" materialId="2450" customShaderId="25">
+      <Texture fileId="83"/>
+      <Normalmap fileId="84"/>
+      <Glossmap fileId="85"/>
+    </Material>
+    <Material name="adGroundAdecal_mat" materialId="2451" specularColor="0.501961 1 0.501961">
+      <Texture fileId="89"/>
+    </Material>
+    <Material name="adGroundBdecal_mat" materialId="2452" specularColor="0.501961 1 0.501961">
+      <Texture fileId="86"/>
+    </Material>
+    <Material name="adLarge_02_mat" materialId="2453" customShaderId="33" customShaderVariation="customEmissiveMap_secondUV">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+      <Custommap name="mEmissiveMap" fileId="38"/>
+      <CustomParameter name="lightControl" value="0.15"/>
+    </Material>
+    <Material name="adLargeBdecal_mat" materialId="2454" customShaderId="33" customShaderVariation="multiType">
+      <Texture fileId="48"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <Custommap name="mEmissiveMap" fileId="48"/>
+      <CustomParameter name="lightControl" value="20"/>
+    </Material>
+    <Material name="adLightsDecals_01_mat" materialId="2455" customShaderId="33" customShaderVariation="multiType">
+      <Texture fileId="31"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="lightControl" value="2"/>
+      <CustomParameter name="lightTypeBitMask" value="2"/>
+    </Material>
+    <Material name="adLightsDecals_02_mat" materialId="2456" customShaderId="33">
+      <Texture fileId="31"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="lightControl" value="0.7"/>
+    </Material>
+    <Material name="adMedAdecal_mat" materialId="2457" customShaderId="33" customShaderVariation="multiType">
+      <Texture fileId="43"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <Custommap name="mEmissiveMap" fileId="43"/>
+      <CustomParameter name="lightControl" value="12"/>
+      <CustomParameter name="lightTypeBitMask" value="4"/>
+    </Material>
+    <Material name="adMedium_01_mat" materialId="2458" customShaderId="33" customShaderVariation="customEmissiveMap_secondUV">
+      <Texture fileId="40"/>
+      <Normalmap fileId="41"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="mEmissiveMap" fileId="38"/>
+      <CustomParameter name="lightControl" value="0.2"/>
+    </Material>
+    <Material name="adSmall_03_mat" materialId="2459" customShaderId="33" customShaderVariation="customEmissiveMap_secondUV">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+      <Custommap name="mEmissiveMap" fileId="38"/>
+      <CustomParameter name="lightControl" value="0.2"/>
+    </Material>
+    <Material name="adSmallAdecal_mat" materialId="2460" customShaderId="33" customShaderVariation="multiType">
+      <Texture fileId="39"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <Custommap name="mEmissiveMap" fileId="39"/>
+      <CustomParameter name="lightControl" value="12"/>
+      <CustomParameter name="lightTypeBitMask" value="20"/>
+    </Material>
+    <Material name="advertisingFlagAxleDecal_mat" materialId="2461" customShaderId="59">
+      <Texture fileId="56"/>
+      <Normalmap fileId="57"/>
+      <Glossmap fileId="58"/>
+      <CustomParameter name="displacementSpeedFrequency" value="0.1 5 4 1"/>
+    </Material>
+    <Material name="advertisingFlagSet_mat" materialId="2462">
+      <Texture fileId="53"/>
+      <Normalmap fileId="54"/>
+      <Glossmap fileId="55"/>
+    </Material>
+    <Material name="advertisingFlagSetDecal_mat" materialId="2463" customShaderId="59">
+      <Texture fileId="60"/>
+      <Normalmap fileId="57"/>
+      <Glossmap fileId="58"/>
+      <CustomParameter name="displacementSpeedFrequency" value="0.1 5 4 1"/>
+    </Material>
+    <Material name="adXLarge4x1Decal_mat" materialId="2464" specularColor="0.501961 1 0.501961" customShaderId="20" customShaderVariation="ledPanel">
+      <Texture fileId="50"/>
+      <CustomParameter name="playScale" value="5 5 2 8"/>
+      <CustomParameter name="uvScale" value="16 4"/>
+    </Material>
+    <Material name="adXLarge_mat" materialId="2465">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="adXLargeADecal_mat" materialId="2466" specularColor="0.501961 1 0.501961" customShaderId="20" customShaderVariation="ledPanel">
+      <Texture fileId="18"/>
+      <CustomParameter name="playScale" value="4 4 4 4"/>
+      <CustomParameter name="lightControl" value="8"/>
+      <CustomParameter name="uvScale" value="8 8"/>
+    </Material>
+    <Material name="adXLargeBDecal_mat" materialId="2467" customShaderId="20" customShaderVariation="ledPanel">
+      <Texture fileId="44"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="playScale" value="0.2 0.2 2 2"/>
+      <CustomParameter name="uvScale" value="16 8"/>
+    </Material>
+    <Material name="adXLargeVertical_mat" materialId="2468" customShaderId="20" customShaderVariation="ledPanel">
+      <Texture fileId="49"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="playScale" value="0.1 0.1 2 2"/>
+      <CustomParameter name="uvScale" value="8 16"/>
+    </Material>
+    <Material name="bakeryASLogo_mat" materialId="2469" specularColor="0.501961 1 0.501961" customShaderId="25">
+      <Texture fileId="61"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="billboard9M_mat" materialId="2470">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="billboards_mat" materialId="2471">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="cornerAdSupport_mat" materialId="2472" customShaderId="25">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="farmersMarketPosters_mat" materialId="21495">
+      <Texture fileId="108"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="lambert1" materialId="1377" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="79" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="ledPanels_mat" materialId="13839">
+      <Texture fileId="91"/>
+      <Normalmap fileId="92"/>
+      <Glossmap fileId="93"/>
+    </Material>
+    <Material name="noticeBoard_mat" materialId="2473" customShaderId="25">
+      <Texture fileId="77"/>
+      <Normalmap fileId="78"/>
+      <Glossmap fileId="79"/>
+    </Material>
+    <Material name="noticeBoard_mat" materialId="2474" customShaderId="25">
+      <Texture fileId="69"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+    </Material>
+    <Material name="noticeBoardPaper_mat" materialId="2475">
+      <Texture fileId="80"/>
+      <Normalmap fileId="81"/>
+      <Glossmap fileId="82"/>
+    </Material>
+    <Material name="postcardRackSet_mat" materialId="2476">
+      <Texture fileId="72"/>
+      <Normalmap fileId="73"/>
+      <Glossmap fileId="74"/>
+    </Material>
+    <Material name="postcards_mat" materialId="2477">
+      <Texture fileId="75"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="76"/>
+    </Material>
+    <Material name="propsSet01Decals_mat" materialId="21590" specularColor="0.65098 1 0" customShaderId="115">
+      <Texture fileId="113"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="shopBarberSet_mat" materialId="21330" customShaderId="25">
+      <Texture fileId="94"/>
+      <Normalmap fileId="95"/>
+      <Glossmap fileId="96"/>
+    </Material>
+    <Material name="shopBarberSetAlpha_mat" materialId="21331">
+      <Texture fileId="99"/>
+      <Normalmap fileId="100"/>
+      <Glossmap fileId="101"/>
+    </Material>
+    <Material name="shopFrontAdSet_mat" materialId="2478" customShaderId="25">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="shopPostSet_mat" materialId="21401" customShaderId="25">
+      <Texture fileId="102"/>
+      <Normalmap fileId="103"/>
+      <Glossmap fileId="104"/>
+    </Material>
+    <Material name="sidewalkSignsSET_mat" materialId="21494">
+      <Texture fileId="105"/>
+      <Normalmap fileId="106"/>
+      <Glossmap fileId="107"/>
+    </Material>
+    <Material name="signOpen01_mat" materialId="2479" customShaderId="25">
+      <Texture fileId="66"/>
+      <Normalmap fileId="67"/>
+      <Glossmap fileId="68"/>
+    </Material>
+    <Material name="signRiverAccess_mat" materialId="21589" customShaderId="25">
+      <Texture fileId="110"/>
+      <Normalmap fileId="111"/>
+      <Glossmap fileId="112"/>
+    </Material>
+    <Material name="signTheBestSavetyDevice_mat" materialId="10237" customShaderId="25">
+      <Texture fileId="116"/>
+      <Normalmap fileId="117"/>
+      <Glossmap fileId="118"/>
+    </Material>
+    <Material name="signWelcomeHome_mat" materialId="21636" customShaderId="25">
+      <Texture fileId="119"/>
+      <Normalmap fileId="120"/>
+      <Glossmap fileId="121"/>
+    </Material>
+    <Material name="standardSurface1" materialId="1367" diffuseColor="0.4 0.4 0.4 1">
+    </Material>
+    <Material name="tailorUSLogo_mat" materialId="21496">
+      <Texture fileId="109"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="teardropBanner01_mat" materialId="2480">
+      <Texture fileId="62"/>
+      <Normalmap fileId="63"/>
+      <Glossmap fileId="64"/>
+    </Material>
+    <Material name="window02_mat" materialId="2481" alphaBlending="true">
+      <Texture fileId="87"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="88"/>
+    </Material>
+    <Material name="window02_mat" materialId="9406" specularColor="1 1 1" alphaBlending="true">
+      <Texture fileId="97"/>
+      <Normalmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Deko_Accessories4_XXL_DS_prefab.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Billboard AD Flag" translation="-112.28 -34.5547 -174.683" nodeId="2579">
+      <Shape name="billboardWall4x1" lockedgroup="true" translation="1.3204 1.84179 -12.1392" rotation="-8.65142e-06 -1.86693e-05 -8.65142e-06" scale="0.9 0.9 0.9" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="350" nodeId="2580" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="billboard64x1Vis" translation="0 -7.62939e-08 0" shapeId="2" clipDistance="350" nodeId="2581" castsShadows="true" receiveShadows="true" materialIds="2471"/>
+        <Shape name="_4x1PanelDecal" translation="0 -7.62939e-08 0" shapeId="3" clipDistance="200" nodeId="2582" castsShadows="true" receiveShadows="true" adPlacementId="9" decalLayer="1" materialIds="2448"/>
+      </Shape>
+      <Shape name="billboard2x1" lockedgroup="true" translation="7.72041 -8.34984e-07 -6.13449" rotation="-8.65142e-06 -1.86693e-05 -8.65142e-06" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="350" nodeId="2583" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="billboard2x1Vis" shapeId="5" clipDistance="350" nodeId="2584" castsShadows="true" receiveShadows="true" materialIds="2471"/>
+        <Shape name="_2x1PanelDecal" shapeId="6" clipDistance="200" nodeId="2585" castsShadows="true" receiveShadows="true" adPlacementId="21" decalLayer="1" materialIds="2445"/>
+      </Shape>
+      <Shape name="billboard2x3" lockedgroup="true" translation="8.25193 2.97971e-06 -12.6683" rotation="8.65142e-06 -1.86693e-05 8.65142e-06" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="350" nodeId="2586" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="billboard2x3Vis" shapeId="8" clipDistance="350" nodeId="2587" castsShadows="true" receiveShadows="true" materialIds="2471"/>
+        <Shape name="_2x3PanelDecal" shapeId="9" clipDistance="200" nodeId="2588" castsShadows="true" receiveShadows="true" adPlacementId="12" decalLayer="1" materialIds="2446"/>
+      </Shape>
+      <Shape name="billboardWall2x1" lockedgroup="true" translation="7.67788 2.36775 -5.49249" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="350" nodeId="2589" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="billboard3x2Vis" translation="0 0.0195319 -9.15527e-07" shapeId="11" clipDistance="350" nodeId="2590" castsShadows="true" receiveShadows="true" materialIds="2471"/>
+        <Shape name="_2x1PanelDecal" translation="0.0507568 -2.48476 -0.047485" shapeId="6" clipDistance="200" nodeId="2591" castsShadows="true" receiveShadows="true" adPlacementId="5" decalLayer="1" materialIds="2445"/>
+      </Shape>
+      <Shape name="billboardPole3x2" lockedgroup="true" translation="1.66292 -8.34984e-07 -12.8055" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="350" nodeId="2592" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="billboard9MVis" shapeId="13" clipDistance="350" nodeId="2593" castsShadows="true" receiveShadows="true" materialIds="2470"/>
+        <Shape name="_3x2Panel2Decal" shapeId="14" clipDistance="200" nodeId="2594" castsShadows="true" receiveShadows="true" adPlacementId="30" decalLayer="1" materialIds="2447"/>
+      </Shape>
+      <TransformGroup name="adLights" translation="1.59922 2.97971e-06 4.94965" nodeId="2595">
+        <TransformGroup name="adXLargeA10" lockedgroup="true" translation="5.91032 3.8147e-06 -15.1131" rotation="-5.23723e-06 -0 5.31537e-07" clipDistance="500" nodeId="2596">
+          <TransformGroup name="realLightsAdXLargeA6" translation="0 1.94913 0" nodeId="2597">
+            <Light name="pointLight01" rotation="0 -90 0" nodeId="2598" type="point" color="0.629 0.629 0.629" emitDiffuse="true" emitSpecular="true" range="15"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 50" static="true" collisionFilterMask="0xfffffbff" nodeId="2599">
+            <Shape name="LOD0" shapeId="15" nodeId="2600" castsShadows="true" receiveShadows="true" materialIds="2465">
+              <Shape name="supportLOD0" shapeId="16" nodeId="2601" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="17" nodeId="2602" castsShadows="true" receiveShadows="true" materialIds="2465">
+              <Shape name="supportLOD1" shapeId="18" nodeId="2603" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="col" shapeId="19" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2604" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decals" translation="0 0 0.024261" shapeId="20" nodeId="2605" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2466"/>
+        </TransformGroup>
+        <TransformGroup name="adLights8" lockedgroup="true" translation="-0.9739 0 -11.4994" rotation="-4.21725e-06 -0 -2.71633e-05" clipDistance="150" nodeId="2606">
+          <TransformGroup name="realLightsAdLights08" translation="-0.064592 0.946202 0.380878" nodeId="2607">
+            <Light name="pointLight01" rotation="0 -90 0" nodeId="2608" type="point" color="0.387 0.387 0.387" emitDiffuse="true" emitSpecular="true" range="10"/>
+          </TransformGroup>
+          <TransformGroup name="cornerAdSupportadLights" lockedgroup="true" clipDistance="100" nodeId="2609">
+            <TransformGroup name="vis_lod" lodDistance="0 20" lodBlending="false" nodeId="2610">
+              <Shape name="LOD0" translation="-0.049537 0 0.014987" shapeId="21" nodeId="2611" castsShadows="true" receiveShadows="true" materialIds="2472"/>
+              <Shape name="LOD1" translation="-0.049537 0 0.014987" shapeId="22" nodeId="2612" castsShadows="true" receiveShadows="true" materialIds="2472"/>
+            </TransformGroup>
+            <Shape name="col" shapeId="23" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2613" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" nodeId="2614">
+            <Shape name="LOD0" translation="0 0.135934 -0.107509" shapeId="24" nodeId="2615" castsShadows="true" receiveShadows="true" materialIds="2478"/>
+            <Shape name="LOD1" translation="0 0.135934 -0.107509" shapeId="25" nodeId="2616" castsShadows="true" receiveShadows="true" materialIds="2478"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="26" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2617" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decals" translation="1e-06 1.13376 0.251" shapeId="27" nodeId="2618" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2456"/>
+          <Shape name="lights" translation="7.4e-05 1.1342 0.237414" shapeId="28" nodeId="2619" castsShadows="true" receiveShadows="true" materialIds="2455"/>
+        </TransformGroup>
+        <TransformGroup name="adSmallA33" lockedgroup="true" translation="-6.80559 1.2915 -11.9903" rotation="-4.31786e-06 -0 2.26656e-06" clipDistance="120" nodeId="2620">
+          <TransformGroup name="realLightsAdSmallA12" translation="0 0 0.826786" rotation="0 90 0" nodeId="2621">
+            <Light name="pointLightAdMedC2" nodeId="2622" type="point" color="0.148 0.05402 0.0720923" emitDiffuse="true" emitSpecular="true" range="10"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 16" static="true" collisionFilterMask="0xfffffbff" nodeId="2623">
+            <Shape name="LOD0" shapeId="29" nodeId="2624" castsShadows="true" receiveShadows="true" materialIds="2459"/>
+            <Shape name="LOD1" shapeId="30" nodeId="2625" castsShadows="true" receiveShadows="true" materialIds="2459"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="31" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2626" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decalsA" translation="-0.000882 -0.00075 0.85791" shapeId="32" nodeId="2627" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2460"/>
+        </TransformGroup>
+        <TransformGroup name="adMedA19" lockedgroup="true" translation="-6.87848 2.49653 -9.56112" clipDistance="150" nodeId="2628">
+          <TransformGroup name="realLightsAdMedA10" translation="0 0 1.14084" nodeId="2629">
+            <Light name="pointLight02" rotation="0 -90 0" nodeId="2630" type="point" color="0.152378 0.142556 0.157" emitDiffuse="true" emitSpecular="true" range="10"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" nodeId="2631" weatherRequiredMask="0x40" renderInvisible="true">
+            <Shape name="lod0" translation="1e-06 0 0.894457" shapeId="33" nodeId="2632" castsShadows="true" receiveShadows="true" materialIds="2458"/>
+            <Shape name="lod1" shapeId="34" nodeId="2633" castsShadows="true" receiveShadows="true" materialIds="2458"/>
+          </TransformGroup>
+          <Shape name="decal" translation="0.004124 0 1.16714" shapeId="35" nodeId="2634" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2457"/>
+          <Shape name="col" shapeId="36" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2635" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+        </TransformGroup>
+        <TransformGroup name="adXLargeB16" lockedgroup="true" translation="-1.00801 0 -15.1051" rotation="-4.25667e-06 -0 2.83001e-05" clipDistance="500" nodeId="2636">
+          <TransformGroup name="realLightsAdXLargeB14" translation="0 2.01101 0" nodeId="2637">
+            <Light name="pointLight01" rotation="0 -90 0" nodeId="2638" type="point" color="0.387 0.315018 0.243036" emitDiffuse="true" emitSpecular="true" range="20"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 50" static="true" collisionFilterMask="0xfffffbff" nodeId="2639">
+            <Shape name="LOD0" shapeId="37" nodeId="2640" castsShadows="true" receiveShadows="true" materialIds="2465">
+              <Shape name="supportLOD0" shapeId="38" nodeId="2641" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="39" nodeId="2642" castsShadows="true" receiveShadows="true" materialIds="2465">
+              <Shape name="supportLOD1" shapeId="40" nodeId="2643" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+            </Shape>
+          </TransformGroup>
+          <Shape name="col" shapeId="41" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2644" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decals" translation="0 0 0.016248" shapeId="42" nodeId="2645" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2467"/>
+        </TransformGroup>
+        <TransformGroup name="adLargeB12" lockedgroup="true" translation="-6.29539 3.35082 -12.8747" rotation="0 -90 0" clipDistance="180" nodeId="2646">
+          <TransformGroup name="realLightsAdLargeB2" translation="0 0 0.736" nodeId="2647">
+            <Light name="pointLightAdLargeB01" nodeId="2648" type="point" color="0.139648 0.297 0.133353" emitDiffuse="true" emitSpecular="true" range="10"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 25" static="true" collisionFilterMask="0xfffffbff" nodeId="2649">
+            <Shape name="lod0" shapeId="43" nodeId="2650" castsShadows="true" receiveShadows="true" materialIds="2453"/>
+            <Shape name="lod1" shapeId="44" nodeId="2651" castsShadows="true" receiveShadows="true" materialIds="2453"/>
+          </TransformGroup>
+          <Shape name="decals" translation="0 0 0.759038" shapeId="45" nodeId="2652" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2454"/>
+          <Shape name="col" shapeId="46" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2653" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+        </TransformGroup>
+        <TransformGroup name="adXLarge_vertical7" lockedgroup="true" translation="-7.49416 -3.8147e-06 -14.4855" clipDistance="500" nodeId="2654">
+          <TransformGroup name="vis_lod" translation="0 0.251897 0" lodDistance="0 50" static="true" collisionFilterMask="0xfffffbff" nodeId="2655">
+            <Shape name="LOD0" shapeId="47" nodeId="2656" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+            <Shape name="LOD1" shapeId="48" nodeId="2657" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+          </TransformGroup>
+          <Shape name="col" translation="0 0.251897 0" shapeId="49" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2658" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decals" translation="0 0.251897 0.005304" shapeId="50" nodeId="2659" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2468"/>
+          <TransformGroup name="realLightsadXLarge_vertical" translation="0 3.58907 0" nodeId="2660">
+            <Light name="pointLight01" rotation="0 -90 0" nodeId="2661" type="point" color="0.539 0.482614 0.35574" emitDiffuse="true" emitSpecular="true" range="20"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="adXLarge_4x1_02" lockedgroup="true" translation="-0.769676 0 -13.4074" clipDistance="500" nodeId="2662">
+          <TransformGroup name="realLightsadXLarge_4x04" translation="0 1.03498 0" nodeId="2663">
+            <Light name="pointLight01" rotation="0 -90 0" nodeId="2664" type="point" color="0.378 0.351976 0.310338" emitDiffuse="true" emitSpecular="true" range="15"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 50" static="true" collisionFilterMask="0xfffffbff" nodeId="2665">
+            <Shape name="LOD0" shapeId="51" nodeId="2666" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+            <Shape name="LOD1" shapeId="52" nodeId="2667" castsShadows="true" receiveShadows="true" materialIds="2465"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="53" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2668" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decals" translation="0 0 0.015919" shapeId="54" nodeId="2669" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2464"/>
+        </TransformGroup>
+        <TransformGroup name="adCurvedBig14" lockedgroup="true" translation="-0.941597 0 -10.1066" rotation="0 1.00179e-05 0" clipDistance="150" nodeId="2670">
+          <TransformGroup name="realLightsAdCurvedBig04" translation="0 0.941491 0.435228" nodeId="2671">
+            <Light name="pointLight01" rotation="0 -90 0" nodeId="2672" type="point" color="0.3318 0.387708 0.395" emitDiffuse="true" emitSpecular="true" range="10"/>
+          </TransformGroup>
+          <TransformGroup name="vis_lod" lodDistance="0 20" static="true" collisionFilterMask="0xfffffbff" nodeId="2673">
+            <Shape name="LOD0" shapeId="55" nodeId="2674" castsShadows="true" receiveShadows="true" materialIds="2478"/>
+            <Shape name="LOD1" shapeId="56" nodeId="2675" castsShadows="true" receiveShadows="true" materialIds="2478"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="57" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2676" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1367"/>
+          <Shape name="decals" translation="0 1.03787 0.404583" shapeId="58" nodeId="2677" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2449"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="Flag" translation="-4.77364 2.97971e-06 5.46066" nodeId="2678">
+        <Shape name="advertisingFlagAxle" lockedgroup="true" translation="-0.237549 0 -2.30853" shapeId="59" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2679" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="advertisingFlag01Vis" shapeId="60" clipDistance="200" nodeId="2680" castsShadows="true" receiveShadows="true" materialIds="2462">
+            <Shape name="flag" shapeId="61" clipDistance="200" nodeId="2681" castsShadows="true" receiveShadows="true" materialIds="2461"/>
+          </Shape>
+        </Shape>
+        <Shape name="advertisingFlag02" lockedgroup="true" translation="1.57723 0 -2.40942" shapeId="59" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2682" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="advertisingFlag02Vis" shapeId="62" clipDistance="200" nodeId="2683" castsShadows="true" receiveShadows="true" materialIds="2462">
+            <Shape name="flag" shapeId="63" clipDistance="200" nodeId="2684" castsShadows="true" receiveShadows="true" materialIds="2463"/>
+          </Shape>
+        </Shape>
+        <Shape name="advertisingFlag01BakeryAS" lockedgroup="true" translation="1.04758 0 -1.52454" shapeId="64" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2685" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="advertisingFlag03Vis" shapeId="65" clipDistance="200" nodeId="2686" castsShadows="true" receiveShadows="true" materialIds="2462">
+            <Shape name="flag" rotation="-10.7914 0 0" shapeId="66" clipDistance="200" nodeId="2687" castsShadows="true" receiveShadows="true" materialIds="2469"/>
+          </Shape>
+        </Shape>
+        <Shape name="advertisingFlag02BakeryAS" lockedgroup="true" translation="2.30217 0 -1.49596" shapeId="67" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2688" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="advertisingFlag04Vis" shapeId="68" clipDistance="200" nodeId="2689" castsShadows="true" receiveShadows="true" materialIds="2462">
+            <Shape name="flag" rotation="-10.7914 0 0" shapeId="69" clipDistance="200" nodeId="2690" castsShadows="true" receiveShadows="true" materialIds="2469"/>
+          </Shape>
+        </Shape>
+        <Shape name="teardropBanner01" lockedgroup="true" translation="-0.691429 0 -1.27356" shapeId="70" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="80" nodeId="2691" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+          <Shape name="teardropBanner01Vis" shapeId="71" clipDistance="70" nodeId="2692" castsShadows="true" receiveShadows="true" materialIds="2480"/>
+        </Shape>
+        <ReferenceNode name="motorexAdvertisingFlag" translation="-1.58933 0 -2.25325" referenceId="65" nodeId="2698"/>
+        <TransformGroup name="signOpen01" lockedgroup="true" translation="-1.16028 0 -1.17516" rotation="180 -0 180" nodeId="2701">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="120" nodeId="2702">
+            <Shape name="LOD0" shapeId="72" nodeId="2703" castsShadows="true" receiveShadows="true" materialIds="2479"/>
+            <Shape name="LOD1" shapeId="73" nodeId="2704" castsShadows="true" receiveShadows="true" materialIds="2479"/>
+          </TransformGroup>
+          <Shape name="col" shapeId="74" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2705" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="noticeBoard" translation="-1.54719 2.97971e-06 1.0211" shapeId="75" static="true" clipDistance="200" nodeId="2706" castsShadows="true" receiveShadows="true" materialIds="2474"/>
+      <Shape name="postcardRackTurnable" lockedgroup="true" translation="-0.550406 2.97971e-06 3.98573" shapeId="76" static="true" clipDistance="100" nodeId="2707" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="postcardRackTurnable_vis" shapeId="77" clipDistance="100" nodeId="2708" castsShadows="true" receiveShadows="true" materialIds="2476"/>
+        <Shape name="postcardRackTurnablePostcards" shapeId="78" clipDistance="100" nodeId="2709" castsShadows="true" receiveShadows="true" materialIds="2477"/>
+      </Shape>
+      <Shape name="noticeBoard" lockedgroup="true" translation="1.09954 2.97971e-06 0.654476" shapeId="79" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="120" nodeId="2710" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1377">
+        <Shape name="LOD0" shapeId="80" nodeId="2711" castsShadows="true" receiveShadows="true" materialIds="2473"/>
+        <Shape name="pagesDecals" shapeId="81" clipDistance="50" nodeId="2712" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2475"/>
+      </Shape>
+      <TransformGroup name="adGroundD" lockedgroup="true" translation="0.796831 2.97971e-06 4.0789" rotation="-180 -0 180" clipDistance="80" nodeId="2713">
+        <Shape name="adGroundD" shapeId="82" nodeId="2714" castsShadows="true" receiveShadows="true" materialIds="2450"/>
+        <Shape name="col" shapeId="83" static="true" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2715" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <Shape name="decals" shapeId="84" nodeId="2716" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2452"/>
+      </TransformGroup>
+      <TransformGroup name="adGroundC" lockedgroup="true" translation="2.23781 2.97971e-06 4.07747" rotation="2.65442e-06 -0 1.71378e-07" clipDistance="80" nodeId="2717">
+        <Shape name="adGroundC" shapeId="85" nodeId="2718" castsShadows="true" receiveShadows="true" materialIds="2450">
+          <Shape name="glass" translation="0 1.4 0.2056" shapeId="86" nodeId="2719" castsShadows="true" receiveShadows="true" materialIds="2481"/>
+        </Shape>
+        <Shape name="col" shapeId="87" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2720" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <Shape name="decals" translation="0 0 0.001232" shapeId="88" nodeId="2721" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2452"/>
+      </TransformGroup>
+      <TransformGroup name="adGroundA" lockedgroup="true" translation="3.4748 2.97971e-06 4.21248" clipDistance="80" nodeId="2722">
+        <Shape name="adGroundA" shapeId="89" nodeId="2723" castsShadows="true" receiveShadows="true" materialIds="2450">
+          <Shape name="glass" translation="0 1.09238 0.00274" shapeId="90" nodeId="2724" castsShadows="true" receiveShadows="true" materialIds="2481"/>
+        </Shape>
+        <Shape name="decal" shapeId="91" nodeId="2725" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2451"/>
+        <Shape name="col" shapeId="92" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2726" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="adGroundB" lockedgroup="true" translation="4.97916 2.97971e-06 3.98575" clipDistance="80" nodeId="2727">
+        <Shape name="adGroundB" shapeId="93" nodeId="2728" castsShadows="true" receiveShadows="true" materialIds="2450">
+          <Shape name="glass" translation="0 0.835188 0" shapeId="94" nodeId="2729" castsShadows="true" receiveShadows="true" materialIds="2481"/>
+        </Shape>
+        <Shape name="col" shapeId="95" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="2730" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+        <Shape name="decals" translation="0 0.841473 0" shapeId="96" nodeId="2731" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="2452"/>
+      </TransformGroup>
+      <ReferenceNode name="gasStationSign_lod" translation="-6.53661 0 -12.2199" rotation="180 -0 180" referenceId="90" nodeId="2741"/>
+      <TransformGroup name="ledAdPanelA" lockedgroup="true" translation="10.4854 0 -4.22284" clipDistance="175" nodeId="13843">
+        <Shape name="LOD0" shapeId="97" nodeId="13844" castsShadows="true" receiveShadows="true" materialIds="13839"/>
+        <Shape name="col" shapeId="98" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13845" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="ledAdPanelB" lockedgroup="true" translation="5.82111 0 -4.27731" clipDistance="175" nodeId="13849">
+        <Shape name="LOD1" shapeId="99" nodeId="13850" castsShadows="true" receiveShadows="true" materialIds="13839"/>
+        <Shape name="col" shapeId="100" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="13851" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet02" lockedgroup="true" translation="5.22298 0 5.88457" clipDistance="50" nodeId="21366">
+        <Shape name="LOD0" shapeId="101" nodeId="21367" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        <Shape name="col" shapeId="102" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21368" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet03" lockedgroup="true" translation="9.03062 0 4.00391" clipDistance="40" nodeId="21369">
+        <Shape name="LOD0" shapeId="103" nodeId="21370" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        <Shape name="col" shapeId="104" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21371" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet04" lockedgroup="true" translation="7.43896 0 3.35179" clipDistance="80" nodeId="21372">
+        <Shape name="LOD0" shapeId="105" nodeId="21373" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        <Shape name="col" shapeId="106" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21374" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet05" lockedgroup="true" translation="10.4641 0 4.71564" clipDistance="50" nodeId="21375">
+        <Shape name="LOD0" shapeId="107" nodeId="21376" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        <Shape name="col" shapeId="108" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21377" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet06" lockedgroup="true" translation="9.69825 0 4.66223" nodeId="21378">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="70" nodeId="21379">
+          <Shape name="LOD0" shapeId="109" nodeId="21380" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+          <Shape name="LOD1" shapeId="110" nodeId="21381" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="111" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21382" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet07" lockedgroup="true" translation="7.26204 0 4.05049" clipDistance="70" nodeId="21383">
+        <Shape name="LOD0" shapeId="112" nodeId="21384" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        <Shape name="col" shapeId="113" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21385" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet09" lockedgroup="true" translation="6.37897 0 5.93547" nodeId="21392">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="70" nodeId="21393">
+          <Shape name="LOD0" shapeId="114" nodeId="21394" castsShadows="true" receiveShadows="true" materialIds="21330">
+            <Shape name="glass" shapeId="115" nodeId="21395" castsShadows="true" receiveShadows="true" materialIds="9406"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="116" nodeId="21396" castsShadows="true" receiveShadows="true" materialIds="21330"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="117" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21397" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="shopBarberSet10" lockedgroup="true" translation="9.87751 0 3.98338" clipDistance="60" nodeId="21398">
+        <Shape name="LOD0" shapeId="118" nodeId="21399" castsShadows="true" receiveShadows="true" materialIds="21331"/>
+        <Shape name="col" shapeId="119" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21400" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost01" lockedgroup="true" translation="6.99815 0 4.60355" clipDistance="50" nodeId="21437">
+        <Shape name="LOD0" shapeId="120" nodeId="21438" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        <Shape name="col" shapeId="121" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21439" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost02" lockedgroup="true" translation="5.8154 0 1.49782" clipDistance="50" nodeId="21440">
+        <Shape name="LOD0" shapeId="122" nodeId="21441" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        <Shape name="col" shapeId="123" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost03" lockedgroup="true" translation="11.6297 0 -0.500168" clipDistance="110" nodeId="21443">
+        <Shape name="LOD0" shapeId="124" nodeId="21444" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        <Shape name="col" shapeId="125" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21445" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost04" lockedgroup="true" translation="11.0479 0 -1.68672" clipDistance="60" nodeId="21446">
+        <Shape name="LOD0" shapeId="126" nodeId="21447" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        <Shape name="col" shapeId="127" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21448" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost05" lockedgroup="true" translation="7.61456 1.09039 -2.08301" clipDistance="60" nodeId="21449">
+        <Shape name="LOD0" shapeId="128" nodeId="21450" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        <Shape name="col" shapeId="129" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21451" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost06" lockedgroup="true" translation="9.26894 0 5.45999" clipDistance="60" nodeId="21452">
+        <Shape name="LOD0" shapeId="130" nodeId="21453" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+      </TransformGroup>
+      <TransformGroup name="signPost07" lockedgroup="true" translation="10.2732 0 5.32951" clipDistance="60" nodeId="21454">
+        <Shape name="LOD0" shapeId="131" nodeId="21455" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+      </TransformGroup>
+      <TransformGroup name="signPost08" lockedgroup="true" translation="8.04093 0 4.61259" nodeId="21456">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="60" nodeId="21457">
+          <Shape name="LOD0" shapeId="132" nodeId="21458" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+          <Shape name="LOD1" shapeId="133" nodeId="21459" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="134" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21460" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost09" lockedgroup="true" translation="10.9262 0.741859 1.34604" nodeId="21461">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="60" nodeId="21462">
+          <Shape name="LOD0" shapeId="135" nodeId="21463" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+          <Shape name="LOD1" shapeId="136" nodeId="21464" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="137" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21465" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost10" lockedgroup="true" translation="9.79061 0 3.2151" nodeId="21466">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="60" nodeId="21467">
+          <Shape name="LOD0" shapeId="138" nodeId="21468" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+          <Shape name="LOD1" shapeId="139" nodeId="21469" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="140" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21470" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signPost11" lockedgroup="true" translation="10.6505 0 3.90366" clipDistance="60" nodeId="21471">
+        <Shape name="LOD0" shapeId="141" nodeId="21472" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+      </TransformGroup>
+      <TransformGroup name="signPost12" lockedgroup="true" translation="9.02946 0 4.65634" nodeId="21473">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="60" nodeId="21474">
+          <Shape name="LOD0" shapeId="142" nodeId="21475" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+          <Shape name="LOD1" shapeId="143" nodeId="21476" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="signPost16" lockedgroup="true" translation="8.1087 0 1.40657" nodeId="21489">
+        <TransformGroup name="visual_lod" clipDistance="110" nodeId="21490">
+          <Shape name="LOD0" shapeId="144" nodeId="21491" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+          <Shape name="LOD1" shapeId="145" nodeId="21492" castsShadows="true" receiveShadows="true" materialIds="21401"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="146" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21493" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <Shape name="sidewalkSign01" lockedgroup="true" translation="0.59462 0 5.93341" shapeId="147" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21513" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="sidewalkSign01Vis" shapeId="148" clipDistance="60" nodeId="21514" castsShadows="true" receiveShadows="true" materialIds="21494">
+          <Shape name="poster" rotation="270 0 180" shapeId="149" nodeId="21515" castsShadows="true" receiveShadows="true" materialIds="21495"/>
+        </Shape>
+      </Shape>
+      <Shape name="sidewalkSign02" lockedgroup="true" translation="2.46638 0 5.97371" shapeId="150" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21516" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="sidewalkSign02Vis" shapeId="151" clipDistance="60" nodeId="21517" castsShadows="true" receiveShadows="true" materialIds="21494">
+          <Shape name="poster" rotation="270 0 180" shapeId="152" nodeId="21518" castsShadows="true" receiveShadows="true" materialIds="21495"/>
+        </Shape>
+      </Shape>
+      <Shape name="sidewalkSign03" lockedgroup="true" translation="3.51089 0 5.92506" shapeId="153" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21519" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="sidewalkSign03Vis" shapeId="154" clipDistance="60" nodeId="21520" castsShadows="true" receiveShadows="true" materialIds="21494">
+          <Shape name="poster" rotation="270 0 180" shapeId="155" nodeId="21521" castsShadows="true" receiveShadows="true" materialIds="21495"/>
+        </Shape>
+      </Shape>
+      <Shape name="sidewalkSign04" lockedgroup="true" translation="4.27395 0 5.91942" shapeId="153" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21522" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="sidewalkSign04Vis" shapeId="154" clipDistance="60" nodeId="21523" castsShadows="true" receiveShadows="true" materialIds="21494">
+          <Shape name="poster" rotation="270 0 180" shapeId="156" nodeId="21524" castsShadows="true" receiveShadows="true" materialIds="21496"/>
+        </Shape>
+      </Shape>
+      <Shape name="sidewalkSign05" lockedgroup="true" translation="1.5871 0 6.00854" shapeId="150" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21525" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79">
+        <Shape name="sidewalkSign05Vis" shapeId="151" clipDistance="60" nodeId="21526" castsShadows="true" receiveShadows="true" materialIds="21494">
+          <Shape name="poster" rotation="270 0 180" shapeId="157" nodeId="21527" castsShadows="true" receiveShadows="true" materialIds="2469"/>
+        </Shape>
+      </Shape>
+      <TransformGroup name="signRiverAccess" lockedgroup="true" translation="4.94308 0 10.0168" nodeId="21596">
+        <TransformGroup name="visual_lod" lodDistance="0 20" lodBlending="false" clipDistance="165" nodeId="21597">
+          <Shape name="LOD0" shapeId="158" nodeId="21598" castsShadows="true" receiveShadows="true" materialIds="21589"/>
+          <Shape name="LOD1" shapeId="159" nodeId="21599" castsShadows="true" receiveShadows="true" materialIds="21589"/>
+        </TransformGroup>
+        <Shape name="decals" shapeId="160" clipDistance="65" nodeId="21600" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="21590"/>
+        <Shape name="col" shapeId="161" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21601" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signTheBestSavetyDevice" lockedgroup="true" translation="7.69537 0 5.88713" nodeId="21606">
+        <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" clipDistance="110" nodeId="21607">
+          <Shape name="LOD0" shapeId="162" nodeId="21608" castsShadows="true" receiveShadows="true" materialIds="10237"/>
+          <Shape name="LOD1" shapeId="163" nodeId="21609" castsShadows="true" receiveShadows="true" materialIds="10237"/>
+        </TransformGroup>
+        <Shape name="col" translation="0 0 0.000362" shapeId="164" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21610" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+      <TransformGroup name="signWelcomeHome" lockedgroup="true" translation="3.73812 0 0.832809" nodeId="21641">
+        <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="140" nodeId="21642">
+          <Shape name="LOD0" shapeId="165" nodeId="21643" castsShadows="true" receiveShadows="true" materialIds="21636"/>
+          <Shape name="LOD1" shapeId="166" nodeId="21644" castsShadows="true" receiveShadows="true" materialIds="21636"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="167" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="21645" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="79"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

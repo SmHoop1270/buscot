@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="forestrysellpoint.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="textures/forestrysellpoint_diffuse.dds"/>
+    <File fileId="9" filename="textures/forestrysellpoint_normal.dds"/>
+    <File fileId="10" filename="textures/forestrysellpoint_specular.dds"/>
+    <File fileId="11" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="4" filename="$data/shared/warningStripes_diffuse.dds"/>
+    <File fileId="5" filename="$data/shared/warningStripes_normal.dds"/>
+    <File fileId="6" filename="$data/shared/warningStripes_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="i3d_default_material" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="logholder_mat" materialId="8" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="9">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="forestrysellpoint.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="logholder" clipDistance="300" nodeId="27">
+      <TransformGroup name="levelAreas" nodeId="28">
+        <TransformGroup name="levelArea1Start" translation="-7.893 0 -5.55827" nodeId="29">
+          <TransformGroup name="levelArea1Width" translation="-0.117535 0 19.1604" nodeId="30"/>
+          <TransformGroup name="levelArea1Height" translation="21.1512 0 0.375312" nodeId="31"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="paintAreas" nodeId="32">
+        <TransformGroup name="paintAreaStart01" translation="-7.893 0 -5.55827" nodeId="33">
+          <TransformGroup name="paintAreaWidth01" translation="-0.117535 0 19.1604" nodeId="34"/>
+          <TransformGroup name="paintAreaHeight01" translation="21.1512 0 0.375312" nodeId="35"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="36">
+        <TransformGroup name="testArea1Start" translation="-7.893 0 -5.55827" nodeId="37">
+          <TransformGroup name="testArea1End" translation="16.4918 3.00481 17.9889" nodeId="38"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="39">
+        <TransformGroup name="indoorArea1Start" translation="-7.893 0 -5.55827" nodeId="40">
+          <TransformGroup name="indoorArea1Width" translation="-0.117535 0 19.1604" nodeId="41"/>
+          <TransformGroup name="indoorArea1Height" translation="21.1512 0 0.375312" nodeId="42"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="clearAreas" nodeId="43">
+        <TransformGroup name="clearArea1Start" translation="-7.893 0 -5.55827" nodeId="44">
+          <TransformGroup name="clearArea1Width" translation="-0.117535 0 19.1604" nodeId="45"/>
+          <TransformGroup name="clearArea1Height" translation="21.1512 0 0.375312" nodeId="46"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="0 2.27374e-15 0" nodeId="47">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-8.13412 0 -5.58728" nodeId="48">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="15.8789 -6.82121e-15 19.2664" nodeId="49"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions_visual" nodeId="50">
+        <Shape name="col1" translation="5.96397 1.069 -0.0958449" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col1.001" translation="1.94197 1.0686 -0.0958449" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col1.002" translation="-2.03798 1.0686 -0.0958449" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col1.003" translation="-6.04596 1.0686 -0.0958449" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col2" translation="5.96397 1.07833 -0.0958449" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col2.001" translation="1.94197 1.07833 -0.0958449" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col2.002" translation="-2.03798 1.07833 -0.0958449" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col2.003" translation="-6.04596 1.07833 -0.0958449" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col3" translation="5.96397 1.0686 3.59254" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col3.001" translation="1.94197 1.0686 3.59254" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col3.002" translation="-2.03798 1.0686 3.59254" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col3.003" translation="-6.04596 1.0686 3.59254" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col4" translation="5.96397 1.0686 -4.65037" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col4.001" translation="1.94197 1.0686 -4.65037" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col4.002" translation="-2.03798 1.0686 -4.65037" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="col4.003" translation="-6.04596 1.0686 -4.65037" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="groundcollision" shapeId="6" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="sellingStation" translation="-0.952589 0 10.1654" rotation="0 -90 0" nodeId="68">
+        <Shape name="unloadTrigger" translation="0 0.1 -1.12688" shapeId="7" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="69" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <TransformGroup name="unloadTriggerMarker" translation="0 1.31447 0" nodeId="70"/>
+        <TransformGroup name="unloadTriggerAINode" nodeId="71"/>
+        <Shape name="woodTrigger" translation="-0.073891 5.42075 -0.992226" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000800" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7">
+          <TransformGroup name="unloadTriggerMarker2" translation="-10.4944 -3.14115 -0.290018" rotation="-3.4157e-10 -0.669376 5.8523e-08" nodeId="73"/>
+        </Shape>
+        <Shape name="woodSellActivationTrigger" translation="3.03158 0.999 -9.57612" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7">
+          <TransformGroup name="woodSellActivationTriggerMarker" translation="2.5325e-07 1.68033 0" nodeId="75"/>
+        </Shape>
+        <Shape name="unloadTriggerContainer" translation="-0.217475 5.3218 1.90123e-08" rotation="-0 90 0" shapeId="10" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="woodTrigger2" translation="-10.7184 2.86799 -0.992226" shapeId="11" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000800" nodeId="77" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="warningStripes_woodTrigger" translation="-0.0810748 0.01 -1.11391" rotation="-3.4157e-10 -0.669376 5.8523e-08" scale="0.799498 1 1.50881" shapeId="12" clipDistance="300" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="9"/>
+        <TransformGroup name="unloadTriggerAINode2" translation="-10.7226 0 0" nodeId="79"/>
+        <Shape name="infoTrigger" translation="-0.456542 1.21929 6.44791" rotation="-3.4157e-10 -0.669376 5.8523e-08" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="tipCol" translation="0.837718 0.183463 -1.17979" shapeId="14" static="true" collisionFilterGroup="0x18" collisionFilterMask="0x1" density="0.0001" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="woodSellActivationTrigger2" translation="-10.7537 0.999309 -12.2717" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="82" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7">
+          <TransformGroup name="woodSellActivationTriggerMarker2" translation="2.5325e-07 1.68033 0" nodeId="83"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="84">
+        <Shape name="cement" shapeId="15" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="main_vis" shapeId="16" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
