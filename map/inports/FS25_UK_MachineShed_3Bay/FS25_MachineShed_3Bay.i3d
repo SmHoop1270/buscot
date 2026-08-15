@@ -6,30 +6,30 @@
   </Asset>
 
   <Files>
-    <File fileId="24" filename="../../textures/FS25_UK_MachineShed_3Bay_blueMetal_DIFFUSE.dds"/>
-    <File fileId="27" filename="../../textures/FS25_UK_MachineShed_3Bay_blueMetal_HEIGHT.dds"/>
-    <File fileId="25" filename="../../textures/FS25_UK_MachineShed_3Bay_blueMetal_NORMAL.dds"/>
-    <File fileId="26" filename="../../textures/FS25_UK_MachineShed_3Bay_blueMetal_SPECULAR.dds"/>
-    <File fileId="15" filename="../../textures/FS25_UK_MachineShed_3Bay_concrete_DIFFUSE.dds"/>
-    <File fileId="18" filename="../../textures/FS25_UK_MachineShed_3Bay_concrete_HEIGHT.dds"/>
-    <File fileId="16" filename="../../textures/FS25_UK_MachineShed_3Bay_concrete_NORMAL.dds"/>
-    <File fileId="17" filename="../../textures/FS25_UK_MachineShed_3Bay_concrete_SPECULAR.dds"/>
-    <File fileId="28" filename="../../textures/FS25_UK_MachineShed_3Bay_lbRustyMetal_DIFFUSE.dds"/>
-    <File fileId="31" filename="../../textures/FS25_UK_MachineShed_3Bay_lbRustyMetal_HEIGHT.dds"/>
-    <File fileId="29" filename="../../textures/FS25_UK_MachineShed_3Bay_lbRustyMetal_NORMAL.dds"/>
-    <File fileId="30" filename="../../textures/FS25_UK_MachineShed_3Bay_lbRustyMetal_SPECULAR.dds"/>
-    <File fileId="1" filename="../../textures/FS25_UK_MachineShed_3Bay_metal_DIFFUSE.dds"/>
-    <File fileId="10" filename="../../textures/FS25_UK_MachineShed_3Bay_metal_HEIGHT.dds"/>
-    <File fileId="2" filename="../../textures/FS25_UK_MachineShed_3Bay_metal_NORMAL.dds"/>
-    <File fileId="3" filename="../../textures/FS25_UK_MachineShed_3Bay_metal_SPECULAR.dds"/>
-    <File fileId="19" filename="../../textures/FS25_UK_MachineShed_3Bay_redRustyMetal_DIFFUSE.dds"/>
-    <File fileId="22" filename="../../textures/FS25_UK_MachineShed_3Bay_redRustyMetal_HEIGHT.dds"/>
-    <File fileId="20" filename="../../textures/FS25_UK_MachineShed_3Bay_redRustyMetal_NORMAL.dds"/>
-    <File fileId="21" filename="../../textures/FS25_UK_MachineShed_3Bay_redRustyMetal_SPECULAR.dds"/>
-    <File fileId="11" filename="../../textures/FS25_UK_MachineShed_3Bay_woodSlats_DIFFUSE.dds"/>
-    <File fileId="14" filename="../../textures/FS25_UK_MachineShed_3Bay_woodSlats_HEIGHT.dds"/>
-    <File fileId="12" filename="../../textures/FS25_UK_MachineShed_3Bay_woodSlats_NORMAL.dds"/>
-    <File fileId="13" filename="../../textures/FS25_UK_MachineShed_3Bay_woodSlats_SPECULAR.dds"/>
+    <File fileId="24" filename="../../textures/FS25_UK_Shed_blueMetal_DIFFUSE.dds"/>
+    <File fileId="27" filename="../../textures/FS25_UK_Shed_blueMetal_HEIGHT.dds"/>
+    <File fileId="25" filename="../../textures/FS25_UK_Shed_blueMetal_NORMAL.dds"/>
+    <File fileId="26" filename="../../textures/FS25_UK_Shed_blueMetal_SPECULAR.dds"/>
+    <File fileId="15" filename="../../textures/FS25_UK_Shed_concrete_DIFFUSE.dds"/>
+    <File fileId="18" filename="../../textures/FS25_UK_Shed_concrete_HEIGHT.dds"/>
+    <File fileId="16" filename="../../textures/FS25_UK_Shed_concrete_NORMAL.dds"/>
+    <File fileId="17" filename="../../textures/FS25_UK_Shed_concrete_SPECULAR.dds"/>
+    <File fileId="28" filename="../../textures/FS25_UK_Shed_lbRustyMetal_DIFFUSE.dds"/>
+    <File fileId="31" filename="../../textures/FS25_UK_Shed_lbRustyMetal_HEIGHT.dds"/>
+    <File fileId="29" filename="../../textures/FS25_UK_Shed_lbRustyMetal_NORMAL.dds"/>
+    <File fileId="30" filename="../../textures/FS25_UK_Shed_lbRustyMetal_SPECULAR.dds"/>
+    <File fileId="1" filename="../../textures/FS25_UK_Shed_metal_DIFFUSE.dds"/>
+    <File fileId="10" filename="../../textures/FS25_UK_Shed_metal_HEIGHT.dds"/>
+    <File fileId="2" filename="../../textures/FS25_UK_Shed_metal_NORMAL.dds"/>
+    <File fileId="3" filename="../../textures/FS25_UK_Shed_metal_SPECULAR.dds"/>
+    <File fileId="19" filename="../../textures/FS25_UK_Shed_redRustyMetal_DIFFUSE.dds"/>
+    <File fileId="22" filename="../../textures/FS25_UK_Shed_redRustyMetal_HEIGHT.dds"/>
+    <File fileId="20" filename="../../textures/FS25_UK_Shed_redRustyMetal_NORMAL.dds"/>
+    <File fileId="21" filename="../../textures/FS25_UK_Shed_redRustyMetal_SPECULAR.dds"/>
+    <File fileId="11" filename="../../textures/FS25_UK_Shed_woodSlats_DIFFUSE.dds"/>
+    <File fileId="14" filename="../../textures/FS25_UK_Shed_woodSlats_HEIGHT.dds"/>
+    <File fileId="12" filename="../../textures/FS25_UK_Shed_woodSlats_NORMAL.dds"/>
+    <File fileId="13" filename="../../textures/FS25_UK_Shed_woodSlats_SPECULAR.dds"/>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
   </Files>
 

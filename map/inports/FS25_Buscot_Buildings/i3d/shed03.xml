@@ -8,7 +8,7 @@
 		<functions>
             <function>$l10n_function_garage</function>
         </functions>
-        <image>map/textures/FS25_Buscot_Buildings_store_store_shed03.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_shed03.dds</image>
         <price>44000</price>
 		<dailyUpkeep>14</dailyUpkeep>
         <lifetime>1000</lifetime>

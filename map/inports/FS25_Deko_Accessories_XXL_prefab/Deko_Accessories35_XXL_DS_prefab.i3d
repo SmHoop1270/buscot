@@ -131,15 +131,15 @@
     <File fileId="29" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_doubleBenchTable_diffuse.dds"/>
     <File fileId="30" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_doubleBenchTable_normal.dds"/>
     <File fileId="31" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_doubleBenchTable_specular.dds"/>
-    <File fileId="116" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_diffuse.dds"/>
-    <File fileId="117" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_normal.dds"/>
-    <File fileId="118" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_specular.dds"/>
-    <File fileId="119" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_diffuse.dds"/>
-    <File fileId="120" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_normal.dds"/>
-    <File fileId="121" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_specular.dds"/>
-    <File fileId="122" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_diffuse.dds"/>
-    <File fileId="123" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_normal.dds"/>
-    <File fileId="124" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_specular.dds"/>
+    <File fileId="116" filename="../../textures/FS25_Deco_prefab_euroPallet01_diffuse.dds"/>
+    <File fileId="117" filename="../../textures/FS25_Deco_prefab_euroPallet01_normal.dds"/>
+    <File fileId="118" filename="../../textures/FS25_Deco_prefab_euroPallet01_specular.dds"/>
+    <File fileId="119" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_diffuse.dds"/>
+    <File fileId="120" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_normal.dds"/>
+    <File fileId="121" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_specular.dds"/>
+    <File fileId="122" filename="../../textures/FS25_Buscot_Buildings_paintBucket_diffuse.dds"/>
+    <File fileId="123" filename="../../textures/FS25_Buscot_Buildings_paintBucket_normal.dds"/>
+    <File fileId="124" filename="../../textures/FS25_Buscot_Buildings_paintBucket_specular.dds"/>
     <File fileId="26" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_picnicTableBench_diffuse.dds"/>
     <File fileId="27" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_picnicTableBench_normal.dds"/>
     <File fileId="28" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_picnicTableBench_specular.dds"/>

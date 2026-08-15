@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_farmHouse</function>
         </functions>
-        <image>map/textures/FS25_FarmCottage_store_cottage01.dds</image>
+        <image>map/textures/cottages_cottage01_cottage01.dds</image>
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
         <price>135000</price>

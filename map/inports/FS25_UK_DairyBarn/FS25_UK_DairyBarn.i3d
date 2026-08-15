@@ -6,19 +6,19 @@
   </Asset>
 
   <Files>
-    <File fileId="50" filename="../../textures/FS25_UK_DairyBarn_blueMetal_DIFFUSE.dds"/>
-    <File fileId="53" filename="../../textures/FS25_UK_DairyBarn_blueMetal_HEIGHT.dds"/>
-    <File fileId="51" filename="../../textures/FS25_UK_DairyBarn_blueMetal_NORMAL.dds"/>
-    <File fileId="52" filename="../../textures/FS25_UK_DairyBarn_blueMetal_SPECULAR.dds"/>
+    <File fileId="50" filename="../../textures/FS25_UK_Shed_blueMetal_DIFFUSE.dds"/>
+    <File fileId="53" filename="../../textures/FS25_UK_Shed_blueMetal_HEIGHT.dds"/>
+    <File fileId="51" filename="../../textures/FS25_UK_Shed_blueMetal_NORMAL.dds"/>
+    <File fileId="52" filename="../../textures/FS25_UK_Shed_blueMetal_SPECULAR.dds"/>
     <File fileId="75" filename="../../textures/FS25_UK_DairyBarn_chickenBarnBig01_diffuse.dds"/>
-    <File fileId="11" filename="../../textures/FS25_UK_DairyBarn_concrete_DIFFUSE.dds"/>
-    <File fileId="10" filename="../../textures/FS25_UK_DairyBarn_concrete_HEIGHT.dds"/>
-    <File fileId="12" filename="../../textures/FS25_UK_DairyBarn_concrete_NORMAL.dds"/>
+    <File fileId="11" filename="../../textures/FS25_UK_Shed_concrete_DIFFUSE.dds"/>
+    <File fileId="10" filename="../../textures/FS25_UK_Shed_concrete_HEIGHT.dds"/>
+    <File fileId="12" filename="../../textures/FS25_UK_Shed_concrete_NORMAL.dds"/>
     <File fileId="13" filename="../../textures/FS25_UK_DairyBarn_concrete_SPECULAR.dds"/>
     <File fileId="18" filename="../../textures/FS25_UK_DairyBarn_corrugatedIron_DIFFUSE.dds"/>
-    <File fileId="21" filename="../../textures/FS25_UK_DairyBarn_corrugatedIron_HEIGHT.dds"/>
-    <File fileId="19" filename="../../textures/FS25_UK_DairyBarn_corrugatedIron_NORMAL.dds"/>
-    <File fileId="20" filename="../../textures/FS25_UK_DairyBarn_corrugatedIron_SPECULAR.dds"/>
+    <File fileId="21" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_HEIGHT.dds"/>
+    <File fileId="19" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_NORMAL.dds"/>
+    <File fileId="20" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_SPECULAR.dds"/>
     <File fileId="81" filename="../../textures/FS25_UK_DairyBarn_corrugatedRoof_DIFFUSE.dds"/>
     <File fileId="84" filename="../../textures/FS25_UK_DairyBarn_corrugatedRoof_HEIGHT.dds"/>
     <File fileId="82" filename="../../textures/FS25_UK_DairyBarn_corrugatedRoof_NORMAL.dds"/>
@@ -28,25 +28,25 @@
     <File fileId="27" filename="../../textures/FS25_UK_DairyBarn_galvanized_NORMAL.dds"/>
     <File fileId="28" filename="../../textures/FS25_UK_DairyBarn_galvanized_SPECULAR.dds"/>
     <File fileId="93" filename="../../textures/FS25_UK_DairyBarn_keypad.dds"/>
-    <File fileId="54" filename="../../textures/FS25_UK_DairyBarn_lbRustyMetal_DIFFUSE.dds"/>
-    <File fileId="57" filename="../../textures/FS25_UK_DairyBarn_lbRustyMetal_HEIGHT.dds"/>
-    <File fileId="55" filename="../../textures/FS25_UK_DairyBarn_lbRustyMetal_NORMAL.dds"/>
-    <File fileId="56" filename="../../textures/FS25_UK_DairyBarn_lbRustyMetal_SPECULAR.dds"/>
-    <File fileId="64" filename="../../textures/FS25_UK_DairyBarn_metal_DIFFUSE.dds"/>
-    <File fileId="58" filename="../../textures/FS25_UK_DairyBarn_metal_HEIGHT.dds"/>
-    <File fileId="65" filename="../../textures/FS25_UK_DairyBarn_metal_NORMAL.dds"/>
-    <File fileId="66" filename="../../textures/FS25_UK_DairyBarn_metal_SPECULAR.dds"/>
-    <File fileId="22" filename="../../textures/FS25_UK_DairyBarn_redRustyMetal_DIFFUSE.dds"/>
-    <File fileId="25" filename="../../textures/FS25_UK_DairyBarn_redRustyMetal_HEIGHT.dds"/>
-    <File fileId="23" filename="../../textures/FS25_UK_DairyBarn_redRustyMetal_NORMAL.dds"/>
-    <File fileId="24" filename="../../textures/FS25_UK_DairyBarn_redRustyMetal_SPECULAR.dds"/>
+    <File fileId="54" filename="../../textures/FS25_UK_Shed_lbRustyMetal_DIFFUSE.dds"/>
+    <File fileId="57" filename="../../textures/FS25_UK_Shed_lbRustyMetal_HEIGHT.dds"/>
+    <File fileId="55" filename="../../textures/FS25_UK_Shed_lbRustyMetal_NORMAL.dds"/>
+    <File fileId="56" filename="../../textures/FS25_UK_Shed_lbRustyMetal_SPECULAR.dds"/>
+    <File fileId="64" filename="../../textures/FS25_UK_Shed_metal_DIFFUSE.dds"/>
+    <File fileId="58" filename="../../textures/FS25_UK_Shed_metal_HEIGHT.dds"/>
+    <File fileId="65" filename="../../textures/FS25_UK_Shed_metal_NORMAL.dds"/>
+    <File fileId="66" filename="../../textures/FS25_UK_Shed_metal_SPECULAR.dds"/>
+    <File fileId="22" filename="../../textures/FS25_UK_Shed_redRustyMetal_DIFFUSE.dds"/>
+    <File fileId="25" filename="../../textures/FS25_UK_Shed_redRustyMetal_HEIGHT.dds"/>
+    <File fileId="23" filename="../../textures/FS25_UK_Shed_redRustyMetal_NORMAL.dds"/>
+    <File fileId="24" filename="../../textures/FS25_UK_Shed_redRustyMetal_SPECULAR.dds"/>
     <File fileId="98" filename="../../textures/FS25_UK_DairyBarn_rollupDoor_DIFFUSE.dds"/>
     <File fileId="99" filename="../../textures/FS25_UK_DairyBarn_rollupDoor_NORMAL.dds"/>
     <File fileId="100" filename="../../textures/FS25_UK_DairyBarn_rollupDoor_SPECULAR.dds"/>
-    <File fileId="14" filename="../../textures/FS25_UK_DairyBarn_woodSlats_DIFFUSE.dds"/>
-    <File fileId="17" filename="../../textures/FS25_UK_DairyBarn_woodSlats_HEIGHT.dds"/>
-    <File fileId="15" filename="../../textures/FS25_UK_DairyBarn_woodSlats_NORMAL.dds"/>
-    <File fileId="16" filename="../../textures/FS25_UK_DairyBarn_woodSlats_SPECULAR.dds"/>
+    <File fileId="14" filename="../../textures/FS25_UK_Shed_woodSlats_DIFFUSE.dds"/>
+    <File fileId="17" filename="../../textures/FS25_UK_Shed_woodSlats_HEIGHT.dds"/>
+    <File fileId="15" filename="../../textures/FS25_UK_Shed_woodSlats_NORMAL.dds"/>
+    <File fileId="16" filename="../../textures/FS25_UK_Shed_woodSlats_SPECULAR.dds"/>
     <File fileId="30" filename="$data/fillPlanes/liquidManure_diffuse.dds"/>
     <File fileId="31" filename="$data/fillPlanes/liquidManure_normal.dds"/>
     <File fileId="32" filename="$data/fillPlanes/liquidManure_specular.dds"/>

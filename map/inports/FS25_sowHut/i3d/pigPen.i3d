@@ -46,9 +46,9 @@
     <File fileId="47" filename="../../../textures/FS25_sowHut_hud_fill_straw.dds"/>
     <File fileId="18" filename="../../../textures/FS25_sowHut_metal_black_d.dds"/>
     <File fileId="19" filename="../../../textures/FS25_sowHut_metal_black_n.dds"/>
-    <File fileId="20" filename="../../../textures/FS25_sowHut_metal_black_s.dds"/>
-    <File fileId="12" filename="../../../textures/FS25_sowHut_metal_oxydized_d.dds"/>
-    <File fileId="14" filename="../../../textures/FS25_sowHut_metal_oxydized_s.dds"/>
+    <File fileId="20" filename="../../../textures/gate_metal_black_s.dds"/>
+    <File fileId="12" filename="../../../textures/gate_metal_oxydized_d.dds"/>
+    <File fileId="14" filename="../../../textures/gate_metal_oxydized_s.dds"/>
     <File fileId="29" filename="../../../textures/FS25_sowHut_pigPen_diffuse.dds"/>
     <File fileId="36" filename="../../../textures/FS25_sowHut_pigPen_height.dds"/>
     <File fileId="33" filename="../../../textures/FS25_sowHut_pigPen_mask.dds"/>

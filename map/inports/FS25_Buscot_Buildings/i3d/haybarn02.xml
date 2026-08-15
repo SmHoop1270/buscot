@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_objectStorage</function>
         </functions>
-        <image>map/textures/FS25_Buscot_Buildings_store_store_haybarn02.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_haybarn02.dds</image>
         <price>27500</price>
         <dailyUpkeep>25</dailyUpkeep>
         <lifetime>1000</lifetime>

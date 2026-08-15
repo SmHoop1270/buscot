@@ -111,27 +111,27 @@
     <File fileId="133" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bakeryGoodsFood_diffuse.dds"/>
     <File fileId="134" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bakeryGoodsFood_normal.dds"/>
     <File fileId="135" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bakeryGoodsFood_specular.dds"/>
-    <File fileId="28" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_benchDrill_diffuse.dds"/>
-    <File fileId="29" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_benchDrill_normal.dds"/>
-    <File fileId="30" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_benchDrill_specular.dds"/>
+    <File fileId="28" filename="../../textures/FS25_Buscot_Buildings_benchDrill_diffuse.dds"/>
+    <File fileId="29" filename="../../textures/FS25_Buscot_Buildings_benchDrill_normal.dds"/>
+    <File fileId="30" filename="../../textures/FS25_Buscot_Buildings_benchDrill_specular.dds"/>
     <File fileId="73" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketGalvanized_diffuse.dds"/>
     <File fileId="74" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketGalvanized_normal.dds"/>
     <File fileId="75" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketGalvanized_specular.dds"/>
-    <File fileId="67" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlack_diffuse.dds"/>
-    <File fileId="68" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlack_normal.dds"/>
-    <File fileId="69" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlack_specular.dds"/>
+    <File fileId="67" filename="../../textures/FS25_Buscot_Buildings_bucketPlasticBlack_diffuse.dds"/>
+    <File fileId="68" filename="../../textures/FS25_Buscot_Buildings_bucketPlasticBlack_normal.dds"/>
+    <File fileId="69" filename="../../textures/FS25_Buscot_Buildings_bucketPlasticBlack_specular.dds"/>
     <File fileId="70" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlue_diffuse.dds"/>
     <File fileId="71" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlue_normal.dds"/>
     <File fileId="72" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlue_specular.dds"/>
     <File fileId="94" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_burner_diffuse.dds"/>
     <File fileId="95" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_burner_normal.dds"/>
     <File fileId="96" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_burner_specular.dds"/>
-    <File fileId="25" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricGenerator_diffuse.dds"/>
-    <File fileId="26" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricGenerator_normal.dds"/>
-    <File fileId="27" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricGenerator_specular.dds"/>
-    <File fileId="64" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_extensionCord_diffuse.dds"/>
-    <File fileId="65" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_extensionCord_normal.dds"/>
-    <File fileId="66" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_extensionCord_specular.dds"/>
+    <File fileId="25" filename="../../textures/FS25_Buscot_Buildings_electricGenerator_diffuse.dds"/>
+    <File fileId="26" filename="../../textures/FS25_Buscot_Buildings_electricGenerator_normal.dds"/>
+    <File fileId="27" filename="../../textures/FS25_Buscot_Buildings_electricGenerator_specular.dds"/>
+    <File fileId="64" filename="../../textures/FS25_Buscot_Buildings_extensionCord_diffuse.dds"/>
+    <File fileId="65" filename="../../textures/FS25_Buscot_Buildings_extensionCord_normal.dds"/>
+    <File fileId="66" filename="../../textures/FS25_Buscot_Buildings_extensionCord_specular.dds"/>
     <File fileId="179" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fireExtinguisherBoxGlass_diffuse.dds"/>
     <File fileId="180" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fireExtinguisherBoxGlass_specular.dds"/>
     <File fileId="176" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fireExtinguisherBox_diffuse.dds"/>
@@ -164,24 +164,24 @@
     <File fileId="6" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_grill_diffuse.dds"/>
     <File fileId="7" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_grill_normal.dds"/>
     <File fileId="8" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_grill_specular.dds"/>
-    <File fileId="87" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_grinder_diffuse.dds"/>
-    <File fileId="88" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_grinder_normal.dds"/>
-    <File fileId="89" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_grinder_specular.dds"/>
-    <File fileId="9" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_heatBlower_diffuse.dds"/>
-    <File fileId="10" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_heatBlower_normal.dds"/>
-    <File fileId="11" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_heatBlower_specular.dds"/>
+    <File fileId="87" filename="../../textures/FS25_Buscot_Buildings_grinder_diffuse.dds"/>
+    <File fileId="88" filename="../../textures/FS25_Buscot_Buildings_grinder_normal.dds"/>
+    <File fileId="89" filename="../../textures/FS25_Buscot_Buildings_grinder_specular.dds"/>
+    <File fileId="9" filename="../../textures/FS25_Buscot_Buildings_heatBlower_diffuse.dds"/>
+    <File fileId="10" filename="../../textures/FS25_Buscot_Buildings_heatBlower_normal.dds"/>
+    <File fileId="11" filename="../../textures/FS25_Buscot_Buildings_heatBlower_specular.dds"/>
     <File fileId="33" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_hedgeTrimmer_diffuse.dds"/>
     <File fileId="34" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_hedgeTrimmer_normal.dds"/>
     <File fileId="35" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_hedgeTrimmer_specular.dds"/>
-    <File fileId="60" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_diffuse.dds"/>
-    <File fileId="61" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_normal.dds"/>
-    <File fileId="62" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_specular.dds"/>
+    <File fileId="60" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_diffuse.dds"/>
+    <File fileId="61" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_normal.dds"/>
+    <File fileId="62" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_specular.dds"/>
     <File fileId="54" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ladder_diffuse.dds"/>
     <File fileId="55" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ladder_normal.dds"/>
     <File fileId="56" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ladder_specular.dds"/>
-    <File fileId="100" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_diffuse.dds"/>
-    <File fileId="101" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_normal.dds"/>
-    <File fileId="102" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_specular.dds"/>
+    <File fileId="100" filename="../../textures/FS25_Buscot_Buildings_paintBucket_diffuse.dds"/>
+    <File fileId="101" filename="../../textures/FS25_Buscot_Buildings_paintBucket_normal.dds"/>
+    <File fileId="102" filename="../../textures/FS25_Buscot_Buildings_paintBucket_specular.dds"/>
     <File fileId="136" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_viennoiseries_diffuse.dds"/>
     <File fileId="137" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_viennoiseries_normal.dds"/>
     <File fileId="138" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_viennoiseries_specular.dds"/>

@@ -60,7 +60,7 @@
     <File fileId="71" filename="../../textures/FS25_RoadSignPackBB_Prefab_nationSpeedLimit_diffuse.dds"/>
     <File fileId="18" filename="../../textures/FS25_RoadSignPackBB_Prefab_noExcavating_decal.dds"/>
     <File fileId="23" filename="../../textures/FS25_RoadSignPackBB_Prefab_noThroughRoad_diffuse.dds"/>
-    <File fileId="12" filename="../../textures/FS25_RoadSignPackBB_Prefab_nonMetal_decal.dds"/>
+    <File fileId="12" filename="../../textures/signs_nonMetal_decal.dds"/>
     <File fileId="15" filename="../../textures/FS25_RoadSignPackBB_Prefab_normalSignFace.dds"/>
     <File fileId="27" filename="../../textures/FS25_RoadSignPackBB_Prefab_normalSignFaceWide.dds"/>
     <File fileId="22" filename="../../textures/FS25_RoadSignPackBB_Prefab_parking_diffuse.dds"/>
@@ -70,9 +70,9 @@
     <File fileId="78" filename="../../textures/FS25_RoadSignPackBB_Prefab_roadBollards_diffuse.dds"/>
     <File fileId="79" filename="../../textures/FS25_RoadSignPackBB_Prefab_roadBollards_normal.dds"/>
     <File fileId="80" filename="../../textures/FS25_RoadSignPackBB_Prefab_roadBollards_specular.dds"/>
-    <File fileId="13" filename="../../textures/FS25_RoadSignPackBB_Prefab_roadSignCE_decal.dds"/>
-    <File fileId="2" filename="../../textures/FS25_RoadSignPackBB_Prefab_roadSignPack_normal.dds"/>
-    <File fileId="3" filename="../../textures/FS25_RoadSignPackBB_Prefab_roadSignPack_specular.dds"/>
+    <File fileId="13" filename="../../textures/signs_roadSignCE_decal.dds"/>
+    <File fileId="2" filename="../../textures/signs_roadSignPack_normal.dds"/>
+    <File fileId="3" filename="../../textures/signs_roadSignPack_specular.dds"/>
     <File fileId="96" filename="../../textures/FS25_RoadSignPackBB_Prefab_roundAboutAhead_diffuse.dds"/>
     <File fileId="97" filename="../../textures/FS25_RoadSignPackBB_Prefab_sideRoadLeft_diffuse.dds"/>
     <File fileId="98" filename="../../textures/FS25_RoadSignPackBB_Prefab_sideRoadRight_diffuse.dds"/>

@@ -94,9 +94,9 @@
     <File fileId="2" filename="$data/shared/default_normal.png"/>
     <File fileId="36" filename="$data/shared/default_specular.png"/>
     <File fileId="3" filename="$data/shared/default_vmask.png"/>
-    <File fileId="23" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_carJack_diffuse.dds"/>
-    <File fileId="24" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_carJack_normal.dds"/>
-    <File fileId="25" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_carJack_specular.dds"/>
+    <File fileId="23" filename="../../textures/FS25_Buscot_Buildings_carJack_diffuse.dds"/>
+    <File fileId="24" filename="../../textures/FS25_Buscot_Buildings_carJack_normal.dds"/>
+    <File fileId="25" filename="../../textures/FS25_Buscot_Buildings_carJack_specular.dds"/>
     <File fileId="61" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_concreteMixer_diffuse.dds"/>
     <File fileId="62" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_concreteMixer_normal.dds"/>
     <File fileId="63" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_concreteMixer_specular.dds"/>
@@ -106,12 +106,12 @@
     <File fileId="14" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_flourSackSet_diffuse.dds"/>
     <File fileId="15" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_flourSackSet_normal.dds"/>
     <File fileId="16" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_flourSackSet_specular.dds"/>
-    <File fileId="123" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gasCanister_diffuse.dds"/>
-    <File fileId="124" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gasCanister_normal.dds"/>
-    <File fileId="125" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gasCanister_specular.dds"/>
-    <File fileId="83" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_diffuse.dds"/>
-    <File fileId="84" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_normal.dds"/>
-    <File fileId="85" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_interiorPropsUS_specular.dds"/>
+    <File fileId="123" filename="../../textures/FS25_Buscot_Buildings_gasCanister_diffuse.dds"/>
+    <File fileId="124" filename="../../textures/FS25_Buscot_Buildings_gasCanister_normal.dds"/>
+    <File fileId="125" filename="../../textures/FS25_Buscot_Buildings_gasCanister_specular.dds"/>
+    <File fileId="83" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_diffuse.dds"/>
+    <File fileId="84" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_normal.dds"/>
+    <File fileId="85" filename="../../textures/FS25_Buscot_Buildings_interiorPropsUS_specular.dds"/>
     <File fileId="26" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_lawnmower_diffuse.dds"/>
     <File fileId="27" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_lawnmower_normal.dds"/>
     <File fileId="28" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_lawnmower_specular.dds"/>
@@ -119,18 +119,18 @@
     <File fileId="64" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_letterBox02_diffuse.dds"/>
     <File fileId="65" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_letterBox02_normal.dds"/>
     <File fileId="66" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_letterBox02_specular.dds"/>
-    <File fileId="89" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_diffuse.dds"/>
-    <File fileId="90" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_normal.dds"/>
-    <File fileId="91" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_paintBucket_specular.dds"/>
+    <File fileId="89" filename="../../textures/FS25_Buscot_Buildings_paintBucket_diffuse.dds"/>
+    <File fileId="90" filename="../../textures/FS25_Buscot_Buildings_paintBucket_normal.dds"/>
+    <File fileId="91" filename="../../textures/FS25_Buscot_Buildings_paintBucket_specular.dds"/>
     <File fileId="42" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicMailboxesDecals_diffuse.dds"/>
     <File fileId="43" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicMailboxesDecals_normal.dds"/>
     <File fileId="44" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicMailboxesDecals_specular.dds"/>
     <File fileId="39" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicMailboxes_diffuse.dds"/>
     <File fileId="40" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicMailboxes_normal.dds"/>
     <File fileId="41" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicMailboxes_specular.dds"/>
-    <File fileId="5" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_vacuumCleaner_diffuse.dds"/>
-    <File fileId="6" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_vacuumCleaner_normal.dds"/>
-    <File fileId="7" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_vacuumCleaner_specular.dds"/>
+    <File fileId="5" filename="../../textures/FS25_Buscot_Buildings_vacuumCleaner_diffuse.dds"/>
+    <File fileId="6" filename="../../textures/FS25_Buscot_Buildings_vacuumCleaner_normal.dds"/>
+    <File fileId="7" filename="../../textures/FS25_Buscot_Buildings_vacuumCleaner_specular.dds"/>
   </Files>
 
 

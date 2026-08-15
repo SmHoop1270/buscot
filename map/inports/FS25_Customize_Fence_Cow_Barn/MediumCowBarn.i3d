@@ -36,14 +36,14 @@
     <File fileId="61" filename="$data/shared/fakeWater_specular.png"/>
     <File fileId="15" filename="$data/shared/window02_diffuse.dds"/>
     <File fileId="17" filename="$data/shared/window02_specular.dds"/>
-    <File fileId="31" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Roofing_Asbestos_height.dds"/>
-    <File fileId="24" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Roofing_Asbestos_normal.dds"/>
-    <File fileId="25" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Roofing_Asbestos_spec.dds"/>
+    <File fileId="31" filename="../../textures/FS25_largeukcowshed_Roofing_Asbestos_height.dds"/>
+    <File fileId="24" filename="../../textures/FS25_largeukcowshed_Roofing_Asbestos_normal.dds"/>
+    <File fileId="25" filename="../../textures/FS25_largeukcowshed_Roofing_Asbestos_spec.dds"/>
     <File fileId="23" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Roofing_Asbestosu.dds"/>
-    <File fileId="47" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Wall_Cement_diffuse.dds"/>
-    <File fileId="50" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Wall_Cement_height.dds"/>
-    <File fileId="48" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Wall_Cement_normal.dds"/>
-    <File fileId="49" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Wall_Cement_spec.dds"/>
+    <File fileId="47" filename="../../textures/FS25_largeukcowshed_Wall_Cement_diffuse.dds"/>
+    <File fileId="50" filename="../../textures/FS25_largeukcowshed_Wall_Cement_height.dds"/>
+    <File fileId="48" filename="../../textures/FS25_largeukcowshed_Wall_Cement_normal.dds"/>
+    <File fileId="49" filename="../../textures/FS25_largeukcowshed_Wall_Cement_spec.dds"/>
     <File fileId="35" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Wood_Siding_height.dds"/>
     <File fileId="33" filename="../../textures/FS25_Customize_Fence_Cow_Barn_Wood_Siding_normal.dds"/>
     <File fileId="72" filename="../../textures/FS25_Customize_Fence_Cow_Barn_barrier_diffuse.dds"/>
