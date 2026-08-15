@@ -447,11 +447,11 @@
         <File fileId="36" filename="../textures/FS25_Buscot_Buildings_metalpanel_normal.dds"/>
         <File fileId="37" filename="../textures/FS25_Buscot_Buildings_metalpanel_specular.dds"/>
         <File fileId="336" filename="../textures/FS25_Buscot_Buildings_shedleft_diffuse.dds"/>
-        <File fileId="337" filename="Desktop/Master/inports/FS25_Buscot_Buildings/textures/sheds_diffuse.dds"/>
-        <File fileId="338" filename="Desktop/Master/inports/FS25_Buscot_Buildings/textures/sheds_normal.dds"/>
-        <File fileId="606" filename="Desktop/Master/inports/FS25_Buscot_Buildings/textures/slurrySilo_albedo.dds"/>
-        <File fileId="607" filename="Desktop/Master/inports/FS25_Buscot_Buildings/textures/slurrySilo_normal.dds"/>
-        <File fileId="608" filename="Desktop/Master/inports/FS25_Buscot_Buildings/textures/slurrySilo_specular.dds"/>
+        <File fileId="337" filename="../textures/brummie_houses_sheds_sheds_diffuse.dds"/>
+        <File fileId="338" filename="../textures/brummie_houses_sheds_sheds_normal.dds"/>
+        <File fileId="606" filename="../textures/wonkomartslurry_slurrySilo_albedo.dds"/>
+        <File fileId="607" filename="../textures/wonkomartslurry_slurrySilo_normal.dds"/>
+        <File fileId="608" filename="../textures/wonkomartslurry_slurrySilo_specular.dds"/>
         <File fileId="377" filename="../textures/FS25_Buscot_Dairy_bin.dds"/>
         <File fileId="378" filename="../textures/FS25_Buscot_Dairy_bin_normal.dds"/>
         <File fileId="379" filename="../textures/FS25_Buscot_Dairy_bin_spec.dds"/>
@@ -468,37 +468,37 @@
         <File fileId="371" filename="../textures/FS25_Buscot_Dairy_watertank_spec.dds"/>
         <File fileId="354" filename="../textures/FS25_FarmCottage_cottage01_diffuse.dds"/>
         <File fileId="355" filename="../textures/FS25_FarmCottage_cottage01_normal.dds"/>
-        <File fileId="356" filename="Desktop/Master/inports/FS25_FarmCottage/textures/cottage01_specular.dds"/>
+        <File fileId="356" filename="../textures/brummie_houses_cottage02_specular.dds"/>
         <File fileId="613" filename="../textures/FS25_FarmCottagebasic_cottage01_diffuse.dds"/>
         <File fileId="614" filename="../textures/FS25_FarmCottagebasic_cottage01_normal.dds"/>
         <File fileId="615" filename="../textures/FS25_FarmCottagebasic_cottage01_specular.dds"/>
-        <File fileId="592" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/blueMetal_DIFFUSE.dds"/>
-        <File fileId="595" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/blueMetal_HEIGHT.dds"/>
-        <File fileId="593" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/blueMetal_NORMAL.dds"/>
-        <File fileId="594" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/blueMetal_SPECULAR.dds"/>
-        <File fileId="584" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/concrete_DIFFUSE.dds"/>
-        <File fileId="587" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/concrete_HEIGHT.dds"/>
-        <File fileId="585" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/concrete_NORMAL.dds"/>
-        <File fileId="586" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/concrete_SPECULAR.dds"/>
-        <File fileId="596" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/lbRustyMetal_DIFFUSE.dds"/>
-        <File fileId="599" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/lbRustyMetal_HEIGHT.dds"/>
-        <File fileId="597" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/lbRustyMetal_NORMAL.dds"/>
-        <File fileId="598" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/lbRustyMetal_SPECULAR.dds"/>
-        <File fileId="576" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/metal_DIFFUSE.dds"/>
-        <File fileId="579" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/metal_HEIGHT.dds"/>
-        <File fileId="577" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/metal_NORMAL.dds"/>
-        <File fileId="578" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/metal_SPECULAR.dds"/>
-        <File fileId="588" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/redRustyMetal_DIFFUSE.dds"/>
-        <File fileId="591" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/redRustyMetal_HEIGHT.dds"/>
-        <File fileId="589" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/redRustyMetal_NORMAL.dds"/>
-        <File fileId="590" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/redRustyMetal_SPECULAR.dds"/>
-        <File fileId="580" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/woodSlats_DIFFUSE.dds"/>
-        <File fileId="583" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/woodSlats_HEIGHT.dds"/>
-        <File fileId="581" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/woodSlats_NORMAL.dds"/>
-        <File fileId="582" filename="Desktop/Master/inports/FS25_UK_MachineShed_3Bay/textures/woodSlats_SPECULAR.dds"/>
-        <File fileId="22" filename="Desktop/Master/inports/cottages/cottage01/textures/cottage01_diffuse.dds"/>
-        <File fileId="23" filename="Desktop/Master/inports/cottages/cottage01/textures/cottage01_normal.dds"/>
-        <File fileId="24" filename="Desktop/Master/inports/cottages/cottage01/textures/cottage01_specular.dds"/>
+        <File fileId="592" filename="../textures/FS25_UK_Shed_blueMetal_DIFFUSE.dds"/>
+        <File fileId="595" filename="../textures/FS25_UK_Shed_blueMetal_HEIGHT.dds"/>
+        <File fileId="593" filename="../textures/FS25_UK_Shed_blueMetal_NORMAL.dds"/>
+        <File fileId="594" filename="../textures/FS25_UK_Shed_blueMetal_SPECULAR.dds"/>
+        <File fileId="584" filename="../textures/FS25_UK_Shed_concrete_DIFFUSE.dds"/>
+        <File fileId="587" filename="../textures/FS25_UK_Shed_concrete_HEIGHT.dds"/>
+        <File fileId="585" filename="../textures/FS25_UK_Shed_concrete_NORMAL.dds"/>
+        <File fileId="586" filename="../textures/FS25_UK_Shed_concrete_SPECULAR.dds"/>
+        <File fileId="596" filename="../textures/FS25_UK_Shed_lbRustyMetal_DIFFUSE.dds"/>
+        <File fileId="599" filename="../textures/FS25_UK_Shed_lbRustyMetal_HEIGHT.dds"/>
+        <File fileId="597" filename="../textures/FS25_UK_Shed_lbRustyMetal_NORMAL.dds"/>
+        <File fileId="598" filename="../textures/FS25_UK_Shed_lbRustyMetal_SPECULAR.dds"/>
+        <File fileId="576" filename="../textures/FS25_UK_Shed_metal_DIFFUSE.dds"/>
+        <File fileId="579" filename="../textures/FS25_UK_Shed_metal_HEIGHT.dds"/>
+        <File fileId="577" filename="../textures/FS25_UK_Shed_metal_NORMAL.dds"/>
+        <File fileId="578" filename="../textures/FS25_UK_Shed_metal_SPECULAR.dds"/>
+        <File fileId="588" filename="../textures/FS25_UK_Shed_redRustyMetal_DIFFUSE.dds"/>
+        <File fileId="591" filename="../textures/FS25_UK_Shed_redRustyMetal_HEIGHT.dds"/>
+        <File fileId="589" filename="../textures/FS25_UK_Shed_redRustyMetal_NORMAL.dds"/>
+        <File fileId="590" filename="../textures/FS25_UK_Shed_redRustyMetal_SPECULAR.dds"/>
+        <File fileId="580" filename="../textures/FS25_UK_Shed_woodSlats_DIFFUSE.dds"/>
+        <File fileId="583" filename="../textures/FS25_UK_Shed_woodSlats_HEIGHT.dds"/>
+        <File fileId="581" filename="../textures/FS25_UK_Shed_woodSlats_NORMAL.dds"/>
+        <File fileId="582" filename="../textures/FS25_UK_Shed_woodSlats_SPECULAR.dds"/>
+        <File fileId="22" filename="../textures/FS25_FarmCottage_cottage01_diffuse.dds"/>
+        <File fileId="23" filename="../textures/FS25_FarmCottage_cottage01_normal.dds"/>
+        <File fileId="24" filename="../textures/brummie_houses_cottage02_specular.dds"/>
         <File fileId="610" filename="../textures/silageClampUK_mMask.dds"/>
         <File fileId="562" filename="../textures/silageClampUK_silageClampUK_mask.dds"/>
         <File fileId="572" filename="../textures/FS25_ForestrySellPoint_forestrysellpoint_diffuse.dds"/>
@@ -558,7 +558,7 @@
         <File fileId="612" filename="../textures/FS25_RDM_BritishGrainSheds_shed01mask.dds"/>
         <File fileId="317" filename="../textures/FS25_RDM_BritishGrainSheds_shed02mask.dds"/>
         <File fileId="339" filename="../textures/FS25_RDM_BritishGrainSheds_shed04mask.dds"/>
-        <File fileId="343" filename="Desktop/Master/placeables/FS25_RDM_BritishGrainSheds/textures/slidingDoor.jpg"/>
+        <File fileId="343" filename="../textures/FS25_RDM_BritishGrainSheds_slidingDoor.dds"/>
         <File fileId="344" filename="../textures/FS25_RDM_BritishGrainSheds_slidingDoor_s.dds"/>
         <File fileId="340" filename="../textures/FS25_RDM_BritishGrainSheds_wallRender_c.dds"/>
         <File fileId="341" filename="../textures/FS25_RDM_BritishGrainSheds_wallRender_n.dds"/>
@@ -566,11 +566,11 @@
         <File fileId="325" filename="../textures/FS25_RDM_BritishGrainSheds_woodOld_greyed_c.dds"/>
         <File fileId="326" filename="../textures/FS25_RDM_BritishGrainSheds_woodOld_n.dds"/>
         <File fileId="327" filename="../textures/FS25_RDM_BritishGrainSheds_woodOld_s.dds"/>
-        <File fileId="388" filename="Desktop/Master/prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_d.dds"/>
-        <File fileId="389" filename="Desktop/Master/prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_n.dds"/>
-        <File fileId="390" filename="Desktop/Master/prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_s.dds"/>
-        <File fileId="386" filename="Desktop/Master/prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_oxydized_d.dds"/>
-        <File fileId="387" filename="Desktop/Master/prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_oxydized_s.dds"/>
+        <File fileId="388" filename="../textures/FS25_sowHut_metal_black_d.dds"/>
+        <File fileId="389" filename="../textures/FS25_sowHut_metal_black_n.dds"/>
+        <File fileId="390" filename="../textures/gate_metal_black_s.dds"/>
+        <File fileId="386" filename="../textures/gate_metal_oxydized_d.dds"/>
+        <File fileId="387" filename="../textures/gate_metal_oxydized_s.dds"/>
     </Files>
     <Materials>
         <Material name="0Mat" materialId="417308">
