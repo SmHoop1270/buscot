@@ -89,10 +89,10 @@
     <File fileId="32" filename="$data/shared/white_diffuse.png"/>
     <File fileId="7" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="8" filename="$data/shared/window_specular.dds"/>
-    <File fileId="4" filename="../textures/metalpanel_diffuse.dds"/>
-    <File fileId="5" filename="../textures/metalpanel_normal.dds"/>
-    <File fileId="6" filename="../textures/metalpanel_specular.dds"/>
-    <File fileId="24" filename="../textures/shedleft_diffuse.dds"/>
+    <File fileId="4" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_diffuse.dds"/>
+    <File fileId="5" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_normal.dds"/>
+    <File fileId="6" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_specular.dds"/>
+    <File fileId="24" filename="../../../textures/FS25_Buscot_Buildings_shedleft_diffuse.dds"/>
   </Files>
 
 

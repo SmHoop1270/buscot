@@ -81,19 +81,19 @@
     <File fileId="74" filename="$data/shaders/glowShader.xml"/>
     <File fileId="13" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="59" filename="$data/shared/window_diffuse.png"/>
-    <File fileId="90" filename="textures/gardenSwing_diffuse.png"/>
-    <File fileId="91" filename="textures/gardenSwing_normal.png"/>
-    <File fileId="92" filename="textures/gardenSwing_specular.png"/>
-    <File fileId="60" filename="textures/noticeBoard01Glass_specular.png"/>
-    <File fileId="61" filename="textures/tableSet01Cover_diffuse.png"/>
-    <File fileId="62" filename="textures/tableSet01Cover_normal.png"/>
-    <File fileId="63" filename="textures/tableSet01Cover_specular.png"/>
-    <File fileId="56" filename="textures/tableSet01Cutlery_diffuse.png"/>
-    <File fileId="57" filename="textures/tableSet01Cutlery_normal.png"/>
-    <File fileId="58" filename="textures/tableSet01Cutlery_specular.png"/>
-    <File fileId="53" filename="textures/tableSet01_diffuse.png"/>
-    <File fileId="54" filename="textures/tableSet01_normal.png"/>
-    <File fileId="55" filename="textures/tableSet01_specular.png"/>
+    <File fileId="90" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gardenSwing_diffuse.dds"/>
+    <File fileId="91" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gardenSwing_normal.dds"/>
+    <File fileId="92" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gardenSwing_specular.dds"/>
+    <File fileId="60" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_noticeBoard01Glass_specular.dds"/>
+    <File fileId="61" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01Cover_diffuse.dds"/>
+    <File fileId="62" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01Cover_normal.dds"/>
+    <File fileId="63" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01Cover_specular.dds"/>
+    <File fileId="56" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01Cutlery_diffuse.dds"/>
+    <File fileId="57" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01Cutlery_normal.dds"/>
+    <File fileId="58" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01Cutlery_specular.dds"/>
+    <File fileId="53" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01_diffuse.dds"/>
+    <File fileId="54" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01_normal.dds"/>
+    <File fileId="55" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tableSet01_specular.dds"/>
   </Files>
 
 

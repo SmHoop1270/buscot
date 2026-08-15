@@ -6,11 +6,11 @@
     <Files>
         <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
         <File fileId="2" filename="$data/shared/default_normal.dds"/>
-        <File fileId="7" filename="textures/metal_black_d.dds"/>
-        <File fileId="8" filename="textures/metal_black_n.dds"/>
-        <File fileId="9" filename="textures/metal_black_s.dds"/>
-        <File fileId="1" filename="textures/metal_oxydized_d.dds"/>
-        <File fileId="3" filename="textures/metal_oxydized_s.dds"/>
+        <File fileId="7" filename="../../textures/staticgates_metal_black_d.dds"/>
+        <File fileId="8" filename="../../textures/staticgates_metal_black_n.dds"/>
+        <File fileId="9" filename="../../textures/staticgates_metal_black_s.dds"/>
+        <File fileId="1" filename="../../textures/staticgates_metal_oxydized_d.dds"/>
+        <File fileId="3" filename="../../textures/staticgates_metal_oxydized_s.dds"/>
     </Files>
     <Materials>
         <Material name="default" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1"/>

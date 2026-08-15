@@ -18,7 +18,7 @@ This set is a collection of the power poles included in the base game. They are 
 	</en>
     </description>
 	
-	<iconFilename>PowerPoles_icon.dds</iconFilename>
+	<iconFilename>../../textures/FS25_PowerPoles_prefab_PowerPoles_icon.dds</iconFilename>
     <prefabs>
 		<prefab name="FS25_PowerPoles_prefab" i3dFilename="PowerPoles.i3d" />
     </prefabs>

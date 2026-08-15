@@ -96,7 +96,7 @@ Deko_Accessories39_XXL_DS_prefab.i3d | Kisten und Kartons, Paletten 4]]></de>
         <category>Other</category>
     </categories>
 
-    <iconFilename>icon_Deko_Accessories_XXL_DS.dds</iconFilename>
+    <iconFilename>../../textures/FS25_Deko_Accessories_XXL_prefab_icon_Deko_Accessories_XXL_DS.dds</iconFilename>
 	
     <prefabs>	
         <prefab name="Deko1_Accessories_XXL_DS_prefab" 		i3dFilename="Deko_Accessories1_XXL_DS_prefab.i3d" />

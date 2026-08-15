@@ -26,8 +26,8 @@
     <File fileId="13" filename="$data/maps/mapEU/textures/shared/puddles/ripples_mask.png"/>
     <File fileId="4" filename="$data/shaders/decalShader.xml"/>
     <File fileId="11" filename="$data/shaders/puddleShader.xml"/>
-    <File fileId="1" filename="textures/asphaltRoadsSigns_diffuse.png"/>
-    <File fileId="2" filename="textures/asphaltRoadsSigns_normal.png"/>
+    <File fileId="1" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_asphaltRoadsSigns_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_asphaltRoadsSigns_normal.dds"/>
   </Files>
 
 

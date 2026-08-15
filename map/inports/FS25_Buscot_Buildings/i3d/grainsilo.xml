@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_farmSilo</function>
         </functions>
-        <image>map/inports/FS25_Buscot_Buildings/store/store_vicshed.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_store_vicshed.dds</image>
         <price>117000</price>
         <dailyUpkeep>120</dailyUpkeep>
         <lifetime>1000</lifetime>

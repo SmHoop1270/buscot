@@ -37,9 +37,9 @@
     <File fileId="45" filename="$data/shared/warningStripes_diffuse.png"/>
     <File fileId="46" filename="$data/shared/warningStripes_normal.png"/>
     <File fileId="47" filename="$data/shared/warningStripes_specular.png"/>
-    <File fileId="1" filename="../textures/ASD_Albedo.dds"/>
-    <File fileId="19" filename="../textures/sign_diffuse.dds"/>
-    <File fileId="20" filename="../textures/wholesaleMarket.dds"/>
+    <File fileId="1" filename="../../../textures/FS25_wholesaleMarket_ASD_Albedo.dds"/>
+    <File fileId="19" filename="../../../textures/FS25_wholesaleMarket_sign_diffuse.dds"/>
+    <File fileId="20" filename="../../../textures/FS25_wholesaleMarket_wholesaleMarket.dds"/>
   </Files>
 
 

@@ -2,7 +2,7 @@
 <placeable type="workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Edwards Tractor Sales</name>
-        <image>map/inports/sellingStationVehicles/mapIcon_vehicleTrader.dds</image>
+        <image>map/textures/sellingStationVehicles_mapIcon_vehicleTrader.dds</image>
         <price>1</price>
         <canBeSold>false</canBeSold>
         <showInStore>false</showInStore>

@@ -27,7 +27,7 @@ Torbreite: 0,9m, 1,2m, 1,5m, 2,4m, 3m, 3,3m, 3,6m, 4,2m und ein doppeltes 3,6m
 </description>
     
 
-    <iconFilename>icon_BritishFieldGates.dds</iconFilename>
+    <iconFilename>../../textures/FS25_RDM_BritishFieldGates_prefab_icon_BritishFieldGates.dds</iconFilename>
 	<prefabs>
 		<prefab name="FS25_RDM_BritishFieldGates_prefab" i3dFilename="7Bar.i3d"/>
 	</prefabs>

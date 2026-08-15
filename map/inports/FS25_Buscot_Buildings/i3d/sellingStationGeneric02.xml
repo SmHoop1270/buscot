@@ -2,7 +2,7 @@
 <placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Henry and Son Millers</name>
-        <image>map/inports/FS25_Buscot_Buildings/store/grainsellpoint.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_grainsellpoint.dds</image>
         <price>1</price>
         <canBeSold>false</canBeSold>
         <showInStore>false</showInStore>

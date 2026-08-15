@@ -5,7 +5,7 @@
 		<en>Large UK Cow barn</en>
         <de>Großer britischer Kuhstall</de>
 		</name>
-        <image>map/inports/FS25_largeukcowshed/Stores/store_cow_placeable.png</image>
+        <image>map/textures/FS25_largeukcowshed_Stores_store_cow_placeable.dds</image>
         <price>100000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>

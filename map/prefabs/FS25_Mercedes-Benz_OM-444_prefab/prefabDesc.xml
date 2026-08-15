@@ -21,7 +21,7 @@ Installationsanleitung ist bei den Dateien enthalten.]]>
         <category>Other</category>
     </categories>
 	
-	<iconFilename>icon_Mercedes-Benz_OM_444.dds</iconFilename>
+	<iconFilename>../../textures/FS25_Mercedes-Benz_OM-444_prefab_icon_Mercedes-Benz_OM_444.dds</iconFilename>
 	
 	<prefabs>
 		<prefab name="Mercedes-Benz OM-444 Engine Sound" xmlFilename="sounds/Mercedes-Benz_OM-444.xml" />

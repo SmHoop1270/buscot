@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_bunkerSilo</function>
         </functions>
-        <image>map/inports/silageClampUK/store_silageClampUK.dds</image>
+        <image>map/textures/silageClampUK_store_silageClampUK.dds</image>
         <price>45000</price>
         <dailyUpkeep>150</dailyUpkeep>
         <lifetime>1000</lifetime>

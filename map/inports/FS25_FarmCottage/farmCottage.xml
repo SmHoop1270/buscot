@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_farmHouse</function>
         </functions>
-        <image>map/inports/FS25_FarmCottage/store_cottage01.dds</image>
+        <image>map/textures/FS25_FarmCottage_store_cottage01.dds</image>
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
         <price>135000</price>
@@ -22,7 +22,7 @@
         </brush>
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
-				<iconFilename>map/inports/FS25_FarmCottage/icon_cottage01.png</iconFilename>
+				<iconFilename>map/textures/FS25_FarmCottage_icon_cottage01.dds</iconFilename>
         <storeIconRendering>
             <settings cameraXRot="-4" cameraYRot="116" advancedBoundingBox="true"/>
         </storeIconRendering>

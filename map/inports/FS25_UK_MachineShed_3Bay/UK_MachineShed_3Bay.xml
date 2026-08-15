@@ -7,7 +7,7 @@
         <functions>
             <function>$l10n_function_garage</function>
         </functions>
-        <image>map/inports/FS25_UK_MachineShed_3Bay/store_MachineShed_3Bay.dds</image>
+        <image>map/textures/FS25_UK_MachineShed_3Bay_store_MachineShed_3Bay.dds</image>
         <price>30000</price>
 		<dailyUpkeep>5</dailyUpkeep>
         <lifetime>1000</lifetime>

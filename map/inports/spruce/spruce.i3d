@@ -7,16 +7,16 @@
         <File fileId="13" filename="$data/shaders/billboardSemiOctahedronShader.xml"/>
         <File fileId="9" filename="$data/shaders/treeBranchShader.xml"/>
         <File fileId="4" filename="$data/shaders/treeTrunkShader.xml"/>
-        <File fileId="6" filename="spruceBranch_diffuse.png"/>
-        <File fileId="8" filename="spruceBranch_fmask.png"/>
-        <File fileId="7" filename="spruceBranch_normal.png"/>
-        <File fileId="1" filename="spruceTrunk_diffuse.png"/>
-        <File fileId="2" filename="spruceTrunk_normal.png"/>
-        <File fileId="3" filename="spruceTrunk_specular.png"/>
-        <File fileId="14" filename="spruceVar2_stage03LOD_depth.png"/>
-        <File fileId="10" filename="spruceVar2_stage03LOD_diffuse.png"/>
-        <File fileId="12" filename="spruceVar2_stage03LOD_fmask.png"/>
-        <File fileId="11" filename="spruceVar2_stage03LOD_normal.png"/>
+        <File fileId="6" filename="../../textures/spruce_spruceBranch_diffuse.dds"/>
+        <File fileId="8" filename="../../textures/spruce_spruceBranch_fmask.dds"/>
+        <File fileId="7" filename="../../textures/spruce_spruceBranch_normal.dds"/>
+        <File fileId="1" filename="../../textures/spruce_spruceTrunk_diffuse.dds"/>
+        <File fileId="2" filename="../../textures/spruce_spruceTrunk_normal.dds"/>
+        <File fileId="3" filename="../../textures/spruce_spruceTrunk_specular.dds"/>
+        <File fileId="14" filename="../../textures/spruce_spruceVar2_stage03LOD_depth.dds"/>
+        <File fileId="10" filename="../../textures/spruce_spruceVar2_stage03LOD_diffuse.dds"/>
+        <File fileId="12" filename="../../textures/spruce_spruceVar2_stage03LOD_fmask.dds"/>
+        <File fileId="11" filename="../../textures/spruce_spruceVar2_stage03LOD_normal.dds"/>
     </Files>
     <Materials>
         <Material name="spruceBranch_mat" materialId="5" customShaderId="9">

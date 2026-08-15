@@ -24,12 +24,12 @@
     <File fileId="7" filename="$data/foliage/meadow/meadowUS/meadowUS_mask.png"/>
     <File fileId="2" filename="$data/foliage/meadow/meadowUS/meadowUS_normal.png"/>
     <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
-    <File fileId="20" filename="../meadowUS/grassCutLOD_diffuse.png"/>
-    <File fileId="16" filename="../meadowUS/grassHarvestReadyLOD_diffuse.png"/>
-    <File fileId="12" filename="../meadowUS/grassMiddleLOD_diffuse.png"/>
-    <File fileId="8" filename="../meadowUS/grassSmallLOD_diffuse.png"/>
-    <File fileId="24" filename="../meadowUS/meadowUSRollerLOD1_diffuse.png"/>
-    <File fileId="1" filename="../meadowUS/meadowUS_diffuse.png"/>
+    <File fileId="20" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassCutLOD_diffuse.dds"/>
+    <File fileId="16" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassHarvestReadyLOD_diffuse.dds"/>
+    <File fileId="12" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassMiddleLOD_diffuse.dds"/>
+    <File fileId="8" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassSmallLOD_diffuse.dds"/>
+    <File fileId="24" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_meadowUSRollerLOD1_diffuse.dds"/>
+    <File fileId="1" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_meadowUS_diffuse.dds"/>
   </Files>
 
 

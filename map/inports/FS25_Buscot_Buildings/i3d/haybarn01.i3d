@@ -16,9 +16,9 @@
     <File fileId="14" filename="$data/placeables/brandless/workshop/workshop_normal.dds"/>
     <File fileId="15" filename="$data/placeables/brandless/workshop/workshop_specular.dds"/>
     <File fileId="7" filename="$data/shaders/buildingShader.xml"/>
-    <File fileId="16" filename="../textures/metalpanel_diffuse.dds"/>
-    <File fileId="17" filename="../textures/metalpanel_normal.dds"/>
-    <File fileId="18" filename="../textures/metalpanel_specular.dds"/>
+    <File fileId="16" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_diffuse.dds"/>
+    <File fileId="17" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_normal.dds"/>
+    <File fileId="18" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_specular.dds"/>
   </Files>
 
 

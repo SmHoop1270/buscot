@@ -9,7 +9,7 @@
         <functions>
             <function>$l10n_function_workshop</function>
         </functions>
-        <image>map/inports/FS25_Buscot_Buildings/store/store_vicshed.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_store_vicshed.dds</image>
         <price>35000</price>
         <dailyUpkeep>10</dailyUpkeep>
         <lifetime>1000</lifetime>

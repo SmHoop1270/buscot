@@ -98,23 +98,23 @@
     <File fileId="59" filename="$data/shared/default_normal.png"/>
     <File fileId="9" filename="$data/shared/default_specular.png"/>
     <File fileId="58" filename="$data/shared/window_diffuse.png"/>
-    <File fileId="27" filename="buildingDecalsWood_diffuse.png"/>
-    <File fileId="28" filename="buildingDecalsWood_normal.png"/>
-    <File fileId="29" filename="buildingDecalsWood_specular.png"/>
-    <File fileId="1" filename="cargoContainerYellow_diffuse.dds"/>
-    <File fileId="11" filename="euroPallet01_diffuse.png"/>
-    <File fileId="12" filename="euroPallet01_normal.png"/>
-    <File fileId="13" filename="euroPallet01_specular.png"/>
-    <File fileId="14" filename="euroPallet02_diffuse.png"/>
-    <File fileId="16" filename="farmBarn04_diffuse.dds"/>
-    <File fileId="23" filename="farmBarn04_height.png"/>
-    <File fileId="20" filename="farmBarn04_mask.png"/>
-    <File fileId="17" filename="farmBarn04_normal.png"/>
-    <File fileId="18" filename="farmBarn04_specular.png"/>
-    <File fileId="37" filename="sandContainerDE_diffuse.dds"/>
-    <File fileId="38" filename="sandContainerDE_normal.dds"/>
-    <File fileId="39" filename="sandContainerDE_specular.dds"/>
-    <File fileId="121" filename="vehicleTraderLogo_diffuse.dds"/>
+    <File fileId="27" filename="../../textures/FS25_Deco_prefab_buildingDecalsWood_diffuse.dds"/>
+    <File fileId="28" filename="../../textures/FS25_Deco_prefab_buildingDecalsWood_normal.dds"/>
+    <File fileId="29" filename="../../textures/FS25_Deco_prefab_buildingDecalsWood_specular.dds"/>
+    <File fileId="1" filename="../../textures/FS25_Deco_prefab_cargoContainerYellow_diffuse.dds"/>
+    <File fileId="11" filename="../../textures/FS25_Deco_prefab_euroPallet01_diffuse.dds"/>
+    <File fileId="12" filename="../../textures/FS25_Deco_prefab_euroPallet01_normal.dds"/>
+    <File fileId="13" filename="../../textures/FS25_Deco_prefab_euroPallet01_specular.dds"/>
+    <File fileId="14" filename="../../textures/FS25_Deco_prefab_euroPallet02_diffuse.dds"/>
+    <File fileId="16" filename="../../textures/FS25_Deco_prefab_farmBarn04_diffuse.dds"/>
+    <File fileId="23" filename="../../textures/FS25_Deco_prefab_farmBarn04_height.dds"/>
+    <File fileId="20" filename="../../textures/FS25_Deco_prefab_farmBarn04_mask.dds"/>
+    <File fileId="17" filename="../../textures/FS25_Deco_prefab_farmBarn04_normal.dds"/>
+    <File fileId="18" filename="../../textures/FS25_Deco_prefab_farmBarn04_specular.dds"/>
+    <File fileId="37" filename="../../textures/FS25_Deco_prefab_sandContainerDE_diffuse.dds"/>
+    <File fileId="38" filename="../../textures/FS25_Deco_prefab_sandContainerDE_normal.dds"/>
+    <File fileId="39" filename="../../textures/FS25_Deco_prefab_sandContainerDE_specular.dds"/>
+    <File fileId="121" filename="../../textures/FS25_Deco_prefab_vehicleTraderLogo_diffuse.dds"/>
   </Files>
 
 

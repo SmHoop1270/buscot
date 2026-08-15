@@ -4,7 +4,7 @@
         <name>            
            <en>UK Dairy with Parlour</en> 
         </name>
-		<image>map/inports/FS25_UK_DairyBarn/store_FS25_UK_DairyBarn.dds</image>
+		<image>map/textures/FS25_UK_DairyBarn_store_FS25_UK_DairyBarn.dds</image>
         <price>150000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>

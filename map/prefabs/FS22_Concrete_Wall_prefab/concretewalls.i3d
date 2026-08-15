@@ -7,10 +7,10 @@
 
   <Files>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
-    <File fileId="5" filename="ConcreteWall_Vmask.png"/>
-    <File fileId="1" filename="ConcreteWall_diffuse.png"/>
-    <File fileId="2" filename="ConcreteWall_normal.png"/>
-    <File fileId="3" filename="ConcreteWall_specular.png"/>
+    <File fileId="5" filename="../../textures/FS22_Concrete_Wall_prefab_ConcreteWall_Vmask.dds"/>
+    <File fileId="1" filename="../../textures/FS22_Concrete_Wall_prefab_ConcreteWall_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/FS22_Concrete_Wall_prefab_ConcreteWall_normal.dds"/>
+    <File fileId="3" filename="../../textures/FS22_Concrete_Wall_prefab_ConcreteWall_specular.dds"/>
   </Files>
 
 

@@ -78,33 +78,33 @@
     <File fileId="84" filename="$data/trafficVehicles/driver_diffuse.png"/>
     <File fileId="85" filename="$data/trafficVehicles/driver_normal.png"/>
     <File fileId="86" filename="$data/trafficVehicles/driver_specular.png"/>
-    <File fileId="77" filename="textures/bathtubModern_diffuse.png"/>
-    <File fileId="78" filename="textures/bathtubModern_normal.png"/>
-    <File fileId="79" filename="textures/bathtubModern_specular.png"/>
-    <File fileId="56" filename="textures/iceCreamFreezerAlpha_diffuse.png"/>
-    <File fileId="50" filename="textures/iceCreamFreezer_diffuse.png"/>
-    <File fileId="51" filename="textures/iceCreamFreezer_normal.png"/>
-    <File fileId="52" filename="textures/iceCreamFreezer_specular.png"/>
-    <File fileId="58" filename="textures/iceCream_diffuse.png"/>
-    <File fileId="59" filename="textures/iceCream_normal.png"/>
-    <File fileId="60" filename="textures/iceCream_specular.png"/>
-    <File fileId="35" filename="textures/ladders_diffuse.png"/>
-    <File fileId="36" filename="textures/ladders_normal.png"/>
-    <File fileId="37" filename="textures/ladders_specular.png"/>
-    <File fileId="5" filename="textures/metalTrashSet_diffuse.png"/>
-    <File fileId="6" filename="textures/metalTrashSet_normal.png"/>
-    <File fileId="7" filename="textures/metalTrashSet_specular.png"/>
-    <File fileId="2" filename="textures/sportsBag_diffuse.png"/>
-    <File fileId="3" filename="textures/sportsBag_normal.png"/>
-    <File fileId="4" filename="textures/sportsBag_specular.png"/>
-    <File fileId="61" filename="textures/waterBottleStand_diffuse.png"/>
-    <File fileId="62" filename="textures/waterBottleStand_normal.png"/>
-    <File fileId="63" filename="textures/waterBottle_diffuse.png"/>
-    <File fileId="64" filename="textures/waterBottle_normal.png"/>
-    <File fileId="65" filename="textures/waterBottle_specular.png"/>
-    <File fileId="66" filename="textures/waterDispenser_diffuse.png"/>
-    <File fileId="67" filename="textures/waterDispenser_normal.png"/>
-    <File fileId="68" filename="textures/waterDispenser_specular.png"/>
+    <File fileId="77" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bathtubModern_diffuse.dds"/>
+    <File fileId="78" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bathtubModern_normal.dds"/>
+    <File fileId="79" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bathtubModern_specular.dds"/>
+    <File fileId="56" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamFreezerAlpha_diffuse.dds"/>
+    <File fileId="50" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamFreezer_diffuse.dds"/>
+    <File fileId="51" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamFreezer_normal.dds"/>
+    <File fileId="52" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamFreezer_specular.dds"/>
+    <File fileId="58" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCream_diffuse.dds"/>
+    <File fileId="59" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCream_normal.dds"/>
+    <File fileId="60" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCream_specular.dds"/>
+    <File fileId="35" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ladders_diffuse.dds"/>
+    <File fileId="36" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ladders_normal.dds"/>
+    <File fileId="37" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ladders_specular.dds"/>
+    <File fileId="5" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_diffuse.dds"/>
+    <File fileId="6" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_normal.dds"/>
+    <File fileId="7" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_specular.dds"/>
+    <File fileId="2" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sportsBag_diffuse.dds"/>
+    <File fileId="3" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sportsBag_normal.dds"/>
+    <File fileId="4" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sportsBag_specular.dds"/>
+    <File fileId="61" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBottleStand_diffuse.dds"/>
+    <File fileId="62" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBottleStand_normal.dds"/>
+    <File fileId="63" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBottle_diffuse.dds"/>
+    <File fileId="64" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBottle_normal.dds"/>
+    <File fileId="65" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBottle_specular.dds"/>
+    <File fileId="66" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterDispenser_diffuse.dds"/>
+    <File fileId="67" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterDispenser_normal.dds"/>
+    <File fileId="68" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterDispenser_specular.dds"/>
   </Files>
 
 

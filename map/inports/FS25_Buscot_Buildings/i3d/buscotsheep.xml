@@ -5,7 +5,7 @@
 		<en>Buscot Sheep Barn</en>
 		<de>Buscot Sheep Barn</de>
 		</name>
-        <image>map/inports/FS25_Buscot_Buildings/store/sheepBarn.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_sheepBarn.dds</image>
         <price>51000</price>
         <functions>
             <function>$l10n_function_animalPenSheep</function>

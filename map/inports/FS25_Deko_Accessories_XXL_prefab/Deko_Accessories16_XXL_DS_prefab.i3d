@@ -41,21 +41,21 @@
     <File fileId="40" filename="$data/placeables/brandless/productionPointsGeneric/shared/woodenCrate01_normal.png"/>
     <File fileId="41" filename="$data/placeables/brandless/productionPointsGeneric/shared/woodenCrate01_specular.png"/>
     <File fileId="15" filename="$data/shaders/placeableShader.xml"/>
-    <File fileId="4" filename="textures/barrelsSET_diffuse.png"/>
-    <File fileId="5" filename="textures/barrelsSET_normal.png"/>
-    <File fileId="6" filename="textures/barrelsSET_specular.png"/>
-    <File fileId="30" filename="textures/greenMetalBox_diffuse.png"/>
-    <File fileId="31" filename="textures/greenMetalBox_normal.png"/>
-    <File fileId="32" filename="textures/greenMetalBox_specular.png"/>
-    <File fileId="33" filename="textures/trashBinMedium01_diffuse.png"/>
-    <File fileId="34" filename="textures/trashBinMedium01_normal.png"/>
-    <File fileId="35" filename="textures/trashBinMedium01_specular.png"/>
-    <File fileId="20" filename="textures/waterBarrelRack_diffuse.png"/>
-    <File fileId="21" filename="textures/waterBarrelRack_normal.png"/>
-    <File fileId="22" filename="textures/waterBarrelRack_specular.png"/>
-    <File fileId="7" filename="textures/waterContainer_diffuse.png"/>
-    <File fileId="8" filename="textures/waterContainer_normal.png"/>
-    <File fileId="9" filename="textures/waterContainer_specular.png"/>
+    <File fileId="4" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_barrelsSET_diffuse.dds"/>
+    <File fileId="5" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_barrelsSET_normal.dds"/>
+    <File fileId="6" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_barrelsSET_specular.dds"/>
+    <File fileId="30" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_greenMetalBox_diffuse.dds"/>
+    <File fileId="31" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_greenMetalBox_normal.dds"/>
+    <File fileId="32" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_greenMetalBox_specular.dds"/>
+    <File fileId="33" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_trashBinMedium01_diffuse.dds"/>
+    <File fileId="34" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_trashBinMedium01_normal.dds"/>
+    <File fileId="35" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_trashBinMedium01_specular.dds"/>
+    <File fileId="20" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBarrelRack_diffuse.dds"/>
+    <File fileId="21" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBarrelRack_normal.dds"/>
+    <File fileId="22" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterBarrelRack_specular.dds"/>
+    <File fileId="7" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterContainer_diffuse.dds"/>
+    <File fileId="8" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterContainer_normal.dds"/>
+    <File fileId="9" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterContainer_specular.dds"/>
   </Files>
 
 

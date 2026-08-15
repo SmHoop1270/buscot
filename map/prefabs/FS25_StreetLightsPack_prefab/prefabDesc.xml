@@ -18,7 +18,7 @@ Ein Paket mit Stra√üenlaternen zum Platzieren auf Ihrer Karte. Jedes Paket enth√
 	<categories>
 		<category>Static</category>
 	</categories>
-	<iconFilename>icon_streetLightsPrefab.dds</iconFilename>
+	<iconFilename>../../textures/FS25_StreetLightsPack_prefab_icon_streetLightsPrefab.dds</iconFilename>
 	<prefabs>
 		<prefab name="StreetLightsPack" i3dFilename="streetLights.i3d"/>
 	</prefabs>

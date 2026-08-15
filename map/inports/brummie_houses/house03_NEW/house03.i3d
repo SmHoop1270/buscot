@@ -7,9 +7,9 @@
 
   <Files>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
-    <File fileId="1" filename="textures/house03_diffuse.dds"/>
-    <File fileId="2" filename="textures/house03_normal.dds"/>
-    <File fileId="3" filename="textures/house03_specular.dds"/>
+    <File fileId="1" filename="../../../textures/brummie_houses_house03_NEW_house03_diffuse.dds"/>
+    <File fileId="2" filename="../../../textures/brummie_houses_house03_NEW_house03_normal.dds"/>
+    <File fileId="3" filename="../../../textures/brummie_houses_house03_NEW_house03_specular.dds"/>
   </Files>
 
 

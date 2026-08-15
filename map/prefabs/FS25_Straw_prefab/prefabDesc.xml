@@ -16,7 +16,7 @@ Dieses Fertigteil dient als Dekoration für Ihre Karte und Ihr Gebäude.]]></de>
 	<categories>
 		<category>Other</category>
 	</categories>
-	<iconFilename>icon_Straw.dds</iconFilename>
+	<iconFilename>../../textures/FS25_Straw_prefab_icon_Straw.dds</iconFilename>
 	<prefabs>
 		<prefab name="Prefab" i3dFilename="straw.i3d"/>
 	</prefabs>

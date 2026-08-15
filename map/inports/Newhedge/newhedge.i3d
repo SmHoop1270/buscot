@@ -10,8 +10,8 @@
     <File fileId="7" filename="$data/foliage/decoBush/decoBushBlueberry_mask.png"/>
     <File fileId="2" filename="$data/foliage/decoBush/decoBushBlueberry_normal.png"/>
     <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
-    <File fileId="1" filename="foliage/decoBush/decoBushBlueberry_diffuse.png"/>
-    <File fileId="9" filename="foliage/decoBush/hedgeLOD1.dds"/>
+    <File fileId="1" filename="../../textures/Newhedge_foliage_decoBush_decoBushBlueberry_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/Newhedge_foliage_decoBush_hedgeLOD1.dds"/>
   </Files>
 
 

@@ -12,11 +12,11 @@
     <File fileId="11" filename="$data/shaders/buildingShader.xml"/>
     <File fileId="4" filename="$data/shaders/snowHeapShader.xml"/>
     <File fileId="10" filename="$data/shared/default_specular.dds"/>
-    <File fileId="17" filename="prefabs/FS22_BaleStack_prefab/textures/belkaSlomy_diffuse.dds"/>
-    <File fileId="18" filename="prefabs/FS22_BaleStack_prefab/textures/belkaSlomy_normal.dds"/>
-    <File fileId="16" filename="prefabs/FS22_BaleStack_prefab/textures/plandeka01_height.dds"/>
-    <File fileId="9" filename="prefabs/FS22_BaleStack_prefab/textures/plandeka01_normal.dds"/>
-    <File fileId="8" filename="prefabs/FS22_BaleStack_prefab/textures/plandeka_diffuse.dds"/>
+    <File fileId="17" filename="../../textures/bale_stack_prefabs_FS22_BaleStack_prefab_belkaSlomy_diffuse.dds"/>
+    <File fileId="18" filename="../../textures/bale_stack_prefabs_FS22_BaleStack_prefab_belkaSlomy_normal.dds"/>
+    <File fileId="16" filename="../../textures/bale_stack_prefabs_FS22_BaleStack_prefab_plandeka01_height.dds"/>
+    <File fileId="9" filename="../../textures/bale_stack_prefabs_FS22_BaleStack_prefab_plandeka01_normal.dds"/>
+    <File fileId="8" filename="../../textures/bale_stack_prefabs_FS22_BaleStack_prefab_plandeka_diffuse.dds"/>
   </Files>
 
 

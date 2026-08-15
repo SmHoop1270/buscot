@@ -169,36 +169,36 @@
     <File fileId="47" filename="$data/foliage/weed/weedRumex_mask.png"/>
     <File fileId="45" filename="$data/foliage/weed/weedRumex_normal.png"/>
     <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
-    <File fileId="52" filename="weedAperaBigAliveLOD_diffuse.png"/>
-    <File fileId="8" filename="weedAperaSmallAliveLOD_diffuse.png"/>
-    <File fileId="1" filename="weedApera_diffuse.png"/>
-    <File fileId="56" filename="weedChaerophyllumBigAliveLOD_diffuse.png"/>
-    <File fileId="16" filename="weedChaerophyllumSmallAliveLOD_diffuse.png"/>
-    <File fileId="12" filename="weedChaerophyllum_diffuse.png"/>
-    <File fileId="60" filename="weedChenopodiumBigAliveLOD_diffuse.png"/>
-    <File fileId="24" filename="weedChenopodiumSmallAliveLOD_diffuse.png"/>
-    <File fileId="20" filename="weedChenopodium_diffuse.png"/>
-    <File fileId="64" filename="weedCirsiumBigAliveLOD_diffuse.png"/>
-    <File fileId="32" filename="weedCirsiumSmallAliveLOD_diffuse.png"/>
-    <File fileId="28" filename="weedCirsium_diffuse.png"/>
-    <File fileId="68" filename="weedPapaverRhoeasBigAliveLOD_diffuse.png"/>
-    <File fileId="40" filename="weedPapaverRhoeasSmallAliveLOD_diffuse.png"/>
-    <File fileId="36" filename="weedPapaverRhoeas_diffuse.png"/>
-    <File fileId="72" filename="weedRumexBigAliveLOD_diffuse.png"/>
-    <File fileId="48" filename="weedRumexSmallAliveLOD_diffuse.png"/>
-    <File fileId="44" filename="weedRumex_diffuse.png"/>
-    <File fileId="168" filename="../meadowUS/coneFlower01LOD_diffuse.png"/>
-    <File fileId="172" filename="../meadowUS/coneFlower02LOD_diffuse.png"/>
-    <File fileId="164" filename="../meadowUS/grassCutLOD_diffuse.png"/>
-    <File fileId="160" filename="../meadowUS/grassHarvestReadyLOD_diffuse.png"/>
-    <File fileId="156" filename="../meadowUS/grassMiddleLOD_diffuse.png"/>
-    <File fileId="152" filename="../meadowUS/grassSmallLOD_diffuse.png"/>
-    <File fileId="148" filename="../meadowUS/meadowUS_diffuse.png"/>
-    <File fileId="188" filename="../meadowUS/prairieBlazingStar01LOD_diffuse.png"/>
-    <File fileId="192" filename="../meadowUS/prairieBlazingStar02LOD_diffuse.png"/>
-    <File fileId="176" filename="../meadowUS/slenderMountainMint01LOD_diffuse.png"/>
-    <File fileId="180" filename="../meadowUS/wildBergamot01LOD_diffuse.png"/>
-    <File fileId="184" filename="../meadowUS/wildBergamot02LOD_diffuse.png"/>
+    <File fileId="52" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedAperaBigAliveLOD_diffuse.dds"/>
+    <File fileId="8" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedAperaSmallAliveLOD_diffuse.dds"/>
+    <File fileId="1" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedApera_diffuse.dds"/>
+    <File fileId="56" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedChaerophyllumBigAliveLOD_diffuse.dds"/>
+    <File fileId="16" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedChaerophyllumSmallAliveLOD_diffuse.dds"/>
+    <File fileId="12" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedChaerophyllum_diffuse.dds"/>
+    <File fileId="60" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedChenopodiumBigAliveLOD_diffuse.dds"/>
+    <File fileId="24" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedChenopodiumSmallAliveLOD_diffuse.dds"/>
+    <File fileId="20" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedChenopodium_diffuse.dds"/>
+    <File fileId="64" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedCirsiumBigAliveLOD_diffuse.dds"/>
+    <File fileId="32" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedCirsiumSmallAliveLOD_diffuse.dds"/>
+    <File fileId="28" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedCirsium_diffuse.dds"/>
+    <File fileId="68" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedPapaverRhoeasBigAliveLOD_diffuse.dds"/>
+    <File fileId="40" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedPapaverRhoeasSmallAliveLOD_diffuse.dds"/>
+    <File fileId="36" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedPapaverRhoeas_diffuse.dds"/>
+    <File fileId="72" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedRumexBigAliveLOD_diffuse.dds"/>
+    <File fileId="48" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedRumexSmallAliveLOD_diffuse.dds"/>
+    <File fileId="44" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_decoFoliageUS_weedRumex_diffuse.dds"/>
+    <File fileId="168" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_coneFlower01LOD_diffuse.dds"/>
+    <File fileId="172" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_coneFlower02LOD_diffuse.dds"/>
+    <File fileId="164" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassCutLOD_diffuse.dds"/>
+    <File fileId="160" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassHarvestReadyLOD_diffuse.dds"/>
+    <File fileId="156" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassMiddleLOD_diffuse.dds"/>
+    <File fileId="152" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassSmallLOD_diffuse.dds"/>
+    <File fileId="148" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_meadowUS_diffuse.dds"/>
+    <File fileId="188" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_prairieBlazingStar01LOD_diffuse.dds"/>
+    <File fileId="192" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_prairieBlazingStar02LOD_diffuse.dds"/>
+    <File fileId="176" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_slenderMountainMint01LOD_diffuse.dds"/>
+    <File fileId="180" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_wildBergamot01LOD_diffuse.dds"/>
+    <File fileId="184" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_wildBergamot02LOD_diffuse.dds"/>
   </Files>
 
 

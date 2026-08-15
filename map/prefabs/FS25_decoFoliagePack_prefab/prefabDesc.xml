@@ -44,7 +44,7 @@ Un readme.txt est inclus dans le package!
         <category>Other</category>
     </categories>
 	
-	<iconFilename>icon_decoFoliage.dds</iconFilename>
+	<iconFilename>../../textures/FS25_decoFoliagePack_prefab_icon_decoFoliage.dds</iconFilename>
 	
 	<prefabs>
 		<prefab name="decoFoliageUS"   						xmlFilename="foliage/decoFoliageUS/decoFoliageUS.xml" />

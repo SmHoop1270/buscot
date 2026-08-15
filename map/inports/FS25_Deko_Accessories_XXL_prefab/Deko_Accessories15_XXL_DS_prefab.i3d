@@ -27,22 +27,22 @@
     <File fileId="34" filename="$data/objects/pallets/liquidTank/fertilizerTank_specular.png"/>
     <File fileId="4" filename="$data/shaders/decalShader.xml"/>
     <File fileId="35" filename="$data/shared/default_normal.png"/>
-    <File fileId="22" filename="textures/cageContainerNet_diffuse.png"/>
-    <File fileId="23" filename="textures/cageContainerNet_normal.png"/>
-    <File fileId="24" filename="textures/cageContainerNet_specular.png"/>
-    <File fileId="19" filename="textures/cageContainer_diffuse.png"/>
-    <File fileId="20" filename="textures/cageContainer_normal.png"/>
-    <File fileId="21" filename="textures/cageContainer_specular.png"/>
-    <File fileId="36" filename="textures/euroPallet01_diffuse.png"/>
-    <File fileId="6" filename="textures/euroPallet01_normal.png"/>
-    <File fileId="7" filename="textures/euroPallet01_specular.png"/>
-    <File fileId="5" filename="textures/euroPallet02_diffuse.png"/>
-    <File fileId="8" filename="textures/metalTrashSet_diffuse.png"/>
-    <File fileId="9" filename="textures/metalTrashSet_normal.png"/>
-    <File fileId="10" filename="textures/metalTrashSet_specular.png"/>
-    <File fileId="37" filename="textures/tireHuge_diffuse.png"/>
-    <File fileId="38" filename="textures/tireHuge_normal.png"/>
-    <File fileId="39" filename="textures/tireHuge_specular.png"/>
+    <File fileId="22" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cageContainerNet_diffuse.dds"/>
+    <File fileId="23" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cageContainerNet_normal.dds"/>
+    <File fileId="24" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cageContainerNet_specular.dds"/>
+    <File fileId="19" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cageContainer_diffuse.dds"/>
+    <File fileId="20" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cageContainer_normal.dds"/>
+    <File fileId="21" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cageContainer_specular.dds"/>
+    <File fileId="36" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_diffuse.dds"/>
+    <File fileId="6" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_normal.dds"/>
+    <File fileId="7" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_specular.dds"/>
+    <File fileId="5" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet02_diffuse.dds"/>
+    <File fileId="8" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_normal.dds"/>
+    <File fileId="10" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_specular.dds"/>
+    <File fileId="37" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tireHuge_diffuse.dds"/>
+    <File fileId="38" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tireHuge_normal.dds"/>
+    <File fileId="39" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tireHuge_specular.dds"/>
   </Files>
 
 

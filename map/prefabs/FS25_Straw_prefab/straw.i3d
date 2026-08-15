@@ -7,8 +7,8 @@
 
   <Files>
     <File fileId="2" filename="$data/shaders/decalShader.xml"/>
-    <File fileId="3" filename="textures/hay_diffuse.dds"/>
-    <File fileId="1" filename="textures/straw_diffuse.dds"/>
+    <File fileId="3" filename="../../textures/FS25_Straw_prefab_hay_diffuse.dds"/>
+    <File fileId="1" filename="../../textures/FS25_Straw_prefab_straw_diffuse.dds"/>
   </Files>
 
 

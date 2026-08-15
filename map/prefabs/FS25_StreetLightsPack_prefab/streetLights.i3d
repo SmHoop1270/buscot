@@ -12,10 +12,10 @@
     <File fileId="14" filename="$data/shared/default_specular.dds"/>
     <File fileId="17" filename="$data/shared/window02_specular.dds"/>
     <File fileId="16" filename="$data/shared/window_diffuse.dds"/>
-    <File fileId="1" filename="textures/slupy_diffuse.dds"/>
-    <File fileId="10" filename="textures/slupy_height.dds"/>
-    <File fileId="2" filename="textures/slupy_normal.dds"/>
-    <File fileId="3" filename="textures/slupy_specular.dds"/>
+    <File fileId="1" filename="../../textures/FS25_StreetLightsPack_prefab_slupy_diffuse.dds"/>
+    <File fileId="10" filename="../../textures/FS25_StreetLightsPack_prefab_slupy_height.dds"/>
+    <File fileId="2" filename="../../textures/FS25_StreetLightsPack_prefab_slupy_normal.dds"/>
+    <File fileId="3" filename="../../textures/FS25_StreetLightsPack_prefab_slupy_specular.dds"/>
   </Files>
 
 

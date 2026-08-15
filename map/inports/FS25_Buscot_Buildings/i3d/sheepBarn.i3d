@@ -31,14 +31,14 @@
     <File fileId="30" filename="$data/shared/warningStripes_diffuse.png"/>
     <File fileId="31" filename="$data/shared/warningStripes_normal.png"/>
     <File fileId="32" filename="$data/shared/warningStripes_specular.png"/>
-    <File fileId="16" filename="../textures/metalpanel_diffuse.dds"/>
-    <File fileId="17" filename="../textures/metalpanel_normal.dds"/>
-    <File fileId="18" filename="../textures/metalpanel_specular.dds"/>
-    <File fileId="44" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_d.dds"/>
-    <File fileId="45" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_n.dds"/>
-    <File fileId="46" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_black_s.dds"/>
-    <File fileId="41" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_oxydized_d.dds"/>
-    <File fileId="42" filename="../../../prefabs/FS25_RDM_BritishFieldGates_prefab/textures/metal_oxydized_s.dds"/>
+    <File fileId="16" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_diffuse.dds"/>
+    <File fileId="17" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_normal.dds"/>
+    <File fileId="18" filename="../../../textures/FS25_Buscot_Buildings_metalpanel_specular.dds"/>
+    <File fileId="44" filename="../../../textures/FS25_RDM_BritishFieldGates_prefab_metal_black_d.dds"/>
+    <File fileId="45" filename="../../../textures/FS25_RDM_BritishFieldGates_prefab_metal_black_n.dds"/>
+    <File fileId="46" filename="../../../textures/FS25_RDM_BritishFieldGates_prefab_metal_black_s.dds"/>
+    <File fileId="41" filename="../../../textures/FS25_RDM_BritishFieldGates_prefab_metal_oxydized_d.dds"/>
+    <File fileId="42" filename="../../../textures/FS25_RDM_BritishFieldGates_prefab_metal_oxydized_s.dds"/>
   </Files>
 
 

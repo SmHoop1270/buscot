@@ -7,7 +7,7 @@
         <functions>
             <function>$l10n_function_garage</function>
         </functions>
-        <image>map/inports/FS25_UK_BaleShed/store_UK_BaleShed.dds</image>
+        <image>map/textures/FS25_UK_BaleShed_store_UK_BaleShed.dds</image>
         <price>35500</price>
 		<dailyUpkeep>5</dailyUpkeep>
         <lifetime>3000</lifetime>

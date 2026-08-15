@@ -81,16 +81,16 @@
     <File fileId="58" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="14" filename="$data/shaders/windShader.xml"/>
     <File fileId="82" filename="$data/shared/default_normal.png"/>
-    <File fileId="65" filename="textures/decoBush_alpha.png"/>
-    <File fileId="62" filename="textures/decoBush_diffuse.png"/>
-    <File fileId="64" filename="textures/decoBush_fmask.png"/>
-    <File fileId="63" filename="textures/decoBush_normal.png"/>
-    <File fileId="1" filename="textures/ivy01_diffuse.png"/>
-    <File fileId="2" filename="textures/ivy01_normal.png"/>
-    <File fileId="3" filename="textures/ivy01_specular.png"/>
-    <File fileId="16" filename="textures/waterplants_diffuse.png"/>
-    <File fileId="17" filename="textures/waterplants_normal.png"/>
-    <File fileId="18" filename="textures/waterplants_specular.png"/>
+    <File fileId="65" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decoBush_alpha.dds"/>
+    <File fileId="62" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decoBush_diffuse.dds"/>
+    <File fileId="64" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decoBush_fmask.dds"/>
+    <File fileId="63" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decoBush_normal.dds"/>
+    <File fileId="1" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ivy01_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ivy01_normal.dds"/>
+    <File fileId="3" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_ivy01_specular.dds"/>
+    <File fileId="16" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterplants_diffuse.dds"/>
+    <File fileId="17" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterplants_normal.dds"/>
+    <File fileId="18" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterplants_specular.dds"/>
   </Files>
 
 

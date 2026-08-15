@@ -46,23 +46,23 @@
     <File fileId="57" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
     <File fileId="45" filename="$data/shared/white_diffuse.png"/>
     <File fileId="60" filename="$data/store/brands/brand_lizardLogistics.png"/>
-    <File fileId="31" filename="textures/cargoContainerYellow_diffuse.png"/>
-    <File fileId="35" filename="textures/containerSmallDecals_diffuse.png"/>
-    <File fileId="32" filename="textures/containerSmall_diffuse.png"/>
-    <File fileId="33" filename="textures/containerSmall_normal.png"/>
-    <File fileId="34" filename="textures/containerSmall_specular.png"/>
-    <File fileId="27" filename="textures/gasContainer_diffuse.png"/>
-    <File fileId="28" filename="textures/gasContainer_normal.png"/>
-    <File fileId="29" filename="textures/gasContainer_specular.png"/>
-    <File fileId="42" filename="textures/metalContainerBox_diffuse.png"/>
-    <File fileId="43" filename="textures/metalContainerBox_normal.png"/>
-    <File fileId="44" filename="textures/metalContainerBox_specular.png"/>
-    <File fileId="36" filename="textures/sawmillContainer_diffuse.png"/>
-    <File fileId="37" filename="textures/sawmillContainer_normal.png"/>
-    <File fileId="38" filename="textures/sawmillContainer_specular.png"/>
-    <File fileId="39" filename="textures/trashBinLarge01_diffuse.png"/>
-    <File fileId="40" filename="textures/trashBinLarge01_normal.png"/>
-    <File fileId="41" filename="textures/trashBinLarge01_specular.png"/>
+    <File fileId="31" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cargoContainerYellow_diffuse.dds"/>
+    <File fileId="35" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_containerSmallDecals_diffuse.dds"/>
+    <File fileId="32" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_containerSmall_diffuse.dds"/>
+    <File fileId="33" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_containerSmall_normal.dds"/>
+    <File fileId="34" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_containerSmall_specular.dds"/>
+    <File fileId="27" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gasContainer_diffuse.dds"/>
+    <File fileId="28" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gasContainer_normal.dds"/>
+    <File fileId="29" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gasContainer_specular.dds"/>
+    <File fileId="42" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalContainerBox_diffuse.dds"/>
+    <File fileId="43" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalContainerBox_normal.dds"/>
+    <File fileId="44" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalContainerBox_specular.dds"/>
+    <File fileId="36" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sawmillContainer_diffuse.dds"/>
+    <File fileId="37" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sawmillContainer_normal.dds"/>
+    <File fileId="38" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sawmillContainer_specular.dds"/>
+    <File fileId="39" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_trashBinLarge01_diffuse.dds"/>
+    <File fileId="40" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_trashBinLarge01_normal.dds"/>
+    <File fileId="41" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_trashBinLarge01_specular.dds"/>
   </Files>
 
 

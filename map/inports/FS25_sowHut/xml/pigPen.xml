@@ -2,7 +2,7 @@
 <placeable type="pigHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Sow Hut</name>
-        <image>map/inports/FS25_sowHut/store/store_pigPen.png</image>
+        <image>map/textures/FS25_sowHut_store_store_pigPen.dds</image>
         <price>30000</price>
         <functions>
             <function>$l10n_function_animalPenPig</function>

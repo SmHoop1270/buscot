@@ -13,7 +13,7 @@
 			<fr>Point de vente de produits agricoles et d'articles de production.</fr>
 			</function>
         </functions>
-        <image>map/inports/FS25_wholesaleMarket/img/store_wholesaleMarket.dds</image>
+        <image>map/textures/FS25_wholesaleMarket_img_store_wholesaleMarket.dds</image>
         <price>95000</price>
         <dailyUpkeep>2</dailyUpkeep>
         <showInStore>true</showInStore>

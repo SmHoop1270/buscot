@@ -6,26 +6,26 @@
   </Asset>
 
   <Files>
-    <File fileId="22" filename="textures/blueMetal_DIFFUSE.dds"/>
-    <File fileId="25" filename="textures/blueMetal_HEIGHT.dds"/>
-    <File fileId="23" filename="textures/blueMetal_NORMAL.dds"/>
-    <File fileId="24" filename="textures/blueMetal_SPECULAR.dds"/>
-    <File fileId="11" filename="textures/corrugatedIron_DIFFUSE.dds"/>
-    <File fileId="14" filename="textures/corrugatedIron_HEIGHT.dds"/>
-    <File fileId="12" filename="textures/corrugatedIron_NORMAL.dds"/>
-    <File fileId="13" filename="textures/corrugatedIron_SPECULAR.dds"/>
-    <File fileId="26" filename="textures/lbRustyMetal_DIFFUSE.dds"/>
-    <File fileId="29" filename="textures/lbRustyMetal_HEIGHT.dds"/>
-    <File fileId="27" filename="textures/lbRustyMetal_NORMAL.dds"/>
-    <File fileId="28" filename="textures/lbRustyMetal_SPECULAR.dds"/>
-    <File fileId="1" filename="textures/metal_DIFFUSE.dds"/>
-    <File fileId="10" filename="textures/metal_HEIGHT.dds"/>
-    <File fileId="2" filename="textures/metal_NORMAL.dds"/>
-    <File fileId="3" filename="textures/metal_SPECULAR.dds"/>
-    <File fileId="15" filename="textures/redRustyMetal_DIFFUSE.dds"/>
-    <File fileId="18" filename="textures/redRustyMetal_HEIGHT.dds"/>
-    <File fileId="16" filename="textures/redRustyMetal_NORMAL.dds"/>
-    <File fileId="17" filename="textures/redRustyMetal_SPECULAR.dds"/>
+    <File fileId="22" filename="../../textures/FS25_UK_BaleShed_blueMetal_DIFFUSE.dds"/>
+    <File fileId="25" filename="../../textures/FS25_UK_BaleShed_blueMetal_HEIGHT.dds"/>
+    <File fileId="23" filename="../../textures/FS25_UK_BaleShed_blueMetal_NORMAL.dds"/>
+    <File fileId="24" filename="../../textures/FS25_UK_BaleShed_blueMetal_SPECULAR.dds"/>
+    <File fileId="11" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_DIFFUSE.dds"/>
+    <File fileId="14" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_HEIGHT.dds"/>
+    <File fileId="12" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_NORMAL.dds"/>
+    <File fileId="13" filename="../../textures/FS25_UK_BaleShed_corrugatedIron_SPECULAR.dds"/>
+    <File fileId="26" filename="../../textures/FS25_UK_BaleShed_lbRustyMetal_DIFFUSE.dds"/>
+    <File fileId="29" filename="../../textures/FS25_UK_BaleShed_lbRustyMetal_HEIGHT.dds"/>
+    <File fileId="27" filename="../../textures/FS25_UK_BaleShed_lbRustyMetal_NORMAL.dds"/>
+    <File fileId="28" filename="../../textures/FS25_UK_BaleShed_lbRustyMetal_SPECULAR.dds"/>
+    <File fileId="1" filename="../../textures/FS25_UK_BaleShed_metal_DIFFUSE.dds"/>
+    <File fileId="10" filename="../../textures/FS25_UK_BaleShed_metal_HEIGHT.dds"/>
+    <File fileId="2" filename="../../textures/FS25_UK_BaleShed_metal_NORMAL.dds"/>
+    <File fileId="3" filename="../../textures/FS25_UK_BaleShed_metal_SPECULAR.dds"/>
+    <File fileId="15" filename="../../textures/FS25_UK_BaleShed_redRustyMetal_DIFFUSE.dds"/>
+    <File fileId="18" filename="../../textures/FS25_UK_BaleShed_redRustyMetal_HEIGHT.dds"/>
+    <File fileId="16" filename="../../textures/FS25_UK_BaleShed_redRustyMetal_NORMAL.dds"/>
+    <File fileId="17" filename="../../textures/FS25_UK_BaleShed_redRustyMetal_SPECULAR.dds"/>
     <File fileId="30" filename="$data/maps/textures/shared/snow_diffuse.png"/>
     <File fileId="31" filename="$data/maps/textures/shared/snow_normal.png"/>
     <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>

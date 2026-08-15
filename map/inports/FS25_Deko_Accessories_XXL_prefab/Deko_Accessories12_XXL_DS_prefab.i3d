@@ -44,18 +44,18 @@
     <File fileId="34" filename="$data/shared/default_normal.png"/>
     <File fileId="33" filename="$data/shared/window02_diffuse.png"/>
     <File fileId="35" filename="$data/shared/window02_specular.png"/>
-    <File fileId="43" filename="textures/basketballStandNet_diffuse.png"/>
-    <File fileId="44" filename="textures/basketballStandNet_normal.png"/>
-    <File fileId="45" filename="textures/basketballStandNet_specular.png"/>
-    <File fileId="40" filename="textures/basketballStand_diffuse.png"/>
-    <File fileId="41" filename="textures/basketballStand_normal.png"/>
-    <File fileId="42" filename="textures/basketballStand_specular.png"/>
-    <File fileId="50" filename="textures/basketball_diffuse.png"/>
-    <File fileId="51" filename="textures/basketball_normal.png"/>
-    <File fileId="52" filename="textures/basketball_specular.png"/>
-    <File fileId="1" filename="textures/kidsPark01_diffuse.png"/>
-    <File fileId="2" filename="textures/kidsPark01_normal.png"/>
-    <File fileId="3" filename="textures/kidsPark01_specular.png"/>
+    <File fileId="43" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketballStandNet_diffuse.dds"/>
+    <File fileId="44" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketballStandNet_normal.dds"/>
+    <File fileId="45" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketballStandNet_specular.dds"/>
+    <File fileId="40" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketballStand_diffuse.dds"/>
+    <File fileId="41" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketballStand_normal.dds"/>
+    <File fileId="42" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketballStand_specular.dds"/>
+    <File fileId="50" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketball_diffuse.dds"/>
+    <File fileId="51" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketball_normal.dds"/>
+    <File fileId="52" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_basketball_specular.dds"/>
+    <File fileId="1" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_kidsPark01_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_kidsPark01_normal.dds"/>
+    <File fileId="3" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_kidsPark01_specular.dds"/>
   </Files>
 
 

@@ -201,36 +201,36 @@
     <File fileId="8" filename="$data/shared/window02_specular.png"/>
     <File fileId="167" filename="$data/shared/window_diffuse.png"/>
     <File fileId="168" filename="$data/shared/window_vmask.png"/>
-    <File fileId="115" filename="textures/busstopGlass_diffuse.png"/>
-    <File fileId="116" filename="textures/busstopGlass_specular.png"/>
-    <File fileId="117" filename="textures/busstopLiechti_diffuse.png"/>
-    <File fileId="112" filename="textures/busstop_diffuse.png"/>
-    <File fileId="113" filename="textures/busstop_normal.png"/>
-    <File fileId="114" filename="textures/busstop_specular.png"/>
-    <File fileId="225" filename="textures/fieldWeatherStation_diffuse.png"/>
-    <File fileId="226" filename="textures/fieldWeatherStation_normal.png"/>
-    <File fileId="227" filename="textures/fieldWeatherStation_specular.png"/>
-    <File fileId="222" filename="textures/fireHydrant01_diffuse.png"/>
-    <File fileId="223" filename="textures/fireHydrant01_normal.png"/>
-    <File fileId="224" filename="textures/fireHydrant01_specular.png"/>
-    <File fileId="102" filename="textures/gardenTent_diffuse.png"/>
-    <File fileId="103" filename="textures/gardenTent_normal.png"/>
-    <File fileId="104" filename="textures/gardenTent_specular.png"/>
-    <File fileId="161" filename="textures/metalSheetPile_diffuse.png"/>
-    <File fileId="162" filename="textures/metalSheetPile_normal.png"/>
-    <File fileId="163" filename="textures/metalSheetPile_specular.png"/>
-    <File fileId="169" filename="textures/parkingMeter_diffuse.png"/>
-    <File fileId="170" filename="textures/parkingMeter_normal.png"/>
-    <File fileId="171" filename="textures/parkingMeter_specular.png"/>
-    <File fileId="164" filename="textures/publicPhone_diffuse.png"/>
-    <File fileId="165" filename="textures/publicPhone_normal.png"/>
-    <File fileId="166" filename="textures/publicPhone_specular.png"/>
-    <File fileId="158" filename="textures/tireHuge_diffuse.png"/>
-    <File fileId="159" filename="textures/tireHuge_normal.png"/>
-    <File fileId="160" filename="textures/tireHuge_specular.png"/>
-    <File fileId="228" filename="textures/waterTank02_diffuse.png"/>
-    <File fileId="229" filename="textures/waterTank02_normal.png"/>
-    <File fileId="230" filename="textures/waterTank02_specular.png"/>
+    <File fileId="115" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_busstopGlass_diffuse.dds"/>
+    <File fileId="116" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_busstopGlass_specular.dds"/>
+    <File fileId="117" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_busstopLiechti_diffuse.dds"/>
+    <File fileId="112" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_busstop_diffuse.dds"/>
+    <File fileId="113" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_busstop_normal.dds"/>
+    <File fileId="114" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_busstop_specular.dds"/>
+    <File fileId="225" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fieldWeatherStation_diffuse.dds"/>
+    <File fileId="226" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fieldWeatherStation_normal.dds"/>
+    <File fileId="227" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fieldWeatherStation_specular.dds"/>
+    <File fileId="222" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fireHydrant01_diffuse.dds"/>
+    <File fileId="223" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fireHydrant01_normal.dds"/>
+    <File fileId="224" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_fireHydrant01_specular.dds"/>
+    <File fileId="102" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gardenTent_diffuse.dds"/>
+    <File fileId="103" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gardenTent_normal.dds"/>
+    <File fileId="104" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_gardenTent_specular.dds"/>
+    <File fileId="161" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalSheetPile_diffuse.dds"/>
+    <File fileId="162" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalSheetPile_normal.dds"/>
+    <File fileId="163" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalSheetPile_specular.dds"/>
+    <File fileId="169" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_parkingMeter_diffuse.dds"/>
+    <File fileId="170" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_parkingMeter_normal.dds"/>
+    <File fileId="171" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_parkingMeter_specular.dds"/>
+    <File fileId="164" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicPhone_diffuse.dds"/>
+    <File fileId="165" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicPhone_normal.dds"/>
+    <File fileId="166" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_publicPhone_specular.dds"/>
+    <File fileId="158" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tireHuge_diffuse.dds"/>
+    <File fileId="159" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tireHuge_normal.dds"/>
+    <File fileId="160" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_tireHuge_specular.dds"/>
+    <File fileId="228" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterTank02_diffuse.dds"/>
+    <File fileId="229" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterTank02_normal.dds"/>
+    <File fileId="230" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_waterTank02_specular.dds"/>
   </Files>
 
 

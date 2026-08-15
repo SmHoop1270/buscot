@@ -7,9 +7,9 @@
 
   <Files>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
-    <File fileId="1" filename="textures/cottage02_diffuse.dds"/>
-    <File fileId="2" filename="textures/cottage02_normal.dds"/>
-    <File fileId="3" filename="textures/cottage02_specular.dds"/>
+    <File fileId="1" filename="../../../textures/cottages_cottage02_cottage02_diffuse.dds"/>
+    <File fileId="2" filename="../../../textures/cottages_cottage02_cottage02_normal.dds"/>
+    <File fileId="3" filename="../../../textures/cottages_cottage02_cottage02_specular.dds"/>
   </Files>
 
 

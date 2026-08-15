@@ -111,30 +111,30 @@
     <File fileId="6" filename="$data/shared/default_normal.png"/>
     <File fileId="5" filename="$data/shared/window02_diffuse.png"/>
     <File fileId="7" filename="$data/shared/window02_specular.png"/>
-    <File fileId="23" filename="textures/concreteDeco_diffuse.png"/>
-    <File fileId="24" filename="textures/concreteDeco_normal.png"/>
-    <File fileId="25" filename="textures/concreteDeco_specular.png"/>
-    <File fileId="56" filename="textures/decorativeTreesAlpha_diffuse.png"/>
-    <File fileId="57" filename="textures/decorativeTreesAlpha_normal.png"/>
-    <File fileId="58" filename="textures/decorativeTreesAlpha_specular.png"/>
-    <File fileId="53" filename="textures/decorativeTrees_diffuse.png"/>
-    <File fileId="54" filename="textures/decorativeTrees_normal.png"/>
-    <File fileId="55" filename="textures/decorativeTrees_specular.png"/>
-    <File fileId="59" filename="textures/pottedPlantAlpha_diffuse.png"/>
-    <File fileId="60" filename="textures/pottedPlantAlpha_normal.png"/>
-    <File fileId="61" filename="textures/pottedPlantAlpha_specular.png"/>
-    <File fileId="50" filename="textures/pottedPlant_diffuse.png"/>
-    <File fileId="51" filename="textures/pottedPlant_normal.png"/>
-    <File fileId="52" filename="textures/pottedPlant_specular.png"/>
-    <File fileId="104" filename="textures/streetFlowerPot01_diffuse.png"/>
-    <File fileId="105" filename="textures/streetFlowerPot01_normal.png"/>
-    <File fileId="106" filename="textures/streetFlowerPot01_specular.png"/>
-    <File fileId="101" filename="textures/townPlantsAlpha_diffuse.png"/>
-    <File fileId="102" filename="textures/townPlantsAlpha_normal.png"/>
-    <File fileId="103" filename="textures/townPlantsAlpha_specular.png"/>
-    <File fileId="98" filename="textures/townPlants_diffuse.png"/>
-    <File fileId="99" filename="textures/townPlants_normal.png"/>
-    <File fileId="100" filename="textures/townPlants_specular.png"/>
+    <File fileId="23" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_concreteDeco_diffuse.dds"/>
+    <File fileId="24" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_concreteDeco_normal.dds"/>
+    <File fileId="25" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_concreteDeco_specular.dds"/>
+    <File fileId="56" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decorativeTreesAlpha_diffuse.dds"/>
+    <File fileId="57" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decorativeTreesAlpha_normal.dds"/>
+    <File fileId="58" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decorativeTreesAlpha_specular.dds"/>
+    <File fileId="53" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decorativeTrees_diffuse.dds"/>
+    <File fileId="54" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decorativeTrees_normal.dds"/>
+    <File fileId="55" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_decorativeTrees_specular.dds"/>
+    <File fileId="59" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_pottedPlantAlpha_diffuse.dds"/>
+    <File fileId="60" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_pottedPlantAlpha_normal.dds"/>
+    <File fileId="61" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_pottedPlantAlpha_specular.dds"/>
+    <File fileId="50" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_pottedPlant_diffuse.dds"/>
+    <File fileId="51" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_pottedPlant_normal.dds"/>
+    <File fileId="52" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_pottedPlant_specular.dds"/>
+    <File fileId="104" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_streetFlowerPot01_diffuse.dds"/>
+    <File fileId="105" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_streetFlowerPot01_normal.dds"/>
+    <File fileId="106" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_streetFlowerPot01_specular.dds"/>
+    <File fileId="101" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_townPlantsAlpha_diffuse.dds"/>
+    <File fileId="102" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_townPlantsAlpha_normal.dds"/>
+    <File fileId="103" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_townPlantsAlpha_specular.dds"/>
+    <File fileId="98" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_townPlants_diffuse.dds"/>
+    <File fileId="99" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_townPlants_normal.dds"/>
+    <File fileId="100" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_townPlants_specular.dds"/>
   </Files>
 
 

@@ -36,17 +36,17 @@
     <File fileId="15" filename="$data/shaders/decalShader.xml"/>
     <File fileId="20" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="13" filename="$data/shared/default_normal.png"/>
-    <File fileId="43" filename="textures/iceCreamCart_diffuse.png"/>
-    <File fileId="44" filename="textures/iceCreamCart_normal.png"/>
-    <File fileId="45" filename="textures/iceCreamCart_specular.png"/>
-    <File fileId="46" filename="textures/propsDecalsUS_diffuse.png"/>
-    <File fileId="12" filename="textures/shoppingCartDecal_diffuse.png"/>
-    <File fileId="9" filename="textures/shoppingCart_diffuse.png"/>
-    <File fileId="10" filename="textures/shoppingCart_normal.png"/>
-    <File fileId="11" filename="textures/shoppingCart_specular.png"/>
-    <File fileId="32" filename="textures/shoppingCartsParking_diffuse.png"/>
-    <File fileId="33" filename="textures/shoppingCartsParking_normal.png"/>
-    <File fileId="34" filename="textures/shoppingCartsParking_specular.png"/>
+    <File fileId="43" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamCart_diffuse.dds"/>
+    <File fileId="44" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamCart_normal.dds"/>
+    <File fileId="45" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_iceCreamCart_specular.dds"/>
+    <File fileId="46" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_propsDecalsUS_diffuse.dds"/>
+    <File fileId="12" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCartDecal_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCart_diffuse.dds"/>
+    <File fileId="10" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCart_normal.dds"/>
+    <File fileId="11" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCart_specular.dds"/>
+    <File fileId="32" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCartsParking_diffuse.dds"/>
+    <File fileId="33" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCartsParking_normal.dds"/>
+    <File fileId="34" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_shoppingCartsParking_specular.dds"/>
   </Files>
 
 

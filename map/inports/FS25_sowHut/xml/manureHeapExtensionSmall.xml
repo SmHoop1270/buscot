@@ -14,7 +14,7 @@
 
     <storeData>
         <name>manureHeapExtensionSmall</name>
-        <image>map/inports/FS25_sowHut/store/store_manureHeap.png</image>
+        <image>map/textures/FS25_sowHut_store_store_manureHeap.dds</image>
         <functions>
             <function>$l10n_function_manureHeapExtension</function>
         </functions>

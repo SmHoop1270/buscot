@@ -6,10 +6,10 @@
   </Asset>
 
   <Files>
-    <File fileId="4" filename="textures/Johnny.dds"/>
-    <File fileId="1" filename="textures/memorial_diffuse.dds"/>
-    <File fileId="2" filename="textures/memorial_normal.dds"/>
-    <File fileId="3" filename="textures/memorial_specular.dds"/>
+    <File fileId="4" filename="../../textures/johnnyMemorial_Johnny.dds"/>
+    <File fileId="1" filename="../../textures/johnnyMemorial_memorial_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/johnnyMemorial_memorial_normal.dds"/>
+    <File fileId="3" filename="../../textures/johnnyMemorial_memorial_specular.dds"/>
   </Files>
 
 

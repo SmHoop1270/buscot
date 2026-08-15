@@ -78,17 +78,17 @@
     <File fileId="62" filename="$data/shaders/vtxRotateShader.xml"/>
     <File fileId="19" filename="$data/shared/default_normal.png"/>
     <File fileId="21" filename="$data/shared/window_diffuse.png"/>
-    <File fileId="53" filename="textures/cableStraightVentilatorGrid_diffuse.png"/>
-    <File fileId="54" filename="textures/cableStraightVentilatorGrid_specular.png"/>
-    <File fileId="50" filename="textures/cableStraightVentilator_diffuse.png"/>
-    <File fileId="51" filename="textures/cableStraightVentilator_normal.png"/>
-    <File fileId="52" filename="textures/cableStraightVentilator_specular.png"/>
-    <File fileId="30" filename="textures/electricBoxLarge_diffuse.png"/>
-    <File fileId="31" filename="textures/electricBoxLarge_normal.png"/>
-    <File fileId="32" filename="textures/electricBoxLarge_specular.png"/>
-    <File fileId="85" filename="textures/electricBox_diffuse.png"/>
-    <File fileId="86" filename="textures/electricBox_normal.png"/>
-    <File fileId="87" filename="textures/electricBox_specular.png"/>
+    <File fileId="53" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cableStraightVentilatorGrid_diffuse.dds"/>
+    <File fileId="54" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cableStraightVentilatorGrid_specular.dds"/>
+    <File fileId="50" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cableStraightVentilator_diffuse.dds"/>
+    <File fileId="51" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cableStraightVentilator_normal.dds"/>
+    <File fileId="52" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_cableStraightVentilator_specular.dds"/>
+    <File fileId="30" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricBoxLarge_diffuse.dds"/>
+    <File fileId="31" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricBoxLarge_normal.dds"/>
+    <File fileId="32" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricBoxLarge_specular.dds"/>
+    <File fileId="85" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricBox_diffuse.dds"/>
+    <File fileId="86" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricBox_normal.dds"/>
+    <File fileId="87" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_electricBox_specular.dds"/>
   </Files>
 
 

@@ -10,34 +10,34 @@
     <File fileId="4" filename="$data/maps/mapEU/textures/props/propsDecals_specular.png"/>
     <File fileId="5" filename="$data/shaders/decalShader.xml"/>
     <File fileId="3" filename="$data/shared/default_normal.png"/>
-    <File fileId="28" filename="textures/baguette_diffuse.png"/>
-    <File fileId="29" filename="textures/baguette_normal.png"/>
-    <File fileId="30" filename="textures/baguette_specular.png"/>
-    <File fileId="25" filename="textures/bakeryGoodsFood_diffuse.png"/>
-    <File fileId="26" filename="textures/bakeryGoodsFood_normal.png"/>
-    <File fileId="27" filename="textures/bakeryGoodsFood_specular.png"/>
-    <File fileId="6" filename="textures/euroPallet01_diffuse.png"/>
-    <File fileId="7" filename="textures/euroPallet01_normal.png"/>
-    <File fileId="8" filename="textures/euroPallet01_specular.png"/>
-    <File fileId="15" filename="textures/euroPallet02_diffuse.png"/>
-    <File fileId="9" filename="textures/flourSackSet_diffuse.png"/>
-    <File fileId="10" filename="textures/flourSackSet_normal.png"/>
-    <File fileId="11" filename="textures/flourSackSet_specular.png"/>
-    <File fileId="12" filename="textures/metalTrashSet_diffuse.png"/>
-    <File fileId="13" filename="textures/metalTrashSet_normal.png"/>
-    <File fileId="14" filename="textures/metalTrashSet_specular.png"/>
-    <File fileId="19" filename="textures/plasticBoxes01_diffuse.png"/>
-    <File fileId="20" filename="textures/plasticBoxes01_normal.png"/>
-    <File fileId="21" filename="textures/plasticBoxes01_specular.png"/>
-    <File fileId="22" filename="textures/plasticCrates_diffuse.png"/>
-    <File fileId="23" filename="textures/plasticCrates_normal.png"/>
-    <File fileId="24" filename="textures/plasticCrates_specular.png"/>
-    <File fileId="31" filename="textures/viennoiseries_diffuse.png"/>
-    <File fileId="32" filename="textures/viennoiseries_normal.png"/>
-    <File fileId="33" filename="textures/viennoiseries_specular.png"/>
-    <File fileId="16" filename="textures/woodTransportFrame_diffuse.png"/>
-    <File fileId="17" filename="textures/woodTransportFrame_normal.png"/>
-    <File fileId="18" filename="textures/woodTransportFrame_specular.png"/>
+    <File fileId="28" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_baguette_diffuse.dds"/>
+    <File fileId="29" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_baguette_normal.dds"/>
+    <File fileId="30" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_baguette_specular.dds"/>
+    <File fileId="25" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bakeryGoodsFood_diffuse.dds"/>
+    <File fileId="26" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bakeryGoodsFood_normal.dds"/>
+    <File fileId="27" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bakeryGoodsFood_specular.dds"/>
+    <File fileId="6" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_diffuse.dds"/>
+    <File fileId="7" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_normal.dds"/>
+    <File fileId="8" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet01_specular.dds"/>
+    <File fileId="15" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_euroPallet02_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_flourSackSet_diffuse.dds"/>
+    <File fileId="10" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_flourSackSet_normal.dds"/>
+    <File fileId="11" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_flourSackSet_specular.dds"/>
+    <File fileId="12" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_diffuse.dds"/>
+    <File fileId="13" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_normal.dds"/>
+    <File fileId="14" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_metalTrashSet_specular.dds"/>
+    <File fileId="19" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticBoxes01_diffuse.dds"/>
+    <File fileId="20" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticBoxes01_normal.dds"/>
+    <File fileId="21" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticBoxes01_specular.dds"/>
+    <File fileId="22" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticCrates_diffuse.dds"/>
+    <File fileId="23" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticCrates_normal.dds"/>
+    <File fileId="24" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticCrates_specular.dds"/>
+    <File fileId="31" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_viennoiseries_diffuse.dds"/>
+    <File fileId="32" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_viennoiseries_normal.dds"/>
+    <File fileId="33" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_viennoiseries_specular.dds"/>
+    <File fileId="16" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_woodTransportFrame_diffuse.dds"/>
+    <File fileId="17" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_woodTransportFrame_normal.dds"/>
+    <File fileId="18" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_woodTransportFrame_specular.dds"/>
   </Files>
 
 

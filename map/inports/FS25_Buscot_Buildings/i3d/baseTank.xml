@@ -6,7 +6,7 @@
         <functions>
             <function>$l10n_function_liquidManureTank</function>
         </functions>
-        <image>map/inports/FS25_Buscot_buildings/store/store_base.dds</image>
+        <image>map/textures/FS25_Buscot_Buildings_store_store_base.dds</image>
         <price>45000</price>
         <dailyUpkeep>25</dailyUpkeep>
         <lifetime>1000</lifetime>

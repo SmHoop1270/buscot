@@ -19,7 +19,7 @@ Eine Sammlung von 7 Grabsteinen.]]></de>
         <category>others</category>
     </categories>
     
-    <iconFilename>icon_gravestones.dds</iconFilename>
+    <iconFilename>../../textures/FS25_gravestones_prefab_icon_gravestones.dds</iconFilename>
     
     <prefabs>
         <prefab name="Grave Stone 1"  i3dFilename="model/gravestone_1.i3d" />

@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>map/inports/FS25_Buscot_Dairy/textures/icon_buscot_dairy_production.dds</image>
+        <image>map/textures/FS25_Buscot_Dairy_icon_buscot_dairy_production.dds</image>
         <price>210000</price>
 		<dailyUpkeep>115</dailyUpkeep>
         <lifetime>1000</lifetime>
@@ -20,7 +20,7 @@
         </brush>
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
-		<iconFilename>map/inports/FS25_Buscot_Dairy/textures/icon_buscot_dairy_production.dds</iconFilename>
+		<iconFilename>map/textures/FS25_Buscot_Dairy_icon_buscot_dairy_production.dds</iconFilename>
         <storeIconRendering>
             <settings cameraXRot="-25" advancedBoundingBox="true" />
         </storeIconRendering>

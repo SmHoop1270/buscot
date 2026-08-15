@@ -6,9 +6,9 @@
   </Asset>
 
   <Files>
-    <File fileId="1" filename="../textures/rock_smooth2_d.dds"/>
-    <File fileId="3" filename="../textures/rock_smooth2_s.dds"/>
-    <File fileId="2" filename="../textures/rock_smooth_n.dds"/>
+    <File fileId="1" filename="../../../textures/FS25_gravestones_prefab_rock_smooth2_d.dds"/>
+    <File fileId="3" filename="../../../textures/FS25_gravestones_prefab_rock_smooth2_s.dds"/>
+    <File fileId="2" filename="../../../textures/FS25_gravestones_prefab_rock_smooth_n.dds"/>
     <File fileId="7" filename="$data/maps/mapUS/textures/terrain/grassMoss01_diffuse.dds"/>
     <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
   </Files>

@@ -26,20 +26,20 @@
     <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
     <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
     <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
-    <File fileId="34" filename="textures/bin.dds"/>
-    <File fileId="35" filename="textures/bin_normal.dds"/>
-    <File fileId="36" filename="textures/bin_spec.dds"/>
-    <File fileId="33" filename="textures/feed.dds"/>
-    <File fileId="32" filename="textures/feeders.dds"/>
-    <File fileId="29" filename="textures/frame1.dds"/>
-    <File fileId="22" filename="textures/gate50.dds"/>
-    <File fileId="23" filename="textures/gate_normal50.dds"/>
-    <File fileId="24" filename="textures/gate_spec50.dds"/>
-    <File fileId="21" filename="textures/tanks.dds"/>
-    <File fileId="31" filename="textures/unit.dds"/>
-    <File fileId="26" filename="textures/watertank.dds"/>
-    <File fileId="27" filename="textures/watertank_normal.png"/>
-    <File fileId="28" filename="textures/watertank_spec.png"/>
+    <File fileId="34" filename="../../textures/FS25_Buscot_Dairy_bin.dds"/>
+    <File fileId="35" filename="../../textures/FS25_Buscot_Dairy_bin_normal.dds"/>
+    <File fileId="36" filename="../../textures/FS25_Buscot_Dairy_bin_spec.dds"/>
+    <File fileId="33" filename="../../textures/FS25_Buscot_Dairy_feed.dds"/>
+    <File fileId="32" filename="../../textures/FS25_Buscot_Dairy_feeders.dds"/>
+    <File fileId="29" filename="../../textures/FS25_Buscot_Dairy_frame1.dds"/>
+    <File fileId="22" filename="../../textures/FS25_Buscot_Dairy_gate50.dds"/>
+    <File fileId="23" filename="../../textures/FS25_Buscot_Dairy_gate_normal50.dds"/>
+    <File fileId="24" filename="../../textures/FS25_Buscot_Dairy_gate_spec50.dds"/>
+    <File fileId="21" filename="../../textures/FS25_Buscot_Dairy_tanks.dds"/>
+    <File fileId="31" filename="../../textures/FS25_Buscot_Dairy_unit.dds"/>
+    <File fileId="26" filename="../../textures/FS25_Buscot_Dairy_watertank.dds"/>
+    <File fileId="27" filename="../../textures/FS25_Buscot_Dairy_watertank_normal.dds"/>
+    <File fileId="28" filename="../../textures/FS25_Buscot_Dairy_watertank_spec.dds"/>
   </Files>
 
 

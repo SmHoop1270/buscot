@@ -7,7 +7,7 @@
 		<functions>
             <function>$l10n_function_workshop</function>
         </functions>
-        <image>map/inports/FS25_UK_Shed/store_FS25_UK_shed.dds</image>
+        <image>map/textures/FS25_UK_Shed_store_FS25_UK_shed.dds</image>
         <price>95000</price>
         <dailyUpkeep>25</dailyUpkeep>
         <lifetime>1000</lifetime>

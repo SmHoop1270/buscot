@@ -139,30 +139,30 @@
     <File fileId="113" filename="$data/placeables/brandless/fences/US/fence17/fence17_specular.png"/>
     <File fileId="142" filename="$data/shaders/decalShader.xml"/>
     <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
-    <File fileId="139" filename="textures/chainlinkFenceAlpha_diffuse.png"/>
-    <File fileId="140" filename="textures/chainlinkFenceAlpha_normal.png"/>
-    <File fileId="141" filename="textures/chainlinkFenceAlpha_specular.png"/>
-    <File fileId="108" filename="textures/chainlinkFence_diffuse.png"/>
-    <File fileId="109" filename="textures/chainlinkFence_normal.png"/>
-    <File fileId="110" filename="textures/chainlinkFence_specular.png"/>
-    <File fileId="10" filename="textures/groundDivider01_diffuse.png"/>
-    <File fileId="11" filename="textures/groundDivider01_normal.png"/>
-    <File fileId="12" filename="textures/groundDivider01_specular.png"/>
-    <File fileId="158" filename="textures/infrastructureMargins_diffuse.png"/>
-    <File fileId="159" filename="textures/infrastructureMargins_normal.png"/>
-    <File fileId="160" filename="textures/infrastructureMargins_specular.png"/>
-    <File fileId="155" filename="textures/manHoleSet01_diffuse.png"/>
-    <File fileId="156" filename="textures/manHoleSet01_normal.png"/>
-    <File fileId="157" filename="textures/manHoleSet01_specular.png"/>
-    <File fileId="51" filename="textures/sidewalkElementsSET_diffuse.png"/>
-    <File fileId="52" filename="textures/sidewalkElementsSET_normal.png"/>
-    <File fileId="53" filename="textures/sidewalkElementsSET_specular.png"/>
-    <File fileId="54" filename="textures/touristSignSet_diffuse.png"/>
-    <File fileId="55" filename="textures/touristSignSet_normal.png"/>
-    <File fileId="56" filename="textures/touristSignSet_specular.png"/>
-    <File fileId="29" filename="textures/treeSupportSET_diffuse.png"/>
-    <File fileId="30" filename="textures/treeSupportSET_normal.png"/>
-    <File fileId="31" filename="textures/treeSupportSET_specular.png"/>
+    <File fileId="139" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_chainlinkFenceAlpha_diffuse.dds"/>
+    <File fileId="140" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_chainlinkFenceAlpha_normal.dds"/>
+    <File fileId="141" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_chainlinkFenceAlpha_specular.dds"/>
+    <File fileId="108" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_chainlinkFence_diffuse.dds"/>
+    <File fileId="109" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_chainlinkFence_normal.dds"/>
+    <File fileId="110" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_chainlinkFence_specular.dds"/>
+    <File fileId="10" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_groundDivider01_diffuse.dds"/>
+    <File fileId="11" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_groundDivider01_normal.dds"/>
+    <File fileId="12" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_groundDivider01_specular.dds"/>
+    <File fileId="158" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_infrastructureMargins_diffuse.dds"/>
+    <File fileId="159" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_infrastructureMargins_normal.dds"/>
+    <File fileId="160" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_infrastructureMargins_specular.dds"/>
+    <File fileId="155" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_manHoleSet01_diffuse.dds"/>
+    <File fileId="156" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_manHoleSet01_normal.dds"/>
+    <File fileId="157" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_manHoleSet01_specular.dds"/>
+    <File fileId="51" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sidewalkElementsSET_diffuse.dds"/>
+    <File fileId="52" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sidewalkElementsSET_normal.dds"/>
+    <File fileId="53" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_sidewalkElementsSET_specular.dds"/>
+    <File fileId="54" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_touristSignSet_diffuse.dds"/>
+    <File fileId="55" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_touristSignSet_normal.dds"/>
+    <File fileId="56" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_touristSignSet_specular.dds"/>
+    <File fileId="29" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_treeSupportSET_diffuse.dds"/>
+    <File fileId="30" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_treeSupportSET_normal.dds"/>
+    <File fileId="31" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_treeSupportSET_specular.dds"/>
   </Files>
 
 

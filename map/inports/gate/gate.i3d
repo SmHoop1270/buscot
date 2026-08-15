@@ -15,8 +15,8 @@
     <File fileId="11" filename="$data/shared/detailLibrary/metallic/metalGalvanized_specular.dds"/>
     <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedRough_normal.dds"/>
     <File fileId="20" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.dds"/>
-    <File fileId="3" filename="textures/metal_oxydized_d.dds"/>
-    <File fileId="5" filename="textures/metal_oxydized_s.dds"/>
+    <File fileId="3" filename="../../textures/gate_metal_oxydized_d.dds"/>
+    <File fileId="5" filename="../../textures/gate_metal_oxydized_s.dds"/>
   </Files>
 
 
