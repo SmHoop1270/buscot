@@ -13,18 +13,18 @@
     <File fileId="22" filename="$data/shaders/snowHeapShader.xml"/>
     <File fileId="4" filename="$data/shared/default_normal.dds"/>
     <File fileId="5" filename="$data/shared/default_specular.dds"/>
-    <File fileId="12" filename="textures/05_sidingmetal_blue_d.dds"/>
-    <File fileId="13" filename="textures/05_sidingmetal_n.dds"/>
-    <File fileId="14" filename="textures/05_sidingmetal_s.dds"/>
-    <File fileId="16" filename="textures/05_sidingmetal_white_d.dds"/>
-    <File fileId="15" filename="textures/metal_oxydized_d.dds"/>
-    <File fileId="3" filename="textures/metal_red_d.dds"/>
-    <File fileId="7" filename="textures/shed04mask.dds"/>
+    <File fileId="12" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_blue_d.dds"/>
+    <File fileId="13" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_n.dds"/>
+    <File fileId="14" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_s.dds"/>
+    <File fileId="16" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_white_d.dds"/>
+    <File fileId="15" filename="../../textures/gate_metal_oxydized_d.dds"/>
+    <File fileId="3" filename="../../textures/FS25_RDM_BritishGrainSheds_metal_red_d.dds"/>
+    <File fileId="7" filename="../../textures/FS25_RDM_BritishGrainSheds_shed04mask.dds"/>
     <File fileId="24" filename="textures/slidingDoor.jpg"/>
-    <File fileId="25" filename="textures/slidingDoor_s.png"/>
-    <File fileId="17" filename="textures/wallRender_c.dds"/>
-    <File fileId="18" filename="textures/wallRender_n.dds"/>
-    <File fileId="19" filename="textures/wallRender_s.dds"/>
+    <File fileId="25" filename="../../textures/FS25_RDM_BritishGrainSheds_slidingDoor_s.dds"/>
+    <File fileId="17" filename="../../textures/FS25_RDM_BritishGrainSheds_wallRender_c.dds"/>
+    <File fileId="18" filename="../../textures/FS25_RDM_BritishGrainSheds_wallRender_n.dds"/>
+    <File fileId="19" filename="../../textures/FS25_RDM_BritishGrainSheds_wallRender_s.dds"/>
   </Files>
 
 

@@ -42,7 +42,7 @@ Galpão amplo ideal para guardar máquinas, implementos e insumos, oferecendo pr
 </br>
     </description>	
 
-    <iconFilename>icon_largeShedAguaLimpaFarm.dds</iconFilename>
+    <iconFilename>../../textures/FS25_Large_Shed_Agua_Limpa_Farm_icon_largeShedAguaLimpaFarm.dds</iconFilename>
 	
     <multiplayer supported="true"/>
     

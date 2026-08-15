@@ -111,33 +111,33 @@
     <File fileId="38" filename="$data/shared/window02_specular.dds"/>
     <File fileId="36" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="135" filename="$data/store/brands/brand_johnDeere.dds"/>
-    <File fileId="128" filename="../textures/0_diffuse.dds"/>
-    <File fileId="130" filename="../textures/0_gloss.dds"/>
-    <File fileId="129" filename="../textures/0_normal.dds"/>
-    <File fileId="133" filename="../textures/betonPatrimoine_diffuse.dds"/>
-    <File fileId="134" filename="../textures/betonPatrimoine_normal.dds"/>
-    <File fileId="122" filename="../textures/boisLC_diffuse.dds"/>
-    <File fileId="12" filename="../textures/burner_diffuse.dds"/>
-    <File fileId="13" filename="../textures/burner_normal.dds"/>
-    <File fileId="14" filename="../textures/burner_specular.dds"/>
-    <File fileId="123" filename="../textures/concessionnaire_specular.dds"/>
-    <File fileId="131" filename="../textures/cornadis_diffuse.dds"/>
-    <File fileId="132" filename="../textures/cornadis_gloss.dds"/>
-    <File fileId="63" filename="../textures/euroPallet01_diffuse.dds"/>
-    <File fileId="64" filename="../textures/euroPallet01_normal.dds"/>
-    <File fileId="65" filename="../textures/euroPallet01_specular.dds"/>
-    <File fileId="44" filename="../textures/extensionCord_diffuse.dds"/>
-    <File fileId="45" filename="../textures/extensionCord_normal.dds"/>
-    <File fileId="46" filename="../textures/extensionCord_specular.dds"/>
-    <File fileId="42" filename="../textures/interiorPropsUSDecal_diffuse.dds"/>
-    <File fileId="39" filename="../textures/interiorPropsUS_diffuse.dds"/>
-    <File fileId="40" filename="../textures/interiorPropsUS_normal.dds"/>
-    <File fileId="41" filename="../textures/interiorPropsUS_specular.dds"/>
-    <File fileId="124" filename="../textures/metal_diffuse.dds"/>
-    <File fileId="125" filename="../textures/metal_gloss.dds"/>
-    <File fileId="66" filename="../textures/plasticBox_diffuse.dds"/>
-    <File fileId="67" filename="../textures/plasticBox_normal.dds"/>
-    <File fileId="68" filename="../textures/plasticBox_specular.dds"/>
+    <File fileId="128" filename="../../../textures/FS25_John_Deere_Workshop_0_diffuse.dds"/>
+    <File fileId="130" filename="../../../textures/FS25_John_Deere_Workshop_0_gloss.dds"/>
+    <File fileId="129" filename="../../../textures/FS25_John_Deere_Workshop_0_normal.dds"/>
+    <File fileId="133" filename="../../../textures/FS25_John_Deere_Workshop_betonPatrimoine_diffuse.dds"/>
+    <File fileId="134" filename="../../../textures/FS25_John_Deere_Workshop_betonPatrimoine_normal.dds"/>
+    <File fileId="122" filename="../../../textures/FS25_John_Deere_Workshop_boisLC_diffuse.dds"/>
+    <File fileId="12" filename="../../../textures/FS25_John_Deere_Workshop_burner_diffuse.dds"/>
+    <File fileId="13" filename="../../../textures/FS25_John_Deere_Workshop_burner_normal.dds"/>
+    <File fileId="14" filename="../../../textures/FS25_John_Deere_Workshop_burner_specular.dds"/>
+    <File fileId="123" filename="../../../textures/FS25_John_Deere_Workshop_concessionnaire_specular.dds"/>
+    <File fileId="131" filename="../../../textures/FS25_John_Deere_Workshop_cornadis_diffuse.dds"/>
+    <File fileId="132" filename="../../../textures/FS25_John_Deere_Workshop_cornadis_gloss.dds"/>
+    <File fileId="63" filename="../../../textures/FS25_Deco_prefab_euroPallet01_diffuse.dds"/>
+    <File fileId="64" filename="../../../textures/FS25_Deco_prefab_euroPallet01_normal.dds"/>
+    <File fileId="65" filename="../../../textures/FS25_Deco_prefab_euroPallet01_specular.dds"/>
+    <File fileId="44" filename="../../../textures/FS25_Buscot_Buildings_extensionCord_diffuse.dds"/>
+    <File fileId="45" filename="../../../textures/FS25_Buscot_Buildings_extensionCord_normal.dds"/>
+    <File fileId="46" filename="../../../textures/FS25_Buscot_Buildings_extensionCord_specular.dds"/>
+    <File fileId="42" filename="../../../textures/FS25_John_Deere_Workshop_interiorPropsUSDecal_diffuse.dds"/>
+    <File fileId="39" filename="../../../textures/FS25_Buscot_Buildings_interiorPropsUS_diffuse.dds"/>
+    <File fileId="40" filename="../../../textures/FS25_Buscot_Buildings_interiorPropsUS_normal.dds"/>
+    <File fileId="41" filename="../../../textures/FS25_Buscot_Buildings_interiorPropsUS_specular.dds"/>
+    <File fileId="124" filename="../../../textures/FS25_John_Deere_Workshop_metal_diffuse.dds"/>
+    <File fileId="125" filename="../../../textures/FS25_John_Deere_Workshop_metal_gloss.dds"/>
+    <File fileId="66" filename="../../../textures/FS25_John_Deere_Workshop_plasticBox_diffuse.dds"/>
+    <File fileId="67" filename="../../../textures/FS25_John_Deere_Workshop_plasticBox_normal.dds"/>
+    <File fileId="68" filename="../../../textures/FS25_John_Deere_Workshop_plasticBox_specular.dds"/>
   </Files>
 
 

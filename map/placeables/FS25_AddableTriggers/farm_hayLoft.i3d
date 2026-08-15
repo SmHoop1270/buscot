@@ -6,10 +6,10 @@
   </Asset>
 
   <Files>
-    <File fileId="11" filename="textures/icon_hayStorage.dds"/>
-    <File fileId="8" filename="textures/pond_diffuse.png"/>
-    <File fileId="9" filename="textures/pond_normal.png"/>
-    <File fileId="10" filename="textures/pond_specular.png"/>
+    <File fileId="11" filename="../../textures/FS25_AddableTriggers_icon_hayStorage.dds"/>
+    <File fileId="8" filename="../../textures/FS25_AddableTriggers_pond_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/FS25_AddableTriggers_pond_normal.dds"/>
+    <File fileId="10" filename="../../textures/FS25_AddableTriggers_pond_specular.dds"/>
     <File fileId="13" filename="$data/placeables/brandless/hayLoft/hayBlower_diffuse.png"/>
     <File fileId="14" filename="$data/placeables/brandless/hayLoft/hayBlower_normal.png"/>
     <File fileId="15" filename="$data/placeables/brandless/hayLoft/hayBlower_specular.png"/>

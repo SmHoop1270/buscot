@@ -5,7 +5,7 @@
 		<functions>
             <function>$l10n_function_sellingPoint</function>
         </functions>
-        <image>store_forestrysellpoint.dds</image>
+        <image>../../textures/FS25_ForestrySellPoint_store_forestrysellpoint.dds</image>
         <price>2000</price>
         <dailyUpkeep>1</dailyUpkeep>
         <canBeSold>true</canBeSold>

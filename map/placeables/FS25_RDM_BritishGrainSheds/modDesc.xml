@@ -61,7 +61,7 @@ Täglicher Unterhalt €25
 
 </description>
 <l10n filenamePrefix="languages/l10n"/>
-    <iconFilename>icon_BritishGrainSheds.dds</iconFilename>
+    <iconFilename>../../textures/FS25_RDM_BritishGrainSheds_icon_BritishGrainSheds.dds</iconFilename>
     <multiplayer supported="true"/>
 	
 	<storeItems>

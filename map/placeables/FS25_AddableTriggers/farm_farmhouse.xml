@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_farmHouse</function>
         </functions>
-        <image>store/store_farm_farmhouse.png</image>
+        <image>../../textures/FS25_AddableTriggers_store_store_farm_farmhouse.dds</image>
         <price>5000</price>
         <dailyUpkeep>5</dailyUpkeep>
         <lifetime>1000</lifetime>

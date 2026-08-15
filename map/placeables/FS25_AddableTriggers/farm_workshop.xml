@@ -2,7 +2,7 @@
 <placeable type="workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_shopItem_workshop</name>
-        <image>store/store_workshop.png</image>
+        <image>../../textures/FS25_AddableTriggers_store_store_workshop.dds</image>
         <price>5000</price>
         <functions>
             <function>$l10n_function_workshop</function>

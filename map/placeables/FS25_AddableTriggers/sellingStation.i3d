@@ -6,10 +6,10 @@
   </Asset>
 
   <Files>
-    <File fileId="4" filename="textures/icon_sellingStation.dds"/>
-    <File fileId="1" filename="textures/pond_diffuse.png"/>
-    <File fileId="2" filename="textures/pond_normal.png"/>
-    <File fileId="3" filename="textures/pond_specular.png"/>
+    <File fileId="4" filename="../../textures/FS25_AddableTriggers_icon_sellingStation.dds"/>
+    <File fileId="1" filename="../../textures/FS25_AddableTriggers_pond_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/FS25_AddableTriggers_pond_normal.dds"/>
+    <File fileId="3" filename="../../textures/FS25_AddableTriggers_pond_specular.dds"/>
     <File fileId="5" filename="$data/shared/default_normal.png"/>
     <File fileId="9" filename="$data/shared/warningStripes_diffuse.png"/>
     <File fileId="10" filename="$data/shared/warningStripes_normal.png"/>

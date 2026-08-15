@@ -10,9 +10,9 @@
     <File fileId="11" filename="$data/shared/default_normal.png"/>
     <File fileId="3" filename="$data/shared/default_specular.png"/>
     <File fileId="14" filename="$data/store/brands/brand_johnDeere.dds"/>
-    <File fileId="1" filename="../textures/betonPatrimoine_diffuse.dds"/>
-    <File fileId="2" filename="../textures/betonPatrimoine_normal.dds"/>
-    <File fileId="13" filename="../textures/metal_gloss.dds"/>
+    <File fileId="1" filename="../../../textures/FS25_John_Deere_Workshop_betonPatrimoine_diffuse.dds"/>
+    <File fileId="2" filename="../../../textures/FS25_John_Deere_Workshop_betonPatrimoine_normal.dds"/>
+    <File fileId="13" filename="../../../textures/FS25_John_Deere_Workshop_metal_gloss.dds"/>
   </Files>
 
 

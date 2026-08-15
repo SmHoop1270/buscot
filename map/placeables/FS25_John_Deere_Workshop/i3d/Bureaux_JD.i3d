@@ -79,19 +79,19 @@
     <File fileId="15" filename="$data/store/ui/waredrobePlantLeaf_normal.png"/>
     <File fileId="16" filename="$data/store/ui/waredrobePlantLeaf_specular.png"/>
     <File fileId="18" filename="$data/store/ui/waredrobePlantTrunk_diffuse.png"/>
-    <File fileId="95" filename="../textures/0_diffuse.dds"/>
-    <File fileId="97" filename="../textures/0_gloss.dds"/>
-    <File fileId="96" filename="../textures/0_normal.dds"/>
-    <File fileId="70" filename="../textures/betonPatrimoine_diffuse.dds"/>
-    <File fileId="71" filename="../textures/betonPatrimoine_normal.dds"/>
-    <File fileId="78" filename="../textures/boisLC_diffuse.dds"/>
-    <File fileId="1" filename="../textures/concessionnaireJD_diffuse.dds"/>
-    <File fileId="73" filename="../textures/concessionnaire_bureaux_specular.dds"/>
-    <File fileId="54" filename="../textures/extensionCord_diffuse.png"/>
-    <File fileId="55" filename="../textures/extensionCord_normal.png"/>
-    <File fileId="56" filename="../textures/extensionCord_specular.png"/>
-    <File fileId="81" filename="../textures/metal_diffuse.dds"/>
-    <File fileId="80" filename="../textures/metal_gloss.dds"/>
+    <File fileId="95" filename="../../../textures/FS25_John_Deere_Workshop_0_diffuse.dds"/>
+    <File fileId="97" filename="../../../textures/FS25_John_Deere_Workshop_0_gloss.dds"/>
+    <File fileId="96" filename="../../../textures/FS25_John_Deere_Workshop_0_normal.dds"/>
+    <File fileId="70" filename="../../../textures/FS25_John_Deere_Workshop_betonPatrimoine_diffuse.dds"/>
+    <File fileId="71" filename="../../../textures/FS25_John_Deere_Workshop_betonPatrimoine_normal.dds"/>
+    <File fileId="78" filename="../../../textures/FS25_John_Deere_Workshop_boisLC_diffuse.dds"/>
+    <File fileId="1" filename="../../../textures/FS25_John_Deere_Workshop_concessionnaireJD_diffuse.dds"/>
+    <File fileId="73" filename="../../../textures/FS25_John_Deere_Workshop_concessionnaire_bureaux_specular.dds"/>
+    <File fileId="54" filename="../../../textures/FS25_Buscot_Buildings_extensionCord_diffuse.dds"/>
+    <File fileId="55" filename="../../../textures/FS25_Buscot_Buildings_extensionCord_normal.dds"/>
+    <File fileId="56" filename="../../../textures/FS25_Buscot_Buildings_extensionCord_specular.dds"/>
+    <File fileId="81" filename="../../../textures/FS25_John_Deere_Workshop_metal_diffuse.dds"/>
+    <File fileId="80" filename="../../../textures/FS25_John_Deere_Workshop_metal_gloss.dds"/>
   </Files>
 
 

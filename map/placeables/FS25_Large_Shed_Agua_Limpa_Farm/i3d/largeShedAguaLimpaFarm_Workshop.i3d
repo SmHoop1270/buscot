@@ -55,11 +55,11 @@
     <File fileId="58" filename="$data/shared/warningStripes_diffuse.png"/>
     <File fileId="59" filename="$data/shared/warningStripes_normal.png"/>
     <File fileId="60" filename="$data/shared/warningStripes_specular.png"/>
-    <File fileId="2" filename="../textures/largeShedAguaLimpaFarm_diffuse.png"/>
-    <File fileId="11" filename="../textures/largeShedAguaLimpaFarm_height.png"/>
-    <File fileId="6" filename="../textures/largeShedAguaLimpaFarm_mask.dds"/>
-    <File fileId="3" filename="../textures/largeShedAguaLimpaFarm_normal.png"/>
-    <File fileId="4" filename="../textures/largeShedAguaLimpaFarm_specular.png"/>
+    <File fileId="2" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_diffuse.dds"/>
+    <File fileId="11" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_height.dds"/>
+    <File fileId="6" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_mask.dds"/>
+    <File fileId="3" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_normal.dds"/>
+    <File fileId="4" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_specular.dds"/>
   </Files>
 
 

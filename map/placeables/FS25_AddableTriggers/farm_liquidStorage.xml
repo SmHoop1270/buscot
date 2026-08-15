@@ -2,7 +2,7 @@
 <placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_shopItem_farm_liquidStorage</name>
-        <image>store/store_farm_liquidStorage.png</image>
+        <image>../../textures/FS25_AddableTriggers_store_store_farm_liquidStorage.dds</image>
         <functions>
             <function>$l10n_function_dieselTank</function>
         </functions>

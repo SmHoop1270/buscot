@@ -27,7 +27,7 @@ Entretien journalier: 1 €
 ]]></fr>
    </description>
 
-    <iconFilename>icon_forestrysellpoint.dds</iconFilename>
+    <iconFilename>../../textures/FS25_ForestrySellPoint_icon_forestrysellpoint.dds</iconFilename>
 
     <multiplayer supported="true" />
     

@@ -6,9 +6,9 @@
   </Asset>
 
   <Files>
-    <File fileId="8" filename="textures/forestrysellpoint_diffuse.dds"/>
-    <File fileId="9" filename="textures/forestrysellpoint_normal.dds"/>
-    <File fileId="10" filename="textures/forestrysellpoint_specular.dds"/>
+    <File fileId="8" filename="../../textures/FS25_ForestrySellPoint_forestrysellpoint_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/FS25_ForestrySellPoint_forestrysellpoint_normal.dds"/>
+    <File fileId="10" filename="../../textures/FS25_ForestrySellPoint_forestrysellpoint_specular.dds"/>
     <File fileId="11" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="4" filename="$data/shared/warningStripes_diffuse.dds"/>
     <File fileId="5" filename="$data/shared/warningStripes_normal.dds"/>

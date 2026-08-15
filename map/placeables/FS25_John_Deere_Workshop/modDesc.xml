@@ -266,7 +266,7 @@ Categorie: Decorațiuni
 Preț: €580
 Întreținere zilnică: €0]]></ro>
     </description> 
-    <iconFilename>icon_John_Deere_Workshop.png</iconFilename>
+    <iconFilename>../../textures/FS25_John_Deere_Workshop_icon_John_Deere_Workshop.dds</iconFilename>
     <multiplayer supported="true" />
 
     <storeItems>

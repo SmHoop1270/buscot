@@ -14,26 +14,26 @@
     <File fileId="19" filename="$data/shared/clearPlastic_diffuse.dds"/>
     <File fileId="13" filename="$data/shared/default_normal.dds"/>
     <File fileId="14" filename="$data/shared/default_specular.dds"/>
-    <File fileId="15" filename="textures/05_sidingmetal_blue_d.dds"/>
-    <File fileId="16" filename="textures/05_sidingmetal_n.dds"/>
-    <File fileId="17" filename="textures/05_sidingmetal_s.dds"/>
-    <File fileId="18" filename="textures/05_sidingmetal_white_d.dds"/>
-    <File fileId="32" filename="textures/Door.dds"/>
-    <File fileId="3" filename="textures/WornConcretePanels_c.dds"/>
-    <File fileId="4" filename="textures/WornConcretePanels_n_plx.dds"/>
-    <File fileId="5" filename="textures/WornConcretePanels_s.dds"/>
-    <File fileId="20" filename="textures/concrete_precast_d.dds"/>
-    <File fileId="25" filename="textures/flashing_c.dds"/>
-    <File fileId="26" filename="textures/flashing_n.dds"/>
-    <File fileId="27" filename="textures/flashing_s.dds"/>
-    <File fileId="24" filename="textures/metal_oxydized_d.dds"/>
-    <File fileId="12" filename="textures/metal_red_d.dds"/>
-    <File fileId="28" filename="textures/rdm_logo.dds"/>
-    <File fileId="29" filename="textures/rollerDoor.dds"/>
-    <File fileId="7" filename="textures/shed02mask.dds"/>
-    <File fileId="21" filename="textures/woodOld_greyed_c.dds"/>
-    <File fileId="22" filename="textures/woodOld_n.dds"/>
-    <File fileId="23" filename="textures/woodOld_s.dds"/>
+    <File fileId="15" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_blue_d.dds"/>
+    <File fileId="16" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_n.dds"/>
+    <File fileId="17" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_s.dds"/>
+    <File fileId="18" filename="../../textures/FS25_RDM_BritishGrainSheds_05_sidingmetal_white_d.dds"/>
+    <File fileId="32" filename="../../textures/FS25_RDM_BritishGrainSheds_Door.dds"/>
+    <File fileId="3" filename="../../textures/FS25_RDM_BritishGrainSheds_WornConcretePanels_c.dds"/>
+    <File fileId="4" filename="../../textures/FS25_RDM_BritishGrainSheds_WornConcretePanels_n_plx.dds"/>
+    <File fileId="5" filename="../../textures/FS25_RDM_BritishGrainSheds_WornConcretePanels_s.dds"/>
+    <File fileId="20" filename="../../textures/FS25_RDM_BritishGrainSheds_concrete_precast_d.dds"/>
+    <File fileId="25" filename="../../textures/FS25_RDM_BritishGrainSheds_flashing_c.dds"/>
+    <File fileId="26" filename="../../textures/FS25_RDM_BritishGrainSheds_flashing_n.dds"/>
+    <File fileId="27" filename="../../textures/FS25_RDM_BritishGrainSheds_flashing_s.dds"/>
+    <File fileId="24" filename="../../textures/gate_metal_oxydized_d.dds"/>
+    <File fileId="12" filename="../../textures/FS25_RDM_BritishGrainSheds_metal_red_d.dds"/>
+    <File fileId="28" filename="../../textures/FS25_RDM_BritishGrainSheds_rdm_logo.dds"/>
+    <File fileId="29" filename="../../textures/FS25_RDM_BritishGrainSheds_rollerDoor.dds"/>
+    <File fileId="7" filename="../../textures/FS25_RDM_BritishGrainSheds_shed02mask.dds"/>
+    <File fileId="21" filename="../../textures/FS25_RDM_BritishGrainSheds_woodOld_greyed_c.dds"/>
+    <File fileId="22" filename="../../textures/FS25_RDM_BritishGrainSheds_woodOld_n.dds"/>
+    <File fileId="23" filename="../../textures/FS25_RDM_BritishGrainSheds_woodOld_s.dds"/>
   </Files>
 
 

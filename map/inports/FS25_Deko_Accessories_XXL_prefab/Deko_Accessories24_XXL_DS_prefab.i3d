@@ -123,9 +123,9 @@
     <File fileId="70" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlue_diffuse.dds"/>
     <File fileId="71" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlue_normal.dds"/>
     <File fileId="72" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_bucketPlasticBlue_specular.dds"/>
-    <File fileId="94" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_burner_diffuse.dds"/>
-    <File fileId="95" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_burner_normal.dds"/>
-    <File fileId="96" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_burner_specular.dds"/>
+    <File fileId="94" filename="../../textures/FS25_John_Deere_Workshop_burner_diffuse.dds"/>
+    <File fileId="95" filename="../../textures/FS25_John_Deere_Workshop_burner_normal.dds"/>
+    <File fileId="96" filename="../../textures/FS25_John_Deere_Workshop_burner_specular.dds"/>
     <File fileId="25" filename="../../textures/FS25_Buscot_Buildings_electricGenerator_diffuse.dds"/>
     <File fileId="26" filename="../../textures/FS25_Buscot_Buildings_electricGenerator_normal.dds"/>
     <File fileId="27" filename="../../textures/FS25_Buscot_Buildings_electricGenerator_specular.dds"/>

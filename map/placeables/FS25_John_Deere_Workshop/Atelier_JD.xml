@@ -2,7 +2,7 @@
 <placeable type="garageWorkshopSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_Atelier_JD</name>
-        <image>store/store_Atelier_JD.png</image>
+        <image>../../textures/FS25_John_Deere_Workshop_store_store_Atelier_JD.dds</image>
         <price>115000</price>
         <functions>
             <function>$l10n_function_workshop</function>

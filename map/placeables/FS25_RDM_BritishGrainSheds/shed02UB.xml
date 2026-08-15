@@ -5,7 +5,7 @@
     <functions>
       <function>$l10n_function_garage</function>
     </functions>
-    <image>store_GreenGrainBarn2UB.dds</image>
+    <image>../../textures/FS25_RDM_BritishGrainSheds_store_GreenGrainBarn2UB.dds</image>
     <price>110000</price>
     <dailyUpkeep>70</dailyUpkeep>
     <lifetime>1000</lifetime>

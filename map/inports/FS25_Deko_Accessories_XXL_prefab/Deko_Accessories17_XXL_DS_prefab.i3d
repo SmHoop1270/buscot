@@ -78,9 +78,9 @@
     <File fileId="11" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_hayFeeder_diffuse.dds"/>
     <File fileId="12" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_hayFeeder_normal.dds"/>
     <File fileId="13" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_hayFeeder_specular.dds"/>
-    <File fileId="18" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticBox_diffuse.dds"/>
-    <File fileId="19" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticBox_normal.dds"/>
-    <File fileId="20" filename="../../textures/FS25_Deko_Accessories_XXL_prefab_plasticBox_specular.dds"/>
+    <File fileId="18" filename="../../textures/FS25_John_Deere_Workshop_plasticBox_diffuse.dds"/>
+    <File fileId="19" filename="../../textures/FS25_John_Deere_Workshop_plasticBox_normal.dds"/>
+    <File fileId="20" filename="../../textures/FS25_John_Deere_Workshop_plasticBox_specular.dds"/>
   </Files>
 
 

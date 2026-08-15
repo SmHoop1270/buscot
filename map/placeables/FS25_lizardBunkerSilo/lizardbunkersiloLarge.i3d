@@ -10,8 +10,8 @@
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
     <File fileId="2" filename="$data/shared/default_normal.dds"/>
     <File fileId="3" filename="$data/shared/default_vmask.dds"/>
-    <File fileId="1" filename="textures/concrete_diffuse.dds"/>
-    <File fileId="5" filename="textures/silos_Bosch_mask.dds"/>
+    <File fileId="1" filename="../../textures/FS25_lizardBunkerSilo_concrete_diffuse.dds"/>
+    <File fileId="5" filename="../../textures/FS25_lizardBunkerSilo_silos_Bosch_mask.dds"/>
   </Files>
 
 

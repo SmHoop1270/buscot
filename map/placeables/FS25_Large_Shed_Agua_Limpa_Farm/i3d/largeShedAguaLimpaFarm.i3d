@@ -17,11 +17,11 @@
     <File fileId="20" filename="$data/shaders/snowHeapShader.xml"/>
     <File fileId="13" filename="$data/shared/assets/assetLibraryDecals_normal.dds"/>
     <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.dds"/>
-    <File fileId="2" filename="../textures/largeShedAguaLimpaFarm_diffuse.png"/>
-    <File fileId="11" filename="../textures/largeShedAguaLimpaFarm_height.png"/>
-    <File fileId="6" filename="../textures/largeShedAguaLimpaFarm_mask.dds"/>
-    <File fileId="3" filename="../textures/largeShedAguaLimpaFarm_normal.png"/>
-    <File fileId="4" filename="../textures/largeShedAguaLimpaFarm_specular.png"/>
+    <File fileId="2" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_diffuse.dds"/>
+    <File fileId="11" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_height.dds"/>
+    <File fileId="6" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_mask.dds"/>
+    <File fileId="3" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_normal.dds"/>
+    <File fileId="4" filename="../../../textures/FS25_Large_Shed_Agua_Limpa_Farm_largeShedAguaLimpaFarm_specular.dds"/>
   </Files>
 
 
