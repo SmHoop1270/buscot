@@ -147,8 +147,8 @@
     <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0" /> 
     <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0" /> 
 
-<!--     <!-- farmBuildingFeatures > sleep -->
-<!--     <i3dMapping id="sleepTriggerMarker" node="0>6|0|1" /> 
+    <!-- farmBuildingFeatures > sleep -->
+<!--     <i3dMapping id="sleepTriggerMarker" node="0>6|0|1" />
     <i3dMapping id="spawnPoint" node="0>6|0|3" /> 
     <i3dMapping id="sleepCamera" node="0>6|0|2" /> 
     <i3dMapping id="sleepingTrigger" node="0>6|0|0" />  -->

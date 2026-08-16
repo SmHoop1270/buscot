@@ -7,6 +7,7 @@
         <canBeSold>false</canBeSold>
         <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
+        <dailyUpkeep>0</dailyUpkeep>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>PLACEABLE</species>

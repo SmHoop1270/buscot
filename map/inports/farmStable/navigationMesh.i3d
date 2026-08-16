@@ -2,7 +2,7 @@
 
 <i3D name="navigationMesh.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
   </Asset>
 
   <Files>
@@ -18,17 +18,13 @@
   <Shapes externalShapesFile="navigationMesh.i3d.shapes">
   </Shapes>
 
-
-  <Dynamics>
-  </Dynamics>
-
   <Scene>
-      <NavigationMesh name="navigationMesh" nodeId="12" shapeId="1"/>
-      <Shape shapeId="2" name="navigationesh" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="254"/>
+    <NavigationMesh name="navigationMesh" nodeId="8" shapeId="1"/>
+    <Shape name="navigationesh" shapeId="2" nodeId="9" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="5"/>
   </Scene>
 
   <UserAttributes>
-    <UserAttribute nodeId="10">
+    <UserAttribute nodeId="9">
       <Attribute name="animalType" type="string" value="pig"/>
     </UserAttribute>
   </UserAttributes>

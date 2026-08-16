@@ -4,6 +4,34 @@
       "PowerShell(git init)",
       "PowerShell(git add -A)",
       "PowerShell(winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements)"
+      "Bash(git *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -Command \"New-BurntToastNotification -Text 'Claude Code', 'Waiting for your input'\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -Command \"New-BurntToastNotification -Text 'Claude Code', 'Task completed'\""
+          }
+        ]
+      }
     ]
   }
 }

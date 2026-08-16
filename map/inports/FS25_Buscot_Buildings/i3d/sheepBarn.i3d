@@ -114,7 +114,7 @@
       <TransformGroup name="visuals" rotation="2.66178e-06 -9.05211e-13 1.9485e-05" scale="1.4 1.4 1.4" nodeId="50">
         <Shape name="shedBase" shapeId="1" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="8"/>
         <Shape name="brickWalls" translation="0.0655338 0 0" shapeId="2" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="7"/>
-        <Shape name="steelSheets" shapeId="3" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        <Shape name="steelSheets" shapeId="3" clipDistance="350" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="14"/>
         <Shape name="roof" shapeId="4" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="13"/>
         <Shape name="gutterFront" translation="3.58673 4.08686 -1.05856" rotation="90 1.52387e-26 0" scale="0.0118641 1.00428 0.017833" shapeId="5" clipDistance="350" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="11"/>
         <Shape name="gutterBack" translation="-3.454 4.08686 -1.05856" rotation="90 -0 0" scale="0.0118641 1.00428 0.017833" shapeId="5" clipDistance="350" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="11"/>

@@ -1,44 +1,55 @@
-﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
+
 <i3D name="fence.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
-    <Asset>
-        <Export program="GIANTS Editor 64bit" version="9.0.6"/>
-    </Asset>
-    <Files>
-        <File fileId="8" filename="$data/maps/textures/shared/mapDirtSA_diffuse.dds"/>
-        <File fileId="6" filename="$data/shaders/buildingShader.xml"/>
-        <File fileId="11" filename="$data/shaders/placeableShader.xml"/>
-        <File fileId="7" filename="../../textures/Barbed_fence_cerca_mask.dds"/>
-        <File fileId="4" filename="../../textures/Barbed_fence_tabua_Normal.dds"/>
-        <File fileId="3" filename="../../textures/Barbed_fence_tabua_diffuse.dds"/>
-        <File fileId="5" filename="../../textures/Barbed_fence_tabua_specular.dds"/>
-    </Files>
-    <Materials>
-        <Material name="default" materialId="40123" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0"/>
-        <Material name="fio_mat" materialId="40199" customShaderId="11" customShaderVariation="vertexOffset">
-            <Texture fileId="3"/>
-            <Normalmap fileId="4"/>
-            <Glossmap fileId="5"/>
-        </Material>
-        <Material name="porteira_mat" materialId="40499" customShaderId="6">
-            <Texture fileId="3"/>
-            <Normalmap fileId="4"/>
-            <Glossmap fileId="5"/>
-            <Custommap name="mMaskMap" fileId="7"/>
-            <Custommap name="mDirtDiffuse" fileId="8"/>
-        </Material>
-    </Materials>
-    <Shapes externalShapesFile="fence.i3d.shapes"/>
-    <Dynamics/>
-    <Scene>
-        <TransformGroup name="fence1" translation="105.197 102.303 -830.4" rotation="-178.281 81.3681 -180" nodeId="79360">
-            <TransformGroup name="pole01" nodeId="79361">
-                <Shape shapeId="1" name="collPR" rotation="-6.83019e-06 -0 0" visibility="false" static="true" nodeId="79362" materialIds="40123" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-                <Shape shapeId="2" name="posteRD" clipDistance="200" nodeId="79363" materialIds="40499" castsShadows="true" receiveShadows="true"/>
-                <TransformGroup name="panel01" nodeId="79364">
-                    <Shape shapeId="3" name="col4MT" visibility="false" static="true" nodeId="79365" materialIds="40123" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-                    <Shape shapeId="4" name="fios4MT" clipDistance="200" nodeId="79366" materialIds="40199" castsShadows="true" receiveShadows="true"/>
-                </TransformGroup>
-            </TransformGroup>
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="12" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="7" filename="../../textures/Barbed_fence_cerca_mask.dds"/>
+    <File fileId="4" filename="../../textures/Barbed_fence_tabua_Normal.dds"/>
+    <File fileId="3" filename="../../textures/Barbed_fence_tabua_diffuse.dds"/>
+    <File fileId="5" filename="../../textures/Barbed_fence_tabua_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="fio_mat" materialId="6" customShaderId="12" customShaderVariation="vertexOffset">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="porteira_mat" materialId="7" customShaderId="6">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <PerInstanceMaterialParameters>
+  </PerInstanceMaterialParameters>
+
+
+  <Shapes externalShapesFile="fence.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="fence1" translation="105.197 102.303 -830.4" rotation="-178.281 81.3681 -180" nodeId="13">
+      <TransformGroup name="pole01" nodeId="14">
+        <Shape name="collPR" rotation="-6.83019e-06 -0 0" shapeId="1" visibility="false" static="true" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="posteRD" shapeId="2" clipDistance="200" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <TransformGroup name="panel01" nodeId="17">
+          <Shape name="col4MT" shapeId="3" visibility="false" static="true" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="fios4MT" shapeId="4" clipDistance="200" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="6"/>
         </TransformGroup>
-    </Scene>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
 </i3D>

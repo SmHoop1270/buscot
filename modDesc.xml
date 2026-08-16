@@ -22,6 +22,11 @@
                 <en>Buscot_Park</en>
             </title>
 
+            <description>
+                <en>A British map based in southern England, focused mainly on dairy and sheep farming along with pigs and chickens.</en>
+                <de>Eine britische Karte im Süden Englands, die sich hauptsächlich auf Milchvieh- und Schafhaltung sowie Schweine und Hühner konzentriert.</de>
+            </description>
+
             <iconFilename>preview.dds</iconFilename>
         </map>
     </maps>
@@ -31,6 +36,7 @@
     <extraSourceFiles>
         <sourceFile filename="map/scripts/OpeningHours.lua"/>
         <sourceFile filename="map/scripts/MemorialTrigger.lua" />
+        <sourceFile filename="map/inports/FS25_OpenPastures_Milk/scripts/main.lua" />
     </extraSourceFiles>
 	
 	    <!-- <fillTypes filename="map/config/fillTypes.xml"/> -->
@@ -67,7 +73,7 @@
 	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/haybarn02.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/shed01.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/shed02.xml" />
-	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/shed03.xml" />ss
+	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/shed03.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/buscotsheep.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_UK_BaleShed/UKBaleShedAL.xml" />
      <storeItem xmlFilename="map/inports/FS25_sowHut/xml/pigPen.xml" />
@@ -77,6 +83,9 @@
      <storeItem xmlFilename="map/inports/manureHeap/manureHeap.xml" />
 	 <storeItem xmlFilename="map/inports/silageClampUK/silageClampUK.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_UK_Shed/ukShed.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Milk/xml/cowFence.xml" />
 	 <!--Sellpoints-->
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric02.xml" />
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric03.xml" />
@@ -98,6 +107,5 @@
 <!-- DECORATION -->
     <storeItem xmlFilename="$data/placeables/mapUS/stable02/stable02.xml" /> <!-- showInStore false -->
 </storeItems>
-	
 
 </modDesc>

@@ -77,7 +77,7 @@
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
     </placeable>
-    <placeable filename="data/placeables/mapEU/brandless/buildings/gardenSheds/gardenShedLarge.xml" uniqueId="placeable0effe4c2316f7d983cbe4a086dde052d" position="1478.518 6.973 -1678.358" rotation="180.00 4.46 -180.00" age="0.000000" price="750.000000" farmId="0">
+    <placeable filename="data/placeables/mapEU/brandless/buildings/gardenSheds/gardenShedLarge.xml" uniqueId="placeable0effe4c2316f7d983cbe4a086dde052d" position="1478.518 6.973 -1678.358" rotation="180.00 4.46 -180.00" age="0.000000" price="750.000000" farmId="0" boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
@@ -186,7 +186,7 @@
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/19.xml" uniqueId="placeablea8739c6624ed704597c73ac2b9d40dc2" position="428.432 21.924 -259.855" rotation="-180.00 -81.71 -180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/19.xml" uniqueId="placeable9b6cdf4627cb73aed80849262bf9cb96" position="356.225 21.623 -242.361" rotation="0.00 -89.57 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/19.xml" uniqueId="placeable14ff6a67cd039de241063830d247fd0e" position="419.197 21.092 -294.425" rotation="0.00 -4.61 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/19.xml" uniqueId="placeable9163fc60565fdda05501aec8416a4bb7" position="1470.546 6.685 -1689.126" rotation="-180.00 -15.62 -180.00" age="0.000000" price="17.000000" farmId="0"/>
+    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/19.xml" uniqueId="placeable9163fc60565fdda05501aec8416a4bb7" position="1470.546 6.685 -1689.126" rotation="-180.00 -15.62 -180.00" age="0.000000" price="17.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/41.xml" uniqueId="placeablec8feebc48b04a38a73e800f01346e9d1" position="1176.388 7.183 -1559.839" rotation="180.00 -79.80 180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/41.xml" uniqueId="placeable7f5207301ad137575589c84d0dcd033f" position="-1494.152 19.725 1056.611" rotation="-180.00 -12.10 -180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/8.xml" uniqueId="placeablef15f3be88209e846b049cfdbe54e4de9" position="1171.059 7.197 -1574.893" rotation="180.00 -79.80 180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
@@ -215,7 +215,7 @@
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/7.xml" uniqueId="placeable84b729a23bb36a3089306adfb96f1e0d" position="412.253 19.989 -352.312" rotation="-180.00 -61.09 -180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/7.xml" uniqueId="placeable0cd257c48d129b7eb4aac12b6e7a8465" position="-270.450 16.218 -742.566" rotation="0.00 -76.60 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/7.xml" uniqueId="placeablea9f965b74b58e9931f724f85e4d23d8f" position="-1493.956 19.738 1053.116" rotation="-180.00 -12.10 -180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/9.xml" uniqueId="placeablef9f4f5f4bbaad594d9a5b39d8e94db1f" position="1486.899 6.710 -1676.586" rotation="0.00 -76.52 0.00" age="0.000000" price="17.000000" farmId="0"/>
+    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/9.xml" uniqueId="placeablef9f4f5f4bbaad594d9a5b39d8e94db1f" position="1486.899 6.710 -1676.586" rotation="0.00 -76.52 0.00" age="0.000000" price="17.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeable73711f17c0fc5218989832570466276c" position="1149.360 10.015 -1510.873" rotation="0.00 23.64 0.00" age="0.000000" price="80.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablea0577bb6dbb156b4746497db7683cab2" position="1150.653 9.981 -1511.293" rotation="0.00 23.64 0.00" age="0.000000" price="10.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablef6dcfda93aacdbcc84c84471d0c824ba" position="1148.350 10.012 -1510.073" rotation="0.00 23.64 0.00" age="0.000000" price="10.000000"  boughtWithFarmlandOverwrite="true"/>
@@ -257,10 +257,10 @@
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeable3acc0f86ad8b5a6419320abd33072c91" position="455.557 21.222 -307.601" rotation="-180.00 -81.19 -180.00" age="0.000000" price="80.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeabledea0d541affa1f820e9463c73edf9767" position="-1570.104 19.407 1065.598" rotation="0.00 -80.37 0.00" age="0.000000" price="80.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablee6e324017236415adb552b31ef7545e4" position="-1581.539 19.335 1068.293" rotation="0.00 -80.37 0.00" age="0.000000" price="10.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeable89f0d3746b78c1b6f46f0ba77b7e26c8" position="1463.244 6.490 -1705.885" rotation="-180.00 78.27 180.00" age="0.000000" price="80.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablef4ee0e0d59f22ce7fd2bacb2dd9fd420" position="1467.649 6.620 -1690.802" rotation="-180.00 78.27 180.00" age="0.000000" price="10.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeable181cc9665ce1aabf07506289ecdf88b8" position="1468.537 6.639 -1690.390" rotation="-180.00 78.27 180.00" age="0.000000" price="10.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeable7d9ad9db011d9f9435c24308d4f96716" position="1467.411 6.598 -1691.822" rotation="-180.00 78.27 180.00" age="0.000000" price="10.000000" farmId="0"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeable89f0d3746b78c1b6f46f0ba77b7e26c8" position="1463.244 6.490 -1705.885" rotation="-180.00 78.27 180.00" age="0.000000" price="80.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablef4ee0e0d59f22ce7fd2bacb2dd9fd420" position="1467.649 6.620 -1690.802" rotation="-180.00 78.27 180.00" age="0.000000" price="10.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeable181cc9665ce1aabf07506289ecdf88b8" position="1468.537 6.639 -1690.390" rotation="-180.00 78.27 180.00" age="0.000000" price="10.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeable7d9ad9db011d9f9435c24308d4f96716" position="1467.411 6.598 -1691.822" rotation="-180.00 78.27 180.00" age="0.000000" price="10.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/fences/husbandries/level04/fencesFarmLevel04.xml" uniqueId="placeable585a5fd94fcf2ee8855a61ee4596512c" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="100.000000" farmId="0" boughtWithFarmlandOverwrite="true">
         <newFence>
             <segment start="1092.729 6.558 -1608.121" end="1068.847 6.689 -1592.989" id="SEGMENT"/>
@@ -281,7 +281,7 @@
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/4.xml" uniqueId="placeablef8005c00dde19ef6207335eaf563473b" position="526.943 21.968 -252.284" rotation="-180.00 89.68 180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/4.xml" uniqueId="placeable30b4877f368ab889ab88390a2997da6e" position="430.963 20.383 -328.897" rotation="-180.00 89.68 180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/13.xml" uniqueId="placeable3568c703e94f86941977f81dfb7a4acf" position="432.804 22.109 -253.275" rotation="-180.00 89.68 180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/11.xml" uniqueId="placeable2a71ecc8a912948a8ec1023363e6105d" position="1471.750 6.688 -1680.617" rotation="0.00 -76.52 0.00" age="0.000000" price="17.000000" farmId="0"/>
+    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/11.xml" uniqueId="placeable2a71ecc8a912948a8ec1023363e6105d" position="1471.750 6.688 -1680.617" rotation="0.00 -76.52 0.00" age="0.000000" price="17.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/2.xml" uniqueId="placeableb6896d411fa7d2fd376a859592a2988b" position="1892.081 20.140 158.466" rotation="0.00 54.83 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/2.xml" uniqueId="placeable34fba6bfae53d6d1f94fb1ada36a8881" position="1798.743 13.574 -487.717" rotation="0.00 -89.13 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/2.xml" uniqueId="placeable91c0236c8f5da54a1e4c4c5625bfc32e" position="-506.482 28.031 875.373" rotation="-180.00 -83.73 -180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
@@ -399,22 +399,22 @@
     </placeable>
     <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/oldTelephoneBox/oldTelephoneBox.xml" uniqueId="placeable54d902fa68b8b6a8e32225b0d7c8d572" position="1377.990 17.996 116.825" rotation="180.00 29.97 -180.00" age="0.000000" price="100.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/oldTelephoneBox/oldTelephoneBox.xml" uniqueId="placeable4f776a676be18c63b9081bd6a856833e" position="1852.948 19.947 133.656" rotation="0.00 -34.20 0.00" age="0.000000" price="100.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/oldTelephoneBox/oldTelephoneBox.xml" uniqueId="placeable10e35c911a03de147342f855cfaace5e" position="-580.291 26.306 976.446" rotation="-180.00 48.98 180.00" age="0.000000" price="100.000000" />
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/oldTelephoneBox/oldTelephoneBox.xml" uniqueId="placeable10e35c911a03de147342f855cfaace5e" position="-580.291 26.306 976.446" rotation="-180.00 48.98 180.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable12683ffbb37273900c10dd45f05769ae" position="1930.065 20.576 150.597" rotation="0.00 -34.20 0.00" age="0.000000" price="50.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable1a7fe66fb88f309f41667f38f8049beb" position="1505.623 6.448 -1735.494" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablee2bf9279e80e2a59ed1ecac9208add71" position="1506.151 6.453 -1733.598" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablef7d4ac460915abd854c2eb138802ac41" position="1506.816 6.466 -1731.722" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable6f48c2b67f031b80be06bf62d70559a7" position="1507.518 6.488 -1729.712" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable9fdb3b6ec22cc07acc76e2dfafb721ab" position="1508.219 6.495 -1727.598" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable016fab5f7e13f3edba295835a689a583" position="1508.749 6.498 -1725.637" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablef3e74b145f3ae38d4a4e434b85f50511" position="1509.479 6.500 -1723.570" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable41d4856c6606c3c3ba1e0f07c71c7936" position="1510.230 6.508 -1721.420" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable33735f9fb9474626603a63acdb7cc85f" position="1495.959 6.334 -1723.623" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeabledce50a8b5fc865dc75561b372ad0b35c" position="1493.298 6.353 -1722.937" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablef463806f5d553ae64b3329e5074d56a8" position="1490.943 6.360 -1722.286" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable24fdb656050179568b6357e0e0c64e87" position="1488.559 6.365 -1721.643" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable896907da5f0b773d21f28f6510bae66e" position="1485.925 6.370 -1720.921" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable7f67dbe1700266826859152cf7f220ef" position="1483.388 6.370 -1719.908" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" />
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable1a7fe66fb88f309f41667f38f8049beb" position="1505.623 6.448 -1735.494" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablee2bf9279e80e2a59ed1ecac9208add71" position="1506.151 6.453 -1733.598" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablef7d4ac460915abd854c2eb138802ac41" position="1506.816 6.466 -1731.722" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable6f48c2b67f031b80be06bf62d70559a7" position="1507.518 6.488 -1729.712" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable9fdb3b6ec22cc07acc76e2dfafb721ab" position="1508.219 6.495 -1727.598" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable016fab5f7e13f3edba295835a689a583" position="1508.749 6.498 -1725.637" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablef3e74b145f3ae38d4a4e434b85f50511" position="1509.479 6.500 -1723.570" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable41d4856c6606c3c3ba1e0f07c71c7936" position="1510.230 6.508 -1721.420" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable33735f9fb9474626603a63acdb7cc85f" position="1495.959 6.334 -1723.623" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeabledce50a8b5fc865dc75561b372ad0b35c" position="1493.298 6.353 -1722.937" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeablef463806f5d553ae64b3329e5074d56a8" position="1490.943 6.360 -1722.286" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable24fdb656050179568b6357e0e0c64e87" position="1488.559 6.365 -1721.643" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable896907da5f0b773d21f28f6510bae66e" position="1485.925 6.370 -1720.921" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/logPile01/logPile01.xml" uniqueId="placeable7f67dbe1700266826859152cf7f220ef" position="1483.388 6.370 -1719.908" rotation="0.00 -76.52 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/toolSheds/toolShed02/toolShed02.xml" uniqueId="placeablee926cd3f02cf5fbd4781a89a6de41398" position="-474.155 27.804 878.507" rotation="-180.00 -86.60 -180.00" age="0.000000" price="450.000000"  boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
@@ -427,25 +427,25 @@
     </placeable>
     <placeable filename="data/placeables/brandless/decoration/clothesLines/clotheslines01.xml" uniqueId="placeablef37b3a6ac9e2b9d69cf195b09276d7f7" position="-414.426 28.465 895.935" rotation="0.00 -86.21 0.00" age="0.000000" price="20.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/clothesLines/clotheslines01.xml" uniqueId="placeable5c32884b6b8981cf627f726d0acb4440" position="279.464 22.590 1046.831" rotation="-180.00 -10.88 -180.00" age="0.000000" price="20.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/greenHouse/greenHouse.xml" uniqueId="placeabled6f22cc96e67b942b5887b5e88f6f18b" position="-419.767 28.276 900.100" rotation="180.00 -86.26 180.00" age="0.000000" price="500.000000" />
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/greenHouse/greenHouse.xml" uniqueId="placeabled6f22cc96e67b942b5887b5e88f6f18b" position="-419.767 28.276 900.100" rotation="180.00 -86.26 180.00" age="0.000000" price="500.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/greenHouse/greenHouse.xml" uniqueId="placeablea136264afb9eef2c3b418ac820a8d823" position="-236.882 17.903 -602.883" rotation="180.00 -10.51 180.00" age="0.000000" price="500.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/flowerPotB02/flowerPotB02.xml" uniqueId="placeable5cbe1198c3bd9886fba497f0d8088ed1" position="-434.843 28.017 887.036" rotation="-180.00 -86.26 -180.00" age="0.000000" price="10.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/flowerPotB02/flowerPotB02.xml" uniqueId="placeablec5cf75e6711c6b4be468865f36fe54e6" position="-434.937 28.016 889.519" rotation="-180.00 -86.26 -180.00" age="0.000000" price="10.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/gritContainer/gritContainer.xml" uniqueId="placeabled50fcff9050797868351b61db5f52088" position="-512.078 28.003 881.206" rotation="-180.00 -86.26 -180.00" age="0.000000" price="100.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/gritContainer/gritContainer.xml" uniqueId="placeable31a1e4e702734c6ccc447eed91abe545" position="-521.577 27.462 882.254" rotation="0.00 46.51 0.00" age="0.000000" price="100.000000" />
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/portContainer02/portContainer02.xml" uniqueId="placeable035bcfac299f9f009088b725c0e17485" position="-530.277 27.373 883.399" rotation="0.00 82.32 0.00" age="0.000000" price="1000.000000" />
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/flowerPotB02/flowerPotB02.xml" uniqueId="placeable5cbe1198c3bd9886fba497f0d8088ed1" position="-434.843 28.017 887.036" rotation="-180.00 -86.26 -180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/flowerPotB02/flowerPotB02.xml" uniqueId="placeablec5cf75e6711c6b4be468865f36fe54e6" position="-434.937 28.016 889.519" rotation="-180.00 -86.26 -180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/gritContainer/gritContainer.xml" uniqueId="placeabled50fcff9050797868351b61db5f52088" position="-512.078 28.003 881.206" rotation="-180.00 -86.26 -180.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/gritContainer/gritContainer.xml" uniqueId="placeable31a1e4e702734c6ccc447eed91abe545" position="-521.577 27.462 882.254" rotation="0.00 46.51 0.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/portContainer02/portContainer02.xml" uniqueId="placeable035bcfac299f9f009088b725c0e17485" position="-530.277 27.373 883.399" rotation="0.00 82.32 0.00" age="0.000000" price="1000.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/portContainer02/portContainer02.xml" uniqueId="placeable687a5d4da49077dd4ce239f153cbc9d9" position="433.131 21.997 -258.683" rotation="0.00 -3.74 0.00" age="0.000000" price="1000.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/picnicTableBrown/picnicTableBrown.xml" uniqueId="placeable27937016adf21864a0d097a823f97afc" position="-434.937 28.451 877.084" rotation="180.00 48.98 -180.00" age="0.000000" price="50.000000" />
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/picnicTableBrown/picnicTableBrown.xml" uniqueId="placeable27937016adf21864a0d097a823f97afc" position="-434.937 28.451 877.084" rotation="180.00 48.98 -180.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/24.xml" uniqueId="placeable7ea8cdb94508039fce618af3ecd1266d" position="-517.698 27.895 863.830" rotation="0.00 -87.06 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/24.xml" uniqueId="placeable6346aec6934ab11142b6401f2d2ab99b" position="488.475 20.211 -341.890" rotation="0.00 -3.74 0.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/metalPile/metalPile.xml" uniqueId="placeablee19ff23efc93de845219797d2a92c391" position="1161.739 6.741 -1624.578" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" />
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/metalPile/metalPile.xml" uniqueId="placeablee19ff23efc93de845219797d2a92c391" position="1161.739 6.741 -1624.578" rotation="0.00 17.04 0.00" age="0.000000" price="50.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel03.xml" uniqueId="placeable59353fc608c48e29df2bbd19018a9e0e" position="-1120.339 19.370 106.336" rotation="0.00 17.04 0.00" age="0.000000" price="20.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeable204aa65ba52afa6a0e85ade96ab805af" position="1461.710 6.491 -1712.458" rotation="-180.00 73.72 180.00" age="0.000000" price="100.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeablec59ad19386297cdb18fc9e8bbf03f34d" position="1462.569 6.485 -1712.712" rotation="-180.00 73.72 180.00" age="0.000000" price="100.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeable2eeaa4a599b7eea5f6bebb9efd336990" position="1463.824 6.476 -1712.911" rotation="-180.00 73.72 180.00" age="0.000000" price="100.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel03.xml" uniqueId="placeable10a3346ce6a7553bf5a779ff443cc887" position="491.185 21.222 -298.459" rotation="0.00 -85.26 0.00" age="0.000000" price="20.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeable8e03a2d9bc92838eab5eb8af6d761cf6" position="1503.535 6.502 -1685.954" rotation="0.00 -76.52 0.00" age="0.000000" price="100.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeabled9f1c1e6a4804d774e35f24c68612f76" position="1502.845 6.508 -1685.779" rotation="0.00 -76.52 0.00" age="0.000000" price="100.000000" farmId="0"/>
+    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeable8e03a2d9bc92838eab5eb8af6d761cf6" position="1503.535 6.502 -1685.954" rotation="0.00 -76.52 0.00" age="0.000000" price="100.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack03.xml" uniqueId="placeabled9f1c1e6a4804d774e35f24c68612f76" position="1502.845 6.508 -1685.779" rotation="0.00 -76.52 0.00" age="0.000000" price="100.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel01.xml" uniqueId="placeable73e813928aa08c93b637fe3dd78be36c" position="544.966 21.144 -313.239" rotation="0.00 -85.26 0.00" age="0.000000" price="10.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML2/15.xml" uniqueId="placeablebfac8bf905388a74a9e4f823e9af2943" position="369.681 21.714 -239.347" rotation="-180.00 71.91 180.00" age="0.000000" price="17.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/toolSheds/toolShed03/toolShed03.xml" uniqueId="placeable92978c9681422868320fa6b0db620d66" position="291.189 22.972 1068.692" rotation="-180.00 -9.37 -180.00" age="0.000000" price="750.000000"  boughtWithFarmlandOverwrite="true">
@@ -533,15 +533,15 @@
 	<placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="sturtmachinshed3bay" position="422.83862305 21.16762733 -291.80801392" rotation="-179.99998474 -0.61114043 179.99998474" age="0.000000" price="30000.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="orchardmachinshed3bay" position="-1590.613 19.340 1086.190" rotation="180.00 -8.76 -180.00" age="0.000000" price="30000.000000"  boughtWithFarmlandOverwrite="true"/>
 	<placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="Chase_machinshed3bay" position="-261.28857422 16.99114418 -625.14526367" rotation="-179.99998474 68.6088562 179.99998474" age="0.000000" price="30000.000000"  boughtWithFarmlandOverwrite="true"/>
-    <placeable filename="data/placeables/mapEU/brandless/buildings/gardenSheds/gardenShedSmall.xml" uniqueId="placeable5645ae23fc4101e267d5968c52ad4c9d" position="1442.705 6.222 -1731.354" rotation="0.00 -0.00 0.00" age="0.000000" price="250.000000" farmId="0">
+    <placeable filename="data/placeables/mapEU/brandless/buildings/gardenSheds/gardenShedSmall.xml" uniqueId="placeable5645ae23fc4101e267d5968c52ad4c9d" position="1442.705 6.222 -1731.354" rotation="0.00 -0.00 0.00" age="0.000000" price="250.000000" farmId="0" boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
     </placeable>
-    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeable562a2df607a1642ea0d716ddecbf945b" position="1514.783 6.652 -1687.368" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeable2c7f6cbd6c701fb95733899d40501a3b" position="1514.410 6.648 -1688.455" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeablefea8a2c89cdc5dee205f421865e4d69e" position="1514.106 6.631 -1689.390" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0"/>
-    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeable1f9c71f9386111c66342763625fb4e4e" position="1513.789 6.604 -1690.375" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0"/>
+    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeable562a2df607a1642ea0d716ddecbf945b" position="1514.783 6.652 -1687.368" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeable2c7f6cbd6c701fb95733899d40501a3b" position="1514.410 6.648 -1688.455" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeablefea8a2c89cdc5dee205f421865e4d69e" position="1514.106 6.631 -1689.390" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/boardStacks/boardStack01.xml" uniqueId="placeable1f9c71f9386111c66342763625fb4e4e" position="1513.789 6.604 -1690.375" rotation="-180.00 -17.30 -180.00" age="0.000000" price="30.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="glebshed" position="1351.489 46.293 1507.851" rotation="0.00 -88.51 0.00" age="0.000000" price="30000.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="glebe barn02" position="1471.472 34.744 1663.501" rotation="0.00 12.03 0.00" age="0.000000" price="30000.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="crabtree_3Bay" position="-73.724 22.043 984.850" rotation="0.00 -0.81 0.00" age="0.000000" price="30000.000000"  boughtWithFarmlandOverwrite="true"/>
@@ -2257,37 +2257,7 @@
             <storage index="1" />
         </silo>
     </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/cow00.xml" uniqueId="placeable7d458d249a8387c801fed2a940b6d94f" position="-123.282 33.280 1796.174" rotation="0.00 -85.01 0.00" age="0.000000" price="8000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.005334" productionFactor="0.400000">
-            <storage >
-                <node fillType="MILK" fillLevel="0.270011"/>
-            </storage>
-        </husbandry>
-        <husbandryAnimals>
-            <clusters>
-                <animal subType="COW_HOLSTEIN" numAnimals="20" age="18" health="4" reproduction="0"/>
-            </clusters>
-        </husbandryAnimals>
-        <husbandryFence>
-            <fence>
-                <segment start="-122.535 33.280 1798.116" end="-120.074 33.775 1817.123" id="SEGMENT"/>
-                <segment start="-120.074 33.775 1817.123" end="-179.261 32.563 1832.201" id="SEGMENT"/>
-                <segment start="-179.261 32.563 1832.201" end="-177.353 32.545 1823.538" id="SEGMENT"/>
-                <segment start="-177.353 32.545 1823.538" end="-189.424 31.185 1776.719" id="SEGMENT"/>
-                <segment start="-189.424 31.185 1776.719" end="-191.135 30.478 1751.539" id="SEGMENT"/>
-                <segment start="-191.135 30.478 1751.539" end="-200.582 31.240 1705.872" id="SEGMENT"/>
-                <segment start="-200.582 31.240 1705.872" end="-164.934 29.656 1703.581" id="SEGMENT"/>
-                <segment start="-164.934 29.656 1703.581" end="-162.238 30.891 1741.733" id="SEGMENT"/>
-                <segment start="-162.238 30.891 1741.733" end="-156.018 31.257 1748.022" id="SEGMENT"/>
-                <segment start="-156.018 31.257 1748.022" end="-139.170 31.781 1749.350" id="SEGMENT"/>
-                <segment start="-139.170 31.781 1749.350" end="-131.274 32.945 1775.657" id="SEGMENT"/>
-                <segment start="-131.274 32.945 1775.657" end="-123.144 33.221 1791.143" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="21048.166016" capacity="21631.500000"/>
-        </husbandryMeadow>
-    </placeable>
+
     <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" uniqueId="placeableb9d23ee6d77b312b30a37e4022ac58d4" position="282.298 22.887 1089.526" rotation="0.00 15.72 0.00" age="0.000000" price="4000.000000"  boughtWithFarmlandOverwrite="true">
         <husbandry globalProductionFactor="0.200000" productionFactor="1.000000"/>
         <husbandryAnimals>
@@ -2438,120 +2408,11 @@
             <fillType name="GRASS_WINDROW" fillLevel="89589.218750" capacity="89630.882812"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/cow01.xml" uniqueId="chasepasture" position="-220.424 17.062 -675.933" rotation="0.00 70.12 0.00" age="0.000000" price="5000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage />
-        </husbandry>
-        <husbandryFence>
-            <fence>
-                <segment start="-220.285 17.062 -678.009" end="-206.203 16.858 -715.228" id="SEGMENT"/>
-                <segment start="-206.203 16.858 -715.228" end="-175.685 17.457 -720.832" id="SEGMENT"/>
-                <segment start="-175.685 17.457 -720.832" end="108.608 17.690 -777.906" id="SEGMENT"/>
-                <segment start="108.608 17.690 -777.906" end="104.250 18.024 -716.707" id="SEGMENT"/>
-                <segment start="104.250 18.024 -716.707" end="102.040 19.104 -665.029" id="SEGMENT"/>
-                <segment start="102.040 19.104 -665.029" end="106.014 22.910 -578.133" id="SEGMENT"/>
-                <segment start="106.014 22.910 -578.133" end="-11.328 23.281 -542.951" id="SEGMENT"/>
-                <segment start="-11.328 23.281 -542.951" end="-89.027 22.127 -517.839" id="SEGMENT"/>
-                <segment start="-89.027 22.127 -517.839" end="-199.777 17.865 -615.082" id="SEGMENT"/>
-                <segment start="-199.777 17.865 -615.082" end="-226.323 17.212 -638.753" id="SEGMENT"/>
-                <segment start="-226.323 17.212 -638.753" end="-234.140 16.985 -645.692" id="SEGMENT"/>
-                <segment start="-234.140 16.985 -645.692" end="-222.665 17.044 -671.426" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="264310.687500" capacity="264310.687500"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/cow00.xml" uniqueId="orchardpasture2" position="-1617.183 19.142 1018.704" rotation="0.00 -81.00 0.00" age="0.000000" price="8000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage />
-        </husbandry>
-        <husbandryFence>
-            <fence>
-                <segment start="-1616.302 19.142 1020.589" end="-1613.302 19.136 1041.755" id="SEGMENT"/>
-                <segment start="-1613.302 19.136 1041.755" end="-1844.317 17.661 1109.242" id="SEGMENT"/>
-                <segment start="-1844.317 17.661 1109.242" end="-1864.044 17.309 1115.529" id="SEGMENT"/>
-                <segment start="-1864.044 17.309 1115.529" end="-1867.820 17.491 1089.597" id="SEGMENT"/>
-                <segment start="-1867.820 17.491 1089.597" end="-1856.662 17.659 1078.909" id="SEGMENT"/>
-                <segment start="-1856.662 17.659 1078.909" end="-1777.799 18.170 1039.921" id="SEGMENT"/>
-                <segment start="-1777.799 18.170 1039.921" end="-1708.251 18.778 1007.757" id="SEGMENT"/>
-                <segment start="-1708.251 18.778 1007.757" end="-1643.033 18.864 990.403" id="SEGMENT"/>
-                <segment start="-1643.033 18.864 990.403" end="-1623.396 19.226 987.944" id="SEGMENT"/>
-                <segment start="-1623.396 19.226 987.944" end="-1617.397 19.120 1013.676" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="55005.187500" capacity="55005.187500"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/cow00.xml" uniqueId="orchardpasture1" position="-1609.735 19.223 1068.402" rotation="0.00 -79.32 0.00" age="0.000000" price="8000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage />
-        </husbandry>
-        <husbandryFence>
-            <fence>
-                <segment start="-1608.799 19.223 1070.261" end="-1604.634 19.890 1098.236" id="SEGMENT"/>
-                <segment start="-1604.634 19.890 1098.236" end="-1825.046 17.829 1163.019" id="SEGMENT"/>
-                <segment start="-1825.046 17.829 1163.019" end="-1848.765 17.589 1170.255" id="SEGMENT"/>
-                <segment start="-1848.765 17.589 1170.255" end="-1861.203 17.358 1118.421" id="SEGMENT"/>
-                <segment start="-1861.203 17.358 1118.421" end="-1804.684 17.957 1099.788" id="SEGMENT"/>
-                <segment start="-1804.684 17.957 1099.788" end="-1613.336 19.135 1043.258" id="SEGMENT"/>
-                <segment start="-1613.336 19.135 1043.258" end="-1610.096 19.172 1063.382" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="59860.257812" capacity="59860.257812"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/cow00.xml" uniqueId="glebecows" position="1383.889 47.424 1549.734" rotation="0.00 22.76 0.00" age="0.000000" price="8000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.000000" productionFactor="0.400000">
-            <storage />
-        </husbandry>
-        <husbandryAnimals>
-            <clusters>
-                <animal subType="COW_HOLSTEIN" numAnimals="20" age="18" health="2" reproduction="0"/>
-            </clusters>
-        </husbandryAnimals>
-        <husbandryFence>
-            <fence>
-                <segment start="1385.510 47.424 1548.430" end="1406.571 46.021 1540.448" id="SEGMENT"/>
-                <segment start="1406.571 46.021 1540.448" end="1405.809 36.983 1663.993" id="SEGMENT"/>
-                <segment start="1405.809 36.983 1663.993" end="1336.676 38.050 1678.144" id="SEGMENT"/>
-                <segment start="1336.676 38.050 1678.144" end="1348.032 39.061 1651.069" id="SEGMENT"/>
-                <segment start="1348.032 39.061 1651.069" end="1350.669 41.088 1629.254" id="SEGMENT"/>
-                <segment start="1350.669 41.088 1629.254" end="1334.131 48.186 1570.143" id="SEGMENT"/>
-                <segment start="1334.131 48.186 1570.143" end="1379.056 47.564 1551.138" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="31948.007812" capacity="32239.673828"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/cow00.xml" uniqueId="BigBank" position="1442.749 35.179 1677.007" rotation="0.00 -0.00 0.00" age="0.000000" price="8000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage />
-        </husbandry>
-        <husbandryFence>
-            <fence>
-                <segment start="1444.749 35.179 1676.432" end="1456.292 34.542 1679.501" id="SEGMENT"/>
-                <segment start="1456.292 34.542 1679.501" end="1462.738 35.331 1701.268" id="SEGMENT"/>
-                <segment start="1462.738 35.331 1701.268" end="1422.245 36.283 1702.929" id="SEGMENT"/>
-                <segment start="1422.245 36.283 1702.929" end="1416.135 37.657 1730.380" id="SEGMENT"/>
-                <segment start="1416.135 37.657 1730.380" end="1412.820 38.790 1743.250" id="SEGMENT"/>
-                <segment start="1412.820 38.790 1743.250" end="1389.266 45.423 1791.858" id="SEGMENT"/>
-                <segment start="1389.266 45.423 1791.858" end="1362.638 57.796 1848.363" id="SEGMENT"/>
-                <segment start="1362.638 57.796 1848.363" end="1310.062 60.330 1860.704" id="SEGMENT"/>
-                <segment start="1310.062 60.330 1860.704" end="1315.701 48.533 1811.440" id="SEGMENT"/>
-                <segment start="1315.701 48.533 1811.440" end="1327.636 39.652 1736.764" id="SEGMENT"/>
-                <segment start="1327.636 39.652 1736.764" end="1333.891 38.075 1700.489" id="SEGMENT"/>
-                <segment start="1333.891 38.075 1700.489" end="1422.186 35.966 1676.528" id="SEGMENT"/>
-                <segment start="1422.186 35.966 1676.528" end="1437.749 35.305 1676.432" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="56606.792969" capacity="56606.792969"/>
-        </husbandryMeadow>
-    </placeable>
+
+ 
+  
+  
+ 
     <placeable filename="data/placeables/mapEU/brandless/buildings/farmStable/farmStable.xml" uniqueId="thamesfarmStable" position="1187.088 6.601 -1619.120" rotation="0.00 17.41 0.00" age="0.000000" price="44000.000000"  boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
@@ -2658,13 +2519,13 @@
             <fillType name="GRASS_WINDROW" fillLevel="398379.031250" capacity="398379.031250"/>
         </husbandryMeadow>
     </placeable>
-    <placeable filename="data/placeables/mapAS/farmShacksAS/shackContainer02.xml" uniqueId="placeablede05279a455d895fec84fdeed227b498" position="1451.006 6.409 -1715.400" rotation="180.00 -21.82 180.00" age="0.000000" price="5000.000000" farmId="0">
+    <placeable filename="data/placeables/mapAS/farmShacksAS/shackContainer02.xml" uniqueId="placeablede05279a455d895fec84fdeed227b498" position="1451.006 6.409 -1715.400" rotation="180.00 -21.82 180.00" age="0.000000" price="5000.000000" farmId="0" boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
     </placeable>
 	
-	    <placeable modName="FS25_Large_Shed_Agua_Limpa_Farm" filename="$moddir$FS25_Large_Shed_Agua_Limpa_Farm/xml/largeShedAguaLimpaFarm_Workshop.xml" uniqueId="Estate largeShed" position="-1139.98803711 19.36964989 112.76279449" rotation="0 80.26467133 0" age="0.000000" price="90000.000000" boughtWithFarmlandOverwrite="true" >
+	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_Shed/ukShed.xml" uniqueId="Estate largeShed" position="-1136.18005371 19.39679909 114.78500366" rotation="0 84.64959717 -0.00010208" age="0.000000" price="90000.000000" boughtWithFarmlandOverwrite="true" >
         <configuration name="color" id="1" isActive="true"/>
         <animatedObjects>
             <animatedObject time="1.000000" direction="0"/>
@@ -2673,7 +2534,7 @@
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
     </placeable>
-		    <placeable modName="FS25_Large_Shed_Agua_Limpa_Farm" filename="$moddir$FS25_Large_Shed_Agua_Limpa_Farm/xml/largeShedAguaLimpaFarm_Workshop.xml" uniqueId="Orchard largeShed" position="-1604.20825195 19.59533119 958.6817627" rotation="-179.99998474 79.98686218 -179.99998474" age="0.000000" price="90000.000000" boughtWithFarmlandOverwrite="true" >
+		    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_UK_Shed/ukShed.xml" uniqueId="Orchard largeShed" position="-1601.43994141 19.59530067 957.43597412" rotation="-179.99998474 82.05467224 179.99998474" age="0.000000" price="90000.000000" boughtWithFarmlandOverwrite="true" >
         <configuration name="color" id="1" isActive="true"/>
         <animatedObjects>
             <animatedObject time="1.000000" direction="0"/>
@@ -2684,4 +2545,56 @@
     </placeable>
     <placeable filename="data/placeables/brandless/decoration/statues/stoneStatues05.xml" uniqueId="placeable4d786e408bc4512007ba77077763d7e5" position="490.050 24.156 -143.102" rotation="0.00 -0.00 0.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/statues/stoneStatues05.xml" uniqueId="placeable3fb70d59780612e28a3d0fd622d8d6dc" position="484.656 24.079 -150.446" rotation="180.00 -67.62 180.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
+	
+	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm02" position="-1620.003 19.183 1068.894" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryAnimals>
+            <clusters>
+                <animal subType="COW_SWISS_BROWN" numAnimals="10" age="0" health="0" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFence>
+            <fence>
+                <segment start="-1617.341 19.266 1069.299" end="-1611.431 19.585 1099.769" id="SEGMENT"/>
+                <segment start="-1611.431 19.585 1099.769" end="-1742.027 18.401 1133.508" id="SEGMENT"/>
+                <segment start="-1742.027 18.401 1133.508" end="-1845.414 17.490 1166.401" id="SEGMENT"/>
+                <segment start="-1845.414 17.490 1166.401" end="-1858.498 17.543 1119.296" id="SEGMENT"/>
+                <segment start="-1858.498 17.543 1119.296" end="-1619.130 19.108 1047.042" id="SEGMENT"/>
+                <segment start="-1619.130 19.108 1047.042" end="-1617.565 19.143 1059.922" id="SEGMENT"/>
+                <segment start="-1617.565 19.143 1059.922" end="-1617.796 19.181 1067.351" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="52561.265625" capacity="52561.265625"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm01" position="-1628.293 19.093 1028.263" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryAnimals>
+            <clusters>
+                <animal subType="COW_SWISS_BROWN" numAnimals="10" age="18" health="0" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFence>
+            <fence>
+                <segment start="-1625.631 19.177 1028.668" end="-1624.292 19.087 1043.178" id="SEGMENT"/>
+                <segment start="-1624.292 19.087 1043.178" end="-1857.156 17.526 1111.698" id="SEGMENT"/>
+                <segment start="-1857.156 17.526 1111.698" end="-1859.170 17.679 1083.694" id="SEGMENT"/>
+                <segment start="-1859.170 17.679 1083.694" end="-1766.173 18.340 1037.976" id="SEGMENT"/>
+                <segment start="-1766.173 18.340 1037.976" end="-1690.837 18.874 1008.672" id="SEGMENT"/>
+                <segment start="-1690.837 18.874 1008.672" end="-1632.549 18.990 992.902" id="SEGMENT"/>
+                <segment start="-1632.549 18.990 992.902" end="-1625.628 19.029 1003.216" id="SEGMENT"/>
+                <segment start="-1625.628 19.029 1003.216" end="-1626.086 19.093 1026.720" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="47051.789062" capacity="47051.789062"/>
+        </husbandryMeadow>
+    </placeable>
 </placeables>

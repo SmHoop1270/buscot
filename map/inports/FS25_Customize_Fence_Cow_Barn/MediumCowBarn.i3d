@@ -237,7 +237,7 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="MediumCowBarn" lockedgroup="true" translation="6.27407 0 0" nodeId="119">
+    <TransformGroup name="MediumCowBarn" lockedgroup="true" translation="6.27407 0 0" clipDistance="400" nodeId="119">
       <TransformGroup name="clearAreas" translation="0 0.09 0" nodeId="120">
         <TransformGroup name="clearAreaStart01" translation="18.8 0 25" nodeId="121">
           <TransformGroup name="clearAreaWidth01" translation="-50 0 0" nodeId="122"/>
