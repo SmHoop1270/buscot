@@ -86,6 +86,8 @@
 	 <storeItem xmlFilename="map/inports/FS25_UK_Shed/ukShed.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Milk/xml/cowFence.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Sheep/xml/sheepSmallAutoWater.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Sheep/xml/sheepFence.xml" />
 	 <!--Sellpoints-->
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric02.xml" />
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric03.xml" />

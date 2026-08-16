@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="cowHusbandryPastureStraw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+            <en>Sheep_Pasture_Wool</en></name>
+        <image>map/inports/FS25_OpenPastures_Sheep/sheeps.png</image>
+        <price>35000</price>
+        <functions>
+            <function>$l10n_function_animalPenSheep</function>
+            <function>$l10n_function_adjustableMeadow</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>75</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>sheeps</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+    <base>
+        <filename>map/inports/FS25_OpenPastures_Sheep/i3d/sheepSmall.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+            <placeLayered template="sheepLayer"/>
+        </sounds>
+    </placement>
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
+    </leveling>
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+    <foliageAreas/>
+    <triggerMarkers>
+        <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIconWater.i3d"/>
+        <triggerMarker node="markerFood" filename="$data/shared/assets/marker/markerIconFood.i3d"/>
+        <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIconAnimals.i3d"/>
+        <triggerMarker node="markerBales" filename="$data/shared/assets/marker/markerIconBales.i3d"/>
+    </triggerMarkers>
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+    </tipOcclusionUpdateAreas>
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+        </updateAreas>
+    </ai>
+    <hotspots>
+        <hotspot type="SHEEP" teleportNode="teleportNode"/>
+    </hotspots>
+    <infoTrigger triggerNode="infoTrigger"/>
+    <husbandry saveId="Animals_SHEEP" hasStatistics="false">
+        <storage node="storage" fillTypes="STRAW" isExtension="false">
+            <capacity fillType="STRAW" capacity="2700000" />
+        </storage>
+
+        <pallets>
+            <palletSpawner fillTypes="WOOL" maxNumPallets="8">
+                <palletTrigger node="palletTrigger" />
+                <spawnPlaces>
+                    <spawnPlace startNode="palletArea1Start" endNode="palletArea1End" />
+                    <spawnPlace startNode="palletArea2Start" endNode="palletArea2End" />
+                </spawnPlaces>
+            </palletSpawner>
+        </pallets>
+        <animals type="SHEEP" sqmPerAnimal="100" maxNumAnimals="600" maxNumVisualAnimals="60">
+            <navigation rootNode="navigationRootNode"/>
+            <loadingTrigger node="loadingTrigger"/>
+        </animals>
+        <straw>
+            <manure factor="1.5" />
+            <strawPlane node="strawPlane" minY="0.0" maxY="0.5" colorChange="false" />
+        </straw>
+        <food capacity="1125000">
+            <foodPlaces>
+                <foodPlace node="foodPlace1"/>
+                <foodPlace node="foodPlace2"/>
+                <foodPlace node="foodPlace3"/>
+                <foodPlace node="foodPlace4"/>
+                <foodPlace node="foodPlace5"/>
+                <foodPlace node="foodPlace6"/>
+                <foodPlace node="foodPlace7"/>
+                <foodPlace node="foodPlace8"/>
+            </foodPlaces>
+            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="30" maxSubDivEdgeLength="0.5" capacity="1125000"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood" aiNode="foodAINode"/>
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="200"/>
+        </food>
+        <water automaticWaterSupply="true">
+            <waterPlaces>
+                <waterPlace node="waterPlace1"/>
+            </waterPlaces>
+        </water>
+        <fence xmlFilename="map/inports/FS25_OpenPastures_Sheep/xml/sheepFence.xml">
+            <sections>
+                <section segmentId="SEGMENT" customizable="true">
+                    <node node="fence1Node1"/>
+                    <node node="fence1Node2"/>
+                    <node node="fence1Node3"/>
+                    <node node="fence1Node4"/>
+                    <node node="fence1Node5"/>
+                    <node node="fence1Node6"/>
+                </section>
+            </sections>
+        </fence>
+        <meadow>
+            <fruitType name="GRASS" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall"/>
+            <fruitType name="MEADOW" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall"/>
+            <createTask weedState="0">
+                <fruit type="MEADOW" growthState="greenSmall"/>
+                <ground type="NONE"/>
+                <terrainGroundType name="grass"/>
+            </createTask>
+            <clearTask>
+                <fruit type="UNKNOWN" growthState="0"/>
+                <ground type="NONE"/>
+                <terrainGroundType name="dirt"/>
+                <polygon>
+                    <node node="clearAreaPoint1"/>
+                    <node node="clearAreaPoint2"/>
+                    <node node="clearAreaPoint3"/>
+                    <node node="clearAreaPoint4"/>
+                    <node node="clearAreaPoint5"/>
+                    <node node="clearAreaPoint6"/>
+                </polygon>
+            </clearTask>
+        </meadow>
+    </husbandry>
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="waterFill" filename="map/inports/FS25_OpenPastures_Sheep/i3d/waterFill.i3d" />
+    </dynamicallyLoadedParts>
+    <colorConfigurations>
+        <material slotName="mainColor_mat" />
+        <colorConfiguration color="RUDOLFHOERMANN_RED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_GREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BEIGE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BLUE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WHITEALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_OXIDRED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODDARK"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODBRIGHT"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
+    </colorConfigurations>
+    <i3dMappings>
+        <i3dMapping id="clearArea1Start" node="0>0|0"/>
+        <i3dMapping id="clearArea1Width" node="0>0|0|0"/>
+        <i3dMapping id="clearArea1Height" node="0>0|0|1"/>
+        <i3dMapping id="levelArea1Start" node="0>1|0"/>
+        <i3dMapping id="levelArea1Width" node="0>1|0|0"/>
+        <i3dMapping id="levelArea1Height" node="0>1|0|1"/>
+        <i3dMapping id="testArea1Start" node="0>2|0"/>
+        <i3dMapping id="testArea1End" node="0>2|0|0"/>
+        <i3dMapping id="indoorArea1Start" node="0>3|0"/>
+        <i3dMapping id="indoorArea1Width" node="0>3|0|0"/>
+        <i3dMapping id="indoorArea1Height" node="0>3|0|1"/>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0"/>
+        <i3dMapping id="fillVolumeFood" node="0>5|0"/>
+        <i3dMapping id="exactFillRootNodeFood" node="0>5|1"/>
+        <i3dMapping id="foodAINode" node="0>5|2"/>
+        <i3dMapping id="baleTrigger" node="0>5|3"/>
+        <i3dMapping id="foodPlace1" node="0>5|4|0"/>
+        <i3dMapping id="foodPlace2" node="0>5|4|1"/>
+        <i3dMapping id="foodPlace3" node="0>5|4|2"/>
+        <i3dMapping id="foodPlace4" node="0>5|4|3"/>
+        <i3dMapping id="foodPlace5" node="0>5|4|4"/>
+        <i3dMapping id="foodPlace6" node="0>5|4|5"/>
+        <i3dMapping id="foodPlace7" node="0>5|4|6"/>
+        <i3dMapping id="foodPlace8" node="0>5|4|7"/>
+        <i3dMapping id="teleportNode" node="0>6"/>
+        <i3dMapping id="storage" node="0>7"/>
+        <i3dMapping id="palletTrigger" node="0>8|0"/>
+        <i3dMapping id="palletArea1Start" node="0>8|1"/>
+        <i3dMapping id="palletArea1End" node="0>8|1|0"/>
+        <i3dMapping id="palletArea2Start" node="0>8|2"/>
+        <i3dMapping id="palletArea2End" node="0>8|2|0"/>
+        <i3dMapping id="clearAreaPoint1" node="0>9|0|0"/>
+        <i3dMapping id="clearAreaPoint2" node="0>9|0|1"/>
+        <i3dMapping id="clearAreaPoint3" node="0>9|0|2"/>
+        <i3dMapping id="clearAreaPoint4" node="0>9|0|3"/>
+        <i3dMapping id="clearAreaPoint5" node="0>9|0|4"/>
+        <i3dMapping id="clearAreaPoint6" node="0>9|0|5"/>
+        <i3dMapping id="navigationRootNode" node="0>10"/>
+        <i3dMapping id="navmeshBlockingNode" node="0>10|0"/>
+        <i3dMapping id="exactFillRootNodeWater" node="0>11|0"/>
+        <i3dMapping id="waterPlace1" node="0>11|1|0"/>
+        <i3dMapping id="waterAINode" node="0>11|2"/>
+        <i3dMapping id="waterPlane" node="0>11|3"/>
+        <i3dMapping id="infoTrigger" node="0>12"/>
+        <i3dMapping id="loadingTrigger" node="0>13"/>
+        <i3dMapping id="fence1Node1" node="0>14|0|0|0"/>
+        <i3dMapping id="fence1Node2" node="0>14|0|0|1"/>
+        <i3dMapping id="fence1Node3" node="0>14|0|0|2"/>
+        <i3dMapping id="fence1Node4" node="0>14|0|0|3"/>
+        <i3dMapping id="fence1Node5" node="0>14|0|0|4"/>
+        <i3dMapping id="fence1Node6" node="0>14|0|0|5"/>
+        <i3dMapping id="markerAnimals" node="0>14|1|0"/>
+        <i3dMapping id="markerFood" node="0>14|1|1"/>
+        <i3dMapping id="markerWater" node="0>14|1|2"/>
+        <i3dMapping id="markerBales" node="0>14|1|3"/>
+        <i3dMapping id="waterFill" node="0>14|2"/>
+        <i3dMapping id="waterTank" node="0>14|3"/>
+        <i3dMapping id="strawPlane" node="0>16|0"/>
+        <i3dMapping id="exactFillRootNodeStraw" node="0>16|1"/>
+    </i3dMappings>
+</placeable>

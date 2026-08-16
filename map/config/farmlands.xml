@@ -20,7 +20,7 @@
         <farmland id="17" priceScale="1" npcName="FARMER" name="17 Bottom"/>
         <farmland id="18" priceScale="1" npcName="FARMER" name="18 BackField"/>
         <farmland id="19" priceScale="1" npcName="FARMER" name="19 ArthursBank"/>
-        <farmland id="20" priceScale="1" npcName="FARMER" name="20 Thames Farm"/>
+        <farmland id="20" priceScale="1" npcName="FARMER" name="20 Strip"/>
         <farmland id="21" priceScale="1" npcName="FARMER" name="21 LowerMeadow"/>
         <farmland id="22" priceScale="1" npcName="FARMER" name="22 Backside"/>
         <farmland id="23" priceScale="1" npcName="FARMER" name="23 Lickey End"/>
@@ -174,9 +174,9 @@
     <farmland id="171" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false"/>
     <farmland id="172" priceScale="1" npcName="FORESTER" name="Edwards Tractor Sales"/>
     <farmland id="173" priceScale="1" npcName="FORESTER" name="Glebe Farm" />
-    <farmland id="174" priceScale="1" npcName="FORESTER" />
-    <farmland id="175" priceScale="1" npcName="FORESTER" />
-    <farmland id="176" priceScale="1" npcName="FORESTER" />
+    <farmland id="174" priceScale="1" npcName="FORESTER" name="Pasture 1"/>
+    <farmland id="175" priceScale="1" npcName="FORESTER" name="Pasture 2"/>
+    <farmland id="176" priceScale="1" npcName="FORESTER" name="Pasture 3"/>
     <farmland id="177" priceScale="1" npcName="FORESTER" />
     <farmland id="178" priceScale="1" npcName="FORESTER" />
     <farmland id="179" priceScale="1" npcName="FORESTER" />

@@ -2461,64 +2461,7 @@
             <storage />
         </husbandry>
     </placeable>
-    <placeable modName="FS25_Customize_Fence_Cow_Barn" filename="$moddir$FS25_Customize_Fence_Cow_Barn/MediumCowBarn.xml" uniqueId="buscotcows" position="-19.859 21.230 1101.474" rotation="-180.00 88.15 180.00" age="0.000000" price="80000.000000"  boughtWithFarmlandOverwrite="true">
-        <animatedObjects>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-        </animatedObjects>
-        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage />
-        </husbandry>
-        <husbandryFence>
-            <fence>
-                <segment start="-2.954 21.230 1124.221" end="18.761 21.338 1124.521" id="SEGMENT"/>
-                <segment start="18.761 21.338 1124.521" end="19.001 20.981 1077.991" id="SEGMENT"/>
-                <segment start="19.001 20.981 1077.991" end="29.814 20.952 1078.159" id="SEGMENT"/>
-                <segment start="29.814 20.952 1078.159" end="48.685 20.914 1066.610" id="SEGMENT"/>
-                <segment start="48.685 20.914 1066.610" end="52.183 20.897 1062.664" id="SEGMENT"/>
-                <segment start="52.183 20.897 1062.664" end="61.867 20.688 1037.031" id="SEGMENT"/>
-                <segment start="61.867 20.688 1037.031" end="76.418 20.462 1014.230" id="SEGMENT"/>
-                <segment start="76.418 20.462 1014.230" end="79.199 20.504 1008.135" id="SEGMENT"/>
-                <segment start="79.199 20.504 1008.135" end="192.031 21.013 1023.609" id="SEGMENT"/>
-                <segment start="192.031 21.013 1023.609" end="193.795 21.640 1069.865" id="SEGMENT"/>
-                <segment start="193.795 21.640 1069.865" end="203.495 21.402 1080.902" id="SEGMENT"/>
-                <segment start="203.495 21.402 1080.902" end="226.065 21.528 1089.576" id="SEGMENT"/>
-                <segment start="226.065 21.528 1089.576" end="229.026 21.428 1140.679" id="SEGMENT"/>
-                <segment start="229.026 21.428 1140.679" end="209.810 21.370 1171.342" id="SEGMENT"/>
-                <segment start="209.810 21.370 1171.342" end="207.052 21.994 1184.567" id="SEGMENT"/>
-                <segment start="207.052 21.994 1184.567" end="206.457 22.154 1219.333" id="SEGMENT"/>
-                <segment start="206.457 22.154 1219.333" end="207.242 22.346 1246.344" id="SEGMENT"/>
-                <segment start="207.242 22.346 1246.344" end="190.579 22.695 1258.017" id="SEGMENT"/>
-                <segment start="190.579 22.695 1258.017" end="182.545 22.741 1265.198" id="SEGMENT"/>
-                <segment start="182.545 22.741 1265.198" end="177.414 23.020 1275.119" id="SEGMENT"/>
-                <segment start="177.414 23.020 1275.119" end="178.644 22.973 1296.628" id="SEGMENT"/>
-                <segment start="178.644 22.973 1296.628" end="176.911 23.424 1321.419" id="SEGMENT"/>
-                <segment start="176.911 23.424 1321.419" end="176.905 23.271 1362.395" id="SEGMENT"/>
-                <segment start="176.905 23.271 1362.395" end="174.030 23.578 1391.493" id="SEGMENT"/>
-                <segment start="174.030 23.578 1391.493" end="170.801 23.763 1412.034" id="SEGMENT"/>
-                <segment start="170.801 23.763 1412.034" end="163.720 23.942 1417.016" id="SEGMENT"/>
-                <segment start="163.720 23.942 1417.016" end="126.268 24.192 1416.302" id="SEGMENT"/>
-                <segment start="126.268 24.192 1416.302" end="96.974 24.516 1418.897" id="SEGMENT"/>
-                <segment start="96.974 24.516 1418.897" end="53.885 24.752 1420.454" id="SEGMENT"/>
-                <segment start="53.885 24.752 1420.454" end="-32.921 24.789 1424.035" id="SEGMENT"/>
-                <segment start="-32.921 24.789 1424.035" end="-49.499 24.471 1419.483" id="SEGMENT"/>
-                <segment start="-49.499 24.471 1419.483" end="-59.275 24.510 1411.826" id="SEGMENT"/>
-                <segment start="-59.275 24.510 1411.826" end="-61.261 24.140 1395.728" id="SEGMENT"/>
-                <segment start="-61.261 24.140 1395.728" end="-60.030 22.857 1270.702" id="SEGMENT"/>
-                <segment start="-60.030 22.857 1270.702" end="-58.317 21.735 1129.556" id="SEGMENT"/>
-                <segment start="-58.317 21.735 1129.556" end="-57.924 21.651 1117.422" id="SEGMENT"/>
-                <segment start="-57.924 21.651 1117.422" end="-39.463 21.323 1114.092" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <manureHeap manureToDrop="0" manureToPick="0"/>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="398379.031250" capacity="398379.031250"/>
-        </husbandryMeadow>
-    </placeable>
+   
     <placeable filename="data/placeables/mapAS/farmShacksAS/shackContainer02.xml" uniqueId="placeablede05279a455d895fec84fdeed227b498" position="1451.006 6.409 -1715.400" rotation="180.00 -21.82 180.00" age="0.000000" price="5000.000000" farmId="0" boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
@@ -2595,6 +2538,173 @@
         </husbandryFence>
         <husbandryMeadow>
             <fillType name="GRASS_WINDROW" fillLevel="47051.789062" capacity="47051.789062"/>
+        </husbandryMeadow>
+    </placeable>
+	    <placeable modName="FS25_Customize_Fence_Cow_Barn" filename="$moddir$FS25_Customize_Fence_Cow_Barn/MediumCowBarn.xml" uniqueId="Cherrytree farm" position="-19.834 21.222 1101.360" rotation="180.00 88.10 -180.00" age="0.000000" price="80000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="-2.907 21.222 1124.092" end="-5.335 21.397 1133.912" id="SEGMENT"/>
+                <segment start="-5.335 21.397 1133.912" end="-61.727 21.779 1134.786" id="SEGMENT"/>
+                <segment start="-61.727 21.779 1134.786" end="-60.330 21.619 1113.545" id="SEGMENT"/>
+                <segment start="-60.330 21.619 1113.545" end="-39.426 21.310 1113.996" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="2230.885010" capacity="2230.885010"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 1" position="28.978 21.346 1124.109" rotation="-180.00 88.10 180.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="26.446 21.429 1123.192" end="15.762 21.071 1083.139" id="SEGMENT"/>
+                <segment start="15.762 21.071 1083.139" end="34.847 20.972 1081.164" id="SEGMENT"/>
+                <segment start="34.847 20.972 1081.164" end="48.460 20.984 1073.326" id="SEGMENT"/>
+                <segment start="48.460 20.984 1073.326" end="57.953 20.921 1060.892" id="SEGMENT"/>
+                <segment start="57.953 20.921 1060.892" end="71.773 20.736 1036.820" id="SEGMENT"/>
+                <segment start="71.773 20.736 1036.820" end="89.460 20.605 1012.466" id="SEGMENT"/>
+                <segment start="89.460 20.605 1012.466" end="149.790 20.947 1020.767" id="SEGMENT"/>
+                <segment start="149.790 20.947 1020.767" end="183.003 21.030 1028.621" id="SEGMENT"/>
+                <segment start="183.003 21.030 1028.621" end="179.592 21.134 1048.302" id="SEGMENT"/>
+                <segment start="179.592 21.134 1048.302" end="177.303 21.248 1057.424" id="SEGMENT"/>
+                <segment start="177.303 21.248 1057.424" end="178.361 21.345 1065.008" id="SEGMENT"/>
+                <segment start="178.361 21.345 1065.008" end="181.585 21.409 1070.960" id="SEGMENT"/>
+                <segment start="181.585 21.409 1070.960" end="189.236 21.430 1076.881" id="SEGMENT"/>
+                <segment start="189.236 21.430 1076.881" end="223.959 21.312 1096.153" id="SEGMENT"/>
+                <segment start="223.959 21.312 1096.153" end="224.842 21.551 1118.259" id="SEGMENT"/>
+                <segment start="224.842 21.551 1118.259" end="227.225 21.699 1138.856" id="SEGMENT"/>
+                <segment start="227.225 21.699 1138.856" end="213.644 22.018 1163.221" id="SEGMENT"/>
+                <segment start="213.644 22.018 1163.221" end="207.663 21.866 1167.831" id="SEGMENT"/>
+                <segment start="207.663 21.866 1167.831" end="203.755 22.261 1212.490" id="SEGMENT"/>
+                <segment start="203.755 22.261 1212.490" end="204.561 22.298 1225.601" id="SEGMENT"/>
+                <segment start="204.561 22.298 1225.601" end="204.930 22.340 1234.446" id="SEGMENT"/>
+                <segment start="204.930 22.340 1234.446" end="128.657 22.818 1226.297" id="SEGMENT"/>
+                <segment start="128.657 22.818 1226.297" end="47.885 22.430 1214.511" id="SEGMENT"/>
+                <segment start="47.885 22.430 1214.511" end="24.766 22.309 1211.190" id="SEGMENT"/>
+                <segment start="24.766 22.309 1211.190" end="26.512 21.349 1125.191" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="151205.281250" capacity="151205.281250"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 2" position="40.483 22.502 1232.235" rotation="0.00 42.26 0.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="39.542 22.585 1229.712" end="44.992 22.452 1221.224" id="SEGMENT"/>
+                <segment start="44.992 22.452 1221.224" end="204.313 22.463 1242.908" id="SEGMENT"/>
+                <segment start="204.313 22.463 1242.908" end="201.084 22.507 1250.840" id="SEGMENT"/>
+                <segment start="201.084 22.507 1250.840" end="181.564 22.599 1260.107" id="SEGMENT"/>
+                <segment start="181.564 22.599 1260.107" end="173.930 22.817 1268.711" id="SEGMENT"/>
+                <segment start="173.930 22.817 1268.711" end="171.401 22.845 1285.961" id="SEGMENT"/>
+                <segment start="171.401 22.845 1285.961" end="168.891 23.576 1394.227" id="SEGMENT"/>
+                <segment start="168.891 23.576 1394.227" end="168.219 23.763 1407.135" id="SEGMENT"/>
+                <segment start="168.219 23.763 1407.135" end="160.196 23.960 1413.332" id="SEGMENT"/>
+                <segment start="160.196 23.960 1413.332" end="61.071 24.677 1417.246" id="SEGMENT"/>
+                <segment start="61.071 24.677 1417.246" end="43.069 24.737 1417.554" id="SEGMENT"/>
+                <segment start="43.069 24.737 1417.554" end="35.759 23.687 1344.291" id="SEGMENT"/>
+                <segment start="35.759 23.687 1344.291" end="27.673 22.585 1243.679" id="SEGMENT"/>
+                <segment start="27.673 22.585 1243.679" end="34.730 22.497 1232.437" id="SEGMENT"/>
+                <segment start="34.730 22.497 1232.437" end="28.538 22.501 1232.340" id="SEGMENT"/>
+                <segment start="28.538 22.501 1232.340" end="32.861 22.475 1227.374" id="SEGMENT"/>
+                <segment start="32.861 22.475 1227.374" end="38.062 22.502 1231.057" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="113062.820312" capacity="113062.820312"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="oaktreefarm" position="-126.225 33.327 1795.096" rotation="-180.00 -89.79 -180.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="-123.729 33.410 1796.106" end="-126.366 33.735 1815.911" id="SEGMENT"/>
+                <segment start="-126.366 33.735 1815.911" end="-181.071 32.528 1831.602" id="SEGMENT"/>
+                <segment start="-181.071 32.528 1831.602" end="-186.446 31.503 1784.569" id="SEGMENT"/>
+                <segment start="-186.446 31.503 1784.569" end="-201.592 31.311 1709.834" id="SEGMENT"/>
+                <segment start="-201.592 31.311 1709.834" end="-201.671 31.330 1703.946" id="SEGMENT"/>
+                <segment start="-201.671 31.330 1703.946" end="-159.765 29.830 1700.490" id="SEGMENT"/>
+                <segment start="-159.765 29.830 1700.490" end="-160.078 30.873 1737.382" id="SEGMENT"/>
+                <segment start="-160.078 30.873 1737.382" end="-155.682 31.252 1743.096" id="SEGMENT"/>
+                <segment start="-155.682 31.252 1743.096" end="-135.935 31.763 1744.000" id="SEGMENT"/>
+                <segment start="-135.935 31.763 1744.000" end="-135.156 32.627 1765.887" id="SEGMENT"/>
+                <segment start="-135.156 32.627 1765.887" end="-127.432 33.006 1776.526" id="SEGMENT"/>
+                <segment start="-127.432 33.006 1776.526" end="-123.137 33.238 1787.305" id="SEGMENT"/>
+                <segment start="-123.137 33.238 1787.305" end="-123.721 33.291 1794.106" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="22867.117188" capacity="22867.117188"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarm" position="1388.882 46.946 1559.449" rotation="0.00 26.33 0.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="1388.669 47.029 1556.765" end="1404.916 46.173 1545.538" id="SEGMENT"/>
+                <segment start="1404.916 46.173 1545.538" end="1405.853 37.624 1653.718" id="SEGMENT"/>
+                <segment start="1405.853 37.624 1653.718" end="1404.370 37.010 1663.164" id="SEGMENT"/>
+                <segment start="1404.370 37.010 1663.164" end="1336.715 38.112 1676.225" id="SEGMENT"/>
+                <segment start="1336.715 38.112 1676.225" end="1348.495 39.306 1646.904" id="SEGMENT"/>
+                <segment start="1348.495 39.306 1646.904" end="1351.624 42.441 1619.567" id="SEGMENT"/>
+                <segment start="1351.624 42.441 1619.567" end="1333.717 48.204 1569.920" id="SEGMENT"/>
+                <segment start="1333.717 48.204 1569.920" end="1377.256 47.595 1552.883" id="SEGMENT"/>
+                <segment start="1377.256 47.595 1552.883" end="1386.877 46.946 1557.652" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="30265.527344" capacity="30265.527344"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarmbottom" position="1437.680 35.479 1691.336" rotation="0.00 -84.63 0.00" age="0.000000" price="35000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="1440.263 35.562 1692.098" end="1440.884 35.824 1701.130" id="SEGMENT"/>
+                <segment start="1440.884 35.824 1701.130" end="1421.520 36.329 1703.612" id="SEGMENT"/>
+                <segment start="1421.520 36.329 1703.612" end="1413.082 38.263 1737.159" id="SEGMENT"/>
+                <segment start="1413.082 38.263 1737.159" end="1388.880 45.501 1792.280" id="SEGMENT"/>
+                <segment start="1388.880 45.501 1792.280" end="1362.377 57.859 1848.624" id="SEGMENT"/>
+                <segment start="1362.377 57.859 1848.624" end="1319.191 59.741 1857.937" id="SEGMENT"/>
+                <segment start="1319.191 59.741 1857.937" end="1313.811 59.782 1858.380" id="SEGMENT"/>
+                <segment start="1313.811 59.782 1858.380" end="1310.422 59.115 1856.000" id="SEGMENT"/>
+                <segment start="1310.422 59.115 1856.000" end="1320.706 44.478 1787.041" id="SEGMENT"/>
+                <segment start="1320.706 44.478 1787.041" end="1332.610 38.233 1705.036" id="SEGMENT"/>
+                <segment start="1332.610 38.233 1705.036" end="1409.378 36.172 1684.010" id="SEGMENT"/>
+                <segment start="1409.378 36.172 1684.010" end="1440.953 35.291 1681.518" id="SEGMENT"/>
+                <segment start="1440.953 35.291 1681.518" end="1440.076 35.474 1690.107" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="52684.718750" capacity="52684.718750"/>
         </husbandryMeadow>
     </placeable>
 </placeables>

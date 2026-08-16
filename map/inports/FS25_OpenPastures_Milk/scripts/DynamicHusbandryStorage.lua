@@ -1,5 +1,5 @@
 -- DynamicHusbandryStorage - scales a husbandry pen's animal capacity AND its
--- food/water/straw/milk storage capacity to match the actual fenced pasture area.
+-- food/water/straw/output storage capacity to match the actual fenced pasture area.
 --
 -- IMPORTANT: this does NOT use self:getMaxNumOfAnimals(). That call returns
 -- spec.maxNumAnimals or spec.baseMaxNumAnimals - and spec.maxNumAnimals is never assigned
@@ -22,13 +22,19 @@
 -- Only touches placeables belonging to THIS mod (checked via customEnvironment), even
 -- though the specialization is injected into the shared base-game placeable type.
 --
--- Safety property: every per-animal rate below is (static XML capacity at MAX_ANIMALS) /
--- MAX_ANIMALS. Since our computed count is clamped to that same hard cap (both are 500),
--- the computed capacity can never exceed the capacity the engine already sized its
--- storage/serialization for at onLoad - so this never needs to touch FILLLEVEL_NUM_BITS or
--- any other width/serialization sizing at runtime. If MAX_ANIMALS or maxNumAnimals in the
--- XML ever changes, both must be updated together and the static <capacity>/<food capacity>
--- values in cowSmallAutoWater.xml must be >= MAX_ANIMALS * (per-animal rate).
+-- This specialization is shared across every pasture type this mod ships (cow, sheep, ...).
+-- Each pasture type gets its own cap and per-fillType capacities via PASTURE_CONFIGS below,
+-- looked up by a distinguishing substring of the placeable's own configFileName - a value
+-- the engine guarantees is stable and never touched by the native maxNumAnimals formula this
+-- file's header warns about, unlike self:getMaxNumOfAnimals().
+--
+-- Safety property: every per-animal rate below is (static XML capacity at maxAnimals) /
+-- maxAnimals, using that SAME config's maxAnimals for both halves of the ratio. Since our
+-- computed count is clamped to that same hard cap, the computed capacity can never exceed
+-- the capacity the engine already sized its storage/serialization for at onLoad - so this
+-- never needs to touch FILLLEVEL_NUM_BITS or any other width/serialization sizing at
+-- runtime. If a config's maxAnimals ever changes, the static <capacity>/<food capacity>
+-- values in that pasture type's own XML must be >= maxAnimals * (per-animal rate).
 
 DynamicHusbandryStorage = {}
 
@@ -36,22 +42,50 @@ DynamicHusbandryStorage.MOD_NAME = g_currentModName
 DynamicHusbandryStorage.SPEC_NAME = string.format("%s.dynamicHusbandryStorage", g_currentModName)
 DynamicHusbandryStorage.SPEC_TABLE_NAME = string.format("spec_%s", DynamicHusbandryStorage.SPEC_NAME)
 
--- This mod's hard cap (matches maxNumAnimals="500" in cowSmallAutoWater.xml)
-DynamicHusbandryStorage.MAX_ANIMALS = 500
-
 -- Never scale storage below this many animals' worth, even on a freshly placed,
 -- un-extended pasture, so a tiny pen never ends up with near-zero storage.
 DynamicHusbandryStorage.MIN_ANIMALS_FOR_SCALING = 1
 
---- Per-animal storage capacity, derived from this mod's own static capacities at
---- MAX_ANIMALS, keyed by FillType name (matched via g_fillTypeManager, not raw index,
---- since FillType indices are engine-assigned and not stable enum values).
-DynamicHusbandryStorage.STATIC_CAPACITY_AT_MAX = {
-    MILK = 700000,
-    BUFFALOMILK = 700000,
-    STRAW = 2700000,
+--- Per-pasture-type configuration. `match` is checked against the placeable's own
+--- configFileName (the XML it was loaded from) as a plain substring - first match wins,
+--- so keep these mutually exclusive folder names. Add a new entry here for each new
+--- pasture type this mod ships; nothing else in this file needs to change.
+DynamicHusbandryStorage.PASTURE_CONFIGS = {
+    {
+        match = "FS25_OpenPastures_Milk",
+        label = "cow pasture",
+        maxAnimals = 500,
+        staticCapacityAtMax = {
+            MILK = 700000,
+            BUFFALOMILK = 700000,
+            STRAW = 2700000,
+        },
+        foodStaticCapacityAtMax = 1125000,
+    },
+    {
+        match = "FS25_OpenPastures_Sheep",
+        label = "sheep pasture",
+        maxAnimals = 1000,
+        staticCapacityAtMax = {},
+        foodStaticCapacityAtMax = 1125000,
+    },
 }
-DynamicHusbandryStorage.FOOD_STATIC_CAPACITY_AT_MAX = 1125000
+
+--- Resolve which PASTURE_CONFIGS entry applies to a given placeable instance.
+function DynamicHusbandryStorage.getConfig(placeable)
+    local configFileName = placeable.configFileName
+    if configFileName == nil then
+        return nil
+    end
+
+    for _, config in ipairs(DynamicHusbandryStorage.PASTURE_CONFIGS) do
+        if configFileName:find(config.match, 1, true) ~= nil then
+            return config
+        end
+    end
+
+    return nil
+end
 
 function DynamicHusbandryStorage.prerequisitesPresent(specializations)
     return SpecializationUtil.hasSpecialization(PlaceableHusbandryAnimals, specializations)
@@ -80,6 +114,11 @@ function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
         return
     end
 
+    local config = DynamicHusbandryStorage.getConfig(self)
+    if config == nil then
+        return
+    end
+
     local husbandrySpec = self.spec_husbandry
     local animalsSpec = self.spec_husbandryAnimals
     if husbandrySpec == nil or husbandrySpec.storage == nil or animalsSpec == nil then
@@ -99,14 +138,14 @@ function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
     local rawMaxAnimals = math.floor(navMeshArea / sqmPerAnimal)
 
     local maxAnimals = math.min(math.max(rawMaxAnimals, DynamicHusbandryStorage.MIN_ANIMALS_FOR_SCALING),
-        DynamicHusbandryStorage.MAX_ANIMALS)
+        config.maxAnimals)
 
-    Logging.info("[OpenPastures Milk] %s: nav mesh area %.0f m^2 / %d m^2 per animal = %d animals (capped at %d) -> %d",
-        self:getName() or "cow pasture", navMeshArea, sqmPerAnimal, rawMaxAnimals, DynamicHusbandryStorage.MAX_ANIMALS, maxAnimals)
+    Logging.info("[OpenPastures] %s: nav mesh area %.0f m^2 / %d m^2 per animal = %d animals (capped at %d) -> %d",
+        self:getName() or config.label, navMeshArea, sqmPerAnimal, rawMaxAnimals, config.maxAnimals, maxAnimals)
 
-    if rawMaxAnimals > DynamicHusbandryStorage.MAX_ANIMALS then
-        Logging.warning("[OpenPastures Milk] %s: pasture area supports %d animals, but this pasture type has a %d animal maximum - clamping to %d",
-            self:getName() or "cow pasture", rawMaxAnimals, DynamicHusbandryStorage.MAX_ANIMALS, DynamicHusbandryStorage.MAX_ANIMALS)
+    if rawMaxAnimals > config.maxAnimals then
+        Logging.warning("[OpenPastures] %s: pasture area supports %d animals, but this pasture type has a %d animal maximum - clamping to %d",
+            self:getName() or config.label, rawMaxAnimals, config.maxAnimals, config.maxAnimals)
 
         -- onHusbandryAnimalsCreated also fires on every savegame load, not just when the fence
         -- is actively resized - only pop the on-screen warning when the oversized value is new
@@ -122,7 +161,7 @@ function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
             if spec.lastWarnedRawMaxAnimals ~= rawMaxAnimals then
                 g_currentMission:showBlinkingWarning(
                     string.format("%s: area supports %d animals, but this pasture type is limited to a %d animal maximum",
-                        self:getName() or "Cow pasture", rawMaxAnimals, DynamicHusbandryStorage.MAX_ANIMALS),
+                        self:getName() or config.label, rawMaxAnimals, config.maxAnimals),
                     5000)
                 spec.lastWarnedRawMaxAnimals = rawMaxAnimals
             end
@@ -133,24 +172,25 @@ function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
     -- respects our calculation too.
     animalsSpec.maxNumAnimals = maxAnimals
 
-    DynamicHusbandryStorage.applyOutputCapacities(self, husbandrySpec.storage, maxAnimals)
-    DynamicHusbandryStorage.applyFoodCapacity(self, maxAnimals)
+    DynamicHusbandryStorage.applyOutputCapacities(self, husbandrySpec.storage, maxAnimals, config)
+    DynamicHusbandryStorage.applyFoodCapacity(self, maxAnimals, config)
 end
 
---- Scale MILK/BUFFALOMILK/STRAW capacities on the husbandry output Storage object.
---- MANURE (capacity 0, unused) is left untouched since it has no entry in STATIC_CAPACITY_AT_MAX.
+--- Scale this pasture type's output fillType capacities on the husbandry output Storage
+--- object. Fill types with no entry in config.staticCapacityAtMax (e.g. MANURE, capacity 0,
+--- unused) are left untouched.
 --- Plain module function (not a placeable method) - placeable is passed explicitly since this
 --- specialization never registers these as callable methods on the placeable itself.
-function DynamicHusbandryStorage.applyOutputCapacities(placeable, storage, maxAnimals)
+function DynamicHusbandryStorage.applyOutputCapacities(placeable, storage, maxAnimals, config)
     if storage.capacities == nil then
         return
     end
 
     for fillTypeIndex, _ in pairs(storage.capacities) do
         local fillType = g_fillTypeManager:getFillTypeByIndex(fillTypeIndex)
-        local staticCapacity = fillType ~= nil and DynamicHusbandryStorage.STATIC_CAPACITY_AT_MAX[fillType.name] or nil
+        local staticCapacity = fillType ~= nil and config.staticCapacityAtMax[fillType.name] or nil
         if staticCapacity ~= nil then
-            local perAnimal = staticCapacity / DynamicHusbandryStorage.MAX_ANIMALS
+            local perAnimal = staticCapacity / config.maxAnimals
             local newCapacity = math.floor(perAnimal * maxAnimals)
 
             storage.capacities[fillTypeIndex] = newCapacity
@@ -167,13 +207,13 @@ end
 
 --- Scale the husbandryFood capacity (dynamicFoodPlane-backed) to match maxAnimals.
 --- Plain module function (not a placeable method) - see applyOutputCapacities above.
-function DynamicHusbandryStorage.applyFoodCapacity(placeable, maxAnimals)
+function DynamicHusbandryStorage.applyFoodCapacity(placeable, maxAnimals, config)
     local foodSpec = placeable.spec_husbandryFood
     if foodSpec == nil then
         return
     end
 
-    local perAnimal = DynamicHusbandryStorage.FOOD_STATIC_CAPACITY_AT_MAX / DynamicHusbandryStorage.MAX_ANIMALS
+    local perAnimal = config.foodStaticCapacityAtMax / config.maxAnimals
     local newCapacity = math.floor(perAnimal * maxAnimals)
     if newCapacity == foodSpec.capacity then
         return
