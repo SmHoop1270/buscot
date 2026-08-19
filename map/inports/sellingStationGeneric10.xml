@@ -23,9 +23,14 @@
     <base>
         <filename>map/inports/sellingStationGeneric.i3d</filename>
 		<boughtWithFarmland>false</boughtWithFarmland>
+		<canBeRenamed>true</canBeRenamed>
 	</base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" />
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <sounds>
+            <place template="siloImp" />
+        </sounds>
+    </placement>
 
     <clearAreas></clearAreas>
 

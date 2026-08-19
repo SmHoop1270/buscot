@@ -32,7 +32,8 @@
     <base>
         <filename>map/inports/FS25_Buscot_Buildings/i3d/base.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
-		  <canBeDeleted>true</canBeDeleted> 
+        <boughtWithFarmland>true</boughtWithFarmland>
+		  <canBeDeleted>true</canBeDeleted>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >

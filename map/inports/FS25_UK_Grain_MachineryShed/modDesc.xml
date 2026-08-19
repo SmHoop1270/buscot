@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="103" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Bláckice and LivinOnAPlayer</author>
+    <version>1.0.0.0</version>
+
+<title>
+<en>UK Grain Machinery Shed</en>
+</title>
+
+<description>
+<en><![CDATA[
+Category: Sheds
+Price: $56,000
+Daily upkeep: $25
+Income per hour: $0
+]]></en>
+<de><![CDATA[
+Shopkategorie: Hallen
+Preis: 56.000€
+Täglicher Unterhalt: 25€
+Einkommen pro Stunde: 0€
+]]></de>
+<fr><![CDATA[
+Catégorie: Abris
+Prix: 56 000€
+Entretien quotidien: 25€
+Revenu horaire: 0€
+]]></fr> 
+</description>
+
+    <iconFilename>icon_ukGrainMachineryShed.dds</iconFilename>
+	<multiplayer supported="true" />
+    
+	<storeItems>
+        <storeItem xmlFilename="ukGrainMachineryShed.xml"/>
+    </storeItems>
+	
+	<placeableTypes>
+		<type name="Shed" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="windTurbine" />
+			<specialization name="incomePerHour" />			
+		</type>	
+    </placeableTypes>
+	
+</modDesc>

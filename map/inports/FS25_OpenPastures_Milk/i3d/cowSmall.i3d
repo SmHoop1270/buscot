@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cowSmall.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="16" filename="$data/shaders/streamShader.xml"/>
+    <File fileId="1" filename="$data/shared/default_diffuse.dds"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="13" filename="$data/shared/fakeWater_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/fakeWater_normal.png"/>
+    <File fileId="15" filename="$data/shared/fakeWater_specular.png"/>
+    <File fileId="5" filename="../textures/m_Mask.dds"/>
+    <File fileId="20" filename="../textures/strawAlpha_diffuse.dds"/>
+    <File fileId="19" filename="../textures/straw_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="collision_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="fakeWater_mat" materialId="113" alphaBlending="true" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="directions" value="0.001 0 0.001 0"/>
+    </Material>
+    <Material name="feeder_mat" materialId="7" specularColor="0.501961 1 0.501961" customShaderId="4" customShaderVariation="colorScale">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="colorScale0" value="0.38191 0.0422212 0.0422213 1"/>
+    </Material>
+    <Material name="fillPlane_mat" materialId="8" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="strawPlane_mat" materialId="10">
+      <Texture fileId="19"/>
+    </Material>
+    <Material name="strawPlane_mat" materialId="11">
+      <Texture fileId="20"/>
+    </Material>
+    <Material name="waterTrough_mat" materialId="12" diffuseColor="1 1 1 1" specularColor="0.721569 1 0.780392" customShaderId="4">
+      <Normalmap fileId="2"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cowSmall.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cowBarnSmall" clipDistance="400" nodeId="30">
+      <TransformGroup name="clearAreas" nodeId="31">
+        <TransformGroup name="clearArea1Start" translation="-5.5 0 -2.5" nodeId="32">
+          <TransformGroup name="clearArea1Width" translation="7 0 0" nodeId="33"/>
+          <TransformGroup name="clearArea1Height" translation="0 0 4.5" nodeId="34"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="35">
+        <TransformGroup name="levelArea1Start" translation="-6.5 0 -2.5" nodeId="36">
+          <TransformGroup name="levelArea1Width" translation="10 0 0" nodeId="37"/>
+          <TransformGroup name="levelArea1Height" translation="0 0 6" nodeId="38"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="39">
+        <TransformGroup name="testArea1Start" translation="-6 -0.522092 -3.5" nodeId="40">
+          <TransformGroup name="testArea1End" translation="15 3 15" nodeId="41"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="42">
+        <TransformGroup name="indoorArea1Start" translation="-1.44487 0 -1.5" nodeId="43">
+          <TransformGroup name="indoorArea1Width" translation="2.83857 0 0" nodeId="44"/>
+          <TransformGroup name="indoorArea1Height" translation="0 0 2.85622" nodeId="45"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="46">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6 0 -3.5" nodeId="47">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="9 0 6" nodeId="48"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="food" nodeId="49">
+        <TransformGroup name="feederRing" nodeId="50">
+          <Shape name="feeder" shapeId="1" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="collisionRing" translation="1.67074e-08 0.225116 -0.01" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="exactFillRootNodeFeed" shapeId="3" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="fillPlane" translation="1.67074e-08 0 -0.01" shapeId="4" clipDistance="150" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <Shape name="baleTrigger" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="foodPlaces" translation="0 0 0.020468" nodeId="56">
+          <TransformGroup name="foodPlace1" translation="0.066684 0 1.18816" rotation="0 180 0" nodeId="57"/>
+        </TransformGroup>
+        <TransformGroup name="foodAINode" translation="0 0 -3.5" rotation="0 -90 0" nodeId="58"/>
+      </TransformGroup>
+      <TransformGroup name="teleportNode" translation="0 0 -2.09853" nodeId="59"/>
+      <TransformGroup name="storage" nodeId="60"/>
+      <TransformGroup name="meadow" nodeId="61">
+        <TransformGroup name="clearArea" translation="-6 0 -3" nodeId="62">
+          <TransformGroup name="clearAreaPoint1" nodeId="63"/>
+          <TransformGroup name="clearAreaPoint2" translation="0 0 3.35" nodeId="64"/>
+          <TransformGroup name="clearAreaPoint3" translation="4 0 5" nodeId="65"/>
+          <TransformGroup name="clearAreaPoint4" translation="8 0 5" nodeId="66"/>
+          <TransformGroup name="clearAreaPoint5" translation="8 0 2" nodeId="67"/>
+          <TransformGroup name="clearAreaPoint6" translation="8 0 0" nodeId="68"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="navigationRootNode" nodeId="69">
+        <Shape name="navmeshBlockingNode" translation="-0.05 0 0.45" scale="2 1 2" shapeId="6" static="true" collisionFilterGroup="0x800000" collisionFilterMask="0x1" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="water" nodeId="71">
+        <Shape name="exactFillRootNodeWater" translation="-4 0 -2" shapeId="7" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="waterPlaces" translation="0 0 0.020468" nodeId="73">
+          <TransformGroup name="waterPlace1" translation="-4 0 -1" rotation="0 180 0" nodeId="74"/>
+        </TransformGroup>
+        <TransformGroup name="waterAINode" translation="-4 0 -3" rotation="0 -90 0" nodeId="75"/>
+        <Shape name="fakeWaterPlane" translation="-4 0.6 -2" scale="1 0.001 1" shapeId="8" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="113"/>
+        <Shape name="waterTrough" translation="-4 0 -2" rotation="0 90 0" shapeId="9" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="12">
+          <Shape name="collisionWaterTrough" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+      </TransformGroup>
+      <Shape name="infoTrigger" shapeId="11" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <Shape name="loadingTrigger" translation="0 1.7 -4.75" rotation="0 -90 0" shapeId="12" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <TransformGroup name="visuals" translation="0 0.083184 0" nodeId="81">
+        <TransformGroup name="fences" nodeId="82">
+          <TransformGroup name="fence1" nodeId="83">
+            <TransformGroup name="fence1Node1" translation="1 0 -2.5" nodeId="84"/>
+            <TransformGroup name="fence1Node2" translation="11.5 0 -2.5" nodeId="85"/>
+            <TransformGroup name="fence1Node3" translation="11.5 0 13.5" nodeId="86"/>
+            <TransformGroup name="fence1Node4" translation="-8 0 13.5" nodeId="87"/>
+            <TransformGroup name="fence1Node5" translation="-8 0 -2.5" nodeId="88"/>
+            <TransformGroup name="fence1Node6" translation="-1 0 -2.5" nodeId="89"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="warningStripes" translation="0 -0.083184 0" nodeId="90">
+          <TransformGroup name="markerAnimals" translation="0 0.02 -4.75" nodeId="91"/>
+          <TransformGroup name="markerFood" translation="-0.5 0.02 0" nodeId="92"/>
+          <TransformGroup name="markerWater" translation="-4 0.02 -3" nodeId="93"/>
+          <TransformGroup name="markerBales" translation="0.5 0.02 0" nodeId="94"/>
+          <TransformGroup name="markerMilk" translation="-4 0.02 -4.75" nodeId="106"/>
+        </TransformGroup>
+        <TransformGroup name="waterFillPlaceholder" translation="-2.7 -0.1 -2" nodeId="95"/>
+        <TransformGroup name="waterTankPlaceholder" translation="-6.04104 -0.01 -1.81058" rotation="0 90 0" nodeId="96"/>
+      </TransformGroup>
+      <TransformGroup name="collision" nodeId="97">
+        <Shape name="tipCollision" shapeId="13" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="strawPlanes" nodeId="99">
+        <Shape name="strawPlane01" translation="2.5 0.5 3.75" shapeId="14" clipDistance="300" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="10">
+          <Shape name="strawPlane01Alpha" shapeId="15" clipDistance="300" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        </Shape>
+        <Shape name="exactFillRootNodeStraw" translation="2 0.05 3.5" shapeId="16" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="milk" nodeId="103">
+        <Shape name="milkTrigger" translation="-4 1.7 -4.75" rotation="0 -90 0" shapeId="12" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="aiLoadingNodeMilk" translation="-4 0 -4.75" rotation="0 -90 0" nodeId="105"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="70">
+      <Attribute name="animalType" type="string" value="cow"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

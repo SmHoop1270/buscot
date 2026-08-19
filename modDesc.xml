@@ -36,6 +36,7 @@
     <extraSourceFiles>
         <sourceFile filename="map/scripts/OpeningHours.lua"/>
         <sourceFile filename="map/scripts/MemorialTrigger.lua" />
+        <sourceFile filename="map/inports/FS25_OpenPastures_Milk/scripts/main.lua" />
         <sourceFile filename="map/scripts/RouteTracker.lua" />
     </extraSourceFiles>
 	
@@ -84,6 +85,10 @@
 	 <storeItem xmlFilename="map/inports/silageClampUK/silageClampUK.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" />
 	 <storeItem xmlFilename="map/inports/FS25_UK_Shed/ukShed.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Milk/xml/cowFence.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Sheep/xml/sheepSmallAutoWater.xml" />
+	 <storeItem xmlFilename="map/inports/FS25_OpenPastures_Sheep/xml/sheepFence.xml" />
 	 <!--Sellpoints-->
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric02.xml" />
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric03.xml" />
@@ -105,6 +110,5 @@
 <!-- DECORATION -->
     <storeItem xmlFilename="$data/placeables/mapUS/stable02/stable02.xml" /> <!-- showInStore false -->
 </storeItems>
-	
 
 </modDesc>

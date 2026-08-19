@@ -162,7 +162,7 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="pigPen" lockedgroup="true" nodeId="63">
+    <TransformGroup name="pigPen" lockedgroup="true" clipDistance="300" nodeId="63">
       <TransformGroup name="clearAreas" nodeId="64">
         <TransformGroup name="clearAreaStart01" translation="-29.499 0 -10.416" nodeId="65">
           <TransformGroup name="clearAreaWidth01" translation="0 0 18.311" nodeId="66"/>
