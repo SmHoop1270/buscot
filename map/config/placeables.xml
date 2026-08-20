@@ -2341,10 +2341,10 @@
     <placeable filename="data/placeables/brandless/decoration/statues/stoneStatues05.xml" uniqueId="placeable4d786e408bc4512007ba77077763d7e5" position="490.050 24.156 -143.102" rotation="0.00 -0.00 0.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/statues/stoneStatues05.xml" uniqueId="placeable3fb70d59780612e28a3d0fd622d8d6dc" position="484.656 24.079 -150.446" rotation="180.00 -67.62 180.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
 	
-	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm02" position="-1620.003 19.183 1068.894" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" farmId="1">
+	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm02" position="-1620.003 19.183 1068.894" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryAnimals>
             <clusters>
@@ -2366,10 +2366,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="52561.265625" capacity="52561.265625"/>
         </husbandryMeadow>
     </placeable>
-    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm01" position="-1628.293 19.093 1028.263" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm01" position="-1628.293 19.093 1028.263" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryAnimals>
             <clusters>
@@ -2392,7 +2392,7 @@
             <fillType name="GRASS_WINDROW" fillLevel="47051.789062" capacity="47051.789062"/>
         </husbandryMeadow>
     </placeable>
-	    <placeable modName="FS25_Customize_Fence_Cow_Barn" filename="$moddir$FS25_Customize_Fence_Cow_Barn/MediumCowBarn.xml" uniqueId="Cherrytree farm" position="-19.834 21.222 1101.360" rotation="180.00 88.10 -180.00" age="0.000000" price="80000.000000" farmId="1">
+	    <placeable modName="FS25_Customize_Fence_Cow_Barn" filename="$moddir$FS25_Customize_Fence_Cow_Barn/MediumCowBarn.xml" uniqueId="Cherrytree farm" position="-19.834 21.222 1101.360" rotation="180.00 88.10 -180.00" age="0.000000" price="80000.000000" boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
@@ -2402,7 +2402,7 @@
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2417,10 +2417,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="2230.885010" capacity="2230.885010"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 1" position="28.978 21.346 1124.109" rotation="-180.00 88.10 180.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 1" position="28.978 21.346 1124.109" rotation="-180.00 88.10 180.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2455,10 +2455,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="151205.281250" capacity="151205.281250"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 2" position="40.483 22.502 1232.235" rotation="0.00 42.26 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 2" position="40.483 22.502 1232.235" rotation="0.00 42.26 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2485,10 +2485,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="113062.820312" capacity="113062.820312"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="oaktreefarm" position="-126.225 33.327 1795.096" rotation="-180.00 -89.79 -180.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="oaktreefarm" position="-126.225 33.327 1795.096" rotation="-180.00 -89.79 -180.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2511,10 +2511,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="22867.117188" capacity="22867.117188"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarm" position="1388.882 46.946 1559.449" rotation="0.00 26.33 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarm" position="1388.882 46.946 1559.449" rotation="0.00 26.33 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2533,10 +2533,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="30265.527344" capacity="30265.527344"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarmbottom" position="1437.680 35.479 1691.336" rotation="0.00 -84.63 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarmbottom" position="1437.680 35.479 1691.336" rotation="0.00 -84.63 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2559,4 +2559,22 @@
             <fillType name="GRASS_WINDROW" fillLevel="52684.718750" capacity="52684.718750"/>
         </husbandryMeadow>
     </placeable>
+	   <placeable modName="FS25_UK_Grain_MachineryShed" filename="$moddir$FS25_UK_Grain_MachineryShed/ukGrainMachineryShed.xml" uniqueId="placeable39addce26c0e79eabdd965eda5deb750" position="-1023.714 22.261 185.546" rotation="180.00 -1.08 180.00" age="0.000000" price="56000.000000" boughtWithFarmlandOverwrite="true">
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/garbageContainer01.xml" uniqueId="placeable601079e61b3c36df8a5fa97e74dd99ec" position="-1019.698 22.264 172.287" rotation="180.00 -1.08 180.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/garbageContainer01.xml" uniqueId="placeable6801ae389c4a6da0d051a873c22351db" position="-1083.904 20.977 175.317" rotation="180.00 -1.08 180.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeable32f4daa47fd933ac1c2a3cab4b1dbf09" position="-1116.493 20.003 138.943" rotation="180.00 -1.08 180.00" age="0.000000" price="80.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeabled6b96badc5a6668d3ce901739567ce37" position="-1119.907 20.241 145.523" rotation="180.00 -56.49 180.00" age="0.000000" price="80.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel03.xml" uniqueId="placeablec3ae14fe9250dc75d963b50502194dd9" position="-1158.426 20.669 139.721" rotation="180.00 12.92 -180.00" age="0.000000" price="20.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablea36eb5a2ed237f2977cb6e72c9df7b2a" position="-1159.586 20.739 139.321" rotation="180.00 12.92 -180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeable251efb5489ca990b49a360d430100be1" position="-1160.276 20.687 138.973" rotation="180.00 -81.09 180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeableddd265e4bfc21ad0fc50d22a7b3cc56d" position="-1149.916 19.336 102.630" rotation="180.00 -81.09 180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/palletTruck/palletTruck.xml" uniqueId="placeablefa7e28d270bd0228002464eec4071021" position="-1115.360 19.370 106.947" rotation="180.00 -81.09 180.00" age="0.000000" price="40.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/1.xml" uniqueId="placeable87afe3ed215cafb18f96dca73bdbfea2" position="-1150.886 19.363 107.024" rotation="180.00 -81.09 180.00" age="0.000000" price="17.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/animalFeeder/animalFeeder.xml" uniqueId="placeablef57261bbd3d678e9273e6e0f56eef30e" position="-1151.428 19.370 103.350" rotation="180.00 -81.09 180.00" age="0.000000" price="20.000000" boughtWithFarmlandOverwrite="true"/>
 </placeables>
