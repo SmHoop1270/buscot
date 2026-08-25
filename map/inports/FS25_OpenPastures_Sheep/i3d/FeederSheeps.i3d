@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="FeederSheeps.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="3" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGearShift_diffuse.dds"/>
+    <File fileId="4" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGearShift_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fillPlane_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="plastic_mat" materialId="44" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="colorScale0" value="0 0 0 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="FeederSheeps.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="plasticFeeder" nodeId="10">
+      <Shape name="fillPlane" translation="0 0 -8.9407e-08" shapeId="1" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="frame" translation="0 0 -1.49012e-07" shapeId="2" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="44"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
