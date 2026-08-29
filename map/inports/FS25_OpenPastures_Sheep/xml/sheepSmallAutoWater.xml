@@ -3,7 +3,7 @@
     <storeData>
         <name>
             <en>Sheep_Pasture_Wool</en></name>
-        <image>map/inports/FS25_OpenPastures_Sheep/sheeps.png</image>
+        <image>map/inports/FS25_OpenPastures_Sheep/store_sheepSmallAutoWater.dds</image>
         <price>35000</price>
         <functions>
             <function>$l10n_function_animalPenSheep</function>
