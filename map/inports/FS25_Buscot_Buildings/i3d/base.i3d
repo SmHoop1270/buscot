@@ -126,7 +126,7 @@
         <TransformGroup name="teleportNode" translation="-0.178355 0 12.8253" rotation="0 51.8097 0" nodeId="72"/>
         <Shape name="infoTrigger" translation="0 1.37552 3.15278" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
       </TransformGroup>
-      <TransformGroup name="visuals" nodeId="74">
+      <TransformGroup name="visuals" clipDistance="1000" nodeId="74">
         <Shape name="visualFillTower" translation="-0.028678 -1.24485 10.2784" shapeId="6" clipDistance="300" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6">
           <Shape name="decals" translation="0.028678 -0.24188 -10.2784" shapeId="7" clipDistance="70" nodeId="76" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
         </Shape>

@@ -2,7 +2,7 @@
 
 <i3D name="mainHouse01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
   </Asset>
 
   <Files>
@@ -14,9 +14,9 @@
 
 
   <Materials>
-    <Material name="lambert1" materialId="70" diffuseColor="0.8 0.8 0.8 1">
+    <Material name="lambert1" materialId="5" diffuseColor="0.8 0.8 0.8 1">
     </Material>
-    <Material name="mainHouse01" materialId="57" customShaderId="4" customShaderVariation="customParallax">
+    <Material name="mainHouse01" materialId="6" customShaderId="4" customShaderVariation="customParallax">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -28,17 +28,17 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="mainHouse01" lockedgroup="true" nodeId="34">
-      <TransformGroup name="visual_lod" lodDistance="0 50" nodeId="38">
-        <TransformGroup name="LOD0" nodeId="35">
-          <Shape name="mainHouse01_LOD0" shapeId="1" nodeId="12" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="57"/>
+    <TransformGroup name="mainHouse01" lockedgroup="true" nodeId="11">
+      <TransformGroup name="visual_lod" lodDistance="0 50" clipDistance="1000" nodeId="12">
+        <TransformGroup name="LOD0" clipDistance="1000" nodeId="13">
+          <Shape name="mainHouse01_LOD0" shapeId="1" clipDistance="1000" nodeId="14" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="6"/>
         </TransformGroup>
-        <TransformGroup name="LOD1" nodeId="36">
-          <Shape name="mainHouse01_LOD1" rotation="-9.33467e-06 -0 0" shapeId="2" nodeId="13" castsShadows="true" receiveShadows="true" materialIds="57"/>
+        <TransformGroup name="LOD1" clipDistance="1000" nodeId="15">
+          <Shape name="mainHouse01_LOD1" rotation="-9.33467e-06 -0 0" shapeId="2" clipDistance="1000" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="6"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="collisions" nodeId="37">
-        <Shape name="collision" shapeId="3" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="11" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="70"/>
+      <TransformGroup name="collisions" nodeId="17">
+        <Shape name="collision" shapeId="3" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="18" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xff" materialIds="5"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
