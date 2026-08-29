@@ -40,13 +40,15 @@
     <File fileId="16" filename="$data/foliage/grass/grassStage04_fmask.png" />
     <File fileId="15" filename="$data/foliage/grass/grassStage04_normal.png" />
     <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml" />
+    <File fileId="38" filename="grassDormant_diffuse.dds" />
+    <File fileId="39" filename="grassDormantLOD1_diffuse.dds" />
   </Files>
 
   <Materials>
     <Material name="grassStage01_mat" materialId="1" customShaderId="4">
       <CustomParameter name="snowScale" value="0.50"/>
       <Custommap name="alphaMap" fileId="5"/>
-      <Texture fileId="1"/>
+      <Texture fileId="38"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
     </Material>
@@ -75,7 +77,7 @@
     <Material name="grassStage01LOD1_mat" materialId="5" customShaderId="4" customShaderVariation="BILLBOARD">
       <CustomParameter name="snowScale" value="0.50"/>
       <Custommap name="alphaMap" fileId="21"/>
-      <Texture fileId="18"/>
+      <Texture fileId="39"/>
       <Normalmap fileId="19"/>
       <Glossmap fileId="20"/>
     </Material>

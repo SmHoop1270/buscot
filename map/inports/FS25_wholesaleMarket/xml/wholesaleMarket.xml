@@ -119,7 +119,7 @@
     </lights>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart filename="i3d/wholesaleMarketProps.i3d" node="0" linkNode="props"/>
+        <dynamicallyLoadedPart filename="map/inports/FS25_wholesaleMarket/i3d/wholesaleMarketProps.i3d" node="0" linkNode="props"/>
     </dynamicallyLoadedParts>
 	
     <sellingStation appearsOnStats="true" node="sellingStation" supportsExtension="false" >

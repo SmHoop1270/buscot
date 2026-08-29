@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="110" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+<modDesc descVersion="111" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>Wonko</author>
     <version>1.0.0.0</version>
     <title>
@@ -7,12 +7,12 @@
     </title>
 <contributors>Brummie Farmer - Doc - Farmer Brisco - LivinOnAPlayer all have contributed models help and advise</contributors>
 <description>
-  <en><![CDATA[Buscot Park is a British map based in southern England, focused mainly on dairy and sheep farming along with pigs and chickens. Many custom models including a dairy building, barns, and silage clamps. Vehicles drive on the left with UK number plates, multi-angled terrain implemented along with farm names instead of field numbers. This map would not have happened without the relentless pestering and encouragement of a grumpy Australian, JohnnyVee — sorry I was too slow for you to see the finished effort. Also a huge thank you to the guys who with some patience tested the map from quite early stages through to the finish: Gismo, Red Island Farmer, Scrumpf, Doc, Brummier Farmer.]]></en>
+  <en><![CDATA[south uk weather, opening times, animal based map dairy, sheep, Buscot Park is a British map based in southern England, focused mainly on dairy and sheep farming along with pigs and chickens. Many custom models including a dairy building, barns, and silage clamps. Vehicles drive on the left with UK number plates, multi-angled terrain implemented along with farm names instead of field numbers. This map would not have happened without the relentless pestering and encouragement of a grumpy Australian, JohnnyVee — sorry I was too slow for you to see the finished effort. Also a huge thank you to the guys who with some patience tested the map from quite early stages through to the finish: Gismo, Red Island Farmer, Scrumpf, Doc, Brummier Farmer.]]></en>
   <de><![CDATA[Buscot Park ist eine britische Karte im Süden Englands, die sich hauptsächlich auf Milchvieh- und Schafhaltung sowie Schweine und Hühner konzentriert. Viele individuelle Modelle, darunter ein Milchviehstall, Scheunen und Fahrsilos. Die Fahrzeuge fahren auf der linken Seite mit britischen Kennzeichen, es gibt vielwinkliges Gelände und Hofnamen anstelle von Feldnummern. Diese Karte wäre ohne das unermüdliche Drängen und die Ermutigung eines mürrischen Australiers, JohnnyVee, nicht zustande gekommen – tut mir leid, dass ich zu langsam war, damit du das fertige Ergebnis noch sehen konntest. Außerdem ein großes Dankeschön an die Jungs, die mit viel Geduld die Karte von den frühen Phasen bis zur Fertigstellung getestet haben: Gismo, Red Island Farmer, Scrumpf, Doc, Brummier Farmer.]]></de>
   <fr><![CDATA[Buscot Park est une carte britannique située dans le sud de l'Angleterre, principalement axée sur l'élevage laitier et ovin, ainsi que les porcs et les poules. De nombreux modèles personnalisés, notamment une étable laitière, des granges et des silos de fourrage. Les véhicules roulent à gauche avec des plaques d'immatriculation britanniques, un terrain aux angles variés a été mis en place, ainsi que des noms de fermes à la place des numéros de champs. Cette carte n'aurait jamais vu le jour sans les encouragements et le harcèlement incessant d'un Australien grincheux, JohnnyVee — désolé d'avoir été trop lent pour que tu voies le résultat final. Un grand merci également aux gars qui, avec beaucoup de patience, ont testé la carte depuis les premières étapes jusqu'à la fin : Gismo, Red Island Farmer, Scrumpf, Doc, Brummier Farmer.]]></fr>
 </description>
 
-            <iconFilename>icon.dds</iconFilename>
+            <iconFilename>icon_FS25_Buscot_Park.dds</iconFilename>
 
     <multiplayer supported="true"/>
 
@@ -37,6 +37,7 @@
         <sourceFile filename="map/scripts/OpeningHours.lua"/>
         <sourceFile filename="map/scripts/MemorialTrigger.lua" />
         <sourceFile filename="map/inports/FS25_OpenPastures_Milk/scripts/main.lua" />
+        <sourceFile filename="map/scripts/RouteTracker.lua" />
     </extraSourceFiles>
 	
 	    <!-- <fillTypes filename="map/config/fillTypes.xml"/> -->
@@ -49,7 +50,6 @@
 		<dependency>FS25_AdditionalDecorationPackage</dependency>
 		<dependency>FS25_animalLimitIncreaser64</dependency>
 		<dependency>FS25_Customize_Fence_Cow_Barn</dependency>
-		<dependency>FS25_FencelessPastures</dependency>
         <dependency>FS25_ForestrySellPoint</dependency>
         <dependency>FS25_John_Deere_Workshop</dependency>
 		<dependency>FS25_largeukcowshed</dependency>

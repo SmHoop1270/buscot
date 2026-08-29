@@ -2,20 +2,16 @@
 
 <i3D name="straw.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
   </Asset>
 
   <Files>
     <File fileId="2" filename="$data/shaders/decalShader.xml"/>
-    <File fileId="3" filename="../../textures/FS25_Straw_prefab_hay_diffuse.dds"/>
-    <File fileId="1" filename="../../textures/FS25_Straw_prefab_straw_diffuse.dds"/>
+    <File fileId="1" filename="textures/straw_diffuse.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="default" materialId="5" alphaBlending="true" customShaderId="2">
-      <Texture fileId="3"/>
-    </Material>
     <Material name="default" materialId="6" alphaBlending="true" customShaderId="2">
       <Texture fileId="1"/>
     </Material>
@@ -26,10 +22,39 @@
   </Shapes>
 
   <Scene>
-    <Shape name="straw" shapeId="1" nodeId="10" castsShadows="true" receiveShadows="true" materialIds="6"/>
-    <Shape name="straw " translation="0 0 -1.5" shapeId="2" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="6"/>
-    <Shape name="hay" translation="-1 0 -1.5" shapeId="2" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="5"/>
-    <Shape name="hay" translation="-1 0 0" shapeId="1" nodeId="13" castsShadows="true" receiveShadows="true" materialIds="5"/>
+    <TransformGroup name="strawpile" nodeId="53">
+      <Shape name="straw " translation="0 0 -1.10365" shapeId="1" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0 0 -0.486117" shapeId="1" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0 0 0.0894186" shapeId="1" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0 0 0.740507" shapeId="1" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0 0 1.33914" shapeId="1" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.588763 0 0.759516" shapeId="1" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.588763 0 1.33914" shapeId="1" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.678506 0 0.693398" shapeId="1" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.585724 0 0.177111" shapeId="1" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.585724 0 -0.426358" shapeId="1" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.585724 0 -0.883144" shapeId="1" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="1.0308 0 -0.670981" shapeId="1" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="1.0308 0 -0.187011" shapeId="1" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="1.0308 0 0.303604" shapeId="1" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="1.0308 0 0.901097" shapeId="1" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.504993 0 0.963418" shapeId="1" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.504993 0 -1.03712" shapeId="1" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-1.07298 0 -0.794277" shapeId="1" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-1.07298 0 -0.346352" shapeId="1" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-1.07298 0 0.0909256" shapeId="1" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.708098 0 0.0909256" shapeId="1" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.708098 0 -0.514951" shapeId="1" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.316021 0 -1.18195" shapeId="1" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.288481 0 -0.527912" shapeId="1" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.55615 0 0.181491" shapeId="1" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.361889 0 0.181491" shapeId="1" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.361889 0 0.777884" shapeId="1" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0.361889 0 -0.401222" shapeId="1" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="-0.368133 0 -0.401222" shapeId="1" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw" shapeId="2" nodeId="10" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      <Shape name="straw " translation="0 0 -1.5" shapeId="1" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="6"/>
+    </TransformGroup>
   </Scene>
 
 </i3D>

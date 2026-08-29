@@ -2,7 +2,7 @@
 
 <i3D name="concretewalls.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
   </Asset>
 
   <Files>
@@ -29,34 +29,30 @@
   <Shapes externalShapesFile="concretewalls.i3d.shapes">
   </Shapes>
 
-
-  <Dynamics>
-  </Dynamics>
-
   <Scene>
-      <Shape shapeId="1" name="Post" nodeId="16" clipDistance="600" materialIds="6" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="2" name="Coli_Post" visibility="false" static="true" nodeId="17" materialIds="5" nonRenderable="true"/>
-      </Shape>
-      <Shape shapeId="3" name="Wall_2m" rotation="-6.83019e-06 -0 0" nodeId="18" clipDistance="600" materialIds="6" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="4" name="Coli_2m" rotation="-5.35034e-06 -0 0" scale="1 1.52 1" visibility="false" static="true" nodeId="19" materialIds="5" nonRenderable="true"/>
-        <TransformGroup name="Next_2m" translation="0 -8.74228e-08 -2" rotation="-6.83019e-06 -0 0" nodeId="20"/>
-      </Shape>
-      <Shape shapeId="5" name="Wall_3m" rotation="-6.83019e-06 -0 0" nodeId="21" clipDistance="600" materialIds="6" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="4" name="Coli_3m" rotation="-6.77327e-06 -0 0" scale="1 1.52 1.5" visibility="false" static="true" nodeId="22" materialIds="5" nonRenderable="true"/>
-        <TransformGroup name="Next_3m" translation="0 -1.31134e-07 -3" rotation="-6.83019e-06 -0 0" nodeId="23"/>
-      </Shape>
-      <Shape shapeId="6" name="Wall_4m" rotation="-6.83019e-06 -0 0" nodeId="24" clipDistance="600" materialIds="6" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="4" name="Coli_4m" rotation="-8.1962e-06 -0 0" scale="1 1.52 2" visibility="false" static="true" nodeId="25" materialIds="5" nonRenderable="true"/>
-        <TransformGroup name="Next_4m" translation="0 -1.74846e-07 -4" rotation="-6.83019e-06 -0 0" nodeId="26"/>
-      </Shape>
-      <Shape shapeId="7" name="Wall_5m" rotation="-6.83019e-06 -0 0" nodeId="27" clipDistance="600" materialIds="6" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="4" name="Coli_5m" rotation="-9.61913e-06 -0 0" scale="1 1.52 2.5" visibility="false" static="true" nodeId="28" materialIds="5" nonRenderable="true"/>
-        <TransformGroup name="Next_5m" translation="0 -2.18557e-07 -5" rotation="-6.83019e-06 -0 0" nodeId="29"/>
-      </Shape>
-      <Shape shapeId="8" name="Wall_6m" rotation="-6.83019e-06 -0 0" nodeId="30" clipDistance="600" materialIds="6" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="4" name="Coli_6m" rotation="-1.10421e-05 -0 0" scale="1 1.52 3" visibility="false" static="true" nodeId="31" materialIds="5" nonRenderable="true"/>
-        <TransformGroup name="Next_6m" translation="0 -2.62268e-07 -6" rotation="-6.83019e-06 -0 0" nodeId="32"/>
-      </Shape>
+    <Shape name="Post" shapeId="1" clipDistance="600" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="6">
+      <Shape name="Coli_Post" shapeId="2" visibility="false" static="true" nodeId="17" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+    </Shape>
+    <Shape name="Wall_2m" rotation="-6.83019e-06 -0 0" shapeId="3" clipDistance="600" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="6">
+      <Shape name="Coli_2m" rotation="-5.35034e-06 -0 0" scale="1 1.52 1" shapeId="4" visibility="false" static="true" nodeId="19" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="Next_2m" translation="0 -8.74228e-08 -2" rotation="-6.83019e-06 -0 0" nodeId="20"/>
+    </Shape>
+    <Shape name="Wall_3m" rotation="-6.83019e-06 -0 0" shapeId="5" clipDistance="600" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="6">
+      <Shape name="Coli_3m" rotation="-6.77327e-06 -0 0" scale="1 1.52 1.5" shapeId="4" visibility="false" static="true" nodeId="22" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="Next_3m" translation="0 -1.31134e-07 -3" rotation="-6.83019e-06 -0 0" nodeId="23"/>
+    </Shape>
+    <Shape name="Wall_4m" rotation="-6.83019e-06 -0 0" shapeId="6" clipDistance="600" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="6">
+      <Shape name="Coli_4m" rotation="-8.1962e-06 -0 0" scale="1 1.52 2" shapeId="4" visibility="false" static="true" nodeId="25" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="Next_4m" translation="0 -1.74846e-07 -4" rotation="-6.83019e-06 -0 0" nodeId="26"/>
+    </Shape>
+    <Shape name="Wall_5m" rotation="-6.83019e-06 -0 0" shapeId="7" clipDistance="600" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="6">
+      <Shape name="Coli_5m" rotation="-9.61913e-06 -0 0" scale="1 1.52 2.5" shapeId="4" visibility="false" static="true" nodeId="28" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="Next_5m" translation="0 -2.18557e-07 -5" rotation="-6.83019e-06 -0 0" nodeId="29"/>
+    </Shape>
+    <Shape name="Wall_6m" rotation="-6.83019e-06 -0 0" shapeId="8" clipDistance="600" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="6">
+      <Shape name="Coli_6m" rotation="-1.10421e-05 -0 0" scale="1 1.52 3" shapeId="4" visibility="false" static="true" nodeId="31" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="Next_6m" translation="0 -2.62268e-07 -6" rotation="-6.83019e-06 -0 0" nodeId="32"/>
+    </Shape>
   </Scene>
 
 </i3D>

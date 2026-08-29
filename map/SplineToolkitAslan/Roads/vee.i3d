@@ -2,7 +2,6 @@
 
 <i3D name="SplineStreet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Files>
-    <File fileId="4" filename=""/>
     <File fileId="1" filename="$data/maps/mapAS/textures/buildings/infrastructure/dirtRoad_diffuse.dds"/>
     <File fileId="5" filename="$data/maps/mapAS/textures/buildings/infrastructure/dirtRoad_height.dds"/>
     <File fileId="2" filename="$data/maps/mapAS/textures/buildings/infrastructure/dirtRoad_normal.dds"/>

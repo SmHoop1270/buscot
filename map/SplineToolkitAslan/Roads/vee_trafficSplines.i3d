@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<i3D name="TrafficSplines" version="1.6">
+<i3D name="TrafficSplines" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Files>
+  </Files>
   <Shapes>
     <NurbsCurve name="vee_center" shapeId="1" type="cubic" degree="3" form="open">
       <cv c="509.3813 24.3751 -154.7449"/>

@@ -1567,7 +1567,7 @@
         <farmhouse isFreeForAll="false"/>
         <wardrobe isFreeForAll="false"/>
     </placeable>
-	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_FarmCottage/farmCottage.xml" uniqueId="smallholding_farmhouse" position="737.31341553 12.30762672 -1211.66674805" rotation="-0.00000929 9.12334442 0.00001208" age="0.000000" price="135000.000000"  boughtWithFarmlandOverwrite="true">
+	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_FarmCottage/farmCottage.xml" uniqueId="smallholding_farmhouse" position="596.527771 14.00723457 -1221.50268555" rotation="0 9.12334061 0.00001208" age="0.000000" price="135000.000000"  boughtWithFarmlandOverwrite="true">
         <farmhouse isFreeForAll="false"/>
         <wardrobe isFreeForAll="false"/>
     </placeable>
@@ -2258,156 +2258,8 @@
         </silo>
     </placeable>
 
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" uniqueId="placeableb9d23ee6d77b312b30a37e4022ac58d4" position="282.298 22.887 1089.526" rotation="0.00 15.72 0.00" age="0.000000" price="4000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.200000" productionFactor="1.000000"/>
-        <husbandryAnimals>
-            <clusters>
-                <animal subType="SHEEP_BLACK_WELSH" numAnimals="20" age="8" health="20" reproduction="0"/>
-            </clusters>
-        </husbandryAnimals>
-        <husbandryFence>
-            <fence>
-                <segment start="288.863 22.887 1087.013" end="312.796 23.911 1071.070" id="SEGMENT"/>
-                <segment start="312.796 23.911 1071.070" end="311.907 23.369 1004.594" id="SEGMENT"/>
-                <segment start="311.907 23.369 1004.594" end="333.189 24.278 1000.385" id="SEGMENT"/>
-                <segment start="333.189 24.278 1000.385" end="341.342 25.180 1008.631" id="SEGMENT"/>
-                <segment start="341.342 25.180 1008.631" end="350.163 26.200 1051.387" id="SEGMENT"/>
-                <segment start="350.163 26.200 1051.387" end="352.334 25.425 1088.057" id="SEGMENT"/>
-                <segment start="352.334 25.425 1088.057" end="362.700 23.410 1179.642" id="SEGMENT"/>
-                <segment start="362.700 23.410 1179.642" end="317.959 22.741 1169.841" id="SEGMENT"/>
-                <segment start="317.959 22.741 1169.841" end="243.039 21.828 1153.171" id="SEGMENT"/>
-                <segment start="243.039 21.828 1153.171" end="240.698 22.056 1142.024" id="SEGMENT"/>
-                <segment start="240.698 22.056 1142.024" end="245.046 21.760 1092.496" id="SEGMENT"/>
-                <segment start="245.046 21.760 1092.496" end="256.466 21.945 1089.338" id="SEGMENT"/>
-                <segment start="256.466 21.945 1089.338" end="259.805 22.001 1082.296" id="SEGMENT"/>
-                <segment start="259.805 22.001 1082.296" end="278.274 22.785 1089.993" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryPallets>
-            <pendingLiters fillType="WOOL" liters="4.583333"/>
-        </husbandryPallets>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="53356.300781" capacity="53439.636719"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" uniqueId="placeable352e45e97c0d6393f0b0510758a33a79" position="-560.363 27.915 862.093" rotation="180.00 -79.04 180.00" age="0.000000" price="4000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.200000" productionFactor="1.000000"/>
-        <husbandryAnimals>
-            <clusters>
-                <animal subType="SHEEP_BLACK_WELSH" numAnimals="10" age="8" health="20" reproduction="0"/>
-            </clusters>
-        </husbandryAnimals>
-        <husbandryFence>
-            <fence>
-                <segment start="-561.064 27.915 869.088" end="-563.833 27.686 877.618" id="SEGMENT"/>
-                <segment start="-563.833 27.728 877.618" end="-562.434 27.348 885.985" id="SEGMENT"/>
-                <segment start="-562.434 27.348 885.985" end="-583.266 27.143 885.399" id="SEGMENT"/>
-                <segment start="-583.266 27.143 885.399" end="-580.568 29.437 807.624" id="SEGMENT"/>
-                <segment start="-580.568 29.437 807.624" end="-554.224 30.523 792.128" id="SEGMENT"/>
-                <segment start="-554.224 30.523 792.128" end="-549.398 31.259 779.922" id="SEGMENT"/>
-                <segment start="-549.398 31.259 779.922" end="-528.249 30.810 788.559" id="SEGMENT"/>
-                <segment start="-528.249 30.810 788.559" end="-513.197 30.203 797.209" id="SEGMENT"/>
-                <segment start="-513.197 30.203 797.209" end="-516.583 29.574 812.186" id="SEGMENT"/>
-                <segment start="-516.583 29.574 812.186" end="-518.057 28.557 837.596" id="SEGMENT"/>
-                <segment start="-518.057 28.557 837.596" end="-519.738 28.183 846.390" id="SEGMENT"/>
-                <segment start="-519.738 28.183 846.390" end="-534.955 28.086 846.404" id="SEGMENT"/>
-                <segment start="-534.955 28.086 846.404" end="-536.740 28.012 856.134" id="SEGMENT"/>
-                <segment start="-536.740 28.029 856.134" end="-545.295 27.512 850.693" id="SEGMENT"/>
-                <segment start="-545.295 28.207 850.693" end="-558.973 27.971 858.288" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryPallets>
-            <pendingLiters fillType="WOOL" liters="2.291667"/>
-        </husbandryPallets>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="19535.931641" capacity="19577.599609"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" uniqueId="placeable944373f33fb02ee51df9dc83bd81559a" position="-1098.594 31.156 383.542" rotation="0.00 -87.08 0.00" age="0.000000" price="4000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.100000" productionFactor="1.000000"/>
-        <husbandryAnimals>
-            <clusters>
-                <animal subType="SHEEP_BLACK_WELSH" numAnimals="90" age="8" health="10" reproduction="0"/>
-            </clusters>
-        </husbandryAnimals>
-        <husbandryFence>
-            <fence>
-                <segment start="-1097.597 31.156 390.500" end="-1097.722 31.223 401.750" id="SEGMENT"/>
-                <segment start="-1097.722 31.223 401.750" end="-1079.298 27.969 404.062" id="SEGMENT"/>
-                <segment start="-1079.298 27.968 404.062" end="-1039.388 26.859 406.053" id="SEGMENT"/>
-                <segment start="-1039.388 26.859 406.053" end="-1028.363 27.067 408.546" id="SEGMENT"/>
-                <segment start="-1028.363 27.067 408.546" end="-1024.460 30.296 423.144" id="SEGMENT"/>
-                <segment start="-1024.460 30.296 423.144" end="-1015.802 33.483 442.382" id="SEGMENT"/>
-                <segment start="-1015.802 33.483 442.382" end="-999.100 41.128 487.898" id="SEGMENT"/>
-                <segment start="-999.100 41.128 487.898" end="-977.862 44.409 526.086" id="SEGMENT"/>
-                <segment start="-977.862 44.409 526.086" end="-982.185 44.727 538.076" id="SEGMENT"/>
-                <segment start="-982.185 44.727 538.076" end="-1003.268 44.828 551.294" id="SEGMENT"/>
-                <segment start="-1003.268 44.828 551.294" end="-1020.153 45.010 581.949" id="SEGMENT"/>
-                <segment start="-1020.153 45.010 581.949" end="-1034.135 44.626 599.566" id="SEGMENT"/>
-                <segment start="-1034.135 44.626 599.566" end="-1106.095 43.763 588.156" id="SEGMENT"/>
-                <segment start="-1106.095 43.763 588.156" end="-1193.538 43.727 582.152" id="SEGMENT"/>
-                <segment start="-1193.538 43.727 582.152" end="-1206.431 44.004 577.009" id="SEGMENT"/>
-                <segment start="-1206.431 44.004 577.009" end="-1213.920 44.115 557.614" id="SEGMENT"/>
-                <segment start="-1213.920 44.115 557.614" end="-1196.079 44.023 544.725" id="SEGMENT"/>
-                <segment start="-1196.079 44.023 544.725" end="-1191.339 43.941 534.741" id="SEGMENT"/>
-                <segment start="-1191.339 43.941 534.741" end="-1183.363 43.483 521.176" id="SEGMENT"/>
-                <segment start="-1183.363 43.483 521.176" end="-1193.799 43.827 497.563" id="SEGMENT"/>
-                <segment start="-1193.799 43.827 497.563" end="-1230.962 44.549 467.303" id="SEGMENT"/>
-                <segment start="-1230.962 44.549 467.303" end="-1244.036 44.158 455.423" id="SEGMENT"/>
-                <segment start="-1244.036 44.158 455.423" end="-1207.169 42.065 397.441" id="SEGMENT"/>
-                <segment start="-1207.169 42.065 397.441" end="-1177.229 37.936 329.418" id="SEGMENT"/>
-                <segment start="-1177.229 37.936 329.418" end="-1149.734 34.548 304.860" id="SEGMENT"/>
-                <segment start="-1149.734 34.548 304.860" end="-1126.103 33.195 333.554" id="SEGMENT"/>
-                <segment start="-1126.103 33.195 333.554" end="-1105.671 31.432 353.142" id="SEGMENT"/>
-                <segment start="-1105.671 31.432 353.142" end="-1089.259 29.277 362.761" id="SEGMENT"/>
-                <segment start="-1089.259 29.277 362.761" end="-1078.208 27.407 365.889" id="SEGMENT"/>
-                <segment start="-1078.208 27.407 365.889" end="-1098.158 30.959 379.515" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="199331.406250" capacity="199518.906250"/>
-        </husbandryMeadow>
-    </placeable>
-    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" uniqueId="glebsheep" position="1454.198 38.486 1501.978" rotation="0.00 43.02 0.00" age="0.000000" price="4000.000000"  boughtWithFarmlandOverwrite="true">
-        <husbandry globalProductionFactor="0.100000" productionFactor="1.000000"/>
-        <husbandryAnimals>
-            <clusters>
-                <animal subType="SHEEP_STEINSCHAF" numAnimals="20" age="8" health="10" reproduction="0"/>
-            </clusters>
-        </husbandryAnimals>
-        <husbandryFence>
-            <fence>
-                <segment start="1458.879 38.486 1496.734" end="1472.773 37.283 1486.559" id="SEGMENT"/>
-                <segment start="1472.773 37.283 1486.559" end="1490.973 36.692 1509.278" id="SEGMENT"/>
-                <segment start="1490.973 36.692 1509.278" end="1518.749 35.178 1541.044" id="SEGMENT"/>
-                <segment start="1518.749 35.178 1541.044" end="1547.969 33.610 1569.747" id="SEGMENT"/>
-                <segment start="1547.969 33.610 1569.747" end="1561.167 32.958 1582.850" id="SEGMENT"/>
-                <segment start="1561.167 32.958 1582.850" end="1616.205 31.043 1622.990" id="SEGMENT"/>
-                <segment start="1616.205 31.043 1622.990" end="1594.699 31.479 1638.724" id="SEGMENT"/>
-                <segment start="1594.699 31.479 1638.724" end="1566.694 32.088 1650.413" id="SEGMENT"/>
-                <segment start="1566.694 32.088 1650.413" end="1534.820 32.971 1664.212" id="SEGMENT"/>
-                <segment start="1534.820 32.971 1664.212" end="1527.083 33.224 1665.655" id="SEGMENT"/>
-                <segment start="1527.083 33.224 1665.655" end="1517.230 33.607 1666.383" id="SEGMENT"/>
-                <segment start="1517.230 33.607 1666.383" end="1507.528 34.038 1657.777" id="SEGMENT"/>
-                <segment start="1507.528 34.038 1657.777" end="1491.654 35.045 1641.436" id="SEGMENT"/>
-                <segment start="1491.654 35.045 1641.436" end="1469.811 36.062 1642.435" id="SEGMENT"/>
-                <segment start="1469.811 36.062 1642.435" end="1451.239 36.674 1645.985" id="SEGMENT"/>
-                <segment start="1451.239 36.674 1645.985" end="1420.417 37.558 1651.282" id="SEGMENT"/>
-                <segment start="1420.417 37.558 1651.282" end="1418.557 41.311 1615.606" id="SEGMENT"/>
-                <segment start="1418.557 41.311 1615.606" end="1417.507 43.745 1592.427" id="SEGMENT"/>
-                <segment start="1417.507 43.745 1592.427" end="1414.401 45.175 1548.700" id="SEGMENT"/>
-                <segment start="1414.401 45.175 1548.700" end="1414.073 45.074 1524.554" id="SEGMENT"/>
-                <segment start="1414.073 45.074 1524.554" end="1422.538 43.962 1514.997" id="SEGMENT"/>
-                <segment start="1422.538 43.962 1514.997" end="1450.836 38.427 1504.238" id="SEGMENT"/>
-            </fence>
-        </husbandryFence>
-        <husbandryPallets>
-            <pendingLiters fillType="WOOL" liters="1.527778"/>
-        </husbandryPallets>
-        <husbandryMeadow>
-            <fillType name="GRASS_WINDROW" fillLevel="89589.218750" capacity="89630.882812"/>
-        </husbandryMeadow>
-    </placeable>
+  
+   
 
  
   
@@ -2489,10 +2341,10 @@
     <placeable filename="data/placeables/brandless/decoration/statues/stoneStatues05.xml" uniqueId="placeable4d786e408bc4512007ba77077763d7e5" position="490.050 24.156 -143.102" rotation="0.00 -0.00 0.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
     <placeable filename="data/placeables/brandless/decoration/statues/stoneStatues05.xml" uniqueId="placeable3fb70d59780612e28a3d0fd622d8d6dc" position="484.656 24.079 -150.446" rotation="180.00 -67.62 180.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
 	
-	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm02" position="-1620.003 19.183 1068.894" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" farmId="1">
+	    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm02" position="-1620.003 19.183 1068.894" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryAnimals>
             <clusters>
@@ -2514,10 +2366,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="52561.265625" capacity="52561.265625"/>
         </husbandryMeadow>
     </placeable>
-    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm01" position="-1628.293 19.093 1028.263" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="orchardfarm01" position="-1628.293 19.093 1028.263" rotation="0.00 -76.86 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryAnimals>
             <clusters>
@@ -2540,7 +2392,7 @@
             <fillType name="GRASS_WINDROW" fillLevel="47051.789062" capacity="47051.789062"/>
         </husbandryMeadow>
     </placeable>
-	    <placeable modName="FS25_Customize_Fence_Cow_Barn" filename="$moddir$FS25_Customize_Fence_Cow_Barn/MediumCowBarn.xml" uniqueId="Cherrytree farm" position="-19.834 21.222 1101.360" rotation="180.00 88.10 -180.00" age="0.000000" price="80000.000000" farmId="1">
+	    <placeable modName="FS25_Customize_Fence_Cow_Barn" filename="$moddir$FS25_Customize_Fence_Cow_Barn/MediumCowBarn.xml" uniqueId="Cherrytree farm" position="-19.834 21.222 1101.360" rotation="180.00 88.10 -180.00" age="0.000000" price="80000.000000" boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
@@ -2550,7 +2402,7 @@
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2565,10 +2417,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="2230.885010" capacity="2230.885010"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 1" position="28.978 21.346 1124.109" rotation="-180.00 88.10 180.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 1" position="28.978 21.346 1124.109" rotation="-180.00 88.10 180.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2603,10 +2455,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="151205.281250" capacity="151205.281250"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 2" position="40.483 22.502 1232.235" rotation="0.00 42.26 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="pasture 2" position="40.483 22.502 1232.235" rotation="0.00 42.26 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2633,10 +2485,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="113062.820312" capacity="113062.820312"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="oaktreefarm" position="-126.225 33.327 1795.096" rotation="-180.00 -89.79 -180.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="oaktreefarm" position="-126.225 33.327 1795.096" rotation="-180.00 -89.79 -180.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2659,10 +2511,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="22867.117188" capacity="22867.117188"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarm" position="1388.882 46.946 1559.449" rotation="0.00 26.33 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarm" position="1388.882 46.946 1559.449" rotation="0.00 26.33 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2681,10 +2533,10 @@
             <fillType name="GRASS_WINDROW" fillLevel="30265.527344" capacity="30265.527344"/>
         </husbandryMeadow>
     </placeable>
-    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarmbottom" position="1437.680 35.479 1691.336" rotation="0.00 -84.63 0.00" age="0.000000" price="35000.000000" farmId="1">
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="glebefarmbottom" position="1437.680 35.479 1691.336" rotation="0.00 -84.63 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="1" isActive="true"/>
         <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
-            <storage farmId="1"/>
+            <storage boughtWithFarmlandOverwrite="true"/>
         </husbandry>
         <husbandryFence>
             <fence>
@@ -2707,4 +2559,191 @@
             <fillType name="GRASS_WINDROW" fillLevel="52684.718750" capacity="52684.718750"/>
         </husbandryMeadow>
     </placeable>
+	   <placeable modName="FS25_UK_Grain_MachineryShed" filename="$moddir$FS25_UK_Grain_MachineryShed/ukGrainMachineryShed.xml" uniqueId="placeable39addce26c0e79eabdd965eda5deb750" position="-1023.714 22.261 185.546" rotation="180.00 -1.08 180.00" age="0.000000" price="56000.000000" boughtWithFarmlandOverwrite="true">
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/garbageContainer01.xml" uniqueId="placeable601079e61b3c36df8a5fa97e74dd99ec" position="-1019.698 22.264 172.287" rotation="180.00 -1.08 180.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/garbageContainer01.xml" uniqueId="placeable6801ae389c4a6da0d051a873c22351db" position="-1083.904 20.977 175.317" rotation="180.00 -1.08 180.00" age="0.000000" price="100.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeable32f4daa47fd933ac1c2a3cab4b1dbf09" position="-1116.493 20.003 138.943" rotation="180.00 -1.08 180.00" age="0.000000" price="80.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/trashcanStorage02.xml" uniqueId="placeabled6b96badc5a6668d3ce901739567ce37" position="-1119.907 20.241 145.523" rotation="180.00 -56.49 180.00" age="0.000000" price="80.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel03.xml" uniqueId="placeablec3ae14fe9250dc75d963b50502194dd9" position="-1158.426 20.669 139.721" rotation="180.00 12.92 -180.00" age="0.000000" price="20.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeablea36eb5a2ed237f2977cb6e72c9df7b2a" position="-1159.586 20.739 139.321" rotation="180.00 12.92 -180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeable251efb5489ca990b49a360d430100be1" position="-1160.276 20.687 138.973" rotation="180.00 -81.09 180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/garbageContainers/barrel04.xml" uniqueId="placeableddd265e4bfc21ad0fc50d22a7b3cc56d" position="-1149.916 19.336 102.630" rotation="180.00 -81.09 180.00" age="0.000000" price="10.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/decoration/palletTruck/palletTruck.xml" uniqueId="placeablefa7e28d270bd0228002464eec4071021" position="-1115.360 19.370 106.947" rotation="180.00 -81.09 180.00" age="0.000000" price="40.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_AdditionalDecorationPackage" filename="$moddir$FS25_AdditionalDecorationPackage/XML/1.xml" uniqueId="placeable87afe3ed215cafb18f96dca73bdbfea2" position="-1150.886 19.363 107.024" rotation="180.00 -81.09 180.00" age="0.000000" price="17.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="pdlc_highlandsFishingPack" filename="$pdlcdir$highlandsFishingPack/placeables/decoration/animalFeeder/animalFeeder.xml" uniqueId="placeablef57261bbd3d678e9273e6e0f56eef30e" position="-1151.428 19.370 103.350" rotation="180.00 -81.09 180.00" age="0.000000" price="20.000000" boughtWithFarmlandOverwrite="true"/>
+	    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Sheep/xml/sheepSmallAutoWater.xml" uniqueId="placeable310df091cce7626fad575df62b50fbfa" position="295.912 23.148 1082.691" rotation="0.00 -0.00 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+        <husbandryFence>
+            <fence>
+                <segment start="296.918 23.231 1080.194" end="299.985 23.322 1071.600" id="SEGMENT"/>
+                <segment start="299.985 23.322 1071.600" end="313.375 23.927 1070.234" id="SEGMENT"/>
+                <segment start="313.375 23.927 1070.234" end="311.541 23.230 1003.089" id="SEGMENT"/>
+                <segment start="311.541 23.230 1003.089" end="333.369 24.289 1000.312" id="SEGMENT"/>
+                <segment start="333.369 24.289 1000.312" end="343.534 25.734 1017.836" id="SEGMENT"/>
+                <segment start="343.534 25.734 1017.836" end="347.495 26.205 1043.949" id="SEGMENT"/>
+                <segment start="347.495 26.205 1043.949" end="357.629 25.492 1092.485" id="SEGMENT"/>
+                <segment start="357.629 25.492 1092.485" end="361.264 24.715 1117.327" id="SEGMENT"/>
+                <segment start="361.264 24.715 1117.327" end="365.674 24.057 1149.903" id="SEGMENT"/>
+                <segment start="365.674 24.057 1149.903" end="364.435 23.250 1183.004" id="SEGMENT"/>
+                <segment start="364.435 23.250 1183.004" end="296.770 22.490 1166.295" id="SEGMENT"/>
+                <segment start="296.770 22.490 1166.295" end="245.076 21.801 1153.411" id="SEGMENT"/>
+                <segment start="245.076 21.801 1153.411" end="240.112 22.013 1145.935" id="SEGMENT"/>
+                <segment start="240.112 22.013 1145.935" end="245.704 21.863 1112.666" id="SEGMENT"/>
+                <segment start="245.704 21.863 1112.666" end="246.732 21.772 1093.030" id="SEGMENT"/>
+                <segment start="246.732 21.772 1093.030" end="261.697 22.090 1080.721" id="SEGMENT"/>
+                <segment start="261.697 22.090 1080.721" end="291.029 22.959 1073.747" id="SEGMENT"/>
+                <segment start="291.029 22.959 1073.747" end="294.918 23.148 1080.189" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="57647.945312" capacity="57647.945312"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Sheep/xml/sheepSmallAutoWater.xml" uniqueId="placeable8d32785d70b2863baf9708b3121647c2" position="-1042.277 27.572 413.992" rotation="0.00 3.17 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+        <husbandryFence>
+            <fence>
+                <segment start="-1041.411 27.655 411.443" end="-1030.404 27.921 413.697" id="SEGMENT"/>
+                <segment start="-1030.404 27.921 413.697" end="-1016.942 34.268 447.466" id="SEGMENT"/>
+                <segment start="-1016.942 34.268 447.466" end="-983.835 44.131 522.715" id="SEGMENT"/>
+                <segment start="-983.835 44.131 522.715" end="-981.608 44.532 530.868" id="SEGMENT"/>
+                <segment start="-981.608 44.532 530.868" end="-1018.339 45.043 577.784" id="SEGMENT"/>
+                <segment start="-1018.339 45.043 577.784" end="-1032.802 44.680 587.827" id="SEGMENT"/>
+                <segment start="-1032.802 44.680 587.827" end="-1084.542 43.933 593.139" id="SEGMENT"/>
+                <segment start="-1084.542 43.933 593.139" end="-1210.730 43.943 579.487" id="SEGMENT"/>
+                <segment start="-1210.730 43.943 579.487" end="-1221.270 44.301 575.417" id="SEGMENT"/>
+                <segment start="-1221.270 44.301 575.417" end="-1218.924 44.189 561.020" id="SEGMENT"/>
+                <segment start="-1218.924 44.189 561.020" end="-1195.979 44.042 534.172" id="SEGMENT"/>
+                <segment start="-1195.979 44.042 534.172" end="-1161.172 41.960 513.186" id="SEGMENT"/>
+                <segment start="-1161.172 41.960 513.186" end="-1208.241 44.366 482.641" id="SEGMENT"/>
+                <segment start="-1208.241 44.366 482.641" end="-1238.598 44.313 457.667" id="SEGMENT"/>
+                <segment start="-1238.598 44.313 457.667" end="-1143.299 38.167 433.614" id="SEGMENT"/>
+                <segment start="-1143.299 38.167 433.614" end="-1077.045 28.060 407.591" id="SEGMENT"/>
+                <segment start="-1077.045 28.060 407.591" end="-1043.408 27.386 411.548" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="142886.984375" capacity="142886.984375"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Sheep/xml/sheepSmallAutoWater.xml" uniqueId="placeablee383b9652f309125b8db8f8fd0453c1a" position="-1001.227 33.965 437.840" rotation="-180.00 59.84 180.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+        <husbandryFence>
+            <fence>
+                <segment start="-1003.892 34.048 438.225" end="-1012.563 31.225 422.948" id="SEGMENT"/>
+                <segment start="-1012.563 31.225 422.948" end="-964.730 31.589 398.385" id="SEGMENT"/>
+                <segment start="-964.730 31.589 398.385" end="-953.764 31.415 392.480" id="SEGMENT"/>
+                <segment start="-953.764 31.415 392.480" end="-947.603 31.171 387.565" id="SEGMENT"/>
+                <segment start="-947.603 31.171 387.565" end="-944.460 29.675 375.473" id="SEGMENT"/>
+                <segment start="-944.460 29.675 375.473" end="-878.345 30.434 389.729" id="SEGMENT"/>
+                <segment start="-878.345 30.434 389.729" end="-817.875 26.618 405.244" id="SEGMENT"/>
+                <segment start="-817.875 26.618 405.244" end="-765.823 33.949 512.452" id="SEGMENT"/>
+                <segment start="-765.823 33.949 512.452" end="-736.349 37.848 561.137" id="SEGMENT"/>
+                <segment start="-736.349 37.848 561.137" end="-738.757 38.128 574.613" id="SEGMENT"/>
+                <segment start="-738.757 38.128 574.613" end="-768.968 38.100 628.156" id="SEGMENT"/>
+                <segment start="-768.968 38.100 628.156" end="-775.957 38.383 631.828" id="SEGMENT"/>
+                <segment start="-775.957 38.383 631.828" end="-795.204 39.232 631.330" id="SEGMENT"/>
+                <segment start="-795.204 39.232 631.330" end="-824.315 40.619 627.553" id="SEGMENT"/>
+                <segment start="-824.315 40.619 627.553" end="-844.406 41.398 630.201" id="SEGMENT"/>
+                <segment start="-844.406 41.398 630.201" end="-849.113 41.685 628.316" id="SEGMENT"/>
+                <segment start="-849.113 41.685 628.316" end="-840.689 41.392 600.491" id="SEGMENT"/>
+                <segment start="-840.689 41.392 600.491" end="-849.696 41.403 569.068" id="SEGMENT"/>
+                <segment start="-849.696 41.403 569.068" end="-856.457 40.946 537.945" id="SEGMENT"/>
+                <segment start="-856.457 40.946 537.945" end="-867.215 40.492 513.325" id="SEGMENT"/>
+                <segment start="-867.215 40.492 513.325" end="-885.683 41.012 499.502" id="SEGMENT"/>
+                <segment start="-885.683 41.012 499.502" end="-911.184 41.721 487.652" id="SEGMENT"/>
+                <segment start="-911.184 41.721 487.652" end="-931.261 42.493 487.597" id="SEGMENT"/>
+                <segment start="-931.261 42.493 487.597" end="-946.494 43.662 505.811" id="SEGMENT"/>
+                <segment start="-946.494 43.662 505.811" end="-966.678 44.393 524.537" id="SEGMENT"/>
+                <segment start="-966.678 44.393 524.537" end="-972.673 44.342 522.584" id="SEGMENT"/>
+                <segment start="-972.673 44.342 522.584" end="-992.132 40.905 480.428" id="SEGMENT"/>
+                <segment start="-992.132 40.905 480.428" end="-1007.433 35.165 446.622" id="SEGMENT"/>
+                <segment start="-1007.433 35.165 446.622" end="-1002.891 33.965 439.957" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="152766.453125" capacity="152766.453125"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_OpenPastures_Milk/xml/cowSmallAutoWater.xml" uniqueId="placeable92b9408af02bcd6d7ff85800da49b93a" position="-1092.696 22.770 214.199" rotation="0.00 -15.10 0.00" age="0.000000" price="35000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage boughtWithFarmlandOverwrite="true"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="-1091.080 22.854 212.046" end="-1086.928 21.999 206.051" id="SEGMENT"/>
+                <segment start="-1086.928 21.999 206.051" end="-1033.476 22.342 204.811" id="SEGMENT"/>
+                <segment start="-1033.476 22.342 204.811" end="-1024.560 22.830 205.408" id="SEGMENT"/>
+                <segment start="-1024.560 22.830 205.408" end="-1012.774 24.011 214.882" id="SEGMENT"/>
+                <segment start="-1012.774 24.011 214.882" end="-1009.800 24.277 232.682" id="SEGMENT"/>
+                <segment start="-1009.800 24.277 232.682" end="-1009.991 24.097 274.509" id="SEGMENT"/>
+                <segment start="-1009.991 24.097 274.509" end="-1016.261 23.530 287.378" id="SEGMENT"/>
+                <segment start="-1016.261 23.530 287.378" end="-1028.941 23.354 297.898" id="SEGMENT"/>
+                <segment start="-1028.941 23.354 297.898" end="-1053.592 24.138 314.459" id="SEGMENT"/>
+                <segment start="-1053.592 24.138 314.459" end="-1069.368 25.045 312.396" id="SEGMENT"/>
+                <segment start="-1069.368 25.045 312.396" end="-1083.903 26.118 309.285" id="SEGMENT"/>
+                <segment start="-1083.903 26.118 309.285" end="-1099.294 27.503 304.021" id="SEGMENT"/>
+                <segment start="-1099.294 27.503 304.021" end="-1110.166 28.868 297.822" id="SEGMENT"/>
+                <segment start="-1110.166 28.868 297.822" end="-1118.962 29.797 286.293" id="SEGMENT"/>
+                <segment start="-1118.962 29.797 286.293" end="-1129.825 30.827 272.828" id="SEGMENT"/>
+                <segment start="-1129.825 30.827 272.828" end="-1124.228 29.482 267.247" id="SEGMENT"/>
+                <segment start="-1124.228 29.482 267.247" end="-1136.260 28.135 234.431" id="SEGMENT"/>
+                <segment start="-1136.260 28.135 234.431" end="-1138.868 24.534 201.907" id="SEGMENT"/>
+                <segment start="-1138.868 24.534 201.907" end="-1126.453 23.783 204.404" id="SEGMENT"/>
+                <segment start="-1126.453 23.783 204.404" end="-1100.925 22.282 204.836" id="SEGMENT"/>
+                <segment start="-1100.925 22.282 204.836" end="-1093.011 22.770 211.525" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="50693.089844" capacity="50693.089844"/>
+        </husbandryMeadow>
+    </placeable>
+	    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_UK_Shed/ukShed.xml" uniqueId="smallholding largeShed" position="625.731 13.635 -1233.896" rotation="180.00 87.51 -180.00" age="0.000000" price="95000.000000" boughtWithFarmlandOverwrite="true">
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_UK_MachineShed_3Bay/UK_MachineShed_3Bay.xml" uniqueId="smallholdingmachinshed3bay" position="660.931 13.541 -1254.172" rotation="0.00 -67.29 0.00" age="0.000000" price="30000.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_Buscot_Buildings/i3d/haybarn01.xml" uniqueId="smallholdinghaybarn02" position="657.196 13.630 -1223.638" rotation="0.00 76.41 0.00" age="0.000000" price="23500.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_Buscot_Park" filename="$moddir$FS25_Buscot_Park/map/inports/FS25_Buscot_Buildings/i3d/buscotsheep.xml" uniqueId="smallholdingSheepbarn" position="727.60424805 13.70832253 -1214.27746582" rotation="-132.97702026 -90.00000763 133.11593628" age="0.000000" price="51000.000000" boughtWithFarmlandOverwrite="true">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+    </placeable>
+    <placeable modName="FS25_largeukcowshed" filename="$moddir$FS25_largeukcowshed/cowBarnMedium.xml" uniqueId="placeabled0b344b89efcb1e97990e2c8243cc5a4" position="698.621 13.626 -1268.910" rotation="0.00 -65.78 0.00" age="0.000000" price="100000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage boughtWithFarmlandOverwrite="true"/>
+        </husbandry>
+    </placeable>
+    <placeable filename="data/placeables/brandless/manureHeap/manureHeap.xml" uniqueId="placeabled00d1a889e62d2e6d61870f47401e3f0" position="725.25 13.63399982 -1253.25" rotation="-0.00 -90.00 0.00" age="0.000000" price="25000.000000" boughtWithFarmlandOverwrite="true">
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+    </placeable>
+	 <placeable modName="FS25_johnDeereDealerSign" filename="$moddir$FS25_johnDeereDealerSign/jdDealerSign.xml" uniqueId="jdeer01" position="169.83448792 17.66957092 36.94330215" rotation="0 -3.83583307 0" age="0.000000" price="580.000000" boughtWithFarmlandOverwrite="false"/>
+	  <placeable modName="FS25_johnDeereDealerSign" filename="$moddir$FS25_johnDeereDealerSign/jdDealerSign.xml" uniqueId="jdeer02" position="272.86599731 18.62249947 41.719898225" rotation="-180" age="0.000000" price="580.000000" boughtWithFarmlandOverwrite="false"/>
 </placeables>

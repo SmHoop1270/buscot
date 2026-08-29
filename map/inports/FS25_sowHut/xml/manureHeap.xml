@@ -21,7 +21,7 @@
     </storeData>
 
     <base>
-        <filename>map/inports/i3d/manureHeapExtension.i3d</filename>
+        <filename>map/inports/FS25_sowHut/i3d/manureHeapExtension.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
 		<boughtWithFarmland>true</boughtWithFarmland>
     </base>

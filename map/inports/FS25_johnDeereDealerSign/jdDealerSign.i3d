@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="jdDealerSign.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="16" filename="$data/maps/textures/shared/props/icicles_diffuse.dds"/>
+    <File fileId="17" filename="$data/maps/textures/shared/props/icicles_normal.dds"/>
+    <File fileId="18" filename="$data/maps/textures/shared/props/icicles_specular.dds"/>
+    <File fileId="11" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="12" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="13" filename="$data/maps/textures/shared/snow_specular.dds"/>
+    <File fileId="8" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="14" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="2" filename="textures/jdDealerSignFrame_diffuse.dds"/>
+    <File fileId="9" filename="textures/jdDealerSignFrame_emissive.dds"/>
+    <File fileId="3" filename="textures/jdDealerSignFrame_normal.dds"/>
+    <File fileId="4" filename="textures/jdDealerSignFrame_specular.dds"/>
+    <File fileId="5" filename="textures/jdDealerSignLogo_diffuse.dds"/>
+    <File fileId="10" filename="textures/jdDealerSignLogo_emissive.dds"/>
+    <File fileId="6" filename="textures/jdDealerSignLogo_normal.dds"/>
+    <File fileId="7" filename="textures/jdDealerSignLogo_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="icicles_mat" materialId="5" alphaBlending="true" customShaderId="14" customShaderVariation="icicle">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="jdDealerSignFrame_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="jdDealerSignFrame_mat" materialId="7" customShaderId="8" customShaderVariation="customEmissiveMap">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mEmissiveMap" fileId="9"/>
+    </Material>
+    <Material name="jdDealerSignLogo_mat" materialId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="jdDealerSignLogo_mat" materialId="9" customShaderId="8" customShaderVariation="customEmissiveMap">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <Custommap name="mEmissiveMap" fileId="10"/>
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="snow_mat" materialId="11" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12" bumpDepth="0.3"/>
+      <Glossmap fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="jdDealerSign.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="jdDealerSign" scale="1.25 1.25 1.25" clipDistance="300" nodeId="18">
+      <Shape name="jdDealerSign_col" translation="0 2.47101 1.08012e-07" rotation="2.50448e-06 -0 0" scale="2.03 6.06563 0.598915" shapeId="1" static="true" clipDistance="500" nodeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10">
+        <Shape name="frame_vis" translation="3.25327e-07 0.31891 -3.21524e-07" rotation="-2.53646e-05 -0 0" scale="0.0492611 0.0164863 0.166969" shapeId="2" clipDistance="500" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="6" weatherPreventMask="0x40"/>
+        <Shape name="logos_vis" translation="3.25327e-07 0.377667 -3.47536e-07" rotation="-2.53646e-05 -0 0" scale="0.0492611 0.0164863 0.166969" shapeId="3" clipDistance="500" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="8" weatherPreventMask="0x40"/>
+      </Shape>
+      <TransformGroup name="illum" rotation="2.50448e-06 -0 0" nodeId="22">
+        <Shape name="frameNight_vis" translation="6.60413e-07 4.4054 -1.92565e-07" rotation="-2.50448e-06 -0 0" scale="0.1 0.1 0.1" shapeId="2" clipDistance="500" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40"/>
+        <Shape name="logosNight_vis" translation="6.60413e-07 4.7618 -2.08144e-07" rotation="-2.50448e-06 -0 0" scale="0.1 0.0999998 0.1" shapeId="3" clipDistance="500" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="9" weatherRequiredMask="0x40"/>
+        <TransformGroup name="realLights" scale="1 0.75 1" nodeId="25" weatherRequiredMask="0x40">
+          <Light name="light1" translation="-0.0109863 6.34005 0.325653" rotation="126.42 6.10666e-13 180" nodeId="26" type="spot" color="0 0.514057 0.0712767" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="45" dropOff="5"/>
+          <Light name="light2" translation="-0.00280762 6.32906 -0.32608" rotation="-53.5801 -5.00896e-06 8.65142e-06" nodeId="27" type="spot" color="0 0.514057 0.0712767" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="45" dropOff="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="areas" nodeId="28">
+        <TransformGroup name="start" translation="-1.05681 0 -0.283856" scale="0.8 0.8 0.8" nodeId="29">
+          <TransformGroup name="width" translation="2.64292 0 0" nodeId="30"/>
+          <TransformGroup name="height" translation="0 0 0.700835" nodeId="31"/>
+        </TransformGroup>
+        <TransformGroup name="start" translation="-1.05681 0 -0.283856" scale="0.8 0.8 0.8" nodeId="32">
+          <TransformGroup name="end" translation="2.64292 0 0.701" nodeId="33"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart" translation="-1.05681 0 -0.284" scale="0.8 0.8 0.8" nodeId="34">
+          <TransformGroup name="testAreaEnd" translation="2.64292 7 0.701" nodeId="35"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="winter" scale="0.8 0.8 0.8" nodeId="36" weatherRequiredMask="0x400">
+        <Shape name="snow_vis" rotation="-2.50448e-06 -0 0" shapeId="4" clipDistance="300" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="icicles_vis" rotation="-2.50448e-06 -0 0" shapeId="5" clipDistance="200" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

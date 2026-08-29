@@ -29,7 +29,7 @@
     </storeData>
 
     <base>
-        <filename>map/inports/FS25_Customize_Fence_Cow_BarnStores/MediumCowBarn.i3d</filename>
+        <filename>map/inports/FS25_Customize_Fence_Cow_Barn/MediumCowBarn.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
 		<boughtWithFarmland>true</boughtWithFarmland>
     </base>
