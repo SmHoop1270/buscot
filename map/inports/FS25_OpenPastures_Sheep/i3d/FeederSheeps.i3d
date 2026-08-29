@@ -15,7 +15,7 @@
   <Materials>
     <Material name="fillPlane_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
-    <Material name="plastic_mat" materialId="44" customShaderId="5" customShaderVariation="colorScale">
+    <Material name="plastic_mat" materialId="6" customShaderId="5" customShaderVariation="colorScale">
       <Texture fileId="3"/>
       <Glossmap fileId="4"/>
       <CustomParameter name="colorScale0" value="0 0 0 1"/>
@@ -27,9 +27,9 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="plasticFeeder" nodeId="10">
-      <Shape name="fillPlane" translation="0 0 -8.9407e-08" shapeId="1" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="5"/>
-      <Shape name="frame" translation="0 0 -1.49012e-07" shapeId="2" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="44"/>
+    <TransformGroup name="plasticFeeder" clipDistance="2000" nodeId="10">
+      <Shape name="fillPlane" translation="0 0 -8.9407e-08" shapeId="1" clipDistance="150" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="frame" translation="0 0 -1.49012e-07" shapeId="2" clipDistance="250" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="6"/>
     </TransformGroup>
   </Scene>
 
