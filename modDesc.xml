@@ -37,7 +37,6 @@
         <sourceFile filename="map/scripts/OpeningHours.lua"/>
         <sourceFile filename="map/scripts/MemorialTrigger.lua" />
         <sourceFile filename="map/inports/FS25_OpenPastures_Milk/scripts/main.lua" />
-        <sourceFile filename="map/scripts/RouteTracker.lua" />
     </extraSourceFiles>
 	
 	    <!-- <fillTypes filename="map/config/fillTypes.xml"/> -->
@@ -56,17 +55,9 @@
 		<dependency>FS25_MA_hedgePlaceable</dependency>		
 		<dependency>FS25_RDM_BritishGrainSheds</dependency>
 		<dependency>FS25_wholesaleMarket</dependency>
-		<dependency>FS25_ForestrySellPoint.zip</dependency>
-		
+
     </dependencies>
-
-<placeableTypes>
-    <type name="Shed" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
-        <specialization name="windTurbine" />
-        <specialization name="incomePerHour" />
-    </type>
-</placeableTypes>
-
+	
 <storeItems>
 
 <!-- Buscot-->
@@ -106,7 +97,6 @@
     <storeItem xmlFilename="$data/maps/mapUS/textures/buildings/animalTrader/animalTrader.xml"/>
     <storeItem xmlFilename="map/inports/sellingStationVehicles/sellingStationVehicles.xml"/>
 	<storeItem xmlFilename="map/inports/FS25_largeukcowshed/cowBarnMedium.xml" />
-	<storeItem xmlFilename="map/inports/FS25_UK_Grain_MachineryShed/ukGrainMachineryShed.xml" />
 <!-- PLANTS -->
 
     <storeItem xmlFilename="$data/foliage/meadow/meadowUS/paintable_meadow.xml" />

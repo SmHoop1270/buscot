@@ -48,20 +48,20 @@
     <File fileId="31" filename="$data/foliage/meadow/meadowUS/wildBergamot02LOD_mask.png"/>
     <File fileId="29" filename="$data/foliage/meadow/meadowUS/wildBergamot02LOD_normal.png"/>
     <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
-    <File fileId="8" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_coneFlower01LOD_diffuse.dds"/>
-    <File fileId="12" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_coneFlower02LOD_diffuse.dds"/>
-    <File fileId="52" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassCutLOD_diffuse.dds"/>
-    <File fileId="48" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassHarvestReadyLOD_diffuse.dds"/>
-    <File fileId="44" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassMiddleLOD_diffuse.dds"/>
-    <File fileId="40" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_grassSmallLOD_diffuse.dds"/>
-    <File fileId="56" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_meadowUSRollerLOD1_diffuse.dds"/>
-    <File fileId="1" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_meadowUS_diffuse.dds"/>
-    <File fileId="32" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_prairieBlazingStar01LOD_diffuse.dds"/>
-    <File fileId="36" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_prairieBlazingStar02LOD_diffuse.dds"/>
-    <File fileId="16" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_slenderMountainMint01LOD_diffuse.dds"/>
-    <File fileId="20" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_slenderMountainMint01LOD_diffuse.dds"/>
-    <File fileId="24" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_wildBergamot01LOD_diffuse.dds"/>
-    <File fileId="28" filename="../../../../textures/FS25_decoFoliagePack_prefab_foliage_meadowUS_wildBergamot02LOD_diffuse.dds"/>
+    <File fileId="8" filename="coneFlower01LOD_diffuse.png"/>
+    <File fileId="12" filename="coneFlower02LOD_diffuse.png"/>
+    <File fileId="52" filename="grassCutLOD_diffuse.png"/>
+    <File fileId="48" filename="grassHarvestReadyLOD_diffuse.png"/>
+    <File fileId="44" filename="grassMiddleLOD_diffuse.png"/>
+    <File fileId="40" filename="grassSmallLOD_diffuse.png"/>
+    <File fileId="56" filename="meadowUSRollerLOD1_diffuse.png"/>
+    <File fileId="1" filename="meadowUS_diffuse.png"/>
+    <File fileId="32" filename="prairieBlazingStar01LOD_diffuse.png"/>
+    <File fileId="36" filename="prairieBlazingStar02LOD_diffuse.png"/>
+    <File fileId="16" filename="slenderMountainMint01LOD_diffuse.png"/>
+    <File fileId="20" filename="slenderMountainMint02LOD_diffuse.png"/>
+    <File fileId="24" filename="wildBergamot01LOD_diffuse.png"/>
+    <File fileId="28" filename="wildBergamot02LOD_diffuse.png"/>
   </Files>
 
 

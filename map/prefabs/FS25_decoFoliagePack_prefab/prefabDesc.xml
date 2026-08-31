@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>PfalzAgrar</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>DecoFoliage Pack</en>
+        <de>Deko Foliage Pack</de>
+    </title>
+	
+	<description>
+        <en><![CDATA[This pack includes 3 customized Deco Foliages and offers a more coherent overall concept on each card!
+Fruits:
+- DecoFoliage
+- Grass
+- Meadow
+
+All components of the package must be included in a map of your choice.
+A readme.txt is included in the package!
+]]></en>
+<de><![CDATA[Dieses Paket beinhaltet 3 angepasste Deco Foliages und bietet auf jeder Karte ein stimmigeres Gesamtkonzept!
+
+Früchte:
+- DecoFoliage
+- Gras
+- Meadow
+
+Alle Bestandteile des Pakets müssen selbst in einer Karte eurer Wahl eingebaut werden.
+Ein readme.txt ist im Paket enthalten!
+]]></de>
+<fr><![CDATA[Ce pack comprend 3 Feuillages Déco personnalisés et propose un concept global plus cohérent sur chaque carte !
+
+Fruits:
+- DecoFoliage
+- Herbe
+- Pré
+
+Tous les éléments du forfait doivent être inclus dans une carte de votre choix.
+Un readme.txt est inclus dans le package!
+]]></fr>
+    </description>
+	
+	<categories>
+        <category>Other</category>
+    </categories>
+	
+	<iconFilename>icon_decoFoliage.dds</iconFilename>
+	
+	<prefabs>
+		<prefab name="decoFoliageUS"   						xmlFilename="foliage/decoFoliageUS/decoFoliageUS.xml" />
+		<prefab name="grass"   								xmlFilename="foliage/grass/grass.xml" />
+		<prefab name="meadowUS"   							xmlFilename="foliage/meadowUS/meadowUS.xml" />
+    </prefabs>
+</prefabDesc>
