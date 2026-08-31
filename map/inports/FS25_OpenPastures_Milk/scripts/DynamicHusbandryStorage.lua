@@ -110,28 +110,45 @@ end
 --- Animals" style mods use to make the engine's own reproduction/buy-slot logic respect a
 --- number it didn't compute itself.
 function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
+    Logging.info("[OpenPastures DIAG] onHusbandryAnimalsCreated fired: name=%s customEnvironment=%s MOD_NAME=%s configFileName=%s",
+        tostring(self.getName ~= nil and self:getName() or nil), tostring(self.customEnvironment),
+        tostring(DynamicHusbandryStorage.MOD_NAME), tostring(self.configFileName))
+
     if self.customEnvironment ~= DynamicHusbandryStorage.MOD_NAME then
+        Logging.info("[OpenPastures DIAG] bailing: customEnvironment mismatch")
         return
     end
 
     local config = DynamicHusbandryStorage.getConfig(self)
     if config == nil then
+        Logging.info("[OpenPastures DIAG] bailing: getConfig returned nil for configFileName=%s", tostring(self.configFileName))
         return
     end
 
     local husbandrySpec = self.spec_husbandry
     local animalsSpec = self.spec_husbandryAnimals
-    if husbandrySpec == nil or husbandrySpec.storage == nil or animalsSpec == nil then
+    -- husbandrySpec.storage only exists for pasture types with bulk output (e.g. cow's milk
+    -- tank) - pasture types that only produce pallet-based output (e.g. sheep wool) never
+    -- create one, and that's expected, not an error. Only bail if the specs we actually need
+    -- (husbandry + animals) are missing; applyOutputCapacities below already no-ops safely
+    -- when storage is nil.
+    if husbandrySpec == nil or animalsSpec == nil then
+        Logging.info("[OpenPastures DIAG] bailing: husbandrySpec=%s animalsSpec=%s",
+            tostring(husbandrySpec), tostring(animalsSpec))
         return
     end
 
     if animalsSpec.navigationMesh == nil or getNavMeshSurfaceArea == nil then
+        Logging.info("[OpenPastures DIAG] bailing: navigationMesh=%s getNavMeshSurfaceArea=%s",
+            tostring(animalsSpec.navigationMesh), tostring(getNavMeshSurfaceArea))
         return
     end
 
     local navMeshArea = getNavMeshSurfaceArea(animalsSpec.navigationMesh)
     local sqmPerAnimal = animalsSpec.sqmPerAnimal
     if navMeshArea == nil or navMeshArea <= 0 or sqmPerAnimal == nil or sqmPerAnimal <= 0 then
+        Logging.info("[OpenPastures DIAG] bailing: navMeshArea=%s sqmPerAnimal=%s",
+            tostring(navMeshArea), tostring(sqmPerAnimal))
         return
     end
 
@@ -182,7 +199,7 @@ end
 --- Plain module function (not a placeable method) - placeable is passed explicitly since this
 --- specialization never registers these as callable methods on the placeable itself.
 function DynamicHusbandryStorage.applyOutputCapacities(placeable, storage, maxAnimals, config)
-    if storage.capacities == nil then
+    if storage == nil or storage.capacities == nil then
         return
     end
 

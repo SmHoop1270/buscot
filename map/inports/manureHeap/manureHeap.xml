@@ -18,12 +18,6 @@
             <category>buildings</category>
             <tab>silos</tab>
         </brush>
-        <vertexBufferMemoryUsage>44544</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>7936</indexBufferMemoryUsage>
-        <textureMemoryUsage>327680</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>

@@ -25,7 +25,6 @@
         <storeIconRendering>
             <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
     <base>
         <filename>map/inports/FS25_OpenPastures_Milk/i3d/cowSmall.i3d</filename>

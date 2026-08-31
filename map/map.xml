@@ -57,10 +57,13 @@
     <motionPathEffects filename="$data/effects/motionPathEffects.xml" />
 
     <fruitTypes>
-        <fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml" />
+        <!-- DIAGNOSTIC: temporarily disabled to test whether this fruit type is exhausting
+             the terrain's density-map channel budget and breaking CropRotation's catchCropMap
+             allocation (see CatchCropMap:getModifier nil bitVectorMap crash). Re-enable once confirmed. -->
+        <!-- <fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml" /> -->
 		<fruitType filename="map/foliage/barley/barley.xml" />
         <fruitType filename="map/foliage/canola/canola.xml" />
-        <fruitType filename="map/foliage/grass/grass.xml" />
+        <fruitType filename="$data/foliage/grass/grass.xml" />
         <fruitType filename="map/foliage/maize/maize.xml" />
         <fruitType filename="map/foliage/oat/oat.xml" />
         <fruitType filename="map/foliage/sorghum/sorghum.xml" />

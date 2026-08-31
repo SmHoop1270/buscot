@@ -1,0 +1,87 @@
+Foliage States
+DECOBUSH
+	Foliage State ;  0 , Remove , 1. Small , 2. Medium , 3. Big , 4. Super Big , 5. Blueberry Short , 6. Blueberry Small , 7. Blueberry Medium , 8. Blueberry Big , 9. Blueberry Tall , 10. Boxwood Small , 11. Boxwood Medium , 12. Boxwood Big , 13. Hazelnut Small , 14. Hazelnut Medium , 15. Hazelnut Big ,  
+DECOFOLIAGE
+	Foliage State ;  0 , Remove , 1. smallDenseMix , 2. smallRumex , 3. apera , 4. whiteTallWeed , 5. greenTallWeed , 6. cirsium , 7. papaverRhoeas , 8. rumex , 9. grassSmall , 10. grassMedium , 11. grassCut , 12. coneflower , 13. slenderMountainMint , 14. wildBergamot , 15. prairieBlazingStar ,  
+DECOBUSHUS
+	Foliage State ;  0 , Remove , 1. common01 , 2. common02 , 3. common03 , 4. dynamite01 , 5. dynamite02 , 6. dynamite03 , 7. pawpaw01 , 8. pawpaw02 , 9. pawpaw03 , 10. waterElm01 , 11. waterElm02 , 12. waterElm03 , 13. wingedSumac , 14. witchHazel01 , 15. witchHazel02 ,  
+MEADOW
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. harvestReady , 5. cut , 6. cutRolled ,  
+FORESTPLANTS
+	Foliage State ;  0 , Remove , 1. dry branches , 2. clovers , 3. starflower , 4. bunchberry , 5. salmonBerryBush , 6. starryFalseSolomonSeal , 7. swordFern , 8. deerFern , 9. grass , 10. riceLongGrainDeco ,  
+WATERPLANTS
+	Foliage State ;  0 , Remove , 1. typhaLatifoliaSmall , 2. typhaLatifoliaMedium , 3. typhaLatifoliaLarge , 4. miscanthusSinensisSmall , 5. miscanthusSinensisMedium , 6. miscanthusSinensisLarge , 7. stipaTenuissimaSmall , 8. stipaTenuissimaLarge ,  
+GRASS
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. harvestReady , 5. cut , 6. cutRolled ,  
+WHEAT
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenMiddle2 , 6. greenBig , 7. greenBig2 , 8. harvestReady , 9. dead , 10. harvested , 11. harvested ,  
+CANOLA
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenSmall3 , 5. greenMiddle , 6. greenMiddle2 , 7. greenBig , 8. greenBig2 , 9. harvestReady , 10. dead , 11. harvested , 12. harvested ,  
+BARLEY
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenMiddle2 , 6. greenBig , 7. greenBig2 , 8. harvestReady , 9. dead , 10. harvested , 11. harvested ,  
+MAIZE
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReadyGreen , 6. harvestReadyGreen2 , 7. harvestReady3 , 8. dead , 9. harvestedGreen , 10. harvested , 11. tiretracksharvestedGreen ,  
+POTATO
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenBig , 6. harvestReady , 7. dead , 8. harvested , 9. cutHaulm ,  
+POTATO_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+SUGARBEET
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenMiddle2 , 6. greenBig , 7. greenBig2 , 8. harvestReady , 9. dead , 10. harvested , 11. cutHaulm ,  
+SUGARBEET_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+SUNFLOWER
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenMiddle2 , 6. greenBig , 7. greenBig2 , 8. harvestReady , 9. dead , 10. harvested , 11. harvested ,  
+SOYBEAN
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenMiddle2 , 5. greenBig , 6. greenBig2 , 7. harvestReady , 8. dead , 9. harvested , 10. harvested ,  
+OILSEEDRADISH
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall ,  
+POPLAR
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenSmall3 , 5. greenSmall4 , 6. greenMiddle , 7. greenMiddle2 , 8. greenMiddle3 , 9. greenMiddle4 , 10. greenBig , 11. greenBig2 , 12. greenBig3 , 13. greenBig4 , 14. harvestReady , 15. cut ,  
+OAT
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested , 8. harvested ,  
+SUGARCANE
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenMiddle2 , 6. greenBig , 7. greenBig2 , 8. harvestReady , 9. dead , 10. cut , 11. prepared ,  
+SUGARCANE_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+COTTON
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenSmall2 , 4. greenMiddle , 5. greenMiddle2 , 6. greenMiddle3 , 7. greenBig , 8. greenBig2 , 9. harvestReady , 10. dead , 11. harvested , 12. destroyed ,  
+SORGHUM
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested , 8. harvested ,  
+BEETROOT
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested , 8. cutHaulm ,  
+BEETROOT_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+CARROT
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested , 8. cutHaulm ,  
+CARROT_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+PARSNIP
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested , 8. cutHaulm ,  
+PARSNIP_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+GRAPE
+	Foliage State ;  0 , Remove , 1. noLeaves , 2. greenSmall , 3. greenSmallWeed , 4. greenSmall2 , 5. greenSmall2Weed , 6. greenBig , 7. greenBigWeed , 8. greenBig2 , 9. greenBig2Weed , 10. harvestReady , 11. harvestReadyWeed , 12. harvested , 13. harvestedWeed , 14. dead ,  
+OLIVE
+	Foliage State ;  0 , Remove , 1. noOlives , 2. noOlivesWeed , 3. noOlives2 , 4. noOlives2Weed , 5. greenOlives , 6. greenOlivesWeed , 7. greenOlives2 , 8. greenOlives2Weed , 9. harvestReady , 10. harvestReadyWeed , 11. harvested , 12. harvestedWeed , 13. dead ,  
+RICELONGGRAIN
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenMiddle2 , 5. greenBig , 6. harvestReady , 7. dead , 8. harvested ,  
+RICELONGGRAIN_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+RICE
+	Foliage State ;  0 , Remove , 1. greenSmall , 2. greenMiddle , 3. greenMiddle2 , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested ,  
+RICE_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+GREENBEAN
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested ,  
+GREENBEAN_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+PEA
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddle , 4. greenBig , 5. harvestReady , 6. dead , 7. harvested ,  
+PEA_HAULM
+	Foliage State ;  0 , Remove ,  State 1 
+SPINACH
+	Foliage State ;  0 , Remove , 1. invisible , 2. greenSmall , 3. greenMiddleSecond , 4. greenBig , 5. greenBigSecond , 6. harvestReady , 7. harvestReadySecond , 8. dead , 9. harvested , 10. harvestedSecond ,  
+WEED
+	Foliage State ;  0 , Remove , 1. invisible , 2. invisible dense , 3. small alive , 4. small dense alive , 5. big alive , 6. small dense weeded alive , 7. small dead , 8. small dense dead , 9. big dead ,  
+STONE
+	Foliage State ;  0 , Remove , 1. invisible , 2. small , 3. medium , 4. big ,  

@@ -24,7 +24,6 @@
         <storeIconRendering>
             <settings cameraXRot="-20" cameraYRot="30" advancedBoundingBox="true"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>

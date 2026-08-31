@@ -702,4 +702,22 @@
             <negEnd linkNode="0" template="fenceMetalClose"/>
         </sounds>
     </animatedObject>
+    <animatedObject saveId="fenceGroup99_gate6m_336ap1u0" useAIBlockingRegion="true">
+        <animation duration="1.5">
+            <part node="0">
+                <keyFrame time="0.1" rotation="0 0 0"/>
+                <keyFrame time="1.2" rotation="0 90 0"/>
+            </part>
+            <part node="1">
+                <keyFrame time="0.1" rotation="0 0 0"/>
+                <keyFrame time="1.2" rotation="0 -90 0"/>
+            </part>
+        </animation>
+        <controls triggerNode="4" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor"/>
+        <sounds>
+            <moving linkNode="0" template="fenceLoop"/>
+            <posEnd linkNode="0" template="fenceOpen"/>
+            <negEnd linkNode="0" template="fenceClose"/>
+        </sounds>
+    </animatedObject>
 </animatedObjects>
