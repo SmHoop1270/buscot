@@ -1623,7 +1623,7 @@
         <farmhouse isFreeForAll="false"/>
         <wardrobe isFreeForAll="false"/>
     </placeable>
-    <placeable modName="FS25_AddableTriggers" filename="$moddir$FS25_AddableTriggers/farm_farmhouse.xml" uniqueId="myrtlefarmhouse" position="1018.560 18.614 -732.415" rotation="0.00 78.66 0.00" age="0.000000" price="5000.000000"  boughtWithFarmlandOverwrite="true">
+    <placeable modName="FS25_AddableTriggers" filename="$moddir$FS25_AddableTriggers/xml/farm_farmhouse.xml" uniqueId="myrtlefarmhouse" position="1018.560 18.614 -732.415" rotation="0.00 78.66 0.00" age="0.000000" price="5000.000000"  boughtWithFarmlandOverwrite="true">
         <farmhouse isFreeForAll="false"/>
         <wardrobe isFreeForAll="false"/>
     </placeable>

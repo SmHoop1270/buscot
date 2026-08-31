@@ -37,6 +37,7 @@
         <sourceFile filename="map/scripts/OpeningHours.lua"/>
         <sourceFile filename="map/scripts/MemorialTrigger.lua" />
         <sourceFile filename="map/inports/FS25_OpenPastures_Milk/scripts/main.lua" />
+        <sourceFile filename="map/scripts/RouteTracker.lua" />
     </extraSourceFiles>
 	
 	    <!-- <fillTypes filename="map/config/fillTypes.xml"/> -->
