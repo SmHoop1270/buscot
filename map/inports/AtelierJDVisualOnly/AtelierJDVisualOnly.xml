@@ -13,6 +13,8 @@
         <brand>JOHNDEERE</brand>
         <species>PLACEABLE</species>
         <category>placeableMisc</category>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <brush>
             <type>placeable</type>
             <category>buildings</category>
