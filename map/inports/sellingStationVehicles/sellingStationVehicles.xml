@@ -16,13 +16,13 @@
     </storeData>
 
     <base>
-        <filename>map/inports/sellingStationVehicles/sellingStationVehicles.i3d</filename>
+        <filename>$data/placeables/mapUS/sellingPoints/sellingStationVehicles/sellingStationVehicles.i3d</filename>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" />
 
     <hotspots>
-        <hotspot type="SHOP" linkNode="hotspotNode" teleportNode="teleportNode" teleportWorldPosition="192 18 48" worldPosition="192 482"/>
+        <hotspot type="SHOP" linkNode="hotspotNode" teleportNode="teleportNode" teleportWorldPosition="192 18 48" worldPosition="192 48"/>
     </hotspots>
 
     <triggerMarkers>
