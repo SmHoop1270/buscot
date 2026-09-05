@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <placeables version="1">
-    <placeable isPreplaced="true" filename="$mapdir$/map/inports/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="preplaced_sellingStationVehicles_buscot" position="192.101 18.0817 48.8576" rotation="0 88.9545 -9.2519e-05" age="0.000000" price="1.000000" farmId="0" boughtWithFarmlandOverwrite="false"/>
+    <placeable isPreplaced="true" filename="$mapdir$/map/inports/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="sellingStationVehiclesBuscot" position="192.101 18.0817 48.8576" rotation="0 88.9545 -9.2519e-05" age="0.000000" price="1.000000" farmId="0" boughtWithFarmlandOverwrite="false"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/AtelierJDVisualOnly/AtelierJDVisualOnly.xml" uniqueId="Atelier_JD" position="216.055 18.088 53.043" rotation="0.00 -0.70 0.00" age="0.000000" price="115000.000000" boughtWithFarmlandOverwrite="false">
         <configuration name="solarPanels" id="1" isActive="true"/>
         <animatedObjects>
