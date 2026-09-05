@@ -386,10 +386,10 @@ local function runGateScan()
                     obstruction.gateAnimatedObjects = matches
                     Logging.info("[GateObstruction] '%s': matched by GE10 node id %s -- %s",
                         obstruction.uniqueId, tostring(nodeId), detail)
-                else
-                    Logging.warning("[GateObstruction] '%s': node id %s match failed (%s) -- falling back to proximity search",
-                        obstruction.uniqueId, tostring(nodeId), detail)
                 end
+                -- No match is expected here (GE10 node ids don't survive into an
+                -- actual game session) -- falls through to the proximity search
+                -- below silently rather than logging a warning every load.
             end
 
             if #obstruction.gateAnimatedObjects == 0 then
