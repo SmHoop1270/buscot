@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="garageWorkshopSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_Atelier_JD</name>
+        <name>Edwards Tractor Dealer</name>
         <image>map/inports/FS25_John_Deere_Workshop/store/store_Atelier_JD.png</image>
         <price>115000</price>
         <functions>
@@ -18,14 +18,18 @@
             <category>buildings</category>
             <tab>tools</tab>
         </brush>
-    <canBeSold>false</canBeSold>
-    <showInStore>false</showInStore>
+        <vertexBufferMemoryUsage>6784000</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1597440</indexBufferMemoryUsage>
+        <textureMemoryUsage>23003136</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
     </storeData>
 
     <base>
         <filename>map/inports/FS25_John_Deere_Workshop/i3d/Atelier_JD.i3d</filename>
-        <boughtWithFarmland>false</boughtWithFarmland>
-        <canBeRenamed>false</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <canBeRenamed>true</canBeRenamed>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >
@@ -61,14 +65,16 @@
         </updateAreas>
     </ai>
 
-<!--     <triggerMarkers>
+    <triggerMarkers>
         <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
-    </triggerMarkers> -->
+    </triggerMarkers>
 
     <hotspots>
+        <hotspot type="SHOP" linkNode="vehicleTrigger" teleportNode="playerTrigger" />
     </hotspots>
 
     <workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="false" />
     </workshop>
 
     <solarPanels>
