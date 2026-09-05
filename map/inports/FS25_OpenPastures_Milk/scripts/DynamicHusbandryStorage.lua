@@ -110,12 +110,18 @@ end
 --- Animals" style mods use to make the engine's own reproduction/buy-slot logic respect a
 --- number it didn't compute itself.
 function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
+    Logging.info("[OpenPastures DIAG] onHusbandryAnimalsCreated fired: name=%s customEnvironment=%s MOD_NAME=%s configFileName=%s",
+        tostring(self.getName ~= nil and self:getName() or nil), tostring(self.customEnvironment),
+        tostring(DynamicHusbandryStorage.MOD_NAME), tostring(self.configFileName))
+
     if self.customEnvironment ~= DynamicHusbandryStorage.MOD_NAME then
+        Logging.info("[OpenPastures DIAG] bailing: customEnvironment mismatch")
         return
     end
 
     local config = DynamicHusbandryStorage.getConfig(self)
     if config == nil then
+        Logging.info("[OpenPastures DIAG] bailing: getConfig returned nil for configFileName=%s", tostring(self.configFileName))
         return
     end
 
@@ -131,12 +137,16 @@ function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
     end
 
     if animalsSpec.navigationMesh == nil or getNavMeshSurfaceArea == nil then
+        Logging.info("[OpenPastures DIAG] bailing: navigationMesh=%s getNavMeshSurfaceArea=%s",
+            tostring(animalsSpec.navigationMesh), tostring(getNavMeshSurfaceArea))
         return
     end
 
     local navMeshArea = getNavMeshSurfaceArea(animalsSpec.navigationMesh)
     local sqmPerAnimal = animalsSpec.sqmPerAnimal
     if navMeshArea == nil or navMeshArea <= 0 or sqmPerAnimal == nil or sqmPerAnimal <= 0 then
+        Logging.info("[OpenPastures DIAG] bailing: navMeshArea=%s sqmPerAnimal=%s",
+            tostring(navMeshArea), tostring(sqmPerAnimal))
         return
     end
 
