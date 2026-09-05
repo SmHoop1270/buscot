@@ -188,32 +188,15 @@ end
 -- =====================================================================
 -- Apply a clear (called on every machine once the server confirms it)
 -- =====================================================================
-local function disableCollisionRecursive(node)
-    if node == nil or node == 0 then return end
-    local okShape, isShape = pcall(getHasClassId, node, ClassIds.SHAPE)
-    if okShape and isShape then
-        pcall(setCollisionMask, node, 0)
-    end
-    local okN, n = pcall(getNumOfChildren, node)
-    if okN and n ~= nil then
-        for i = 0, n - 1 do
-            local okC, child = pcall(getChildAt, node, i)
-            if okC and child ~= nil and child ~= 0 then
-                disableCollisionRecursive(child)
-            end
-        end
-    end
-end
-
 function GateObstruction:applyClear()
     if self.isCleared then return end
     self.isCleared = true
     GateObstruction.clearedIds[self.uniqueId] = true
 
-    if self.visualNode ~= nil then
-        pcall(setVisibility, self.visualNode, false)
-        disableCollisionRecursive(self.visualNode)
-    end
+    -- triggerNode is a child of visualNode -- unregister the trigger callback
+    -- before deleting the node it's attached to, then delete the whole visual
+    -- node outright (same as a sold building disappearing) so both the mesh
+    -- and its physical collision are gone, not just hidden.
     if self.triggerNode ~= nil then
         pcall(removeTrigger, self.triggerNode)
     end
@@ -221,6 +204,11 @@ function GateObstruction:applyClear()
         pcall(function() g_currentMission.activatableObjectsSystem:removeActivatable(self.activatable) end)
         self.activatable = nil
     end
+    if self.visualNode ~= nil then
+        pcall(delete, self.visualNode)
+        self.visualNode = nil
+    end
+    self.triggerNode = nil
 
     self:setGateLocked(false)
 end
@@ -536,8 +524,9 @@ local function setupAllObstructions()
                 GateObstruction.instancesById[uniqueId] = instance
 
                 if instance.isCleared then
-                    pcall(setVisibility, visualNode, false)
-                    disableCollisionRecursive(visualNode)
+                    pcall(delete, visualNode)
+                    instance.visualNode  = nil
+                    instance.triggerNode = nil
                 else
                     local ok = pcall(addTrigger, triggerNode, "onTrigger", instance)
                     if not ok then
