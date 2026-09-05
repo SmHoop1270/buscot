@@ -79,7 +79,6 @@ Un grand merci également aux gars qui ont testé la carte avec patience, depuis
 
 <!-- Buscot-->
 
-	 <storeItem xmlFilename="map/inports/AtelierJDVisualOnly/AtelierJDVisualOnly.xml"/>
 	 <storeItem xmlFilename="map/inports/FS25_Buscot_Dairy/buscotdairy.xml"/>
 	 <storeItem xmlFilename="map/inports/FS25_FarmCottage/farmCottage.xml" /> 
 	 <storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/vicshed.xml" />
