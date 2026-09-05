@@ -594,23 +594,6 @@
 
 	
 
-    <placeable modName="FS25_John_Deere_Workshop" filename="$moddir$FS25_John_Deere_Workshop/Atelier_JD.xml" uniqueId="Atelier_JD" position="216.055 18.088 53.043" rotation="0.00 -0.70 0.00" age="0.000000" price="243000.000000"  boughtWithFarmlandOverwrite="false">
-        <configuration name="solarPanels" id="1" isActive="true"/>
-        <animatedObjects>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-        </animatedObjects>
-    </placeable>
-
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/sellingStationGeneric10.xml" uniqueId="BoginsIndepententTraderssell" position="-471.882 7.445 -1495.371" rotation="-0.91 56.55 0.48" age="0.000000" price="1.000000" farmId="0" boughtWithFarmlandOverwrite="false">
         <sellingStation/>
     </placeable>
