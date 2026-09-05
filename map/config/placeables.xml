@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <placeables version="1">
-    <placeable filename="$data/placeables/mapUS/sellingPoints/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="sellingStationVehicles" position="193.28971863 18.08171272 48.80926895" rotation="-179.99510193 -88.76298523 179.99501038" farmId="0"/>
+    <placeable isPreplaced="true" filename="$data/placeables/mapUS/sellingPoints/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="sellingStationVehicles" position="193.28971863 18.08171272 48.80926895" rotation="-179.99510193 -88.76298523 179.99501038" farmId="0"/>
     <placeable filename="data/placeables/brandless/fences/US/fence07/fenceMetal07.xml" uniqueId="placeable5ba4be7c1a524a4cf11b3c1e9c91f54f" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="150.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_Buscot_Buildings/i3d/haybarn01.xml" uniqueId="adhaybarn" position="1841.510 21.404 71.215" rotation="0.00 60.99 0.00" age="0.000000" price="23500.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_Buscot_Buildings/i3d/haybarn01.xml" uniqueId="haybarnDeco_01" position="2030.033 16.665 659.568" rotation="180.00 6.82 -180.00" age="0.000000" price="23500.000000"  boughtWithFarmlandOverwrite="true"/>
