@@ -29,7 +29,7 @@
     </storeData>
 
     <base>
-        <filename>$moddir$FS25_John_Deere_Workshop/i3d/Atelier_JD.i3d</filename>
+        <filename>map/inports/AtelierJDVisualOnly/i3d/Atelier_JD.i3d</filename>
         <boughtWithFarmland>true</boughtWithFarmland>
         <canBeRenamed>true</canBeRenamed>
     </base>
