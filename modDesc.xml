@@ -113,8 +113,6 @@ Un grand merci également aux gars qui ont testé la carte avec patience, depuis
 	<storeItem xmlFilename="map/inports/FS25_Buscot_Buildings/i3d/sellingStationGeneric03.xml" />
     <storeItem xmlFilename="$data/maps/mapUS/textures/buildings/animalTrader/animalTrader.xml"/>
     <storeItem xmlFilename="map/inports/sellingStationVehicles/sellingStationVehicles.xml"/>
-    <storeItem xmlFilename="map/inports/sellingPoints/sellingStationVehicles/sellingStationVehicles.xml"/>
-    <storeItem xmlFilename="map/inports/FS25_John_Deere_Workshop/Atelier_JD.xml"/>
 	<storeItem xmlFilename="map/inports/FS25_largeukcowshed/cowBarnMedium.xml" />
 	<storeItem xmlFilename="map/inports/FS25_UK_Grain_MachineryShed/ukGrainMachineryShed.xml" />
 <!-- PLANTS -->
