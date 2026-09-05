@@ -14,7 +14,7 @@
     </storeData>
 
     <base>
-        <filename>$mapdir$/map/inports/animalDealerMarker/animalDealerMarker.i3d</filename>
+        <filename>map/inports/animalDealerMarker/animalDealerMarker.i3d</filename>
         <canBeRenamed>false</canBeRenamed>
     </base>
 
