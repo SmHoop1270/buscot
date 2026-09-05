@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <placeables version="1">
+    <placeable isPreplaced="true" uniqueId="preplaced_sellingStationVehicles_buscot" age="0.000000" price="1.000000" farmId="0"/>
     <placeable filename="data/placeables/brandless/fences/US/fence07/fenceMetal07.xml" uniqueId="placeable5ba4be7c1a524a4cf11b3c1e9c91f54f" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="150.000000" farmId="0" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_Buscot_Buildings/i3d/haybarn01.xml" uniqueId="adhaybarn" position="1841.510 21.404 71.215" rotation="0.00 60.99 0.00" age="0.000000" price="23500.000000"  boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/FS25_Buscot_Buildings/i3d/haybarn01.xml" uniqueId="haybarnDeco_01" position="2030.033 16.665 659.568" rotation="180.00 6.82 -180.00" age="0.000000" price="23500.000000"  boughtWithFarmlandOverwrite="true"/>
@@ -593,22 +594,6 @@
 
 	
 
-    <placeable modName="FS25_John_Deere_Workshop" filename="$moddir$FS25_John_Deere_Workshop/Atelier_JD.xml" uniqueId="Atelier_JD" position="216.055 18.088 53.043" rotation="0.00 -0.70 0.00" age="0.000000" price="243000.000000"  boughtWithFarmlandOverwrite="false">
-        <configuration name="solarPanels" id="1" isActive="true"/>
-        <animatedObjects>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-            <animatedObject time="0.000000" direction="0"/>
-        </animatedObjects>
-    </placeable>
 
     <placeable isPreplaced="true" filename="$mapdir$/map/inports/sellingStationGeneric10.xml" uniqueId="BoginsIndepententTraderssell" position="-471.882 7.445 -1495.371" rotation="-0.91 56.55 0.48" age="0.000000" price="1.000000" farmId="0" boughtWithFarmlandOverwrite="false">
         <sellingStation/>
