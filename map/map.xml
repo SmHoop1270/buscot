@@ -68,7 +68,7 @@
     </fruitTypes>
 
     <hotspots>
-        <placeableHotspot type="SHOP_ANIMAL" text="Animal Market" worldPosition="1921.90353516 297.89876464" teleportWorldPosition="1921.90353516 16.482 297.89876464" />
+        <placeableHotspot type="SHOP_ANIMAL" text="Animal Market" worldPosition="1826.06787109 87.41239166" teleportWorldPosition="1826.06787109 60.40961838 87.41239166" />
     </hotspots>
 
     <fruitTypeCategories>
