@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="garageWorkshopSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_Atelier_JD</name>
+        <image>map/inports/FS25_John_Deere_Workshop/store/store_Atelier_JD.png</image>
+        <price>115000</price>
+        <functions>
+            <function>$l10n_function_workshop</function>
+        </functions>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+    <canBeSold>false</canBeSold>
+    <showInStore>false</showInStore>
+    </storeData>
+
+    <base>
+        <filename>map/inports/FS25_John_Deere_Workshop/i3d/Atelier_JD.i3d</filename>
+        <boughtWithFarmland>false</boughtWithFarmland>
+        <canBeRenamed>false</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+<!--     <triggerMarkers>
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+    </triggerMarkers> -->
+
+    <hotspots>
+    </hotspots>
+
+    <workshop>
+    </workshop>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
+                <objectChange node="solarPanel" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="12500" incomePerHour="43" />
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <animatedObjects>
+        <animatedObject saveId="light" >
+            <animation duration="0.5">
+                <part node="realLightsLow">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="0.3" visibility="true"/>
+                </part>
+                <part node="realLightsHigh">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="0.6" visibility="true"/>
+                </part>
+                <shader node="neon" parameterName="lightControl">
+                    <keyFrame time="0.0" values="0" />
+                    <keyFrame time="1.0" values="7" />
+                </shader>
+            </animation>
+            <controls triggerNode="lightTrigger" posAction="ACTIVATE_HANDTOOL" posText="On" negText="Off" />
+        </animatedObject>
+        <animatedObject saveId="porte01" >
+            <animation duration="1">
+                <part node="porte01">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -93 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="trigger01" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="porte01" template="glassDoorLoop" />
+                <posEnd linkNode="porte01" template="metalDoorsOpen" />
+                <negEnd linkNode="porte01" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="porte02" >
+            <animation duration="1">
+                <part node="porte02">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -93 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="trigger02" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="porte02" template="glassDoorLoop" />
+                <posEnd linkNode="porte02" template="metalDoorsOpen" />
+                <negEnd linkNode="porte02" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoor3" >
+            <animation duration="5">
+                <part node="rollingDoor3">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoor3ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoor3ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoor3" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor3Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor3" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor3" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor3" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoor4" >
+            <animation duration="5">
+                <part node="rollingDoor4">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoor4ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoor4ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoor4" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor4Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor4" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor4" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor4" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoorA" >
+            <animation duration="5">
+                <part node="rollingDoorA">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorAColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorAColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoorA" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoorATrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoorA" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoorA" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoorA" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoorB" >
+            <animation duration="5">
+                <part node="rollingDoorB">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorBColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorBColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoorB" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoorBTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoorB" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoorB" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoorB" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoorC" >
+            <animation duration="5">
+                <part node="rollingDoorC">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorCColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorCColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoorC" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoorCTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoorC" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoorC" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoorC" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoorD" >
+            <animation duration="5">
+                <part node="rollingDoorD">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorDColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorDColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoorD" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoorDTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoorD" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoorD" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoorD" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoorE" >
+            <animation duration="5">
+                <part node="rollingDoorE">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorEColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorEColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoorE" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoorETrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoorE" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoorE" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoorE" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoorF" >
+            <animation duration="5">
+                <part node="rollingDoorF">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorFColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.84 0"/>
+                </part>
+                <part node="rollingDoorFColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.92 0"/>
+                </part>
+                <shader node="rollingDoorF" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoorFTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoorF" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoorF" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoorF" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <!--function-->
+        <i3dMapping id="markerWrench" node="0>5|0" />
+        <i3dMapping id="vehicleTrigger" node="0>5|1" />
+        <i3dMapping id="playerTrigger" node="0>5|2" />
+        <i3dMapping id="solarPanel" node="0>6|1" />
+        <!--animation-->
+        <i3dMapping id="lightTrigger" node="0>7|0|0"/>
+        <i3dMapping id="neon" node="0>7|0|1"/>
+        <i3dMapping id="realLightsLow" node="0>7|0|2"/>
+        <i3dMapping id="realLightsHigh" node="0>7|0|3"/>
+        <i3dMapping id="rollingDoorF" node="0>7|10|0"/>
+        <i3dMapping id="rollingDoorFColPartBottom" node="0>7|10|1"/>
+        <i3dMapping id="rollingDoorFColPartTop" node="0>7|10|2"/>
+        <i3dMapping id="rollingDoorFTrigger" node="0>7|10|3"/>
+        <i3dMapping id="porte01" node="0>7|1|0"/>
+        <i3dMapping id="trigger01" node="0>7|1|1"/>
+        <i3dMapping id="porte02" node="0>7|2|0"/>
+        <i3dMapping id="trigger02" node="0>7|2|1"/>
+        <i3dMapping id="rollingDoor3" node="0>7|3|0"/>
+        <i3dMapping id="rollingDoor3ColPartBottom" node="0>7|3|1"/>
+        <i3dMapping id="rollingDoor3ColPartTop" node="0>7|3|2"/>
+        <i3dMapping id="rollingDoor3Trigger" node="0>7|3|3"/>
+        <i3dMapping id="rollingDoor4" node="0>7|4|0"/>
+        <i3dMapping id="rollingDoor4ColPartBottom" node="0>7|4|1"/>
+        <i3dMapping id="rollingDoor4ColPartTop" node="0>7|4|2"/>
+        <i3dMapping id="rollingDoor4Trigger" node="0>7|4|3"/>
+        <i3dMapping id="rollingDoorA" node="0>7|5|0"/>
+        <i3dMapping id="rollingDoorAColPartBottom" node="0>7|5|1"/>
+        <i3dMapping id="rollingDoorAColPartTop" node="0>7|5|2"/>
+        <i3dMapping id="rollingDoorATrigger" node="0>7|5|3"/>
+        <i3dMapping id="rollingDoorB" node="0>7|6|0"/>
+        <i3dMapping id="rollingDoorBColPartBottom" node="0>7|6|1"/>
+        <i3dMapping id="rollingDoorBColPartTop" node="0>7|6|2"/>
+        <i3dMapping id="rollingDoorBTrigger" node="0>7|6|3"/>
+        <i3dMapping id="rollingDoorC" node="0>7|7|0"/>
+        <i3dMapping id="rollingDoorCColPartBottom" node="0>7|7|1"/>
+        <i3dMapping id="rollingDoorCColPartTop" node="0>7|7|2"/>
+        <i3dMapping id="rollingDoorCTrigger" node="0>7|7|3"/>
+        <i3dMapping id="rollingDoorD" node="0>7|8|0"/>
+        <i3dMapping id="rollingDoorDColPartBottom" node="0>7|8|1"/>
+        <i3dMapping id="rollingDoorDColPartTop" node="0>7|8|2"/>
+        <i3dMapping id="rollingDoorDTrigger" node="0>7|8|3"/>
+        <i3dMapping id="rollingDoorE" node="0>7|9|0"/>
+        <i3dMapping id="rollingDoorEColPartBottom" node="0>7|9|1"/>
+        <i3dMapping id="rollingDoorEColPartTop" node="0>7|9|2"/>
+        <i3dMapping id="rollingDoorETrigger" node="0>7|9|3"/>
+    </i3dMappings>
+</placeable>

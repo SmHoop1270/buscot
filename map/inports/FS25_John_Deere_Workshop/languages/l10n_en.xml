@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="On" text="Turn on the light"/>
+        <text name="Off" text="Turn off the light"/>
+        <text name="Atelier_JD" text="John Deere workshop"/>
+        <text name="Bureaux_JD" text="John Deere office"/>
+        <text name="Panneau_JD" text="John Deere dealership sign"/>
+        <text name="Texte_JD" text="John Deere text"/>
+    </texts>
+</l10n>
