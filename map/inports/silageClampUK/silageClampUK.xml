@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_bunkerSilo</function>
         </functions>
-        <image>store_silageClampUK.dds</image>
+        <image>map/inports/silageClampUK/store_silageClampUK.dds</image>
         <price>45000</price>
         <dailyUpkeep>150</dailyUpkeep>
         <lifetime>1000</lifetime>
@@ -24,7 +24,6 @@
         <storeIconRendering>
             <settings cameraXRot="-20" cameraYRot="30" advancedBoundingBox="true"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>

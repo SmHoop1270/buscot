@@ -2,7 +2,7 @@
 <placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Coleshill Farm Shop</name>
-        <image>../textures/farmStorage02.dds</image>
+        <image>map/textures/store_farmStorage02.dds</image>
         <price>1</price>
         <canBeSold>false</canBeSold>
         <showInStore>true</showInStore>

@@ -7,6 +7,7 @@
 
   <Files>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="20" filename="$data/shaders/decalShader.xml"/>
     <File fileId="16" filename="$data/shaders/streamShader.xml"/>
     <File fileId="1" filename="$data/shared/default_diffuse.dds"/>
     <File fileId="2" filename="$data/shared/default_normal.dds"/>
@@ -14,15 +15,17 @@
     <File fileId="14" filename="$data/shared/fakeWater_normal.png"/>
     <File fileId="15" filename="$data/shared/fakeWater_specular.png"/>
     <File fileId="5" filename="../textures/m_Mask.dds"/>
-    <File fileId="20" filename="../textures/strawAlpha_diffuse.dds"/>
-    <File fileId="19" filename="../textures/straw_diffuse.dds"/>
+    <File fileId="19" filename="../../../prefabs/FS25_Straw_prefab/textures/straw_diffuse.dds"/>
   </Files>
 
 
   <Materials>
     <Material name="collision_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
-    <Material name="fakeWater_mat" materialId="113" alphaBlending="true" customShaderId="16">
+    <Material name="default" materialId="110" alphaBlending="true" customShaderId="20">
+      <Texture fileId="19"/>
+    </Material>
+    <Material name="fakeWater_mat" materialId="6" alphaBlending="true" customShaderId="16">
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Glossmap fileId="15"/>
@@ -38,12 +41,6 @@
     </Material>
     <Material name="lambert1" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
     </Material>
-    <Material name="strawPlane_mat" materialId="10">
-      <Texture fileId="19"/>
-    </Material>
-    <Material name="strawPlane_mat" materialId="11">
-      <Texture fileId="20"/>
-    </Material>
     <Material name="waterTrough_mat" materialId="12" diffuseColor="1 1 1 1" specularColor="0.721569 1 0.780392" customShaderId="4">
       <Normalmap fileId="2"/>
       <Custommap name="mMaskMap" fileId="5"/>
@@ -55,7 +52,7 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="cowBarnSmall" clipDistance="400" nodeId="30">
+    <TransformGroup name="cowPastureMilk" clipDistance="400" nodeId="30">
       <TransformGroup name="clearAreas" nodeId="31">
         <TransformGroup name="clearArea1Start" translation="-5.5 0 -2.5" nodeId="32">
           <TransformGroup name="clearArea1Width" translation="7 0 0" nodeId="33"/>
@@ -119,7 +116,7 @@
           <TransformGroup name="waterPlace1" translation="-4 0 -1" rotation="0 180 0" nodeId="74"/>
         </TransformGroup>
         <TransformGroup name="waterAINode" translation="-4 0 -3" rotation="0 -90 0" nodeId="75"/>
-        <Shape name="fakeWaterPlane" translation="-4 0.6 -2" scale="1 0.001 1" shapeId="8" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="113"/>
+        <Shape name="fakeWaterPlane" translation="-4 0.6 -2" scale="1 0.001 1" shapeId="8" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="6"/>
         <Shape name="waterTrough" translation="-4 0 -2" rotation="0 90 0" shapeId="9" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="12">
           <Shape name="collisionWaterTrough" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
         </Shape>
@@ -142,23 +139,51 @@
           <TransformGroup name="markerFood" translation="-0.5 0.02 0" nodeId="92"/>
           <TransformGroup name="markerWater" translation="-4 0.02 -3" nodeId="93"/>
           <TransformGroup name="markerBales" translation="0.5 0.02 0" nodeId="94"/>
-          <TransformGroup name="markerMilk" translation="-4 0.02 -4.75" nodeId="106"/>
+          <TransformGroup name="markerMilk" translation="-4 0.02 -4.75" nodeId="95"/>
         </TransformGroup>
-        <TransformGroup name="waterFillPlaceholder" translation="-2.7 -0.1 -2" nodeId="95"/>
-        <TransformGroup name="waterTankPlaceholder" translation="-6.04104 -0.01 -1.81058" rotation="0 90 0" nodeId="96"/>
+        <TransformGroup name="waterFillPlaceholder" translation="-2.7 -0.1 -2" nodeId="96"/>
+        <TransformGroup name="waterTankPlaceholder" translation="-6.04104 -0.01 -1.81058" rotation="0 90 0" nodeId="97"/>
       </TransformGroup>
-      <TransformGroup name="collision" nodeId="97">
-        <Shape name="tipCollision" shapeId="13" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <TransformGroup name="collision" nodeId="98">
+        <Shape name="tipCollision" shapeId="13" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
       </TransformGroup>
-      <TransformGroup name="strawPlanes" nodeId="99">
-        <Shape name="strawPlane01" translation="2.5 0.5 3.75" shapeId="14" clipDistance="300" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="10">
-          <Shape name="strawPlane01Alpha" shapeId="15" clipDistance="300" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="11"/>
-        </Shape>
-        <Shape name="exactFillRootNodeStraw" translation="2 0.05 3.5" shapeId="16" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <TransformGroup name="milk" nodeId="104">
+        <Shape name="milkTrigger" translation="-4 1.7 -4.75" rotation="0 -90 0" shapeId="12" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="105" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="aiLoadingNodeMilk" translation="-4 0 -4.75" rotation="0 -90 0" nodeId="106"/>
       </TransformGroup>
-      <TransformGroup name="milk" nodeId="103">
-        <Shape name="milkTrigger" translation="-4 1.7 -4.75" rotation="0 -90 0" shapeId="12" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
-        <TransformGroup name="aiLoadingNodeMilk" translation="-4 0 -4.75" rotation="0 -90 0" nodeId="105"/>
+      <TransformGroup name="strawpile" nodeId="114">
+        <Shape name="straw " translation="0 0 -1.10365" shapeId="14" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.13909 0 -1.34374" shapeId="14" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.55918 0 -0.120781" shapeId="14" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.64614 0 0.540015" shapeId="14" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0 0 1.33914" shapeId="14" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0.588763 0 0.759516" shapeId="14" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0.588763 0 1.33914" shapeId="14" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.678506 0 0.693398" shapeId="14" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.495212 0 -1.72815" shapeId="14" nodeId="123" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0.585724 0 -0.426358" shapeId="14" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0.585724 0 -0.883144" shapeId="14" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.0308 0 -0.670981" shapeId="14" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.0308 0 -0.187011" shapeId="14" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.0308 0 0.303604" shapeId="14" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.0308 0 0.901097" shapeId="14" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.504993 0 0.963418" shapeId="14" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.504993 0 -1.03712" shapeId="14" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.07298 0 -0.794277" shapeId="14" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.27599 0 -0.921938" shapeId="14" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.07298 0 0.0909256" shapeId="14" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.26052 0 -1.31116" shapeId="14" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.708098 0 -0.514951" shapeId="14" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0.316021 0 -1.18195" shapeId="14" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="1.93294 0 -0.918034" shapeId="14" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.64101 0 -0.510924" shapeId="14" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.43546 0 0.181491" shapeId="14" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.271313 0 1.83116" shapeId="14" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-1.22032 0 0.863148" shapeId="14" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="-0.965802 0 1.48703" shapeId="14" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw" translation="0.580925 0 -1.48617" shapeId="15" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0 0 -1.5" shapeId="14" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="110"/>
+        <Shape name="straw " translation="0 0 -1.5" shapeId="14" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="110"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

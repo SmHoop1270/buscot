@@ -700,8 +700,8 @@
       </TransformGroup>
       <TransformGroup name="workshop" nodeId="304">
         <Shape name="vehicleTrigger" translation="-2.61521 2.3497 -5.00419" scale="10.3186 4.74348 13.4458" shapeId="77" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="305" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="55"/>
-        <Shape name="playerTrigger" translation="-8.83251 1.48707 -11.0081" scale="2 3 2" shapeId="77" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="306" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="55"/>
-        <TransformGroup name="markerWrench" translation="-8.84794 -2.38419e-07 -11.0109" nodeId="307"/>
+        <Shape name="playerTrigger" translation="-7.889 1.48707 -11.0081" scale="2 3 2" shapeId="77" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="306" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="55"/>
+        <TransformGroup name="markerWrench" translation="-7.88862 1.48707 -11.0081" nodeId="307"/>
       </TransformGroup>
       <TransformGroup name="collisions" translation="0.0494592 3.68526 8.65723" nodeId="308">
         <Shape name="exteriorWall_col" translation="-10.59 -3.38054 5.29157" shapeId="78" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="309" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>

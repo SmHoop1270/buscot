@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" width="4096" height="4096" imageFilename="map/overview.png" mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.5500 0.4800 0.0800" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mission00.xsd">
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" width="4096" height="4096" imageFilename="map/overview.dds" mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.5500 0.4800 0.0800" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mission00.xsd">
     <filename>map/map.i3d</filename>
 
     <culling xzOffset="100" />
@@ -9,6 +9,10 @@
     <tipCollision revision="1" />
     <placementCollision revision="1" />
     <navigationCollision revision="1" />
+
+    <precisionFarming>
+        <soilMap filename="map/data/infoLayer_soilMap.grle" />
+    </precisionFarming>
 
     <shop filename="$data/store/ui/shop.xml" />
     <storeItems filename="$data/maps/mapUS/config/storeItems.xml"/>
@@ -40,15 +44,7 @@
     <helpline filename="$dataS/helpLine.xml" />
     <gameplayHints filename="$dataS/gameplayHints.xml" />
 
-<!--     <missions vehicleFilename="$dataS/missionVehicles.xml">
-        <treeTransportMission treeType="TRANSPORT">
-            <spots filename="$data/maps/mapUS/missions/transportSpots.i3d" />
-        </treeTransportMission>
-        <destructibleRockMission>
-            <spots filename="$data/maps/mapUS/missions/destructibleRocksSpots.i3d" />
-            <marker filename="$data/maps/mapUS/missions/destructibleRocksSpots.i3d" />
-        </destructibleRockMission>
-    </missions> -->
+    <missions vehicleFilename="map/config/missionVehicles.xml" />
 
 	
 
@@ -57,19 +53,18 @@
     <motionPathEffects filename="$data/effects/motionPathEffects.xml" />
 
     <fruitTypes>
-        <fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml" />
 		<fruitType filename="map/foliage/barley/barley.xml" />
         <fruitType filename="map/foliage/canola/canola.xml" />
-        <fruitType filename="map/foliage/grass/grass.xml" />
+        <fruitType filename="map/foliage/meadowUS/meadowUS.xml" />
         <fruitType filename="map/foliage/maize/maize.xml" />
         <fruitType filename="map/foliage/oat/oat.xml" />
         <fruitType filename="map/foliage/sorghum/sorghum.xml" />
         <fruitType filename="map/foliage/soybean/soybean.xml" />
         <fruitType filename="map/foliage/sunflower/sunflower.xml" />
         <fruitType filename="map/foliage/wheat/wheat.xml" />
-		<fruitType filename="map/foliage/sugarcane/sugarcane.xml" />
+<!-- 		<fruitType filename="map/foliage/sugarcane/sugarcane.xml" />
         <fruitType filename="map/foliage/olive/olive.xml" />
-        <fruitType filename="map/foliage/cotton/cotton.xml" />
+        <fruitType filename="map/foliage/cotton/cotton.xml" /> -->
     </fruitTypes>
 
     <fruitTypeCategories>

@@ -2,7 +2,7 @@
 
 <i3D name="martground01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
   </Asset>
 
   <Files>
@@ -63,8 +63,8 @@
   </Shapes>
 
   <Scene>
-    <Shape name="ShedMain" shapeId="1" static="true" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="8">
-      <Shape name="roof" shapeId="2" clipDistance="10000" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="9">
+    <Shape name="ShedMain" shapeId="1" static="true" clipDistance="2500" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="8">
+      <Shape name="roof" shapeId="2" clipDistance="2500" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="9">
         <Shape name="gutters" rotation="90 -0 0" shapeId="3" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="5"/>
         <Shape name="copings" shapeId="4" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="9"/>
       </Shape>
@@ -88,8 +88,8 @@
         <Shape name="Galvbeam.004" shapeId="14" clipDistance="1000" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="8"/>
         <Shape name="Cube.008" translation="0 -1.93909 6.92779e-14" rotation="-90 -0 0" shapeId="15" clipDistance="1000" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="11"/>
       </Shape>
-      <Shape name="Cube.001" translation="-113.957 -0.982004 47.606" rotation="90 -0 0" scale="10 2.5974 1" shapeId="16" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="9,6"/>
-      <Shape name="officeDecal" translation="-113.957 -0.982005 47.6751" rotation="90 -0 0" scale="10 2.5974 1" shapeId="17" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      <Shape name="Cube.001" translation="-113.957 -0.982004 47.606" rotation="90 -0 0" scale="10 2.5974 1" shapeId="16" clipDistance="1500" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="9,6"/>
+      <Shape name="officeDecal" translation="-113.957 -0.982005 47.6751" rotation="90 -0 0" scale="10 2.5974 1" shapeId="17" clipDistance="1000" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="10"/>
     </Shape>
   </Scene>
 

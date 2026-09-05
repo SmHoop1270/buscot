@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="cowHusbandryPastureStraw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="cowHusbandryBarnMilk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>
             <en>Cow_Pasture_Milk</en></name>
@@ -25,7 +25,6 @@
         <storeIconRendering>
             <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
     <base>
         <filename>map/inports/FS25_OpenPastures_Milk/i3d/cowSmall.i3d</filename>
@@ -73,15 +72,16 @@
     </hotspots>
     <infoTrigger triggerNode="infoTrigger"/>
     <husbandry saveId="Animals_COW" hasStatistics="false">
-        <storage node="storage" fillTypes="MILK BUFFALOMILK STRAW MANURE" isExtension="false">
+        <storage node="storage" fillTypes="MILK BUFFALOMILK STRAW MANURE LIQUIDMANURE" isExtension="false">
             <capacity fillType="MILK"         capacity="700000" />
             <capacity fillType="BUFFALOMILK"  capacity="700000" />
             <capacity fillType="STRAW"        capacity="2700000" />
             <capacity fillType="MANURE"       capacity="0" />
+            <capacity fillType="LIQUIDMANURE" capacity="0" />
         </storage>
         <unloadingStation supportsExtension="true" storageRadius="65" hideFromPricesMenu="true">
-            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
-            <unloadTrigger fillTypes="MANURE MILK BUFFALOMILK" />
+            <unloadTrigger fillTypes="STRAW" />
+            <unloadTrigger fillTypes="MANURE LIQUIDMANURE MILK BUFFALOMILK" />
         </unloadingStation>
         <loadingStation supportsExtension="true" storageRadius="50" fillTypes="STRAW MILK BUFFALOMILK">
             <loadTrigger triggerNode="milkTrigger" fillTypes="MILK BUFFALOMILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
@@ -92,7 +92,6 @@
         </animals>
         <straw>
             <manure factor="1.5" />
-            <strawPlane node="strawPlane" minY="0.0" maxY="0.5" colorChange="false" />
         </straw>
         <food capacity="1125000">
             <foodPlaces>
@@ -209,9 +208,7 @@
         <i3dMapping id="markerMilk" node="0>13|1|4"/>
         <i3dMapping id="waterFill" node="0>13|2"/>
         <i3dMapping id="waterTank" node="0>13|3"/>
-        <i3dMapping id="strawPlane" node="0>15|0"/>
-        <i3dMapping id="exactFillRootNodeStraw" node="0>15|1"/>
-        <i3dMapping id="milkTrigger" node="0>16|0"/>
-        <i3dMapping id="aiLoadingNodeMilk" node="0>16|1"/>
+        <i3dMapping id="milkTrigger" node="0>15|0"/>
+        <i3dMapping id="aiLoadingNodeMilk" node="0>15|1"/>
     </i3dMappings>
 </placeable>

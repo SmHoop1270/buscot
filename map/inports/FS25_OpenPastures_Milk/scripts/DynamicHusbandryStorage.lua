@@ -121,7 +121,12 @@ function DynamicHusbandryStorage:onHusbandryAnimalsCreated(husbandryId)
 
     local husbandrySpec = self.spec_husbandry
     local animalsSpec = self.spec_husbandryAnimals
-    if husbandrySpec == nil or husbandrySpec.storage == nil or animalsSpec == nil then
+    -- husbandrySpec.storage only exists for pasture types with bulk output (e.g. cow's milk
+    -- tank) - pasture types that only produce pallet-based output (e.g. sheep wool) never
+    -- create one, and that's expected, not an error. Only bail if the specs we actually need
+    -- (husbandry + animals) are missing; applyOutputCapacities below already no-ops safely
+    -- when storage is nil.
+    if husbandrySpec == nil or animalsSpec == nil then
         return
     end
 
@@ -182,7 +187,7 @@ end
 --- Plain module function (not a placeable method) - placeable is passed explicitly since this
 --- specialization never registers these as callable methods on the placeable itself.
 function DynamicHusbandryStorage.applyOutputCapacities(placeable, storage, maxAnimals, config)
-    if storage.capacities == nil then
+    if storage == nil or storage.capacities == nil then
         return
     end
 

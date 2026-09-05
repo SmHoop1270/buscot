@@ -7,6 +7,7 @@
         <text name="$l10n_shopItem_Grain01" text="Farm Shop" />
 		<text name="function_LivestockMarket" text="Sells live animals straight off the trailer at a premium over standard prices." />
         <text name="storeItem_LivestockMarket" text="Buscot Park Livestock Market" />
+        <text name="storeItem_customizeFenceCowBarnMedium" text="Customize Fence Cow Barn" />
         <text name="message_animalTooYoung" text="This animal isn't fully grown yet - only mature stock can be sold here." />
         <text name="message_animalTooOld" text="This animal is too old to be sold here." />
         <text name="message_unloadAnimalSuccess" text="Animals sold." />

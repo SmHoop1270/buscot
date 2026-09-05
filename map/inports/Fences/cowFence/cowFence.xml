@@ -16,11 +16,7 @@
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
 
-        <vertexBufferMemoryUsage>33024</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>7936</indexBufferMemoryUsage>
-        <textureMemoryUsage>327680</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
 
         <brush>
             <type>newFence</type>
@@ -43,7 +39,6 @@
                 </object>
             </objectBundle>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>

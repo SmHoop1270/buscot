@@ -12,51 +12,77 @@
     0 1 1 0 - cut 2
 
     -->
-    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="4.5" shapeSource="grass.i3d" alignsToSun="false">
+    <!-- Round 8: shapeSource repointed to a local copy of Giants' meadowUS.i3d
+         (byte-identical copy, plus meadowUS.i3d.shapes, both sitting alongside this
+         file in map/foliage/grass/). Round 7 tried referencing meadowUS.i3d in place
+         via "$data/foliage/meadow/meadowUS/meadowUS.i3d" and ALL grass vanished.
+         Checked every other stock foliageType in the game (decoFoliage, decoBush,
+         forestPlants, weed, waterPlants) — every single one uses a bare same-directory
+         filename for shapeSource, none use $data or a cross-directory path, even
+         though $data IS used freely for texture/File references inside those same
+         i3d files. That's the likely reason round 7 failed: shapeSource doesn't get
+         macro-expanded/cross-directory resolved the way File filenames do, so the
+         path silently failed to resolve and zero shapes were found for the whole
+         layer. Fix: give it a real local file to find via a plain relative filename,
+         matching how every stock example does it. The i3d's own internal texture
+         references stay as $data/foliage/meadow/meadowUS/*.png (confirmed working
+         regardless of the i3d's own location — our own grass.i3d already pulls
+         $data/shaders/fruitGrowthFoliageShader.xml the same way).
+         blockShape family index verified against meadowUS.i3d's actual Scene graph
+         (read directly, not inferred): root "meadowsUS" has 5 child TransformGroups
+         in order coneFlower(0), slenderMountainMint(1), wildBergamot(2),
+         prairieBlazingStar(3), grassPure(4) — so family=4 correctly selects the pure
+         grass family (no wildflowers), each with LOD0/LOD1 children (index 0/1) and
+         Shape children in order grassSmall/grassMiddle/harvestReady/cut/roller
+         (state index 0-4). This part of round 7 was already correct. -->
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="4.5" shapeSource="meadowUS.i3d" alignsToSun="false">
         <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.2" widthVariance="0.3" heightVariance="0.7" horizontalPositionVariance="0.3"/>
         <!-- default LOD distances etc -->
         <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
         <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
         <!-- 1 0 0 0 - invisible -->
         <foliageState name="invisible" isGrowing="true" />
-        <!-- 0 1 0 0 - green small (winter dormant / early spring regrowth)
-             Height is controlled by the scale="1 0.35 1" on the Shape node in grass.i3d -->
+        <!-- 0 1 0 0 - green small (winter dormant / early spring regrowth) -->
         <foliageState name="greenSmall" numBlocksPerUnit="3.5" distanceMap="distance/foliage_grass_distance2_diffuse.png" isGrowing="true" regrowthStart="true" groundType="GRASS" groundTypeMask="GRASS GRASS_CUT SOWN DIRECT_SOWN ROLLER_LINES" isDestructibleByDisaster="true">
             <foliageShape>
-                <foliageLod blockShape="0>0|0"/>
-                <foliageLod blockShape="0>1|0"/>
+                <foliageLod blockShape="0>4|0|0"/>
+                <foliageLod blockShape="0>4|1|0"/>
             </foliageShape>
         </foliageState>
         <!-- 1 1 0 0 - green middle -->
         <foliageState name="greenMiddle" distanceMap="distance/foliage_grass_distance3_diffuse.png" isGrowing="true" isHarvestReady="true" yieldScale="0.5" isDestructedByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.3">
             <foliageShape>
-                <foliageLod blockShape="0>0|1"/>
-                <foliageLod blockShape="0>1|1"/>
+                <foliageLod blockShape="0>4|0|1"/>
+                <foliageLod blockShape="0>4|1|1"/>
             </foliageShape>
         </foliageState>
         <!-- 0 0 1 0 - green big (harvest ready) -->
         <foliageState name="harvestReady" distanceMap="distance/foliage_grass_distance4_diffuse.png" isGrowing="true" isHarvestReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.5">
             <foliageShape>
-                <foliageLod blockShape="0>0|2"/>
-                <foliageLod blockShape="0>1|2"/>
+                <foliageLod blockShape="0>4|0|2"/>
+                <foliageLod blockShape="0>4|1|2"/>
             </foliageShape>
         </foliageState>
         <!-- 1 0 1 0 - cut -->
         <foliageState name="cut" numBlocksPerUnit="3.0" distanceMap="distance/foliage_grass_distance5_diffuse.png" isCut="true" isDestructedByDisaster="true" isMulched="true">
             <foliageShape>
-                <foliageLod blockShape="0>0|3"/>
-                <foliageLod blockShape="0>1|3"/>
+                <foliageLod blockShape="0>4|0|3"/>
+                <foliageLod blockShape="0>4|1|3"/>
             </foliageShape>
         </foliageState>
         <!-- 0 1 1 0 - cut rolled -->
         <foliageState name="cutRolled" numBlocksPerUnit="2.3" distanceMap="distance/foliage_grass_distance5_diffuse.png" isRolledCut="true">
             <foliageShape>
-                <foliageLod blockShape="0>0|4"/>
-                <foliageLod blockShape="0>1|4"/>
+                <foliageLod blockShape="0>4|0|4"/>
+                <foliageLod blockShape="0>4|1|4"/>
             </foliageShape>
         </foliageState>
     </foliageLayer>
 
+    <!-- Round 4 test (isAvailable/shownOnMap = false, matching meadow) reverted:
+         user confirmed still zero seasonal response even non-plantable, so the
+         plantable-fruitType-bypasses-seasonal theory is disproven. Back to normal
+         plantable flags since grass needs to stay seedable regardless. -->
     <fruitType name="grass" shownOnMap="true" useForFieldMissions="false">
         <mapColors default="0.0423 0.1221 0.0252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
         <harvest litersPerSqm="4.37" groundType="GRASS_CUT"/>
@@ -126,17 +152,28 @@
                 <update startState="cutRolled" endState="greenSmall" />
             </period>
             <!-- November: grass enters dormancy. All growing grass is knocked back
-                 2 stages from harvestReady, settling at greenSmall.
-                 No cut-regrowth. No planting. -->
+                 2 stages from harvestReady, settling at greenSmall — short mesh.
+                 No cut-regrowth. No planting.
+                 Repeated in every winter period (not just LATE_AUTUMN) so any grass that
+                 reaches harvestReady/greenMiddle mid-winter, or was already in that state
+                 on an existing save, still gets knocked back rather than sitting stuck. -->
             <period name="LATE_AUTUMN" plantingAllowed="false">
                 <update startState="harvestReady" endState="greenSmall" />
                 <update startState="greenMiddle" endState="greenSmall" />
             </period>
-            <!-- December / January: fully dormant. Grass holds at greenSmall. No growth. -->
-            <period name="EARLY_WINTER" />
-            <period name="MID_WINTER" />
-            <!-- February / March: still dormant. Growth resumes at EARLY_SPRING. -->
-            <period name="LATE_WINTER" />
+            <period name="EARLY_WINTER">
+                <update startState="harvestReady" endState="greenSmall" />
+                <update startState="greenMiddle" endState="greenSmall" />
+            </period>
+            <period name="MID_WINTER">
+                <update startState="harvestReady" endState="greenSmall" />
+                <update startState="greenMiddle" endState="greenSmall" />
+            </period>
+            <!-- February / March: still dormant-looking. Growth resumes at EARLY_SPRING. -->
+            <period name="LATE_WINTER">
+                <update startState="harvestReady" endState="greenSmall" />
+                <update startState="greenMiddle" endState="greenSmall" />
+            </period>
         </seasonal>
     </growth>
 </foliageType>

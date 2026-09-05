@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="german_constructionsite_deko.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/shared/detailLibrary/metallic/zincGalvanized_diffuse.dds"/>
+    <File fileId="6" filename="KunstoffPlasticZaun.dds"/>
+    <File fileId="3" filename="warnbake_left.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="5">
+    </Material>
+    <Material name="default" materialId="6">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="Material.001" materialId="7" diffuseColor="0.00784314 0.00784314 0.00784314 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="Material.002" materialId="8" diffuseColor="0.8 0.0117647 0.00392157 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="Material.004" materialId="9" specularColor="0.501961 1 0">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="Material.005" materialId="10" specularColor="1 1 0">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="warnbake_mat" materialId="11">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="german_constructionsite_deko.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="WarnBake" nodeId="33">
+      <Shape name="Cube.003" scale="0.0224235 0.0224235 0.0224235" shapeId="1" clipDistance="700" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="Cube.004" scale="0.0224235 0.0224235 0.0224235" shapeId="2" clipDistance="700" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      <Shape name="Cylinder.008" rotation="-90 5.00896e-06 1.86693e-05" scale="0.0145212 0.0145212 0.0195425" shapeId="3" clipDistance="700" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="7,7"/>
+      <Shape name="Text.004" rotation="27.575 -0 0" scale="0.078646 0.0494014 0.0718604" shapeId="4" clipDistance="500" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="Text.005" rotation="-152.554 -5.00896e-06 -180" scale="0.078646 0.0494014 0.0718604" shapeId="5" clipDistance="500" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="8"/>
+    </TransformGroup>
+    <TransformGroup name="SchrankenZaun" translation="1.61164 0 0" nodeId="39">
+      <TransformGroup name="StecklampenPunkte" nodeId="40">
+        <Shape name="Cube.011" shapeId="6" clipDistance="500" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="Schranken" nodeId="42">
+        <Shape name="Cylinder.007" shapeId="7" clipDistance="700" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="Cylinder.002" shapeId="8" clipDistance="700" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="Cylinder.006" shapeId="9" clipDistance="300" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="Cylinder" shapeId="10" clipDistance="300" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="Cube.002" shapeId="11" clipDistance="700" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="Cube" shapeId="12" clipDistance="700" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="Verbinder" nodeId="49">
+        <Shape name="Cylinder.004" shapeId="13" clipDistance="300" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="Cube.001" shapeId="14" clipDistance="500" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="PlatteLinks" nodeId="52">
+        <Shape name="Cylinder.001" shapeId="15" clipDistance="700" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7,7"/>
+        <TransformGroup name="Schrift" nodeId="54">
+          <Shape name="Text" shapeId="16" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          <Shape name="Text.001" shapeId="17" clipDistance="300" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="PlatteRechts" nodeId="57">
+        <Shape name="Cylinder.003" shapeId="18" clipDistance="700" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="7,7"/>
+        <TransformGroup name="Schrift" nodeId="59">
+          <Shape name="Text.002" shapeId="19" clipDistance="300" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          <Shape name="Text.003" shapeId="20" clipDistance="300" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

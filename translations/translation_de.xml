@@ -5,6 +5,7 @@
         <text name="storeItem_Storage_and_Haybarn" text="Lager und Heuschuppen"/> 
         <text name="$l10n_function_objectStorage01" text="Ballen- und Palettenlager"/>
         <text name="$l10n_shopItem_Grain01" text="Hofladen" />
+        <text name="storeItem_customizeFenceCowBarnMedium" text="Zaun Kuhstall Anpassen" />
 
     </texts>
 </l10n>

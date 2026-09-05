@@ -13,14 +13,15 @@ end
 
 -- General notification - open/close state changes etc
 -- Shows amber text, fades after durationMs (default 10 seconds)
-function UIManager:notify(text, cooldownMs)
+function UIManager:notify(text, cooldownMs, durationMs)
     cooldownMs = cooldownMs or 10000
+    durationMs = durationMs or 10000
     local now  = g_time or 0
     local last = self.cooldowns[text] or (now - cooldownMs - 1)
     if (now - last) < cooldownMs then return end
     self.cooldowns[text] = now
     self.tempMessage    = text
-    self.tempMessageEnd = now + 10000
+    self.tempMessageEnd = now + durationMs
 end
 
 -- Blocked action notification - tipping or buying outside hours
@@ -28,11 +29,6 @@ end
 function UIManager:blocked(text, durationMs)
     self.blockedMessage = text
     self.blockedEnd     = (g_time or 0) + (durationMs or 15000)
-end
-
--- Legacy pulse call still works - maps to blocked with default message
-function UIManager:pulse(durationMs)
-    self.blockedEnd = (g_time or 0) + (durationMs or 15000)
 end
 
 function UIManager:drawHUD(isOpen, scheduleManager)
@@ -195,7 +191,7 @@ function ScheduleManager:getCloseHour()
     return self.schedules.default[1] and math.floor(self.schedules.default[1].endHour) or 19
 end
 
-function ScheduleManager:isOpen(time, day)
+function ScheduleManager:isOpen(time)
     if not self.enabled then return true end
     local hour = time / (1000 * 60 * 60)
     for _, period in ipairs(self.schedules.default) do
@@ -225,23 +221,6 @@ function ScheduleManager:getNextOpenHour(time)
 end
 
 -- ============================================================
--- QueueManager is retained as a stub for future use but is no longer active.
--- The queue approach was removed because sellFillType handles the entire transaction
--- (grain removal + payment) atomically. Intercepting it means grain stays in the
--- trailer, so there is nothing to queue -- the player just retries when the store opens.
-QueueManager = {}
-local QueueManager_mt = Class(QueueManager)
-
-function QueueManager.new()
-    local self = setmetatable({}, QueueManager_mt)
-    return self
-end
-
-function QueueManager:processAll()
-    -- No-op: queue approach removed. See SellPointExtension for current logic.
-end
-
--- ============================================================
 SellPointExtension = {}
 
 local function isAIVehicle(vehicle)
@@ -263,41 +242,38 @@ local function isAIVehicle(vehicle)
     return true
 end
 
+-- Deliveries (tipping into a production/storage point) are never rejected any more --
+-- rejecting them here was the cause of lost product, because the source material
+-- (felled trees, harvested crop, etc.) is often already consumed by the time this
+-- fires, regardless of vehicle type. Selling (SellPointExtension.sell / sellFillType)
+-- is still blocked below, since blocking a sale is safe -- the material simply stays
+-- in the trailer. Production itself is what actually pauses while closed; see
+-- ProductionExtension.pauseProduction.
 function SellPointExtension.getIsFillAllowedFromFarm(self, superFunc, ...)
-    local system = g_currentMission.openingHoursSystem
-    if system ~= nil and not system.isOpen then
-        if BaleUnloadTrigger ~= nil and self:isa(BaleUnloadTrigger) then
-            return superFunc(self, ...)
-        end
-        if not self:isa(SellingStation) then
-            return superFunc(self, ...)
-        end
-        local cv = g_currentMission.controlledVehicle
-        if cv ~= nil then
-            if cv.spec_combine ~= nil or cv.spec_trailer ~= nil or cv.spec_shovel ~= nil then
-                local nextOpen = system.scheduleManager:getNextOpenHour(g_currentMission.environment.dayTime)
-                system.uiManager:blocked("SHOP CLOSED  |  Opens at " .. nextOpen, 15000)
-                return false
-            end
-        end
-        return superFunc(self, ...)
-    end
     return superFunc(self, ...)
 end
 
 function SellPointExtension.addFillLevelFromTool(self, superFunc, tool, ...)
     local system = g_currentMission.openingHoursSystem
-    if system ~= nil and not system.isOpen then
-        if BaleUnloadTrigger ~= nil and type(self) == "table" and self:isa(BaleUnloadTrigger) then
-            return superFunc(self, tool, ...)
+    if system ~= nil and not system.isOpen and self:isa(SellingStation) then
+        local isBaleTrigger = BaleUnloadTrigger ~= nil and type(self) == "table" and self:isa(BaleUnloadTrigger)
+        if not isBaleTrigger and not isAIVehicle(tool) then
+            local nextOpen = system.scheduleManager:getNextOpenHour(g_currentMission.environment.dayTime)
+            local text = "Delivered  |  Won't be processed until opening at " .. nextOpen
+
+            -- addFillLevelFromTool runs server-only for trigger-routed deliveries (confirmed
+            -- via diagnostic logging: WoodUnloadTrigger passes farmId here, not a vehicle,
+            -- and only ever calls this on the server - clients just send a network event and
+            -- return). Showing it locally only reaches the server's own screen/console, so a
+            -- remote player's delivery would otherwise never see this. Show locally too
+            -- (covers singleplayer / listen-server host, and is a harmless no-op on a headless
+            -- dedicated server) and additionally notify that specific farm's client(s) over
+            -- the network when we're the authoritative server.
+            system.uiManager:notify(text, 8000, 20000)
+            if g_server ~= nil and type(tool) == "number" then
+                DeliveryNoticeEvent.broadcast(tool, text, 20000)
+            end
         end
-        if not self:isa(SellingStation) then
-            return superFunc(self, tool, ...)
-        end
-        if isAIVehicle(tool) then
-            return superFunc(self, tool, ...)
-        end
-        return false
     end
     return superFunc(self, tool, ...)
 end
@@ -358,7 +334,20 @@ local function getMultiplier(scheduleManager)
     return 24 / openHours
 end
 
-function ProductionExtension.applyMultiplier(multiplier)
+-- Captures each production's un-boosted cyclesPerHour the first time it's ever seen,
+-- regardless of whether we're currently boosting or pausing it. Needed so a save
+-- loaded directly into closed hours still has a correct baseline to restore/boost from.
+local function captureOriginal(key, id, prod)
+    if ProductionExtension.originals[key] == nil then
+        ProductionExtension.originals[key] = {}
+    end
+    if ProductionExtension.originals[key][id] == nil then
+        ProductionExtension.originals[key][id] = prod.cyclesPerHour
+    end
+    return ProductionExtension.originals[key][id]
+end
+
+function ProductionExtension.applyMultiplier(multiplier, quiet)
     if g_currentMission == nil then return end
     local count = 0
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
@@ -366,15 +355,9 @@ function ProductionExtension.applyMultiplier(multiplier)
             local pp  = placeable.spec_productionPoint
             local key = tostring(placeable)
             if pp.productions ~= nil then
-                if ProductionExtension.originals[key] == nil then
-                    ProductionExtension.originals[key] = {}
-                end
                 for _, prod in pairs(pp.productions) do
-                    local id = prod.id or tostring(prod)
-                    if ProductionExtension.originals[key][id] == nil then
-                        ProductionExtension.originals[key][id] = prod.cyclesPerHour
-                    end
-                    local orig = ProductionExtension.originals[key][id]
+                    local id   = prod.id or tostring(prod)
+                    local orig = captureOriginal(key, id, prod)
                     prod.cyclesPerHour   = orig * multiplier
                     prod.cyclesPerMinute = prod.cyclesPerHour / 60
                     prod.cyclesPerMonth  = prod.cyclesPerHour * 24
@@ -383,10 +366,13 @@ function ProductionExtension.applyMultiplier(multiplier)
             end
         end
     end
-    print(string.format("[OpeningHours] Production boost: %.2fx on %d productions", multiplier, count))
+    if not quiet then
+        print(string.format("[OpeningHours] Production boost: %.2fx on %d productions", multiplier, count))
+    end
 end
 
-function ProductionExtension.restoreDefaults()
+-- Used when opening hours are DISABLED entirely -- restores normal, unboosted, 24/7 production.
+function ProductionExtension.restoreDefaults(quiet)
     if g_currentMission == nil then return end
     local count = 0
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
@@ -407,18 +393,49 @@ function ProductionExtension.restoreDefaults()
             end
         end
     end
-    print(string.format("[OpeningHours] Production restored to default on %d productions", count))
+    if not quiet then
+        print(string.format("[OpeningHours] Production restored to default on %d productions", count))
+    end
 end
 
-function ProductionExtension.onStateChange(isOpen, scheduleManager)
+-- Used while CLOSED (feature enabled) -- genuinely pauses production so input material
+-- just waits in storage untouched instead of being consumed at the normal rate.
+function ProductionExtension.pauseProduction(quiet)
+    if g_currentMission == nil then return end
+    local count = 0
+    for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
+        if placeable.spec_productionPoint ~= nil then
+            local pp  = placeable.spec_productionPoint
+            local key = tostring(placeable)
+            if pp.productions ~= nil then
+                for _, prod in pairs(pp.productions) do
+                    local id = prod.id or tostring(prod)
+                    captureOriginal(key, id, prod)
+                    prod.cyclesPerHour   = 0
+                    prod.cyclesPerMinute = 0
+                    prod.cyclesPerMonth  = 0
+                    count = count + 1
+                end
+            end
+        end
+    end
+    if not quiet then
+        print(string.format("[OpeningHours] Production paused (closed hours) on %d productions", count))
+    end
+end
+
+-- quiet=true is used for the routine per-second reapply (see OpeningHoursSystem:update) so a
+-- newly bought/placed production point gets corrected within ~1s without spamming the log
+-- every tick; an actual open/closed transition always logs normally.
+function ProductionExtension.onStateChange(isOpen, scheduleManager, quiet)
     if not scheduleManager.enabled then
-        ProductionExtension.restoreDefaults()
+        ProductionExtension.restoreDefaults(quiet)
         return
     end
     if isOpen then
-        ProductionExtension.applyMultiplier(getMultiplier(scheduleManager))
+        ProductionExtension.applyMultiplier(getMultiplier(scheduleManager), quiet)
     else
-        ProductionExtension.restoreDefaults()
+        ProductionExtension.pauseProduction(quiet)
     end
 end
 
@@ -496,6 +513,61 @@ function OpeningHoursEvent.broadcast(enabled, openHour, closeHour)
 end
 
 -- ============================================================
+-- Network event so a delivery notice reaches the specific farm that actually delivered,
+-- not just whichever machine happened to run addFillLevelFromTool. That hook runs
+-- server-only for trigger-routed deliveries (confirmed: WoodUnloadTrigger only calls it on
+-- the server, clients just send a network event and return) - so on a dedicated server or a
+-- listen server with remote players, a remote player's own delivery would otherwise only
+-- ever show on the server's own screen/console, never reach them at all.
+
+DeliveryNoticeEvent = {}
+DeliveryNoticeEvent_mt = Class(DeliveryNoticeEvent, Event)
+
+InitEventClass(DeliveryNoticeEvent, "DeliveryNoticeEvent")
+
+function DeliveryNoticeEvent.emptyNew()
+    return Event.new(DeliveryNoticeEvent_mt)
+end
+
+function DeliveryNoticeEvent.new(farmId, text, durationMs)
+    local self = DeliveryNoticeEvent.emptyNew()
+    self.farmId     = farmId
+    self.text       = text
+    self.durationMs = durationMs
+    return self
+end
+
+function DeliveryNoticeEvent:writeStream(streamId, connection)
+    streamWriteUIntN(streamId, self.farmId, 6)
+    streamWriteString(streamId, self.text)
+    streamWriteUIntN(streamId, self.durationMs, 16)
+end
+
+function DeliveryNoticeEvent:readStream(streamId, connection)
+    self.farmId     = streamReadUIntN(streamId, 6)
+    self.text       = streamReadString(streamId)
+    self.durationMs = streamReadUIntN(streamId, 16)
+    self:run(connection)
+end
+
+function DeliveryNoticeEvent:run(connection)
+    local system = g_currentMission and g_currentMission.openingHoursSystem
+    if system == nil then return end
+
+    -- Only the machine(s) belonging to the farm that actually delivered should see this.
+    if g_currentMission:getFarmId() == self.farmId then
+        system.uiManager:notify(self.text, 0, self.durationMs)
+    end
+end
+
+-- Server-only: broadcasts to all clients, each of which filters by farmId in :run().
+function DeliveryNoticeEvent.broadcast(farmId, text, durationMs)
+    if g_server ~= nil then
+        g_server:broadcastEvent(DeliveryNoticeEvent.new(farmId, text, durationMs), false)
+    end
+end
+
+-- ============================================================
 -- SettingsUI only runs on clients with a GUI (not on dedicated server)
 OpeningHoursSettingsUI = {}
 if g_gui ~= nil and g_gui.screenControllers ~= nil and g_gui.screenControllers[InGameMenu] ~= nil then
@@ -506,7 +578,6 @@ if g_gui ~= nil and g_gui.screenControllers ~= nil and g_gui.screenControllers[I
     if settingsLayout ~= nil and template ~= nil then
         print("[OpeningHours] SettingsUI initialising...")
 
-OpeningHoursSettingsUI              = {}
 OpeningHoursSettingsUI.name         = settingsPage.name
 OpeningHoursSettingsUI.controls     = {}
 OpeningHoursSettingsUI.openGroup    = {}
@@ -762,14 +833,28 @@ local OpeningHoursSystem_mt = Class(OpeningHoursSystem)
 
 local MOD_DIR = g_currentModDirectory
 
-function OpeningHoursSystem.new(mission)
+function OpeningHoursSystem.new()
     local self = setmetatable({}, OpeningHoursSystem_mt)
-    self.mission         = mission
-    self.isOpen          = false
-    self.sellHookApplied = false
-    self.updateTimer     = 0
-    self.boostPending    = false
+    self.isOpen             = false
+    self.sellHookApplied    = false
+    self.updateTimer        = 0
+    self.boostPending       = false
+    self.boostPendingWaited = 0
     return self
+end
+
+-- Placeables load in progressively over many seconds after loadMap fires, so applying
+-- the initial boost/pause on a fixed "first tick" can run before any production point
+-- is registered yet (silently applying to 0 productions, never retried since it only
+-- reacts to a later isOpen state CHANGE). Wait for at least one to exist instead.
+local function hasAnyProductionPoints()
+    if g_currentMission == nil or g_currentMission.placeableSystem == nil then return false end
+    for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
+        if placeable.spec_productionPoint ~= nil then
+            return true
+        end
+    end
+    return false
 end
 
 function OpeningHoursSystem:trySellHook()
@@ -796,8 +881,7 @@ end
 function OpeningHoursSystem:loadMap(name)
     self.scheduleManager = ScheduleManager.new()
     self.scheduleManager:loadFromXML(Utils.getFilename("map/config/openingHours.xml", MOD_DIR))
-    self.queueManager = QueueManager.new()
-    self.uiManager    = UIManager.new()
+    self.uiManager = UIManager.new()
 
     g_currentMission.openingHoursSystem = self
 
@@ -859,27 +943,34 @@ function OpeningHoursSystem:update(dt)
         self:trySellHook()
     end
 
-    -- Apply initial production boost on first tick after placeables are loaded
+    -- Apply initial production boost/pause once placeables actually exist (or after a
+    -- 15s timeout, so a map with genuinely zero production points doesn't wait forever).
     if self.boostPending then
-        self.boostPending = false
-        local time  = g_currentMission.environment.dayTime
-        self.isOpen = self.scheduleManager:isOpen(time)
-        ProductionExtension.onStateChange(self.isOpen, self.scheduleManager)
+        self.boostPendingWaited = self.boostPendingWaited + dt
+        if hasAnyProductionPoints() or self.boostPendingWaited >= 15000 then
+            self.boostPending = false
+            local time  = g_currentMission.environment.dayTime
+            self.isOpen = self.scheduleManager:isOpen(time)
+            ProductionExtension.onStateChange(self.isOpen, self.scheduleManager)
+        end
     end
 
-    -- Throttle: check open/close transition once per second
+    -- Throttle: re-evaluate once per second
     self.updateTimer = self.updateTimer + dt
     if self.updateTimer < 1000 then return end
     self.updateTimer = 0
 
     local time   = g_currentMission.environment.dayTime
     local isOpen = self.scheduleManager:isOpen(time)
+    local changed = isOpen ~= self.isOpen
+    self.isOpen = isOpen
 
-    if isOpen ~= self.isOpen then
-        self.isOpen = isOpen
+    -- Always reapply (quiet unless it's an actual transition) rather than only on change, so
+    -- a production point bought/placed after the last transition gets corrected within ~1s
+    -- instead of sitting at its own XML default rate until the next open/close flip.
+    ProductionExtension.onStateChange(isOpen, self.scheduleManager, not changed)
 
-        ProductionExtension.onStateChange(isOpen, self.scheduleManager)
-
+    if changed then
         if g_server ~= nil then
             OpeningHoursEvent.broadcast(
                 self.scheduleManager.enabled,
@@ -898,7 +989,7 @@ function OpeningHoursSystem:update(dt)
     end
 end
 
-local g_openingHoursSystem = OpeningHoursSystem.new(g_currentMission)
+local g_openingHoursSystem = OpeningHoursSystem.new()
 addModEventListener(g_openingHoursSystem)
 
 print("[OpeningHours] Registered event listener")

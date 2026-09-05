@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="cowHusbandryManure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_animalBarnCowMedium</name>
+        <name>$l10n_storeItem_customizeFenceCowBarnMedium</name>
         <image>map/inports/FS25_Customize_Fence_Cow_BarnStores/Stores/store_largeCowBarn.png</image>
         <price>80000</price>
         <functions>
@@ -20,16 +20,10 @@
             <tab>cows</tab>
         </brush>
 
-        <vertexBufferMemoryUsage>2230272</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>463616</indexBufferMemoryUsage>
-        <textureMemoryUsage>17235968</textureMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
     </storeData>
 
     <base>
-        <filename>map/inports/FS25_Customize_Fence_Cow_BarnStores/MediumCowBarn.i3d</filename>
+        <filename>map/inports/FS25_Customize_Fence_Cow_Barn/MediumCowBarn.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
 		<boughtWithFarmland>true</boughtWithFarmland>
     </base>
