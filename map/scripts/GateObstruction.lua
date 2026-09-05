@@ -188,6 +188,23 @@ end
 -- =====================================================================
 -- Apply a clear (called on every machine once the server confirms it)
 -- =====================================================================
+local function disableCollisionRecursive(node)
+    if node == nil or node == 0 then return end
+    local okShape, isShape = pcall(getHasClassId, node, ClassIds.SHAPE)
+    if okShape and isShape then
+        pcall(setCollisionMask, node, 0)
+    end
+    local okN, n = pcall(getNumOfChildren, node)
+    if okN and n ~= nil then
+        for i = 0, n - 1 do
+            local okC, child = pcall(getChildAt, node, i)
+            if okC and child ~= nil and child ~= 0 then
+                disableCollisionRecursive(child)
+            end
+        end
+    end
+end
+
 function GateObstruction:applyClear()
     if self.isCleared then return end
     self.isCleared = true
@@ -195,6 +212,7 @@ function GateObstruction:applyClear()
 
     if self.visualNode ~= nil then
         pcall(setVisibility, self.visualNode, false)
+        disableCollisionRecursive(self.visualNode)
     end
     if self.triggerNode ~= nil then
         pcall(removeTrigger, self.triggerNode)
@@ -519,6 +537,7 @@ local function setupAllObstructions()
 
                 if instance.isCleared then
                     pcall(setVisibility, visualNode, false)
+                    disableCollisionRecursive(visualNode)
                 else
                     local ok = pcall(addTrigger, triggerNode, "onTrigger", instance)
                     if not ok then
