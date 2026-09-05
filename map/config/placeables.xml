@@ -806,9 +806,6 @@
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
     </placeable>
-    <placeable isPreplaced="true" filename="$mapdir$/map/inports/animalDealerMarker/animalDealerMarker.xml" uniqueId="buscotAnimalTrader01" position="1925.56689453 55.00995255 303.7588501" rotation="0.00 0.00 0.00" age="0.000000" price="0.000000">
-        <customImage filename="data/maps/mapUS/textures/buildings/animalTrader/mapIcon_animalTrader.png"/>
-    </placeable>
     <placeable modName="FS25_RDM_BritishGrainSheds" filename="$moddir$FS25_RDM_BritishGrainSheds/shed02_B.xml" uniqueId="shroomsGrain" position="984.473 6.567 -1508.460" rotation="-180.00 83.19 -180.00" age="0.000000" price="110000.000000"  boughtWithFarmlandOverwrite="true">
         <animatedObjects>
             <animatedObject time="0.000000" direction="0"/>

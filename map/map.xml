@@ -67,6 +67,10 @@
         <fruitType filename="map/foliage/cotton/cotton.xml" /> -->
     </fruitTypes>
 
+    <hotspots>
+        <placeableHotspot type="SHOP_ANIMAL" text="Animal Market" worldPosition="1910.3302002 182.1932373" teleportWorldPosition="1910.3302002 59.4115715 182.1932373" />
+    </hotspots>
+
     <fruitTypeCategories>
         <fruitTypeCategory name="MOWER">MEADOW</fruitTypeCategory>
     </fruitTypeCategories>
