@@ -115,7 +115,6 @@ function ScheduleManager:loadFromXML(path)
 
     local xmlFile = loadXMLFile("openingHours", path)
     if xmlFile == nil or xmlFile == 0 then
-        print("[OpeningHours] No saved settings found at " .. tostring(path) .. " - using defaults")
         self.enabled = true
         self.schedules.default = { {startHour = 8, endHour = 19} }
         return
@@ -144,9 +143,6 @@ function ScheduleManager:loadFromXML(path)
         print("[OpeningHours] WARNING: no periods found - using fallback")
         self.schedules.default = { {startHour = 8, endHour = 19} }
     end
-
-    print(string.format("[OpeningHours] Loaded %d period(s) from %s  enabled=%s",
-        #self.schedules.default, path, tostring(self.enabled)))
 end
 
 function ScheduleManager:saveToXML()
@@ -347,9 +343,8 @@ local function captureOriginal(key, id, prod)
     return ProductionExtension.originals[key][id]
 end
 
-function ProductionExtension.applyMultiplier(multiplier, quiet)
+function ProductionExtension.applyMultiplier(multiplier)
     if g_currentMission == nil then return end
-    local count = 0
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
         if placeable.spec_productionPoint ~= nil then
             local pp  = placeable.spec_productionPoint
@@ -361,20 +356,15 @@ function ProductionExtension.applyMultiplier(multiplier, quiet)
                     prod.cyclesPerHour   = orig * multiplier
                     prod.cyclesPerMinute = prod.cyclesPerHour / 60
                     prod.cyclesPerMonth  = prod.cyclesPerHour * 24
-                    count = count + 1
                 end
             end
         end
     end
-    if not quiet then
-        print(string.format("[OpeningHours] Production boost: %.2fx on %d productions", multiplier, count))
-    end
 end
 
 -- Used when opening hours are DISABLED entirely -- restores normal, unboosted, 24/7 production.
-function ProductionExtension.restoreDefaults(quiet)
+function ProductionExtension.restoreDefaults()
     if g_currentMission == nil then return end
-    local count = 0
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
         if placeable.spec_productionPoint ~= nil then
             local pp  = placeable.spec_productionPoint
@@ -387,22 +377,17 @@ function ProductionExtension.restoreDefaults(quiet)
                         prod.cyclesPerHour   = orig
                         prod.cyclesPerMinute = orig / 60
                         prod.cyclesPerMonth  = orig * 24
-                        count = count + 1
                     end
                 end
             end
         end
     end
-    if not quiet then
-        print(string.format("[OpeningHours] Production restored to default on %d productions", count))
-    end
 end
 
 -- Used while CLOSED (feature enabled) -- genuinely pauses production so input material
 -- just waits in storage untouched instead of being consumed at the normal rate.
-function ProductionExtension.pauseProduction(quiet)
+function ProductionExtension.pauseProduction()
     if g_currentMission == nil then return end
-    local count = 0
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
         if placeable.spec_productionPoint ~= nil then
             local pp  = placeable.spec_productionPoint
@@ -414,28 +399,21 @@ function ProductionExtension.pauseProduction(quiet)
                     prod.cyclesPerHour   = 0
                     prod.cyclesPerMinute = 0
                     prod.cyclesPerMonth  = 0
-                    count = count + 1
                 end
             end
         end
     end
-    if not quiet then
-        print(string.format("[OpeningHours] Production paused (closed hours) on %d productions", count))
-    end
 end
 
--- quiet=true is used for the routine per-second reapply (see OpeningHoursSystem:update) so a
--- newly bought/placed production point gets corrected within ~1s without spamming the log
--- every tick; an actual open/closed transition always logs normally.
-function ProductionExtension.onStateChange(isOpen, scheduleManager, quiet)
+function ProductionExtension.onStateChange(isOpen, scheduleManager)
     if not scheduleManager.enabled then
-        ProductionExtension.restoreDefaults(quiet)
+        ProductionExtension.restoreDefaults()
         return
     end
     if isOpen then
-        ProductionExtension.applyMultiplier(getMultiplier(scheduleManager), quiet)
+        ProductionExtension.applyMultiplier(getMultiplier(scheduleManager))
     else
-        ProductionExtension.pauseProduction(quiet)
+        ProductionExtension.pauseProduction()
     end
 end
 
@@ -487,16 +465,12 @@ function OpeningHoursEvent:run(connection)
         system.isOpen = system.scheduleManager:isOpen(g_currentMission.environment.dayTime)
         ProductionExtension.onStateChange(system.isOpen, system.scheduleManager)
         g_server:broadcastEvent(OpeningHoursEvent.new(self.enabled, self.openHour, self.closeHour), false, connection)
-        print(string.format("[OpeningHours] Server applied and rebroadcast: enabled=%s open=%02d:00 close=%02d:00",
-            tostring(self.enabled), self.openHour, self.closeHour))
     else
         -- Client receiving from server - just apply locally
         system.scheduleManager:setEnabled(self.enabled)
         system.scheduleManager:setHours(self.openHour, self.closeHour)
         system.isOpen = system.scheduleManager:isOpen(g_currentMission.environment.dayTime)
         ProductionExtension.onStateChange(system.isOpen, system.scheduleManager)
-        print(string.format("[OpeningHours] Client synced: enabled=%s open=%02d:00 close=%02d:00",
-            tostring(self.enabled), self.openHour, self.closeHour))
     end
 end
 
@@ -576,7 +550,6 @@ if g_gui ~= nil and g_gui.screenControllers ~= nil and g_gui.screenControllers[I
     local settingsLayout = settingsPage.gameSettingsLayout
     local template       = settingsPage.checkWoodHarvesterAutoCutBox
     if settingsLayout ~= nil and template ~= nil then
-        print("[OpeningHours] SettingsUI initialising...")
 
 OpeningHoursSettingsUI.name         = settingsPage.name
 OpeningHoursSettingsUI.controls     = {}
@@ -781,7 +754,6 @@ for h = 12, 23 do
 end
 
 settingsLayout:invalidateLayout()
-print("[OpeningHours] SettingsUI ready - " .. #OpeningHoursSettingsUI.collapsibles .. " collapsibles")
 
 -- ── Sync when settings screen opens ──────────────────────────────────────────
 
@@ -823,7 +795,6 @@ FocusManager.setGui = Utils.appendedFunction(FocusManager.setGui, function(_, gu
     end
 end)
 
-    print("[OpeningHours] SettingsUI ready")
     end -- settingsLayout check
 end -- DS GUI guard
 
@@ -862,17 +833,14 @@ function OpeningHoursSystem:trySellHook()
         if SellingStation.getIsFillAllowedFromFarm ~= nil then
             SellingStation.getIsFillAllowedFromFarm = Utils.overwrittenFunction(
                 SellingStation.getIsFillAllowedFromFarm, SellPointExtension.getIsFillAllowedFromFarm)
-            print("[OpeningHours] Sell hook: SellingStation.getIsFillAllowedFromFarm")
         end
         if SellingStation.addFillLevelFromTool ~= nil then
             SellingStation.addFillLevelFromTool = Utils.overwrittenFunction(
                 SellingStation.addFillLevelFromTool, SellPointExtension.addFillLevelFromTool)
-            print("[OpeningHours] Sell hook: SellingStation.addFillLevelFromTool")
         end
         if SellingStation.sellFillType ~= nil then
             SellingStation.sellFillType = Utils.overwrittenFunction(
                 SellingStation.sellFillType, SellPointExtension.sell)
-            print("[OpeningHours] Sell hook: SellingStation.sellFillType")
         end
         self.sellHookApplied = true
     end
@@ -897,14 +865,12 @@ function OpeningHoursSystem:loadMap(name)
         for _, h in ipairs(hooks) do
             if ShopController[h.method] ~= nil then
                 ShopController[h.method] = Utils.overwrittenFunction(ShopController[h.method], h.fn)
-                print("[OpeningHours] Shop hook: ShopController." .. h.method)
             end
         end
     end
 
     -- Production boost applied on first update tick after placeables are loaded
     self.boostPending = true
-    print("[OpeningHours] Production boost system ready (24h equivalent output during open hours)")
 
     if Mission00 ~= nil and Mission00.draw ~= nil then
         Mission00.draw = Utils.overwrittenFunction(Mission00.draw, function(mission, superFunc)
@@ -914,7 +880,6 @@ function OpeningHoursSystem:loadMap(name)
                 system.uiManager:drawHUD(system.isOpen, system.scheduleManager)
             end
         end)
-        print("[OpeningHours] Draw hook registered")
     end
 
     -- Send current state to any client joining mid-session
@@ -930,8 +895,6 @@ function OpeningHoursSystem:loadMap(name)
                 ))
             end
         end)
-
-    print("[OpeningHours] Loaded - settings in ESC > Settings")
 end
 
 function OpeningHoursSystem:deleteMap()
@@ -965,10 +928,10 @@ function OpeningHoursSystem:update(dt)
     local changed = isOpen ~= self.isOpen
     self.isOpen = isOpen
 
-    -- Always reapply (quiet unless it's an actual transition) rather than only on change, so
-    -- a production point bought/placed after the last transition gets corrected within ~1s
-    -- instead of sitting at its own XML default rate until the next open/close flip.
-    ProductionExtension.onStateChange(isOpen, self.scheduleManager, not changed)
+    -- Always reapply rather than only on change, so a production point bought/placed after
+    -- the last transition gets corrected within ~1s instead of sitting at its own XML
+    -- default rate until the next open/close flip.
+    ProductionExtension.onStateChange(isOpen, self.scheduleManager)
 
     if changed then
         if g_server ~= nil then
@@ -991,5 +954,3 @@ end
 
 local g_openingHoursSystem = OpeningHoursSystem.new()
 addModEventListener(g_openingHoursSystem)
-
-print("[OpeningHours] Registered event listener")

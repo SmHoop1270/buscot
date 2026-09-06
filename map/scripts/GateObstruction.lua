@@ -227,24 +227,18 @@ local function findNearbyGateAnimatedObjects(x, z, maxDist)
     local found = {}
     if g_currentMission == nil or g_currentMission.placeableSystem == nil then return found end
 
-    local numFencePlaceables, numSegments, numGateSegments, closestDist = 0, 0, 0, math.huge
-
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
         -- This map's fences use the newer "newFence" specialization: the segment
         -- list lives on spec_newFence.fence (a Fence class instance), not directly
         -- on the spec table. Confirmed via live diagnostic against decompiled source.
         local ok, fence = pcall(function() return placeable.spec_newFence and placeable.spec_newFence.fence end)
         if ok and fence ~= nil and fence.segments ~= nil then
-            numFencePlaceables = numFencePlaceables + 1
             for _, segment in pairs(fence.segments) do
-                numSegments = numSegments + 1
                 if segment.animatedObjects ~= nil and segment.startPosX ~= nil and segment.endPosX ~= nil then
-                    numGateSegments = numGateSegments + 1
                     local mx = (segment.startPosX + segment.endPosX) / 2
                     local mz = (segment.startPosZ + segment.endPosZ) / 2
                     local dx, dz = x - mx, z - mz
                     local dist = math.sqrt(dx * dx + dz * dz)
-                    if dist < closestDist then closestDist = dist end
                     if dist <= maxDist then
                         for _, animObj in ipairs(segment.animatedObjects) do
                             table.insert(found, animObj)
@@ -255,10 +249,6 @@ local function findNearbyGateAnimatedObjects(x, z, maxDist)
         end
     end
 
-    Logging.info("[GateObstruction] Gate scan: fencePlaceables=%d totalSegments=%d gateSegments=%d closestGateDist=%s matchedWithin%dm=%d",
-        numFencePlaceables, numSegments, numGateSegments,
-        closestDist == math.huge and "n/a" or string.format("%.1f", closestDist), maxDist, #found)
-
     return found
 end
 
@@ -268,8 +258,6 @@ local function findNearbyPlaceableAnimatedObjects(x, z, maxDist)
     local found = {}
     if g_currentMission == nil or g_currentMission.placeableSystem == nil then return found end
 
-    local numWithAnimObjs, closestDist = 0, math.huge
-
     for _, placeable in pairs(g_currentMission.placeableSystem.placeables) do
         local ok, animObjs = pcall(function()
             return placeable.spec_animatedObjects and placeable.spec_animatedObjects.animatedObjects
@@ -277,10 +265,8 @@ local function findNearbyPlaceableAnimatedObjects(x, z, maxDist)
         if ok and animObjs ~= nil and #animObjs > 0 then
             local okPos, px, _, pz = pcall(getWorldTranslation, placeable.rootNode)
             if okPos and px ~= nil then
-                numWithAnimObjs = numWithAnimObjs + 1
                 local dx, dz = x - px, z - pz
                 local dist = math.sqrt(dx * dx + dz * dz)
-                if dist < closestDist then closestDist = dist end
                 if dist <= maxDist then
                     for _, animObj in ipairs(animObjs) do
                         table.insert(found, animObj)
@@ -290,9 +276,6 @@ local function findNearbyPlaceableAnimatedObjects(x, z, maxDist)
         end
     end
 
-    Logging.info("[GateObstruction] Placeable-door scan: withAnimatedObjects=%d closestDist=%s matchedWithin%dm=%d",
-        numWithAnimObjs, closestDist == math.huge and "n/a" or string.format("%.1f", closestDist), maxDist, #found)
-
     return found
 end
 
@@ -301,14 +284,10 @@ end
 -- found, resolves the owning placeable and locks every AnimatedObject on it -- avoids
 -- needing an exact saveId match at all.
 local function findGateAnimatedObjectsByNodeId(nodeId)
-    if nodeId == nil then return {}, "no nodeId configured" end
+    if nodeId == nil then return {} end
 
     local okExists, exists = pcall(entityExists, nodeId)
-    if not okExists or not exists then
-        return {}, string.format("node %s does not exist in this session (GE10 ids are session-local, as expected)", tostring(nodeId))
-    end
-
-    local okName, name = pcall(getName, nodeId)
+    if not okExists or not exists then return {} end
 
     -- Try the direct engine lookup first (works when nodeId is itself a registered
     -- trigger/shape target).
@@ -339,10 +318,7 @@ local function findGateAnimatedObjectsByNodeId(nodeId)
         end
     end
 
-    if placeable == nil then
-        return {}, string.format("node %s ('%s') exists but no owning placeable could be resolved",
-            tostring(nodeId), okName and tostring(name) or "?")
-    end
+    if placeable == nil then return {} end
 
     local found = {}
     local okAnim, animObjs = pcall(function()
@@ -360,8 +336,7 @@ local function findGateAnimatedObjectsByNodeId(nodeId)
         end
     end
 
-    return found, string.format("node %s ('%s') resolved to a placeable with %d animatedObject(s)",
-        tostring(nodeId), okName and tostring(name) or "?", #found)
+    return found
 end
 
 local function hasAnyFencePlaceables()
@@ -374,22 +349,18 @@ local function hasAnyFencePlaceables()
 end
 
 local function runGateScan()
-    local totalLocked = 0
     for _, obstruction in ipairs(GateObstruction.instances) do
         if not obstruction.isCleared then
             obstruction.gateAnimatedObjects = {}
             local nodeId = GateObstruction.GATE_NODE_IDS[obstruction.uniqueId]
 
             if nodeId ~= nil then
-                local matches, detail = findGateAnimatedObjectsByNodeId(nodeId)
+                local matches = findGateAnimatedObjectsByNodeId(nodeId)
                 if #matches > 0 then
                     obstruction.gateAnimatedObjects = matches
-                    Logging.info("[GateObstruction] '%s': matched by GE10 node id %s -- %s",
-                        obstruction.uniqueId, tostring(nodeId), detail)
                 end
                 -- No match is expected here (GE10 node ids don't survive into an
-                -- actual game session) -- falls through to the proximity search
-                -- below silently rather than logging a warning every load.
+                -- actual game session) -- falls through to the proximity search below.
             end
 
             if #obstruction.gateAnimatedObjects == 0 then
@@ -405,11 +376,8 @@ local function runGateScan()
             end
 
             obstruction:setGateLocked(true)
-            totalLocked = totalLocked + #obstruction.gateAnimatedObjects
         end
     end
-    Logging.info("[GateObstruction] Gate scan complete: locked %d gate door(s) across %d obstruction(s)",
-        totalLocked, #GateObstruction.instances)
 end
 
 
@@ -436,7 +404,6 @@ local function loadClearedState()
     end
 
     delete(xmlFile)
-    Logging.info("[GateObstruction] Loaded %d cleared obstruction(s) from savegame", i)
 end
 
 local function saveClearedState(savegameDirectory)
@@ -533,9 +500,6 @@ local function setupAllObstructions()
                         Logging.error("[GateObstruction] Failed to register trigger for '%s'", uniqueId)
                     end
                 end
-
-                Logging.info("[GateObstruction] Registered '%s' (price=%d, cleared=%s)",
-                    uniqueId, instance.price, tostring(instance.isCleared))
             end
         end
     end

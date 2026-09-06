@@ -68,9 +68,6 @@ function MemorialTrigger.new(triggerNode, config)
     self.sample = createSample("MemorialSample_" .. tostring(triggerNode))
     loadSample(self.sample, soundPath, false)
 
-    Logging.info("[MemorialTrigger] Activated -> %s (radius=%.1fm, delay=%dms)",
-                 config.soundFile, config.activationRadius, config.startDelayMs or 0)
-
     return self
 end
 
