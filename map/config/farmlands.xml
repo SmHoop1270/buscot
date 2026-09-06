@@ -184,11 +184,11 @@
     <farmland id="181" priceScale="1" npcName="FORESTER" />
     <farmland id="182" priceScale="1" npcName="FORESTER" />
     <farmland id="183" priceScale="1" npcName="FORESTER" name="Midd"/> 
-<!-- <farmland id="184" priceScale="1" npcName="FORESTER" />
+    <farmland id="184" priceScale="1" npcName="FORESTER" />
     <farmland id="185" priceScale="1" npcName="FORESTER" />
     <farmland id="186" priceScale="1" npcName="FORESTER" />
     <farmland id="187" priceScale="1" npcName="FORESTER" />
-    <farmland id="188" priceScale="1" npcName="FORESTER" />
+<!--     <farmland id="188" priceScale="1" npcName="FORESTER" />
     <farmland id="189" priceScale="1" npcName="FORESTER" />
     <farmland id="190" priceScale="1" npcName="FORESTER" />
     <farmland id="191" priceScale="1" npcName="FORESTER" />
